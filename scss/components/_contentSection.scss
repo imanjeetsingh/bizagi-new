@@ -1,0 +1,17 @@
+// Content Section component CSS starts
+.contentSection {
+    &-container {}
+    &-box {
+        &-heading {
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 44px;
+            color: #6D7278;
+            text-align: center;
+        }
+        &-subheading {}
+        &-description {}
+    }
+}
+
+// Content Section component CSS starts

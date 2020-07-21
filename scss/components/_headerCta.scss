@@ -1,0 +1,12 @@
+@include mobile-only {
+    .cta {
+        &-header {
+            color: #888 !important;
+            border: none !important;
+            background: none !important;
+            padding: 0 !important;
+            font-size: 17px;
+            font-weight: 100;
+        }
+    }
+}

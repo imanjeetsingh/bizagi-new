@@ -1,0 +1,64 @@
+// CTA component CSS starts
+.cta {
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none !important;
+    padding: 10px 20px;
+    color: #F28C20;
+    margin: 0 0.5rem;
+    &-group {
+        display: inline-flex;
+        margin: 1rem 0.5rem;
+        flex-wrap: wrap;
+    }
+    &-default {
+        &:hover {
+            color: #dc7000;
+        }
+    }
+    &-primary {
+        background-color: #F28C20;
+        color: #ffffff;
+        border: solid 2px #F28C20;
+        &:hover {
+            color: #ffffff;
+            background: #dc7000;
+            border: solid 2px #dc7000 !important;
+        }
+    }
+    &-secondary {
+        border: solid 2px #F28C20;
+        color: #F28C20;
+        &:hover {
+            color: #ffffff;
+            background: #dc7000;
+        }
+    }
+    &-content {
+        margin: 0 5px;
+    }
+    &-icon {
+        &-box {
+            img {
+                vertical-align: text-bottom;
+            }
+        }
+        &-right {
+            flex-direction: row;
+        }
+        &-left {
+            flex-direction: row-reverse;
+        }
+    }
+    &-image {
+        width: 55px;
+        height: auto;
+    }
+}
+
+// CTA component CSS starts

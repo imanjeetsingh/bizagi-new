@@ -1,0 +1,82 @@
+// Banner component CSS starts
+.banner {
+    &-bg {
+        &-row{
+            // padding-top: 22rem;
+            // @include mobile-only {
+            //     padding: 0;
+            // }
+        }
+        &-image{
+            position: absolute;
+            width: 100%;
+            @include mobile-only {
+                height: 100%;
+            }
+        }
+        .cta{
+            background-color: #FFFFFF;
+            border: none;
+            &-group{
+                margin: 1rem 0;
+            }
+            &:hover{
+                border: none !important;
+            }
+            &-content{
+                color: #009E99;
+            }
+        }
+    }
+   
+    &-bg &-heading {
+        color: #ffffff;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        font-size: 60px;
+        @include mobile-only {
+           font-size: 2.5rem;
+        }
+    }
+    &-bg &-subheading {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        font-size: 24px;
+        color: #FFFFFF;
+        line-height: 30px;
+    }
+    &-bg &-content {
+        color: #ffffff;
+    }
+    &-bg &cta {
+        background: #ffffff;
+        border: 2px solid #ffffff;
+    }
+    &-heading {
+        color: #6D7278;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        font-size: 60px;
+    }
+    &-subheading {
+        color: #6D7278;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    &-content {
+        color: #6D7278;
+    }
+    &-image {
+        width: 100%;
+        height: auto;
+    }
+    &-content{
+        &-right{
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+// Banner component CSS starts

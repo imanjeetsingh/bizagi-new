@@ -1,0 +1,15 @@
+// SearchBox component CSS starts
+.search {
+    &-container {
+        @include media(desktop) {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
+    &-box {
+        &-searchIcon {}
+        &-closeIcon {}
+    }
+}
+
+// SearchBox component CSS ends

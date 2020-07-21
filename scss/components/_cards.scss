@@ -1,0 +1,68 @@
+// Card component CSS starts
+.card {
+    &-container {}
+    &-inner {
+        background: #FFFFFF;
+        box-shadow: 0 0 11px 0 rgba(166, 166, 166, 0.50);
+        display: inline-block;
+        position: relative;
+        margin: 1.2rem auto;
+        height: calc(100% - 15px) !important;
+    }
+    &-image-box {
+        position: relative;
+    }
+    &-tag {
+        padding: 2px 20px;
+        background: #F38D1E;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    &-body {}
+    &-title {
+        color: #6D7278;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+    }
+    &-subtitle{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    &-date {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        color: #6D7278;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &-text {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        color: #6D7278;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &-subtitle {
+        color: #6D7278;
+    }
+    &-cta {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.top-left {
+    position: absolute;
+    top: 0;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 0;
+}
+
+// Card component CSS ends
