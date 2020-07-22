@@ -3705,12 +3705,6 @@ tbody.collapse.show {
   .navbar-collapse {
     border-top: 1px solid #e0e0e0; } }
 
-.affix {
-  position: fixed;
-  top: 0;
-  z-index: 999999;
-  background-color: #ffffff; }
-
 .headerLogo-container {
   height: 5rem;
   display: flex;
@@ -3751,6 +3745,12 @@ tbody.collapse.show {
   .search-container {
     margin-left: 1rem;
     margin-right: 1rem; } }
+
+.home-header.affix {
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  background-color: #ffffff; }
 
 #foot {
   background: #005747;
@@ -4000,3 +4000,39 @@ tbody.collapse.show {
 
 .banner-content-right {
   flex-direction: row-reverse; }
+
+.feature-row {
+  justify-content: center; }
+
+@media (min-width: 992px) {
+  .feature-container-row {
+    display: flex;
+    justify-content: center; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .feature-container-row {
+    width: 100%; } }
+
+.feature-heading {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif; }
+  @media (min-width: 992px) {
+    .feature-heading {
+      font-weight: 800;
+      font-size: 2.5rem;
+      color: #6D7278; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .feature-list {
+    margin-top: 2rem; } }
+
+.feature-list-section {
+  display: flex; }
+  .feature-list-section-image {
+    margin: 0 2rem 0 0; }
+  .feature-list-section-content {
+    font-weight: 300;
+    color: #6D7278;
+    font-size: 1.2rem; }

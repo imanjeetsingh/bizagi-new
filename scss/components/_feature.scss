@@ -1,0 +1,62 @@
+.feature {
+    &-row {
+        justify-content: center;
+    }
+
+    &-container {
+        &-row {
+            @include media(desktop) {
+                display: flex;
+                justify-content: center;
+            }
+
+            @include tablet-only {
+                width: 100%;
+            }
+
+        }
+    }
+
+    &-heading {
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+
+        @include media(tablet){
+
+        }   
+         @include media(desktop){
+             font-weight: 800;
+             font-size: 2.5rem;
+             color: #6D7278;
+        }
+        @include media(xldesktop){
+
+        }
+
+
+
+    }
+
+    &-list {
+        @include tablet-only {
+            margin-top: 2rem;
+        }
+
+        &-section {
+            display: flex;
+
+            &-image {
+                margin: 0 2rem 0 0;
+            }
+
+            &-content {
+                font-weight: 300;
+                color: #6D7278;
+                font-size: 1.2rem;
+
+            }
+        }
+    }
+}
