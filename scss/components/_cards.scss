@@ -26,11 +26,6 @@
         font-weight: 800;
         font-size: 20px;
     }
-    &-subtitle{
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-    }
     &-date {
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
@@ -63,6 +58,10 @@
 .bottom-left {
     position: absolute;
     bottom: 0;
+}
+
+.center-allign {
+    justify-content: center;
 }
 
 // Card component CSS ends

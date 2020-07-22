@@ -3842,11 +3842,6 @@ tbody.collapse.show {
   font-weight: 800;
   font-size: 20px; }
 
-.card-subtitle {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 18px; }
-
 .card-date {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -3876,6 +3871,9 @@ tbody.collapse.show {
 .bottom-left {
   position: absolute;
   bottom: 0; }
+
+.center-allign {
+  justify-content: center; }
 
 .cta {
   display: flex;
@@ -3945,21 +3943,21 @@ tbody.collapse.show {
     .banner-bg-row {
       padding: 0; } }
 
-.banner-bg-image {
+.banner-bg-image-image {
   position: absolute;
   width: 100%; }
   @media (max-width: 767px) {
-    .banner-bg-image {
+    .banner-bg-image-image {
       height: 100%; } }
 
-.banner-bg .cta {
+.banner-bg-image .cta {
   background-color: #FFFFFF;
   border: none; }
-  .banner-bg .cta-group {
+  .banner-bg-image .cta-group {
     margin: 1rem 0; }
-  .banner-bg .cta:hover {
+  .banner-bg-image .cta:hover {
     border: none !important; }
-  .banner-bg .cta-content {
+  .banner-bg-image .cta-content {
     color: #009E99; }
 
 .banner-bg .banner-heading {
@@ -4007,6 +4005,3 @@ tbody.collapse.show {
 
 .banner-content-right {
   flex-direction: row-reverse; }
-
-.center-allign {
-  justify-content: center; }
