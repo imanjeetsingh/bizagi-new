@@ -5,6 +5,9 @@
   $bp-md: "(min-width:"+ map-get($grid-breakpoints, md) + ")";
   // desktop
   $bp-lg: "(min-width:"+ map-get($grid-breakpoints, lg) + ")";
+  // large desktop
+  $bp-xl: "(min-width:"+ map-get($grid-breakpoints, xl) + ")";
+
 
   @if $point==mobile {
     @media #{$bp-sm} {
@@ -20,6 +23,12 @@
 
   @else if $point==desktop {
     @media #{$bp-lg} {
+      @content;
+    }
+  }
+
+  @else if $point==xldesktop {
+    @media #{$bp-xl} {
       @content;
     }
   }
