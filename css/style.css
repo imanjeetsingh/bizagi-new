@@ -3705,12 +3705,6 @@ tbody.collapse.show {
   .navbar-collapse {
     border-top: 1px solid #e0e0e0; } }
 
-.affix {
-  position: fixed;
-  top: 0;
-  z-index: 999999;
-  background-color: #ffffff; }
-
 .headerLogo-container {
   height: 5rem;
   display: flex;
@@ -3751,6 +3745,12 @@ tbody.collapse.show {
   .search-container {
     margin-left: 1rem;
     margin-right: 1rem; } }
+
+.home-header.affix {
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  background-color: #ffffff; }
 
 #foot {
   background: #005747;
@@ -3938,27 +3938,21 @@ tbody.collapse.show {
   width: 75%;
   margin: 20px; }
 
-.banner-bg-row {
-  padding-top: 22rem; }
-  @media (max-width: 767px) {
-    .banner-bg-row {
-      padding: 0; } }
-
-.banner-bg-image-image {
+.banner-bg-image {
   position: absolute;
   width: 100%; }
   @media (max-width: 767px) {
-    .banner-bg-image-image {
+    .banner-bg-image {
       height: 100%; } }
 
-.banner-bg-image .cta {
+.banner-bg .cta {
   background-color: #FFFFFF;
   border: none; }
-  .banner-bg-image .cta-group {
+  .banner-bg .cta-group {
     margin: 1rem 0; }
-  .banner-bg-image .cta:hover {
+  .banner-bg .cta:hover {
     border: none !important; }
-  .banner-bg-image .cta-content {
+  .banner-bg .cta-content {
     color: #009E99; }
 
 .banner-bg .banner-heading {
