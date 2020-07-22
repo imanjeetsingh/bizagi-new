@@ -3938,27 +3938,21 @@ tbody.collapse.show {
   width: 75%;
   margin: 20px; }
 
-.banner-bg-row {
-  padding-top: 22rem; }
-  @media (max-width: 767px) {
-    .banner-bg-row {
-      padding: 0; } }
-
-.banner-bg-image-image {
+.banner-bg-image {
   position: absolute;
   width: 100%; }
   @media (max-width: 767px) {
-    .banner-bg-image-image {
+    .banner-bg-image {
       height: 100%; } }
 
-.banner-bg-image .cta {
+.banner-bg .cta {
   background-color: #FFFFFF;
   border: none; }
-  .banner-bg-image .cta-group {
+  .banner-bg .cta-group {
     margin: 1rem 0; }
-  .banner-bg-image .cta:hover {
+  .banner-bg .cta:hover {
     border: none !important; }
-  .banner-bg-image .cta-content {
+  .banner-bg .cta-content {
     color: #009E99; }
 
 .banner-bg .banner-heading {
