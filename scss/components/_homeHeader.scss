@@ -1,0 +1,53 @@
+.affix {
+    .nav {
+        &-link {
+            color: #ffffff !important;
+        }
+        &-links {
+            &-box {
+                .cta {
+                    &-primary {
+                        background-color: #ffffff;
+                        border: none;
+                        .cta {
+                            &-content {
+                                color: #009E99;
+                            }
+                        }
+                        &:hover {
+                            border: none !important;
+                        }
+                    }
+                    &-secondary {
+                        border: solid 2px #ffffff;
+                        &:hover {
+                            background: #ffffff !important;
+                            color: #009E99 !important;
+                        }
+                        &:hover .cta-content {
+                            color: #009E99;
+                        }
+                        .cta {
+                            &-content {
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .multilang {
+        &-container {}
+        &-dropdown {
+            color: #ffffff;
+        }
+    }
+    .search {
+        &-box {
+            &-icon {
+                color: #ffffff;
+            }
+        }
+    }
+}
