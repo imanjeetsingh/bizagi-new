@@ -54,6 +54,7 @@
         font-size: 16px;
         line-height: 22px;
         margin: 5px 0;
+        list-style: none;
     }
     &-link {
         color: #54646f !important;
@@ -83,8 +84,8 @@
         }
     }
     &-list {
-        &-suplist{
-            padding-inline-start:0 !important;
+        &-suplist {
+            padding-inline-start: 0 !important;
         }
         &-sublist {
             list-style: none;
@@ -162,7 +163,7 @@
     }
 }
 
-.affix{
+.affix {
     position: fixed;
     top: 0;
     z-index: 999999;
