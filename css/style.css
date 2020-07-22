@@ -3621,7 +3621,8 @@ tbody.collapse.show {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 22px;
-  margin: 5px 0; }
+  margin: 5px 0;
+  list-style: none; }
 
 .nav-link {
   color: #54646f !important;
