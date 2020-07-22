@@ -1,0 +1,13 @@
+.feature {
+    &-container {}
+    &-box {
+        &-heading {}
+    }
+    &-list {
+        &-box {}
+        &-description {}
+        &-icon {
+            &-box {}
+        }
+    }
+}

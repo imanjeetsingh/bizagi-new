@@ -3746,13 +3746,6 @@ tbody.collapse.show {
     margin-left: 1rem;
     margin-right: 1rem; } }
 
-.home-header.affix {
-  position: fixed;
-  top: 0;
-  z-index: 999999;
-  background-color: #ffffff;
-  background: transparent; }
-
 #foot {
   background: #005747;
   background: -webkit-linear-gradient(top left, #005747 0%, #00aca1 100%);
@@ -4037,6 +4030,13 @@ tbody.collapse.show {
     font-weight: 300;
     color: #6D7278;
     font-size: 1.2rem; }
+
+.home-header.affix {
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  background-color: #ffffff;
+  background: transparent; }
 
 .affix .nav-link {
   color: #ffffff !important; }

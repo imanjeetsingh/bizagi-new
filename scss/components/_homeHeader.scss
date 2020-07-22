@@ -1,3 +1,14 @@
+.home-header {
+    &.affix {
+        position: fixed;
+        top: 0;
+        z-index: 999999;
+        background-color: #ffffff;
+        background: transparent;
+        ;
+    }
+}
+
 .affix {
     .nav {
         &-link {
