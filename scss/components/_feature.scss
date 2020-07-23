@@ -1,62 +1,45 @@
+// Feature component CSS starts
 .feature {
-    &-row {
-        justify-content: center;
-    }
-
-    &-container {
-        &-row {
-            @include media(desktop) {
-                display: flex;
-                justify-content: center;
+    &-container {}
+    &-box {
+        &-heading {
+            font-size: 1.5rem;
+            margin-bottom: 2.5rem;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 800;
+            text-align: center;
+            color: #6D7278;
+            @include media(xldesktop) {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 800;
+                font-size: 2.5rem;
             }
-
-            @include tablet-only {
-                width: 100%;
-            }
-
         }
     }
-
-    &-heading {
-        font-size: 1.5rem;
-        margin-bottom: 2.5rem;
-        text-align: center;
-        font-family: 'Open Sans', sans-serif;
-
-        @include media(tablet){
-
-        }   
-         @include media(desktop){
-             font-weight: 800;
-             font-size: 2.5rem;
-             color: #6D7278;
-        }
-        @include media(xldesktop){
-
-        }
-
-
-
-    }
-
     &-list {
-        @include tablet-only {
-            margin-top: 2rem;
+        display: flex;
+        &-box {
+            margin-left: 1rem;
         }
-
-        &-section {
-            display: flex;
-
-            &-image {
-                margin: 0 2rem 0 0;
-            }
-
-            &-content {
+        &-description {
+            color: #6D7278;
+            font-size: 1rem;
+            font-weight: 300;
+            @include media(xldesktop) {
                 font-weight: 300;
                 color: #6D7278;
-                font-size: 1.2rem;
-
+                font-size: 1.1rem;
+                margin-right: 3.8rem;
+            }
+        }
+        &-icon {
+            &-box {
+                color: #F28C20;
+                margin-right: 2rem;
+                font-size: 2rem;
             }
         }
     }
 }
+
+// Feature component CSS ends

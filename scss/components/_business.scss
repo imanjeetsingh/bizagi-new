@@ -1,3 +1,4 @@
+// Business component CSS starts 
 .business {
     &-container {}
     &-box {
@@ -7,7 +8,7 @@
             text-align: center;
             font-weight: 800;
             color: #6D7278;
-            @include media(xldesktop){                
+            @include media(xldesktop) {
                 font-weight: 800;
                 font-size: 40px;
                 text-align: left;
@@ -29,3 +30,5 @@
         }
     }
 }
+
+// Business component CSS ends
