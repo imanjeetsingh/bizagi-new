@@ -1,10 +1,31 @@
 .business {
     &-container {}
     &-box {
-        &-hwading {}
+        &-heading {
+            font-size: 1.5rem;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            font-weight: 800;
+            color: #6D7278;
+            @include media(xldesktop){                
+                font-weight: 800;
+                font-size: 40px;
+                text-align: left;
+            }
+        }
     }
     &-list {
-        &-box {}
-        &-description {}
+        border-bottom: 1px solid #b1b1b1;
+        margin-bottom: 1rem;
+        padding: 0.9rem 0px 0px 0.9rem;
+        position: relative;
+        &-box {
+            margin: 0 1rem 0 1rem;
+        }
+        &-description {
+            font-size: 1rem;
+            color: #6D7278;
+            font-weight: 300;
+        }
     }
 }
