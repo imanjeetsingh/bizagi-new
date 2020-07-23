@@ -12,23 +12,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
-<script>
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= 200) {
-            $(".home-header").addClass("affix");
-        }
-        if (scroll <= 0) {
-            $(".home-header").removeClass("affix");
-        }
-    });
-</script>
 
 <body>
     <!-- Header component starts -->
     <header>
-        <div class="container-fluid home-header">
+        <div class="container-fluid">
             <div class="row">
                 <!-- Header Logo Component starts -->
                 <div class="col-7 order-2 order-sm-1 col-md-2">
@@ -45,80 +33,80 @@
                     <div class="nav-container">
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-<span class="navbar-toggler-icon"></span>
-</button>
+            <span class="navbar-toggler-icon"></span>
+            </button>
                             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                 <div class="navbar-nav">
-                                    <ul class="nav-item dropdown" ul class="nav-item dropdown">
-                                        <li><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Solutions</a>
+                                    <ul class="nav-item dropdown">
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Solutions</a>
                                             <ul class="nav-list dropdown-menu">
-                                                <li><a href="#" class="dropdown-item d-md-none">Overview</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
                                                 <li class="nav-list-sublist-heading">Industry Solution </li>
-                                                <li><a href="#" class="dropdown-item">Financial Services</a></li>
-                                                <li><a href="#" class="dropdown-item">Manufacturing</a></li>
-                                                <li><a href="#" class="dropdown-item">Public Sector</a></li>
-                                                <li><a href="#" class="dropdown-item">Health Care</a></li>
-                                                <li><a href="#" class="dropdown-item">Education</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Financial Services</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Manufacturing</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Public Sector</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Health Care</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Education</a></li>
                                                 <li class="nav-list-sublist-heading">Business Solutions</li>
-                                                <li><a href="#" class="dropdown-item">Customer Experience</a></li>
-                                                <li><a href="#" class="dropdown-item">Risk and Compliance</a></li>
-                                                <li><a href="#" class="dropdown-item">HR and Employee Engagement</a></li>
-                                                <li><a href="#" class="dropdown-item">Finance</a></li>
-                                                <li><a href="#" class="dropdown-item">IT Services</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Customer Experience</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Risk and Compliance</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">HR and Employee Engagement</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Finance</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">IT Services</a></li>
                                                 <li class="nav-list-sublist-heading">Technology Solutions</li>
-                                                <li><a href="#" class="dropdown-item">Intelligent Process Automation</a></li>
-                                                <li><a href="#" class="dropdown-item">Digital Process Automation</a></li>
-                                                <li><a href="#" class="dropdown-item">Robotic Process Automation</a></li>
-                                                <li><a href="#" class="dropdown-item">Artificial Intelligence</a></li>
-                                                <li><a href="#" class="dropdown-item">SAP</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Intelligent Process Automation</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Digital Process Automation</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Robotic Process Automation</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Artificial Intelligence</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">SAP</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                     <ul class="nav-item dropdown">
-                                        <li><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Platform</a>
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Platform</a>
                                             <ul class="nav-list dropdown-menu">
-                                                <li><a href="#" class="dropdown-item d-md-none">Overview</a></li>
-                                                <li><a href="#" class="dropdown-item">Modeler</a></li>
-                                                <li><a href="#" class="dropdown-item">Studio</a></li>
-                                                <li><a href="#" class="dropdown-item">Automation</a></li>
-                                                <li><a href="#" class="dropdown-item">XChange</a></li>
-                                                <li><a href="#" class="dropdown-item">Platform Capabilities</a></li>
-                                                <li><a href="#" class="dropdown-item">Trust Center</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Modeler</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Studio</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Automation</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">XChange</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Platform Capabilities</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Trust Center</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                     <ul class="nav-item dropdown">
-                                        <li><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Customers</a>
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Customers</a>
                                             <ul class="nav-list dropdown-menu d-md-none">
-                                                <li> <a href="#" class="dropdown-item"> Customers Stories</a></li>
+                                                <li class="nav-list-sublist"> <a href="#" class="dropdown-item"> Customers Stories</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                     <ul class="nav-item dropdown">
-                                        <li><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
                                             <ul class="nav-list dropdown-menu">
-                                                <li><a href="#" class="dropdown-item d-md-none">Overview</a></li>
-                                                <li><a href="#" class="dropdown-item">Bizagi Demos</a></li>
-                                                <li><a href="#" class="dropdown-item">User Guides</a></li>
-                                                <li><a href="#" class="dropdown-item">Blogs</a></li>
-                                                <li><a href="#" class="dropdown-item">Learning</a></li>
-                                                <li><a href="#" class="dropdown-item">Events</a></li>
-                                                <li><a href="#" class="dropdown-item">Newsroom</a></li>
-                                                <li><a href="#" class="dropdown-item">Community</a></li>
-                                                <li><a href="#" class="dropdown-item">Content Center</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Bizagi Demos</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">User Guides</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Blogs</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Learning</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Events</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Newsroom</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Community</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Content Center</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                     <ul class="nav-item dropdown">
-                                        <li><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
                                             <ul class="nav-list dropdown-menu">
-                                                <li><a href="#" class="dropdown-item d-md-none">Overview</a></li>
-                                                <li><a href="#" class="dropdown-item">Our Trust & Promise</a></li>
-                                                <li><a href="#" class="dropdown-item">The Team</a></li>
-                                                <li><a href="#" class="dropdown-item">Partners</a></li>
-                                                <li><a href="#" class="dropdown-item">Carees</a></li>
-                                                <li><a href="#" class="dropdown-item">Offices</a></li>
-                                                <li><a href="#" class="dropdown-item">Contact Us</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Our Trust & Promise</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">The Team</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Partners</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Carees</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Offices</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Contact Us</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -147,13 +135,13 @@
                         <!-- Multi Language Dropdown component starts -->
                         <div class="multilang-container">
                             <select name="lang" class="multilang-dropdown" size="1">
-                            <option class="multilang-dropdown-option" id="#" value="#" selected="selected">EN </option>
-                            <option class="multilang-dropdown-option" id="#" value="#">ES </option>
-                            <option class="multilang-dropdown-option" id="#" value="#">PT </option>
-                            <option class="multilang-dropdown-option" id="#" value="#">DE </option>
-                        </select>
+<option class="multilang-dropdown-option" id="#" value="#" selected="selected">EN </option>
+<option class="multilang-dropdown-option" id="#" value="#">ES </option>
+<option class="multilang-dropdown-option" id="#" value="#">PT </option>
+<option class="multilang-dropdown-option" id="#" value="#">DE </option>
+</select>
                         </div>
-                        <!-- Multi Language Dropdown component starts -->
+                        <!-- Multi Language Dropdown component ends -->
                     </div>
                 </div>
 
@@ -163,7 +151,7 @@
                         <!-- Search Box component starts -->
                         <div class="search-container">
                             <div class="search-box">
-                                <a class="search-box-searchIcon" href="#" role="button">
+                                <a class="search-box-icon" href="#" role="button">
                                     <i class="search-icon fa fa-search"></i>
                                 </a>
                             </div>
@@ -174,32 +162,7 @@
             </div>
         </div>
     </header>
-    <!-- Header component starts -->
-    <!-- banner components starts -->
-    <div class="container-fluid">
-        <div class="row banner-bg">
-            <img class="banner-bg-image" src="./images/banner-home.png" alt="">
-            <div class="container">
-                <div class="row banner-bg-row banner-content-right">
-                    <div class="col-12 col-md-6">
-                        <h1 class="banner-heading">One Platform.<br>Every Process.</h1>
-                        <h2 class="banner-subheading">Empowering people to drive digital transformation</h2>
-                        <div class="cta-group">
-                            <a href="#" class="cta cta-primary">
-                                <span class="cta-content">View Solutions</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-5">
-                        <img class="banner-image" src="./images/mockup-bizagi.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- banner component ends -->
-
+    <!-- Header component ends -->
 </body>
 
 </html>
