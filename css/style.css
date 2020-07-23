@@ -3746,12 +3746,6 @@ tbody.collapse.show {
     margin-left: 1rem;
     margin-right: 1rem; } }
 
-.home-header.affix {
-  position: fixed;
-  top: 0;
-  z-index: 999999;
-  background-color: #ffffff; }
-
 #foot {
   background: #005747;
   background: -webkit-linear-gradient(top left, #005747 0%, #00aca1 100%);
@@ -4036,3 +4030,37 @@ tbody.collapse.show {
     font-weight: 300;
     color: #6D7278;
     font-size: 1.2rem; }
+
+.home-header.affix {
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  background-color: #ffffff;
+  background: transparent; }
+
+.affix .nav-link {
+  color: #ffffff !important; }
+
+.affix .nav-links-box .cta-primary {
+  background-color: #ffffff;
+  border: none; }
+  .affix .nav-links-box .cta-primary .cta-content {
+    color: #009E99; }
+  .affix .nav-links-box .cta-primary:hover {
+    border: none !important; }
+
+.affix .nav-links-box .cta-secondary {
+  border: solid 2px #ffffff; }
+  .affix .nav-links-box .cta-secondary:hover {
+    background: #ffffff !important;
+    color: #009E99 !important; }
+  .affix .nav-links-box .cta-secondary:hover .cta-content {
+    color: #009E99; }
+  .affix .nav-links-box .cta-secondary .cta-content {
+    color: #ffffff; }
+
+.affix .multilang-dropdown {
+  color: #ffffff; }
+
+.affix .search-box-icon {
+  color: #ffffff; }
