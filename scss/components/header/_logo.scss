@@ -3,7 +3,7 @@
     &-container {
         height: 5rem;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         @include media(desktop) {
             justify-content: flex-end;
@@ -14,8 +14,13 @@
     &-image {
         width: auto;
         height: 3.5rem;
-        @include mobile-only {
-            height: 2.8rem;
+    }
+}
+
+@include mobile-only {
+    .headerLogo {
+        &-container {
+            text-align: center;
         }
     }
 }
