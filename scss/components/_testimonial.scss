@@ -1,0 +1,35 @@
+.testimonial {
+    &-container {}
+    &-row{
+        @include media(xldesktop){
+            justify-content: center;
+        }
+    }
+    &-box {
+        &-image {}
+        &-comment {
+            font-size: 1rem;
+            font-weight: 300;
+            color: #6D7278;
+            @include media(xldesktop){
+                font-size: 1.1rem;
+            }
+        }
+        &-name {
+            color: #F38D1E;
+            font-weight: 700;
+            font-size: 1rem;
+            @include media(xldesktop){
+                font-size: 1.1rem;
+            }
+        }
+        &-designation {
+            font-weight: 400;
+            color: #6D7278;
+            font-size: 1rem;
+            @include media(xldesktop){
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
