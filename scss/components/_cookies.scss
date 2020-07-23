@@ -12,8 +12,12 @@
             padding-right: 30px;
             font-size: 14px;
             box-shadow: 2px 4px 13px 0px black;
+            display: block;
             &-content {
                 color: #455869;
+                @include media(xldesktop) {
+                    display: inline-block;
+                }
             }
         }
     }
