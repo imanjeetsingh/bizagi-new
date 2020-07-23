@@ -1,0 +1,30 @@
+.cookie{
+    &-container{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background: white;
+        z-index: 9999;
+        &-row{
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 14px;
+            box-shadow: 2px 4px 13px 0px black;
+            &-content{
+                color: #455869;
+            }
+            
+        }
+    }
+    &-link{
+        color: #F38D1F;
+    }
+    &-close{
+        position: absolute;
+        right: 0;
+        padding-right: 10px;
+        color: #c5c5c5;
+        font-size: 14px;
+    }
+}
