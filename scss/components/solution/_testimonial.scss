@@ -1,7 +1,8 @@
+// Testimonial component CSS starts
 .testimonial {
     &-container {}
-    &-row{
-        @include media(xldesktop){
+    &-row {
+        @include media(xldesktop) {
             justify-content: center;
         }
     }
@@ -11,7 +12,7 @@
             font-size: 1rem;
             font-weight: 300;
             color: #6D7278;
-            @include media(xldesktop){
+            @include media(xldesktop) {
                 font-size: 1.1rem;
             }
         }
@@ -19,7 +20,7 @@
             color: #F38D1E;
             font-weight: 700;
             font-size: 1rem;
-            @include media(xldesktop){
+            @include media(xldesktop) {
                 font-size: 1.1rem;
             }
         }
@@ -27,9 +28,11 @@
             font-weight: 400;
             color: #6D7278;
             font-size: 1rem;
-            @include media(xldesktop){
+            @include media(xldesktop) {
                 font-size: 1.1rem;
             }
         }
     }
 }
+
+// Testimonial component CSS ends

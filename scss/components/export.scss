@@ -2,14 +2,13 @@
 @import "../mixins/export.scss";
 @import "./header/export";
 @import "./footer/export";
+@import "./solution/export";
 @import "cards";
 @import "cta";
 @import "contentSection";
 @import "partner";
 @import "heroBanner";
 // @import "./solutions/export"
-@import "feature";
 @import "homeHeader";
-@import "business";
 @import "cookies";
-@import "testimonial"
+@import "carousel"

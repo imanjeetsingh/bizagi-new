@@ -7,29 +7,32 @@
     <title>Cookies</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
-
-<script>
-    function pushHidePrivacyMessageEvent() {
-        document.getElementById("showCookieMessageDiv").style.display = "none";
-    }
-</script>
 
 <body>
     <!-- Cookie component starts -->
     <div id="showCookieMessageDiv" class="cookie-container">
         <div class="cookie-container-row">
             <span class="cookie-container-row-content">
-                This website uses cookies. By continuing to browse the site, you are agreeing to our </span><a class="cokkie-link" href="/privacy-policy"> privacy policy.</a> <a href="javascript:void(0);" onclick="pushHidePrivacyMessageEvent()"
-                class="cookie-close"><i class="fa fa-times"
-                    aria-hidden="true"></i></a>
+                This website uses cookies. By continuing to browse the site, you are agreeing to our 
+            </span>
+            <a class="cokkie-link" href="/privacy-policy"> privacy policy.</a>
+            <a href="javascript:void(0);" onclick="pushHidePrivacyMessageEvent()" class="cookie-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
         </div>
     </div>
     <!-- Cookie component ends -->
 </body>
+
+<!-- Cookie component script starts -->
+<script>
+    function pushHidePrivacyMessageEvent() {
+        document.getElementById("showCookieMessageDiv").style.display = "none";
+    }
+</script>
+<!-- Cookie component script ends -->
 
 </html>

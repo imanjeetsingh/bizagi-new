@@ -7,29 +7,30 @@
         text-align: center;
         background: white;
         z-index: 9999;
-        &-row {
-            padding-left: 30px;
-            padding-right: 30px;
-            font-size: 14px;
-            box-shadow: 2px 4px 13px 0px black;
-            display: block;
-            &-content {
-                color: #455869;
-                @include media(xldesktop) {
-                    display: inline-block;
-                }
+    }
+    &-row {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 16px;
+        box-shadow: 2px 4px 13px 0px black;
+        display: block;
+        height: 2.1rem;
+        &-content {
+            color: #455869;
+            @include media(xldesktop) {
+                display: inline-block;
             }
         }
     }
     &-link {
         color: #F38D1F;
     }
-    &-close {
+    &-icon {
         position: absolute;
         right: 0;
         padding-right: 10px;
         color: #c5c5c5;
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 

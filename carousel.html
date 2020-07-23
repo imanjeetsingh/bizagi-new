@@ -6,58 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carousel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
-
+    <link rel="stylesheet" href="./css/style.css">
 
 
 </head>
-<style>
-    .carousel-wrap {
-        margin: 90px auto;
-        padding: 0 5%;
-        width: 80%;
-        position: relative;
-    }
-    /* fix blank or flashing items on carousel */
-    
-    .owl-carousel .item {
-        position: relative;
-        z-index: 100;
-        -webkit-backface-visibility: hidden;
-    }
-    /* end fix */
-    
-    .owl-nav>div {
-        margin-top: -26px;
-        position: absolute;
-        top: 50%;
-        color: #cdcbcd;
-    }
-    
-    .owl-nav i {
-        font-size: 52px;
-    }
-    
-    .owl-nav .owl-prev {
-        left: -30px;
-    }
-    
-    .owl-nav .owl-next {
-        right: -30px;
-    }
-    
-    .owl-item {
-        margin-top: 2rem;
-        margin-right: 2rem;
-    }
-    
-    .partner-logo-image {
-        width: 70% !important;
-    }
-</style>
 
 <body>
+    <!-- Carousel component starts -->
     <div class="carousel-wrap">
         <div class="owl-carousel">
             <div class="item partner-logo">
@@ -78,32 +34,14 @@
             <div class="item partner-logo">
                 <img class="partner-logo-image" src="./images/logo6.png" alt="SAP logo">
             </div>
-            <div class="item partner-logo">
-                <img class="partner-logo-image" src="./images/logo1.png" alt="Tableau logo">
-            </div>
-            <div class="item partner-logo">
-                <img class="partner-logo-image" src="./images/logo2.png" alt="Automation Anywhere logo">
-            </div>
-            <div class="item partner-logo">
-                <img class="partner-logo-image" src="./images/logo3.png" alt="Blue Prism logo">
-            </div>
-            <div class="item partner-logo">
-                <img class="partner-logo-image" src="./images/logo4.png" alt="UiPath logo">
-            </div>
-            <div class="item partner-logo">
-                <img class="partner-logo-image" src="./images/logo5.png" alt="Power BI logo">
-            </div>
-            <div class="item partner-logo">
-                <img class="partner-logo-image" src="./images/logo6.png" alt="SAP logo">
-            </div>
         </div>
     </div>
+    <!-- Carousel component ends -->
 </body>
 
-
+<!-- Carousel component script starts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
-<script src="https://use.fontawesome.com/826a7e3dce.js"></script>
 <script>
     $('.owl-carousel').owlCarousel({
         loop: true,
@@ -115,7 +53,6 @@
         ],
         autoplay: false,
         autoplayHoverPause: false,
-        items: 3,
         responsive: {
             0: {
                 items: 1
@@ -124,10 +61,11 @@
                 items: 3
             },
             1000: {
-                items: 5
+                items: 6
             }
         }
     })
 </script>
+<!-- Carousel component script ends -->
 
 </html>

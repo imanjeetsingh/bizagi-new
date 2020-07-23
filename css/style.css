@@ -3996,41 +3996,37 @@ tbody.collapse.show {
 .banner-content-right {
   flex-direction: row-reverse; }
 
-.feature-row {
-  justify-content: center; }
-
-@media (min-width: 992px) {
-  .feature-container-row {
-    display: flex;
-    justify-content: center; } }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .feature-container-row {
-    width: 100%; } }
-
-.feature-heading {
+.feature-box-heading {
   font-size: 1.5rem;
   margin-bottom: 2.5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
   text-align: center;
-  font-family: 'Open Sans', sans-serif; }
-  @media (min-width: 992px) {
-    .feature-heading {
+  color: #6D7278; }
+  @media (min-width: 1200px) {
+    .feature-box-heading {
+      font-family: 'Open Sans', sans-serif;
       font-weight: 800;
-      font-size: 2.5rem;
-      color: #6D7278; } }
+      font-size: 2.5rem; } }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .feature-list {
-    margin-top: 2rem; } }
-
-.feature-list-section {
+.feature-list {
   display: flex; }
-  .feature-list-section-image {
-    margin: 0 2rem 0 0; }
-  .feature-list-section-content {
-    font-weight: 300;
+  .feature-list-box {
+    margin-left: 1rem; }
+  .feature-list-description {
     color: #6D7278;
-    font-size: 1.2rem; }
+    font-size: 1rem;
+    font-weight: 300; }
+    @media (min-width: 1200px) {
+      .feature-list-description {
+        font-weight: 300;
+        color: #6D7278;
+        font-size: 1.1rem;
+        margin-right: 3.8rem; } }
+  .feature-list-icon-box {
+    color: #F28C20;
+    margin-right: 2rem;
+    font-size: 2rem; }
 
 .home-header.affix {
   position: fixed;
@@ -4066,38 +4062,6 @@ tbody.collapse.show {
 .affix .search-box-icon {
   color: #ffffff; }
 
-.feature-box-heading {
-  font-size: 1.5rem;
-  margin-bottom: 2.5rem;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
-  text-align: center;
-  color: #6D7278; }
-  @media (min-width: 1200px) {
-    .feature-box-heading {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 800;
-      font-size: 2.5rem; } }
-
-.feature-list {
-  display: flex; }
-  .feature-list-box {
-    margin-left: 1rem; }
-  .feature-list-description {
-    color: #6D7278;
-    font-size: 1rem;
-    font-weight: 300; }
-    @media (min-width: 1200px) {
-      .feature-list-description {
-        font-weight: 300;
-        color: #6D7278;
-        font-size: 1.1rem;
-        margin-right: 3.8rem; } }
-  .feature-list-icon-box {
-    color: #F28C20;
-    margin-right: 2rem;
-    font-size: 2rem; }
-
 .business-box-heading {
   font-size: 1.5rem;
   margin-bottom: 2.5rem;
@@ -4129,27 +4093,29 @@ tbody.collapse.show {
   text-align: center;
   background: white;
   z-index: 9999; }
-  .cookie-container-row {
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 14px;
-    box-shadow: 2px 4px 13px 0px black;
-    display: block; }
-    .cookie-container-row-content {
-      color: #455869; }
-      @media (min-width: 1200px) {
-        .cookie-container-row-content {
-          display: inline-block; } }
+
+.cookie-row {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 16px;
+  box-shadow: 2px 4px 13px 0px black;
+  display: block;
+  height: 2.1rem; }
+  .cookie-row-content {
+    color: #455869; }
+    @media (min-width: 1200px) {
+      .cookie-row-content {
+        display: inline-block; } }
 
 .cookie-link {
   color: #F38D1F; }
 
-.cookie-close {
+.cookie-icon {
   position: absolute;
   right: 0;
   padding-right: 10px;
   color: #c5c5c5;
-  font-size: 14px; }
+  font-size: 16px; }
 
 @media (min-width: 1200px) {
   .testimonial-row {
@@ -4178,3 +4144,39 @@ tbody.collapse.show {
   @media (min-width: 1200px) {
     .testimonial-box-designation {
       font-size: 1.1rem; } }
+
+.carousel-wrap {
+  margin: 90px auto;
+  padding: 0 5%;
+  width: 80%;
+  position: relative; }
+
+.owl-carousel .item {
+  position: relative;
+  z-index: 100;
+  -webkit-backface-visibility: hidden; }
+
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd; }
+
+.owl-nav i {
+  font-size: 52px; }
+
+.owl-nav .owl-prev {
+  left: -30px; }
+
+.owl-nav .owl-next {
+  right: -30px; }
+
+.owl-item {
+  margin-top: 2rem;
+  margin-right: 2rem; }
+
+.partner-logo-image {
+  max-width: 100%; }
+
+.partner-logo {
+  width: 70%; }
