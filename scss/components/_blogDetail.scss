@@ -1,0 +1,15 @@
+.blogDetail {
+    &-container {}
+    &-article {
+        &-box {}
+        &-image {}
+        &-heading {}
+        &-by {}
+        &-name {}
+        &-date {}
+        &-description {}
+        &-tag {
+            &-heading {}
+        }
+    }
+}

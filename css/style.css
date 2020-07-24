@@ -3751,7 +3751,8 @@ tbody.collapse.show {
   background: #005747;
   background: -webkit-linear-gradient(top left, #005747 0%, #00aca1 100%);
   background: -o-linear-gradient(to bottom right, #005747 0%, #00aca1 100%);
-  background: linear-gradient(to bottom right, #005747 0%, #00aca1 100%); }
+  background: linear-gradient(to bottom right, #005747 0%, #00aca1 100%);
+  margin-top: 4.5rem; }
 
 .footer-inner {
   font-weight: 300;
@@ -4019,10 +4020,14 @@ tbody.collapse.show {
 
 .banner-bg-image {
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
   @media (max-width: 767px) {
     .banner-bg-image {
-      height: 100%; } }
+      height: 82%; } }
+  @media (min-width: 768px) {
+    .banner-bg-image {
+      height: 50%; } }
 
 .banner-bg .cta {
   background-color: #FFFFFF;
@@ -4154,7 +4159,11 @@ tbody.collapse.show {
   right: 0;
   padding-right: 1rem;
   color: #c5c5c5;
+<<<<<<< HEAD
   font-size: 1rem; }
+=======
+  font-size: 16px; }
+>>>>>>> aman
 
 .carousel-wrap {
   margin: 90px auto;
@@ -4191,3 +4200,16 @@ tbody.collapse.show {
 
 .partner-logo {
   width: 70%; }
+
+.heading {
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #6D7278;
+  text-align: center;
+  font-size: 1.5rem; }
+  @media (min-width: 1200px) {
+    .heading {
+      margin-top: 4.5rem;
+      font-size: 2.5rem; } }
