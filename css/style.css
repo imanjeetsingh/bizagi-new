@@ -4159,11 +4159,7 @@ tbody.collapse.show {
   right: 0;
   padding-right: 1rem;
   color: #c5c5c5;
-<<<<<<< HEAD
   font-size: 1rem; }
-=======
-  font-size: 16px; }
->>>>>>> aman
 
 .carousel-wrap {
   margin: 90px auto;
@@ -4200,6 +4196,49 @@ tbody.collapse.show {
 
 .partner-logo {
   width: 70%; }
+
+.blogDetail-article-image {
+  width: 100%;
+  height: auto; }
+
+.blogDetail-article-heading {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  color: #6d7278;
+  text-align: center;
+  font-size: 1.5rem; }
+  @media (min-width: 1200px) {
+    .blogDetail-article-heading {
+      font-size: 2.5rem; } }
+
+.blogDetail-article-by {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #6d7278;
+  font-family: "Open Sans", sans-serif; }
+
+.blogDetail-article-date {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #6d7278;
+  font-family: "Open Sans", sans-serif; }
+
+.blogDetail-article-description {
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #6d7278;
+  font-family: "Open Sans", sans-serif; }
+
+.blogDetail-article-tag-heading {
+  display: contents;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  color: #6d7278;
+  font-size: 1.5rem; }
+  @media (min-width: 1200px) {
+    .blogDetail-article-tag-heading {
+      font-size: 2.5rem; } }
 
 .heading {
   margin-bottom: 2.5rem;
