@@ -4311,4 +4311,9 @@ tbody.collapse.show {
     text-align: center; }
   .social-icon-link {
     padding: 0.2rem; }
+<<<<<<< HEAD
+>>>>>>> iman
+=======
+    .social-icon-link:hover {
+      text-decoration: none; }
 >>>>>>> iman
