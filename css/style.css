@@ -4265,3 +4265,48 @@ tbody.collapse.show {
     padding: 0.2rem; }
     .social-icon-link:hover {
       text-decoration: none; }
+
+.owl-carousel {
+  padding: 10px; }
+
+.owl-prev {
+  margin: 0.5rem; }
+
+.owl-next {
+  margin: 0.5rem; }
+
+.flex-container {
+  display: block;
+  flex-wrap: nowrap; }
+  @media (min-width: 992px) {
+    .flex-container {
+      display: flex; } }
+
+.carousel-article-box {
+  width: 20rem;
+  margin: 10px;
+  font-size: 30px; }
+
+.carousel-article-image-box {
+  position: relative; }
+
+.carousel-article-image-tag {
+  z-index: 1;
+  padding: 0.2rem 1.2rem;
+  background: #F38D1E;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.8rem; }
+
+.carousel-article-heading {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  color: #6d7278;
+  font-size: 1.5rem; }
+
+.carousel-cta {
+  color: #000000; }
+  .carousel-cta-active {
+    background-color: #F28C20;
+    color: #ffffff !important;
+    border: solid 2px #F28C20; }
