@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="carousel.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+
+</head>
+
+<style>
+    .owl-carousel .item {
+        background: #4DC7A0;
+        padding: 1rem;
+    }
+    
+    body {
+        padding: 10px;
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: DodgerBlue;
+    }
+    
+    .flex-container>div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <!-- Carousel component starts -->
+    <section>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="flex-container">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+                <div class="flex-container">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="flex-container">
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                </div>
+                <div class="flex-container">
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="owl-nav">
+            <div class="owl-prev">preaav</div>
+            <div class="owl-next">next</div>
+        </div>
+    </section>
+    <!-- Carousel component ends -->
+</body>
+
+<!-- Carousel component script starts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="carousel.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        items: 1,
+        nav: true
+    })
+</script>
+<!-- Carousel component script ends -->
+
+</html>
