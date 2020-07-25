@@ -9,6 +9,9 @@
         }
         &-link {
             padding: 0.2rem;
+              @include hover {
+                text-decoration: none;
+  }
         }
     }
 }
