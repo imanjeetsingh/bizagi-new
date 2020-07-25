@@ -3808,13 +3808,6 @@ tbody.collapse.show {
     text-decoration: none;
     color: #FFFFFF; }
 
-.social-icon {
-  text-align: center;
-  padding-top: 1rem; }
-  .social-icon-image {
-    height: 32px;
-    width: 32px; }
-
 .business-box-heading {
   font-size: 1.5rem;
   margin-bottom: 2.5rem;
@@ -4198,6 +4191,12 @@ tbody.collapse.show {
 .partner-logo {
   width: 70%; }
 
+.blogDetail-article-box {
+  padding-left: 10%;
+  padding-right: 10%; }
+  .blogDetail-article-box .social-icon-box {
+    text-align: left; }
+
 .blogDetail-article-image {
   width: 100%;
   height: auto; }
@@ -4206,7 +4205,6 @@ tbody.collapse.show {
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   color: #6d7278;
-  text-align: center;
   font-size: 1.5rem; }
   @media (min-width: 1200px) {
     .blogDetail-article-heading {
@@ -4217,6 +4215,9 @@ tbody.collapse.show {
   font-weight: 300;
   color: #6d7278;
   font-family: "Open Sans", sans-serif; }
+
+.blogDetail-article-name {
+  font-weight: bold; }
 
 .blogDetail-article-date {
   font-size: 1rem;
@@ -4255,7 +4256,10 @@ tbody.collapse.show {
       font-size: 2.5rem; } }
 
 .social-icon {
-  width: 2.4rem;
+  width: 2rem;
   height: auto; }
   .social-icon-box {
-    font-size: 3rem; }
+    font-size: 3rem;
+    text-align: center; }
+  .social-icon-link {
+    padding: 0.2rem; }

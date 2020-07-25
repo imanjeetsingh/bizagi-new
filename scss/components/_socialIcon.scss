@@ -1,11 +1,14 @@
 .social {
     &-icon {
-        width: 2.4rem;
+        width: 2rem;
         height: auto;
         &-box {
             font-size: 3rem;
+            text-align: center;
             // background-color: blueviolet;
         }
-        &-link {}
+        &-link {
+            padding: 0.2rem;
+        }
     }
 }
