@@ -4259,12 +4259,17 @@ tbody.collapse.show {
   width: 2rem;
   height: auto; }
   .social-icon-box {
+<<<<<<< HEAD
     font-size: 3rem;
     text-align: center; }
   .social-icon-link {
     padding: 0.2rem; }
     .social-icon-link:hover {
       text-decoration: none; }
+=======
+<<<<<<< HEAD
+    font-size: 3rem; }
+>>>>>>> aman
 
 .owl-carousel {
   padding: 10px; }
@@ -4310,3 +4315,12 @@ tbody.collapse.show {
     background-color: #F28C20;
     color: #ffffff !important;
     border: solid 2px #F28C20; }
+<<<<<<< HEAD
+=======
+=======
+    font-size: 3rem;
+    text-align: center; }
+  .social-icon-link {
+    padding: 0.2rem; }
+>>>>>>> iman
+>>>>>>> aman
