@@ -4125,12 +4125,13 @@ tbody.collapse.show {
   width: 100%;
   text-align: center;
   background: white;
-  z-index: 9999; }
+  z-index: 9999;
+  box-shadow: 2px 4px 13px 0px black; }
 
 .cookie-row {
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 16px;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  font-size: 1rem;
   box-shadow: 2px 4px 13px 0px black;
   display: block;
   height: 2.1rem; }
@@ -4138,17 +4139,27 @@ tbody.collapse.show {
     color: #455869; }
     @media (min-width: 1200px) {
       .cookie-row-content {
-        display: inline-block; } }
+        display: contents;
+        padding: 0;
+        margin: 0; } }
+    @media (min-width: 768px) {
+      .cookie-row-content {
+        padding: 0;
+        margin: 0; } }
 
 .cookie-link {
-  color: #F38D1F; }
+  color: #F38D1F;
+  margin-left: 1rem; }
+  @media (min-width: 768px) {
+    .cookie-link {
+      margin: 0; } }
 
-.cookie-icon {
+.cookie-close {
   position: absolute;
   right: 0;
-  padding-right: 10px;
+  padding-right: 1rem;
   color: #c5c5c5;
-  font-size: 16px; }
+  font-size: 1rem; }
 
 .carousel-wrap {
   margin: 90px auto;
@@ -4185,6 +4196,49 @@ tbody.collapse.show {
 
 .partner-logo {
   width: 70%; }
+
+.blogDetail-article-image {
+  width: 100%;
+  height: auto; }
+
+.blogDetail-article-heading {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  color: #6d7278;
+  text-align: center;
+  font-size: 1.5rem; }
+  @media (min-width: 1200px) {
+    .blogDetail-article-heading {
+      font-size: 2.5rem; } }
+
+.blogDetail-article-by {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #6d7278;
+  font-family: "Open Sans", sans-serif; }
+
+.blogDetail-article-date {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #6d7278;
+  font-family: "Open Sans", sans-serif; }
+
+.blogDetail-article-description {
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #6d7278;
+  font-family: "Open Sans", sans-serif; }
+
+.blogDetail-article-tag-heading {
+  display: contents;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  color: #6d7278;
+  font-size: 1.5rem; }
+  @media (min-width: 1200px) {
+    .blogDetail-article-tag-heading {
+      font-size: 2.5rem; } }
 
 .heading {
   margin-bottom: 2.5rem;
