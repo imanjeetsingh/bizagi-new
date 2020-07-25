@@ -1,60 +1,66 @@
+// Blog Detail component CSS starts
 .blogDetail {
-  &-container {
-  }
-  &-article {
-    &-box {
-      padding-left: 10%;
-      padding-right: 10%;
-      .social-icon-box{
-        text-align: left;
-      }
-    }
-    &-image {
-      width: 100%;
-      height: auto;
-    }
-    &-heading {
-      font-family: "Open Sans", sans-serif;
-      font-weight: 800;
-      color: #6d7278;
-      font-size: 1.5rem;
-      @include media(xldesktop) {
-        font-size: 2.5rem;
-      }
-    }
-    &-by {
-      font-size: 1rem;
-      font-weight: 300;
-      color: #6d7278;
-      font-family: "Open Sans", sans-serif;
-    }
-    &-name {
-      font-weight: bold;
-    }
-    &-date {
-      font-size: 1rem;
-      font-weight: 300;
-      color: #6d7278;
-      font-family: "Open Sans", sans-serif;
-    }
-    &-description {
-      text-align: justify;
-      font-size: 1rem;
-      font-weight: 300;
-      color: #6d7278;
-      font-family: "Open Sans", sans-serif;
-    }
-    &-tag {
-      &-heading {
-        display: contents;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 800;
-        color: #6d7278;
-        font-size: 1.5rem;
-        @include media(xldesktop) {
-          font-size: 2.5rem;
+    &-container {}
+    &-article {
+        &-box {
+            padding-left: 10%;
+            padding-right: 10%;
+            .social-icon-box {
+                text-align: left;
+            }
         }
-      }
+        &-image {
+            width: 100%;
+            height: auto;
+        }
+        &-heading {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 800;
+            color: #6d7278;
+            font-size: 1.5rem;
+            @include media(xldesktop) {
+                font-size: 2.5rem;
+            }
+        }
+        &-by {
+            font-size: 1rem;
+            font-weight: 300;
+            color: #6d7278;
+            font-family: "Open Sans", sans-serif;
+        }
+        &-name {
+            font-weight: bold;
+            font-size: 1rem;
+            font-weight: 300;
+            color: #6d7278;
+            font-family: "Open Sans", sans-serif;
+        }
+        &-date {
+            font-size: 1rem;
+            font-weight: 300;
+            color: #6d7278;
+            font-family: "Open Sans", sans-serif;
+        }
+        &-description {
+            text-align: justify;
+            font-size: 1rem;
+            font-weight: 300;
+            color: #6d7278;
+            font-family: "Open Sans", sans-serif;
+        }
+        &-tag {
+            &-heading {
+                display: contents;
+                font-family: "Open Sans", sans-serif;
+                font-weight: 800;
+                color: #6d7278;
+                font-size: 1.5rem;
+                @include media(xldesktop) {
+                    font-size: 2.5rem;
+                }
+            }
+        }
     }
-  }
 }
+
+// Blog Detail component CSS ends

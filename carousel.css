@@ -1,8 +1,4 @@
-/**
- * Owl Carousel v2.1.1
- * Copyright 2013-2016 David Deutsch
- * Licensed under MIT (https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE)
- */
+/* Carousel CSS starts */
 
 .owl-carousel,
 .owl-carousel .owl-item {
@@ -207,3 +203,6 @@
     height: 100%;
     width: 100%
 }
+
+
+/* Carousel CSS ends */

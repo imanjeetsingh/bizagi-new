@@ -4217,7 +4217,11 @@ tbody.collapse.show {
   font-family: "Open Sans", sans-serif; }
 
 .blogDetail-article-name {
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #6d7278;
+  font-family: "Open Sans", sans-serif; }
 
 .blogDetail-article-date {
   font-size: 1rem;
@@ -4286,6 +4290,8 @@ tbody.collapse.show {
   width: 20rem;
   margin: 10px;
   font-size: 30px; }
+  .carousel-article-box:hover {
+    text-decoration: none; }
 
 .carousel-article-image-box {
   position: relative; }
