@@ -4260,7 +4260,16 @@ tbody.collapse.show {
   height: auto; }
   .social-icon-box {
 <<<<<<< HEAD
+<<<<<<< HEAD
     font-size: 3rem; }
+=======
+    font-size: 3rem;
+    text-align: center; }
+  .social-icon-link {
+    padding: 0.2rem; }
+    .social-icon-link:hover {
+      text-decoration: none; }
+>>>>>>> iman
 
 .owl-carousel {
   padding: 10px; }
@@ -4306,6 +4315,7 @@ tbody.collapse.show {
     background-color: #F28C20;
     color: #ffffff !important;
     border: solid 2px #F28C20; }
+<<<<<<< HEAD
 =======
     font-size: 3rem;
     text-align: center; }
@@ -4316,4 +4326,6 @@ tbody.collapse.show {
 =======
     .social-icon-link:hover {
       text-decoration: none; }
+>>>>>>> iman
+=======
 >>>>>>> iman
