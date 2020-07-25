@@ -9,7 +9,7 @@
         }
         &-link {
             padding: 0.2rem;
-            @include hover {
+            &:hover {
                 text-decoration: none;
             }
         }
