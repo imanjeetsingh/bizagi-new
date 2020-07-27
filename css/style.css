@@ -3603,7 +3603,7 @@ tbody.collapse.show {
       overflow-y: auto;
       overflow-x: hidden;
       left: 0;
-      top: 7rem;
+      top: 6rem;
       z-index: 10;
       background: white; } }
 
@@ -3619,18 +3619,18 @@ tbody.collapse.show {
 
 .nav-item {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  margin: 5px 0;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  margin: 0.313rem 0;
   list-style: none;
   padding-inline-start: 0; }
 
 .nav-link {
   color: #54646f !important;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  margin: 0 3px;
-  padding: 8px 10px !important;
+  margin: 0 0.188rem;
+  padding: 0.5rem 0.625 !important;
   text-decoration: none;
   position: relative; }
   .nav-link::before {
@@ -3654,10 +3654,10 @@ tbody.collapse.show {
 .nav-list-sublist {
   list-style: none; }
   .nav-list-sublist-heading {
-    margin-left: 10px;
+    margin-left: 0.625rem;
     color: #54645B;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 0.813rem;
     font-family: 'Open Sans', sans-serif; }
 
 .nav-links-box {
@@ -3678,15 +3678,15 @@ tbody.collapse.show {
 
 .dropdown-menu {
   box-shadow: none;
-  border: 1px solid #efefef;
+  border: 0.063rem solid #efefef;
   padding: 0;
-  margin-top: 21px; }
+  margin-top: 1.313rem; }
 
 .dropdown-item {
   font-weight: 300;
   line-height: 1.42857;
-  padding: 4px 25px 4px 15px;
-  font-size: 13px;
+  padding: 0.25rem 1.563rem 0.25rem 1.563rem;
+  font-size: 0.813rem;
   white-space: nowrap;
   color: #54645B; }
   .dropdown-item:hover {
@@ -3703,7 +3703,7 @@ tbody.collapse.show {
   .nav-item {
     margin: 0; }
   .navbar-collapse {
-    border-top: 1px solid #e0e0e0; } }
+    border-top: 0.063rem solid #e0e0e0; } }
 
 .headerLogo-container {
   height: 5rem;
@@ -4011,6 +4011,10 @@ tbody.collapse.show {
   width: 75%;
   margin: 20px; }
 
+@media (min-width: 1200px) {
+  .banner-bg-row {
+    padding-top: 6rem; } }
+
 .banner-bg-image {
   position: absolute;
   width: 100%;
@@ -4020,7 +4024,7 @@ tbody.collapse.show {
       height: 82%; } }
   @media (min-width: 768px) {
     .banner-bg-image {
-      height: 50%; } }
+      height: 60%; } }
 
 .banner-bg .cta {
   background-color: #FFFFFF;
@@ -4192,8 +4196,8 @@ tbody.collapse.show {
   width: 70%; }
 
 .blogDetail-article-box {
-  padding-left: 10%;
-  padding-right: 10%; }
+  padding-left: 2vw;
+  padding-right: 2vw; }
   .blogDetail-article-box .social-icon-box {
     text-align: left; }
 
@@ -4248,7 +4252,7 @@ tbody.collapse.show {
 
 .heading {
   margin-bottom: 2.5rem;
-  margin-top: 2.5rem;
+  margin-top: 4.5rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   color: #6D7278;
@@ -4269,6 +4273,10 @@ tbody.collapse.show {
     padding: 0.2rem; }
     .social-icon-link:hover {
       text-decoration: none; }
+
+.social-icon-footer {
+  color: #ffffff;
+  font-size: 2rem !important; }
 
 .owl-carousel {
   padding: 10px; }

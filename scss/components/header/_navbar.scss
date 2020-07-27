@@ -31,7 +31,7 @@
             overflow-y: auto;
             overflow-x: hidden;
             left: 0;
-            top: 7rem;
+            top: 6rem;
             z-index: 10;
             background: white;
         }
@@ -51,18 +51,18 @@
     }
     &-item {
         font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-        line-height: 22px;
-        margin: 5px 0;
+        font-size: 1rem;
+        line-height: 1.375rem;
+        margin: 0.313rem 0;
         list-style: none;
         padding-inline-start: 0;
     }
     &-link {
         color: #54646f !important;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 400;
-        margin: 0 3px;
-        padding: 8px 10px !important;
+        margin: 0 0.188rem;
+        padding: 0.5rem 0.625 !important;
         text-decoration: none;
         position: relative;
         &::before {
@@ -91,10 +91,10 @@
         &-sublist {
             list-style: none;
             &-heading {
-                margin-left: 10px;
+                margin-left: 0.625rem;
                 color: #54645B;
                 font-weight: 600;
-                font-size: 13px;
+                font-size: 0.813rem;
                 font-family: 'Open Sans', sans-serif;
             }
         }
@@ -123,15 +123,15 @@
     }
     &-menu {
         box-shadow: none;
-        border: 1px solid #efefef;
+        border: 0.063rem solid #efefef;
         padding: 0;
-        margin-top: 21px;
+        margin-top: 1.313rem;
     }
     &-item {
         font-weight: 300;
         line-height: 1.42857;
-        padding: 4px 25px 4px 15px;
-        font-size: 13px;
+        padding: 0.25rem 1.563rem 0.25rem 1.563rem;
+        font-size: 0.813rem;
         white-space: nowrap;
         color: #54645B;
         &:hover {
@@ -159,7 +159,7 @@
     }
     .navbar {
         &-collapse {
-            border-top: 1px solid #e0e0e0;
+            border-top: 0.063rem solid #e0e0e0;
         }
     }
 }

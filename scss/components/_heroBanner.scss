@@ -1,7 +1,11 @@
 // Banner component CSS starts
 .banner {
     &-bg {
-        &-row {}
+        &-row {
+            @include media(xldesktop){
+                padding-top: 6rem;
+            }
+        }
         &-image {
             position: absolute;
             width: 100%;
@@ -10,7 +14,7 @@
                 height: 82%;
             }
             @include media (tablet) {
-                height: 50%;
+                height: 60%;
             }
         }
         .cta {
