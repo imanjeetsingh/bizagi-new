@@ -12,11 +12,6 @@
 
 
 </head>
-<style>
-    .owl-carousel .single {
-        transform: translate3d(0px, 0px, 0px) !important;
-    }
-</style>
 
 <body>
     <!-- Carousel component starts -->
@@ -34,65 +29,24 @@
             </div>
             <div class="item partner-logo">
                 <a href="#" target="">
-                    <img class="partner-logo-image" src="./images/logo1.png" alt="Tableau logo">
+                    <img class="partner-logo-image" src="./images/logo3.png" alt="Tableau logo">
                 </a>
             </div>
             <div class="item partner-logo">
                 <a href="#" target="">
-                    <img class="partner-logo-image" src="./images/logo2.png" alt="Automation Anywhere logo">
+                    <img class="partner-logo-image" src="./images/logo4.png" alt="Automation Anywhere logo">
                 </a>
             </div>
             <div class="item partner-logo">
                 <a href="#" target="">
-                    <img class="partner-logo-image" src="./images/logo2.png" alt="Automation Anywhere logo">
-                </a>
-            </div>
-            <!-- <div class="item partner-logo">
-                <a href="#" target="">
-                    <img class="partner-logo-image" src="./images/logo3.png" alt="Blue Prism logo">
+                    <img class="partner-logo-image" src="./images/logo5.png" alt="Automation Anywhere logo">
                 </a>
             </div>
             <div class="item partner-logo">
                 <a href="#" target="">
-                    <img class="partner-logo-image" src="./images/logo4.png" alt="UiPath logo">
+                    <img class="partner-logo-image" src="./images/logo6.png" alt="Automation Anywhere logo">
                 </a>
             </div>
-            <div class="item partner-logo">
-                <a href="#" target="">
-                    <img class="partner-logo-image" src="./images/logo5.png" alt="Power BI logo">
-                </a>
-            </div>
-            <div class="item partner-logo">
-                <a href="#" target="">
-                    <img class="partner-logo-image" src="./images/logo6.png" alt="SAP logo">
-                </a>
-            </div>
-            <div class="item partner-logo">
-                <a href="#" target="">
-                    <img class="partner-logo-image" src="./images/logo2.png" alt="Automation Anywhere logo">
-                </a>
-            </div>
-            <div class="item partner-logo">
-                <a href="#" target="">
-                    <img class="partner-logo-image" src="./images/logo3.png" alt="Blue Prism logo">
-                </a>
-            </div>
-            <div class="item partner-logo">
-                <a href="#" target="">
-                    <img class="partner-logo-image" src="./images/logo4.png" alt="UiPath logo">
-                </a>
-            </div>
-            <div class="item partner-logo">
-                <a href="#" target="">
-                    <img class="partner-logo-image" src="./images/logo5.png" alt="Power BI logo">
-                </a>
-            </div>
-            <div class="item partner-logo">
-                <a href="#" target="">
-                    <img class="partner-logo-image" src="./images/logo6.png" alt="SAP logo">
-                </a>
-            </div> -->
-
         </div>
     </div>
     <!-- Carousel component ends -->
@@ -106,16 +60,12 @@
         loop: false,
         margin: 10,
         nav: true,
-        //callback: true,
         navText: [
             "<i class='fa fa-caret-left'></i>",
             "<i class='fa fa-caret-right'></i>"
         ],
         autoplay: false,
         autoplayHoverPause: false,
-        // center: true,
-        // onInitialized: callback,
-        // loop: $(this).find('.owl-item').length >= 1 ? false : true,
         responsive: {
             0: {
                 items: 1
@@ -124,21 +74,18 @@
                 items: 3
             },
             1000: {
-                items: 6,
+                items: 5,
                 nav: true,
-                // loop: $(this).find('.owl-carousel .item').size() > 1
             }
         }
-
-
     }
     var $carousel = $('.owl-carousel');
     var item_count = $carousel.find('.item').length;
     console.log(event);
     if (item_count > 5)
         owl_constant.loop = true
-    else
-        owl_constant.center = true
+        // else
+        //     owl_constant.center = true
     $carousel.owlCarousel(owl_constant)
 </script>
 <!-- Carousel component script ends -->

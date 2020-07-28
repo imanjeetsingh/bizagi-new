@@ -1,8 +1,8 @@
 // Card component CSS starts
 .card {
-    &-component{
+    &-component {
         margin-top: 6rem;
-        @include media(xldesktop){
+        @include media(xldesktop) {
             margin-top: 0;
         }
     }
@@ -12,8 +12,8 @@
         box-shadow: 0 0 11px 0 rgba(166, 166, 166, 0.50);
         display: inline-block;
         position: relative;
-        margin: 1.2rem auto;
-        height: calc(100% + 1rem) !important;
+        margin: 2rem auto;
+        height: calc(100% - 1rem) !important;
     }
     &-image-box {
         position: relative;

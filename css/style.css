@@ -3907,8 +3907,8 @@ tbody.collapse.show {
   box-shadow: 0 0 11px 0 rgba(166, 166, 166, 0.5);
   display: inline-block;
   position: relative;
-  margin: 1.2rem auto;
-  height: calc(100% + 1rem) !important; }
+  margin: 2rem auto;
+  height: calc(100% - 1rem) !important; }
 
 .card-image-box {
   position: relative; }
