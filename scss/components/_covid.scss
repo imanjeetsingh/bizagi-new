@@ -1,0 +1,20 @@
+.covid {
+    &-container {
+        height: 3rem;
+    }
+    &-text {
+        @include media(tablet) {
+            display: inline-block;
+        }
+        @include media(desktop) {
+            display: inline-block;
+        }
+    }
+    &-link {
+        margin-left: 1.2rem;
+        &-text {}
+    }
+    &-icon {
+        width: 1.5rem;
+    }
+}

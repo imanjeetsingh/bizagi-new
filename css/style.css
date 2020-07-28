@@ -3997,8 +3997,7 @@ tbody.collapse.show {
   font-weight: 800;
   font-size: 40px;
   line-height: 44px;
-  color: #6D7278;
-  text-align: center; }
+  color: #6D7278; }
 
 .partner-box {
   color: #6D7278; }
@@ -4316,3 +4315,20 @@ tbody.collapse.show {
     background-color: #F28C20;
     color: #ffffff !important;
     border: solid 2px #F28C20; }
+
+.covid-container {
+  height: 3rem; }
+
+@media (min-width: 768px) {
+  .covid-text {
+    display: inline-block; } }
+
+@media (min-width: 992px) {
+  .covid-text {
+    display: inline-block; } }
+
+.covid-link {
+  margin-left: 1.2rem; }
+
+.covid-icon {
+  width: 1.5rem; }
