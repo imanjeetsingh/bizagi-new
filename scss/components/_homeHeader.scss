@@ -26,9 +26,11 @@
                 .cta {
                     &-primary {
                         background: transparent;
-                        @include media(xldesktop){
+
+                        @include media(xldesktop) {
                             background-color: #ffffff;
                         }
+
                         border: none;
 
                         .cta {
@@ -90,6 +92,15 @@
             &-searchIcon {
                 color: #ffffff;
             }
+        }
+    }
+
+    .logo {
+        &-grey {
+            display: none;
+        }
+        &-white{
+            display: block;
         }
     }
 }
@@ -183,6 +194,15 @@
             &-searchIcon {
                 color: #F28C20;
             }
+        }
+    }
+
+    .logo {
+        &-white{
+            display: none;
+        }
+        &-grey {
+            display: block;
         }
     }
 }

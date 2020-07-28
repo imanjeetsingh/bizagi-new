@@ -3908,7 +3908,7 @@ tbody.collapse.show {
   display: inline-block;
   position: relative;
   margin: 1.2rem auto;
-  height: calc(100% - 15px) !important; }
+  height: calc(100% + 1rem) !important; }
 
 .card-image-box {
   position: relative; }
@@ -4030,13 +4030,11 @@ tbody.collapse.show {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   z-index: -1;
   top: 7rem; }
   @media (min-width: 768px) {
     .banner-bg-image {
       height: 100%;
-      object-fit: cover;
       z-index: -1;
       top: 0; } }
   @media (min-width: 1200px) {
@@ -4160,6 +4158,12 @@ tbody.collapse.show {
 .home-header .search-box-searchIcon {
   color: #ffffff; }
 
+.home-header .logo-grey {
+  display: none; }
+
+.home-header .logo-white {
+  display: block; }
+
 .affix .nav-link {
   color: #54646f !important; }
 
@@ -4209,6 +4213,12 @@ tbody.collapse.show {
 
 .affix .search-box-searchIcon {
   color: #F28C20; }
+
+.affix .logo-white {
+  display: none; }
+
+.affix .logo-grey {
+  display: block; }
 
 .cookie-container {
   position: fixed;
