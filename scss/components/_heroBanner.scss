@@ -13,13 +13,9 @@
             position: absolute;
             width: 100%;
             height: 100%;
-
-            @include mobile-only {
-                height: 100%;
-                object-fit: cover;
-                z-index: -1;
-                top: 0;
-            }
+            object-fit: cover;
+            z-index: -1;
+            top: 7rem;
 
             @include media (tablet) {
                 height: 100%;
@@ -30,6 +26,7 @@
 
             @include media (xldesktop) {
                 height: 60%;
+                top: 3rem;
             }
         }
 
