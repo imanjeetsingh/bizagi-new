@@ -3594,6 +3594,9 @@ tbody.collapse.show {
 
 .navbar-collapse {
   padding-top: 2.5rem; }
+  @media (min-width: 768px) {
+    .navbar-collapse {
+      padding: 0; } }
   @media (max-width: 767px) {
     .navbar-collapse {
       padding-top: .5rem;
@@ -3612,6 +3615,10 @@ tbody.collapse.show {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (min-width: 768px) {
+    .nav-container {
+      height: 0rem;
+      margin-left: 6rem; } }
   @media (min-width: 992px) {
     .nav-container {
       justify-content: flex-end;
@@ -3668,6 +3675,9 @@ tbody.collapse.show {
   display: flex;
   align-items: center;
   height: 5rem; }
+  @media (min-width: 768px) {
+    .nav-links-box {
+      height: 3rem; } }
   @media (max-width: 767px) {
     .nav-links-box {
       height: 1rem;

@@ -28,6 +28,9 @@
 
     &-collapse {
         padding-top: 2.5rem;
+        @include media(tablet){
+            padding: 0;
+        }
 
         @include mobile-only {
             padding-top: .5rem;
@@ -51,9 +54,15 @@
         justify-content: center;
         align-items: center;
 
+        @include media(tablet) {
+            height: 0rem;
+            margin-left: 6rem;
+        }
+
         @include media(desktop) {
             justify-content: flex-end;
             align-items: center;
+            
         }
     }
 
@@ -124,6 +133,9 @@
         display: flex;
         align-items: center;
         height: 5rem;
+        @include media(tablet){
+            height: 3rem;
+        }
 
         @include mobile-only {
             height: 1rem;
