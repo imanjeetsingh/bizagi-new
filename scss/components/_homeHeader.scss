@@ -1,43 +1,71 @@
 .home-header {
+    @include media(xldesktop) {
+        position: fixed;
+        z-index: 1;
+    }
+
     &.affix {
         position: fixed;
         top: 0;
         z-index: 999999;
-        background-color: #ffffff;
+        background-color: #ffffff !important;
         background: transparent;
-        ;
-    }
-}
 
-.affix {
+        @include media(xldesktop) {
+            padding: 1rem 0;
+        }
+    }
+
     .nav {
         &-link {
             color: #ffffff !important;
         }
+
         &-links {
             &-box {
                 .cta {
                     &-primary {
-                        background-color: #ffffff;
+                        background: transparent;
+                        @include media(xldesktop){
+                            background-color: #ffffff;
+                        }
                         border: none;
+
                         .cta {
                             &-content {
-                                color: #009E99;
+                                color: #ffffff;
+
+                                @include media(xldesktop) {
+                                    color: #009E99;
+                                }
                             }
                         }
+
                         &:hover {
                             border: none !important;
                         }
                     }
+
                     &-secondary {
                         border: solid 2px #ffffff;
+
+                        @include media(tablet) {
+                            border: none;
+                        }
+
+                        @include media(xldesktop) {
+                            border: solid 2px #ffffff;
+                        }
+
                         &:hover {
                             background: #ffffff !important;
                             color: #009E99 !important;
                         }
+
                         &:hover .cta-content {
                             color: #009E99;
                         }
+
                         .cta {
                             &-content {
                                 color: #ffffff;
@@ -48,16 +76,112 @@
             }
         }
     }
+
     .multilang {
         &-container {}
+
         &-dropdown {
             color: #ffffff;
         }
     }
+
     .search {
         &-box {
-            &-icon {
+            &-searchIcon {
                 color: #ffffff;
+            }
+        }
+    }
+}
+
+.affix {
+    .nav {
+        &-link {
+            color: #54646f !important;
+        }
+
+        &-links {
+            &-box {
+                .cta {
+                    &-primary {
+                        background-color: #F28C20;
+                        color: #ffffff;
+                        display: none;
+
+                        @include media(tablet) {
+                            display: block;
+                        }
+
+                        @include media(xldesktop) {
+                            display: block;
+                        }
+
+                        .cta {
+                            &-content {
+                                color: #ffffff;
+                            }
+                        }
+
+                        &:hover {
+                            color: #ffffff;
+                            background: #dc7000;
+                        }
+                    }
+
+                    &-secondary {
+                        border: solid 2px #F28C20;
+                        color: #F28C20;
+                        display: none;
+
+                        @include media(tablet) {
+                            display: block;
+                        }
+
+                        @include media(xldesktop) {
+                            display: block;
+                        }
+
+                        &:hover {
+                            color: #ffffff !important;
+                            background: #dc7000 !important;
+                        }
+
+                        .cta {
+                            &-content {
+                                color: #F28C20;
+
+                                &:hover {
+                                    color: #ffffff !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .multilang {
+        &-container {}
+
+        &-dropdown {
+            color: #000000;
+            display: none;
+
+            @include media(tablet) {
+                display: block;
+            }
+
+            @include media(xldesktop) {
+                display: block;
+            }
+        }
+    }
+
+    .search {
+        &-box {
+            &-searchIcon {
+                color: #F28C20;
             }
         }
     }
