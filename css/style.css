@@ -3633,18 +3633,22 @@ tbody.collapse.show {
   padding: 0.5rem 0.625 !important;
   text-decoration: none;
   position: relative; }
+  @media (min-width: 1200px) {
+    .nav-link {
+      color: #ffffff !important; } }
   .nav-link::before {
     content: '';
     position: absolute;
     height: 0.15rem;
-    background-color: green;
+    background-color: #1ea59a;
     top: 0;
     left: 0;
     display: block;
     width: 0%;
     transition: 0.2s all; }
   .nav-link:hover {
-    color: #F38D1F !important; }
+    background-color: transparent;
+    border-top: transparent; }
     .nav-link:hover::before {
       width: 100%; }
 
@@ -3892,6 +3896,12 @@ tbody.collapse.show {
     .testimonial-box-designation {
       font-size: 1.1rem; } }
 
+.card-component {
+  margin-top: 6rem; }
+  @media (min-width: 1200px) {
+    .card-component {
+      margin-top: 0; } }
+
 .card-inner {
   background: #FFFFFF;
   box-shadow: 0 0 11px 0 rgba(166, 166, 166, 0.5);
@@ -4011,9 +4021,11 @@ tbody.collapse.show {
   width: 75%;
   margin: 20px; }
 
-@media (min-width: 1200px) {
-  .banner-bg-row {
-    padding-top: 6rem; } }
+.banner-bg-row {
+  padding-top: 3rem; }
+  @media (min-width: 1200px) {
+    .banner-bg-row {
+      padding-top: 6rem; } }
 
 .banner-bg-image {
   position: absolute;
@@ -4021,8 +4033,17 @@ tbody.collapse.show {
   height: 100%; }
   @media (max-width: 767px) {
     .banner-bg-image {
-      height: 82%; } }
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      top: 0; } }
   @media (min-width: 768px) {
+    .banner-bg-image {
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      top: 0; } }
+  @media (min-width: 1200px) {
     .banner-bg-image {
       height: 60%; } }
 
@@ -4040,17 +4061,23 @@ tbody.collapse.show {
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
-  font-size: 60px; }
-  @media (max-width: 767px) {
+  font-size: 2.5rem; }
+  @media (min-width: 768px) {
     .banner-bg .banner-heading {
-      font-size: 2.5rem; } }
+      font-size: 2.875rem; } }
+  @media (min-width: 1200px) {
+    .banner-bg .banner-heading {
+      font-size: 3.75rem; } }
 
 .banner-bg .banner-subheading {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 1.313rem;
   color: #FFFFFF;
   line-height: 30px; }
+  @media (min-width: 768px) {
+    .banner-bg .banner-subheading {
+      font-size: 1.5rem; } }
 
 .banner-bg .banner-content {
   color: #ffffff; }
@@ -4082,39 +4109,109 @@ tbody.collapse.show {
 .banner-content-right {
   flex-direction: row-reverse; }
 
+@media (min-width: 1200px) {
+  .home-header {
+    position: fixed;
+    z-index: 1; } }
+
 .home-header.affix {
   position: fixed;
   top: 0;
   z-index: 999999;
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   background: transparent; }
+  @media (min-width: 1200px) {
+    .home-header.affix {
+      padding: 1rem 0; } }
 
-.affix .nav-link {
+.home-header .nav-link {
   color: #ffffff !important; }
 
-.affix .nav-links-box .cta-primary {
-  background-color: #ffffff;
+.home-header .nav-links-box .cta-primary {
+  background: transparent;
   border: none; }
-  .affix .nav-links-box .cta-primary .cta-content {
-    color: #009E99; }
-  .affix .nav-links-box .cta-primary:hover {
+  @media (min-width: 1200px) {
+    .home-header .nav-links-box .cta-primary {
+      background-color: #ffffff; } }
+  .home-header .nav-links-box .cta-primary .cta-content {
+    color: #ffffff; }
+    @media (min-width: 1200px) {
+      .home-header .nav-links-box .cta-primary .cta-content {
+        color: #009E99; } }
+  .home-header .nav-links-box .cta-primary:hover {
     border: none !important; }
 
-.affix .nav-links-box .cta-secondary {
+.home-header .nav-links-box .cta-secondary {
   border: solid 2px #ffffff; }
-  .affix .nav-links-box .cta-secondary:hover {
+  @media (min-width: 768px) {
+    .home-header .nav-links-box .cta-secondary {
+      border: none; } }
+  @media (min-width: 1200px) {
+    .home-header .nav-links-box .cta-secondary {
+      border: solid 2px #ffffff; } }
+  .home-header .nav-links-box .cta-secondary:hover {
     background: #ffffff !important;
     color: #009E99 !important; }
-  .affix .nav-links-box .cta-secondary:hover .cta-content {
+  .home-header .nav-links-box .cta-secondary:hover .cta-content {
     color: #009E99; }
-  .affix .nav-links-box .cta-secondary .cta-content {
+  .home-header .nav-links-box .cta-secondary .cta-content {
     color: #ffffff; }
 
-.affix .multilang-dropdown {
+.home-header .multilang-dropdown {
   color: #ffffff; }
 
-.affix .search-box-icon {
+.home-header .search-box-searchIcon {
   color: #ffffff; }
+
+.affix .nav-link {
+  color: #54646f !important; }
+
+.affix .nav-links-box .cta-primary {
+  background-color: #F28C20;
+  color: #ffffff;
+  display: none; }
+  @media (min-width: 768px) {
+    .affix .nav-links-box .cta-primary {
+      display: block; } }
+  @media (min-width: 1200px) {
+    .affix .nav-links-box .cta-primary {
+      display: block; } }
+  .affix .nav-links-box .cta-primary .cta-content {
+    color: #ffffff; }
+  .affix .nav-links-box .cta-primary:hover {
+    color: #ffffff;
+    background: #dc7000; }
+
+.affix .nav-links-box .cta-secondary {
+  border: solid 2px #F28C20;
+  color: #F28C20;
+  display: none; }
+  @media (min-width: 768px) {
+    .affix .nav-links-box .cta-secondary {
+      display: block; } }
+  @media (min-width: 1200px) {
+    .affix .nav-links-box .cta-secondary {
+      display: block; } }
+  .affix .nav-links-box .cta-secondary:hover {
+    color: #ffffff !important;
+    background: #dc7000 !important; }
+  .affix .nav-links-box .cta-secondary .cta-content {
+    color: #F28C20; }
+    .affix .nav-links-box .cta-secondary .cta-content:hover {
+      color: #ffffff !important; }
+
+.affix .multilang-dropdown {
+  color: #000000;
+  display: none; }
+  @media (min-width: 768px) {
+    .affix .multilang-dropdown {
+      display: block; } }
+  @media (min-width: 1200px) {
+    .affix .multilang-dropdown {
+      display: block; } }
+
+.affix .search-box-searchIcon {
+  color: #F28C20; }
 
 .cookie-container {
   position: fixed;
