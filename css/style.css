@@ -3908,7 +3908,7 @@ tbody.collapse.show {
   display: inline-block;
   position: relative;
   margin: 1.2rem auto;
-  height: calc(100% - 15px) !important; }
+  height: calc(100% + 1rem) !important; }
 
 .card-image-box {
   position: relative; }
@@ -4029,22 +4029,18 @@ tbody.collapse.show {
 .banner-bg-image {
   position: absolute;
   width: 100%;
-  height: 100%; }
-  @media (max-width: 767px) {
-    .banner-bg-image {
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
-      top: 0; } }
+  height: 100%;
+  z-index: -1;
+  top: 7rem; }
   @media (min-width: 768px) {
     .banner-bg-image {
       height: 100%;
-      object-fit: cover;
       z-index: -1;
       top: 0; } }
   @media (min-width: 1200px) {
     .banner-bg-image {
-      height: 60%; } }
+      height: 60%;
+      top: 3rem; } }
 
 .banner-bg .cta {
   background-color: #FFFFFF;
@@ -4162,6 +4158,12 @@ tbody.collapse.show {
 .home-header .search-box-searchIcon {
   color: #ffffff; }
 
+.home-header .logo-grey {
+  display: none; }
+
+.home-header .logo-white {
+  display: block; }
+
 .affix .nav-link {
   color: #54646f !important; }
 
@@ -4211,6 +4213,12 @@ tbody.collapse.show {
 
 .affix .search-box-searchIcon {
   color: #F28C20; }
+
+.affix .logo-white {
+  display: none; }
+
+.affix .logo-grey {
+  display: block; }
 
 .cookie-container {
   position: fixed;
@@ -4422,18 +4430,36 @@ tbody.collapse.show {
     border: solid 2px #F28C20; }
 
 .covid-container {
-  height: 3rem; }
+  height: 7rem; }
+  @media (min-width: 1200px) {
+    .covid-container {
+      height: 3rem; } }
 
-@media (min-width: 768px) {
-  .covid-text {
-    display: inline-block; } }
+.covid-text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #6D7278; }
+  @media (min-width: 768px) {
+    .covid-text {
+      display: inline-block; } }
+  @media (min-width: 1200px) {
+    .covid-text {
+      display: inline-block;
+      font-size: 1.125rem; } }
+  .covid-text-bold {
+    font-weight: 700; }
 
-@media (min-width: 992px) {
-  .covid-text {
-    display: inline-block; } }
+@media (min-width: 1200px) {
+  .covid-link {
+    margin-left: 1.2rem; } }
 
-.covid-link {
-  margin-left: 1.2rem; }
+.covid-link-text {
+  font-size: 1.125rem;
+  line-height: 0px;
+  margin-top: 0.625rem;
+  color: #F38C1A;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif; }
 
 .covid-icon {
   width: 1.5rem; }

@@ -1,19 +1,44 @@
 .covid {
     &-container {
-        height: 3rem;
+        height: 7rem;
+        @include media(xldesktop){
+            height: 3rem;
+        }
     }
+
     &-text {
+        font-size: 1rem;
+        font-weight: 300;
+        color: #6D7278;
+
         @include media(tablet) {
             display: inline-block;
         }
-        @include media(desktop) {
+
+        @include media(xldesktop) {
             display: inline-block;
+            font-size: 1.125rem;
+        }
+        &-bold{
+            font-weight: 700;
         }
     }
+
     &-link {
-        margin-left: 1.2rem;
-        &-text {}
+        @include media(xldesktop) {
+            margin-left: 1.2rem;
+        }
+
+        &-text {
+            font-size: 1.125rem;
+            line-height: 0px;
+            margin-top: 0.625rem;
+            color: #F38C1A;
+            font-weight: 700;
+            font-family: 'Open Sans', sans-serif;
+        }
     }
+
     &-icon {
         width: 1.5rem;
     }
