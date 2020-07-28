@@ -106,6 +106,22 @@
 }
 
 .affix {
+    padding: 0;
+    @include media(tablet){
+        padding: 1rem;
+    }
+    @include media(xldesktop){
+        padding: 0;
+    }
+    .navbar{
+        display: block;
+        @include media(tablet){
+            display: none;
+        }
+        @include media(xldesktop){
+            display: block;
+        }
+    }
     .nav {
         &-link {
             color: #54646f !important;
@@ -113,6 +129,13 @@
 
         &-links {
             &-box {
+                display: block;
+                @include media(tablet){
+                    display: none;
+                }
+                @include media(xldesktop){
+                    display: block;
+                }
                 .cta {
                     &-primary {
                         background-color: #F28C20;
@@ -173,7 +196,9 @@
     }
 
     .multilang {
-        &-container {}
+        &-container {
+            display: inline-flex;
+        }
 
         &-dropdown {
             color: #000000;
@@ -191,6 +216,10 @@
 
     .search {
         &-box {
+            margin-top: 0;
+            @include media(xldesktop){
+                margin-top: 1.5rem;
+            }
             &-searchIcon {
                 color: #F28C20;
             }

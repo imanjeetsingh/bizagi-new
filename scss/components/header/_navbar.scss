@@ -29,6 +29,10 @@
     &-collapse {
         padding-top: 2.5rem;
 
+        @include media(tablet) {
+            padding: 0;
+        }
+
         @include mobile-only {
             padding-top: .5rem;
             position: fixed;
@@ -51,9 +55,15 @@
         justify-content: center;
         align-items: center;
 
-        @include media(desktop) {
+        @include media(tablet) {
+            height: 0rem;
+            margin-left: 6rem;
+        }
+
+        @include media(xldesktop) {
             justify-content: flex-end;
             align-items: center;
+            height: 5rem;
         }
     }
 
@@ -124,6 +134,14 @@
         display: flex;
         align-items: center;
         height: 5rem;
+
+        @include media(tablet) {
+            height: 3rem;
+        }
+
+        @include media(xldesktop) {
+            height: 5rem;
+        }
 
         @include mobile-only {
             height: 1rem;

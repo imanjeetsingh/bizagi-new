@@ -22,11 +22,13 @@
                 // object-fit: cover;
                 z-index: -1;
                 top: 0;
+                padding: 5rem 0;
             }
 
             @include media (xldesktop) {
                 height: 60%;
                 top: 3rem;
+                padding: 0;
             }
         }
 
