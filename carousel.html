@@ -26,7 +26,7 @@
                     <img class="partner-logo-image" src="./images/logo1.png" alt="Tableau logo">
                 </a>
             </div>
-            <!-- <div class="item partner-logo">
+            <div class="item partner-logo">
                 <a href="#" target="">
                     <img class="partner-logo-image" src="./images/logo2.png" alt="Automation Anywhere logo">
                 </a>
@@ -50,7 +50,7 @@
                 <a href="#" target="">
                     <img class="partner-logo-image" src="./images/logo6.png" alt="SAP logo">
                 </a>
-            </div> -->
+            </div>
         </div>
     </div>
     <!-- Carousel component ends -->
@@ -72,6 +72,7 @@
         autoplayHoverPause: false,
         // center: true,
         onInitialized: callback,
+        loop: $(this).find('.owl-item').length > 1 true: false,
         responsive: {
             0: {
                 items: 1
@@ -82,8 +83,7 @@
             1000: {
                 items: 6,
                 nav: true,
-                // 
-                loop: false
+                // loop: $(this).find('.owl-carousel .item').size() > 1
             }
         }
     })
@@ -93,7 +93,7 @@
         var items = event.item.count;
         console.log(items);
         if (items <= 1) {
-            loop: false;
+            this.settings.loop = false;
         }
     }
 </script>
