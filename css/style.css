@@ -3757,6 +3757,8 @@ tbody.collapse.show {
   width: 35px !important;
   height: 47px !important;
   background-position: 100% 50%; }
+  .multilang-dropdown-option {
+    color: #000000; }
   .multilang-dropdown:focus {
     outline: none; }
 
