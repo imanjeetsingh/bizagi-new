@@ -7,35 +7,42 @@
         text-align: center;
         background: white;
         z-index: 9999;
-        box-shadow: 2px 4px 13px 0px black;
+        box-shadow: 0.125rem 0.25rem 0.813rem 0 black;
     }
+
     &-row {
         padding-left: 1.8rem;
         padding-right: 1.8rem;
         font-size: 1rem;
-        box-shadow: 2px 4px 13px 0px black;
+        box-shadow: 0.125rem 0.25rem 0.813rem 0 black;
         display: block;
         height: 2.1rem;
+
         &-content {
             color: #455869;
+
             @include media(xldesktop) {
                 display: contents;
                 padding: 0;
                 margin: 0;
             }
-            @include media(tablet){
+
+            @include media(tablet) {
                 padding: 0;
                 margin: 0;
             }
         }
     }
+
     &-link {
         color: #F38D1F;
         margin-left: 1rem;
-        @include media(tablet){
+
+        @include media(tablet) {
             margin: 0;
         }
     }
+
     &-close {
         position: absolute;
         right: 0;

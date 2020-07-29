@@ -4268,13 +4268,13 @@ tbody.collapse.show {
   text-align: center;
   background: white;
   z-index: 9999;
-  box-shadow: 2px 4px 13px 0px black; }
+  box-shadow: 0.125rem 0.25rem 0.813rem 0 black; }
 
 .cookie-row {
   padding-left: 1.8rem;
   padding-right: 1.8rem;
   font-size: 1rem;
-  box-shadow: 2px 4px 13px 0px black;
+  box-shadow: 0.125rem 0.25rem 0.813rem 0 black;
   display: block;
   height: 2.1rem; }
   .cookie-row-content {
