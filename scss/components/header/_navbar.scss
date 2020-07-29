@@ -152,6 +152,8 @@
     &-search-box {
         @include mobile-only {
             height: 5rem;
+            display: flex !important;
+            margin-right: 2.5rem;
         }
     }
 }

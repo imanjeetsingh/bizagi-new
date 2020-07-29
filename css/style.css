@@ -3689,7 +3689,9 @@ tbody.collapse.show {
 
 @media (max-width: 767px) {
   .nav-search-box {
-    height: 5rem; } }
+    height: 5rem;
+    display: flex !important;
+    margin-right: 2.5rem; } }
 
 .dropdown-toggle::after {
   content: none !important; }
@@ -4021,9 +4023,18 @@ tbody.collapse.show {
 
 .contentSection-box-heading {
   font-weight: 800;
-  font-size: 40px;
-  line-height: 44px;
+  font-size: 1.5rem;
+  line-height: 1.625rem;
+  text-align: center !important;
   color: #6D7278; }
+  @media (min-width: 1200px) {
+    .contentSection-box-heading {
+      font-size: 2.5rem; } }
+
+@media (min-width: 1200px) {
+  .contentSection-box .fivecolumnheading {
+    text-align: left;
+    margin-left: 8rem; } }
 
 .partner-box {
   color: #6D7278; }
@@ -4042,6 +4053,17 @@ tbody.collapse.show {
     .banner-bg-row {
       padding-top: 6rem; } }
 
+.banner-bg-height {
+  top: 7rem !important; }
+  @media (min-width: 768px) {
+    .banner-bg-height {
+      top: 4rem !important;
+      height: 85% !important; } }
+  @media (min-width: 1200px) {
+    .banner-bg-height {
+      top: 2rem !important;
+      height: 65% !important; } }
+
 .banner-bg-image {
   position: absolute;
   width: 100%;
@@ -4050,12 +4072,12 @@ tbody.collapse.show {
   top: 0; }
   @media (min-width: 768px) {
     .banner-bg-image {
-      height: 100%;
+      height: 85%;
       z-index: -1;
       top: 0; } }
   @media (min-width: 1200px) {
     .banner-bg-image {
-      height: 60%;
+      height: 65%;
       padding: 0; } }
 
 .banner-bg .cta {
@@ -4133,7 +4155,7 @@ tbody.collapse.show {
   background: transparent; }
   @media (min-width: 1200px) {
     .home-header.affix {
-      padding: 1rem 0; } }
+      padding: 0.5rem 0 0 0; } }
 
 .home-header .nav-link {
   color: #ffffff !important; }
@@ -4164,7 +4186,7 @@ tbody.collapse.show {
     background: #ffffff !important;
     color: #009E99 !important; }
   .home-header .nav-links-box .cta-secondary:hover .cta-content {
-    color: #009E99; }
+    color: #ffffff; }
   .home-header .nav-links-box .cta-secondary .cta-content {
     color: #ffffff; }
 

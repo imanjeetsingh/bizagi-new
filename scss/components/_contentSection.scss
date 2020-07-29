@@ -1,15 +1,31 @@
 // Content Section component CSS starts
 .contentSection {
     &-container {}
+
     &-box {
+
         &-heading {
             font-weight: 800;
-            font-size: 40px;
-            line-height: 44px;
+            font-size: 1.5rem;
+            line-height: 1.625rem;
+            text-align: center !important;
             color: #6D7278;
+
+            @include media(xldesktop) {
+                font-size: 2.5rem;
+            }
         }
+
         &-subheading {}
+
         &-description {}
+
+        .fivecolumnheading {
+            @include media(xldesktop) {
+                text-align: left;
+                margin-left: 8rem;
+            }
+        }
     }
 }
 
