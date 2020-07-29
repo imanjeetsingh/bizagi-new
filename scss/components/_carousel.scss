@@ -1,13 +1,12 @@
 // Carousel component CSS starts
 .carousel-wrap {
-    margin: 90px auto;
+    margin: 0 auto;
     padding: 0 5%;
     width: 80%;
     position: relative;
 }
 
 .owl-carousel .item {
-    display: block !important;
     position: relative;
     z-index: 100;
     -webkit-backface-visibility: hidden;

@@ -3,15 +3,12 @@
     .navbar .nav-item .dropdown-menu {
         display: none;
     }
-
     .navbar .nav-item:hover .nav-link {
         color: #fff;
     }
-
     .navbar .nav-item:hover .dropdown-menu {
         display: block;
     }
-
     .navbar .nav-item .dropdown-menu {
         margin-top: 0;
     }
@@ -22,22 +19,18 @@
         border-color: #f5f5f5 !important;
         position: relative;
         z-index: 10;
-
         &-icon {}
     }
-
     &-collapse {
         padding-top: 2.5rem;
-
         @include media(tablet) {
             padding: 0;
         }
-
         @include mobile-only {
             padding-top: .5rem;
             position: fixed;
             width: 100%;
-            height: calc(100% - 7rem);
+            height: calc(100% - 6rem);
             overflow-y: auto;
             overflow-x: hidden;
             left: 0;
@@ -54,19 +47,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
         @include media(tablet) {
             height: 0rem;
             margin-left: 6rem;
         }
-
         @include media(xldesktop) {
             justify-content: flex-end;
             align-items: center;
             height: 5rem;
         }
     }
-
     &-item {
         font-family: 'Open Sans', sans-serif;
         font-size: 1rem;
@@ -75,7 +65,6 @@
         list-style: none;
         padding-inline-start: 0;
     }
-
     &-link {
         color: #54646f !important;
         font-size: 1rem;
@@ -84,11 +73,9 @@
         padding: 0.5rem 0.625 !important;
         text-decoration: none;
         position: relative;
-
         @include media(xldesktop) {
             color: #ffffff !important;
         }
-
         &::before {
             content: '';
             position: absolute;
@@ -100,26 +87,21 @@
             width: 0%;
             transition: 0.2s all;
         }
-
         &:hover {
             background-color: transparent;
             border-top: transparent;
-
             // transform: scale(1.1);
             &::before {
                 width: 100%;
             }
         }
     }
-
     &-list {
         &-suplist {
             padding-inline-start: 0 !important;
         }
-
         &-sublist {
             list-style: none;
-
             &-heading {
                 margin-left: 0.625rem;
                 color: #54645B;
@@ -129,26 +111,21 @@
             }
         }
     }
-
     &-links-box {
         display: flex;
         align-items: center;
         height: 5rem;
-
         @include media(tablet) {
             height: 3rem;
         }
-
         @include media(xldesktop) {
             height: 5rem;
         }
-
         @include mobile-only {
             height: 1rem;
             justify-content: center;
         }
     }
-
     &-search-box {
         @include mobile-only {
             height: 5rem;
@@ -164,14 +141,12 @@
             content: none !important;
         }
     }
-
     &-menu {
         box-shadow: none;
         border: 0.063rem solid #efefef;
         padding: 0;
         margin-top: 1.313rem;
     }
-
     &-item {
         font-weight: 300;
         line-height: 1.42857;
@@ -179,7 +154,6 @@
         font-size: 0.813rem;
         white-space: nowrap;
         color: #54645B;
-
         &:hover {
             background-color: transparent;
             color: #F38D1F;
@@ -194,18 +168,15 @@
             margin-top: 0;
         }
     }
-
     .nav {
         &-list {
             padding-inline-start: unset;
             margin-block-end: 0;
         }
-
         &-item {
             margin: 0;
         }
     }
-
     .navbar {
         &-collapse {
             border-top: 0.063rem solid #e0e0e0;

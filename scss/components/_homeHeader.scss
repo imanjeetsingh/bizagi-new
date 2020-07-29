@@ -3,71 +3,58 @@
         position: fixed;
         z-index: 1;
     }
-
     &.affix {
         position: fixed;
         top: 0;
         z-index: 999999;
         background-color: #ffffff !important;
         background: transparent;
-
         @include media(xldesktop) {
             padding: 0.5rem 0 0 0;
         }
     }
-
     .nav {
         &-link {
-            color: #ffffff !important;
+            @include media(tablet) {
+                color: #ffffff !important;
+            }
         }
-
         &-links {
             &-box {
                 .cta {
                     &-primary {
                         background: transparent;
-
                         @include media(xldesktop) {
                             background-color: #ffffff;
                         }
-
                         border: none;
-
                         .cta {
                             &-content {
                                 color: #ffffff;
-
                                 @include media(xldesktop) {
                                     color: #009E99;
                                 }
                             }
                         }
-
                         &:hover {
                             border: none !important;
                         }
                     }
-
                     &-secondary {
                         border: solid 2px #ffffff;
-
                         @include media(tablet) {
                             border: none;
                         }
-
                         @include media(xldesktop) {
                             border: solid 2px #ffffff;
                         }
-
                         &:hover {
                             background: #ffffff !important;
                             color: #009E99 !important;
                         }
-
                         &:hover .cta-content {
                             color: #ffffff;
                         }
-
                         .cta {
                             &-content {
                                 color: #ffffff;
@@ -78,15 +65,12 @@
             }
         }
     }
-
     .multilang {
         &-container {}
-
         &-dropdown {
             color: #ffffff;
         }
     }
-
     .search {
         &-box {
             &-searchIcon {
@@ -94,12 +78,11 @@
             }
         }
     }
-
     .logo {
         &-grey {
             display: none;
         }
-        &-white{
+        &-white {
             display: block;
         }
     }
@@ -107,18 +90,18 @@
 
 .affix {
     padding: 0;
-    @include media(tablet){
+    @include media(tablet) {
         padding: 1rem;
     }
-    @include media(xldesktop){
+    @include media(xldesktop) {
         padding: 0;
     }
-    .navbar{
+    .navbar {
         display: block;
-        @include media(tablet){
+        @include media(tablet) {
             display: none;
         }
-        @include media(xldesktop){
+        @include media(xldesktop) {
             display: block;
         }
     }
@@ -126,14 +109,13 @@
         &-link {
             color: #54646f !important;
         }
-
         &-links {
             &-box {
                 display: block;
-                @include media(tablet){
+                @include media(tablet) {
                     display: none;
                 }
-                @include media(xldesktop){
+                @include media(xldesktop) {
                     display: block;
                 }
                 .cta {
@@ -141,49 +123,39 @@
                         background-color: #F28C20;
                         color: #ffffff;
                         display: none;
-
                         @include media(tablet) {
                             display: block;
                         }
-
                         @include media(xldesktop) {
                             display: block;
                         }
-
                         .cta {
                             &-content {
                                 color: #ffffff;
                             }
                         }
-
                         &:hover {
                             color: #ffffff;
                             background: #dc7000;
                         }
                     }
-
                     &-secondary {
                         border: solid 2px #F28C20;
                         color: #F28C20;
                         display: none;
-
                         @include media(tablet) {
                             display: block;
                         }
-
                         @include media(xldesktop) {
                             display: block;
                         }
-
                         &:hover {
                             color: #ffffff !important;
                             background: #dc7000 !important;
                         }
-
                         .cta {
                             &-content {
                                 color: #F28C20;
-
                                 &:hover {
                                     color: #ffffff !important;
                                 }
@@ -194,30 +166,25 @@
             }
         }
     }
-
     .multilang {
         &-container {
             display: inline-flex;
         }
-
         &-dropdown {
             color: #000000;
             display: none;
-
             @include media(tablet) {
                 display: block;
             }
-
             @include media(xldesktop) {
                 display: block;
             }
         }
     }
-
     .search {
         &-box {
             margin-top: 0;
-            @include media(xldesktop){
+            @include media(xldesktop) {
                 margin-top: 1.5rem;
             }
             &-searchIcon {
@@ -225,9 +192,8 @@
             }
         }
     }
-
     .logo {
-        &-white{
+        &-white {
             display: none;
         }
         &-grey {

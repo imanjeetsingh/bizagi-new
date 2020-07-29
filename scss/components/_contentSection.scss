@@ -1,32 +1,34 @@
 // Content Section component CSS starts
 .contentSection {
     &-container {}
-
     &-box {
-
         &-heading {
             font-weight: 800;
-            font-size: 1.5rem;
-            line-height: 1.625rem;
-            text-align: center !important;
+            // line-height: 44px;
+            margin-bottom: 0.5rem;
+            margin-top: 2.5rem;
+            font-family: 'Open Sans', sans-serif;
             color: #6D7278;
-
+            font-size: 1.5rem;
             @include media(xldesktop) {
+                margin-top: 3.5rem;
                 font-size: 2.5rem;
             }
         }
-
         &-subheading {}
-
         &-description {}
-
-        .fivecolumnheading {
-            @include media(xldesktop) {
-                text-align: left;
-                margin-left: 8rem;
-            }
-        }
     }
 }
 
+.fivecolumnheading {
+    @include media(xldesktop) {
+        text-align: left;
+        margin-left: 8rem;
+    }
+}
+
+
+}
+
+}
 // Content Section component CSS ends
