@@ -182,6 +182,9 @@
         }
     }
     .search {
+        &-container{
+            margin-left: -0.5rem;
+        }
         &-box {
             margin-top: 0;
             @include media(xldesktop) {

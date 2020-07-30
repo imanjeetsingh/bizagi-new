@@ -1,0 +1,64 @@
+.inner-header {
+    &.affix {
+        position: fixed;
+        top: 0;
+        z-index: 999999;
+        background-color: #ffffff !important;
+        background: transparent;
+
+    }
+
+    .nav {
+        &-container {
+            // top: 2rem;
+            // position: absolute;
+            // left: 17rem;
+        }
+
+        &-link {
+            color: #54646f !important
+        }
+
+        &-links {
+            &-box {
+                .cta {
+                    &-primary {
+                        .cta {
+                            &-content {}
+                        }
+                    }
+
+                    &-secondary {
+                        @include media(tablet) {
+                            // border: none;
+                        }
+
+                        .cta {
+                            &-content {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .multilang {
+        &-container {}
+
+        &-dropdown {}
+    }
+
+    .search {
+        &-box {
+            &-searchIcon {}
+        }
+    }
+
+    .logo {
+        &-grey {}
+
+        &-white {
+            display: none;
+        }
+    }
+}

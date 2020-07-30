@@ -3769,17 +3769,62 @@ tbody.collapse.show {
     margin-left: 1rem;
     margin-right: 1rem; } }
 
-.inner-header.affix {
+@media (min-width: 1200px) {
+  .home-header {
+    position: fixed;
+    z-index: 1; } }
+
+.home-header.affix {
   position: fixed;
   top: 0;
   z-index: 999999;
   background-color: #ffffff !important;
   background: transparent; }
+  @media (min-width: 1200px) {
+    .home-header.affix {
+      padding: 0.5rem 0 0 0; } }
 
-.inner-header .nav-link {
-  color: #54646f !important; }
+@media (min-width: 768px) {
+  .home-header .nav-link {
+    color: #ffffff !important; } }
 
-.inner-header .logo-white {
+.home-header .nav-links-box .cta-primary {
+  background: transparent;
+  border: none; }
+  @media (min-width: 1200px) {
+    .home-header .nav-links-box .cta-primary {
+      background-color: #ffffff; } }
+  .home-header .nav-links-box .cta-primary .cta-content {
+    color: #ffffff; }
+    @media (min-width: 1200px) {
+      .home-header .nav-links-box .cta-primary .cta-content {
+        color: #009E99; } }
+  .home-header .nav-links-box .cta-primary:hover {
+    border: none !important; }
+
+.home-header .nav-links-box .cta-secondary {
+  border: solid 2px #ffffff; }
+  @media (min-width: 768px) {
+    .home-header .nav-links-box .cta-secondary {
+      border: none; } }
+  @media (min-width: 1200px) {
+    .home-header .nav-links-box .cta-secondary {
+      border: solid 2px #ffffff; } }
+  .home-header .nav-links-box .cta-secondary:hover {
+    background: #ffffff !important;
+    color: #009E99 !important; }
+  .home-header .nav-links-box .cta-secondary:hover .cta-content {
+    color: #ffffff; }
+  .home-header .nav-links-box .cta-secondary .cta-content {
+    color: #ffffff; }
+
+.home-header .multilang-dropdown {
+  color: #ffffff; }
+
+.home-header .search-box-searchIcon {
+  color: #ffffff; }
+
+.home-header .logo-grey {
   display: none; }
 
 #foot {
@@ -4284,8 +4329,6 @@ tbody.collapse.show {
     @media (min-width: 1200px) {
       .affix .multilang-dropdown {
         display: block; } }
-  .affix .search-container {
-    margin-left: -0.5rem; }
   .affix .search-box {
     margin-top: 0; }
     @media (min-width: 1200px) {
