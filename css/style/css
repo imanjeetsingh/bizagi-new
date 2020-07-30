@@ -4027,13 +4027,10 @@ tbody.collapse.show {
       margin-top: 3.5rem;
       font-size: 2.5rem; } }
 
-<<<<<<< HEAD
-=======
 .contentSection-box-description {
   color: #6D7278;
   font-size: 1.125rem; }
 
->>>>>>> aman
 @media (min-width: 1200px) {
   .fivecolumnheading {
     text-align: left;

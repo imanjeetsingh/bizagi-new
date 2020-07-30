@@ -1,11 +1,5 @@
 // Card component CSS starts
 .card {
-    &-component {
-        margin-top: 6rem;
-        @include media(xldesktop) {
-            margin-top: 0;
-        }
-    }
     &-container {}
     &-inner {
         background: #FFFFFF;
