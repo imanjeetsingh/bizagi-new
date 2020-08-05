@@ -1,9 +1,11 @@
+// with affix styling
 .inner-header {
     &.affix {
         position: fixed;
         top: 0;
         z-index: 999999;
         background-color: #ffffff !important;
+        margin-top: auto;
         background: transparent;
 
     }
@@ -59,6 +61,132 @@
 
         &-white {
             display: none;
+        }
+    }
+}
+
+// without affix styling
+
+.inner-header {
+    // @include media(tablet) {
+    //     margin-top: 1rem;
+    // }
+
+    .nav {
+        &-container {}
+
+        &-link {}
+
+        &-links {
+            &-box {
+                height: 2.5rem;
+                @include media(tablet){
+                    height: 5rem;
+                }
+
+                .cta {
+                    &-primary {
+                        .cta {
+                            &-content {}
+                        }
+                    }
+
+                    &-secondary {
+                        .cta {
+                            &-content {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .multilang {
+        &-container {}
+
+        &-dropdown {
+            color: #888;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .search {
+        &-container {
+            margin-top: 2.5rem;
+
+            @include media(tablet) {
+                margin-top: -0.5rem;
+            }
+        }
+
+        &-box {
+            &-searchIcon {}
+        }
+    }
+
+    .logo {
+        &-grey {}
+
+        &-white {}
+    }
+
+    @include media(tablet) {
+        .cta {
+            &-secondary {
+                color: #888;
+                border: none;
+                background: none;
+                padding: 0;
+                font-size: 17px;
+                font-weight: 100;
+            }
+
+            &-primary {
+                color: #888;
+                border: none;
+                background: none;
+                padding: 0;
+                font-size: 17px;
+                font-weight: 100;
+            }
+        }
+    }
+
+    @include media(xldesktop) {
+        .cta {
+            display: flex;
+            justify-content: center;
+            border-radius: 3px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none !important;
+            padding: 10px 20px;
+            color: #F28C20;
+            margin: 0 0.5rem 0.5rem;
+
+            &-primary {
+                background-color: #F28C20;
+                color: #ffffff;
+                border: solid 2px #F28C20;
+
+                &:hover {
+                    color: #ffffff;
+                    background: #dc7000;
+                    border: solid 2px #dc7000 !important;
+                }
+            }
+
+            &-secondary {
+                border: solid 2px #F28C20;
+                color: #F28C20;
+
+                &:hover {
+                    color: #ffffff;
+                    background: #dc7000;
+                }
+            }
         }
     }
 }
