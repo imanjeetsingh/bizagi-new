@@ -1,27 +1,26 @@
 // Social Icons component CSS starts
 .social {
-	&-icon {
-		width: 2rem;
-		height: auto;
-		&-box {
-			font-size: 3rem;
-			text-align: center;
-			// background-color: black;
-		}
-		&-link {
-			padding: 0.2rem;
-			&:hover {
-				text-decoration: none;
-			}
-		}
-	}
-
-	&-icon {
-		&-footer {
-			color: #ffffff;
-			font-size: 2rem !important;
-		}
-	}
+    &-icon {
+        width: 2rem;
+        height: auto;
+        &-box {
+            font-size: 3rem;
+            text-align: center;
+            // background-color: black;
+        }
+        &-link {
+            padding: 0.2rem;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    &-icon {
+        &-footer {
+            color: #ffffff;
+            font-size: 2rem !important;
+        }
+    }
 }
 
 // Social Icons component CSS ends
