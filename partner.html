@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Partner</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -18,30 +17,16 @@
                 <h3 class="partner-box-heading">Native Integrations</h3>
             </div>
         </div>
-        <section>
-            <div class="carousel-wrap">
-                <div class="owl-carousel">
-                    <div class="item partner-logo">
-                        <img class="partner-logo-image" src="./images/logo1.png" alt="Tableau logo">
-                    </div>
-                    <div class="item partner-logo">
-                        <img class="partner-logo-image" src="./images/logo2.png" alt="Automation Anywhere logo">
-                    </div>
-                    <div class="item partner-logo">
-                        <img class="partner-logo-image" src="./images/logo3.png" alt="Blue Prism logo">
-                    </div>
-                    <div class="item partner-logo">
-                        <img class="partner-logo-image" src="./images/logo4.png" alt="UiPath logo">
-                    </div>
-                    <div class="item partner-logo">
-                        <img class="partner-logo-image" src="./images/logo5.png" alt="Power BI logo">
-                    </div>
-                    <div class="item partner-logo">
-                        <img class="partner-logo-image" src="./images/logo6.png" alt="SAP logo">
-                    </div>
-                </div>
+        <div class="partner-logo-box">
+            <div class="row">
+                <div class="partner-logo col-md-2 col-sm-4"><img class="partner-logo-image" src="./images/logo1.png" alt="Tableau logo"></div>
+                <div class="partner-logo col-md-2 col-sm-4"><img class="partner-logo-image" src="./images/logo2.png" alt="Automation Anywhere logo"></div>
+                <div class="partner-logo col-md-2 col-sm-4"><img class="partner-logo-image" src="./images/logo3.png" alt="Blue Prism logo"></div>
+                <div class="partner-logo col-md-2 col-sm-6"><img class="partner-logo-image" src="./images/logo5.png" alt="Power BI logo"></div>
+                <div class="partner-logo col-md-2 col-sm-4"><img class="partner-logo-image" src="./images/logo4.png" alt="UiPath logo"></div>
+                <div class="partner-logo col-md-1 col-sm-2"><img class="partner-logo-image" src="./images/logo6.png" alt="SAP logo"></div>
             </div>
-        </section>
+        </div>
         <div class="row partner-box">
             <div class="partner-box-content-box col-md-12">
                 <p class="partner-description">+ Over 130 Connectors &amp; Widgets</p>
@@ -55,32 +40,5 @@
     </div>
     <!-- Partner component ends -->
 </body>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
-<script>
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        navText: [
-            "<i class='fa fa-caret-left'></i>",
-            "<i class='fa fa-caret-right'></i>"
-        ],
-        autoplay: false,
-        autoplayHoverPause: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 6
-            }
-        }
-    })
-</script>
 
 </html>
