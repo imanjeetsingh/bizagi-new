@@ -3774,6 +3774,7 @@ tbody.collapse.show {
   top: 0;
   z-index: 999999;
   background-color: #ffffff !important;
+  margin-top: auto;
   background: transparent; }
 
 .inner-header .nav-link {
@@ -3781,6 +3782,66 @@ tbody.collapse.show {
 
 .inner-header .logo-white {
   display: none; }
+
+.inner-header .nav-links-box {
+  height: 2.5rem; }
+  @media (min-width: 768px) {
+    .inner-header .nav-links-box {
+      height: 5rem; } }
+
+.inner-header .multilang-dropdown {
+  color: #888;
+  margin-bottom: 0.5rem; }
+
+.inner-header .search-container {
+  margin-top: 2.5rem; }
+  @media (min-width: 768px) {
+    .inner-header .search-container {
+      margin-top: -0.5rem; } }
+
+@media (min-width: 768px) {
+  .inner-header .cta-secondary {
+    color: #888;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: 17px;
+    font-weight: 100; }
+  .inner-header .cta-primary {
+    color: #888;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: 17px;
+    font-weight: 100; } }
+
+@media (min-width: 1200px) {
+  .inner-header .cta {
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none !important;
+    padding: 10px 20px;
+    color: #F28C20;
+    margin: 0 0.5rem 0.5rem; }
+    .inner-header .cta-primary {
+      background-color: #F28C20;
+      color: #ffffff;
+      border: solid 2px #F28C20; }
+      .inner-header .cta-primary:hover {
+        color: #ffffff;
+        background: #dc7000;
+        border: solid 2px #dc7000 !important; }
+    .inner-header .cta-secondary {
+      border: solid 2px #F28C20;
+      color: #F28C20; }
+      .inner-header .cta-secondary:hover {
+        color: #ffffff;
+        background: #dc7000; } }
 
 #foot {
   background: #005747;
