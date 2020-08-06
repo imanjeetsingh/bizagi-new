@@ -1,16 +1,19 @@
 .covid {
     &-container {
         height: 7rem;
-        @include media(tablet){
+
+        @include media(tablet) {
             padding: 2rem 0;
         }
-        @include media(xldesktop){
+
+        @include media(xldesktop) {
             height: 3rem;
             padding: 0;
         }
     }
 
     &-text {
+        font-family: 'Open Sans', sans-serif;
         font-size: 1rem;
         font-weight: 300;
         color: #6D7278;
@@ -23,7 +26,8 @@
             display: inline-block;
             font-size: 1.125rem;
         }
-        &-bold{
+
+        &-bold {
             font-weight: 700;
         }
     }
