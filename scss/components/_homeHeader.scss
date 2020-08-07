@@ -1,3 +1,4 @@
+// Home header CSS starts
 .home-header {
     @include media(xldesktop) {
         position: fixed;
@@ -53,7 +54,7 @@
                             color: #009E99 !important;
                         }
                         &:hover .cta-content {
-                            color: #ffffff;
+                            color: #009E99;
                         }
                         .cta {
                             &-content {
@@ -153,6 +154,9 @@
                             color: #ffffff !important;
                             background: #dc7000 !important;
                         }
+                        &:hover .cta-content {
+                            color: #ffffff;
+                        }
                         .cta {
                             &-content {
                                 color: #F28C20;
@@ -182,9 +186,6 @@
         }
     }
     .search {
-        &-container{
-            margin-left: -0.5rem;
-        }
         &-box {
             margin-top: 0;
             @include media(xldesktop) {
@@ -204,3 +205,5 @@
         }
     }
 }
+
+// Home header CSS ends
