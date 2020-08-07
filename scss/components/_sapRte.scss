@@ -1,0 +1,23 @@
+.sapRte {
+    &-container {
+        li {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300;
+            font-size: 0.875rem;
+            line-height: 1.125rem;
+            color: #6d7278;
+            list-style: none;
+        }
+        li::before {
+            content: "\2022";
+            color: #F28C1E;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}

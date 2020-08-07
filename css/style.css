@@ -4599,6 +4599,7 @@ tbody.collapse.show {
   .affix .logo-grey {
     display: block; }
 
+<<<<<<< HEAD
 .card-deck .card {
   border: none; }
   .card-deck .card-title {
@@ -4613,3 +4614,60 @@ tbody.collapse.show {
 
 .card-deck .cta-group {
   justify-content: center; }
+=======
+h3 {
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  margin-top: 2.5rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #6D7278;
+  font-size: 1.5rem; }
+  @media (min-width: 1200px) {
+    h3 {
+      margin-top: 3.5rem;
+      font-size: 2.5rem; } }
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #6d7278; }
+
+h5 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #6d7278; }
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #6d7278; }
+  @media (min-width: 1200px) {
+    p {
+      font-size: 1.125rem;
+      line-height: 1.375rem; } }
+
+.sapRte-container li {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #6d7278;
+  list-style: none; }
+
+.sapRte-container li::before {
+  content: "\2022";
+  color: #F28C1E;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em; }
+
+.sapRte-container img {
+  width: 100%; }
+>>>>>>> aman
