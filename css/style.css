@@ -4599,6 +4599,22 @@ tbody.collapse.show {
   .affix .logo-grey {
     display: block; }
 
+<<<<<<< HEAD
+.card-deck .card {
+  border: none; }
+  .card-deck .card-title {
+    font-size: 1.125rem;
+    text-align: center;
+    color: #6d7278; }
+  .card-deck .card-img-top {
+    width: auto;
+    height: 5.938rem; }
+  .card-deck .card-text {
+    text-align: center; }
+
+.card-deck .cta-group {
+  justify-content: center; }
+=======
 h3 {
   font-weight: 800;
   margin-bottom: 0.5rem;
@@ -4654,3 +4670,4 @@ p {
 
 .sapRte-container img {
   width: 100%; }
+>>>>>>> aman
