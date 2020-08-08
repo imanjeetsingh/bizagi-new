@@ -12,10 +12,11 @@
     }
     &-link {}
     &-image {
+        max-height: 3.5rem;
+        height: auto;
         width: auto;
-        height: 3.5rem;
         @include mobile-only {
-            height: 2.8rem;
+            max-height: 2.8rem;
         }
     }
 }
