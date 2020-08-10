@@ -1,4 +1,5 @@
 // CTA component CSS starts
+$buttongap: 0.5rem;
 .cta {
     display: flex;
     justify-content: center;
@@ -10,10 +11,10 @@
     text-decoration: none !important;
     padding: 10px 20px;
     color: #F28C20;
-    margin: 0 0.5rem 0.5rem;
+    margin: 0 $buttongap 0.5rem;
     &-group {
         display: inline-flex;
-        margin: 1rem 0.5rem;
+        margin: 1rem -#{$buttongap};
         flex-wrap: wrap;
     }
     &-default {

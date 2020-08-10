@@ -30,14 +30,21 @@
             padding-top: .5rem;
             position: fixed;
             width: 100%;
-            height: calc(100% - 6rem);
+            height: calc(100% - 13rem);
             overflow-y: auto;
             overflow-x: hidden;
             left: 0;
-            top: 6rem;
+            top: 13rem;
             z-index: 10;
             background: white;
         }
+    }
+}
+
+@include mobile-only {
+    .home-header.affix .navbar-collapse {
+        height: calc(100% - 6rem);
+        top: 6rem;
     }
 }
 
@@ -51,7 +58,7 @@
             height: 0rem;
             margin-left: 6rem;
         }
-        @include media(xldesktop) {
+        @include media(desktop) {
             justify-content: flex-end;
             align-items: center;
             height: 5rem;
@@ -68,12 +75,12 @@
     &-link {
         color: #54646f !important;
         font-size: 1rem;
-        font-weight: 600;
+        font-weight: 400;
         margin: 0 0.188rem;
         padding: 0.5rem 0.625 !important;
         text-decoration: none;
         position: relative;
-        @include media(xldesktop) {
+        @include media(desktop) {
             color: #ffffff !important;
         }
         &::before {
@@ -118,7 +125,7 @@
         @include media(tablet) {
             height: 3rem;
         }
-        @include media(xldesktop) {
+        @include media(desktop) {
             height: 5rem;
         }
         @include mobile-only {

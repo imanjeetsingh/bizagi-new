@@ -1,6 +1,6 @@
 // Home header CSS starts
 .home-header {
-    @include media(xldesktop) {
+    @include media(desktop) {
         position: fixed;
         z-index: 1;
     }
@@ -10,7 +10,7 @@
         z-index: 999999;
         background-color: #ffffff !important;
         background: transparent;
-        @include media(xldesktop) {
+        @include media(desktop) {
             padding: 0.5rem 0 0 0;
         }
     }
@@ -25,14 +25,14 @@
                 .cta {
                     &-primary {
                         background: transparent;
-                        @include media(xldesktop) {
+                        @include media(desktop) {
                             background-color: #ffffff;
                         }
                         border: none;
                         .cta {
                             &-content {
                                 color: #ffffff;
-                                @include media(xldesktop) {
+                                @include media(desktop) {
                                     color: #009E99;
                                 }
                             }
@@ -46,7 +46,7 @@
                         @include media(tablet) {
                             border: none;
                         }
-                        @include media(xldesktop) {
+                        @include media(desktop) {
                             border: solid 2px #ffffff;
                         }
                         &:hover {
@@ -94,15 +94,16 @@
     @include media(tablet) {
         padding: 1rem;
     }
-    @include media(xldesktop) {
-        padding: 0;
+    @include media(desktop) {
+        // padding: 0;
+        // aman changed for inner header 8-aug
     }
     .navbar {
         display: block;
         @include media(tablet) {
             display: none;
         }
-        @include media(xldesktop) {
+        @include media(desktop) {
             display: block;
         }
     }
@@ -116,7 +117,7 @@
                 @include media(tablet) {
                     display: none;
                 }
-                @include media(xldesktop) {
+                @include media(desktop) {
                     display: block;
                 }
                 .cta {
@@ -127,7 +128,7 @@
                         @include media(tablet) {
                             display: block;
                         }
-                        @include media(xldesktop) {
+                        @include media(desktop) {
                             display: block;
                         }
                         .cta {
@@ -147,7 +148,7 @@
                         @include media(tablet) {
                             display: block;
                         }
-                        @include media(xldesktop) {
+                        @include media(desktop) {
                             display: block;
                         }
                         &:hover {
@@ -180,7 +181,7 @@
             @include media(tablet) {
                 display: block;
             }
-            @include media(xldesktop) {
+            @include media(desktop) {
                 display: block;
             }
         }
@@ -188,7 +189,7 @@
     .search {
         &-box {
             margin-top: 0;
-            @include media(xldesktop) {
+            @include media(desktop) {
                 margin-top: 1.5rem;
             }
             &-searchIcon {
