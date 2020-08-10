@@ -4,7 +4,7 @@
         margin-bottom: 6rem;
         &-row {
             padding-top: 1rem;
-            @include media(xldesktop) {
+            @include media(desktop) {
                 padding-top: 6rem;
             }
         }
@@ -13,6 +13,9 @@
             @include media(tablet) {
                 top: 4rem !important;
                 height: 85% !important;
+            }
+            @include media(desktop){
+                height: 35% !important;
             }
             @include media(xldesktop) {
                 top: 2rem !important;
