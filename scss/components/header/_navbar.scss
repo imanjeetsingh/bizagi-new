@@ -34,7 +34,7 @@
             overflow-y: auto;
             overflow-x: hidden;
             left: 0;
-            top: 13rem;
+            top: 12rem;
             z-index: 10;
             background: white;
         }
@@ -62,7 +62,13 @@
             justify-content: flex-end;
             align-items: center;
             height: 5rem;
+            margin-top: 1rem;
         }
+        @include media(xldesktop){
+            margin-top: 0;
+            margin-left: 0;
+        }
+        
     }
     &-item {
         font-family: 'Open Sans', sans-serif;
@@ -127,9 +133,13 @@
         }
         @include media(desktop) {
             height: 5rem;
+            margin-left: -3rem;
+        }
+        @include media(xldesktop){
+            margin-left: 0;
         }
         @include mobile-only {
-            height: 1rem;
+            height: 2rem;
             justify-content: center;
         }
     }
@@ -138,6 +148,12 @@
             height: 5rem;
             display: flex !important;
             margin-right: 2.5rem;
+        }
+        @include media(tablet){
+            margin-left: 8rem;
+        }
+        @include media(desktop){
+            margin-left: 0;
         }
     }
 }
