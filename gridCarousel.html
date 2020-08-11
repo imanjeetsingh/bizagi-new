@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carousel</title>
+    <title>Grid Carousel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="./owlCarousel2/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owlCarousel2/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 
 </head>
@@ -20,138 +23,332 @@
     <!-- Carousel component starts -->
     <section>
         <!-- Carousel component CTA starts -->
-        <div class="cta-group">
-            <a href="#" class="cta carousel-cta carousel-cta-active">
-                <span class="cta-content">Related Article</span>
-            </a>
-            <a href="#" class="cta carousel-cta">
-                <span class="cta-content">More From Author</span>
-            </a>
+        <div class="container-fluid tab-group">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a data-toggle="tab" class="tab carousel-tab carousel-tab-active" href="#relatedArticles">
+                        <span class="tab-content">Related Article</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="tab" class="tab carousel-tab" href="#moreFromAuthor">
+                        <span class="tab-content">More From Author</span>
+                    </a>
+                </li>
+            </ul>
         </div>
         <!-- Carousel component CTA ends -->
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <div class="flex-container">
-                    <a class="carousel-article-box" href="#" target="">
-                        <div class="carousel-article-image-box">
-                            <div class="carousel-article-image-tag top-left">Blog</div>
-                            <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+        <div class="tab-content">
+            <div id="relatedArticles" class="tab-pane in active">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="flex-container">
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
                         </div>
-                        <h3 class="carousel-article-heading">lorem ipsum</h3>
-                    </a>
-                    <a class="carousel-article-box" href="#" target="">
-                        <div class="carousel-article-image-box">
-                            <div class="carousel-article-image-tag top-left">Blog</div>
-                            <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                        <div class="flex-container">
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
                         </div>
-                        <h3 class="carousel-article-heading">lorem ipsum</h3>
-                    </a>
-                    <a class="carousel-article-box" href="#" target="">
-                        <div class="carousel-article-image-box">
-                            <div class="carousel-article-image-tag top-left">Blog</div>
-                            <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                    </div>
+                    <div class="item">
+                        <div class="flex-container">
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
                         </div>
-                        <h3 class="carousel-article-heading">lorem ipsum</h3>
-                    </a>
-                    <a class="carousel-article-box" href="#" target="">
-                        <div class="carousel-article-image-box">
-                            <div class="carousel-article-image-tag top-left">Blog</div>
-                            <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                        <div class="flex-container">
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
                         </div>
-                        <h3 class="carousel-article-heading">lorem ipsum</h3>
-                    </a>
-                </div>
-                <div class="flex-container">
-                    <a class="carousel-article-box" href="#" target="">
-                        <div class="carousel-article-image-box">
-                            <div class="carousel-article-image-tag bottom-left">Blog</div>
-                            <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
-                        </div>
-                        <h3 class="carousel-article-heading">lorem ipsum</h3>
-                    </a>
-                    <a class="carousel-article-box" href="#" target="">
-                        <div class="carousel-article-image-box">
-                            <div class="carousel-article-image-tag bottom-left">Blog</div>
-                            <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
-                        </div>
-                        <h3 class="carousel-article-heading">lorem ipsum</h3>
-                    </a>
-                    <a class="carousel-article-box" href="#" target="">
-                        <div class="carousel-article-image-box">
-                            <div class="carousel-article-image-tag bottom-left">Blog</div>
-                            <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
-                        </div>
-                        <h3 class="carousel-article-heading">lorem ipsum</h3>
-                    </a>
-                    <a class="carousel-article-box" href="#" target="">
-                        <div class="carousel-article-image-box">
-                            <div class="carousel-article-image-tag bottom-left">Blog</div>
-                            <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
-                        </div>
-                        <h3 class="carousel-article-heading">lorem ipsum</h3>
-                    </a>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="flex-container">
-                    <a class="carousel-article-box" href="#" target="">
-                        <div class="carousel-article-image-box">
-                            <div class="carousel-article-image-tag top-left">Blog</div>
-                            <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+            <div id="moreFromAuthor" class="tab-pane fade">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="flex-container">
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
                         </div>
-                        <h3 class="carousel-article-heading">lorem ipsum</h3>
-                    </a>
-                    <a class="carousel-article-box" href="#" target="">
-                        <div class="carousel-article-image-box">
-                            <div class="carousel-article-image-tag top-left">Blog</div>
-                            <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                        <div class="flex-container">
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
                         </div>
-                        <h3 class="carousel-article-heading">lorem ipsum</h3>
-                    </a>
-                    <a class="carousel-article-box" href="#" target="">
-                        <div class="carousel-article-image-box">
-                            <div class="carousel-article-image-tag top-left">Blog</div>
-                            <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                    </div>
+                    <div class="item">
+                        <div class="flex-container">
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag top-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
                         </div>
-                        <h3 class="carousel-article-heading">lorem ipsum</h3>
-                    </a>
-                    <a class="carousel-article-box" href="#" target="">
-                        <div class="carousel-article-image-box">
-                            <div class="carousel-article-image-tag top-left">Blog</div>
-                            <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                        <div class="flex-container">
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
+                            <a class="carousel-article-box" href="#" target="">
+                                <div class="carousel-article-image-box">
+                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                    <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                </div>
+                                <h3 class="carousel-article-heading">lorem ipsum</h3>
+                            </a>
                         </div>
-                        <h3 class="carousel-article-heading">lorem ipsum</h3>
-                    </a>
-                </div>
-                <div class="flex-container">
-                    <a class="carousel-article-box" href="#" target="">
-                        <div class="carousel-article-image-box">
-                            <div class="carousel-article-image-tag bottom-left">Blog</div>
-                            <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
-                        </div>
-                        <h3 class="carousel-article-heading">lorem ipsum</h3>
-                    </a>
-                    <a class="carousel-article-box" href="#" target="">
-                        <div class="carousel-article-image-box">
-                            <div class="carousel-article-image-tag bottom-left">Blog</div>
-                            <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
-                        </div>
-                        <h3 class="carousel-article-heading">lorem ipsum</h3>
-                    </a>
-                    <a class="carousel-article-box" href="#" target="">
-                        <div class="carousel-article-image-box">
-                            <div class="carousel-article-image-tag bottom-left">Blog</div>
-                            <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
-                        </div>
-                        <h3 class="carousel-article-heading">lorem ipsum</h3>
-                    </a>
-                    <a class="carousel-article-box" href="#" target="">
-                        <div class="carousel-article-image-box">
-                            <div class="carousel-article-image-tag bottom-left">Blog</div>
-                            <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
-                        </div>
-                        <h3 class="carousel-article-heading">lorem ipsum</h3>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -160,22 +357,22 @@
 </body>
 
 <!-- Carousel component script starts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="carousel.js"></script>
+<script src="./owlCarousel2/owl.carousel.js"></script>
 <script>
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
         items: 1,
-        nav: true
+        nav: true,
+        dots: false
     })
     $(".owl-prev").html('<i class="fa fa-arrow-circle-o-left"></i>');
     $(".owl-next").html('<i class="fa fa-arrow-circle-o-right"></i>');
 
     $(document).ready(function() {
-        $('.carousel-cta').click(function() {
-            $('.carousel-cta').removeClass("carousel-cta-active");
-            $(this).addClass("carousel-cta-active");
+        $('.carousel-tab').click(function() {
+            $('.carousel-tab').removeClass("carousel-tab-active");
+            $(this).addClass("carousel-tab-active");
         });
     });
 </script>

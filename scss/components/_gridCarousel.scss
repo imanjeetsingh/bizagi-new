@@ -14,7 +14,7 @@
 .flex-container {
     display: block;
     flex-wrap: nowrap;
-    @include media(desktop) {
+    @include media(tablet) {
         display: flex;
     }
 }
@@ -47,15 +47,47 @@
             font-weight: 800;
             color: #6d7278;
             font-size: 1.5rem;
+            margin-top: 0;
         }
     }
-    &-cta {
+    &-tab {
         color: #000000;
+        display: flex;
+        justify-content: center;
+        border-radius: 3px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none !important;
+        padding: 10px 20px;
         &-active {
             background-color: #F28C20;
             color: #ffffff !important;
             border: solid 2px #F28C20;
+            margin: 0;
         }
+        &-content {
+            margin: 0 5px;
+        }
+    }
+}
+
+.tab {
+    &-group {
+        margin: 1rem #{$buttongap};
+        flex-wrap: wrap;
+        width: 98%;
+    }
+}
+
+.nav {
+    display: block;
+    @include media(tablet) {
+        display: flex;
+    }
+    &-tabs {
+        border-bottom: 2px solid #F28C20;
     }
 }
 
