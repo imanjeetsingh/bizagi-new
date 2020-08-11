@@ -19,16 +19,34 @@
     color: #cdcbcd;
 }
 
+.owl-nav {
+    display: flex;
+}
+
 .owl-nav i {
     font-size: 52px;
 }
 
 .owl-nav .owl-prev {
     left: -30px;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background: #ffffff !important;
+        color: #000000 !important;
+    }
 }
 
 .owl-nav .owl-next {
     right: -30px;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background: #ffffff !important;
+        color: #000000 !important;
+    }
 }
 
 .owl-item {
@@ -42,6 +60,15 @@
 
 .partner-logo {
     width: 70%;
+}
+
+.carouselArrow {
+    position: absolute;
+    top: 2.5rem;
+    color: #6D7278 !important;
+    // &:hover {
+    //     color: #6D7278 !important;
+    // }
 }
 
 // Carousel component CSS ends
