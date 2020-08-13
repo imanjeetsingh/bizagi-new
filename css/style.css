@@ -4223,6 +4223,50 @@ tbody.collapse.show {
     .testimonial-box-designation {
       font-size: 1.1rem; } }
 
+@media (min-width: 992px) {
+  .feature-box-heading {
+    line-height: 2.75rem;
+    font-size: 2.5rem;
+    margin-top: 0; } }
+
+.feature-list {
+  display: block; }
+  .feature-list-content {
+    display: contents; }
+  .feature-list-description {
+    margin-top: 1.25rem;
+    margin-left: 4.063rem;
+    font-size: 1.125rem;
+    line-height: 1.375rem; }
+    @media (min-width: 768px) {
+      .feature-list-description {
+        font-size: 1rem;
+        line-height: 1.25rem; } }
+  .feature-list-icon-box {
+    font-size: 1.5rem;
+    margin-top: -0.5rem; }
+
+.feature-list-heading {
+  display: inline;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 1.5rem; }
+  @media (min-width: 992px) {
+    .feature-list-heading {
+      font-size: 1.5rem;
+      line-height: 1.875rem; } }
+
+.feature-cta {
+  text-align: end; }
+  @media (min-width: 992px) {
+    .feature-cta {
+      margin-top: -1.75rem; } }
+  .feature-cta .cta {
+    font-size: 1rem; }
+    .feature-cta .cta-group {
+      margin-bottom: -1rem; }
+
 .blogDetail-article-box {
   padding-left: 10%;
   padding-right: 10%; }
