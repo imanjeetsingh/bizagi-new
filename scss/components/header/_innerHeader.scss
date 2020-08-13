@@ -8,13 +8,11 @@
         margin-top: auto;
         background: transparent;
         border-bottom: 1px solid #efefef;
-
         .logo {
             &-grey {
                 margin-top: 0;
             }
         }
-
         .headerLogo {
             &-link {
                 @include media(xldesktop) {
@@ -22,16 +20,13 @@
                 }
             }
         }
-
         .search {
             &-box {
-
                 @include media(xldesktop) {
                     margin-top: 2rem;
                 }
             }
         }
-
         .multilang {
             &-dropdown {
                 @include media(xldesktop) {
@@ -41,18 +36,15 @@
             }
         }
     }
-
     .nav {
         &-container {
             // top: 2rem;
             // position: absolute;
             // left: 17rem;
         }
-
         &-link {
             color: #54646f !important
         }
-
         &-links {
             &-box {
                 .cta {
@@ -61,12 +53,10 @@
                             &-content {}
                         }
                     }
-
                     &-secondary {
                         @include media(tablet) {
                             // border: none;
                         }
-
                         .cta {
                             &-content {}
                         }
@@ -75,22 +65,17 @@
             }
         }
     }
-
     .multilang {
         &-container {}
-
         &-dropdown {}
     }
-
     .search {
         &-box {
             &-searchIcon {}
         }
     }
-
     .logo {
         &-grey {}
-
         &-white {
             display: none;
         }
@@ -100,34 +85,26 @@
 // without affix styling
 .inner-header {
     padding: 1rem;
-
     @include media(tablet) {
         margin-top: -1.5rem;
     }
-
     @include media(desktop) {
         margin-top: 0rem;
     }
-
     height: 7rem;
-
     // aman added padding height
     // @include media(tablet) {
     //     margin-top: 1rem;
     // }
     .nav {
         &-container {}
-
         &-link {}
-
         &-links {
             &-box {
                 height: 2.5rem;
-
                 @include media(tablet) {
                     height: 5rem;
                 }
-
                 .cta {
                     &-primary {
                         .cta {
@@ -136,7 +113,6 @@
                             }
                         }
                     }
-
                     &-secondary {
                         .cta {
                             &-content {
@@ -148,46 +124,35 @@
             }
         }
     }
-
     .multilang {
         &-container {}
-
         &-dropdown {
             color: #888;
             margin-bottom: 0.5rem;
             margin-left: 0.5rem;
         }
     }
-
     .search {
         &-container {
             margin-top: 2.5rem;
-
             @include media(tablet) {
                 margin-top: -0.5rem;
             }
         }
-
         &-box {
             @include media(tablet) {
                 // margin-left: 8rem;
             }
-
             @include media(desktop) {
                 margin-left: 0;
             }
-
-
             &-searchIcon {}
         }
     }
-
     .logo {
         &-grey {}
-
         &-white {}
     }
-
     @include media(tablet) {
         .cta {
             &-secondary {
@@ -198,7 +163,6 @@
                 font-size: 17px;
                 font-weight: 100;
             }
-
             &-primary {
                 color: #888;
                 border: none;
@@ -209,7 +173,6 @@
             }
         }
     }
-
     @include media(xldesktop) {
         .cta {
             display: flex;
@@ -223,23 +186,19 @@
             padding: 10px 20px;
             color: #F28C20;
             margin: 0 0.5rem 0.5rem;
-
             &-primary {
                 background-color: #F28C20;
                 color: #ffffff;
                 border: solid 2px #F28C20;
-
                 &:hover {
                     color: #ffffff;
                     background: #dc7000;
                     border: solid 2px #dc7000 !important;
                 }
             }
-
             &-secondary {
                 border: solid 2px #F28C20;
                 color: #F28C20;
-
                 &:hover {
                     color: #ffffff;
                     background: #dc7000;
@@ -247,7 +206,6 @@
             }
         }
     }
-
     .headerLogo {
         &-link {
             @include media(desktop) {

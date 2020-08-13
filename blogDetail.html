@@ -5,187 +5,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Detail</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/carousel.css">
-
+    <link rel="stylesheet" href="./owlCarousel2/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owlCarousel2/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <!-- Blog Detail html page starts -->
-    <div class="container-fluid blogDetail-container">
-        <!-- Header component starts -->
-        <header>
-            <div class="container-fluid">
-                <div class="row">
-                    <!-- Header Logo Component starts -->
-                    <div class="col-7 order-2 order-sm-1 col-md-2">
-                        <div class="headerLogo-container">
-                            <a class="headerLogo-link" href="#" title="Home">
-                                <img class="headerLogo-image" src="./images/Bizagi-Logo-Grey-No-Tagline.png" alt="Bizagi-The Digital Business Platform">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Header Logo Component ends -->
 
-                    <!-- Navbar component starts -->
-                    <div class="col-3 order-1 order-sm-2 col-md-6">
-                        <div class="nav-container">
-                            <nav class="navbar navbar-expand-lg navbar-light">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+    <!-- Header component starts -->
+    <header>
+        <div class="container-fluid inner-header">
+            <div class="row">
+                <!-- Header Logo Component starts -->
+                <div class="col-7 order-2 order-sm-1 col-md-2">
+                    <div class="headerLogo-container">
+                        <a class="headerLogo-link" href="#" title="Home">
+                            <img class="headerLogo-image" src="./images/Bizagi-Logo-Grey-No-Tagline.png" alt="Bizagi-The Digital Business Platform">
+                        </a>
+                    </div>
+                </div>
+                <!-- Header Logo Component ends -->
+
+                <!-- Navbar component starts -->
+                <div class="col-3 order-1 order-sm-2 col-md-6">
+                    <div class="nav-container">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
-                                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                                    <div class="navbar-nav">
-                                        <ul class="nav-item dropdown">
-                                            <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Solutions</a>
-                                                <ul class="nav-list dropdown-menu">
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
-                                                    <li class="nav-list-sublist-heading">Industry Solution </li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Financial Services</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Manufacturing</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Public Sector</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Health Care</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Education</a></li>
-                                                    <li class="nav-list-sublist-heading">Business Solutions</li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Customer Experience</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Risk
+                            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                                <div class="navbar-nav">
+                                    <ul class="nav-item dropdown">
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Solutions</a>
+                                            <ul class="nav-list dropdown-menu">
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
+                                                <li class="nav-list-sublist-heading">Industry Solution </li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Financial Services</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Manufacturing</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Public Sector</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Health Care</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Education</a></li>
+                                                <li class="nav-list-sublist-heading">Business Solutions</li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Customer Experience</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Risk
                                                             and Compliance</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">HR
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">HR
                                                             and Employee Engagement</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Finance</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">IT
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Finance</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">IT
                                                             Services</a></li>
-                                                    <li class="nav-list-sublist-heading">Technology Solutions</li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Intelligent Process Automation</a>
-                                                    </li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Digital Process Automation</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Robotic Process Automation</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Artificial Intelligence</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">SAP</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <ul class="nav-item dropdown">
-                                            <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Platform</a>
-                                                <ul class="nav-list dropdown-menu">
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Modeler</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Studio</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Automation</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">XChange</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Platform Capabilities</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Trust
+                                                <li class="nav-list-sublist-heading">Technology Solutions</li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Intelligent Process Automation</a>
+                                                </li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Digital Process Automation</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Robotic Process Automation</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Artificial Intelligence</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">SAP</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav-item dropdown">
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Platform</a>
+                                            <ul class="nav-list dropdown-menu">
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Modeler</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Studio</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Automation</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">XChange</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Platform Capabilities</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Trust
                                                             Center</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <ul class="nav-item dropdown">
-                                            <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Customers</a>
-                                                <ul class="nav-list dropdown-menu d-md-none">
-                                                    <li class="nav-list-sublist"> <a href="#" class="dropdown-item">
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav-item dropdown">
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Customers</a>
+                                            <ul class="nav-list dropdown-menu d-md-none">
+                                                <li class="nav-list-sublist"> <a href="#" class="dropdown-item">
                                                             Customers Stories</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <ul class="nav-item dropdown">
-                                            <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
-                                                <ul class="nav-list dropdown-menu">
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Bizagi Demos</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">User
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav-item dropdown">
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
+                                            <ul class="nav-list dropdown-menu">
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Bizagi Demos</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">User
                                                             Guides</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Blogs</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Learning</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Events</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Newsroom</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Community</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Content Center</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <ul class="nav-item dropdown">
-                                            <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
-                                                <ul class="nav-list dropdown-menu">
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Our
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Blogs</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Learning</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Events</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Newsroom</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Community</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Content Center</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav-item dropdown">
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
+                                            <ul class="nav-list dropdown-menu">
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Our
                                                             Trust & Promise</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">The
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">The
                                                             Team</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Partners</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Carees</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Offices</a></li>
-                                                    <li class="nav-list-sublist"><a href="#" class="dropdown-item">Contact Us</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Partners</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Carees</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Offices</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Contact Us</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </nav>
-                        </div>
-                    </div>
-                    <!-- Navbar component ends -->
-
-                    <div class="col-12 order-4 order-sm-3 col-md-3">
-                        <div class="nav-links-box">
-                            <!-- Header Cta starts-->
-                            <div class="cta-group">
-                                <a href="#" class="cta cta-secondary cta-header">
-                                    <!-- "cta-header" class to be included for cta mobile view -->
-                                    <span class="cta-content">Log in</span>
-                                </a>
-                                <a href="#" class="cta cta-primary cta-header">
-                                    <!-- "cta-header" class to be included for cta mobile view -->
-                                    <span class="cta-content">Contact us</span>
-                                </a>
                             </div>
-                            <!-- Header Cta ends-->
+                        </nav>
+                    </div>
+                </div>
+                <!-- Navbar component ends -->
 
-                            <!-- Multi Language Dropdown component starts -->
-                            <div class="multilang-container">
-                                <select name="lang" class="multilang-dropdown" size="1">
+                <div class="col-12 order-4 order-sm-3 col-md-3">
+                    <div class="nav-links-box">
+                        <!-- Header Cta starts-->
+                        <div class="cta-group">
+                            <a href="#" class="cta cta-secondary cta-header">
+                                <!-- "cta-header" class to be included for cta mobile view -->
+                                <span class="cta-content">Log in</span>
+                            </a>
+                            <a href="#" class="cta cta-primary cta-header">
+                                <!-- "cta-header" class to be included for cta mobile view -->
+                                <span class="cta-content">Contact us</span>
+                            </a>
+                        </div>
+                        <!-- Header Cta ends-->
+
+                        <!-- Multi Language Dropdown component starts -->
+                        <div class="multilang-container">
+                            <select name="lang" class="multilang-dropdown" size="1">
                                     <option class="multilang-dropdown-option" id="#" value="#" selected="selected">EN
                                     </option>
                                     <option class="multilang-dropdown-option" id="#" value="#">ES </option>
                                     <option class="multilang-dropdown-option" id="#" value="#">PT </option>
                                     <option class="multilang-dropdown-option" id="#" value="#">DE </option>
                                 </select>
-                            </div>
-                            <!-- Multi Language Dropdown component ends -->
                         </div>
+                        <!-- Multi Language Dropdown component ends -->
                     </div>
+                </div>
 
-                    <div class="col-2 order-3 order-sm-4 col-md-1">
-                        <div class="nav-links-box nav-search-box">
+                <div class="col-2 order-3 order-sm-4 col-md-1">
+                    <div class="nav-links-box nav-search-box">
 
-                            <!-- Search Box component starts -->
-                            <div class="search-container">
-                                <div class="search-box">
-                                    <a class="search-box-icon" href="#" role="button">
-                                        <i class="search-icon fa fa-search"></i>
-                                    </a>
-                                </div>
+                        <!-- Search Box component starts -->
+                        <div class="search-container">
+                            <div class="search-box">
+                                <a class="search-box-icon" href="#" role="button">
+                                    <i class="search-icon fa fa-search"></i>
+                                </a>
                             </div>
-                            <!-- Search Box component starts -->
                         </div>
+                        <!-- Search Box component starts -->
                     </div>
                 </div>
             </div>
-        </header>
-        <!-- Header component ends -->
+        </div>
+    </header>
+    <!-- Header component ends -->
 
+    <div class="container-fluid blogDetail-container">
         <!-- Blog Detail component starts -->
         <div class="blogDetail-article-box">
             <div>
                 <img class="blogDetail-article-image" src="./images/testimonio03.png">
             </div>
             <div class="cta-group">
-                <a href="#" class="cta cta-primary">
+                <a href="#" class="cta cta-primary cta-category">
                     <span class="cta-content">Category</span>
                 </a>
-                <a href="#" class="cta cta-primary">
+                <a href="#" class="cta cta-primary cta-category">
                     <span class="cta-content">Category</span>
                 </a>
             </div>
@@ -278,13 +279,13 @@
             <div class="blogDetail-article-tag">
                 <h3 class="blogDetail-article-tag-heading">Tags</h3>
                 <div class="cta-group">
-                    <a href="#" class="cta cta-secondary">
+                    <a href="#" class="cta cta-secondary cta-category">
                         <span class="cta-content">Tag</span>
                     </a>
-                    <a href="#" class="cta cta-secondary">
+                    <a href="#" class="cta cta-secondary cta-category">
                         <span class="cta-content">Tag</span>
                     </a>
-                    <a href="#" class="cta cta-secondary">
+                    <a href="#" class="cta cta-secondary cta-category">
                         <span class="cta-content">Tag</span>
                     </a>
                 </div>
@@ -295,138 +296,332 @@
             <!-- Carousel component starts -->
             <section>
                 <!-- Carousel component CTA starts -->
-                <div class="cta-group">
-                    <a href="javascript:void(0);" class="cta carousel-cta carousel-cta-active">
-                        <span class="cta-content">Related Article</span>
-                    </a>
-                    <a href="javascript:void(0);" class="cta carousel-cta">
-                        <span class="cta-content">More From Author</span>
-                    </a>
+                <div class="container-fluid tab-group">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a data-toggle="tab" class="tab carousel-tab carousel-tab-active" href="#relatedArticles">
+                                <span class="tab-content">Related Article</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" class="tab carousel-tab" href="#moreFromAuthor">
+                                <span class="tab-content">More From Author</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <!-- Carousel component CTA ends -->
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="flex-container">
-                            <a class="carousel-article-box" href="#" target="">
-                                <div class="carousel-article-image-box">
-                                    <div class="carousel-article-image-tag top-left">Blog</div>
-                                    <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                <div class="tab-content">
+                    <div id="relatedArticles" class="tab-pane in active">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="flex-container">
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
                                 </div>
-                                <h3 class="carousel-article-heading">lorem ipsum</h3>
-                            </a>
-                            <a class="carousel-article-box" href="#" target="">
-                                <div class="carousel-article-image-box">
-                                    <div class="carousel-article-image-tag top-left">Blog</div>
-                                    <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                <div class="flex-container">
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
                                 </div>
-                                <h3 class="carousel-article-heading">lorem ipsum</h3>
-                            </a>
-                            <a class="carousel-article-box" href="#" target="">
-                                <div class="carousel-article-image-box">
-                                    <div class="carousel-article-image-tag top-left">Blog</div>
-                                    <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                            </div>
+                            <div class="item">
+                                <div class="flex-container">
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
                                 </div>
-                                <h3 class="carousel-article-heading">lorem ipsum</h3>
-                            </a>
-                            <a class="carousel-article-box" href="#" target="">
-                                <div class="carousel-article-image-box">
-                                    <div class="carousel-article-image-tag top-left">Blog</div>
-                                    <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                <div class="flex-container">
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
                                 </div>
-                                <h3 class="carousel-article-heading">lorem ipsum</h3>
-                            </a>
-                        </div>
-                        <div class="flex-container">
-                            <a class="carousel-article-box" href="#" target="">
-                                <div class="carousel-article-image-box">
-                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
-                                    <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
-                                </div>
-                                <h3 class="carousel-article-heading">lorem ipsum</h3>
-                            </a>
-                            <a class="carousel-article-box" href="#" target="">
-                                <div class="carousel-article-image-box">
-                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
-                                    <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
-                                </div>
-                                <h3 class="carousel-article-heading">lorem ipsum</h3>
-                            </a>
-                            <a class="carousel-article-box" href="#" target="">
-                                <div class="carousel-article-image-box">
-                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
-                                    <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
-                                </div>
-                                <h3 class="carousel-article-heading">lorem ipsum</h3>
-                            </a>
-                            <a class="carousel-article-box" href="#" target="">
-                                <div class="carousel-article-image-box">
-                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
-                                    <img class="carousel-article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
-                                </div>
-                                <h3 class="carousel-article-heading">lorem ipsum</h3>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="flex-container">
-                            <a class="carousel-article-box" href="#" target="">
-                                <div class="carousel-article-image-box">
-                                    <div class="carousel-article-image-tag top-left">Blog</div>
-                                    <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                    <div id="moreFromAuthor" class="tab-pane fade">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="flex-container">
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
                                 </div>
-                                <h3 class="carousel-article-heading">lorem ipsum</h3>
-                            </a>
-                            <a class="carousel-article-box" href="#" target="">
-                                <div class="carousel-article-image-box">
-                                    <div class="carousel-article-image-tag top-left">Blog</div>
-                                    <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                <div class="flex-container">
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
                                 </div>
-                                <h3 class="carousel-article-heading">lorem ipsum</h3>
-                            </a>
-                            <a class="carousel-article-box" href="#" target="">
-                                <div class="carousel-article-image-box">
-                                    <div class="carousel-article-image-tag top-left">Blog</div>
-                                    <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                            </div>
+                            <div class="item">
+                                <div class="flex-container">
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag top-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
                                 </div>
-                                <h3 class="carousel-article-heading">lorem ipsum</h3>
-                            </a>
-                            <a class="carousel-article-box" href="#" target="">
-                                <div class="carousel-article-image-box">
-                                    <div class="carousel-article-image-tag top-left">Blog</div>
-                                    <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                <div class="flex-container">
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
+                                    <a class="carousel-article-box" href="#" target="">
+                                        <div class="carousel-article-image-box">
+                                            <div class="carousel-article-image-tag bottom-left">Blog</div>
+                                            <img class="carousel-article-image" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                        </div>
+                                        <h3 class="carousel-article-heading">lorem ipsum</h3>
+                                    </a>
                                 </div>
-                                <h3 class="carousel-article-heading">lorem ipsum</h3>
-                            </a>
-                        </div>
-                        <div class="flex-container">
-                            <a class="carousel-article-box" href="#" target="">
-                                <div class="carousel-article-image-box">
-                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
-                                    <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
-                                </div>
-                                <h3 class="carousel-article-heading">lorem ipsum</h3>
-                            </a>
-                            <a class="carousel-article-box" href="#" target="">
-                                <div class="carousel-article-image-box">
-                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
-                                    <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
-                                </div>
-                                <h3 class="carousel-article-heading">lorem ipsum</h3>
-                            </a>
-                            <a class="carousel-article-box" href="#" target="">
-                                <div class="carousel-article-image-box">
-                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
-                                    <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
-                                </div>
-                                <h3 class="carousel-article-heading">lorem ipsum</h3>
-                            </a>
-                            <a class="carousel-article-box" href="#" target="">
-                                <div class="carousel-article-image-box">
-                                    <div class="carousel-article-image-tag bottom-left">Blog</div>
-                                    <img class="carousel-article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
-                                </div>
-                                <h3 class="carousel-article-heading">lorem ipsum</h3>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -527,24 +722,43 @@
 </body>
 
 <!-- Carousel component script starts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="carousel.js"></script>
+<script src="./owlCarousel2/owl.carousel.js"></script>
 <script>
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
         items: 1,
-        nav: true
+        nav: true,
+        dots: false
     })
     $(".owl-prev").html('<i class="fa fa-arrow-circle-o-left"></i>');
     $(".owl-next").html('<i class="fa fa-arrow-circle-o-right"></i>');
 
     $(document).ready(function() {
-        $('.carousel-cta').click(function() {
-            $('.carousel-cta').removeClass("carousel-cta-active");
-            $(this).addClass("carousel-cta-active");
+        $('.carousel-tab').click(function() {
+            $('.carousel-tab').removeClass("carousel-tab-active");
+            $(this).addClass("carousel-tab-active");
         });
     });
+
+    // Inner Header component script starts
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 10) {
+            $(".home-header").addClass("affix");
+        }
+        if (scroll <= 0) {
+            $(".home-header").removeClass("affix");
+        }
+        if (scroll >= 10) {
+            $(".inner-header").addClass("affix");
+        }
+        if (scroll <= 0) {
+            $(".inner-header").removeClass("affix");
+        }
+    });
+    // Inner Header component script ends
 </script>
 <!-- Carousel component script ends -->
 

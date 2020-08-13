@@ -60,6 +60,35 @@ $buttongap: 0.5rem;
         width: 55px;
         height: auto;
     }
+    &-category {
+        padding: 0;
+    }
+}
+
+.card-noBorder {
+    .card {
+        border: none;
+        &-title {
+            font-size: 1.125rem;
+            text-align: center;
+            color: #6d7278;
+        }
+        &-img {
+            &-top {
+                width: auto;
+                height: 5.938rem;
+            }
+        }
+        &-body {}
+        &-text {
+            text-align: center;
+        }
+    }
+    .cta {
+        &-group {
+            justify-content: center;
+        }
+    }
 }
 
 // CTA component CSS ends

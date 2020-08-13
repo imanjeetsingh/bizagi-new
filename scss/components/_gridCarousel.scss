@@ -25,13 +25,14 @@
             width: 20rem;
             margin: 10px;
             font-size: 30px;
+            position: relative;
             &:hover {
                 text-decoration: none;
             }
         }
         &-image {
             &-box {
-                position: relative;
+                // position: relative;
             }
             &-tag {
                 z-index: 1;
@@ -89,6 +90,16 @@
     &-tabs {
         border-bottom: 2px solid #F28C20;
     }
+}
+
+.top {
+    position: absolute;
+    top: 0rem;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 2.313rem;
 }
 
 // Grid Carousel CSS ends

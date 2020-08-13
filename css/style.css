@@ -4378,6 +4378,23 @@ tbody.collapse.show {
   .cta-image {
     width: 55px;
     height: auto; }
+  .cta-category {
+    padding: 0; }
+
+.card-noBorder .card {
+  border: none; }
+  .card-noBorder .card-title {
+    font-size: 1.125rem;
+    text-align: center;
+    color: #6d7278; }
+  .card-noBorder .card-img-top {
+    width: auto;
+    height: 5.938rem; }
+  .card-noBorder .card-text {
+    text-align: center; }
+
+.card-noBorder .cta-group {
+  justify-content: center; }
 
 .contentSection-box-heading {
   font-weight: 800;
@@ -4594,12 +4611,10 @@ tbody.collapse.show {
 .carousel-article-box {
   width: 20rem;
   margin: 10px;
-  font-size: 30px; }
+  font-size: 30px;
+  position: relative; }
   .carousel-article-box:hover {
     text-decoration: none; }
-
-.carousel-article-image-box {
-  position: relative; }
 
 .carousel-article-image-tag {
   z-index: 1;
@@ -4647,6 +4662,14 @@ tbody.collapse.show {
       display: flex; } }
   .nav-tabs {
     border-bottom: 2px solid #F28C20; }
+
+.top {
+  position: absolute;
+  top: 0rem; }
+
+.bottom {
+  position: absolute;
+  bottom: 2.313rem; }
 
 .covid-container {
   height: 7rem; }
@@ -4896,21 +4919,6 @@ tbody.collapse.show {
       margin-right: 3rem;
       margin-top: 0; } }
 
-.card-deck .card {
-  border: none; }
-  .card-deck .card-title {
-    font-size: 1.125rem;
-    text-align: center;
-    color: #6d7278; }
-  .card-deck .card-img-top {
-    width: auto;
-    height: 5.938rem; }
-  .card-deck .card-text {
-    text-align: center; }
-
-.card-deck .cta-group {
-  justify-content: center; }
-
 h3 {
   font-weight: 800;
   margin-bottom: 0.5rem;
@@ -4948,21 +4956,33 @@ p {
       font-size: 1.125rem;
       line-height: 1.375rem; } }
 
-.sapRte-container li {
+.sap-container li {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 0.875rem;
   line-height: 1.125rem;
   color: #6d7278;
-  list-style: none; }
+  list-style: none;
+  margin: 5px 0; }
 
-.sapRte-container li::before {
+.sap-container li::before {
   content: "\2022";
   color: #F28C1E;
   font-weight: bold;
   display: inline-block;
-  width: 1em;
-  margin-left: -1em; }
+  width: 1rem;
+  margin-left: -1rem; }
 
-.sapRte-container img {
-  width: 100%; }
+.sap-image {
+  height: auto;
+  max-width: 100%; }
+  @media (min-width: 768px) {
+    .sap-image {
+      padding: 5rem 0 0 0; } }
+  @media (min-width: 992px) {
+    .sap-image {
+      padding: 0; } }
+
+@media (min-width: 992px) {
+  .right-allign {
+    text-align: right; } }
