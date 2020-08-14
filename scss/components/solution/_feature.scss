@@ -1,42 +1,59 @@
 // Feature component CSS starts
 .feature {
-    &-container {}
+    &-container {
+        margin-top: 6.25rem;
+    }
     &-box {
         &-heading {
-            font-size: 1.5rem;
+            // font-size: 1.5rem;
             margin-bottom: 2.5rem;
             font-family: 'Open Sans', sans-serif;
             font-weight: 800;
             text-align: center;
             color: #6D7278;
-            @include media(xldesktop) {
+            @include media(tablet) {}
+            @include media(desktop) {
                 font-family: 'Open Sans', sans-serif;
                 font-weight: 800;
                 font-size: 2.5rem;
+                text-align: left;
             }
         }
     }
     &-list {
+        font-family: 'Open Sans', sans-serif;
         display: flex;
+        @include media(tablet) {
+            min-height: 3.75rem;
+        }
         &-box {
             margin-left: 1rem;
         }
         &-description {
+            font-family: 'Open Sans', sans-serif;
             color: #6D7278;
             font-size: 1rem;
             font-weight: 300;
             @include media(xldesktop) {
                 font-weight: 300;
                 color: #6D7278;
-                font-size: 1.1rem;
+                font-size: 1.125rem;
                 margin-right: 3.8rem;
+                line-height: 1.375rem;
             }
         }
         &-icon {
             &-box {
                 color: #F28C20;
-                margin-right: 2rem;
-                font-size: 2rem;
+                margin-right: 1rem;
+                font-size: 1rem;
+                @include media(tablet) {
+                    font-size: 1rem;
+                }
+                @include media(desktop) {
+                    font-size: 1.5rem;
+                    margin-right: 2rem;
+                }
             }
         }
     }

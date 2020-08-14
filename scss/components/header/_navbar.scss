@@ -46,6 +46,14 @@
         height: calc(100% - 6rem);
         top: 6rem;
     }
+    .inner-header.affix .navbar-collapse {
+        height: calc(100% - 6rem);
+        top: 6rem;
+    }
+    .inner-header .navbar-collapse {
+        height: calc(100% - 6rem);
+        top: 6rem;
+    }
 }
 
 .nav {
@@ -64,11 +72,10 @@
             height: 5rem;
             margin-top: 1rem;
         }
-        @include media(xldesktop){
+        @include media(xldesktop) {
             margin-top: 0;
             margin-left: 0;
         }
-        
     }
     &-item {
         font-family: 'Open Sans', sans-serif;
@@ -135,7 +142,7 @@
             height: 5rem;
             margin-left: -3rem;
         }
-        @include media(xldesktop){
+        @include media(xldesktop) {
             margin-left: 0;
         }
         @include mobile-only {
@@ -149,10 +156,10 @@
             display: flex !important;
             margin-right: 2.5rem;
         }
-        @include media(tablet){
+        @include media(tablet) {
             margin-left: 8rem;
         }
-        @include media(desktop){
+        @include media(desktop) {
             margin-left: 0;
         }
     }

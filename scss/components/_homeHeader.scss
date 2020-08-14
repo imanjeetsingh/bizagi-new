@@ -3,13 +3,11 @@
     @include media(tablet) {
         margin-top: -3rem;
     }
-
     @include media(desktop) {
         position: fixed;
         z-index: 1;
         margin: 0;
     }
-
     &.affix {
         position: fixed;
         top: 0;
@@ -17,99 +15,75 @@
         background-color: #ffffff !important;
         background: transparent;
         border-bottom: 1px solid #efefef;
-
         @include media(desktop) {
             padding: 3rem 0 0 0;
         }
-
         @include media(xldesktop) {
             padding: 0.5rem 0 0 0;
         }
-
     }
-
     .nav {
         &-link {
             @include media(tablet) {
                 color: #ffffff !important;
             }
         }
-
         &-links {
             &-box {
                 .cta {
                     &-primary {
                         background: transparent;
-
                         @include mobile-only {
                             margin-left: 0;
                         }
-
                         @include media(tablet) {
                             margin-right: 0;
                             padding-left: 0;
                         }
-
-
                         @include media(desktop) {
                             background-color: #ffffff;
                         }
-
                         @include media(xldesktop) {
                             margin-right: 1rem;
                             padding-left: 1rem;
                         }
-
                         border: none;
-
                         .cta {
                             &-content {
                                 color: #ffffff;
-
                                 @include media(desktop) {
                                     color: #009E99;
                                 }
                             }
                         }
-
                         &:hover {
                             border: none !important;
                         }
                     }
-
                     &-secondary {
                         border: solid 2px #ffffff;
-
                         @include mobile-only {
                             margin-left: 0;
                         }
-
                         @include media(tablet) {
                             border: none;
                             margin-right: 0;
                             padding-right: 0;
-
                         }
-
                         @include media(desktop) {
                             border: solid 2px #ffffff;
                         }
-
                         @include media(xldesktop) {
                             margin-right: 1rem;
                             padding-right: 1rem;
-
                         }
-
                         &:hover {
                             background: #ffffff !important;
                             color: #009E99 !important;
                         }
-
                         &:hover .cta-content {
                             color: #009E99;
                         }
-
                         .cta {
                             &-content {
                                 color: #ffffff;
@@ -120,26 +94,20 @@
             }
         }
     }
-
     .multilang {
         &-container {
             margin-bottom: 0.3rem;
-
             @include mobile-only {
                 margin-left: 0.5rem;
             }
-
             @include media(desktop) {
                 margin-left: 2rem;
             }
-
         }
-
         &-dropdown {
             color: #ffffff;
         }
     }
-
     .search {
         &-box {
             &-searchIcon {
@@ -147,32 +115,26 @@
             }
         }
     }
-
     .logo {
         &-grey {
             display: none;
-
             @include media(desktop) {
                 margin-top: -2rem;
             }
-
             @include media(xldesktop) {
                 margin-top: 0rem;
             }
         }
-
         &-white {
             display: block;
         }
     }
-
     .headerLogo {
         &-link {
             @include media(desktop) {
                 margin-right: -2rem;
                 margin-top: 2rem;
             }
-
             @include media(xldesktop) {
                 margin-right: 3rem;
                 margin-top: 0;
@@ -182,98 +144,77 @@
 }
 
 .affix {
-    padding: 0;
-
+    // padding: 0;
     @include media(tablet) {
         padding: 1rem;
     }
-
     @include media(desktop) {
         // padding: 0;
         // aman changed for inner header 8-aug
     }
-
     .navbar {
         display: block;
-
         @include media(tablet) {
             display: none;
         }
-
         @include media(desktop) {
             display: block;
         }
     }
-
     .nav {
         &-link {
             color: #54646f !important;
         }
-
         &-links {
             &-box {
                 display: block;
-
                 @include media(tablet) {
                     display: none;
                 }
-
                 @include media(desktop) {
                     display: block;
                 }
-
                 .cta {
                     &-primary {
                         background-color: #F28C20;
                         color: #ffffff;
                         display: none;
-
                         @include media(tablet) {
                             display: block;
                         }
-
                         @include media(desktop) {
                             display: block;
                         }
-
                         .cta {
                             &-content {
                                 color: #ffffff;
                             }
                         }
-
                         &:hover {
                             color: #ffffff;
                             background: #dc7000;
                         }
                     }
-
                     &-secondary {
                         border: solid 2px #F28C20;
                         color: #F28C20;
                         display: none;
-
                         @include media(tablet) {
                             display: block;
                         }
-
                         @include media(desktop) {
                             display: block;
                         }
-
                         &:hover {
                             color: #ffffff !important;
                             background: #dc7000 !important;
                         }
-
                         &:hover .cta-content {
                             color: #ffffff;
                         }
-
                         .cta {
                             &-content {
                                 color: #F28C20;
-
                                 &:hover {
                                     color: #ffffff !important;
                                 }
@@ -284,64 +225,51 @@
             }
         }
     }
-
     .multilang {
         &-container {
             display: inline-flex;
         }
-
         &-dropdown {
             color: #54646f;
             display: none;
-
             @include media(tablet) {
                 display: block;
             }
-
             @include media(desktop) {
                 display: block;
             }
         }
     }
-
     .search {
         &-box {
             margin-top: 0;
-
             @include media(desktop) {
                 margin-top: 1.5rem;
             }
-
             &-searchIcon {
                 color: #F28C20;
             }
         }
     }
-
     .logo {
         &-white {
             display: none;
         }
-
         &-grey {
             display: block;
-
             @include media (tablet) {
                 margin-top: 3rem;
             }
-
             @include media(desktop) {
                 margin-top: -1rem;
             }
         }
     }
-
     .headerLogo {
         &-link {
             @include media(desktop) {
                 margin-right: -2rem;
             }
-
             @include media(xldesktop) {
                 margin-right: 3rem;
                 margin-top: 0;

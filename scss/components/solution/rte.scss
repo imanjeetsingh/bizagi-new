@@ -1,79 +1,62 @@
 // Feature component CSS starts
-.feature {
-    &-container {}
-
-    &-box {
-        &-heading {
-            @include media(desktop) {
-                line-height: 2.75rem;
-                font-size: 2.5rem;
-                margin-top: 0;
-            }
-        }
-    }
-
-    &-list {
-        display: block;
-
-        &-box {}
-
-        &-content {
-            display: contents;
-
-
-        }
-
-        &-description {
-            margin-top: 1.25rem;
-            margin-left: 4.063rem;
-            font-size: 1.125rem;
-            line-height: 1.375rem;
-
-            @include media(tablet) {
-                font-size: 1rem;
-                line-height: 1.25rem;
-            }
-        }
-
-        &-icon {
-            &-box {
-                font-size: 1.5rem;
-                margin-top: -0.5rem;
-            }
-        }
-    }
-
-    &-list {
-        &-heading {
-            display: inline;
-            font-family: "Open Sans", sans-serif;
-            font-weight: 800;
-            font-size: 1.25rem;
-            line-height: 1.5rem;
-
-            @include media(desktop) {
-                font-size: 1.5rem;
-                line-height: 1.875rem;
-            }
-        }
-    }
-
-    &-cta {
-        text-align: end;
-
-        @include media(desktop) {
-            margin-top: -1.75rem;
-        }
-
-        .cta {
-            font-size: 1rem;
-
-            &-group {
-                margin-bottom: -1rem;
-            }
-        }
-    }
-
-}
-
+// .feature {
+//     &-container {}
+//     &-box {
+//         &-heading {
+//             @include media(desktop) {
+//                 line-height: 2.75rem;
+//                 font-size: 2.5rem;
+//                 margin-top: 0;
+//             }
+//         }
+//     }
+//     &-list {
+//         display: block;
+//         &-box {}
+//         &-content {
+//             display: contents;
+//         }
+//         &-description {
+//             margin-top: 1.25rem;
+//             margin-left: 4.063rem;
+//             font-size: 1.125rem;
+//             line-height: 1.375rem;
+//             @include media(tablet) {
+//                 font-size: 1rem;
+//                 line-height: 1.25rem;
+//             }
+//         }
+//         &-icon {
+//             &-box {
+//                 font-size: 1.5rem;
+//                 margin-top: -0.5rem;
+//             }
+//         }
+//     }
+//     &-list {
+//         &-heading {
+//             display: inline;
+//             font-family: "Open Sans", sans-serif;
+//             font-weight: 800;
+//             font-size: 1.25rem;
+//             line-height: 1.5rem;
+//             @include media(desktop) {
+//                 font-size: 1.5rem;
+//                 line-height: 1.875rem;
+//             }
+//         }
+//     }
+//     &-cta {
+//         text-align: end;
+//         @include media(desktop) {
+//             margin-top: -1.75rem;
+//         }
+//         .cta {
+//             font-size: 1rem;
+//             &-group {
+//                 margin-bottom: -1rem;
+//             }
+//         }
+//     }
+// }
 // Feature component CSS ends

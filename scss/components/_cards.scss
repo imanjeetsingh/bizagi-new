@@ -62,6 +62,12 @@
 
 .center-allign {
     justify-content: center;
+    @include media(tablet) {
+        justify-content: left;
+    }
+    @include media(desktop) {
+        justify-content: center;
+    }
 }
 
 // Card component CSS ends

@@ -10,7 +10,7 @@
             font-family: 'Open Sans', sans-serif;
             color: #6D7278;
             font-size: 1.5rem;
-            @include media(xldesktop) {
+            @include media(desktop) {
                 margin-top: 3.5rem;
                 font-size: 2.5rem;
             }
@@ -24,6 +24,15 @@
 }
 
 .fivecolumnheading {
+    text-align: center;
+    @include media(tablet) {
+        text-align: center;
+        // margin-left: 8rem;
+    }
+    @include media(desktop) {
+        text-align: left;
+        margin-left: 5rem;
+    }
     @include media(xldesktop) {
         text-align: left;
         margin-left: 8rem;
