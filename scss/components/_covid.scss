@@ -6,8 +6,8 @@
             padding: 2rem 0;
         }
         @include media(xldesktop) {
-            height: 3rem;
-            padding: 0;
+            height: 3.125rem;
+            padding: 12px 0 0 0;
         }
     }
     &-text {

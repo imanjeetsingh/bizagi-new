@@ -14,7 +14,7 @@
                 top: 4rem !important;
                 height: 85% !important;
             }
-            @include media(desktop){
+            @include media(desktop) {
                 height: 35% !important;
             }
             @include media(xldesktop) {
@@ -39,7 +39,7 @@
             @include media (xldesktop) {
                 height: 65%;
                 // top: 3rem;
-                padding: 0;
+                padding: 18px 0 0 0;
             }
         }
         .cta {

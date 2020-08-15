@@ -4253,6 +4253,51 @@ tbody.collapse.show {
     .testimonial-box-designation {
       font-size: 1.1rem; } }
 
+@media (min-width: 992px) {
+  .featureDescription-box-heading {
+    line-height: 2.75rem;
+    font-size: 2.5rem;
+    margin-top: 0; } }
+
+.featureDescription-list {
+  display: block; }
+  .featureDescription-list-content {
+    display: contents; }
+  .featureDescription-list-description {
+    font-family: "Open Sans", sans-serif;
+    margin-top: 1.25rem;
+    margin-left: 4.063rem;
+    font-size: 1.125rem;
+    line-height: 1.375rem; }
+    @media (min-width: 768px) {
+      .featureDescription-list-description {
+        font-size: 1rem;
+        line-height: 1.25rem; } }
+  .featureDescription-list-icon-box {
+    font-size: 1.5rem;
+    margin-top: -0.5rem; }
+
+.featureDescription-list-heading {
+  display: inline;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 1.5rem; }
+  @media (min-width: 992px) {
+    .featureDescription-list-heading {
+      font-size: 1.5rem;
+      line-height: 1.875rem; } }
+
+.featureDescription-cta {
+  text-align: end; }
+  @media (min-width: 992px) {
+    .featureDescription-cta {
+      margin-top: -1.75rem; } }
+  .featureDescription-cta .cta {
+    font-size: 1rem; }
+    .featureDescription-cta .cta-group {
+      margin-bottom: -1rem; }
+
 .blogDetail-article-box {
   padding-left: 10%;
   padding-right: 10%; }
@@ -4503,7 +4548,7 @@ tbody.collapse.show {
     @media (min-width: 1200px) {
       .banner-bg-image {
         height: 65%;
-        padding: 0; } }
+        padding: 18px 0 0 0; } }
   .banner-bg .cta {
     background-color: #FFFFFF;
     border: none; }
@@ -4723,8 +4768,8 @@ tbody.collapse.show {
       padding: 2rem 0; } }
   @media (min-width: 1200px) {
     .covid-container {
-      height: 3rem;
-      padding: 0; } }
+      height: 3.125rem;
+      padding: 12px 0 0 0; } }
 
 .covid-text {
   font-family: 'Open Sans', sans-serif;
