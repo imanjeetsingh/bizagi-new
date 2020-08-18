@@ -4051,9 +4051,11 @@ tbody.collapse.show {
   color: #FFFFFF;
   padding-top: 3rem; }
 
-.footer-content-box {
-  text-align: center;
-  padding-top: 1rem; }
+.footer-content {
+  color: #ffffff; }
+  .footer-content-box {
+    text-align: center;
+    padding-top: 1rem; }
 
 .footer-logo {
   text-align: center; }
@@ -4085,6 +4087,8 @@ tbody.collapse.show {
   color: #FFFFFF;
   display: flex;
   justify-content: center; }
+  .footer-copyright-content {
+    color: #FFFFFF; }
 
 .list-item {
   list-style: none;
@@ -4699,11 +4703,13 @@ tbody.collapse.show {
       display: flex; } }
 
 .carousel-article-box {
-  width: 20rem;
-  margin: 10px;
+  width: 22rem;
+  margin: 10px 2px 2rem;
   font-size: 30px;
   position: relative; }
   .carousel-article-box:hover {
+    text-decoration: none; }
+  .carousel-article-box-link:hover {
     text-decoration: none; }
 
 .carousel-article-image-tag {
@@ -4759,7 +4765,7 @@ tbody.collapse.show {
 
 .bottom {
   position: absolute;
-  bottom: 2.313rem; }
+  bottom: 3.25rem; }
 
 .covid-container {
   height: 7rem; }

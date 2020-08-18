@@ -22,12 +22,17 @@
 .carousel {
     &-article {
         &-box {
-            width: 20rem;
-            margin: 10px;
+            width: 22rem;
+            margin: 10px 2px 2rem;
             font-size: 30px;
             position: relative;
             &:hover {
                 text-decoration: none;
+            }
+            &-link {
+                &:hover {
+                    text-decoration: none;
+                }
             }
         }
         &-image {
@@ -99,7 +104,7 @@
 
 .bottom {
     position: absolute;
-    bottom: 2.313rem;
+    bottom: 3.25rem;
 }
 
 // Grid Carousel CSS ends
