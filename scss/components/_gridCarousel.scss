@@ -14,16 +14,24 @@
 .flex-container {
     display: block;
     flex-wrap: nowrap;
+
     @include media(tablet) {
         display: flex;
+    }
+}
+
+.item{
+    &-row{
+        margin: 0 -0.125rem;
     }
 }
 
 .carousel {
     &-article {
         &-box {
-            width: 22rem;
-            margin: 10px 2px 2rem;
+            width: 14rem;
+            margin: 0.625rem 0.125rem 2rem;
+            padding: 0.2rem;
             font-size: 30px;
             position: relative;
             &:hover {
@@ -83,7 +91,8 @@
     &-group {
         margin: 1rem #{$buttongap};
         flex-wrap: wrap;
-        width: 98%;
+        width: 96.8%;
+        padding: 0 10rem;
     }
 }
 
@@ -99,12 +108,12 @@
 
 .top {
     position: absolute;
-    top: 0rem;
+    top: 0.2rem;
 }
 
 .bottom {
     position: absolute;
-    bottom: 3.25rem;
+    bottom: 3.45rem;
 }
 
 // Grid Carousel CSS ends

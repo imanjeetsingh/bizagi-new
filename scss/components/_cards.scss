@@ -70,4 +70,16 @@
     }
 }
 
+.card{
+    &-cta{
+        .cta{
+            &-icon{
+                &-box{
+                    margin-top: 0.2rem;
+                }
+            }
+        }
+    }
+}
+
 // Card component CSS ends

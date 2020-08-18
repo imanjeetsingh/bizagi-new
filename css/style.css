@@ -4420,6 +4420,9 @@ tbody.collapse.show {
     .center-allign {
       justify-content: center; } }
 
+.card-cta .cta-icon-box {
+  margin-top: 0.2rem; }
+
 .cta {
   display: flex;
   justify-content: center;
@@ -4702,9 +4705,13 @@ tbody.collapse.show {
     .flex-container {
       display: flex; } }
 
+.item-row {
+  margin: 0 -0.125rem; }
+
 .carousel-article-box {
-  width: 22rem;
-  margin: 10px 2px 2rem;
+  width: 14rem;
+  margin: 0.625rem 0.125rem 2rem;
+  padding: 0.2rem;
   font-size: 30px;
   position: relative; }
   .carousel-article-box:hover {
@@ -4749,7 +4756,8 @@ tbody.collapse.show {
 .tab-group {
   margin: 1rem 0.5rem;
   flex-wrap: wrap;
-  width: 98%; }
+  width: 96.8%;
+  padding: 0 10rem; }
 
 .nav {
   display: block; }
@@ -4761,11 +4769,11 @@ tbody.collapse.show {
 
 .top {
   position: absolute;
-  top: 0rem; }
+  top: 0.2rem; }
 
 .bottom {
   position: absolute;
-  bottom: 3.25rem; }
+  bottom: 3.45rem; }
 
 .covid-container {
   height: 7rem; }
