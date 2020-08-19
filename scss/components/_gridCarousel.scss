@@ -14,14 +14,13 @@
 .flex-container {
     display: block;
     flex-wrap: nowrap;
-
     @include media(tablet) {
         display: flex;
     }
 }
 
-.item{
-    &-row{
+.item {
+    &-row {
         margin: 0 -0.125rem;
     }
 }
@@ -29,11 +28,16 @@
 .carousel {
     &-article {
         &-box {
-            width: 14rem;
             margin: 0.625rem 0.125rem 2rem;
             padding: 0.2rem;
             font-size: 30px;
             position: relative;
+            @include media(tablet) {
+                width: 9.290624rem;
+            }
+            @include media(xldesktop) {
+                width: 13.882811737rem;
+            }
             &:hover {
                 text-decoration: none;
             }
@@ -58,9 +62,10 @@
         }
         &-heading {
             font-family: "Open Sans", sans-serif;
-            font-weight: 800;
+            font-weight: 400;
             color: #6d7278;
-            font-size: 1.5rem;
+            font-size: 0.875rem;
+            line-height: 16px;
             margin-top: 0;
         }
     }
@@ -92,7 +97,16 @@
         margin: 1rem #{$buttongap};
         flex-wrap: wrap;
         width: 96.8%;
-        padding: 0 10rem;
+        @include media(tablet) {
+            padding: 0 6.5rem;
+            margin: 1rem -1rem;
+        }
+        @include media(desktop) {
+            margin: 1rem #{$buttongap};
+        }
+        @include media(xldesktop) {
+            padding: 0 10rem;
+        }
     }
 }
 

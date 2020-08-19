@@ -4352,10 +4352,10 @@ tbody.collapse.show {
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   color: #6d7278;
-  font-size: 1.5rem; }
+  font-size: 0.825rem; }
   @media (min-width: 1200px) {
     .blogDetail-article-tag-heading {
-      font-size: 2.5rem; } }
+      font-size: 0.875rem; } }
 
 .card-inner {
   background: #FFFFFF;
@@ -4467,7 +4467,8 @@ tbody.collapse.show {
     width: 55px;
     height: auto; }
   .cta-category {
-    padding: 0; }
+    padding: 0;
+    font-size: 12px; }
 
 .card-noBorder .card {
   border: none; }
@@ -4709,11 +4710,16 @@ tbody.collapse.show {
   margin: 0 -0.125rem; }
 
 .carousel-article-box {
-  width: 14rem;
   margin: 0.625rem 0.125rem 2rem;
   padding: 0.2rem;
   font-size: 30px;
   position: relative; }
+  @media (min-width: 768px) {
+    .carousel-article-box {
+      width: 9.290624rem; } }
+  @media (min-width: 1200px) {
+    .carousel-article-box {
+      width: 13.882811737rem; } }
   .carousel-article-box:hover {
     text-decoration: none; }
   .carousel-article-box-link:hover {
@@ -4729,9 +4735,10 @@ tbody.collapse.show {
 
 .carousel-article-heading {
   font-family: "Open Sans", sans-serif;
-  font-weight: 800;
+  font-weight: 400;
   color: #6d7278;
-  font-size: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 16px;
   margin-top: 0; }
 
 .carousel-tab {
@@ -4756,8 +4763,17 @@ tbody.collapse.show {
 .tab-group {
   margin: 1rem 0.5rem;
   flex-wrap: wrap;
-  width: 96.8%;
-  padding: 0 10rem; }
+  width: 96.8%; }
+  @media (min-width: 768px) {
+    .tab-group {
+      padding: 0 6.5rem;
+      margin: 1rem -1rem; } }
+  @media (min-width: 992px) {
+    .tab-group {
+      margin: 1rem 0.5rem; } }
+  @media (min-width: 1200px) {
+    .tab-group {
+      padding: 0 10rem; } }
 
 .nav {
   display: block; }
