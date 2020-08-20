@@ -25,58 +25,59 @@
     }
 }
 
-.carousel {
-    &-article {
-        &-box {
-            margin: 0.625rem 0.125rem 2rem;
-            padding: 0.2rem;
-            font-size: 30px;
-            position: relative;
-            @include media(tablet) {
-                width: 9.290624rem;
-            }
-            @include media(xldesktop) {
-                width: 13.882811737rem;
-            }
+.article {
+    &-box {
+        margin: 0.625rem 0.125rem 2rem;
+        padding: 0.2rem;
+        font-size: 30px;
+        position: relative;
+        @include media(tablet) {
+            width: 9.290624rem;
+        }
+        @include media(xldesktop) {
+            width: 13.882811737rem;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+        &-link {
             &:hover {
                 text-decoration: none;
             }
-            &-link {
-                &:hover {
-                    text-decoration: none;
-                }
-            }
-        }
-        &-image {
-            &-box {
-                // position: relative;
-            }
-            &-tag {
-                z-index: 1;
-                padding: 0.2rem;
-                background: #F38D1E;
-                color: #ffffff;
-                font-size: 0.6rem;
-            }
-        }
-        &-heading {
-            font-family: "Open Sans", sans-serif;
-            font-weight: 400;
-            color: #000000;
-            font-size: 0.875rem;
-            line-height: 1rem;
-            margin-top: 0;
-            padding-top: 0.3rem;
-            @include media(tablet) {
-                font-size: 1.875rem;
-                line-height: 2.25rem;
-            }
-            @include media(desktop) {
-                font-size: 0.875rem;
-                line-height: 1rem;
-            }
         }
     }
+    &-image {
+        &-box {
+            // position: relative;
+        }
+        &-tag {
+            z-index: 1;
+            padding: 0.2rem;
+            background: #F38D1E;
+            color: #ffffff;
+            font-size: 0.6rem;
+        }
+    }
+    &-heading {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        color: #000000;
+        font-size: 0.875rem;
+        line-height: 1rem;
+        margin-top: 0;
+        padding-top: 0.3rem;
+        @include media(tablet) {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+        }
+        @include media(desktop) {
+            font-size: 0.875rem;
+            line-height: 1rem;
+        }
+    }
+}
+
+.carousel {
     &-tab {
         color: #000000;
         display: flex;

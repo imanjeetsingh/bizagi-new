@@ -4711,33 +4711,30 @@ tbody.collapse.show {
 .item-row {
   margin: 0 -0.125rem; }
 
-.carousel-article-box {
+.article-box {
   margin: 0.625rem 0.125rem 2rem;
   padding: 0.2rem;
   font-size: 30px;
   position: relative; }
   @media (min-width: 768px) {
-    .carousel-article-box {
+    .article-box {
       width: 9.290624rem; } }
   @media (min-width: 1200px) {
-    .carousel-article-box {
+    .article-box {
       width: 13.882811737rem; } }
-  .carousel-article-box:hover {
+  .article-box:hover {
     text-decoration: none; }
-  .carousel-article-box-link:hover {
+  .article-box-link:hover {
     text-decoration: none; }
 
-.carousel-article-image-box {
-  position: relative; }
-
-.carousel-article-image-tag {
+.article-image-tag {
   z-index: 1;
   padding: 0.2rem;
   background: #F38D1E;
   color: #ffffff;
   font-size: 0.6rem; }
 
-.carousel-article-heading {
+.article-heading {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #000000;
@@ -4746,11 +4743,11 @@ tbody.collapse.show {
   margin-top: 0;
   padding-top: 0.3rem; }
   @media (min-width: 768px) {
-    .carousel-article-heading {
+    .article-heading {
       font-size: 1.875rem;
       line-height: 2.25rem; } }
   @media (min-width: 992px) {
-    .carousel-article-heading {
+    .article-heading {
       font-size: 0.875rem;
       line-height: 1rem; } }
 
