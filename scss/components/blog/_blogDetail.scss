@@ -28,12 +28,17 @@
             color: #6d7278;
             font-family: "Open Sans", sans-serif;
         }
-        &-name {
+        &-authorName {
             font-weight: bold;
             font-size: 1rem;
-            font-weight: 300;
-            color: #6d7278;
+            font-weight: 600;
+            color: #000000;
             font-family: "Open Sans", sans-serif;
+            &-link {
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
         &-date {
             font-size: 1rem;

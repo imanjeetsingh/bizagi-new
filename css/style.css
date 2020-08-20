@@ -4327,12 +4327,14 @@ tbody.collapse.show {
   color: #6d7278;
   font-family: "Open Sans", sans-serif; }
 
-.blogDetail-article-name {
+.blogDetail-article-authorName {
   font-weight: bold;
   font-size: 1rem;
-  font-weight: 300;
-  color: #6d7278;
+  font-weight: 600;
+  color: #000000;
   font-family: "Open Sans", sans-serif; }
+  .blogDetail-article-authorName-link:hover {
+    text-decoration: none; }
 
 .blogDetail-article-date {
   font-size: 1rem;
@@ -4725,21 +4727,32 @@ tbody.collapse.show {
   .carousel-article-box-link:hover {
     text-decoration: none; }
 
+.carousel-article-image-box {
+  position: relative; }
+
 .carousel-article-image-tag {
   z-index: 1;
-  padding: 0.2rem 1.2rem;
+  padding: 0.2rem;
   background: #F38D1E;
   color: #ffffff;
-  font-weight: 700;
-  font-size: 0.8rem; }
+  font-size: 0.6rem; }
 
 .carousel-article-heading {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: #6d7278;
+  color: #000000;
   font-size: 0.875rem;
-  line-height: 16px;
-  margin-top: 0; }
+  line-height: 1rem;
+  margin-top: 0;
+  padding-top: 0.3rem; }
+  @media (min-width: 768px) {
+    .carousel-article-heading {
+      font-size: 1.875rem;
+      line-height: 2.25rem; } }
+  @media (min-width: 992px) {
+    .carousel-article-heading {
+      font-size: 0.875rem;
+      line-height: 1rem; } }
 
 .carousel-tab {
   color: #000000;
@@ -4789,7 +4802,16 @@ tbody.collapse.show {
 
 .bottom {
   position: absolute;
-  top: 7.95rem; }
+  top: 11.05rem; }
+  @media (min-width: 768px) {
+    .bottom {
+      top: 20.1rem; } }
+  @media (min-width: 992px) {
+    .bottom {
+      top: 4.85rem; } }
+  @media (min-width: 1200px) {
+    .bottom {
+      top: 7.9rem; } }
 
 .covid-container {
   height: 7rem; }
