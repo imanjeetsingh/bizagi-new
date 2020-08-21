@@ -49,6 +49,9 @@
     &-image {
         &-box {
             // position: relative;
+            background-color: #ececec;
+            height: 143.8px;
+            width: auto;
         }
         &-tag {
             z-index: 1;
@@ -75,6 +78,10 @@
             line-height: 1rem;
         }
     }
+}
+
+img[alt] {
+    font-size: 1rem;
 }
 
 .carousel {

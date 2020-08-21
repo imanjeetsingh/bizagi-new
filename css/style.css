@@ -4727,6 +4727,11 @@ tbody.collapse.show {
   .article-box-link:hover {
     text-decoration: none; }
 
+.article-image-box {
+  background-color: #ececec;
+  height: 143.8px;
+  width: auto; }
+
 .article-image-tag {
   z-index: 1;
   padding: 0.2rem;
@@ -4750,6 +4755,9 @@ tbody.collapse.show {
     .article-heading {
       font-size: 0.875rem;
       line-height: 1rem; } }
+
+img[alt] {
+  font-size: 1rem; }
 
 .carousel-tab {
   color: #000000;
