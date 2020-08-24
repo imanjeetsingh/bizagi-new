@@ -28,7 +28,7 @@
 .article {
     &-box {
         margin: 0.625rem 0.125rem 2rem;
-        padding: 0.2rem;
+        padding: 0.2rem 0.3rem;
         font-size: 30px;
         position: relative;
         @include media(tablet) {
@@ -50,8 +50,13 @@
         &-box {
             // position: relative;
             background-color: #ececec;
-            height: 143.8px;
             width: auto;
+            @include media(desktop) {
+                height: 94.83px;
+            }
+            @include media(xldesktop) {
+                height: 143.8px;
+            }
         }
         &-tag {
             z-index: 1;
@@ -115,7 +120,7 @@ img[alt] {
     &-group {
         margin: 1rem #{$buttongap};
         flex-wrap: wrap;
-        width: 96.8%;
+        width: 97%;
         @include media(tablet) {
             padding: 0 6.5rem;
             margin: 1rem -1rem;
@@ -130,10 +135,7 @@ img[alt] {
 }
 
 .nav {
-    display: block;
-    @include media(tablet) {
-        display: flex;
-    }
+    display: flex;
     &-tabs {
         border-bottom: 2px solid #F28C20;
     }
@@ -146,15 +148,15 @@ img[alt] {
 
 .bottom {
     position: absolute;
-    top: 11.05rem;
+    top: 10.95rem;
     @include media(tablet) {
-        top: 20.1rem;
+        top: 20.05rem;
     }
     @include media(desktop) {
-        top: 4.85rem;
+        top: 4.7rem;
     }
     @include media(xldesktop) {
-        top: 7.9rem;
+        top: 7.75rem;
     }
 }
 

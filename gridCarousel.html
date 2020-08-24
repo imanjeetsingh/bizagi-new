@@ -180,18 +180,6 @@
                                             <div class="article-image-tag bottom">Company News</div>
                                         </a>
                                     </div>
-                                    <!-- <div class="article-box col-12 col-lg-auto">
-                                        <a class="article-box-link" href="#" target="">
-                                            <div class="article-image-box">
-
-                                                <img class="article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
-                                            </div>
-                                            <h3 class="article-heading">lorem ipsum</h3>
-                                        </a>
-                                        <a class="article-image-tag-link" href="#" target="">
-                                            <div class="article-image-tag bottom">Company News</div>
-                                        </a>
-                                    </div>
                                     <div class="article-box col-12 col-lg-auto">
                                         <a class="article-box-link" href="#" target="">
                                             <div class="article-image-box">
@@ -287,13 +275,25 @@
                                         <a class="article-image-tag-link" href="#" target="">
                                             <div class="article-image-tag bottom">Company News</div>
                                         </a>
-                                    </div> -->
+                                    </div>
+                                    <div class="article-box col-12 col-lg-auto">
+                                        <a class="article-box-link" href="#" target="">
+                                            <div class="article-image-box">
+
+                                                <img class="article-image" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                                            </div>
+                                            <h3 class="article-heading">lorem ipsum</h3>
+                                        </a>
+                                        <a class="article-image-tag-link" href="#" target="">
+                                            <div class="article-image-tag bottom">Company News</div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div id="moreFromAuthor" class="tab-pane fade">
+                <div id="moreFromAuthor" class="tab-pane fade">
                     <div class="owl-carousel owl-theme">
                         <div class="item">
                             <div class="container-fluid">
@@ -547,7 +547,7 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </section>
@@ -557,25 +557,8 @@
 <!-- Carousel component script starts -->
 <script src="./owlCarousel2/owl.carousel.js"></script>
 <script>
-    // // Calculate number of Slides
-    // var totalItems = $('.item .container-fluid .row .article-box').length;
-    // console.log(totalItems);
-    // // If there is only three slides
-    // if (totalItems <= 10) {
-    //     // Set loop option variable to false
-    //     var isLooped = false;
-    //     // Set nav option variable to false
-    //     var isNav = false;
-    // } else {
-    //     // Set loop option variable to true
-    //     var isLooped = true;
-    //     var isNav = true;
-    // }
-
-
-
     $('.owl-carousel').owlCarousel({
-        loop: false,
+        loop: true,
         margin: 10,
         items: 1,
         nav: true,
@@ -585,18 +568,18 @@
     $(".owl-prev").html('<i class="fa fa-arrow-circle-o-left"></i>');
     $(".owl-next").html('<i class="fa fa-arrow-circle-o-right"></i>');
 
+    var $carousel = $('.owl-carousel');
+    var item_count = $carousel.find('.item').length;
+    console.log(item_count);
+    if (item_count > 1)
+        owl_constant.loop = true
+
     $(document).ready(function() {
         $('.carousel-tab').click(function() {
             $('.carousel-tab').removeClass("carousel-tab-active");
             $(this).addClass("carousel-tab-active");
         });
     });
-
-    var $carousel = $('.owl-carousel');
-    var item_count = $carousel.find('.item').length;
-    console.log(item_count);
-    if (item_count > 1)
-        owl_constant.loop = true
 </script>
 <!-- Carousel component script ends -->
 

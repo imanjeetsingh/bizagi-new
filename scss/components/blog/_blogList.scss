@@ -1,31 +1,33 @@
-    .blog {
-    &-box {
-        &-heading {
-            font-family: 'Open Sans', sans-serif;
-            font-size: 1.9375rem;
-            position: absolute;
-            line-height: 2.5625rem;
-            font-weight: 300;
-            top: 3rem;
-            z-index: 1;
+// Blog List component CSS starts
+.blog {
+    &-heading {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.9375rem;
+        position: absolute;
+        line-height: 2.5625rem;
+        font-weight: 300;
+        top: 3rem;
+        z-index: 1;
+        color: #fff;
+        &-link {
             color: #fff;
-            &-link {
+            text-decoration: none;
+            cursor: pointer;
+            &:hover {
                 color: #fff;
                 text-decoration: none;
-                cursor: pointer;
-                &:hover {
-                    color: #fff;
-                    text-decoration: none;
-                }
-            }
-            &-two {
-                font-size: 16px;
-                line-height: 21px;
             }
         }
+        &-two {
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+    &-box {
         &-link {}
     }
     &-image {
+        width: 100%;
         &-box {
             position: relative;
             overflow: hidden;
@@ -50,7 +52,7 @@
                     background: -o-linear-gradient(45deg, #4db2ec 0%, #4a8f5e 100%);
                     background: -ms-linear-gradient(45deg, #4db2ec 0%, #4a8f5e 100%);
                     /* background: linear-gradient(45deg, #4db2ec 0%, #4a8f5e 100%); */
-                    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#4db2ec', endColorstr='#4a8f5e', GradientType=1);
+                    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#4db2ec', endColorstr='#4a8f5e', GradientType=1);
                 }
             }
             &-2 {
@@ -72,7 +74,7 @@
                     background: -o-linear-gradient(45deg, #d17646 0%, #c63939 100%);
                     background: -ms-linear-gradient(45deg, #d17646 0%, #c63939 100%);
                     background: linear-gradient(45deg, #d17646 0%, #c63939 100%);
-                    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#d17646', endColorstr='#c63939', GradientType=1);
+                    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#d17646', endColorstr='#c63939', GradientType=1);
                     -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
                     -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
                     box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
@@ -98,7 +100,7 @@
                     background: -o-linear-gradient(45deg, #d17646 0%, #c63939 100%);
                     background: -ms-linear-gradient(45deg, #d17646 0%, #c63939 100%);
                     background: linear-gradient(45deg, #d17646 0%, #c63939 100%);
-                    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#d17646', endColorstr='#c63939', GradientType=1);
+                    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#d17646', endColorstr='#c63939', GradientType=1);
                     -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
                     -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
                     box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
@@ -124,7 +126,7 @@
                     background: -o-linear-gradient(45deg, #d17646 0%, #c63939 100%);
                     background: -ms-linear-gradient(45deg, #d17646 0%, #c63939 100%);
                     background: linear-gradient(45deg, #d17646 0%, #c63939 100%);
-                    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#d17646', endColorstr='#c63939', GradientType=1);
+                    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#d17646', endColorstr='#c63939', GradientType=1);
                     -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
                     -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
                     box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
@@ -133,7 +135,8 @@
             }
         }
         &-category {
-            background: rgba(0, 0, 0, 0.2);
+            // background: rgba(0, 0, 0, 0.2);
+            background: #F38D1E;
             text-transform: uppercase;
             margin: 1.2rem 0 0.3125rem 0.8rem;
             padding: 0.1875rem 0.4375rem;
@@ -160,11 +163,12 @@
             &-link {}
         }
         &-image {
-            width: 74%;
+            width: 100%;
             &-box {
                 height: 156.38px;
             }
             &-tag {
+                font-size: 0.8rem;
                 &-link {}
             }
         }
@@ -176,18 +180,27 @@
     }
     .bottom {
         @include media(xldesktop) {
-            top: 8.5rem;
+            top: 8.45rem;
         }
     }
-    .blog-image-box .blog-image {
-        transition-timing-function: ease !important;
-        transition: transform 0.7s ease, opacity 0.7s;
-        -webkit-transition: -webkit-transform 0.7s ease, opacity 0.7s;
-    }
-    .blog-image-box:hover .blog-image {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-    .blog-box:hover .blog-image-category {
-        background: rgba(0, 0, 0, 0.5);
-    }
+}
+
+.side-image {
+    width: 100%;
+}
+
+.blog-image-box .blog-image {
+    transition-timing-function: ease !important;
+    transition: transform 0.7s ease, opacity 0.7s;
+    -webkit-transition: -webkit-transform 0.7s ease, opacity 0.7s;
+}
+
+.blog-image-box:hover .blog-image {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+// .blog-box:hover .blog-image-category {
+//     background: rgba(0, 0, 0, 0.5);
+// }
+// Blog List component CSS ends
