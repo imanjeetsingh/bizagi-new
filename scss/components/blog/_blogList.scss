@@ -9,3 +9,36 @@
         }
     }
 }
+
+.blogList {
+    &-tabs {
+        border-bottom: 2px solid #F28C20;
+        width: 95%;
+    }
+    .article {
+        &-box {
+            margin: 1.5rem;
+            padding: 0;
+            &-link {}
+        }
+        &-image {
+            width: 74%;
+            &-box {
+                height: 156.38px;
+            }
+            &-tag {
+                &-link {}
+            }
+        }
+        &-heading {
+            font-size: 1.375rem;
+            line-height: 1.5625rem;
+            color: #6d7278;
+        }
+    }
+    .bottom {
+        @include media(xldesktop) {
+            top: 8.5rem;
+        }
+    }
+}
