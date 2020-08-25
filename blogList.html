@@ -599,7 +599,7 @@ $pagination.html(paginationhtml.join(``));
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
 
-            if (scroll >= 0) {
+            if (scroll >= 500) {
                 $(".side-image").addClass("stick");
             }
         });

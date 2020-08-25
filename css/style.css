@@ -4560,7 +4560,8 @@ tbody.collapse.show {
   .blog-image-box {
     position: relative;
     overflow: hidden;
-    margin-top: 0.7rem; }
+    margin-top: 0.1rem;
+    margin-right: -25px; }
   .blog-image-category {
     background: #F38D1E;
     text-transform: uppercase;
