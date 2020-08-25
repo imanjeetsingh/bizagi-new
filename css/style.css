@@ -4457,98 +4457,111 @@ tbody.collapse.show {
     .blog-heading-link:hover {
       color: #fff;
       text-decoration: none; }
-  .blog-heading-two {
-    font-size: 16px;
-    line-height: 21px; }
+
+.blog-box-1 .blog-image-box:before {
+  -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+  opacity: 0.6;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background: #4db2ec;
+  background: -moz-linear-gradient(45deg, #4db2ec 0%, #4a8f5e 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #4db2ec), color-stop(100%, #4a8f5e));
+  /* background: -webkit-linear-gradient(45deg, #4db2ec 0%, #4a8f5e 100%); */
+  background: -o-linear-gradient(45deg, #4db2ec 0%, #4a8f5e 100%);
+  background: -ms-linear-gradient(45deg, #4db2ec 0%, #4a8f5e 100%);
+  /* background: linear-gradient(45deg, #4db2ec 0%, #4a8f5e 100%); */ }
+
+.blog-box-2 .blog-image-box:before {
+  background: #B3B936 !important; }
+
+.blog-box-2 .blog-image-box:before {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background: #d17646;
+  background: -moz-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #d17646), color-stop(100%, #c63939));
+  background: -webkit-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+  background: -o-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+  background: -ms-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+  background: linear-gradient(45deg, #d17646 0%, #c63939 100%);
+  -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+  opacity: 0.6; }
+
+.blog-box-3 .blog-image-box:before {
+  background: #696969 !important; }
+
+.blog-box-3 .blog-image-box:before {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background: #d17646;
+  background: -moz-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #d17646), color-stop(100%, #c63939));
+  background: -webkit-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+  background: -o-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+  background: -ms-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+  background: linear-gradient(45deg, #d17646 0%, #c63939 100%);
+  -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+  opacity: 0.6; }
+
+.blog-box-3 .blog-heading {
+  font-size: 16px;
+  line-height: 21px; }
+
+.blog-box-4 .blog-image-box:before {
+  background: #2F3A47 !important; }
+
+.blog-box-4 .blog-image-box:before {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background: #d17646;
+  background: -moz-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #d17646), color-stop(100%, #c63939));
+  background: -webkit-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+  background: -o-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+  background: -ms-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+  background: linear-gradient(45deg, #d17646 0%, #c63939 100%);
+  -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+  opacity: 0.6; }
+
+.blog-box-4 .blog-heading {
+  font-size: 16px;
+  line-height: 21px; }
 
 .blog-image {
   width: 100%; }
   .blog-image-box {
     position: relative;
     overflow: hidden;
-    margin-top: 0.7rem; }
-    .blog-image-box-1:before {
-      -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
-      box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
-      opacity: 0.6;
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      z-index: 1;
-      background: #4db2ec;
-      background: -moz-linear-gradient(45deg, #4db2ec 0%, #4a8f5e 100%);
-      background: -webkit-gradient(left bottom, right top, color-stop(0%, #4db2ec), color-stop(100%, #4a8f5e));
-      /* background: -webkit-linear-gradient(45deg, #4db2ec 0%, #4a8f5e 100%); */
-      background: -o-linear-gradient(45deg, #4db2ec 0%, #4a8f5e 100%);
-      background: -ms-linear-gradient(45deg, #4db2ec 0%, #4a8f5e 100%);
-      /* background: linear-gradient(45deg, #4db2ec 0%, #4a8f5e 100%); */ }
-    .blog-image-box-2:before {
-      background: #B3B936 !important; }
-    .blog-image-box-2:before {
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      z-index: 1;
-      background: #d17646;
-      background: -moz-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-      background: -webkit-gradient(left bottom, right top, color-stop(0%, #d17646), color-stop(100%, #c63939));
-      background: -webkit-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-      background: -o-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-      background: -ms-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-      background: linear-gradient(45deg, #d17646 0%, #c63939 100%);
-      -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
-      box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
-      opacity: 0.6; }
-    .blog-image-box-3:before {
-      background: #696969 !important; }
-    .blog-image-box-3:before {
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      z-index: 1;
-      background: #d17646;
-      background: -moz-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-      background: -webkit-gradient(left bottom, right top, color-stop(0%, #d17646), color-stop(100%, #c63939));
-      background: -webkit-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-      background: -o-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-      background: -ms-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-      background: linear-gradient(45deg, #d17646 0%, #c63939 100%);
-      -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
-      box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
-      opacity: 0.6; }
-    .blog-image-box-4:before {
-      background: #2F3A47 !important; }
-    .blog-image-box-4:before {
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      z-index: 1;
-      background: #d17646;
-      background: -moz-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-      background: -webkit-gradient(left bottom, right top, color-stop(0%, #d17646), color-stop(100%, #c63939));
-      background: -webkit-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-      background: -o-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-      background: -ms-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-      background: linear-gradient(45deg, #d17646 0%, #c63939 100%);
-      -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
-      box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
-      opacity: 0.6; }
+    margin-top: 0.1rem;
+    margin-right: -25px; }
   .blog-image-category {
     background: #F38D1E;
     text-transform: uppercase;
@@ -4596,6 +4609,10 @@ tbody.collapse.show {
 .blog-image-box:hover .blog-image {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
+
+.stick {
+  position: sticky;
+  top: 1.25rem; }
 
 .card-inner {
   background: #FFFFFF;
