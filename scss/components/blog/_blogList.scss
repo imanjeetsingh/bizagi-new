@@ -9,30 +9,25 @@
         top: 3rem;
         z-index: 1;
         color: #fff;
+
         &-link {
             color: #fff;
             text-decoration: none;
             cursor: pointer;
+
             &:hover {
                 color: #fff;
                 text-decoration: none;
             }
         }
-        &-two {
-            font-size: 16px;
-            line-height: 21px;
-        }
     }
+
     &-box {
+        // padding: 0 0.2rem;
         &-link {}
-    }
-    &-image {
-        width: 100%;
-        &-box {
-            position: relative;
-            overflow: hidden;
-            margin-top: 0.7rem;
-            &-1 {
+
+        &-1 {
+            .blog-image-box {
                 &:before {
                     -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
                     -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
@@ -55,62 +50,14 @@
                     // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#4db2ec', endColorstr='#4a8f5e', GradientType=1);
                 }
             }
-            &-2 {
+        }
+
+        &-2 {
+            .blog-image-box {
                 &:before {
                     background: #B3B936 !important;
                 }
-                &:before {
-                    bottom: 0;
-                    content: "";
-                    display: block;
-                    height: 100%;
-                    width: 100%;
-                    position: absolute;
-                    z-index: 1;
-                    background: #d17646;
-                    background: -moz-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-                    background: -webkit-gradient(left bottom, right top, color-stop(0%, #d17646), color-stop(100%, #c63939));
-                    background: -webkit-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-                    background: -o-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-                    background: -ms-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-                    background: linear-gradient(45deg, #d17646 0%, #c63939 100%);
-                    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#d17646', endColorstr='#c63939', GradientType=1);
-                    -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
-                    -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
-                    box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
-                    opacity: 0.6;
-                }
-            }
-            &-3 {
-                &:before {
-                    background: #696969 !important;
-                }
-                &:before {
-                    bottom: 0;
-                    content: "";
-                    display: block;
-                    height: 100%;
-                    width: 100%;
-                    position: absolute;
-                    z-index: 1;
-                    background: #d17646;
-                    background: -moz-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-                    background: -webkit-gradient(left bottom, right top, color-stop(0%, #d17646), color-stop(100%, #c63939));
-                    background: -webkit-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-                    background: -o-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-                    background: -ms-linear-gradient(45deg, #d17646 0%, #c63939 100%);
-                    background: linear-gradient(45deg, #d17646 0%, #c63939 100%);
-                    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#d17646', endColorstr='#c63939', GradientType=1);
-                    -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
-                    -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
-                    box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
-                    opacity: 0.6;
-                }
-            }
-            &-4 {
-                &:before {
-                    background: #2F3A47 !important;
-                }
+
                 &:before {
                     bottom: 0;
                     content: "";
@@ -134,6 +81,92 @@
                 }
             }
         }
+
+        &-3 {
+            .blog-image-box {
+                &:before {
+                    background: #696969 !important;
+                }
+
+                &:before {
+                    bottom: 0;
+                    content: "";
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    z-index: 1;
+                    background: #d17646;
+                    background: -moz-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: -webkit-gradient(left bottom, right top, color-stop(0%, #d17646), color-stop(100%, #c63939));
+                    background: -webkit-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: -o-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: -ms-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#d17646', endColorstr='#c63939', GradientType=1);
+                    -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+                    -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+                    box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+                    opacity: 0.6;
+                }
+
+
+            }
+
+            .blog-heading {
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+
+        &-4 {
+            .blog-image-box {
+                &:before {
+                    background: #2F3A47 !important;
+                }
+
+                &:before {
+                    bottom: 0;
+                    content: "";
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    z-index: 1;
+                    background: #d17646;
+                    background: -moz-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: -webkit-gradient(left bottom, right top, color-stop(0%, #d17646), color-stop(100%, #c63939));
+                    background: -webkit-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: -o-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: -ms-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#d17646', endColorstr='#c63939', GradientType=1);
+                    -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+                    -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+                    box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+                    opacity: 0.6;
+                }
+            }
+
+            .blog-heading {
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+    }
+
+    &-image {
+        width: 100%;
+
+        &-box {
+            position: relative;
+            overflow: hidden;
+            margin-top: 0.7rem;
+
+
+
+        }
+
         &-category {
             // background: rgba(0, 0, 0, 0.2);
             background: #F38D1E;
@@ -146,6 +179,7 @@
             z-index: 1;
             color: #fff;
             font-family: 'Open Sans', sans-serif;
+
             &-link {}
         }
     }
@@ -156,28 +190,36 @@
         border-bottom: 2px solid #F28C20;
         width: 95%;
     }
+
     .article {
         &-box {
             margin: 1.5rem;
             padding: 0;
+
             &-link {}
         }
+
         &-image {
             width: 100%;
+
             &-box {
                 height: 156.38px;
             }
+
             &-tag {
                 font-size: 0.8rem;
+
                 &-link {}
             }
         }
+
         &-heading {
             font-size: 1.375rem;
             line-height: 1.5625rem;
             color: #6d7278;
         }
     }
+
     .bottom {
         @include media(xldesktop) {
             top: 8.45rem;
@@ -204,3 +246,7 @@
 //     background: rgba(0, 0, 0, 0.5);
 // }
 // Blog List component CSS ends
+.stick {
+    position: sticky;
+    top: 1.25rem;
+}
