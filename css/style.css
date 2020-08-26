@@ -4114,6 +4114,15 @@ tbody.collapse.show {
     .inner-header .headerLogo-link {
       margin-right: 5rem; } }
 
+.inner-header .cta-content {
+  margin: 0 0.3125rem; }
+  @media (min-width: 992px) {
+    .inner-header .cta-content {
+      margin: 0; } }
+  @media (min-width: 1200px) {
+    .inner-header .cta-content {
+      margin: 0 5px; } }
+
 #foot {
   background: #005747;
   background: -webkit-linear-gradient(top left, #005747 0%, #00aca1 100%);

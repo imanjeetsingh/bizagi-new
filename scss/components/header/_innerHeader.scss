@@ -214,3 +214,14 @@
         }
     }
 }
+.inner-header{
+    .cta-content{
+        margin: 0 0.3125rem;
+        @include media(desktop){
+            margin: 0;
+        }
+        @include media(xldesktop){
+            margin: 0 5px;
+        }
+    }
+}
