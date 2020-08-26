@@ -173,7 +173,7 @@
             }
         }
     }
-    @include media(xldesktop) {
+    @include media(desktop) {
         .cta {
             display: flex;
             justify-content: center;
