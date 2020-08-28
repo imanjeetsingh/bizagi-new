@@ -4624,9 +4624,11 @@ tbody.collapse.show {
     position: relative;
     overflow: hidden;
     margin-top: 0.1rem;
-    margin-right: -1.5625rem;
     height: 100%;
     background-color: #ececec; }
+    @media (min-width: 768px) {
+      .blog-image-box {
+        margin-right: -1.5625rem; } }
   .blog-image-category {
     background: #F38D1E;
     text-transform: uppercase;
@@ -4645,7 +4647,11 @@ tbody.collapse.show {
 
 .blogList .article-box {
   margin: 1.5rem;
-  padding: 0; }
+  padding: 0;
+  width: 8rem; }
+  @media (min-width: 768px) {
+    .blogList .article-box {
+      width: 11.5rem; } }
 
 .blogList .article-image {
   width: 100%; }
@@ -4678,7 +4684,7 @@ tbody.collapse.show {
 
 .stick {
   position: sticky;
-  top: 1.25rem; }
+  top: 7.25rem; }
 
 .card-inner {
   background: #FFFFFF;

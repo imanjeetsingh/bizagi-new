@@ -25,7 +25,7 @@ function handleTiles(obj) {
     if (obj !== 'loading' && obj.data) {
         for (var pdata of obj.data) {
             output.push(`
-            <div class="article-box col-md-5">
+            <div class="article-box col-lg-5 ">
             <a class="article-box-link" href="${pdata.url}" target="_self" id="article-box-link">
             <div class="article-image-box">
             <img class="article-image img-fluid" src="${pdata.picture}" alt="${pdata.title} image">
