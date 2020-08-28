@@ -203,9 +203,19 @@
     <!-- Header component ends -->
 
     <div class="container-fluid blogDetail-container">
+        <!-- bread-crumb starts -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Digital Process Automation</a></li>
+                <li class="breadcrumb-item" aria-current="page">4 Ways to Deliver Change Management for Process Automation</li>
+            </ol>
+        </nav>
+        <!-- bread-crumb ends -->
+
         <!-- Blog Detail component starts -->
         <div class="blogDetail-article-box">
-            <div>
+            <div class="mb-4">
                 <img class="blogDetail-article-image" src="./images/testimonio03.png">
             </div>
             <div class="cta-group">
@@ -224,7 +234,7 @@
             <span class="blogDetail-article-date"> - 8th March 2020</span>
 
             <!-- Social Icons component starts -->
-            <div class="social-icon-box">
+            <div class="social-icon-box mt-4 mb-4">
                 <a class="social-icon-link" href="http://www.linkedin.com/company/bizagi" target="_blank">
                     <i class="social-icon fa fa-linkedin-square"></i>
                 </a>
@@ -318,10 +328,14 @@
                     </a>
                 </div>
             </div>
-            <a class="blogDetail-article-authorName-link" href="#">
-                <span class="blogDetail-article-authorName">Author Name</span>
-            </a>
-            <span class="blogDetail-article-date"> - 8th March 2020</span>
+            <div class="blogDetail-article-authorName-box">
+                <a class="blogDetail-article-authorName-link" href="#">
+                    <span class="blogDetail-article-authorName">Tim Burton, Editor</span>
+                </a>
+                <a class="blogDetail-article-linkName-link" href="#">
+                    <span class="blogDetail-article-linkName">www.bizagi.com</span>
+                </a>
+            </div>
 
         </div>
         <!-- Blog Detail component ends -->
@@ -329,7 +343,7 @@
     <!-- Carousel component starts -->
     <section>
         <!-- Carousel component CTA starts -->
-        <div class="container-fluid tab-group">
+        <div class="container-fluid tab-group mt-5">
             <ul class="nav nav-tabs">
                 <li class="active">
                     <a data-toggle="tab" class="tab carousel-tab carousel-tab-active" href="#relatedArticles">
@@ -959,6 +973,7 @@
         items: 1,
         nav: true,
         dots: false
+
     })
     $(".owl-prev").html('<i class="fa fa-arrow-circle-o-left"></i>');
     $(".owl-next").html('<i class="fa fa-arrow-circle-o-right"></i>');
