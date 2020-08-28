@@ -5038,16 +5038,11 @@ a {
   margin: 0 -0.125rem; }
 
 .article-box {
-  margin: 0.625rem 0.125rem 2rem;
-  padding: 0.2rem 0.3rem;
+  margin: 0 0.125rem 2rem;
+  padding: 0 0.3rem;
   font-size: 30px;
-  position: relative; }
-  @media (min-width: 768px) {
-    .article-box {
-      width: 9.290624rem; } }
-  @media (min-width: 1200px) {
-    .article-box {
-      width: 13.882811737rem; } }
+  position: relative;
+  width: calc(20% - 0.3rem); }
   .article-box:hover {
     text-decoration: none; }
   .article-box-link:hover {
@@ -5069,6 +5064,12 @@ a {
   background: #F38D1E;
   color: #ffffff;
   font-size: 0.75rem; }
+  @media (min-width: 768px) {
+    .article-image-tag {
+      font-size: 0.45rem; } }
+  @media (min-width: 992px) {
+    .article-image-tag {
+      font-size: 0.75rem; } }
 
 .article-heading {
   font-family: "Open Sans", sans-serif;
@@ -5080,8 +5081,8 @@ a {
   padding-top: 0.3rem; }
   @media (min-width: 768px) {
     .article-heading {
-      font-size: 1.875rem;
-      line-height: 2.25rem; } }
+      font-size: 0.75rem;
+      line-height: 0.9rem; } }
   @media (min-width: 992px) {
     .article-heading {
       font-size: 0.875rem;
@@ -5120,7 +5121,7 @@ img[alt] {
   @media (min-width: 768px) {
     .tab-group {
       padding: 0 6.5rem;
-      margin: 1rem -1rem; } }
+      margin: 1rem 1rem; } }
   @media (min-width: 992px) {
     .tab-group {
       margin: 1rem 0.5rem; } }
@@ -5139,16 +5140,19 @@ img[alt] {
 
 .bottom {
   position: absolute;
-  top: 10.78rem; }
+  top: 10.55rem; }
   @media (min-width: 768px) {
     .bottom {
-      top: 20.05rem; } }
+      top: 2.65rem; } }
   @media (min-width: 992px) {
     .bottom {
       top: 4.7rem; } }
   @media (min-width: 1200px) {
     .bottom {
       top: 7.55rem; } }
+
+.owl-item {
+  margin-top: 1rem; }
 
 .covid-container {
   height: 7rem; }

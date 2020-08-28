@@ -27,16 +27,18 @@
 
 .article {
     &-box {
-        margin: 0.625rem 0.125rem 2rem;
-        padding: 0.2rem 0.3rem;
+        margin: 0 0.125rem 2rem;
+        padding: 0 0.3rem;
         font-size: 30px;
         position: relative;
-        @include media(tablet) {
-            width: 9.290624rem;
-        }
-        @include media(xldesktop) {
-            width: 13.882811737rem;
-        }
+        width: calc(20% - 0.3rem);
+        // @include media(tablet) {
+        //     width: 9.290624rem;
+            
+        // }
+        // @include media(xldesktop) {
+        //     width: 13.882811737rem;
+        // }
         &:hover {
             text-decoration: none;
         }
@@ -64,6 +66,12 @@
             background: #F38D1E;
             color: #ffffff;
             font-size: 0.75rem;
+            @include media(tablet){
+                font-size: 0.45rem;
+            }
+            @include media(desktop){
+                font-size: 0.75rem;
+            }
         }
     }
     &-heading {
@@ -75,8 +83,8 @@
         margin-top: 0;
         padding-top: 0.3rem;
         @include media(tablet) {
-            font-size: 1.875rem;
-            line-height: 2.25rem;
+            font-size: 0.75rem;
+            line-height: 0.9rem;
         }
         @include media(desktop) {
             font-size: 0.875rem;
@@ -126,7 +134,7 @@ img[alt] {
         width: 97%;
         @include media(tablet) {
             padding: 0 6.5rem;
-            margin: 1rem -1rem;
+            margin: 1rem 1rem;
         }
         @include media(desktop) {
             margin: 1rem #{$buttongap};
@@ -151,9 +159,9 @@ img[alt] {
 
 .bottom {
     position: absolute;
-    top: 10.78rem;
+    top: 10.55rem;
     @include media(tablet) {
-        top: 20.05rem;
+        top: 2.65rem;
     }
     @include media(desktop) {
         top: 4.7rem;
@@ -163,4 +171,7 @@ img[alt] {
     }
 }
 
+.owl-item{
+    margin-top: 1rem;
+}
 // Grid Carousel CSS ends
