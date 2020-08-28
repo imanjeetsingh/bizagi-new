@@ -53,6 +53,10 @@
                                 color: #ffffff;
                                 @include media(desktop) {
                                     color: #009E99;
+                                    margin-left: 1.5rem;
+                                }
+                                @include media(xldesktop){
+                                    margin-left: 0;
                                 }
                             }
                         }
@@ -68,7 +72,7 @@
                         @include media(tablet) {
                             border: none;
                             margin-right: 0;
-                            padding-right: 0;
+                            padding-right: 0.5rem;
                         }
                         @include media(desktop) {
                             border: solid 2px #ffffff;
@@ -87,6 +91,15 @@
                         .cta {
                             &-content {
                                 color: #ffffff;
+                                @include media(desktop){
+                                margin-left: -0.4375rem;
+                                }
+                                 @include media(desktop){
+                                margin-left: -0.4375rem;
+                                }
+                                @include media(xldesktop){
+                                    margin-left: 0;
+                                }
                             }
                         }
                     }

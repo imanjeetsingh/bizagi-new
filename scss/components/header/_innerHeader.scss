@@ -173,7 +173,7 @@
             }
         }
     }
-    @include media(xldesktop) {
+    @include media(desktop) {
         .cta {
             display: flex;
             justify-content: center;
@@ -211,6 +211,17 @@
             @include media(desktop) {
                 margin-right: 5rem;
             }
+        }
+    }
+}
+.inner-header{
+    .cta-content{
+        margin: 0 0.3125rem;
+        @include media(desktop){
+            margin: 0;
+        }
+        @include media(xldesktop){
+            margin: 0 5px;
         }
     }
 }
