@@ -148,9 +148,11 @@
             position: relative;
             overflow: hidden;
             margin-top: 0.1rem;
-            margin-right: -1.5625rem;
             height: 100%;
             background-color: #ececec;
+            @include media(tablet) {
+                margin-right: -1.5625rem;
+            }
         }
         &-category {
             // background: rgba(0, 0, 0, 0.2);
@@ -178,6 +180,10 @@
         &-box {
             margin: 1.5rem;
             padding: 0;
+            width: 8rem;
+            @include media(tablet) {
+                width: 11.5rem;
+            }
             &-link {}
         }
         &-image {
@@ -225,5 +231,5 @@
 // Blog List component CSS ends
 .stick {
     position: sticky;
-    top: 1.25rem;
+    top: 7.25rem;
 }
