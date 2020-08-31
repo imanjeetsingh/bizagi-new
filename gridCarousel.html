@@ -557,6 +557,12 @@
 <!-- Carousel component script starts -->
 <script src="./owlCarousel2/owl.carousel.js"></script>
 <script>
+    $(document).ready(function() {
+        $('.carousel-tab').click(function() {
+            $('.carousel-tab').removeClass("carousel-tab-active");
+            $(this).addClass("carousel-tab-active");
+        });
+    });
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -573,13 +579,6 @@
     console.log(item_count);
     if (item_count > 1)
         owl_constant.loop = true
-
-    $(document).ready(function() {
-        $('.carousel-tab').click(function() {
-            $('.carousel-tab').removeClass("carousel-tab-active");
-            $(this).addClass("carousel-tab-active");
-        });
-    });
 </script>
 <!-- Carousel component script ends -->
 

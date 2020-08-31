@@ -34,7 +34,6 @@
         width: calc(20% - 0.3rem);
         // @include media(tablet) {
         //     width: 9.290624rem;
-            
         // }
         // @include media(xldesktop) {
         //     width: 13.882811737rem;
@@ -66,10 +65,10 @@
             background: #F38D1E;
             color: #ffffff;
             font-size: 0.75rem;
-            @include media(tablet){
+            @include media(tablet) {
                 font-size: 0.45rem;
             }
-            @include media(desktop){
+            @include media(desktop) {
                 font-size: 0.75rem;
             }
         }
@@ -143,6 +142,12 @@ img[alt] {
             padding: 0 10rem;
         }
     }
+    &-content {
+        padding: 0 0.35rem 0 0;
+        @include media(tablet) {
+            padding: 0;
+        }
+    }
 }
 
 .nav {
@@ -171,7 +176,8 @@ img[alt] {
     }
 }
 
-.owl-item{
+.owl-item {
     margin-top: 1rem;
 }
+
 // Grid Carousel CSS ends

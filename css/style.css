@@ -4404,7 +4404,13 @@ tbody.collapse.show {
   font-family: "Open Sans", sans-serif; }
   .blogDetail-article-authorName-box {
     border: 0.0625rem solid #ededed;
-    padding: 2rem 10rem; }
+    padding: 2rem 3.5rem; }
+    @media (min-width: 768px) {
+      .blogDetail-article-authorName-box {
+        padding: 2rem 14rem; } }
+    @media (min-width: 992px) {
+      .blogDetail-article-authorName-box {
+        padding: 2rem 10rem; } }
     .blogDetail-article-authorName-box .blogDetail-article-authorName:hover {
       color: #F38D1E; }
     .blogDetail-article-authorName-box .blogDetail-article-linkName {
@@ -5090,6 +5096,12 @@ img[alt] {
     .tab-group {
       padding: 0 10rem; } }
 
+.tab-content {
+  padding: 0 0.35rem 0 0; }
+  @media (min-width: 768px) {
+    .tab-content {
+      padding: 0; } }
+
 .nav {
   display: flex; }
   .nav-tabs {
@@ -5437,6 +5449,10 @@ p {
     p {
       font-size: 1.125rem;
       line-height: 1.375rem; } }
+
+img {
+  width: 100%;
+  height: auto; }
 
 .sap-container li {
   font-family: "Open Sans", sans-serif;
