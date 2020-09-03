@@ -33,3 +33,23 @@
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
+// edit by iman
+.partnerinfo {
+    text-align: end;
+    margin-right: 2rem;
+    color: #9b9b9b;
+    font-weight: 400;
+}
+.case-study-image{
+    padding: 1rem 0;
+}
+.image-box{
+    text-align: justify;
+    @include media(tablet){
+    text-align: center;
+    }
+    @include media(desktop){
+        text-align: justify;
+    }
+}
