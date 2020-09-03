@@ -180,7 +180,7 @@
         &-box {
             margin: 1.5rem;
             padding: 0;
-            width: 8rem;
+            width: 19rem;
             @include media(tablet) {
                 width: 11.5rem;
             }
@@ -191,21 +191,41 @@
             &-box {
                 height: 9.75rem;
                 overflow: hidden;
+                @include media(tablet) {
+                    height: 7.8rem;
+                    ;
+                }
             }
             &-tag {
                 font-size: 0.8rem;
+                @include media(tablet) {
+                    font-size: 0.7rem;
+                }
+                @include media(desktop) {
+                    font-size: 0.8rem;
+                }
                 &-link {}
             }
         }
         &-heading {
-            font-size: 1.375rem;
-            line-height: 1.5625rem;
+            padding: 0.3rem;
+            @include media(desktop) {
+                padding: 0;
+            }
+            @include media(desktop) {
+                padding: 0.3rem;
+                font-size: 1.375rem;
+                line-height: 1.5625rem;
+            }
             color: #6d7278;
         }
     }
     .bottom {
+        @include media(tablet) {
+            top: 6.35rem;
+        }
         @include media(xldesktop) {
-            top: 8.15rem;
+            top: 6.4rem;
         }
     }
 }

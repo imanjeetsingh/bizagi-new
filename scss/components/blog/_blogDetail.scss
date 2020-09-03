@@ -3,8 +3,10 @@
     &-container {}
     &-article {
         &-box {
-            padding-left: 10%;
-            padding-right: 10%;
+            @include media(desktop) {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
             .cta {
                 padding: 0;
                 font-size: 0.75rem;

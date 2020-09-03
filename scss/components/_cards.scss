@@ -70,16 +70,27 @@
     }
 }
 
-.card{
-    &-cta{
-        .cta{
-            &-icon{
-                &-box{
-                    margin-top: 0.2rem;
+.card {
+    &-cta {
+        .cta {
+            &-icon {
+                &-box {
+                    margin-top: 0.3rem;
                 }
             }
         }
     }
+}
+
+.card-five {
+    margin-bottom: 1.2rem;
+    @include media (tablet) {
+        margin: 0;
+    }
+}
+
+.card-five:nth-child(5n) {
+    margin: 0;
 }
 
 // Card component CSS ends
