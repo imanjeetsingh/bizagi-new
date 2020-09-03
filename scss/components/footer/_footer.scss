@@ -22,6 +22,9 @@
         font-weight: 300;
         color: #FFFFFF;
         padding-top: 3rem;
+        p {
+            color: #ffffff;
+        }
     }
     &-content {
         color: #ffffff;
@@ -32,6 +35,9 @@
     }
     &-logo {
         text-align: center;
+        img {
+            width: auto;
+        }
         &-box {
             @include media(desktop) {
                 margin-right: 8rem;
@@ -49,6 +55,7 @@
         &-box {
             @include mobile-only {
                 text-align: center;
+                margin-bottom: 2rem;
             }
             &-heading {
                 color: #FFFFFF;
@@ -63,10 +70,15 @@
     }
     &-copyright {
         color: #FFFFFF;
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
+        text-align: center;
         &-content {
             color: #FFFFFF;
+            font-size: 0.8125rem;
+        }
+        .link {
+            font-size: 0.8125rem;
         }
     }
 }

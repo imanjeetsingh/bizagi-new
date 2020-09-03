@@ -3,8 +3,10 @@
     &-container {}
     &-article {
         &-box {
-            padding-left: 10%;
-            padding-right: 10%;
+            @include media(desktop) {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
             .cta {
                 padding: 0;
                 font-size: 0.75rem;
@@ -42,7 +44,13 @@
             font-family: "Open Sans", sans-serif;
             &-box {
                 border: 0.0625rem solid #ededed;
-                padding: 2rem 10rem;
+                padding: 2rem 3.5rem;
+                @include media(tablet) {
+                    padding: 2rem 14rem;
+                }
+                @include media(desktop) {
+                    padding: 2rem 10rem;
+                }
                 .blogDetail-article-authorName {
                     &:hover {
                         color: #F38D1E;

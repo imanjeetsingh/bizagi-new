@@ -1,13 +1,17 @@
 // Grid Carousel CSS starts 
 .owl {
     &-carousel {
-        padding: 10px;
+        // padding: 10px;
+        // margin: 0 -1rem;
     }
     &-prev {
         margin: 0.5rem;
     }
     &-next {
         margin: 0.5rem;
+    }
+    &-stage {
+        // padding: 0;
     }
 }
 
@@ -27,14 +31,14 @@
 
 .article {
     &-box {
-        margin: 0 0.125rem 2rem;
-        padding: 0 0.3rem;
+        // margin: 0 0.125rem 2rem;
+        // padding: 0 0.3rem;
         font-size: 30px;
         position: relative;
-        width: calc(20% - 0.3rem);
+        width: 20%;
+        padding: 0 15px 20px 0;
         // @include media(tablet) {
         //     width: 9.290624rem;
-            
         // }
         // @include media(xldesktop) {
         //     width: 13.882811737rem;
@@ -66,10 +70,10 @@
             background: #F38D1E;
             color: #ffffff;
             font-size: 0.75rem;
-            @include media(tablet){
+            @include media(tablet) {
                 font-size: 0.45rem;
             }
-            @include media(desktop){
+            @include media(desktop) {
                 font-size: 0.75rem;
             }
         }
@@ -80,7 +84,7 @@
         color: #000000;
         font-size: 0.875rem;
         line-height: 1rem;
-        margin-top: 0;
+        margin: 0 0 0 1rem;
         padding-top: 0.3rem;
         @include media(tablet) {
             font-size: 0.75rem;
@@ -111,14 +115,14 @@ img[alt] {
         font-weight: 700;
         font-family: 'Open Sans', sans-serif;
         text-decoration: none !important;
-        padding: 10px 20px;
+        padding: 11px 20px;
         &:hover {
             color: #F28C20;
         }
         &-active {
             background-color: #F28C20;
             color: #ffffff !important;
-            border: solid 2px #F28C20;
+            // border: solid 2px #F28C20;
             margin: 0;
         }
         &-content {
@@ -129,9 +133,9 @@ img[alt] {
 
 .tab {
     &-group {
-        margin: 1rem #{$buttongap};
+        margin: 1rem 0;
         flex-wrap: wrap;
-        width: 97%;
+        // width: 97%;
         @include media(tablet) {
             padding: 0 6.5rem;
             margin: 1rem 1rem;
@@ -141,6 +145,12 @@ img[alt] {
         }
         @include media(xldesktop) {
             padding: 0 10rem;
+        }
+    }
+    &-content {
+        padding: 0 0.35rem 0 0;
+        @include media(tablet) {
+            padding: 0;
         }
     }
 }
@@ -160,8 +170,10 @@ img[alt] {
 .bottom {
     position: absolute;
     top: 10.55rem;
+    left: 1rem;
     @include media(tablet) {
         top: 2.65rem;
+        left: 0rem;
     }
     @include media(desktop) {
         top: 4.7rem;
@@ -171,7 +183,15 @@ img[alt] {
     }
 }
 
-.owl-item{
+.owl-item {
     margin-top: 1rem;
 }
+
+.article-box:nth-child(5n) {
+    margin: 0 0 20px 0;
+}
+
+// .article-box:nth-child(10n) {
+//     padding-right: 0;
+// }
 // Grid Carousel CSS ends
