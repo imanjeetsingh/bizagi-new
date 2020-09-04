@@ -50,15 +50,8 @@
 
 .image-box {
     text-align: justify;
-<<<<<<< HEAD
     @include media(tablet) {
         text-align: center;
-=======
-    left: 1rem;
-    padding: 1rem 0 1.5rem 0;
-    @include media(tablet){
-    text-align: center;
->>>>>>> 7066fec51312473d15f66a1f2cd9a20204b3262e
     }
     @include media(desktop) {
         text-align: justify;
