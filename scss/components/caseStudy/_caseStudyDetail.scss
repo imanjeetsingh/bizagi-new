@@ -6,17 +6,18 @@
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
+    width: 190px;
+    background-color: rgba(23, 42, 52, 0.8);
+    color: #fff !important;
+    text-align: justify;
+    border-radius: 6px 0 6px 6px;
+    padding: 5px 8px;
     position: absolute;
     z-index: 1;
-    bottom: 150%;
-    left: 50%;
-    margin-left: -60px;
+    right: -1rem;
+    top: 2rem;
+    font-size: 14px;
+    transition: visibility 0.3s linear,opacity 0.3s linear;
 }
 
 .tooltip .tooltiptext::after {
@@ -40,6 +41,7 @@
     margin-right: 2rem;
     color: #9b9b9b;
     font-weight: 400;
+    font-size: 18px;
 }
 
 .case-study-image {
@@ -48,8 +50,15 @@
 
 .image-box {
     text-align: justify;
+<<<<<<< HEAD
     @include media(tablet) {
         text-align: center;
+=======
+    left: 1rem;
+    padding: 1rem 0 1.5rem 0;
+    @include media(tablet){
+    text-align: center;
+>>>>>>> 7066fec51312473d15f66a1f2cd9a20204b3262e
     }
     @include media(desktop) {
         text-align: justify;
