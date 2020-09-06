@@ -17,7 +17,7 @@
     right: -1rem;
     top: 2rem;
     font-size: 14px;
-    transition: visibility 0.3s linear,opacity 0.3s linear;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
 }
 
 .tooltip .tooltiptext::after {
@@ -50,17 +50,59 @@
 
 .image-box {
     text-align: justify;
-<<<<<<< HEAD
-    @include media(tablet) {
-        text-align: center;
-=======
     left: 1rem;
     padding: 1rem 0 1.5rem 0;
-    @include media(tablet){
-    text-align: center;
->>>>>>> 7066fec51312473d15f66a1f2cd9a20204b3262e
+    @include media(tablet) {
+        text-align: center;
     }
     @include media(desktop) {
         text-align: justify;
     }
+}
+
+.cs {
+    // display: ;
+    &-search {
+        &-box {}
+        &-input {
+            border-radius: 2.5rem;
+            border: solid 1px lightgray;
+            padding: 0.3rem 1rem;
+            width: 100%;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .cta {
+        padding: 5px 55px;
+    }
+    .dropdown {
+        padding: 0;
+    }
+    .dropdown-menu {
+        // position: absolute;
+        // top: -1.25rem;
+        left: -1rem;
+    }
+    .dropdown input {
+        /* display: block; */
+        line-height: 2rem;
+        margin: 0.5rem;
+    }
+    .dropdown label {
+        font-weight: 700;
+        color: #6d7278;
+    }
+    // .dropdown:hover .dropdown-menu {
+    //     display: block;
+    // }
+    .option-set {
+        width: 18rem;
+        padding: 20px 0;
+    }
+}
+
+ul.options>li {
+    list-style: none;
 }
