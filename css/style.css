@@ -4872,7 +4872,7 @@ a {
 
 .contentSection-box-heading {
   font-weight: 800;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   margin-top: 2.5rem;
   font-family: 'Open Sans', sans-serif;
   color: #6D7278;
@@ -4898,7 +4898,7 @@ a {
   @media (min-width: 1200px) {
     .fivecolumnheading {
       text-align: left;
-      margin-left: 8rem; } }
+      margin-left: 6.5rem; } }
 
 .partner-logo-box {
   justify-content: center; }
@@ -5383,6 +5383,11 @@ img[alt] {
   .home-header .headerLogo-link {
     margin-right: 3rem;
     margin-top: 0; } }
+
+.home-header .dropdown-item:hover {
+  background-color: transparent;
+  color: #6D7278;
+  font-weight: 600; }
 
 @media (min-width: 768px) {
   .affix {

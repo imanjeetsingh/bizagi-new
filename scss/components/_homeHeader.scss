@@ -154,6 +154,15 @@
             }
         }
     }
+    .dropdown{
+        &-item{
+            &:hover {
+                background-color: transparent;
+                color: #6D7278;
+                font-weight: 600;
+            }
+        }
+    }
 }
 
 .affix {
