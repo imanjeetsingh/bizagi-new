@@ -4694,7 +4694,7 @@ tbody.collapse.show {
   right: -1rem;
   top: 2rem;
   font-size: 14px;
-  transition: visibility 0.3s linear,opacity 0.3s linear; }
+  transition: visibility 0.3s linear, opacity 0.3s linear; }
 
 .tooltip .tooltiptext::after {
   content: "";
@@ -4727,6 +4727,39 @@ tbody.collapse.show {
   @media (min-width: 992px) {
     .image-box {
       text-align: justify; } }
+
+.cs-search-input {
+  border-radius: 2.5rem;
+  border: solid 1px lightgray;
+  padding: 0.3rem 1rem;
+  width: 100%; }
+  .cs-search-input:focus {
+    outline: none; }
+
+.cs .cta {
+  padding: 5px 55px; }
+
+.cs .dropdown {
+  padding: 0; }
+
+.cs .dropdown-menu {
+  left: -1rem; }
+
+.cs .dropdown input {
+  /* display: block; */
+  line-height: 2rem;
+  margin: 0.5rem; }
+
+.cs .dropdown label {
+  font-weight: 700;
+  color: #6d7278; }
+
+.cs .option-set {
+  width: 18rem;
+  padding: 20px 0; }
+
+ul.options > li {
+  list-style: none; }
 
 .card-inner {
   background: #FFFFFF;
