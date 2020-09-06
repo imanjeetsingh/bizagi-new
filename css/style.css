@@ -4720,7 +4720,9 @@ tbody.collapse.show {
   padding: 1rem 0; }
 
 .image-box {
-  text-align: justify; }
+  text-align: justify;
+  left: 1rem;
+  padding: 1rem 0 1.5rem 0; }
   @media (min-width: 768px) {
     .image-box {
       text-align: center; } }
@@ -4737,13 +4739,15 @@ tbody.collapse.show {
     outline: none; }
 
 .cs .cta {
-  padding: 5px 55px; }
+  padding: 5px 55px;
+  outline: none; }
 
 .cs .dropdown {
   padding: 0; }
 
 .cs .dropdown-menu {
-  left: -1rem; }
+  left: -1rem;
+  margin-top: -0.5rem; }
 
 .cs .dropdown input {
   /* display: block; */
@@ -4753,6 +4757,9 @@ tbody.collapse.show {
 .cs .dropdown label {
   font-weight: 700;
   color: #6d7278; }
+
+.cs .dropdown:hover .dropdown-menu {
+  display: block; }
 
 .cs .option-set {
   width: 18rem;

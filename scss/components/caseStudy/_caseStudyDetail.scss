@@ -76,6 +76,7 @@
     }
     .cta {
         padding: 5px 55px;
+        outline: none;
     }
     .dropdown {
         padding: 0;
@@ -84,6 +85,7 @@
         // position: absolute;
         // top: -1.25rem;
         left: -1rem;
+        margin-top: -0.5rem;
     }
     .dropdown input {
         /* display: block; */
@@ -94,9 +96,9 @@
         font-weight: 700;
         color: #6d7278;
     }
-    // .dropdown:hover .dropdown-menu {
-    //     display: block;
-    // }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
     .option-set {
         width: 18rem;
         padding: 20px 0;
