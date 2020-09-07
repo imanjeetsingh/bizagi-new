@@ -4763,6 +4763,36 @@ tbody.collapse.show {
 ul.options > li {
   list-style: none; }
 
+.client-info {
+  color: #6d7278;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5rem; }
+  .client-info-box {
+    list-style: none;
+    border-right: solid 1px #ccc; }
+  .client-info-customer {
+    font-weight: 600; }
+  .client-info-industry {
+    font-weight: 600; }
+  .client-info-location {
+    font-weight: 600; }
+  .client-info-detail {
+    border-bottom: solid 1px #ccc;
+    margin: 5px 10px;
+    min-height: 63px; }
+    .client-info-detail-box {
+      padding: 2.625rem 0.8rem; }
+    .client-info-detail-percent {
+      font-size: 36px;
+      line-height: 42px;
+      display: block;
+      float: left;
+      margin-right: 10px;
+      color: #F38D1E;
+      font-weight: 600; }
+  .client-info li {
+    padding: 3px 0; }
+
 .card-inner {
   background: #FFFFFF;
   box-shadow: 0 0 11px 0 rgba(166, 166, 166, 0.5);
