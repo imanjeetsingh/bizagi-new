@@ -421,149 +421,158 @@
 
 
 
+            {
+                "items": [{
+                            "Name": "Adidas",
+                            "image": "https://blog.bizagi.com/wp-content/uploads/2020/03/Bizagi-Xchange-324x160.png",
+                            "url": "https://blog.bizagi.com/2020/03/27/always-free-always-needed-especially-right-now-during-the-coronavirus-pandemic/",
+                            "categories": [{
+                                "title": "Business Process",
+                                "url": "https://blog.bizagi.com/category/business-processes/"
+                            }]
+                        }
+
+
+
+                        var values = [
+
+                            {
+                                token: 'Adidas',
+                                Name: 'Adidas',
+                                Industry: 'Manufacturing & Retail',
+                                Solution: 'Digital Operations',
+                                Solution2: 'Finance',
+                                Solution3: 'Marketing & Sales',
+                                Img: '//resourcesbizagi.azureedge.net/images/logo-clients/logo_adidas.png',
+                                Description: 'Largest sportswear manufacturer in Europe transforms supply chain across 400 factories to improve operational efficiency by 60%.'
+                            }, {
+                                token: 'Adidas',
+                                Name: 'Adidas',
+                                Industry: 'Manufacturing & Retail',
+                                Solution: 'Digital Operations',
+                                Solution2: 'Finance',
+                                Solution3: 'Marketing & Sales',
+                                Img: '//resourcesbizagi.azureedge.net/images/logo-clients/logo_adidas.png',
+                                Description: 'Largest sportswear manufacturer in Europe transforms supply chain across 400 factories to improve operational efficiency by 60%.'
+                            },
+                        ];
+
+
+                        var customerList = new List('customers', options, values);
+                        var updateList = function() {
+
+                            var industries = new Array();
+                            var solutions = new Array();
 
 
 
 
-            var values = [
+                            $("input:checkbox[Industry=industries]:checked").each(function() {
+                                industries.push($(this).val());
 
-                {
-                    token: 'Adidas',
-                    Name: 'Adidas',
-                    Industry: 'Manufacturing & Retail',
-                    Solution: 'Digital Operations',
-                    Solution2: 'Finance',
-                    Solution3: 'Marketing & Sales',
-                    Img: '//resourcesbizagi.azureedge.net/images/logo-clients/logo_adidas.png',
-                    Description: 'Largest sportswear manufacturer in Europe transforms supply chain across 400 factories to improve operational efficiency by 60%.'
-                }, {
-                    token: 'Adidas',
-                    Name: 'Adidas',
-                    Industry: 'Manufacturing & Retail',
-                    Solution: 'Digital Operations',
-                    Solution2: 'Finance',
-                    Solution3: 'Marketing & Sales',
-                    Img: '//resourcesbizagi.azureedge.net/images/logo-clients/logo_adidas.png',
-                    Description: 'Largest sportswear manufacturer in Europe transforms supply chain across 400 factories to improve operational efficiency by 60%.'
-                },
-            ];
+                            });
+
+                            $("input:checkbox[Industry=solutions]:checked").each(function() {
+                                solutions.push($(this).val());
+
+                            });
+                            $('.search').keyup(function() {
+                                customerList.search($(this).val());
+
+                                checkResults(customerList);
 
 
-            var customerList = new List('customers', options, values);
-            var updateList = function() {
-
-                var industries = new Array();
-                var solutions = new Array();
+                            });
 
 
+                            var values_solutions = solutions.length > 0 ? solutions : null;
+                            var values_industries = industries.length > 0 ? industries : null;
 
 
-                $("input:checkbox[Industry=industries]:checked").each(function() {
-                    industries.push($(this).val());
+                            if ((industries.length != 0) || (solutions.length != 0)) {
+                                $('.filter-label').show()
+                            } else {
+                                $('.filter-label').hide()
+                            }
 
-                });
+                            if ((industries.length != 0) && (solutions.length != 0)) {
+                                $('.filter-label-complete').show()
+                            } else {
+                                $('.filter-label-complete').hide()
+                            }
 
-                $("input:checkbox[Industry=solutions]:checked").each(function() {
-                    solutions.push($(this).val());
+                            if (industries.length != 0) {
+                                $('.filter-label-industries').show()
+                            } else {
+                                $('.filter-label-industries').hide()
+                            }
+                            if (solutions.length != 0) {
+                                $('.filter-label-solutions').show()
+                            } else {
+                                $('.filter-label-solutions').hide()
+                            }
 
-                });
-                $('.search').keyup(function() {
-                    customerList.search($(this).val());
+                            var x = document.getElementById("industries-applied");
+                            x.innerHTML = industries.join(' or ');
 
-                    checkResults(customerList);
-
-
-                });
-
-
-                var values_solutions = solutions.length > 0 ? solutions : null;
-                var values_industries = industries.length > 0 ? industries : null;
-
-
-                if ((industries.length != 0) || (solutions.length != 0)) {
-                    $('.filter-label').show()
-                } else {
-                    $('.filter-label').hide()
-                }
-
-                if ((industries.length != 0) && (solutions.length != 0)) {
-                    $('.filter-label-complete').show()
-                } else {
-                    $('.filter-label-complete').hide()
-                }
-
-                if (industries.length != 0) {
-                    $('.filter-label-industries').show()
-                } else {
-                    $('.filter-label-industries').hide()
-                }
-                if (solutions.length != 0) {
-                    $('.filter-label-solutions').show()
-                } else {
-                    $('.filter-label-solutions').hide()
-                }
-
-                var x = document.getElementById("industries-applied");
-                x.innerHTML = industries.join(' or ');
-
-                var x = document.getElementById("solutions-applied");
-                x.innerHTML = solutions.join(' or ');
+                            var x = document.getElementById("solutions-applied");
+                            x.innerHTML = solutions.join(' or ');
 
 
 
-                customerList.filter(function(item) {
-                    completeList = (_(values_solutions).contains(item.values().Solution) || _(values_solutions).contains(item.values().Solution2) || _(values_solutions).contains(item.values().Solution3) || _(values_solutions).contains(item.values().Solution4) || !values_solutions) &&
-                        (_(values_industries).contains(item.values().Industry) || !values_industries);
+                            customerList.filter(function(item) {
+                                completeList = (_(values_solutions).contains(item.values().Solution) || _(values_solutions).contains(item.values().Solution2) || _(values_solutions).contains(item.values().Solution3) || _(values_solutions).contains(item.values().Solution4) || !values_solutions) &&
+                                    (_(values_industries).contains(item.values().Industry) || !values_industries);
 
-                    return (completeList);
-
-
-                });
-
-                checkResults(customerList);
+                                return (completeList);
 
 
+                            });
 
-            }
+                            checkResults(customerList);
 
-            $(document).off("change", "input:checkbox[Industry=solutions]", updateList);
-            $(document).on("change", "input:checkbox[Industry=solutions]", updateList);
-            $(document).off("change", "input:checkbox[Industry=industries]", updateList);
-            $(document).on("change", "input:checkbox[Industry=industries]", updateList);
 
-            $(function() {
-                var all_solutions = [];
-                var all_industries = [];
-                var all_names = [];
-                var all_links = [];
-                updateList();
-                _(customerList.items).each(function(item) {
-                    all_names.push(item.values().Name)
-                    all_solutions.push(item.values().Solution, item.values().Solution2, item.values().Solution3, item.values().Solution4)
-                    all_solutions = all_solutions.filter(Boolean);
-                    all_industries.push(item.values().Industry)
-                    all_links.push(item.values().Link)
-                });
 
-                _(all_solutions).uniq().each(function(item) {
-                    $(".solutionContainer").append('<li><label><input type="checkbox" Industry="solutions" value="' + item + '"> &nbsp;' + item + '</label></li>')
-                });
+                        }
 
-                _(all_industries).uniq().each(function(item) {
-                    $(".industryContainer").append('<li><label><input type="checkbox" Industry="industries" value="' + item + '"> &nbsp;' + item + '</label></li>')
-                });
-            });
-            $('.demoej').click(function(e) {
-                e.stopPropagation();
-            });
+                        $(document).off("change", "input:checkbox[Industry=solutions]", updateList);
+                        $(document).on("change", "input:checkbox[Industry=solutions]", updateList);
+                        $(document).off("change", "input:checkbox[Industry=industries]", updateList);
+                        $(document).on("change", "input:checkbox[Industry=industries]", updateList);
 
-            function checkResults(customerList) {
-                if (((customerList.visibleItems).length) > 0) {
-                    $('.no-result').hide()
-                } else {
-                    $('.no-result').show()
-                }
-            }
+                        $(function() {
+                            var all_solutions = [];
+                            var all_industries = [];
+                            var all_names = [];
+                            var all_links = [];
+                            updateList();
+                            _(customerList.items).each(function(item) {
+                                all_names.push(item.values().Name)
+                                all_solutions.push(item.values().Solution, item.values().Solution2, item.values().Solution3, item.values().Solution4)
+                                all_solutions = all_solutions.filter(Boolean);
+                                all_industries.push(item.values().Industry)
+                                all_links.push(item.values().Link)
+                            });
+
+                            _(all_solutions).uniq().each(function(item) {
+                                $(".solutionContainer").append('<li><label><input type="checkbox" Industry="solutions" value="' + item + '"> &nbsp;' + item + '</label></li>')
+                            });
+
+                            _(all_industries).uniq().each(function(item) {
+                                $(".industryContainer").append('<li><label><input type="checkbox" Industry="industries" value="' + item + '"> &nbsp;' + item + '</label></li>')
+                            });
+                        });
+                        $('.demoej').click(function(e) {
+                            e.stopPropagation();
+                        });
+
+                        function checkResults(customerList) {
+                            if (((customerList.visibleItems).length) > 0) {
+                                $('.no-result').hide()
+                            } else {
+                                $('.no-result').show()
+                            }
+                        }
         </script>
 
 
