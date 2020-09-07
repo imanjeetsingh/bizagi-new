@@ -8,41 +8,74 @@
     }
     &-image {
         &-box {}
+        &-input {
+            border-radius: 2.5rem;
+            border: solid 1px lightgray;
+            padding: 0.3rem 1rem;
+            width: 100%;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .cta {
+        padding: 5px 55px;
+        outline: none;
     }
     &-customer {
         font-weight: 600;
     }
-    &-name {}
+    <<<<<<< HEAD &-name {}
     &-industry {
         font-weight: 600;
         &-name {}
-    }
-    &-location {
-        font-weight: 600;
-        &-name {}
-    }
-    &-detail {
-        border-bottom: solid 1px #ccc;
-        margin: 5px 10px;
-        min-height: 63px;
-        &-box {
-            padding: 2.625rem 0.8rem;
+        =======.dropdown-menu {
+            // position: absolute;
+            // top: -1.25rem;
+            left: -1rem;
+            margin-top: -0.5rem;
+            >>>>>>>iman
         }
-        &-percent {
-            font-size: 36px;
-            line-height: 42px;
-            display: block;
-            float: left;
-            margin-right: 10px;
-            color: #F38D1E;
+        &-location {
             font-weight: 600;
-            &-box {}
+            &-name {}
         }
-        &-description {
-            &-box {}
+        &-detail {
+            border-bottom: solid 1px #ccc;
+            margin: 5px 10px;
+            min-height: 63px;
+            &-box {
+                padding: 2.625rem 0.8rem;
+            }
+            &-percent {
+                font-size: 36px;
+                line-height: 42px;
+                display: block;
+                float: left;
+                margin-right: 10px;
+                color: #F38D1E;
+                font-weight: 600;
+                &-box {}
+            }
+            &-description {
+                &-box {}
+            }
+        }
+        <<<<<<< HEAD li {
+            padding: 3px 0;
         }
     }
-    li {
-        padding: 3px 0;
+    =======.dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .option-set {
+        width: 18rem;
+        padding: 20px 0;
     }
 }
+
+ul.options>li {
+    list-style: none;
+}
+
+>>>>>>>iman
