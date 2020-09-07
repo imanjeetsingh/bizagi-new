@@ -1,17 +1,13 @@
 // Grid Carousel CSS starts 
 .owl {
     &-carousel {
-        // padding: 10px;
-        // margin: 0 -1rem;
+        padding: 10px;
     }
     &-prev {
         margin: 0.5rem;
     }
     &-next {
         margin: 0.5rem;
-    }
-    &-stage {
-        // padding: 0;
     }
 }
 
@@ -31,12 +27,11 @@
 
 .article {
     &-box {
-        // margin: 0 0.125rem 2rem;
-        // padding: 0 0.3rem;
+        margin: 0 0.125rem 2rem;
+        padding: 0 0.3rem;
         font-size: 30px;
         position: relative;
-        width: 20%;
-        padding: 0 15px 20px 0;
+        width: calc(20% - 0.3rem);
         // @include media(tablet) {
         //     width: 9.290624rem;
         // }
@@ -84,7 +79,7 @@
         color: #000000;
         font-size: 0.875rem;
         line-height: 1rem;
-        margin: 0 0 0 1rem;
+        margin-top: 0;
         padding-top: 0.3rem;
         @include media(tablet) {
             font-size: 0.75rem;
@@ -133,9 +128,10 @@ img[alt] {
 
 .tab {
     &-group {
-        margin: 1rem 0;
+        margin: 1rem #{$buttongap};
         flex-wrap: wrap;
-        // width: 97%;
+        width: 97%;
+        padding: 0 0.4rem;
         @include media(tablet) {
             padding: 0 6.5rem;
             margin: 1rem 1rem;
@@ -169,11 +165,9 @@ img[alt] {
 
 .bottom {
     position: absolute;
-    top: 10.55rem;
-    left: 1rem;
+    top: 8.15rem;
     @include media(tablet) {
         top: 2.65rem;
-        left: 0rem;
     }
     @include media(desktop) {
         top: 4.7rem;
@@ -187,11 +181,4 @@ img[alt] {
     margin-top: 1rem;
 }
 
-.article-box:nth-child(5n) {
-    margin: 0 0 20px 0;
-}
-
-// .article-box:nth-child(10n) {
-//     padding-right: 0;
-// }
 // Grid Carousel CSS ends

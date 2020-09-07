@@ -1,0 +1,108 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+    // border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 190px;
+    background-color: rgba(23, 42, 52, 0.8);
+    color: #fff !important;
+    text-align: justify;
+    border-radius: 6px 0 6px 6px;
+    padding: 5px 8px;
+    position: absolute;
+    z-index: 1;
+    right: -1rem;
+    top: 2rem;
+    font-size: 14px;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+// edit by iman
+.partnerinfo {
+    text-align: end;
+    margin-right: 2rem;
+    color: #9b9b9b;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.case-study-image {
+    padding: 1rem 0;
+}
+
+.image-box {
+    text-align: justify;
+    left: 1rem;
+    padding: 1rem 0 1.5rem 0;
+    @include media(tablet) {
+        text-align: center;
+    }
+    @include media(desktop) {
+        text-align: justify;
+    }
+}
+
+.cs {
+    // display: ;
+    &-search {
+        &-box {}
+        &-input {
+            border-radius: 2.5rem;
+            border: solid 1px lightgray;
+            padding: 0.3rem 1rem;
+            width: 100%;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .cta {
+        padding: 5px 55px;
+    }
+    .dropdown {
+        padding: 0;
+    }
+    .dropdown-menu {
+        // position: absolute;
+        // top: -1.25rem;
+        left: -1rem;
+    }
+    .dropdown input {
+        /* display: block; */
+        line-height: 2rem;
+        margin: 0.5rem;
+    }
+    .dropdown label {
+        font-weight: 700;
+        color: #6d7278;
+    }
+    // .dropdown:hover .dropdown-menu {
+    //     display: block;
+    // }
+    .option-set {
+        width: 18rem;
+        padding: 20px 0;
+    }
+}
+
+ul.options>li {
+    list-style: none;
+}
