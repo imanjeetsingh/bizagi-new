@@ -31,6 +31,12 @@
         &-links {
             &-box {
                 .cta {
+                    font-weight: 400 !important;
+                    font-size: 1rem !important;
+                    padding: 0.625rem 1.1875rem;
+                    @include media(desktop){
+                        font-weight: 700;
+                    }
                     &-primary {
                         background: transparent;
                         @include mobile-only {
