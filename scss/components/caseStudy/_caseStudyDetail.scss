@@ -25,16 +25,15 @@
     &-customer {
         font-weight: 600;
     }
-    <<<<<<< HEAD &-name {}
+    &-name {}
     &-industry {
         font-weight: 600;
         &-name {}
-        =======.dropdown-menu {
+        .dropdown-menu {
             // position: absolute;
             // top: -1.25rem;
             left: -1rem;
             margin-top: -0.5rem;
-            >>>>>>>iman
         }
         &-location {
             font-weight: 600;
@@ -61,11 +60,11 @@
                 &-box {}
             }
         }
-        <<<<<<< HEAD li {
+        li {
             padding: 3px 0;
         }
     }
-    =======.dropdown:hover .dropdown-menu {
+    .dropdown:hover .dropdown-menu {
         display: block;
     }
     .option-set {
@@ -77,5 +76,3 @@
 ul.options>li {
     list-style: none;
 }
-
->>>>>>>iman
