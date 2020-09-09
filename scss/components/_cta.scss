@@ -57,8 +57,9 @@ $buttongap: 0.5rem;
         }
     }
     &-image {
-        width: 55px;
-        height: auto;
+        width: auto;
+        height: 100%;
+        text-align: center;
     }
 }
 

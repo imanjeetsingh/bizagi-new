@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD:scss/components/caseStudyDetail.html
     <title>Case Study Detail</title>
+=======
+    <title>Case Study List with Json</title>
+>>>>>>> iman:caseStudyList.html
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/ulg/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -19,59 +23,129 @@
 </head>
 
 <body>
-    <section>
-        <div class="container client-info">
-            <div class="row">
-                <div class="col-lg-3">
-                    <ul class="client-info-box text-center">
-                        <li class="client-info-image-box"><img class="client-info-image" src="./images/logo_manpower.png"></li>
-                        <li class="client-info-customer">CUSTOMER:</li>
-                        <li class="client-info-customer-name">ManpowerGroup </li>
-                        <li class="client-info-industry">INDUSTRY:</li>
-                        <li class="client-info-industry-name">Logistics &amp; Professional Services </li>
-                        <li class="client-info-location">LOCATION:</li>
-                        <li class="client-info-location-name">Portugal</li>
-                    </ul>
+
+    <!-- Case Study List component starts starts -->
+    <div class="container caseStudy">
+        <div class="row mt-5">
+            <div class="caseStudy-search-box col-md-6">
+                <input type="text" class="caseStudy-search-input quicksearch" placeholder="Search">
+            </div>
+            <div id="options" class="dropdown col-md-3">
+                <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="cta-content">Filter by Industries</span>
+                    <span class="cta-icon-box">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+                <div class="dropdown-menu">
+                    <div class="option-set" data-group="industry">
+                        <ul class="options">
+                            <li><input type="checkbox" value=".manufacturingRetail" id="manufacturingRetail">
+                                <label for="manufacturingRetail">Manufacturing & Retail</label></li>
+                            <li><input type="checkbox" value=".financialServices" id="financialServices">
+                                <label for="financialServices">Financial Services</label></li>
+                            <li><input type="checkbox" value=".insurance" id="insurance">
+                                <label for="insurance">Insurance</label></li>
+                            <li><input type="checkbox" value=".professionalServices" id="professionalServices">
+                                <label for="professionalServices">Professional Services</label></li>
+                            <li><input type="checkbox" value=".transportationLogistics" id="transportationLogistics">
+                                <label for="transportationLogistics">Transportation & Logistics</label></li>
+                            <li><input type="checkbox" value=".utilitiesEnergy" id="utilitiesEnergy">
+                                <label for="utilitiesEnergy">Utilities & Energy</label></li>
+                            <li><input type="checkbox" value=".healthcare" id="healthcare">
+                                <label for="healthcare">Healthcare</label></li>
+                            <li><input type="checkbox" value=".governmentEducation" id="governmentEducation">
+                                <label for="governmentEducation">Government & Education</label></li>
+                            <li><input type="checkbox" value=".hospitality" id="hospitality">
+                                <label for="hospitality">Hospitality</label></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-lg-9 client-info-detail-box">
-                    <div class="row">
-                        <div class="col-lg-5 col-sm-6 col-xs-12 client-info-detail">
-                            <div class="client-info-detail-percent-box">
-                                <p class="client-info-detail-percent">88%</p>
-                            </div>
-                            <div class="client-info-detail-description-box">
-                                <p class="client-info-detail-description">reduction in contract production time </p>
+            </div>
+            <div id="options" class="dropdown col-md-3">
+                <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="cta-content">Filter by Solutions</span>
+                    <span class="cta-icon-box">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+                <div class="dropdown-menu">
+                    <div class="option-set" data-group="solution">
+                        <ul class="options">
+                            <li><input type="checkbox" value=".digitalOperations" id="digitalOperations">
+                                <label for="digitalOperations">Digital Operations</label></li>
+                            <li><input type="checkbox" value=".finances" id="finances">
+                                <label for="finances">Finances</label></li>
+                            <li><input type="checkbox" value=".mrketingSales" id="mrketingSales">
+                                <label for="mrketingSales">Marketing & Sales</label></li>
+                            <li><input type="checkbox" value=".customerEngagement" id="customerEngagement">
+                                <label for="customerEngagement">Customer Engagement</label></li>
+                            <li><input type="checkbox" value=".goveranceCompliance" id="goveranceCompliance">
+                                <label for="goveranceCompliance">Goverance & Compliance</label></li>
+                            <li><input type="checkbox" value=".humanResources" id="humanResources">
+                                <label for="humanResources">Human Resources</label></li>
+                            <li><input type="checkbox" value=".customerExperience" id="customerExperience">
+                                <label for="customerExperience">Customer Experience</label></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card starts -->
+            <template id="itemview">
+                <div class="element-item col-12 col-md-4 %Category%" data-category="%Category%">
+                    <div class="card h-100 card-inner">
+                        <div class="partnerinfo"><span>%Title%</span>
+                            <div class="tooltip mt-4">
+                                <i class="fa fa-info-circle"></i>
+                                <a class="tooltiptext"><b>
+                                        <div class="Industry">%Industry%</div>
+                                    </b>
+                                    <div class="Solution">%Solution%</div>
+                                    <div class="Solution2">%Solution2%</div>
+                                    <div class="Solution3">%Solution3%</div>
+                                    <div class="Solution4">%Solution4%</div>
+                                </a>
                             </div>
                         </div>
-                        <div class="col-lg-5 col-sm-6 col-xs-12 client-info-detail">
-                            <div class="client-info-detail-percent-box">
-                                <p class="client-info-detail-percent">95%</p>
-                            </div>
-                            <div class="client-info-detail-description-box">
-                                <p class="client-info-detail-description">reduction in SLA completion time </p>
-                            </div>
+                        <div class="card-image-box image-box">
+                            <img class="card-img-top" src="%Image%"
+                                alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" style="width: 150px;">
                         </div>
-                        <div class="col-lg-5 col-sm-6 col-xs-12 client-info-detail">
-                            <div class="client-info-detail-percent-box">
-                                <p class="client-info-detail-percent">83%</p>
-                            </div>
-                            <div class="client-info-detail-description-box">
-                                <p class="client-info-detail-description">of credit release decisions automated </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-sm-6 col-xs-12 client-info-detail">
-                            <div class="client-info-detail-percent-box">
-                                <p class="client-info-detail-percent">90%</p>
-                            </div>
-                            <div class="client-info-detail-description-box">
-                                <p class="client-info-detail-description">reduction in Excel &amp; email work</p>
+                        <div class="card-body">
+                            <p class="card-text">“We didn’t realize it would be as successful as it is. We have an
+                                average of about 3000 transactions per second. Our net promoter score is increasing
+                                month-on-month.”
+                            </p>
+                            <div class="card-cta">
+                                <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                                <div class="cta-group">
+                                    <a href="#" class="cta cta-default cta-icon-right">
+                                        <span class="cta-content">%ctaContent%</span>
+                                        <span class="cta-icon-box">
+                                            <i class="cta-icon fa %ctaIcon%"></i>
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </template>
+            <!-- card ends -->
+            <div class="container">
+                <div class="row grid clearfix" id="cardviewlist">
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+
 </body>
+
+
+
+
+<script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="caseStudy.js"></script>
 
 </html>

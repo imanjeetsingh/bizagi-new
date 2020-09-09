@@ -1,7 +1,7 @@
 // Grid Carousel CSS starts 
 .owl {
     &-carousel {
-        padding: 10px;
+        padding: 0;
     }
     &-prev {
         margin: 0.5rem;
@@ -27,17 +27,28 @@
 
 .article {
     &-box {
-        margin: 0 0.125rem 2rem;
-        padding: 0 0.3rem;
+        // margin: 0 12px 2rem 0;
+        padding: 0 15px 0 15px;
         font-size: 30px;
         position: relative;
-        width: calc(20% - 0.3rem);
+        // width: calc(20% - 0.3rem);
+        width: 20%;
         // @include media(tablet) {
         //     width: 9.290624rem;
         // }
         // @include media(xldesktop) {
         //     width: 13.882811737rem;
         // }
+        @include media(tablet){
+            padding: 0 2px 0 15px;
+            margin-bottom: 6px;
+        }
+        @include media(desktop){
+            padding: 0 15px 0 15px;
+            font-size: 30px;
+            position: relative;
+            width: 20%;
+        }      
         &:hover {
             text-decoration: none;
         }
@@ -128,19 +139,19 @@ img[alt] {
 
 .tab {
     &-group {
-        margin: 1rem #{$buttongap};
+        margin: 1rem 0;
         flex-wrap: wrap;
-        width: 97%;
-        padding: 0 0.4rem;
+        width: 100%;
+        // padding: 0;
         @include media(tablet) {
-            padding: 0 6.5rem;
-            margin: 1rem 1rem;
+            padding: 0 1rem;
+            margin: 1rem 0;
         }
         @include media(desktop) {
-            margin: 1rem #{$buttongap};
+            margin: 1rem 0;
         }
         @include media(xldesktop) {
-            padding: 0 10rem;
+            padding: 0 9rem;
         }
     }
     &-content {
@@ -155,6 +166,10 @@ img[alt] {
     display: flex;
     &-tabs {
         border-bottom: 2px solid #F28C20;
+        margin-right: 0.4375rem;
+        @include media(tablet){
+            margin-right: 0;
+        }
     }
 }
 

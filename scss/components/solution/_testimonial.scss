@@ -7,7 +7,13 @@
         }
     }
     &-box {
-        &-image {}
+        &-image {
+            width: 18%;
+            @include media(tablet){
+                margin-left: -1rem;
+                width: 9%;
+            }
+        }
         &-comment {
             font-family: 'Open Sans', sans-serif;
             font-size: 1rem;

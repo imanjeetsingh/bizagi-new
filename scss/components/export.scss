@@ -1,5 +1,6 @@
 @import "../variables/export.scss";
 @import "../mixins/export.scss";
+@import "heading";
 @import "./header/export";
 @import "./footer/export";
 @import "./solution/export";
@@ -15,6 +16,5 @@
 @import "gridCarousel";
 @import "covid";
 @import "homeHeader";
-@import "heading";
 @import "sapRte";
 @import "innerBanner";

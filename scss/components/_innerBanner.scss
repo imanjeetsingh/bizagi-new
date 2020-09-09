@@ -17,6 +17,17 @@
                 @include media(desktop) {
                     padding: 0.5rem 1rem 0;
                 }
+                p{
+                    margin-top: 2rem;
+                    @include media(tablet){
+                        margin-top: 1rem;
+                        text-align: center;
+                    }
+                    @include media(desktop){
+                        margin-top: 1rem;
+                        text-align: left;
+                    }
+                }
             }
         }
         &-subheading {
