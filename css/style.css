@@ -4783,6 +4783,16 @@ ul li {
   line-height: 1.5rem;
   top: 10.5rem; }
 
+.category-list-box .article-heading {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #6d7278;
+  margin-bottom: -1.2rem; }
+
+.category-list-box p {
+  margin-top: 1rem;
+  font-size: 0.8rem; }
+
 .client-info {
   color: #6d7278;
   font-family: 'Open Sans', sans-serif;

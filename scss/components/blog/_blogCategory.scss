@@ -20,6 +20,28 @@
         }
     }
     &-list {
-        &-box {}
+        &-box {
+            .article {
+                &-box {
+                    &-link {}
+                }
+                &-image {
+                    &-box {}
+                    &-tag {
+                        &-link {}
+                    }
+                }
+                &-heading {
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                    color: #6d7278;
+                    margin-bottom: -1.2rem;
+                }
+            }
+            p {
+                margin-top: 1rem;
+                font-size: 1rem;
+            }
+        }
     }
 }
