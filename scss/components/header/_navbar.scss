@@ -109,6 +109,17 @@
             width: 0%;
             transition: 0.2s all;
         }
+        &:focus{
+            content: "";
+            height: 0.15rem;
+            background-color: #1ea59a !important;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 0%;
+            transition: 0.2s all;
+        }
+        
         &:hover {
             background-color: transparent;
             border-top: transparent;
@@ -228,5 +239,6 @@
         }
     }
 }
+
 
 // Navbar component CSS ends
