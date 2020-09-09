@@ -27,7 +27,7 @@
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
-    border-style: solid;
+    border-style: hidden;
     border-color: black transparent transparent transparent;
 }
 
@@ -105,4 +105,16 @@
 
 ul.options>li {
     list-style: none;
+}
+// edit by iman
+.aman{
+    .card{
+        // &-inner{
+        //     margin: 0;
+        //     height: 100% !important;
+        // }
+        &-text{
+            margin-bottom: 4rem;
+        }
+    }
 }

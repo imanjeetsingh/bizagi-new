@@ -3998,15 +3998,6 @@ ul li {
     display: block;
     width: 0%;
     transition: 0.2s all; }
-  .nav-link:focus {
-    content: "";
-    height: 0.15rem;
-    background-color: #1ea59a !important;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 0%;
-    transition: 0.2s all; }
   .nav-link:hover {
     background-color: transparent;
     border-top: transparent; }
@@ -4866,7 +4857,7 @@ ul.options > li {
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
-  border-style: solid;
+  border-style: hidden;
   border-color: black transparent transparent transparent; }
 
 .tooltip:hover .tooltiptext {
@@ -4925,6 +4916,9 @@ ul.options > li {
 
 ul.options > li {
   list-style: none; }
+
+.aman .card-text {
+  margin-bottom: 4rem; }
 
 .card-inner {
   background: #FFFFFF;
