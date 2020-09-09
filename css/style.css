@@ -4784,26 +4784,23 @@ ul.options > li {
     font-weight: 600; }
   .client-info-industry {
     font-weight: 600; }
-    .client-info-industry .dropdown-menu {
-      left: -1rem;
-      margin-top: -0.5rem; }
-    .client-info-industry-location {
+  .client-info-location {
+    font-weight: 600; }
+  .client-info-detail {
+    border-bottom: solid 1px #ccc;
+    margin: 5px 10px;
+    min-height: 63px; }
+    .client-info-detail-box {
+      padding: 2.625rem 0.8rem; }
+    .client-info-detail-percent {
+      font-size: 36px;
+      line-height: 42px;
+      display: block;
+      float: left;
+      margin-right: 10px;
+      color: #F38D1E;
       font-weight: 600; }
-    .client-info-industry-detail {
-      border-bottom: solid 1px #ccc;
-      margin: 5px 10px;
-      min-height: 63px; }
-      .client-info-industry-detail-box {
-        padding: 2.625rem 0.8rem; }
-      .client-info-industry-detail-percent {
-        font-size: 36px;
-        line-height: 42px;
-        display: block;
-        float: left;
-        margin-right: 10px;
-        color: #F38D1E;
-        font-weight: 600; }
-    .client-info-industry li {
+    .client-info-detail li {
       padding: 3px 0; }
   .client-info .dropdown:hover .dropdown-menu {
     display: block; }

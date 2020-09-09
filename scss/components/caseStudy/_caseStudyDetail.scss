@@ -28,37 +28,31 @@
     &-name {}
     &-industry {
         font-weight: 600;
+    }
+    &-name {}
+    &-location {
+        font-weight: 600;
         &-name {}
-        .dropdown-menu {
-            // position: absolute;
-            // top: -1.25rem;
-            left: -1rem;
-            margin-top: -0.5rem;
+    }
+    &-detail {
+        border-bottom: solid 1px #ccc;
+        margin: 5px 10px;
+        min-height: 63px;
+        &-box {
+            padding: 2.625rem 0.8rem;
         }
-        &-location {
+        &-percent {
+            font-size: 36px;
+            line-height: 42px;
+            display: block;
+            float: left;
+            margin-right: 10px;
+            color: #F38D1E;
             font-weight: 600;
-            &-name {}
+            &-box {}
         }
-        &-detail {
-            border-bottom: solid 1px #ccc;
-            margin: 5px 10px;
-            min-height: 63px;
-            &-box {
-                padding: 2.625rem 0.8rem;
-            }
-            &-percent {
-                font-size: 36px;
-                line-height: 42px;
-                display: block;
-                float: left;
-                margin-right: 10px;
-                color: #F38D1E;
-                font-weight: 600;
-                &-box {}
-            }
-            &-description {
-                &-box {}
-            }
+        &-description {
+            &-box {}
         }
         li {
             padding: 3px 0;
