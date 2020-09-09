@@ -1,98 +1,78 @@
 $(document).ready(function() {
-    apiPageCall(1);
-})
+            var currentPage = 1;
+            var output = [];
+            var loading = false;
+            var $loading = $('#loading');
 
-function apiPageCall(page) {
-    const api = $("#pagination").attr('data-target');
-    handleTiles('loading');
-    fetch(api + page, {
-            headers: {
-                'app-id': '5f46096cc2fb880002db8925'
+            apiPageCall(currentPage);
+
+            function apiPageCall(page) {
+                loading = true;
+                var limit = 15;
+                const api = $("#scrollLoad").attr('data-target');;
+                handleTiles('loading');
+                $loading.show();
+                fetch(api + page, {
+                        headers: {
+                            // 'app-id': '5f46096cc2fb880002db8925'
+                            'app-id': 'lTE5abbDxdjGplutvTuc'
+                        }
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        $loading.hide();
+                        if (data.data.length > 0) {
+                            loading = false;
+                            handleTiles(data);
+                            handleScroll(data)
+                        }
+                    })
             }
-        }).then(response => response.json())
-        .then(data => {
-            handleTiles(data);
-            handlePagination(data);
-            console.log(data)
-        })
-}
 
-function handleTiles(obj) {
-    var output = [];
-    var $result = $("#result");
-
-    // Tiles Start
-    if (obj !== 'loading' && obj.data) {
-        for (var pdata of obj.data) {
-            output.push(`
-            <div class="article-box col-lg-5 ">
-            <a class="article-box-link" href="${pdata.url}" target="_self" id="article-box-link">
-            <div class="article-image-box">
-            <img class="article-image img-fluid" src="${pdata.picture}" alt="${pdata.title} image">
-            </div>
-            <h5 class="article-heading mt-2">${pdata.title} ${pdata.firstName} ${pdata.lastName}</h5>
-            </a>
-            <div>
-            ${pdata.categories ? pdata.categories.map((data) => `
-            <a class="article-image-tag-link" href="${data.url}" target="_self">
-            <div class="article-image-tag bottom">${data.title}</div>
-            </a>
-            `).join('') : ''}
-            </div>
-            </div>
-            `)
+            function handleTiles(obj) {
+                var $result = $("#result");
+                output.pop();
+                // Tiles Start
+                if (obj !== 'loading' && obj.data) {
+                    for (var pdata of obj.data) {
+                        output.push(`
+                    <div class="article-box col-md-3">
+                        <a class="article-box-link" href="${pdata.url}" target="_self" id="article-box-link">
+                            <div class="article-image-box">
+                                <img class="article-image img-fluid" src="${pdata.picture}" alt="${pdata.title} image">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-9 article-box">
+                    <h5 class="article-heading">${pdata.title} ${pdata.firstName} ${pdata.lastName}</h5>
+                    <p>${pdata.tdescriptionitle}</p>
+                            ${pdata.categories ? pdata.categories.map((data) => `
+                        <a class="article-image-tag-link" href="${data.url}" target="_self">
+                            <span class="article-image-tag bottom">${data.title}</span>
+                        </a>
+                    </div>
+                                `).join('') : ''
+                            }
+                        </div>
+                    </div>
+                `)
+            }
         }
-    } else {
-        output.push(`Loading...`)
+        $result.html(output.join(``));
+        // Tiles End
     }
-    $result.html(output.join(``));
-    // Tiles End
-}
 
-// function handlePagination(obj) {
-//     var paginationhtml = [];
-//     var $pagination = $("#pagination");
-//     // Pagination Start
-//     if (obj.page > 1) {
-//         paginationhtml.push(`
-//                 <li class="page-item">
-//                     <a class="page-link" href="#" data-page="${obj.page - 1}" aria-label="Previous">
-//                         <span aria-hidden="true">&laquo;</span>
-//                         <span class="sr-only">Previous</span>
-//                     </a>
-//                 </li>
-//             `);
-//     }
-
-//     paginationhtml.push(`<li class="page-item ${obj.page === 1 ? 'active' : ''}"><a class="page-link" href="#" data-page="${1}">${1}</a></li>`);
-//     if (obj.page > 3) {
-//         paginationhtml.push(`<li class="page-item"><a class="page-link disabled">...</a></li>`);
-//     }
-//     for (var i = obj.page - 1; i <= obj.page + 1; i++) {
-//         if (i > 1 && i < obj.total) {
-//             paginationhtml.push(`<li class="page-item ${i === obj.page ? 'active' : ''}"><a class="page-link" href="#" data-page="${i}">${i}</a></li>`);
-//         }
-//     }
-//     if (obj.page < obj.total - 2) {
-//         paginationhtml.push(`<li class="page-item"><a class="page-link disabled">...</a></li>`);
-//     }
-//     paginationhtml.push(`<li class="page-item ${obj.page === obj.total ? 'active' : ''}"><a class="page-link" href="#" data-page="${obj.total}">${obj.total}</a></li>`);
-
-//     if (obj.page < obj.total) {
-//         paginationhtml.push(`
-//                 <li class="page-item">
-//                     <a class="page-link" href="#" data-page="${obj.page + 1}" aria-label="Next">
-//                         <span aria-hidden="true">&raquo;</span>
-//                         <span class="sr-only">Next</span>
-//                     </a>
-//                 </li>
-//             `);
-//     }
-//     $pagination.html(paginationhtml.join(``));
-//     // Pagination End
-
-//     $('.page-link:not(.disabled)').on('click', function (event) {
-//         event.preventDefault();
-//         apiPageCall($(this).attr('data-page'));
-//     })
-// }
+    function handleScroll(data) {
+        var $checkLoadElement = $('#load-on-scroll');
+        $(window).on('scroll', function (event) {
+            const loadingCheck = Math.round((window.scrollY + window.innerHeight) - $checkLoadElement.offset().top);
+            if (data.data.length > 0) {
+                if (loadingCheck > 10 && !loading) {
+                    currentPage++;
+                    $(window).off('scroll');
+                    apiPageCall(currentPage);
+                }
+            }
+        })
+    }
+})
