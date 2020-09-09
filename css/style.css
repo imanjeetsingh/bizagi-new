@@ -4917,6 +4917,10 @@ ul.options > li {
   .caseStudy .dropdown-menu.show {
     display: none !important; } }
 
+@media (min-width: 768px) {
+  .caseStudy .dropdown:hover .dropdown-menu {
+    margin-top: 0; } }
+
 @media (min-width: 992px) {
   .caseStudy .dropdown:hover .dropdown-menu {
     display: block;
@@ -4935,9 +4939,9 @@ ul.options > li {
 ul.options > li {
   list-style: none; }
 
-.aman .card {
+.caseStudyCard .card {
   margin: 1rem 0; }
-  .aman .card-text {
+  .caseStudyCard .card-text {
     margin-bottom: 4rem; }
 
 .dropdownTwo {
