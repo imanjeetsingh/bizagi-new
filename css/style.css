@@ -4677,6 +4677,54 @@ tbody.collapse.show {
   position: sticky;
   top: 7.25rem; }
 
+.client-info {
+  color: #6d7278;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5rem; }
+  .client-info-box {
+    list-style: none;
+    border-right: solid 1px #ccc; }
+  .client-info-image-input {
+    border-radius: 2.5rem;
+    border: solid 1px lightgray;
+    padding: 0.3rem 1rem;
+    width: 100%; }
+    .client-info-image-input:focus {
+      outline: none; }
+  .client-info .cta {
+    padding: 5px 55px;
+    outline: none; }
+  .client-info-customer {
+    font-weight: 600; }
+  .client-info-industry {
+    font-weight: 600; }
+  .client-info-location {
+    font-weight: 600; }
+  .client-info-detail {
+    border-bottom: solid 1px #ccc;
+    margin: 5px 10px;
+    min-height: 63px; }
+    .client-info-detail-box {
+      padding: 2.625rem 0.8rem; }
+    .client-info-detail-percent {
+      font-size: 36px;
+      line-height: 42px;
+      display: block;
+      float: left;
+      margin-right: 10px;
+      color: #F38D1E;
+      font-weight: 600; }
+    .client-info-detail li {
+      padding: 3px 0; }
+  .client-info .dropdown:hover .dropdown-menu {
+    display: block; }
+  .client-info .option-set {
+    width: 18rem;
+    padding: 20px 0; }
+
+ul.options > li {
+  list-style: none; }
+
 .tooltip {
   position: relative;
   display: inline-block; }
@@ -4730,83 +4778,35 @@ tbody.collapse.show {
     .image-box {
       text-align: justify; } }
 
-.cs-search-input {
+.caseStudy-search-input {
   border-radius: 2.5rem;
   border: solid 1px lightgray;
   padding: 0.3rem 1rem;
   width: 100%; }
-  .cs-search-input:focus {
+  .caseStudy-search-input:focus {
     outline: none; }
 
-.cs .cta {
+.caseStudy .cta {
   padding: 5px 55px; }
 
-.cs .dropdown {
+.caseStudy .dropdown {
   padding: 0; }
 
-.cs .dropdown-menu {
+.caseStudy .dropdown-menu {
   left: -1rem; }
 
-.cs .dropdown input {
+.caseStudy .dropdown input {
   /* display: block; */
   line-height: 2rem;
   margin: 0.5rem; }
 
-.cs .dropdown label {
+.caseStudy .dropdown label {
   font-weight: 700;
   color: #6d7278; }
 
-.cs .option-set {
+.caseStudy .option-set {
   width: 18rem;
   padding: 20px 0; }
-
-ul.options > li {
-  list-style: none; }
-
-.client-info {
-  color: #6d7278;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.5rem; }
-  .client-info-box {
-    list-style: none;
-    border-right: solid 1px #ccc; }
-  .client-info-image-input {
-    border-radius: 2.5rem;
-    border: solid 1px lightgray;
-    padding: 0.3rem 1rem;
-    width: 100%; }
-    .client-info-image-input:focus {
-      outline: none; }
-  .client-info .cta {
-    padding: 5px 55px;
-    outline: none; }
-  .client-info-customer {
-    font-weight: 600; }
-  .client-info-industry {
-    font-weight: 600; }
-  .client-info-location {
-    font-weight: 600; }
-  .client-info-detail {
-    border-bottom: solid 1px #ccc;
-    margin: 5px 10px;
-    min-height: 63px; }
-    .client-info-detail-box {
-      padding: 2.625rem 0.8rem; }
-    .client-info-detail-percent {
-      font-size: 36px;
-      line-height: 42px;
-      display: block;
-      float: left;
-      margin-right: 10px;
-      color: #F38D1E;
-      font-weight: 600; }
-    .client-info-detail li {
-      padding: 3px 0; }
-  .client-info .dropdown:hover .dropdown-menu {
-    display: block; }
-  .client-info .option-set {
-    width: 18rem;
-    padding: 20px 0; }
 
 ul.options > li {
   list-style: none; }
