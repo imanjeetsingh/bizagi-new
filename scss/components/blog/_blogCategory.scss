@@ -1,0 +1,25 @@
+.category {
+    &-box {
+        .blog {
+            &-image {
+                &-box {}
+                &-category {
+                    &-link {
+                        .top {
+                            top: 7.5rem;
+                        }
+                    }
+                }
+            }
+            &-heading {
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5rem;
+                top: 10.5rem;
+            }
+        }
+    }
+    &-list {
+        &-box {}
+    }
+}

@@ -4783,6 +4783,15 @@ ul li {
   position: sticky;
   top: 7.25rem; }
 
+.category-box .blog-image-category-link .top {
+  top: 7.5rem; }
+
+.category-box .blog-heading {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  top: 10.5rem; }
+
 .client-info {
   color: #6d7278;
   font-family: 'Open Sans', sans-serif;
