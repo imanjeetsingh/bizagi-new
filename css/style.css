@@ -4906,18 +4906,17 @@ ul.options > li {
       padding: 0.3125rem 5.9rem; } }
   @media (min-width: 992px) {
     .caseStudy .dropdown .cta {
-      padding: 0.625rem 3.5rem; } }
+      padding: 0.3125rem 3.5rem; } }
   .caseStudy .dropdown .cta:focus {
     outline: none; }
+  .caseStudy .dropdown .cta-icon-box {
+    margin-top: 2px; }
 
 .caseStudy .cta {
   padding: 0.3125rem 3.4375rem; }
 
 .caseStudy .dropdown {
   padding: 0; }
-
-.caseStudy .dropdown-menu {
-  left: -1rem; }
 
 .caseStudy .dropdown input {
   line-height: 2rem;
@@ -4952,6 +4951,14 @@ ul.options > li {
 
 ul.options > li {
   list-style: none; }
+
+.caseStudyCard .element-item {
+  position: relative;
+  float: left;
+  width: 370px;
+  height: 370px;
+  margin: 5px;
+  padding: 10px; }
 
 .caseStudyCard img.customer_logo {
   width: 9.375rem; }
