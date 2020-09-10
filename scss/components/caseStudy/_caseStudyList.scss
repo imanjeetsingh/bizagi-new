@@ -1,6 +1,7 @@
 .tooltip {
   position: relative;
   display: inline-block;
+  opacity: 1;
   // border-bottom: 1px dotted black;
 }
 
@@ -76,6 +77,7 @@
     }
   }
   .dropdown {
+    z-index: 1071;
     .cta {
       margin: 0 0.5rem 2rem 0.5rem;
       padding: 0.3125rem;
@@ -158,6 +160,12 @@ ul.options > li {
     height: 370px;
     margin: 5px;
     padding: 10px;
+    @include media(tablet){
+      padding: 5px;
+    }
+    @include media(desktop){
+      padding: 10px;
+    }
   }
   img.customer_logo {
     width: 9.375rem;
@@ -174,7 +182,7 @@ ul.options > li {
 }
 
 .dropdownTwo {
-  left: -5.875rem !important;
+  transform: translate3d(-117px, 38px, 0px) !important;
   @include media(tablet) {
     left: 0 !important;
   }
