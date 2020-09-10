@@ -1,0 +1,27 @@
+.blogAuthor {
+    .breadcrumb {
+        padding: 0;
+        margin-top: 2.5rem;
+        @include media (desktop) {
+            margin-top: 1rem;
+        }
+    }
+    .blogDetail-article-authorName-box {
+        padding: 0.5rem 5.5rem;
+        @include media (tablet) {
+            padding: 2rem 8rem;
+        }
+        .cta-group {
+            @include media (tablet) {
+                display: -webkit-inline-box;
+                flex-wrap: inherit;
+            }
+            margin: 0 -0.5rem;
+        }
+        .cta {
+            padding: 0;
+            font-size: 0.75rem;
+            margin: 0 0.2rem 0.5rem 0.2rem;
+        }
+    }
+}

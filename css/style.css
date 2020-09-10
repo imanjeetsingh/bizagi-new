@@ -4793,6 +4793,29 @@ ul li {
   margin-top: 1rem;
   font-size: 1rem; }
 
+.blogAuthor .breadcrumb {
+  padding: 0;
+  margin-top: 2.5rem; }
+  @media (min-width: 992px) {
+    .blogAuthor .breadcrumb {
+      margin-top: 1rem; } }
+
+.blogAuthor .blogDetail-article-authorName-box {
+  padding: 0.5rem 5.5rem; }
+  @media (min-width: 768px) {
+    .blogAuthor .blogDetail-article-authorName-box {
+      padding: 2rem 8rem; } }
+  .blogAuthor .blogDetail-article-authorName-box .cta-group {
+    margin: 0 -0.5rem; }
+    @media (min-width: 768px) {
+      .blogAuthor .blogDetail-article-authorName-box .cta-group {
+        display: -webkit-inline-box;
+        flex-wrap: inherit; } }
+  .blogAuthor .blogDetail-article-authorName-box .cta {
+    padding: 0;
+    font-size: 0.75rem;
+    margin: 0 0.2rem 0.5rem 0.2rem; }
+
 .client-info {
   color: #6d7278;
   font-family: 'Open Sans', sans-serif;
@@ -4953,7 +4976,7 @@ ul.options > li {
       width: 24rem; } }
   @media (min-width: 992px) {
     .caseStudy .option-set {
-      width: 19rem; } }
+      width: 18rem; } }
 
 ul.options > li {
   list-style: none; }
