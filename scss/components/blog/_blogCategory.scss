@@ -1,0 +1,47 @@
+.category {
+    &-box {
+        .blog {
+            &-image {
+                &-box {}
+                &-category {
+                    &-link {
+                        .top {
+                            top: 7.5rem;
+                        }
+                    }
+                }
+            }
+            &-heading {
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5rem;
+                top: 10.5rem;
+            }
+        }
+    }
+    &-list {
+        &-box {
+            .article {
+                &-box {
+                    &-link {}
+                }
+                &-image {
+                    &-box {}
+                    &-tag {
+                        &-link {}
+                    }
+                }
+                &-heading {
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                    color: #6d7278;
+                    margin-bottom: -1.2rem;
+                }
+            }
+            p {
+                margin-top: 1rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}

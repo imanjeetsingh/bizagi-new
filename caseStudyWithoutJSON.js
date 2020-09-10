@@ -70,3 +70,18 @@ function debounce(fn, threshold) {
         timeout = setTimeout(delayed, threshold || 100);
     };
 }
+
+(function() {
+    $container = $('#container');
+    createContent();
+    var $filterDisplay = $('#filter-display');
+    $container.isotope();
+    // do stuff when checkbox change
+    $('#options').on('change', function(jQEvent) {
+        var $checkbox = $(jQEvent.target);
+        manageCheckbox($checkbox);
+        var comboFilter = getComboFilter(filters);
+        $container.isotope({ filter: comboFilter });
+        $filterDisplay.text(comboFilter);
+    });
+});

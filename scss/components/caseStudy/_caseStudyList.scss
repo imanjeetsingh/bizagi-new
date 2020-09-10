@@ -65,6 +65,7 @@
   &-search {
     &-box {
     }
+<<<<<<< HEAD
     &-input {
       border-radius: 2.5rem;
       border: solid 1px lightgray;
@@ -76,6 +77,23 @@
     }
   }
   .dropdown {
+=======
+    .dropdown {
+        .cta {
+            margin: 0 0.5rem 2rem 0.5rem;
+            padding: 0.3125rem;
+            @include media(tablet) {
+                padding: 0.3125rem 5.9rem;
+            }
+            @include media(desktop) {
+                padding: 0.625rem 3.5rem;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+>>>>>>> aman
     .cta {
       margin: 0 0.5rem 2rem 0.5rem;
       padding: 0.3125rem;
@@ -89,6 +107,7 @@
         outline: none;
       }
     }
+<<<<<<< HEAD
   }
 
   .cta {
@@ -119,12 +138,19 @@
   .dropdown-menu.show {
     @include media(desktop) {
       display: none !important;
+=======
+    .dropdown input {
+        /* display: block; */
+        line-height: 2rem;
+        margin: 0 0.5rem 0 -1rem;
+>>>>>>> aman
     }
   }
   .dropdown:hover .dropdown-menu {
     @include media(tablet) {
       margin-top: 0;
     }
+<<<<<<< HEAD
     @include media(desktop) {
       display: block;
       margin-top: -2rem;
@@ -138,6 +164,31 @@
     }
     @include media(desktop) {
       width: 19rem;
+=======
+    // .caseStudy .dropdown .dropdown-menu .show{
+    //     display: none;
+    // }
+    .dropdown-menu.show {
+        @include media(desktop) {
+            display: none !important;
+        }
+    }
+    .dropdown:hover .dropdown-menu {
+        @include media(desktop) {
+            display: block;
+            margin-top: -2rem;
+        }
+    }
+    .option-set {
+        width: 18rem;
+        padding: 1.25rem 0;
+        @include media(tablet) {
+            width: 24rem;
+        }
+        @include media(desktop) {
+            width: 19rem;
+        }
+>>>>>>> aman
     }
   }
 }
@@ -145,7 +196,9 @@
 ul.options > li {
   list-style: none;
 }
+
 // edit by iman
+<<<<<<< HEAD
 .caseStudyCard {
   .card {
     // &-inner{
@@ -161,5 +214,23 @@ ul.options > li {
     left: -5.875rem !important;
     @include media(tablet) {
       left: 0 !important;
+=======
+.aman {
+    .card {
+        // &-inner{
+        margin: 1rem 0;
+        // height: 100% !important;
+        // }
+        &-text {
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+.dropdownTwo {
+    left: -5.875rem !important;
+    @include media(tablet) {
+        left: 0 !important;
+>>>>>>> aman
     }
   }
