@@ -2,9 +2,9 @@
   position: relative;
   display: inline-block;
   // border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
+  }
+  
+  .tooltip .tooltiptext {
   visibility: hidden;
   width: 11.875rem;
   background-color: rgba(23, 42, 52, 0.8);
@@ -18,9 +18,9 @@
   top: 2rem;
   font-size: 0.875rem;
   transition: visibility 0.3s linear, opacity 0.3s linear;
-}
-
-.tooltip .tooltiptext::after {
+  }
+  
+  .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -29,92 +29,139 @@
   border-width: 0.3125;
   border-style: hidden;
   border-color: black transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
+  }
+  
+  .tooltip:hover .tooltiptext {
   visibility: visible;
-}
-
-// edit by iman
-.partnerinfo {
+  }
+  
+  // edit by iman
+  .partnerinfo {
   text-align: end;
   margin-right: 2rem;
   color: #9b9b9b;
   font-weight: 400;
   font-size: 1.125rem;
-}
-
-.case-study-image {
+  }
+  
+  .case-study-image {
   padding: 1rem 0;
-}
-
-.image-box {
+  }
+  
+  .image-box {
   text-align: justify;
   left: 1rem;
   padding: 1rem 0 1.5rem 0;
   @include media(tablet) {
-    text-align: center;
+  text-align: center;
   }
   @include media(desktop) {
-    text-align: justify;
+  text-align: justify;
   }
-}
-
-.caseStudy {
+  }
+  
+  .caseStudy {
   // display: ;
   &-search {
-    &-box {
-    }
-    .dropdown {
-        .cta {
-            margin: 0 0.5rem 2rem 0.5rem;
-            padding: 0.3125rem;
-            @include media(tablet) {
-                padding: 0.3125rem 5.9rem;
-            }
-            @include media(desktop) {
-                padding: 0.625rem 3.5rem;
-            }
-            &:focus {
-                outline: none;
-            }
-        }
-    }
-    .cta {
-      margin: 0 0.5rem 2rem 0.5rem;
-      padding: 0.3125rem;
-      @include media(tablet) {
-        padding: 0.3125rem 5.9rem;
-      }
-      @include media(desktop) {
-        padding: 0.625rem 3.5rem;
-      }
-      &:focus {
-        outline: none;
-      }
-    }
-        }
-    }
-ul.options > li {
+  &-box {}
+  &-input {
+  border-radius: 2.5rem;
+  border: solid 1px lightgray;
+  padding: 0.3rem 1rem;
+  width: 100%;
+  &:focus {
+  outline: none;
+  }
+  }
+  }
+  .dropdown {
+  .cta {
+  margin: 0 0.5rem 2rem 0.5rem;
+  padding: 0.3125rem;
+  @include media(tablet) {
+  padding: 0.3125rem 5.9rem;
+  }
+  @include media(desktop) {
+  padding: 0.625rem 3.5rem;
+  }
+  &:focus {
+  outline: none;
+  }
+  }
+  }
+  .cta {
+  padding: 0.3125rem 3.4375rem;
+  }
+  .dropdown {
+  padding: 0;
+  }
+  .dropdown-menu {
+  // position: absolute;
+  // top: -1.25rem;
+  left: -1rem;
+  // margin-top: 4.313rem !important;
+  }
+  .dropdown input {
+  // / display: block; /
+  line-height: 2rem;
+  margin: 0 0.5rem 0 -1rem;
+  }
+  .dropdown label {
+  font-weight: 700;
+  color: #6d7278;
+  }
+  // .caseStudy .dropdown .dropdown-menu .show{
+  // display: none;
+  // }
+  .dropdown-menu.show {
+  @include media(desktop) {
+  display: none !important;
+  }
+  }
+  .dropdown:hover .dropdown-menu {
+  @include media(tablet) {
+  margin-top: 0;
+  }
+  @include media(desktop) {
+  display: block;
+  margin-top: -2rem;
+  }
+  }
+  .option-set {
+  width: 18rem;
+  padding: 1.25rem 0;
+  @include media(tablet) {
+  width: 24rem;
+  }
+  @include media(desktop) {
+  width: 18rem;
+  }
+  }
+  }
+  
+  ul.options>li {
   list-style: none;
-}
-
-// edit by iman
-.aman {
-    .card {
-        // &-inner{
-        margin: 1rem 0;
-        // height: 100% !important;
-        // }
-        &-text {
-            margin-bottom: 4rem;
-        }
-    }
-}
-
-.dropdownTwo {
-    left: -5.875rem !important;
-    @include media(tablet) {
-        left: 0 !important;
-    }
+  }
+  
+  // edit by iman
+  .caseStudyCard {
+  img.customer_logo{
+    width: 9.375rem;
+  }
+  .card {
+  // &-inner{
+  margin: 1rem 0;
+  // height: 100% !important;
+  // }
+  &-text {
+  margin-bottom: 4rem;
+  }
+  }
+  }
+  
+  .dropdownTwo {
+  left: -5.875rem !important;
+  @include media(tablet) {
+  left: 0 !important;
+  }
   }
