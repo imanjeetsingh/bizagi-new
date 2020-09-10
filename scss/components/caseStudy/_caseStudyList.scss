@@ -92,7 +92,7 @@
       }
       &-icon{
         &-box{
-          margin-top: 2px;
+          margin-top: 4px;
         }
       }
     }
@@ -156,15 +156,21 @@ ul.options > li {
   .element-item {
     position: relative;
     float: left;
-    width: 370px;
-    height: 370px;
+    width: 350px;
+    height: 350px;
     margin: 5px;
     padding: 10px;
     @include media(tablet){
       padding: 5px;
+      margin: 5px;
+      width: 340px;
+      height: 340px;
     }
     @include media(desktop){
       padding: 10px;
+      margin: 5px;
+      width: 370px;
+      height: 370px;
     }
   }
   img.customer_logo {
