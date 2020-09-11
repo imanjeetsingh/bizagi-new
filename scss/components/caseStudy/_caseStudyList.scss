@@ -1,7 +1,7 @@
 .tooltip {
-    margin-top: 1rem;
     position: relative;
     display: inline-block;
+    opacity: 1;
     // border-bottom: 1px dotted black;
 }
 
@@ -76,77 +76,126 @@
             }
         }
     }
-    .dropdown {
-        .cta {
-            margin: 0 0.5rem 2rem 0.5rem;
-            padding: 0.3125rem;
-            @include media(tablet) {
-                padding: 0.3125rem 5.9rem;
-            }
-            @include media(desktop) {
-                padding: 0.625rem 3.5rem;
-            }
-            &:focus {
-                outline: none;
-            }
-        }
-    }
-    .cta {
-        padding: 0.3125rem 3.4375rem;
-    }
-    .dropdown {
-        padding: 0;
-    }
-    .dropdown-menu {
-        // position: absolute;
-        // top: -1.25rem;
-        left: -1rem;
-        // margin-top: 4.313rem !important;
-    }
-    .dropdown input {
-        /* display: block; */
-        line-height: 2rem;
-        margin: 0 0.5rem 0 -1rem;
-    }
-    .dropdown label {
-        font-weight: 700;
-        color: #6d7278;
-    }
-    // .caseStudy .dropdown .dropdown-menu .show{
-    //     display: none;
-    // }
-    .dropdown-menu.show {
-        @include media(desktop) {
-            display: none !important;
-        }
-    }
-    .dropdown:hover .dropdown-menu {
-        @include media(tablet) {
-            margin-top: 0;
-        }
-        @include media(desktop) {
-            display: block;
-            margin-top: -2rem;
-        }
-    }
-    .option-set {
-        width: 18rem;
-        padding: 1.25rem 0;
-        @include media(tablet) {
-            width: 24rem;
-        }
-        @include media(desktop) {
-            width: 18rem;
+    &-input {
+        border-radius: 2.5rem;
+        border: solid 1px lightgray;
+        padding: 0.3rem 1rem;
+        width: 100%;
+        &:focus {
+            outline: none;
         }
     }
 }
 
+.dropdown {
+    z-index: 1071;
+    .cta {
+        margin: 0 0.5rem 2rem 0.5rem;
+        padding: 0.3125rem;
+        @include media(tablet) {
+            padding: 0.3125rem 5.9rem;
+        }
+        @include media(desktop) {
+            padding: 0.3125rem 3.5rem;
+        }
+        &:focus {
+            outline: none;
+        }
+        &-icon {
+            &-box {
+                margin-top: 4px;
+            }
+        }
+    }
+}
+
+.cta {
+    padding: 0.3125rem 3.4375rem;
+}
+
+.dropdown {
+    padding: 0;
+}
+
+// .dropdown-menu {
+// position: absolute;
+// top: -1.25rem;
+// left: 0;
+// margin-top: 4.313rem !important;
+// }
+.dropdown input {
+    // / display: block; /
+    line-height: 2rem;
+    margin: 0 0.5rem 0 -1rem;
+}
+
+.dropdown label {
+    font-weight: 700;
+    color: #6d7278;
+}
+
+// .caseStudy .dropdown .dropdown-menu .show{
+// display: none;
+// }
+.dropdown-menu.show {
+    @include media(desktop) {
+        display: none !important;
+    }
+}
+
+.dropdown:hover .dropdown-menu {
+    @include media(tablet) {
+        margin-top: 0;
+    }
+    @include media(desktop) {
+        display: block;
+        margin-top: -2rem;
+    }
+}
+
+.option-set {
+    width: 18rem;
+    padding: 1.25rem 0;
+    @include media(tablet) {
+        width: 24rem;
+    }
+    @include media(desktop) {
+        width: 18rem;
+    }
+}
+
+
+}
 ul.options>li {
     list-style: none;
 }
-
 // edit by iman
 .caseStudyCard {
+    .element-item {
+        position: relative;
+        float: left;
+        width: 350px;
+        height: 350px;
+        margin: 5px;
+        padding: 10px;
+        @include media(tablet) {
+            padding: 5px;
+            margin: 5px;
+            width: 340px;
+            height: 340px;
+        }
+        @include media(desktop) {
+            padding: 10px;
+            margin: 5px;
+            width: 370px;
+            height: 370px;
+        }
+    }
+    
+    img.customer_logo {
+        width: 9.375rem;
+    }
+    
     .card {
         // &-inner{
         margin: 1rem 0;
@@ -157,9 +206,11 @@ ul.options>li {
         }
     }
 }
-
 .dropdownTwo {
-    left: -5.875rem !important;
+    @include mobile-only {
+        transform: translate3d(-117px, 38px, 0px) !important;
+    }
+    
     @include media(tablet) {
         left: 0 !important;
     }
