@@ -75,4 +75,5 @@ $(document).ready(function() {
             }
         })
     }
+    // $(".category-list-box .row:nth-child(1)").addClass("aman");
 })

@@ -4,336 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ztest</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
 </head>
 
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Case Study List without Json</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
-    </head>
-
-    <body>
-
-        <!-- Case Study List component starts starts -->
-        <div class="container caseStudy">
-            <div class="row mt-5">
-                <div class="caseStudy-search-box col-12 col-md-12 col-lg-6">
-                    <input type="text" class="caseStudy-search-input quicksearch" placeholder="Search">
-                </div>
-                <div id="options" class="dropdown col-6 col-md-6 col-lg-3 mt-3 mt-lg-0">
-                    <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown">
-<span class="cta-content">Filter by Industries</span>
-<span class="cta-icon-box">
-<i class="fa fa-caret-down" aria-hidden="true"></i>
-</span>
-</button>
-                    <div class="dropdown-menu">
-                        <div class="option-set" data-group="industry">
-                            <ul class="options">
-                                <!-- <li class="input-all"><input class="all" type="checkbox" value=".all-resources" id="all-resources"><label for="all-resources">All Resources</label></li> -->
-                                <li>
-                                    <input type="checkbox" value=".manufacturingRetail" id="manufacturingRetail">
-                                    <label for="manufacturingRetail">Manufacturing & Retail</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value=".financialServices" id="financialServices">
-                                    <label for="financialServices">Financial Services</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value=".insurance" id="insurance">
-                                    <label for="insurance">Insurance</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value=".professionalServices" id="professionalServices">
-                                    <label for="professionalServices">Professional Services</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value=".transportationLogistics" id="transportationLogistics">
-                                    <label for="transportationLogistics">Transportation & Logistics</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value=".utilitiesEnergy" id="utilitiesEnergy">
-                                    <label for="utilitiesEnergy">Utilities & Energy</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value=".healthcare" id="healthcare">
-                                    <label for="healthcare">Healthcare</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value=".governmentEducation" id="governmentEducation">
-                                    <label for="governmentEducation">Government & Education</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value=".hospitality" id="hospitality">
-                                    <label for="hospitality">Hospitality</label>
-                                </li>
-                            </ul>
-                        </div>
+    <!-- <div class="article-box col-12 p-2">
+        <a class="article-box-link" href="undefined" target="_self" id="article-box-link">
+            <div class="row">
+                <div class="col-12 col-sm-4 col-md-3">
+                    <div class="article-image-box">
+                        <img class="article-image img-fluid" src="https://randomuser.me/api/portraits/men/50.jpg" alt="mr image">
                     </div>
                 </div>
-                <div id="options" class="dropdown col-6 col-md-6 col-lg-3 mt-3 mt-lg-0">
-                    <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown" style="float: right;">
-                        <span class="cta-content">Filter by Solutions</span>
-                        <span class="cta-icon-box">
-                        <i class="fa fa-caret-down" aria-hidden="true"></i>
-                    </span>
-                    </button>
-                    <div class="dropdown-menu dropdownTwo">
-                        <div class="option-set" data-group="solution">
-                            <ul class="options">
-                                <!-- <li class="input-all"><input class="all" type="checkbox" value=".all-services" id="all-services"><label for="all-services">All Services L1</label></li> -->
-                                <li>
-                                    <input type="checkbox" value=".digitalOperations" id="digitalOperations">
-                                    <label for="digitalOperations">Digital Operations</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value=".finances" id="finances">
-                                    <label for="finances">Finances</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value=".mrketingSales" id="mrketingSales">
-                                    <label for="mrketingSales">Marketing & Sales</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value=".customerEngagement" id="customerEngagement">
-                                    <label for="customerEngagement">Customer Engagement</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value=".goveranceCompliance" id="goveranceCompliance">
-                                    <label for="goveranceCompliance">Goverance & Compliance</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value=".humanResources" id="humanResources">
-                                    <label for="humanResources">Human Resources</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value=".customerExperience" id="customerExperience">
-                                    <label for="customerExperience">Customer Experience</label>
-                                </li>
-
-                                <!-- <li><input type="checkbox" value=".fm" id="fm"><label for="fm">FM</label></li> -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="row grid caseStudyCard" id="cardviewlist">
-
-                        <div class="element-item col-12 col-md-4 manufacturingRetail insurance hospitality" data-category="manufacturingRetail insurance hospitality">
-                            <div class="card h-100 card-inner">
-                                <div class="partnerinfo">
-                                    <div class="tooltip mt-4">
-                                        <span>Adidas</span>
-                                        <i class="fa fa-info-circle"></i>
-                                        <a class="tooltiptext"><b>
-                                            <div class="Industry">Manufacturing &amp; Retail</div>
-                                            </b>
-                                            <div class="Solution">Digital Operations</div>
-                                            <div class="Solution2">Finance</div>
-                                            <div class="Solution3">Marketing &amp; Sales</div>
-                                            <div class="Solution4"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card-image-box image-box">
-                                    <img class="card-img-top" src="//resourcesbizagi.azureedge.net/images/logo-clients/logo_adidas.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" style="width: 150px;">
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”
-                                    </p>
-                                    <div class="card-cta">
-                                        <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
-                                        <div class="cta-group">
-                                            <a href="#" class="cta cta-default cta-icon-right">
-                                                <span class="cta-content">read more</span>
-                                                <span class="cta-icon-box">
-                                                <i class="cta-icon fa fa-arrow-right"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="element-item col-12 col-md-4 hospitality digitalOperations" data-category="hospitality digitalOperations">
-                            <div class="card h-100 card-inner">
-                                <div class="partnerinfo">
-                                    <div class="tooltip mt-4">
-                                        <span>Adidas2</span>
-                                        <i class="fa fa-info-circle"></i>
-                                        <a class="tooltiptext"><b>
-                                            <div class="Industry">Manufacturing &amp; Retail blassh</div>
-                                            </b>
-                                            <div class="Solution">Digital Operations</div>
-                                            <div class="Solution2">Finance yo</div>
-                                            <div class="Solution3">Marketing &amp; Sales</div>
-                                            <div class="Solution4"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card-image-box image-box">
-                                    <img class="card-img-top" src="//resourcesbizagi.azureedge.net/images/logo-clients/logo_adidas.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" style="width: 150px;">
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”
-                                    </p>
-                                    <div class="card-cta">
-                                        <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
-                                        <div class="cta-group">
-                                            <a href="#" class="cta cta-default cta-icon-right">
-                                                <span class="cta-content">read more</span>
-                                                <span class="cta-icon-box">
-                                                <i class="cta-icon fa fa-arrow-right"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="element-item col-12 col-md-4 manufacturingRetail digitalOperations" data-category="manufacturingRetail">
-                            <div class="card h-100 card-inner">
-                                <div class="partnerinfo">
-                                    <div class="tooltip mt-4">
-                                        <span>Adidas3</span>
-                                        <i class="fa fa-info-circle"></i>
-                                        <a class="tooltiptext"><b>
-                                            <div class="Industry">Manufacturing &amp; Retail</div>
-                                            </b>
-                                            <div class="Solution">Digital Operations</div>
-                                            <div class="Solution2">Finance</div>
-                                            <div class="Solution3">Marketing &amp; Sales</div>
-                                            <div class="Solution4"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card-image-box image-box">
-                                    <img class="card-img-top" src="//resourcesbizagi.azureedge.net/images/logo-clients/logo_adidas.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" style="width: 150px;">
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”
-                                    </p>
-                                    <div class="card-cta">
-                                        <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
-                                        <div class="cta-group">
-                                            <a href="#" class="cta cta-default cta-icon-right">
-                                                <span class="cta-content">read more</span>
-                                                <span class="cta-icon-box">
-                                                <i class="cta-icon fa fa-arrow-right"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="element-item col-12 col-md-4 manufacturingRetail hospitality" data-category="manufacturingRetail hospitality">
-                            <div class="card h-100 card-inner">
-                                <div class="partnerinfo">
-                                    <div class="tooltip mt-4">
-                                        <span>Adidas4</span>
-                                        <i class="fa fa-info-circle"></i>
-                                        <a class="tooltiptext"><b>
-                                            <div class="Industry">Manufacturing &amp; Retail</div>
-                                            </b>
-                                            <div class="Solution">Digital Operations</div>
-                                            <div class="Solution2">Finance</div>
-                                            <div class="Solution3">Marketing &amp; Sales</div>
-                                            <div class="Solution4"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card-image-box image-box">
-                                    <img class="card-img-top" src="//resourcesbizagi.azureedge.net/images/logo-clients/logo_adidas.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" style="width: 150px;">
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”
-                                    </p>
-                                    <div class="card-cta">
-                                        <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
-                                        <div class="cta-group">
-                                            <a href="#" class="cta cta-default cta-icon-right">
-                                                <span class="cta-content">read more</span>
-                                                <span class="cta-icon-box">
-                                                <i class="cta-icon fa fa-arrow-right"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="element-item col-12 col-md-4 manufacturingRetail hospitality" data-category="manufacturingRetail hospitality">
-                            <div class="card h-100 card-inner">
-                                <div class="partnerinfo">
-                                    <div class="tooltip mt-4">
-                                        <span>Adidas5</span>
-                                        <i class="fa fa-info-circle"></i>
-                                        <a class="tooltiptext"><b>
-                                            <div class="Industry">Manufacturing &amp; Retail</div>
-                                            </b>
-                                            <div class="Solution">Digital Operations</div>
-                                            <div class="Solution2">Finance</div>
-                                            <div class="Solution3">Marketing &amp; Sales</div>
-                                            <div class="Solution4"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card-image-box image-box">
-                                    <img class="card-img-top" src="//resourcesbizagi.azureedge.net/images/logo-clients/logo_adidas.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" style="width: 150px;">
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”
-                                    </p>
-                                    <div class="card-cta">
-                                        <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
-                                        <div class="cta-group">
-                                            <a href="#" class="cta cta-default cta-icon-right">
-                                                <span class="cta-content">read more</span>
-                                                <span class="cta-icon-box">
-                                                <i class="cta-icon fa fa-arrow-right"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-12 col-sm-8 col-md-9">
+                    <h5 class="article-heading mt-2">mr Lucas Larsen</h5>
+                    <p>lucas.larsen@example.com</p>
                 </div>
             </div>
+        </a>
+        <div>
+
         </div>
-
-    </body>
-
+    </div> -->
 
 
 
-    <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-    <script src="caseStudyWithoutJSON.js"></script>
 
-    </html>
+    <!-- <div class="col-md-4 category-box">
+        <a class="article-box-link" href="#" target="">
+            <div class="article-image-box">
+                <img class="article-image" src="./images/manufacturing-process-automation-356x220.jpg" alt="Image 3">
+            </div>
+            <h3 class="article-heading">[Infographic] What’s Stopping You From Starting Your Automation Project?</h3>
+        </a>
+        <a class="article-image-category-link" href="#" target="">
+            <div class="article-image-category top">Digital Process Automation</div>
+        </a>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+    <div class="article-box col-12 col-sm-2 col-md-4 category-box p-2">
+        <a class="article-box-link" href="undefined" target="_self" id="article-box-link">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="article-image-box">
+                        <img class="article-image img-fluid" src="https://randomuser.me/api/portraits/men/61.jpg" alt="mr image">
+                    </div>
+                </div>
+                <div class="col-12 ">
+                    <h5 class="article-heading mt-2">mr Joey Oliver</h5>
+                    <p>joey.oliver@example.com</p>
+                </div>
+            </div>
+        </a>
+        <div>
+
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+
+    <div class="col-12  p-2">
+        <a class="article-box-link" href="undefined" target="_self" id="article-box-link">
+            <div class="row">
+                <div class="col-12 col-sm-4 col-md-3 category-list-box">
+                    <div class="article-image-box">
+                        <img class="article-image img-fluid" src="https://randomuser.me/api/portraits/women/35.jpg" alt="ms image">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-md-9">
+                    <h5 class="article-heading mt-2">ms Annabel Somby</h5>
+                    <p>annabel.somby@example.com</p>
+                </div>
+            </div>
+        </a>
+        <div>
+
+        </div>
+    </div>
+
+
+    <br><br>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-3 article-box category-list-box">
+                <a class="article-box-link" href="#">
+                    <div class="article-image-box">
+                        <img class="article-image img-fluid" src="./images/testimonio01.png" alt="4 Essential Automation Tips for Financial Service Providers image">
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-9 article-box">
+                <h2 class="article-heading">4 Essential Automation Tips for Financial Service Providers</h2>
+                <a class="article-image-tag-link" href="/cms/render/live/en/sites/bizagi-www/home/TestPage.html?category=digital-process-automation" target="_self">
+                    <span class="article-image-tag">Digital Process Automation</span>
+                </a>
+                <p>When starting a process automation project or initiative, it is essential to get a solid foundation in place. Sometimes, automation teams rush forward without putting...</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
