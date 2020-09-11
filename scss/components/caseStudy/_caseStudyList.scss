@@ -164,11 +164,10 @@
     }
 }
 
-
-}
 ul.options>li {
     list-style: none;
 }
+
 // edit by iman
 .caseStudyCard {
     .element-item {
@@ -191,11 +190,9 @@ ul.options>li {
             height: 370px;
         }
     }
-    
     img.customer_logo {
         width: 9.375rem;
     }
-    
     .card {
         // &-inner{
         margin: 1rem 0;
@@ -206,11 +203,11 @@ ul.options>li {
         }
     }
 }
+
 .dropdownTwo {
     @include mobile-only {
         transform: translate3d(-117px, 38px, 0px) !important;
     }
-    
     @include media(tablet) {
         left: 0 !important;
     }
