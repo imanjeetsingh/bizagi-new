@@ -4983,11 +4983,13 @@ ul.options > li {
   .caseStudyCard .card-text {
     margin-bottom: 4rem; }
 
-.dropdownTwo {
-  transform: translate3d(-117px, 38px, 0px) !important; }
-  @media (min-width: 768px) {
-    .dropdownTwo {
-      left: 0 !important; } }
+@media (max-width: 767px) {
+  .dropdownTwo {
+    transform: translate3d(-117px, 38px, 0px) !important; } }
+
+@media (min-width: 768px) {
+  .dropdownTwo {
+    left: 0 !important; } }
 
 .card-inner {
   background: #FFFFFF;

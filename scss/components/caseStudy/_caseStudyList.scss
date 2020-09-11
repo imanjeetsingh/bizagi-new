@@ -188,7 +188,9 @@ ul.options > li {
 }
 
 .dropdownTwo {
-  transform: translate3d(-117px, 38px, 0px) !important;
+  @include mobile-only{
+    transform: translate3d(-117px, 38px, 0px) !important;
+  }
   @include media(tablet) {
     left: 0 !important;
   }
