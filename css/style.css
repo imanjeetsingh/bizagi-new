@@ -4960,7 +4960,6 @@ ul.options > li {
   list-style: none; }
 
 .tooltip {
-  margin-top: 1rem;
   position: relative;
   display: inline-block;
   opacity: 1; }
@@ -5021,91 +5020,72 @@ ul.options > li {
   padding: 0.3rem 1rem;
   width: 100%; }
   .caseStudy-search-input:focus {
-<<<<<<< HEAD
     outline: none; }
 
-.caseStudy .dropdown .cta {
-  margin: 0 0.5rem 2rem 0.5rem;
-  padding: 0.3125rem; }
-  @media (min-width: 768px) {
-    .caseStudy .dropdown .cta {
-      padding: 0.3125rem 5.9rem; } }
-  @media (min-width: 992px) {
-    .caseStudy .dropdown .cta {
-      padding: 0.625rem 3.5rem; } }
-  .caseStudy .dropdown .cta:focus {
+.caseStudy-input {
+  border-radius: 2.5rem;
+  border: solid 1px lightgray;
+  padding: 0.3rem 1rem;
+  width: 100%; }
+  .caseStudy-input:focus {
     outline: none; }
 
-=======
-    outline: none; }
-
-.caseStudy .dropdown {
+.dropdown {
   z-index: 1071; }
-  .caseStudy .dropdown .cta {
+  .dropdown .cta {
     margin: 0 0.5rem 2rem 0.5rem;
     padding: 0.3125rem; }
     @media (min-width: 768px) {
-      .caseStudy .dropdown .cta {
+      .dropdown .cta {
         padding: 0.3125rem 5.9rem; } }
     @media (min-width: 992px) {
-      .caseStudy .dropdown .cta {
+      .dropdown .cta {
         padding: 0.3125rem 3.5rem; } }
-    .caseStudy .dropdown .cta:focus {
+    .dropdown .cta:focus {
       outline: none; }
-    .caseStudy .dropdown .cta-icon-box {
+    .dropdown .cta-icon-box {
       margin-top: 4px; }
 
->>>>>>> iman
-.caseStudy .cta {
+.cta {
   padding: 0.3125rem 3.4375rem; }
 
-.caseStudy .dropdown {
+.dropdown {
   padding: 0; }
 
-<<<<<<< HEAD
-.caseStudy .dropdown-menu {
-  left: -1rem; }
-
-.caseStudy .dropdown input {
-  /* display: block; */
-=======
-.caseStudy .dropdown input {
->>>>>>> iman
+.dropdown input {
   line-height: 2rem;
   margin: 0 0.5rem 0 -1rem; }
 
-.caseStudy .dropdown label {
+.dropdown label {
   font-weight: 700;
   color: #6d7278; }
 
 @media (min-width: 992px) {
-  .caseStudy .dropdown-menu.show {
+  .dropdown-menu.show {
     display: none !important; } }
 
 @media (min-width: 768px) {
-  .caseStudy .dropdown:hover .dropdown-menu {
+  .dropdown:hover .dropdown-menu {
     margin-top: 0; } }
 
 @media (min-width: 992px) {
-  .caseStudy .dropdown:hover .dropdown-menu {
+  .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: -2rem; } }
 
-.caseStudy .option-set {
+.option-set {
   width: 18rem;
   padding: 1.25rem 0; }
   @media (min-width: 768px) {
-    .caseStudy .option-set {
+    .option-set {
       width: 24rem; } }
   @media (min-width: 992px) {
-    .caseStudy .option-set {
+    .option-set {
       width: 18rem; } }
 
 ul.options > li {
   list-style: none; }
 
-<<<<<<< HEAD
-=======
 .caseStudyCard .element-item {
   position: relative;
   float: left;
@@ -5119,17 +5099,10 @@ ul.options > li {
       margin: 5px;
       width: 340px;
       height: 340px; } }
-  @media (min-width: 992px) {
-    .caseStudyCard .element-item {
-      padding: 10px;
-      margin: 5px;
-      width: 370px;
-      height: 370px; } }
 
 .caseStudyCard img.customer_logo {
   width: 9.375rem; }
 
->>>>>>> iman
 .caseStudyCard .card {
   margin: 1rem 0; }
   .caseStudyCard .card-text {
