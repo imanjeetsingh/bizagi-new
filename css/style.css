@@ -5030,46 +5030,46 @@ ul.options > li {
   .caseStudy-input:focus {
     outline: none; }
 
-.dropdown {
+.caseStudy .dropdown {
   z-index: 1071; }
-  .dropdown .cta {
+  .caseStudy .dropdown .cta {
     margin: 0 0.5rem 2rem 0.5rem;
     padding: 0.3125rem; }
     @media (min-width: 768px) {
-      .dropdown .cta {
+      .caseStudy .dropdown .cta {
         padding: 0.3125rem 5.9rem; } }
     @media (min-width: 992px) {
-      .dropdown .cta {
+      .caseStudy .dropdown .cta {
         padding: 0.3125rem 3.5rem; } }
-    .dropdown .cta:focus {
+    .caseStudy .dropdown .cta:focus {
       outline: none; }
-    .dropdown .cta-icon-box {
+    .caseStudy .dropdown .cta-icon-box {
       margin-top: 4px; }
 
-.cta {
+.caseStudy .cta {
   padding: 0.3125rem 3.4375rem; }
 
-.dropdown {
-  padding: 0; }
+.caseStudy .cta {
+  padding: 0.3125rem 3.4375rem; }
 
-.dropdown input {
+.caseStudy .dropdown input {
   line-height: 2rem;
   margin: 0 0.5rem 0 -1rem; }
 
-.dropdown label {
+.caseStudy .dropdown label {
   font-weight: 700;
   color: #6d7278; }
 
 @media (min-width: 992px) {
-  .dropdown-menu.show {
+  .caseStudy .dropdown-menu.show {
     display: none !important; } }
 
 @media (min-width: 768px) {
-  .dropdown:hover .dropdown-menu {
+  .caseStudy .dropdown:hover .dropdown-menu {
     margin-top: 0; } }
 
 @media (min-width: 992px) {
-  .dropdown:hover .dropdown-menu {
+  .caseStudy .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: -2rem; } }
 
