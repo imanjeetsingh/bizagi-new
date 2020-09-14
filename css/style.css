@@ -4660,7 +4660,18 @@ ul li {
   top: 3rem;
   z-index: 1;
   padding-left: 1rem;
-  color: #fff; }
+  color: #fff;
+  width: 91%; }
+  @media (min-width: 768px) {
+    .blog-heading {
+      width: 97%;
+      font-size: 0.875rem;
+      line-height: 1rem; } }
+  @media (min-width: 992px) {
+    .blog-heading {
+      font-size: 1.4375rem;
+      line-height: 2.25rem;
+      width: 98%; } }
   .blog-heading-link {
     color: #fff;
     text-decoration: none;

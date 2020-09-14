@@ -10,6 +10,17 @@
         z-index: 1;
         padding-left: 1rem;
         color: #fff;
+        width: 91%;
+        @include media(tablet){
+            width: 97%;
+            font-size: 0.875rem;
+            line-height: 1rem;
+        }
+        @include media(desktop){
+            font-size: 1.4375rem;
+            line-height: 2.25rem;
+            width: 98%;
+        }
         &-link {
             color: #fff;
             text-decoration: none;
