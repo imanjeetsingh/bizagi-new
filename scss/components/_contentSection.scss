@@ -1,6 +1,11 @@
 // Content Section component CSS starts
 .contentSection {
+   
     &-container {
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
     &-box {
         &-heading {

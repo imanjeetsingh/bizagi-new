@@ -2,9 +2,9 @@
 .blog {
     &-heading {
         font-family: 'Open Sans', sans-serif;
-        font-size: 1.625rem;
+        font-size: 1.5rem !important;
         position: absolute;
-        line-height: 2.25rem;
+        line-height: 2rem !important;
         font-weight: 300;
         top: 3rem;
         z-index: 1;
@@ -13,12 +13,12 @@
         width: 91%;
         @include media(tablet){
             width: 97%;
-            font-size: 0.875rem;
-            line-height: 1rem;
+            font-size: 0.8rem !important;
+            line-height: 1rem !important;
         }
         @include media(desktop){
-            font-size: 1.4375rem;
-            line-height: 2.25rem;
+            font-size: 1.4375rem !important;
+            line-height: 1.8rem !important;
             width: 98%;
         }
         &-link {
