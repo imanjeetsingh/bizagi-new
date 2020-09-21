@@ -19,11 +19,6 @@
 </head>
 
 
-<style>
-    .aman {
-        . background-color: green;
-    }
-</style>
 
 <body>
 
@@ -40,7 +35,7 @@
         <h3 class="">Business Processes</h3>
     </div>
 
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <div class="col-md-4 category-box">
                 <a class="blog-box-link" href="#" target="">
@@ -76,16 +71,16 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
-    <!-- <div class="container category-list-box">
+    <div class="container category-list-box">
         <div class="row no-gutters mt-5" id="result"></div>
         <div id="scrollLoad" data-target="https://dummyapi.io/data/api/user?limit=${limit}&page="></div>
         <div class="py-5 bg-gray400" id="loading">Please wait! Loading data...</div>
         <div id="load-on-scroll"></div>
-    </div> -->
-    <div class="col-md-4 category-box">
+    </div>
+    <!-- <div class="col-md-4 category-box">
         <a class="blog-box-link" href="#" target="">
             <div class="blog-image-box">
                 <img class="blog-image" src="./images/manufacturing-process-automation-356x220.jpg" alt="Image 3" blog-heading>
@@ -95,7 +90,7 @@
         <a class="blog-image-category-link" href="#" target="">
             <div class="blog-image-category top">Digital Process Automation</div>
         </a>
-    </div>
+    </div> -->
 
 
     <!-- <div class="container category-list-box">
@@ -117,6 +112,43 @@
         </div>
     </div> -->
 
+
+    <div class="article-box col-12 ${eleCount <= changeViewState ? " col-sm-2 col-md-4 category-box ": " "} p-2">
+        <a class="article-box-link" href="${pdata.url}" target="_self" id="article-box-link">
+            <div class="row">
+                <div class="col-12 ${eleCount > changeViewState ? " col-sm-4 col-md-3 category-list-box ": " "}">
+                    <div class="article-image-box">
+                        <img class="article-image img-fluid" src="${pdata.image}" alt="${pdata.image} image">
+                    </div>
+                </div>
+                <div class="col-12 ${eleCount > changeViewState ? " col-sm-8 col-md-9 category-list-box ": " "}">
+                    <h2 class="article-heading mt-2">${pdata.title}</h2>
+                    ${ eleCount > changeViewState? "
+                    <p>"+ pdata.description +"</p>": "" }
+                </div>
+            </div>
+        </a>
+        <div>
+            ${pdata.categories ? pdata.categories.map((data) => `
+            <a class="article-image-tag-link" href="${data.url}" target="_self">
+                <div class="article-image-tag bottom">${data.title}</div>
+            </a>
+            `).join('') : '' }
+        </div>
+    </div>
+
+
+    <div class="article-box col-md-4">
+        <a class="article-box-link" href="#" target="">
+            <div class="blog-image-box">
+                <img class="blog-image" src="./images/manufacturing-process-automation-356x220.jpg" alt="Image 3" blog-heading>
+            </div>
+            <h3 class="blog-heading">[Infographic] What’s Stopping You From Starting Your Automation Project?</h3>
+        </a>
+        <a class="blog-image-category-link" href="#" target="">
+            <div class="blog-image-category top">Digital Process Automation</div>
+        </a>
+    </div>
 
 </body>
 
