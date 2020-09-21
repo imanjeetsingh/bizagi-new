@@ -1,0 +1,50 @@
+.newsList {
+    padding: 0 1.5625rem;
+    @include media (tablet) {
+        padding: 0;
+    }
+    &-heading {
+        font-size: 3rem;
+        &-box {}
+    }
+    &-box {
+        &-title {
+            color: #6d7278;
+            font-size: 1rem;
+            font-weight: 400;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.4375rem;
+            &-link {
+                padding: 8px;
+                line-height: 1.428571429;
+                vertical-align: top;
+                border-top: 1px solid #EFEFEF;
+                &:hover {
+                    text-decoration: none;
+                    color: #6d7278;
+                }
+            }
+        }
+        &-date {
+            padding: 8px;
+            line-height: 1.428571429;
+            vertical-align: top;
+            border-top: 1px solid #EFEFEF;
+            color: #f28c20;
+            font-size: 1rem;
+            font-weight: 700;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.4375rem;
+            &-text {
+                @include media (tablet) {
+                    position: absolute;
+                    left: 3rem;
+                }
+                @include media (desktop) {
+                    position: absolute;
+                    left: 1rem;
+                }
+            }
+        }
+    }
+}

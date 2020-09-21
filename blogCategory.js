@@ -1,15 +1,29 @@
+// {
+//     "title": "HyperAutomation: What is it and How Could it Save Your Business?",
+//     "image": "https://blog.bizagi.com/wp-content/uploads/2020/08/manufacturing-process-automation-324x160.jpg",
+//     "url": "https://blog.bizagi.com/2020/08/18/hyperautomation-what-is-it-how-could-save-business/",
+//     "description": "aaaaaaaaaaaaaaaaaaaaaaa",
+//     "categories": [{
+//         "title": "Digital Process Automation",
+//         "url": "https://blog.bizagi.com/category/digital-process-automation/"
+//     }]
+// }]
+
+
 $(document).ready(function() {
             var currentPage = 1;
-            var output = [];
             var loading = false;
             var $loading = $('#loading');
+            var $result = $("#result");
+            var eleCount = 0;
+            var changeViewState = 3;
 
             apiPageCall(currentPage);
 
             function apiPageCall(page) {
                 loading = true;
                 var limit = 15;
-                const api = $("#scrollLoad").attr('data-target');;
+                const api = $("#scrollLoad").attr('data-target');
                 handleTiles('loading');
                 $loading.show();
                 fetch(api + page, {
@@ -24,56 +38,59 @@ $(document).ready(function() {
                         if (data.data.length > 0) {
                             loading = false;
                             handleTiles(data);
-                            handleScroll(data)
+                            handleScroll(data);
                         }
                     })
             }
 
             function handleTiles(obj) {
-                var $result = $("#result");
-                output.pop();
-                // Tiles Start
+                var output = [];
                 if (obj !== 'loading' && obj.data) {
                     for (var pdata of obj.data) {
+                        ++eleCount;
                         output.push(`
-                    <div class="article-box col-md-3">
-                        <a class="article-box-link" href="${pdata.url}" target="_self" id="article-box-link">
-                            <div class="article-image-box">
-                                <img class="article-image img-fluid" src="${pdata.picture}" alt="${pdata.title} image">
-                            </div>
-                        </a>
+    <div class="article-box col-12 ${eleCount <= changeViewState ? "col-sm-2 col-md-4 category-box": "category-list"} p-2">
+        <a class="article-box-link" href="${pdata.url}" target="_self" id="article-box-link">
+            <div class="row">
+                <div class="col-12 ${eleCount > changeViewState ? "col-sm-4 col-md-3 category-list-box": ""}">
+                    <div class="article-image-box">
+                        <img class="article-image img-fluid" src="${pdata.image}" alt="${pdata.image} image">
                     </div>
-                    <div class="col-md-9 article-box">
-                    <h5 class="article-heading">${pdata.title} ${pdata.firstName} ${pdata.lastName}</h5>
-                    <p>${pdata.tdescriptionitle}</p>
-                            ${pdata.categories ? pdata.categories.map((data) => `
-                        <a class="article-image-tag-link" href="${data.url}" target="_self">
-                            <span class="article-image-tag bottom">${data.title}</span>
-                        </a>
-                    </div>
-                                `).join('') : ''
-                            }
-                        </div>
-                    </div>
-                `)
-            }
-        }
-        $result.html(output.join(``));
-        // Tiles End
+                </div>
+                <div class="col-12 ${eleCount > changeViewState ? "col-sm-8 col-md-9 category-list-box": ""}">
+                    <h2 class="article-heading mt-2">${pdata.title}</h2>
+                    ${pdata.categories ? pdata.categories.map((data) => `
+                <span class="article-image-tag" onclick="location.href='${data.url}.html';">
+                   ${data.title}
+                </span>
+                `).join('') : ''
     }
+                    <p>${pdata.description}</p>
+                </div>
+            </div>
+        </a>
+        <div>
+            
+        </div>
+    </div>
+`)
+}
+}
+$result.append(output.join(``));
+// Tiles End
+}
 
-    function handleScroll(data) {
-        var $checkLoadElement = $('#load-on-scroll');
-        $(window).on('scroll', function (event) {
-            const loadingCheck = Math.round((window.scrollY + window.innerHeight) - $checkLoadElement.offset().top);
-            if (data.data.length > 0) {
-                if (loadingCheck > 10 && !loading) {
-                    currentPage++;
-                    $(window).off('scroll');
-                    apiPageCall(currentPage);
-                }
-            }
-        })
-    }
-    // $(".category-list-box .row:nth-child(1)").addClass("aman");
+function handleScroll(data) {
+var $checkLoadElement = $('#load-on-scroll');
+$(window).on('scroll', function (event) {
+const loadingCheck = Math.round((window.scrollY + window.innerHeight) - $checkLoadElement.offset().top);
+if (data.data.length > 0) {
+if (loadingCheck > 10 && !loading) {
+    currentPage++;
+    $(window).off('scroll');
+    apiPageCall(currentPage);
+}
+}
+})
+}
 })
