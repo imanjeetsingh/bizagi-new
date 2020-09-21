@@ -641,18 +641,17 @@
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 10) {
+        if (scroll >= 20) {
             $(".home-header").addClass("affix");
-        }
-        if (scroll <= 0) {
+        } else {
             $(".home-header").removeClass("affix");
         }
-        if (scroll >= 10) {
-            $(".inner-header").addClass("affix");
-        }
-        if (scroll <= 0) {
-            $(".inner-header").removeClass("affix");
-        }
+        // if (scroll >= 10) {
+        //     $(".inner-header").addClass("affix");
+        // }
+        // if (scroll <= 0) {
+        //     $(".inner-header").removeClass("affix");
+        // }
     });
     // Inner Header component script ends
 </script>
