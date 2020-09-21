@@ -6184,30 +6184,8 @@ img[alt] {
 .tag-box-v2 {
   background: #fafafa;
   border: solid 1px #eee;
-  border-left: solid 2px #e74c3c;
   padding: 20px;
   margin-bottom: 30px; }
-
-.box-shadow::after, .box-shadow::before {
-  top: 80%;
-  left: 5px;
-  width: 50%;
-  z-index: -1;
-  content: "";
-  bottom: 15px;
-  max-width: 300px;
-  background: #999;
-  position: absolute; }
-
-.shadow-effect-2:after, .shadow-effect-4:after {
-  left: auto;
-  right: 5px;
-  transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -webkit-transform: rotate(3deg);
-  -webkit-box-shadow: 0 15px 10px #999; }
 
 .eventsDateBadge p {
   font-size: 18px;
@@ -6247,3 +6225,28 @@ img[alt] {
 
 .eventsListItem p {
   font-size: .825rem; }
+
+.eventsInfoDate {
+  display: inline-block;
+  width: 10%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  vertical-align: top; }
+
+.eventsDateBadge {
+  width: 50px;
+  height: 54px;
+  background: #fcfcfc;
+  border: 1px solid #d2d2d2;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 4px; }
+
+.eventsBody {
+  display: inline-block;
+  width: 89%;
+  position: relative;
+  min-height: 1px; }
