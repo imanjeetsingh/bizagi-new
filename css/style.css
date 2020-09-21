@@ -3819,6 +3819,9 @@ tbody.collapse.show {
 .breadcrumb-item.active {
   color: #6c757d; }
 
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 0; }
+
 .tooltip {
   position: absolute;
   z-index: 1070;
