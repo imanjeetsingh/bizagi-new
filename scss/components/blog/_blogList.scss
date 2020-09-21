@@ -2,21 +2,21 @@
 .blog {
     &-heading {
         font-family: 'Open Sans', sans-serif;
-        font-size: 1.5rem !important;
+        font-size: 1.5rem;
         position: absolute;
-        line-height: 2rem !important;
+        line-height: 2rem;
         font-weight: 300;
         top: 3rem;
         z-index: 1;
         padding-left: 1rem;
         color: #fff;
         width: 91%;
-        @include media(tablet){
+        @include media(tablet) {
             width: 97%;
             font-size: 0.8rem !important;
             line-height: 1rem !important;
         }
-        @include media(desktop){
+        @include media(desktop) {
             font-size: 1.4375rem !important;
             line-height: 1.8rem !important;
             width: 98%;
@@ -225,8 +225,8 @@
             }
             @include media(desktop) {
                 padding: 0.3rem;
-                font-size: 1.375rem;
-                line-height: 1.5625rem;
+                font-size: 1rem;
+                line-height: 1.2rem;
             }
             color: #6d7278;
         }
