@@ -122,93 +122,8 @@
             }
         }
     }
-    &-heading {
-        @include media(tablet) {
-            font-size: 0.8rem !important;
-            line-height: 1rem !important;
-            font-weight: 400 !important;
-            font-family: "Open Sans", sans-serif;
-            position: absolute;
-            z-index: 1;
-            padding: 0 1rem;
-            color: #fff !important;
-            top: -4.5rem !important;
-        }
-        @include media(desktop) {
-            font-size: 1rem !important;
-            line-height: 1.5rem !important;
-        }
-    }
 }
 
-.category-article-image-tag {
-    z-index: 1;
-    padding: 0.2rem;
-    background: #f38d1e;
-    font-size: 0.8rem;
-    color: #ffffff;
-    position: absolute;
-    display: inline-block;
-    left: 1.6rem;
-    bottom: 4.5rem;
-    &-link {}
-}
-
-
-}
-&-list {
-    &-box {
-        .article {
-            &-box {
-                &-link {}
-            }
-            &-image {
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                min-width: 100%;
-                min-height: 100%;
-                &-box {
-                    overflow: hidden;
-                    min-height: 10rem;
-                    background-color: #f1f1f1;
-                    position: relative;
-                }
-                &-tag {}
-            }
-            &-heading {
-                @include media(tablet) {
-                    font-size: 1rem;
-                    line-height: 1.2rem;
-                    // top: -0.8rem;
-                }
-                @include media(desktop) {
-                    font-size: 1.5rem;
-                    line-height: 2rem;
-                    color: #6d7278;
-                    margin-bottom: -1.2rem;
-                    // position: absolute;
-                    // top: -1.2rem;
-                }
-            }
-        }
-        p {
-            display: none;
-            @include media(tablet) {
-                display: block;
-                margin-top: 5rem;
-                font-size: 0.75rem;
-                line-height: 1rem;
-            }
-            @include media(desktop) {
-                margin-top: 4.5rem;
-                font-size: 1rem;
-                line-height: 1.25rem;
-            }
-        }
-    }
-}
 .category-box.category-article-image-tag {
     z-index: 1;
     padding: 0.2rem;
@@ -221,7 +136,6 @@
         top: 3.2rem !important;
         font-size: 0.75rem !important;
     }
-    
     @include media(desktop) {
         position: absolute;
         left: 0 !important;
@@ -229,6 +143,7 @@
         font-size: 0.75rem !important;
     }
 }
+
 .category-list .category-article-image-tag {
     z-index: 1;
     padding: 0.2rem;
@@ -239,10 +154,12 @@
     // left: 18.6rem !important;
     // top: 2.2rem !important;
 }
+
 .category-box .article-box {
     top: 0;
     left: 0;
 }
+
 .category-box .article-image-box::before {
     bottom: 0;
     content: "";
@@ -257,9 +174,5 @@
     background: -o-linear-gradient( top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
     background: -ms-linear-gradient( top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
     background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);
-}
-.category-box .article-box {
-    top: 0;
-    left: 0;
+    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);
 }
