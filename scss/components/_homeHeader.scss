@@ -311,6 +311,9 @@
     color: #F38D1F;
     font-weight: 600;
 }
+.navbar-light .navbar-toggler-icon{
+    background-image: none !important;
+}
 span.navbar-toggler-icon::before {
     content: "\2630";
     display: block;
