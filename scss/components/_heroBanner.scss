@@ -2,8 +2,18 @@
 .banner {
     &-bg {
         margin-bottom: 6rem;
+        @include media(tablet){
+            margin-bottom: 8rem;
+        }
+        @include media(desktop){
+            margin-bottom: 6rem;
+        }
         &-row {
             padding-top: 1rem;
+            @include media(tablet){
+                padding-top: 3rem;
+                
+            }
             @include media(desktop) {
                 padding-top: 6rem;
             }
@@ -114,5 +124,7 @@
         }
     }
 }
-
+.navbar-toggler:focus{
+    outline: none !important;
+}
 // Banner component CSS ends

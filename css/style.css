@@ -5387,7 +5387,7 @@ ul.options > li {
   margin-bottom: 1.2rem; }
   @media (min-width: 768px) {
     .card-five {
-      margin: 0; } }
+      margin-bottom: 0.8rem; } }
 
 .card-five:nth-child(5n) {
   margin: 0; }
@@ -5450,7 +5450,9 @@ ul.options > li {
     text-align: center; }
 
 .card-noBorder .cta-group {
-  justify-content: center; }
+  justify-content: center;
+  margin-top: auto;
+  padding-top: 1rem; }
 
 a {
   text-decoration: none;
@@ -5479,6 +5481,13 @@ a {
   color: #6D7278;
   font-size: 1.125rem; }
 
+.contentSection-box .cta-group {
+  justify-content: center; }
+
+.contentSection-box .cta-icon-box {
+  width: 1.375rem;
+  height: auto; }
+
 .fivecolumnheading {
   text-align: center; }
   @media (min-width: 768px) {
@@ -5497,8 +5506,17 @@ a {
 
 .banner-bg {
   margin-bottom: 6rem; }
+  @media (min-width: 768px) {
+    .banner-bg {
+      margin-bottom: 8rem; } }
+  @media (min-width: 992px) {
+    .banner-bg {
+      margin-bottom: 6rem; } }
   .banner-bg-row {
     padding-top: 1rem; }
+    @media (min-width: 768px) {
+      .banner-bg-row {
+        padding-top: 3rem; } }
     @media (min-width: 992px) {
       .banner-bg-row {
         padding-top: 6rem; } }
@@ -5593,6 +5611,9 @@ a {
 
 .banner-content-right {
   flex-direction: row-reverse; }
+
+.navbar-toggler:focus {
+  outline: none !important; }
 
 .carousel-wrap {
   margin: 0 auto;
@@ -5960,7 +5981,11 @@ img[alt] {
   margin-bottom: 0.3rem; }
   @media (max-width: 767px) {
     .home-header .multilang-container {
-      margin-left: 0.5rem; } }
+      margin-left: 0.5rem;
+      margin-bottom: 7px; } }
+  @media (min-width: 768px) {
+    .home-header .multilang-container {
+      margin-bottom: 8px; } }
   @media (min-width: 992px) {
     .home-header .multilang-container {
       margin-left: 2rem; } }
@@ -6103,6 +6128,16 @@ img[alt] {
   background-color: transparent;
   color: #F38D1F;
   font-weight: 600; }
+
+.navbar-light .navbar-toggler-icon {
+  background-image: none !important; }
+
+span.navbar-toggler-icon::before {
+  content: "\2630";
+  display: block;
+  color: #ccc;
+  font-size: 1.875rem;
+  font-weight: 300; }
 
 .sap-container li {
   font-family: "Open Sans", sans-serif;
