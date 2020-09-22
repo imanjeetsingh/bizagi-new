@@ -5503,8 +5503,17 @@ a {
 
 .banner-bg {
   margin-bottom: 6rem; }
+  @media (min-width: 768px) {
+    .banner-bg {
+      margin-bottom: 8rem; } }
+  @media (min-width: 992px) {
+    .banner-bg {
+      margin-bottom: 6rem; } }
   .banner-bg-row {
     padding-top: 1rem; }
+    @media (min-width: 768px) {
+      .banner-bg-row {
+        padding-top: 3rem; } }
     @media (min-width: 992px) {
       .banner-bg-row {
         padding-top: 6rem; } }
@@ -5599,6 +5608,9 @@ a {
 
 .banner-content-right {
   flex-direction: row-reverse; }
+
+.navbar-toggler:focus {
+  outline: none !important; }
 
 .carousel-wrap {
   margin: 0 auto;
@@ -5966,7 +5978,11 @@ img[alt] {
   margin-bottom: 0.3rem; }
   @media (max-width: 767px) {
     .home-header .multilang-container {
-      margin-left: 0.5rem; } }
+      margin-left: 0.5rem;
+      margin-bottom: 7px; } }
+  @media (min-width: 768px) {
+    .home-header .multilang-container {
+      margin-bottom: 8px; } }
   @media (min-width: 992px) {
     .home-header .multilang-container {
       margin-left: 2rem; } }
@@ -6119,10 +6135,6 @@ span.navbar-toggler-icon::before {
   color: #ccc;
   font-size: 1.875rem;
   font-weight: 300; }
-
-@media (min-width: 768px) {
-  .home-header .multilang-container {
-    margin-bottom: 8px; } }
 
 .sap-container li {
   font-family: "Open Sans", sans-serif;

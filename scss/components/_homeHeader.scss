@@ -118,7 +118,11 @@
             margin-bottom: 0.3rem;
             @include mobile-only {
                 margin-left: 0.5rem;
+                margin-bottom: 7px;
             }
+            @include media(tablet){
+                margin-bottom: 8px;
+                }
             @include media(desktop) {
                 margin-left: 2rem;
             }
@@ -323,9 +327,9 @@ span.navbar-toggler-icon::before {
 }
 
 // edit for language button
-.home-header .multilang-container{
-    @include media(tablet){
-    margin-bottom: 8px;
-    }
-}
+// .home-header .multilang-container{
+//     @include media(tablet){
+//     margin-bottom: 8px;
+//     }
+// }
 // Home header CSS ends
