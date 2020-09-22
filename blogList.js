@@ -21,8 +21,10 @@ function handleTiles(obj) {
     var output = [];
     var $result = $("#result");
     var count = obj.total;
+    // var commentcount = obj.totalcomments;
     // console.log(count);
-    document.getElementById("itemcount").innerHTML = count + " posts";
+    document.getElementById("itemcount").innerHTML = count;
+    // document.getElementById("itemcount").innerHTML = commentcount + "";
     // Tiles Start
     if (obj !== 'loading' && obj.data) {
         for (var pdata of obj.data) {
