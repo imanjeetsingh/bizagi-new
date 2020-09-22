@@ -20,7 +20,9 @@ function apiPageCall(page) {
 function handleTiles(obj) {
     var output = [];
     var $result = $("#result");
-
+    var count = obj.total;
+    // console.log(count);
+    document.getElementById("itemcount").innerHTML = count + " posts";
     // Tiles Start
     if (obj !== 'loading' && obj.data) {
         for (var pdata of obj.data) {
