@@ -311,5 +311,18 @@
     color: #F38D1F;
     font-weight: 600;
 }
+span.navbar-toggler-icon::before {
+    content: "\2630";
+    display: block;
+    color: #ccc;
+    font-size: 1.875rem;
+    font-weight: 300
+}
 
+// edit for language button
+.home-header .multilang-container{
+    @include media(tablet){
+    margin-bottom: 8px;
+    }
+}
 // Home header CSS ends

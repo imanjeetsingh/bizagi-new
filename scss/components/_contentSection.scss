@@ -27,8 +27,14 @@
         }
         .cta{
             &-group{
-                // justify-content: center;
+                justify-content: center;
                 // text-align: center;
+            }
+            &-icon{
+                &-box{
+                    width: 1.375rem;
+                    height: auto;
+                }
             }
         }
     }

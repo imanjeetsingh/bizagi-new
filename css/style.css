@@ -5380,7 +5380,7 @@ ul.options > li {
   margin-bottom: 1.2rem; }
   @media (min-width: 768px) {
     .card-five {
-      margin: 0; } }
+      margin: 0.8rem; } }
 
 .card-five:nth-child(5n) {
   margin: 0; }
@@ -5443,7 +5443,9 @@ ul.options > li {
     text-align: center; }
 
 .card-noBorder .cta-group {
-  justify-content: center; }
+  justify-content: center;
+  margin-top: auto;
+  padding-top: 1rem; }
 
 a {
   text-decoration: none;
@@ -5471,6 +5473,13 @@ a {
 .contentSection-box-description {
   color: #6D7278;
   font-size: 1.125rem; }
+
+.contentSection-box .cta-group {
+  justify-content: center; }
+
+.contentSection-box .cta-icon-box {
+  width: 1.375rem;
+  height: auto; }
 
 .fivecolumnheading {
   text-align: center; }
@@ -6096,6 +6105,17 @@ img[alt] {
   background-color: transparent;
   color: #F38D1F;
   font-weight: 600; }
+
+span.navbar-toggler-icon::before {
+  content: "\2630";
+  display: block;
+  color: #ccc;
+  font-size: 1.875rem;
+  font-weight: 300; }
+
+@media (min-width: 768px) {
+  .home-header .multilang-container {
+    margin-bottom: 8px; } }
 
 .sap-container li {
   font-family: "Open Sans", sans-serif;
