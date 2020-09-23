@@ -5290,11 +5290,11 @@ ul.options > li {
     @media (min-width: 768px) {
       .newsList-box-date-text {
         position: absolute;
-        left: 3rem; } }
+        left: 3.5rem; } }
     @media (min-width: 992px) {
       .newsList-box-date-text {
         position: absolute;
-        left: 1rem; } }
+        left: 6rem; } }
 
 .newsDetail {
   font-family: 'Open Sans', sans-serif;
@@ -5315,6 +5315,22 @@ ul.options > li {
   .newsDetail-date {
     font-weight: 700; }
   .newsDetail-description {
+    font-weight: 300; }
+  .newsDetail-aboutHeading {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    color: #6D7278;
+    font-weight: 700; }
+  .newsDetail-aboutDescription {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    color: #6D7278;
+    font-weight: 300;
+    margin: 1.5rem 0; }
+  .newsDetail-contactInfo {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    color: #6D7278;
     font-weight: 300; }
 
 .card-inner {

@@ -38,11 +38,11 @@
             &-text {
                 @include media (tablet) {
                     position: absolute;
-                    left: 3rem;
+                    left: 3.5rem;
                 }
                 @include media (desktop) {
                     position: absolute;
-                    left: 1rem;
+                    left: 6rem;
                 }
             }
         }
