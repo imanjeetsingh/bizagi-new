@@ -44,7 +44,10 @@ $buttongap: 0.5rem;
         margin: 0 5px;
     }
     &-icon {
+        margin-top: 0.3rem !important;
         &-box {
+            width: 1.375rem !important;
+            height: auto !important;
             img {
                 vertical-align: text-bottom;
             }

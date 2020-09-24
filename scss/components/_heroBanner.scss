@@ -15,7 +15,9 @@
                 
             }
             @include media(desktop) {
-                padding-top: 6rem;
+                // padding-top: 6rem;
+                padding-top: 0;
+                margin-bottom: -2rem;
             }
         }
         &-height {
@@ -64,6 +66,9 @@
             &-content {
                 color: #009E99;
             }
+        }
+        p{
+            color: #ffffff;
         }
     }
     &-bg &-heading {

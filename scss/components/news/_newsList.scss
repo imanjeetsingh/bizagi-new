@@ -8,6 +8,9 @@
         &-box {}
     }
     &-box {
+        display: inline-block;
+        width: 100%;
+        border-top: 1px solid #EFEFEF;
         &-title {
             color: #6d7278;
             font-size: 1rem;
@@ -16,9 +19,10 @@
             line-height: 1.4375rem;
             &-link {
                 padding: 8px;
+                display: inline-block;
                 line-height: 1.428571429;
                 vertical-align: top;
-                border-top: 1px solid #EFEFEF;
+                // border-top: 1px solid #EFEFEF;
                 &:hover {
                     text-decoration: none;
                     color: #6d7278;
@@ -27,9 +31,10 @@
         }
         &-date {
             padding: 8px;
+            display: inline-block;
             line-height: 1.428571429;
             vertical-align: top;
-            border-top: 1px solid #EFEFEF;
+            // border-top: 1px solid #EFEFEF;
             color: #f28c20;
             font-size: 1rem;
             font-weight: 700;
@@ -38,11 +43,11 @@
             &-text {
                 @include media (tablet) {
                     position: absolute;
-                    left: 3rem;
+                    left: 5rem;
                 }
                 @include media (desktop) {
                     position: absolute;
-                    left: 1rem;
+                    left: 6rem;
                 }
             }
         }

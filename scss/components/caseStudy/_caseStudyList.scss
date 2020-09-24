@@ -2,6 +2,8 @@
   position: relative;
   display: inline-block;
   opacity: 1;
+  font-size: 1.125rem;
+  font-family: "Open Sans", sans-serif;
   // border-bottom: 1px dotted black;
 }
 
@@ -34,6 +36,8 @@
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+    top: 1.5rem;
+    left: -6rem;
 }
 
 // edit by iman
@@ -103,6 +107,8 @@
       &-icon {
         &-box {
           margin-top: 4px;
+          width: 100% !important;
+          height: 100% !important;
         }
       }
     }
@@ -213,5 +219,12 @@ ul.options > li {
 
   @include media(tablet) {
     left: 0 !important;
+  }
+}
+
+.caseStudy{
+  .dropdown-menu{
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    border-radius: 0.25rem !important;
   }
 }
