@@ -11,6 +11,12 @@
         .logo {
             &-grey {
                 margin-top: 0;
+                @include media (tablet){
+                    margin-top: -3.1875rem !important;
+                }
+                @include media (desktop){
+                    margin-top: 0 !important;
+                }
             }
         }
         .headerLogo {
@@ -29,9 +35,10 @@
         }
         .multilang {
             &-dropdown {
-                @include media(xldesktop) {
-                    margin-left: 0.2rem;
+                @include media(desktop) {
+                    margin-left: 0.2rem !important;
                     padding: 0;
+                    color: #888;
                 }
             }
         }
@@ -85,11 +92,15 @@
 // without affix styling
 .inner-header {
     padding: 1rem;
+    position: fixed;
+    z-index: 1;
     @include media(tablet) {
         margin-top: -1.5rem;
     }
     @include media(desktop) {
         margin-top: 0rem;
+        position: fixed;
+        z-index: 1;
     }
     height: 7rem;
     // aman added padding height
@@ -104,6 +115,9 @@
                 height: 2.5rem;
                 @include media(tablet) {
                     height: 5rem;
+                }
+                @include media(desktop) {
+                    height: 5.3rem !important;
                 }
                 .cta {
                     &-primary {
@@ -129,13 +143,16 @@
         &-dropdown {
             color: #888;
             margin-bottom: 0.5rem;
-            margin-left: 0.5rem;
+            margin-left: 0.4375rem !important;
         }
     }
     .search {
         &-container {
             margin-top: 2.5rem;
             @include media(tablet) {
+                margin-top: -0.5rem;
+            }
+            @include media(desktop){
                 margin-top: -0.5rem;
             }
         }
@@ -145,6 +162,7 @@
             }
             @include media(desktop) {
                 margin-left: 0;
+                margin-top: -0.8rem;
             }
             &-searchIcon {}
         }
@@ -224,4 +242,8 @@
             margin: 0 5px;
         }
     }
+}
+// update on 23-09-2020 for header glitch fixed
+header{
+        height: 7rem;
 }

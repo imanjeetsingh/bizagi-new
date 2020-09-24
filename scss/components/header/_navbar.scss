@@ -240,5 +240,9 @@
     }
 }
 
+#navbarCollapse{
+    transition: height 0.4s;
+    transition-timing-function: ease;
+}
 
 // Navbar component CSS ends
