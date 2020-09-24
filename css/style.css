@@ -5124,7 +5124,9 @@ ul.options > li {
 .tooltip {
   position: relative;
   display: inline-block;
-  opacity: 1; }
+  opacity: 1;
+  font-size: 1.125rem;
+  font-family: "Open Sans", sans-serif; }
 
 .tooltip .tooltiptext {
   visibility: hidden;
@@ -5152,7 +5154,9 @@ ul.options > li {
   border-color: black transparent transparent transparent; }
 
 .tooltip:hover .tooltiptext {
-  visibility: visible; }
+  visibility: visible;
+  top: 1.5rem;
+  left: -6rem; }
 
 .partnerinfo {
   text-align: end;
@@ -5206,7 +5210,9 @@ ul.options > li {
     .caseStudy .dropdown .cta:focus {
       outline: none; }
     .caseStudy .dropdown .cta-icon-box {
-      margin-top: 4px; }
+      margin-top: 4px;
+      width: 100% !important;
+      height: 100% !important; }
 
 .caseStudy .cta {
   padding: 0.3125rem 3.4375rem; }
@@ -5281,6 +5287,10 @@ ul.options > li {
   .dropdownTwo {
     left: 0 !important; } }
 
+.caseStudy .dropdown-menu {
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  border-radius: 0.25rem !important; }
+
 .newsList {
   padding: 0 1.5625rem; }
   @media (min-width: 768px) {
@@ -5288,38 +5298,42 @@ ul.options > li {
       padding: 0; } }
   .newsList-heading {
     font-size: 3rem; }
-  .newsList-box-title {
-    color: #6d7278;
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.4375rem; }
-    .newsList-box-title-link {
+  .newsList-box {
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid #EFEFEF; }
+    .newsList-box-title {
+      color: #6d7278;
+      font-size: 1rem;
+      font-weight: 400;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.4375rem; }
+      .newsList-box-title-link {
+        padding: 8px;
+        display: inline-block;
+        line-height: 1.428571429;
+        vertical-align: top; }
+        .newsList-box-title-link:hover {
+          text-decoration: none;
+          color: #6d7278; }
+    .newsList-box-date {
       padding: 8px;
+      display: inline-block;
       line-height: 1.428571429;
       vertical-align: top;
-      border-top: 1px solid #EFEFEF; }
-      .newsList-box-title-link:hover {
-        text-decoration: none;
-        color: #6d7278; }
-  .newsList-box-date {
-    padding: 8px;
-    line-height: 1.428571429;
-    vertical-align: top;
-    border-top: 1px solid #EFEFEF;
-    color: #f28c20;
-    font-size: 1rem;
-    font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.4375rem; }
-    @media (min-width: 768px) {
-      .newsList-box-date-text {
-        position: absolute;
-        left: 3rem; } }
-    @media (min-width: 992px) {
-      .newsList-box-date-text {
-        position: absolute;
-        left: 1rem; } }
+      color: #f28c20;
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.4375rem; }
+      @media (min-width: 768px) {
+        .newsList-box-date-text {
+          position: absolute;
+          left: 5rem; } }
+      @media (min-width: 992px) {
+        .newsList-box-date-text {
+          position: absolute;
+          left: 6rem; } }
 
 .newsDetail {
   font-family: 'Open Sans', sans-serif;
