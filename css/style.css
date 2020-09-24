@@ -5341,6 +5341,22 @@ ul.options > li {
     font-weight: 700; }
   .newsDetail-description {
     font-weight: 300; }
+  .newsDetail-aboutHeading {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    color: #6D7278;
+    font-weight: 700; }
+  .newsDetail-aboutDescription {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    color: #6D7278;
+    font-weight: 300;
+    margin: 1.5rem 0; }
+  .newsDetail-contactInfo {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    color: #6D7278;
+    font-weight: 300; }
 
 .card-inner {
   background: #FFFFFF;
