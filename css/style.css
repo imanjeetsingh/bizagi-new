@@ -5078,8 +5078,14 @@ header {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5rem; }
   .client-info-box {
-    list-style: none;
-    border-right: solid 1px #ccc; }
+    list-style: none; }
+    @media (min-width: 992px) {
+      .client-info-box {
+        border-right: solid 1px #ccc; } }
+  @media (min-width: 992px) {
+    .client-info-image {
+      width: 100%;
+      height: auto; } }
   .client-info-image-input {
     border-radius: 2.5rem;
     border: solid 1px lightgray;
@@ -5102,6 +5108,8 @@ header {
     min-height: 63px; }
     .client-info-detail-box {
       padding: 2.625rem 0.8rem; }
+      .client-info-detail-box-inner {
+        width: 55rem; }
     .client-info-detail-percent {
       font-size: 36px;
       line-height: 42px;
