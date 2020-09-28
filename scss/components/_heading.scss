@@ -100,22 +100,3 @@ ul li {
     }
   }
 }
-ul {
-  li {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-    color: #6d7278;
-    list-style: none;
-    margin: 5px 0;
-  }
-  li::before {
-    content: "\2022";
-    color: #f28c1e;
-    font-weight: bold;
-    display: inline-block;
-    width: 1rem;
-    margin-left: -1rem;
-  }
-}

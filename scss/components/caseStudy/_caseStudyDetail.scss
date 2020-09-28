@@ -9,6 +9,12 @@
         }
     }
     &-image {
+        width: 100%;
+        height: auto;
+        @include media(tablet){
+            width: auto;
+            height: auto;
+        }
         @include media (desktop) {
             width: 100%;
             height: auto;
@@ -47,7 +53,9 @@
         &-box {
             padding: 2.625rem 0.8rem;
             &-inner {
-                width: 55rem;
+                @include media(desktop){
+                    width: 55rem;
+                }
             }
         }
         &-percent {
