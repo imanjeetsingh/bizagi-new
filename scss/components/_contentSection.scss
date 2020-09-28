@@ -1,6 +1,10 @@
 // Content Section component CSS starts
 .contentSection {
-   
+   ul{
+       li::before{
+           content: "";
+       }
+   }
     &-container {
         img{
             width: 100%;

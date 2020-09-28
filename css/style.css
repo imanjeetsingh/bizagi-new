@@ -3984,8 +3984,25 @@ ul li {
   line-height: 22px;
   margin: 5px 0;
   padding: 3px 1px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300; }
+
+ul li {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #6d7278;
+  list-style: none;
+  margin: 5px 0; }
+
+ul li::before {
+  content: "\2022";
+  color: #f28c1e;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem; }
 
 @media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
@@ -5513,6 +5530,9 @@ a {
   -ms-transition: background-color .3s linear, color .3s linear;
   transition: background-color .3s linear, color .3s linear; }
 
+.contentSection ul li::before {
+  content: ""; }
+
 .contentSection-container img {
   width: 100%;
   height: auto; }
@@ -6337,20 +6357,43 @@ span.navbar-toggler-icon::before {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  vertical-align: top; }
+  vertical-align: top;
+  margin-top: 0; }
 
 .eventsDateBadge {
   width: 50px;
   height: 54px;
   background: #fcfcfc;
-  border: 1px solid #d2d2d2;
-  border-radius: 4px;
+  border: 1px solid #F28C20;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
-  padding: 4px; }
+  padding: 4px;
+  margin-bottom: 1.25rem;
+  margin-left: -15px; }
+  @media (min-width: 768px) {
+    .eventsDateBadge {
+      margin-bottom: 20px;
+      margin-top: 23px; } }
+  @media (min-width: 992px) {
+    .eventsDateBadge {
+      margin-top: 0;
+      margin-left: 0; } }
 
 .eventsBody {
   display: inline-block;
-  width: 89%;
+  width: 100%;
   position: relative;
   min-height: 1px; }
+  @media (min-width: 992px) {
+    .eventsBody {
+      width: 89%; } }
+
+.fc-today {
+  background-color: #F28C20; }
+
+.fc-header {
+  background-color: #ccc; }
+
+.fc-widget-header {
+  height: 3.125rem;
+  background-color: #eee; }
