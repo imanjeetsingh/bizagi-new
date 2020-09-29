@@ -49,7 +49,7 @@
                                             <div class="article-image-box">
                                                 <img class="article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
                                             </div>
-                                            <h3 class="article-heading">lorem ipsum</h3>
+                                            <h3 class="article-heading">1</h3>
                                         </a>
                                         <a class="article-image-tag-link" href="#" target="">
                                             <div class="article-image-tag bottom">Company News</div>
@@ -61,7 +61,7 @@
 
                                                 <img class="article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
                                             </div>
-                                            <h3 class="article-heading">lorem ipsum</h3>
+                                            <h3 class="article-heading">2</h3>
                                         </a>
                                         <a class="article-image-tag-link" href="#" target="">
                                             <div class="article-image-tag bottom">Company News</div>
@@ -73,7 +73,7 @@
 
                                                 <img class="article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
                                             </div>
-                                            <h3 class="article-heading">lorem ipsum</h3>
+                                            <h3 class="article-heading">3</h3>
                                         </a>
                                         <a class="article-image-tag-link" href="#" target="">
                                             <div class="article-image-tag bottom">Company News</div>
@@ -85,7 +85,7 @@
 
                                                 <img class="article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
                                             </div>
-                                            <h3 class="article-heading">lorem ipsum</h3>
+                                            <h3 class="article-heading">4</h3>
                                         </a>
                                         <a class="article-image-tag-link" href="#" target="">
                                             <div class="article-image-tag bottom">Company News</div>
@@ -97,7 +97,7 @@
 
                                                 <img class="article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
                                             </div>
-                                            <h3 class="article-heading">lorem ipsum</h3>
+                                            <h3 class="article-heading">5</h3>
                                         </a>
                                         <a class="article-image-tag-link" href="#" target="">
                                             <div class="article-image-tag bottom">Company News</div>
@@ -109,7 +109,7 @@
 
                                                 <img class="article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
                                             </div>
-                                            <h3 class="article-heading">lorem ipsum</h3>
+                                            <h3 class="article-heading">6</h3>
                                         </a>
                                         <a class="article-image-tag-link" href="#" target="">
                                             <div class="article-image-tag bottom">Company News</div>
@@ -121,7 +121,7 @@
 
                                                 <img class="article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
                                             </div>
-                                            <h3 class="article-heading">lorem ipsum</h3>
+                                            <h3 class="article-heading">7</h3>
                                         </a>
                                         <a class="article-image-tag-link" href="#" target="">
                                             <div class="article-image-tag bottom">Company News</div>
@@ -133,7 +133,7 @@
 
                                                 <img class="article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
                                             </div>
-                                            <h3 class="article-heading">lorem ipsum</h3>
+                                            <h3 class="article-heading">8</h3>
                                         </a>
                                         <a class="article-image-tag-link" href="#" target="">
                                             <div class="article-image-tag bottom">Company News</div>
@@ -145,7 +145,7 @@
 
                                                 <img class="article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
                                             </div>
-                                            <h3 class="article-heading">lorem ipsum</h3>
+                                            <h3 class="article-heading">9</h3>
                                         </a>
                                         <a class="article-image-tag-link" href="#" target="">
                                             <div class="article-image-tag bottom">Company News</div>
@@ -156,7 +156,7 @@
                                             <div class="article-image-box">
                                                 <img class="article-image" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
                                             </div>
-                                            <h3 class="article-heading">lorem ipsum</h3>
+                                            <h3 class="article-heading">10</h3>
                                         </a>
                                         <a class="article-image-tag-link" href="#" target="">
                                             <div class="article-image-tag bottom">Company News</div>
@@ -180,7 +180,7 @@
                                             <div class="article-image-tag bottom">Company News</div>
                                         </a>
                                     </div>
-                                    <div class="article-box col-12 col-md-auto">
+                                    <!-- <div class="article-box col-12 col-md-auto">
                                         <a class="article-box-link" href="#" target="">
                                             <div class="article-image-box">
 
@@ -287,7 +287,7 @@
                                         <a class="article-image-tag-link" href="#" target="">
                                             <div class="article-image-tag bottom">Company News</div>
                                         </a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -569,8 +569,24 @@
         items: 1,
         nav: true,
         dots: false,
+        responsive: {
+            // for mobile
+            0: {
+                items: 1
+            },
+            // for tablet
+            600: {
+                items: 1
+            },
+            // for desktop
+            1000: {
+                items: 1,
+                nav: true,
+            }
+        }
 
     })
+
     $(".owl-prev").html('<i class="fa fa-arrow-circle-o-left"></i>');
     $(".owl-next").html('<i class="fa fa-arrow-circle-o-right"></i>');
 
