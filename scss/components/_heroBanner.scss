@@ -9,7 +9,7 @@
             margin-bottom: 6rem;
         }
         &-row {
-            padding-top: 1rem;
+            padding-top: 0rem;
             @include media(tablet){
                 padding-top: 3rem;
                 
@@ -24,7 +24,7 @@
             top: 7rem !important;
             @include media(tablet) {
                 top: 4rem !important;
-                height: 85% !important;
+                height: 90% !important;
             }
             @include media(desktop) {
                 height: 35% !important;
@@ -37,7 +37,7 @@
         &-image {
             position: absolute;
             width: 100%;
-            height: 90%;
+            height: 100%;
             // object-fit: cover;
             z-index: -1;
             top: 0;
@@ -132,4 +132,29 @@
 .navbar-toggler:focus{
     outline: none !important;
 }
+
+header{
+    height: 7rem;
+    @include media(tablet){
+        height: 5rem;
+    }
+    @include media(desktop){
+        height: 7rem;
+    }
+}
+
+// .home-header{
+//     .affix{
+//         .banner{
+//             &-bg{
+//                 &-row{
+//                     @include media(tablet){
+//                         padding-top: 0rem;
+//                         margin-top: -2.875rem;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 // Banner component CSS ends
