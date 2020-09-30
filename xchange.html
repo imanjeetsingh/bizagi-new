@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platform Xchange</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="margin: 50px 0;">
+            <div class="col-md-8 col-md-offset-2">
+                <p class="ti-txt24 nb-gray ti-f300 ti-margin-b20 text-center">Search our selection of Processes, Widgets and Connectors</p>
+                <form action="" class="col-md-8 col-md-offset-2">
+                    <input id="filter1" type="text" class="input-global" placeholder="Search ">
+                    <!--
+                       <input type="text" name="" value="" placeholder="Search here" class="input-global">
+                       -->
+                    <button id="filterButton" type="button" class="nb-orange-buttom">
+                        Search here
+                   </button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <h4 class="ti-txt24 ti-f300 ti-color2 ti-margin-b20 ti-margin-t10">Filter results:</h4>
+                <ul class="box-filter">
+                    <a href="#" class="show-all active">
+                        <li class="item-filter border-left-lightgray ti-txt18 ti-color2">
+                            All
+                            <span id="counter-all" class="counter">143</span>
+                        </li>
+                    </a>
+                    <a href="#" class="show-processes">
+                        <li class="item-filter border-left-yellow ti-txt18 ti-color2">
+                            Process Models
+                            <span id="counter-process" class="counter">19</span>
+                        </li>
+                    </a>
+                    <a href="#" class="show-widgets">
+                        <li class="item-filter border-left-teal ti-txt18 ti-color2">
+                            Widget
+                            <span id="counter-widget" class="counter">66</span>
+                        </li>
+                    </a>
+                    <a href="#" class="show-connectors">
+                        <li class="item-filter border-left-green ti-txt18 ti-color2">
+                            Connectors
+                            <span id="counter-connector" class="counter">58</span>
+                        </li>
+                    </a>
+                </ul>
+                <a href="#" class="clear-results"><i class="fa fa-refresh" aria-hidden="true"></i> Clear Results</a>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <!-- HOLA JULI! QUEMASTE ESTO EN EL ARTICULO
+                    <div class="col-md-4 col-sm-4">
+                        <div class="box-process">
+                            <div class="head-grad-process">
+                                <div class="tag-beta">
+                                    <p><i class="fa fa-rocket" aria-hidden="true"></i> &nbsp;BETA</p>
+                                </div>
+                                <img src="https://i.imgur.com/Y7lTW6s.png" alt="" class="icon-process">
+                            </div>
+                            <div class="body-info">
+                                <h4 class="ti-txt16 ti-color2 ti-f400 text-center">Access Management</h4>
+                                <div class="more-info">
+                                    <span class="rate"><i class="fa fa-star" aria-hidden="true"></i> 4.0</span>
+                                </div>
+                                <a class="btn-process" data-toggle="modal" data-target="#ModalProcess">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="box-widget">
+                            <div class="head-grad-widget">
+                                <div class="tag-beta">
+                                    <p><i class="fa fa-rocket" aria-hidden="true"></i> &nbsp;BETA</p>
+                                </div>
+                                <img src="https://i.imgur.com/qhXICJS.png" alt="" class="icon-widget">
+                            </div>
+                            <div class="body-info">
+                                <h4 class="ti-txt16 ti-color2 ti-f400 text-center">Area Chart 2D</h4>
+                                <div class="more-info">
+                                    <span class="rate"><i class="fa fa-star" aria-hidden="true"></i> 5.0</span>
+                                </div>
+                                <a href="#" class="btn-widget" data-toggle="modal" data-target="#ModalWidget">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="box-connector">
+                            <div class="head-grad-connector">
+                                <div class="tag-beta">
+                                    <p><i class="fa fa-rocket" aria-hidden="true"></i> &nbsp;BETA</p>
+                                </div>
+                                <img src="https://i.imgur.com/eJK1xpX.png" alt="" class="icon-connector">
+                            </div>
+                            <div class="body-info">
+                                <h4 class="ti-txt16 ti-color2 ti-f400 text-center">Google Cloud Messaging</h4>
+                                <div class="more-info">
+                                    <span class="rate"><i class="fa fa-star" aria-hidden="true"></i> 5.0</span>
+                                </div>
+                                <a href="#" class="btn-connector" data-toggle="modal" data-target="#ModalConnector">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/838b7547-94c1-4836-a12c-92f514f93bb7/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">AWS EC2</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/cc5d0461-5e5b-49cd-8524-954bb819e49c/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">AWS S3</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/1f7b0441-b160-405c-8f12-b162081016b9/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">AWS SES</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/e249a73d-55f2-474d-9051-81c3678d0122/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Access Management</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/5018f4f9-e581-4cab-ab96-df9f7630f5eb/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Accordion</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/a492d863-2d50-4170-a4d9-3e28e062ff16/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Accounts Payable</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/65f0b497-0c0d-455c-8c95-1f9e616130e2/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Adobe Sign</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/b3b554c9-efde-4988-a685-c0c527a974e7/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Amazon Rekognition</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/743f9446-1e9f-42f4-83c4-8596af443aed/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Area Chart 2D</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/03c35b95-ed0d-4d67-a9e5-037f9524dbff/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Arithmetic calculator</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/03a90971-b550-433a-b6bf-c76724f0b4a1/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Asana</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/4222bef4-c4de-49fa-9600-890ecd0d3df5/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Audio player</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/055a05bf-bf3c-4663-8a75-c2e50a8a662b/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Audio recorder</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/daaeb048-e07c-450c-b6eb-7997ccf50e03/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Azure WebSites</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/2cec758f-ecc9-4a31-8667-50b5c3e927f5/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Bar chart 2D</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/cd763a3a-8fe0-4ca9-a29d-a3da43e362b9/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Bar code generator</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/028a90b5-faf4-4b81-8b63-dfa7bb758f50/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Blockchain</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/d0694bad-d8b0-4118-beb7-d0f305907267/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Box</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/ffcd608a-e3f4-43f4-8c7c-278ae25cf514/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Calendar</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/311b57cf-bd08-480f-ba44-4de32d54e166/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Captcha</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/42ab0200-0df5-4cae-8954-dd0d40a6cc0d/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Change Management </h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/d66a9535-e574-40e6-a725-c5b09af41f21/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Claims and Complaints </h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/68f66f60-9509-40e0-a08f-042fa7d20999/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Contract Management</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/3839ae6d-1b36-46a9-b9db-098fda295127/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Countdown (rolodex style)</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/910ca01c-9d73-4ed9-9966-0f04fb9b48b0/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Credit card validator</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/e536a989-a1b8-4091-8640-4bb782dd4f64/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">DocuSign</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/b757849b-4ddf-4cdb-8c3e-6769295c174b/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Dropbox</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/407dd0bf-1f3a-4fb6-89d8-8ba6169f0c19/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Drupal</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/49a28a8c-5e07-4440-ac78-652359119623/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Dynamics 365</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/bfa6771d-a0b1-4eda-b342-748466490aa4/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Emergency Room</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/54cc5245-e4af-4b5c-9729-b398f2a4a16a/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Ethereum</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/7e9e3ba6-f5a3-4541-93ce-19ecf2f56c9d/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Excel (Deprecated)</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/52b4bf7d-c6fc-49ac-b4dc-3b3b8ef766d7/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Excel</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/ac5e7698-7859-4134-afe5-15f51311ae29/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Exchange online</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/e2f8f996-d856-4404-bdd7-e7d056c0d023/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">FHIR</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/73f94cc6-24ea-46d5-a3ed-d257a5a148f6/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Field narrator</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/8c5016c6-7031-4670-bb54-869f53edd515/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Files download</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/50b749ee-d598-4a5d-b533-983b9e256c38/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Gauge</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/24d51d92-7854-490e-bee0-f519049e97d9/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Gif</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/7e9783c8-fc3a-4101-a25d-bdc63f3b2552/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">GitHub</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/4c934559-ce91-4de0-875f-c14f0daf6754/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Glossary tooltip</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/743f9446-1e9f-42f4-83c4-8596af443aed/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">GoDaddy</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/9162b48d-e1fb-4204-9841-c7b600a400d1/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Google Cloud Translation</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/5eada0fb-9e2f-41b2-bd20-cb1c5933ced4/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Google Drive</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/13ae8b9e-7631-4dbe-8e7f-2c0710705cdf/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Google Hangouts</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/64eb71b6-bd27-4fb6-b5d7-2f1f26cf238e/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Google maps, nearby places</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/a061f047-96e9-4cd4-a077-2440a730eea9/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">HTML Viewer</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/ea4a5121-06c3-4a7c-9f4d-1aaa55210056/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Hand Signature</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/86e1a388-1d55-48e4-99dc-5c24cb9eb880/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Help Desk</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/1ea24bc8-71b0-4a03-ae17-f38c819f8c0d/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Hints and tips</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/0a664bd7-bf1e-419f-b50f-bed946d3948b/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Historical chart 2D</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/11742d73-4323-4a75-af56-7abddfe4e435/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">HubSpot</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/4665fb5f-3b30-4ca9-b187-bd9e04e4beed/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">IBM Bluemix</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/2a1fa0e9-5381-4264-8dde-a9bdf7d45174/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">IEX Trading</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/9a1a69b8-8344-492c-a94f-8dd430e1a2e3/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Image Tagger</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/2608d678-7f62-4203-9ce6-467771eeccd6/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Image compare</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/902982f9-3cc3-4b18-b5da-155c797767aa/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Image gallery</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/84c4b726-ef63-45ce-a1b7-c8a9ed55262c/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Image recognition</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/7e22dcf7-cdd5-487f-91c0-33e267e6da93/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Image viewer</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/00b8be37-9915-4125-9c5f-3a528eaab3b7/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Image zoom</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/97f81849-8ec8-4780-93cd-0dab739fd186/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Imgur</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/decec79d-dd35-4ca2-80bc-e89c253fd95f/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">International phone number</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/c7ebceec-0fa6-427c-a79e-d63c3d8430f4/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">JIRA</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/efa08dab-e11e-4d18-8e5b-04de534cdd40/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Led banner</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/0140af58-4370-481e-8ac7-6a1c0c34447b/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Library Management</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/0f9239c1-ead1-464c-b47d-9ae20d610c42/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Line chart 2D</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/dd69e2d0-8622-4e55-84e1-a8d9674b57b0/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">MS Computer vision</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/cb59b929-f7d6-4f3b-a0dd-ae8d3479fd61/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">MS Text analytics</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/64eb71b6-bd27-4fb6-b5d7-2f1f26cf238e/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">MailChimp</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/894f0a3c-6a2d-4af5-aabb-e7f9555a89d6/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">MailerLite</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/f8aafb37-37ee-4658-b943-8f59319a8cd1/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Master Card</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector">
+                                <div class="tag-beta" style="position: absolute; border: 1px solid white; width: 65px; top: 7px; left: 7px; border-radius: 15px;">
+                                    <p style="margin: 0; padding: 0; font-size: 13px; font-weight: 600; text-align: center; color: white;"><i class="fa fa-rocket" aria-hidden="true"></i><span> BETA</span></p>
+                                </div><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/687c1cb0-24be-4f96-a053-782f4cd5db0a/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Meetup - BETA</h4>
+                                <div class="more-info" style="text-align: center;"></div><a class="btn-connector" href="#">Learn more</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/f06efb21-69f0-4fc8-b5b9-df7dfec2fcb6/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Moodle</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/164df6c6-df59-455b-8da7-c268307d9ae4/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Mulesoft</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/cd763a3a-8fe0-4ca9-a29d-a3da43e362b9/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">MySQL</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/8625394b-f538-4052-b2fe-dd3b1a0c7da9/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">NYTimes</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/40176e74-a20d-4293-b9c3-80f1d99e1b96/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Nonconformity </h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/21cd2811-4433-4ada-a2dc-ee12ffd33e90/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Offboarding</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/90cae75c-b141-406a-af7e-0fc3f0ad53da/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Office document viewer</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/e1c67467-4610-4116-82c9-8eef4a369efd/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Onboarding </h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/193e48b9-b612-424e-9e31-485d66741685/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Opportunity Management</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/69b816c0-4b7f-442e-97eb-30c308f1e439/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">PDF attachment viewer</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/60e3a24e-d35b-426a-ad71-5d28fc6f6eab/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">PDF link viewer</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/7182ca5b-9283-4984-8528-49568da0649e/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Password strength validator</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/27835d14-cc61-4765-9921-cb2a2a59c1a1/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Phase Progress</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/fbeb6afd-d743-42cd-a237-8a09af4dbbbd/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Pie chart 2D</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/46974552-5b95-4d3e-a9e1-b3909b8e01a6/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Pinterest</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/a4a4f33f-876a-41d0-afc2-1ad89a894c85/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">PipeDrive</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/2a69113d-461d-4db9-ae1e-222b1c2b9ee0/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Planning board</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/3839ae6d-1b36-46a9-b9db-098fda295127/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Plivo</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/23760360-0f8a-48cf-8650-e918d79f0d4b/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">PostgreSQL</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/def5cf91-038a-462c-b755-2b34d590d03a/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Power BI</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/e5321698-a88f-4833-be8f-19ddc6631a0c/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Progress circle</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/65789d98-6d7d-465f-8d5b-fd211c6e4018/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Purchases</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/e313fb10-aead-484b-89ac-76a6ccf68e47/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Pyramid chart 2D</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/56caad4c-2991-4d86-99ba-72e86d28e3d9/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">QR Code generator</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/493a4f96-40d6-4b7d-b86a-8d7d78845a96/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">QR Code scanner</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/d2128c1b-e35a-4172-a85b-c88fd56ce45a/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">RPA Life Cycle Management</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/06b5d480-235f-4a37-9ce1-4f9dd7559e12/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">RTF Editor</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/ad042965-b2a2-4ece-b392-74fea7dfebaa/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Recruitment </h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/2d719125-5dfe-4220-84e7-64cc104151ec/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">SAP HANA</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/a7520c6e-03ee-4708-a5eb-2c98c03211d0/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">SAP NetWeaver</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/c8e01614-f71e-4e2b-862e-fff38ef72ac0/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">SFTP</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/03c35b95-ed0d-4d67-a9e5-037f9524dbff/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Salesforce</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/4646a825-1c06-4521-86bc-c2cea61af95b/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Screen keyboard</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/ad650ec2-c97c-49f6-8192-a2fe373a4768/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Screenshot</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/0f9239c1-ead1-464c-b47d-9ae20d610c42/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Sendgrid</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/b9cc2f4f-950e-48eb-af03-3abc4cf906fc/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">ServiceNow</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/3034edec-a9c7-4ffe-9c12-6d31ac01a2e6/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">SharePoint Online</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/c2891f58-172d-409d-aba0-7090f3934d09/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Shopify</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/88429ee4-37aa-405f-9db7-8ab8dd884a37/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Six Sigma Project Management</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/53cb62ac-e6ee-4245-92c9-61924b37ede0/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Skype</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector">
+                                <div class="tag-beta" style="position: absolute; border: 1px solid white; width: 65px; top: 7px; left: 7px; border-radius: 15px;">
+                                    <p style="margin: 0; padding: 0; font-size: 13px; font-weight: 600; text-align: center; color: white;"><i class="fa fa-rocket" aria-hidden="true"></i><span> BETA</span></p>
+                                </div><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/81863b2f-2b7c-48f5-bd29-8857d84c4683/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Slack - BETA</h4>
+                                <div class="more-info" style="text-align: center;"></div><a class="btn-connector" href="#">Learn more</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/9c39fd7a-d541-4cd2-be11-c2d7574dfb52/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Smartsheet</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/7e7ed370-7f72-46b6-a499-dd637835990c/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Star rating</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/8c03af92-0b92-4b57-b5c7-0275d06d22f1/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Sticky note</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/7182ca5b-9283-4984-8528-49568da0649e/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">SurveyMonkey</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/25bc343d-9ea6-492f-8f54-66706759101d/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Tableau</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/1fe58248-96f7-4e0e-abdd-6ef183fd8a14/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Tags input</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/4d108552-3ef8-4457-97b4-5b922f285c9d/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Task viewer</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/82aeadc2-195f-40eb-8cd3-caaf137a3ad6/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Text Reader</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/15c66f5e-6471-44c2-83e6-9b86a72e074c/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Tiles layout</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/1236e05e-e897-4860-8ce8-450c30bba938/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Time Tracker</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/df380cad-543a-4947-b268-3a6a03274a0e/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Timeline</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/b6ea1721-4017-4f31-add7-e2aaaf9b70d7/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Travel Request</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/53bc23f1-5dd1-4166-b122-7f002317da54/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Trello</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/0e1fd7b6-3f0a-4fe8-b15a-952c18d53ee8/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Twain scanner</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/fbeb6afd-d743-42cd-a237-8a09af4dbbbd/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Twitter</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/0b8f48e5-b327-49d8-92bc-a9bc58c1d062/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Twitter link</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/ae589483-f87a-4145-aa6a-595ac85b9564/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Uber</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/6b7b4009-8297-4deb-a221-e6164c7e8447/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Upload drop zone</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/eb08c0b2-b224-4be8-8436-fa106eab8ee4/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Vacation Leave Request</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem process" style="display: block;">
+                        <div class="box-process">
+                            <div class="head-grad-process"><img class="icon-process" src="https://www.bizagi.com/processxchange/Documents/0051b791-7a58-4ad7-822c-5508a9d7ac38/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Vehicle Policy Underwriting</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-process" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/a5fdb49f-e483-44b1-9a63-7af331ab504f/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Video player</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/17af11f3-9a4c-4c27-8f4e-6d9ab5b40aec/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Visual uploader</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/3acc1a63-b8d3-459e-a237-689a82ef3887/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Voice recognition</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/f1a09065-f57e-454a-ac66-f600f6d0e018/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Weather</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/6ece1918-490c-4c32-8db0-1920c95a0f78/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Webcam</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/595a4a23-e6f1-4bd0-9886-ed5a337a5b08/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Wordpress</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/1345ffc4-713a-4009-84ba-e27c074d02cc/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">World Clocks</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/d5ff8af5-2bbc-4259-81a1-582cb1fb6ec3/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Yearly timesheet</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem widget" style="display: block;">
+                        <div class="box-widget">
+                            <div class="head-grad-widget"><img class="icon-widget" src="https://www.bizagi.com/widgetxchange/Resources/9358f712-0803-4ef6-9e2f-4be7c9f47a95/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">YouTube</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-widget" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>Learn More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 xchItem connector" style="display: block;">
+                        <div class="box-connector">
+                            <div class="head-grad-connector"><img class="icon-connector" src="https://www.bizagi.com/connectorxchange/Resources/5eada0fb-9e2f-41b2-bd20-cb1c5933ced4/images/icon-xchange.svg"></div>
+                            <div class="body-info">
+                                <h4 id="xchange-item-name" class="ti-txt16 ti-color2 ti-f400 text-center ti-txttitle">Zendesk</h4>
+                                <div class="more-info"><span class="cost">Free</span></div><a class="btn-connector" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>&nbsp;Learn More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
