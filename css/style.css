@@ -6413,3 +6413,6 @@ span.navbar-toggler-icon::before {
 .fc-widget-header {
   height: 3.125rem;
   background-color: #eee; }
+
+.contentCenterCard .element-item {
+  position: static !important; }
