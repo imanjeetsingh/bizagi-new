@@ -2,7 +2,7 @@
 .testimonial {
     &-container {}
     &-row {
-        @include media(xldesktop) {
+        @include media(desktop) {
             justify-content: center;
         }
     }

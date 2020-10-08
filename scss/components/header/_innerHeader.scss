@@ -16,6 +16,7 @@
                 }
                 @include media (desktop){
                     margin-top: 0 !important;
+                    margin-left: 0;
                 }
             }
         }
@@ -168,8 +169,22 @@
         }
     }
     .logo {
-        &-grey {}
-        &-white {}
+        &-grey {
+            width: 100%;
+            @include media (desktop){
+                width: 7rem;
+            }
+        }
+        &-white {
+            width: 100%;
+            margin-left: -1rem;
+            @include media (desktop){
+                margin-left: -2rem;
+            }
+            @include media (xldesktop){
+                margin-left: 0;
+            }
+        }
     }
     @include media(tablet) {
         .cta {
