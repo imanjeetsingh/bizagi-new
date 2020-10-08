@@ -1,0 +1,79 @@
+.officeList {
+  &-section {
+  }
+  &-heading {
+  }
+  &-city {
+    color: #f38d1e;
+    font-weight: 800;
+    margin-top: 1rem;
+  }
+  &-location {
+    color: #6d7278;
+  }
+  &-phone {
+    color: #6d7278;
+  }
+  &-direction {
+    color: #6d7278;
+    &-link {
+      color: #6d7278;
+    }
+  }
+  &-content {
+    color: #6d7278;
+  }
+  &-text{
+      margin-left: 2rem;
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: 0;
+  }
+  &-icons{
+      .fa{
+          position: absolute;
+          color: #ffffff;
+          margin: 5px 0 0 6px;
+          font-size: 13px;
+          &-rotate{
+            -webkit-transform: rotate(269deg);
+            -moz-transform: rotate(269deg);
+            -ms-transform: rotate(269deg);
+            -o-transform: rotate(269deg);
+            transform: rotate(269deg);
+          }
+      }
+  }
+}
+
+// style for hexagon icon start
+.hexagon {
+//   position: relative;
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 11.55px;
+  background-color: #c2c7c7;
+  margin: 5.77px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 5.77px solid #c2c7c7;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 5.77px solid #c2c7c7;
+}
+// style for hexagon icon end

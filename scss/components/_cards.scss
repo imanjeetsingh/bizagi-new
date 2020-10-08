@@ -85,12 +85,22 @@
 .card-five {
     margin-bottom: 1.2rem;
     @include media (tablet) {
-        margin-bottom: 0.8rem;
+        margin-bottom: 0.8rem !important;
     }
 }
-
-.card-five:nth-child(5n) {
-    margin: 0;
+.card-five .card-inner{
+    @include media(desktop){
+        width: 9.6875rem;
+    }
+    @include media(xldesktop){
+        width: auto;
+    }
 }
+.card-noBorder .card p{
+    margin-top: 2rem;
+}
+// .card-five:nth-child(5n) {
+//     margin: 0;
+// }
 
 // Card component CSS ends
