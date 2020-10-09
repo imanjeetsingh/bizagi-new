@@ -51,7 +51,7 @@
         margin-right: auto;
         width: auto;
         padding: 10px;
-        z-index: 1050;
+        z-index: 1000001;
     }
     @media screen and (min-width: 768px) {
         .modal-content {
@@ -228,4 +228,8 @@
     .opacidad {
         opacity: 0.5;
     }
+}
+
+.modal-backdrop.show {
+    z-index: 1000000;
 }
