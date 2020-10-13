@@ -30,14 +30,14 @@
     <!-- Case Study List component starts starts -->
     <div class="container caseStudy">
       <div class="row mt-5">
-        <div class="caseStudy-search-box col-12 col-md-12 col-lg-9">
+        <div class="caseStudy-search-box col-12 col-md-12 col-lg-8">
           <input
             type="text"
             class="caseStudy-search-input quicksearch"
             placeholder="Search"
           />
         </div>
-        <div id="options" class="dropdown col-6 col-md-6 col-lg-3 mt-3 mt-lg-0">
+        <div id="options" class="dropdown col-6 col-md-6 col-lg-4 mt-3 mt-lg-0">
           <button
             type=""
             class="cta cta-primary dropdown-toggle"
@@ -263,9 +263,21 @@
           </div>
         </div>
       </div>
+      <div class="no-results">No Results</div>
     </div>
   </body>
-  
+
+  <script>
+    function checkResults() {
+      var visibleItemsCount = $container.data("isotope").$filteredAtoms.length;
+
+      if (visibleItemsCount > 0) {
+        $(".no-results").hide();
+      } else {
+        $(".no-results").show();
+      }
+    }
+  </script>
 
   <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
   <script src="caseStudyWithoutJSON.js"></script>

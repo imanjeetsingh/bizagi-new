@@ -12,7 +12,7 @@
     width: 11.875rem;
     background-color: rgba(23, 42, 52, 0.8);
     color: #fff !important;
-    text-align: justify;
+    text-align: inherit;
     border-radius: 0.375rem 0 0.375rem 0.375rem;
     padding: 0.3125rem 0.5rem;
     position: absolute;
@@ -98,6 +98,9 @@
                 padding: 0.3125rem 5.5rem;
             }
             @include media(desktop) {
+                padding: 0.3125rem 2.2rem;
+            }
+            @include media(xldesktop) {
                 padding: 0.3125rem 3.2rem;
             }
             &:focus {
@@ -184,6 +187,13 @@ ul.options>li {
         }
         @include media(desktop) {
             padding: 10px;
+            margin: 5px;
+            width: 300px;
+            height: 400px;
+            // position: static !important;
+        }
+        @include media(xldesktop){
+            padding: 6px;
             margin: 5px;
             width: 370px;
             height: 370px;
