@@ -7222,3 +7222,37 @@ span.navbar-toggler-icon::before {
     color: #6D7278; }
   .stepper-opacity {
     opacity: 0.5; }
+
+.fapCard .element-item {
+  text-align: center; }
+  @media (min-width: 768px) {
+    .fapCard .element-item {
+      text-align: left; } }
+
+.fapCard .card-inner {
+  width: 16rem; }
+  @media (min-width: 768px) {
+    .fapCard .card-inner {
+      width: 20.5rem; } }
+  @media (min-width: 992px) {
+    .fapCard .card-inner {
+      width: 13rem; } }
+  @media (min-width: 1200px) {
+    .fapCard .card-inner {
+      width: 16rem; } }
+
+.fapCard .card-image-box {
+  position: static;
+  padding: 5rem 0 4rem 0; }
+
+.fapCard .header-text {
+  background-color: #F28C20;
+  color: #ffffff;
+  padding: 0 1.2rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.375rem;
+  position: absolute; }
+  @media (max-width: 767px) {
+    .fapCard .header-text {
+      left: 0; } }

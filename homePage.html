@@ -35,6 +35,18 @@
         }
     });
     // Banner component script ends
+    $(document).ready(function() {
+        if (window.screen.width < 1025) {
+            var $dropDownBox = $(".nav-container .navbar-nav > .nav-item > .nav-item-suplist > .nav-list");
+            $dropDownBox.each(function(index, val) {
+                var $atag = $(val).prev();
+                var mobileLink = $("#mobileLinkId").attr("data-mobileLink");
+                var aele = '<li class="nav-list-sublist"><a class="dropdown-item" href="' + $atag.attr('href') + '"> ' + mobileLink + '</a></li>';
+                $(val).prepend(aele)
+                $atag.attr('href', '#')
+            })
+        }
+    });
 </script>
 
 <body>
@@ -79,9 +91,10 @@
                             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                 <div class="navbar-nav">
                                     <ul class="nav-item dropdown">
-                                        <li class="nav-item-suplist"><div href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Solutions</div>
+                                        <li class="nav-item-suplist">
+                                            <a href="amanSolution" class="nav-link dropdown-toggle" data-toggle="dropdown">Solutions</a>
                                             <ul class="nav-list dropdown-menu">
-                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Overview</a></li>
+                                                <!-- <li class="nav-list-sublist"><a href="#" class="dropdown-item">Overview</a></li> -->
                                                 <li class="nav-list-sublist-heading">Industry Solution </li>
                                                 <li class="nav-list-sublist"><a href="#" class="dropdown-item">Financial
                                                         Services</a></li>
@@ -118,9 +131,10 @@
                                         </li>
                                     </ul>
                                     <ul class="nav-item dropdown">
-                                        <li class="nav-item-suplist"><div class="nav-link dropdown-toggle" data-toggle="dropdown">Platform</div>
+                                        <li class="nav-item-suplist">
+                                            <a href="amanPlatform" class="nav-link dropdown-toggle" data-toggle="dropdown">Platform</a>
                                             <ul class="nav-list dropdown-menu">
-                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Overview</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item" id="mobileLinkId" data-mobileLink="Overivew" hidden>Overview</a></li>
                                                 <li class="nav-list-sublist"><a href="#" class="dropdown-item">Modeler</a>
                                                 </li>
                                                 <li class="nav-list-sublist"><a href="#" class="dropdown-item">Studio</a>
@@ -136,18 +150,20 @@
                                         </li>
                                     </ul>
                                     <ul class="nav-item dropdown">
-                                        <li class="nav-item-suplist"><div class="nav-link dropdown-toggle" data-toggle="dropdown">Customers</div>
-                                            <ul class="nav-list dropdown-menu">
-                                                <!-- <li class="nav-list-sublist"><a href="#" class="dropdown-item">Overview</a></li> -->
-                                                <li class="nav-list-sublist"> <a href="#" class="dropdown-item">
-                                                        Customers Stories</a></li>
-                                            </ul>
+                                        <li class="nav-item-suplist">
+                                            <a href="amanCustomers" class="nav-link dropdown-toggle" data-toggle="dropdown">Customers</a>
+                                            <!-- <ul class="nav-list dropdown-menu"> -->
+                                            <!-- <li class="nav-list-sublist"><a href="#" class="dropdown-item">Overview</a></li> -->
+                                            <!-- <li class="nav-list-sublist"> <a href="#" class="dropdown-item">
+                                                        Customers Stories</a></li> -->
+                                            <!-- </ul> -->
                                         </li>
                                     </ul>
                                     <ul class="nav-item dropdown">
-                                        <li class="nav-item-suplist"><div class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</div>
+                                        <li class="nav-item-suplist">
+                                            <a href="amanResources" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
                                             <ul class="nav-list dropdown-menu">
-                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Overview</a></li>
+                                                <!-- <li class="nav-list-sublist"><a href="#" class="dropdown-item">Overview</a></li> -->
                                                 <li class="nav-list-sublist"><a href="#" class="dropdown-item">Bizagi
                                                         Demos</a></li>
                                                 <li class="nav-list-sublist"><a href="#" class="dropdown-item">User
@@ -168,9 +184,10 @@
                                         </li>
                                     </ul>
                                     <ul class="nav-item dropdown">
-                                        <li class="nav-item-suplist"><div class="nav-link dropdown-toggle" data-toggle="dropdown">About</div>
+                                        <li class="nav-item-suplist">
+                                            <a href="amanAbout" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
                                             <ul class="nav-list dropdown-menu">
-                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Overview</a></li>
+                                                <!-- <li class="nav-list-sublist"><a href="#" class="dropdown-item">Overview</a></li> -->
                                                 <li class="nav-list-sublist"><a href="#" class="dropdown-item">Our Trust
                                                         & Promise</a></li>
                                                 <li class="nav-list-sublist"><a href="#" class="dropdown-item">The
@@ -721,7 +738,7 @@
 </body>
 
 
-<script>
+<!-- <script>
     // Carousel component script starts
     var owl_constant = {
         loop: false,
@@ -748,7 +765,7 @@
     }
     var $carousel = $('.owl-carousel');
     var item_count = $carousel.find('.item').length;
-    console.log(event);
+    // console.log(event);
     if (item_count > 6)
         owl_constant.loop = true
         // else
@@ -769,6 +786,6 @@
         document.getElementById("showCookieMessageDiv").style.display = "none";
     }
     // Cookie component script ends
-</script>
+</script> -->
 
 </html>
