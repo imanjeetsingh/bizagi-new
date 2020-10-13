@@ -1,0 +1,28 @@
+.learning-journeys {
+  .two {
+    &-column {
+      &-line {
+        position: absolute;
+        width: 13%;
+        left: 17%;
+        top: 5px;
+        border-top: 1px solid #dcdcdc;
+      }
+    }
+  }
+  &-image{
+      width: 30%;
+  }
+  &-box{
+      &-orange{
+        border-radius: 13px;
+        padding: 8px 25px 8px 25px;
+        min-height: 80px;
+        display: block;
+        color: #6d7277;
+        line-height: 20px;
+        text-align: center;
+        border: 1px solid #f28b21;
+      }
+  }
+}
