@@ -1,28 +1,162 @@
 .learning-journeys {
-  .two {
-    &-column {
-      &-line {
-        position: absolute;
-        width: 13%;
-        left: 17%;
-        top: 5px;
-        border-top: 1px solid #dcdcdc;
-      }
+    position: relative;
+    font-size: 0.8125rem;
+    @include media(tablet) {
+        font-size: 0.9375rem;
     }
-  }
-  &-image{
-      width: 30%;
-  }
-  &-box{
-      &-orange{
-        border-radius: 13px;
-        padding: 8px 25px 8px 25px;
-        min-height: 80px;
-        display: block;
+    a {
+        text-decoration: none;
         color: #6d7277;
-        line-height: 20px;
-        text-align: center;
-        border: 1px solid #f28b21;
-      }
-  }
+    }
+    &-alignment {
+        text-align: left;
+        @include media(desktop) {
+            text-align: center;
+        }
+    }
+    &-line {
+        &-two {
+            position: absolute;
+            width: 16%;
+            left: 7%;
+            top: 5px;
+            border-top: 1px solid #dcdcdc;
+            display: none;
+            @include media(desktop) {
+                display: block;
+            }
+        }
+        &-three {
+            position: absolute;
+            width: 33%;
+            left: 7%;
+            top: 5px;
+            border-top: 1px solid #dcdcdc;
+            display: none;
+            @include media(desktop) {
+                display: block;
+            }
+        }
+        &-four {
+            position: absolute;
+            width: 50%;
+            left: 7%;
+            top: 5px;
+            border-top: 1px solid #dcdcdc;
+            display: none;
+            @include media(desktop) {
+                display: block;
+            }
+        }
+        &-five {
+            position: absolute;
+            width: 66%;
+            left: 7%;
+            top: 5px;
+            border-top: 1px solid #dcdcdc;
+            display: none;
+            @include media(desktop) {
+                display: block;
+            }
+        }
+        &-six {
+            position: absolute;
+            width: 83%;
+            left: 7%;
+            top: 5px;
+            border-top: 1px solid #dcdcdc;
+            display: none;
+            @include media(desktop) {
+                display: block;
+            }
+        }
+    }
+    &-image {
+        width: 20%;
+        @include media(desktop) {
+            width: 30%;
+        }
+    }
+    &-box {
+        &-teal {
+            border-radius: 13px;
+            padding: 15px 4px 15px 4px;
+            min-height: 80px;
+            display: inline;
+            color: #6d7277;
+            line-height: 20px;
+            text-align: center;
+            border: 1px solid #329f9a;
+            &:hover {
+                border: 2px solid #329f9a;
+            }
+            @include media(desktop) {
+                display: block;
+                padding: 8px 11px 8px 11px;
+            }
+            @include media(xldesktop) {
+                padding: 8px 25px 8px 25px;
+            }
+        }
+        &-orange {
+            border-radius: 13px;
+            padding: 15px 4px 15px 4px;
+            min-height: 80px;
+            display: inline;
+            color: #6d7277;
+            line-height: 20px;
+            text-align: center;
+            border: 1px solid #f28b21;
+            &:hover {
+                border: 2px solid #f28b21;
+            }
+            @include media(desktop) {
+                display: block;
+                padding: 8px 11px 8px 11px;
+            }
+            @include media(xldesktop) {
+                padding: 8px 25px 8px 25px;
+            }
+        }
+        &-green {
+            border-radius: 13px;
+            padding: 15px 4px 15px 4px;
+            min-height: 80px;
+            display: inline;
+            color: #6d7277;
+            line-height: 20px;
+            text-align: center;
+            border: 1px solid #bbcc33;
+            &:hover {
+                border: 2px solid #bbcc33;
+            }
+            @include media(desktop) {
+                display: block;
+                padding: 8px 11px 8px 11px;
+            }
+            @include media(xldesktop) {
+                padding: 8px 25px 8px 25px;
+            }
+        }
+        &-grey {
+            border-radius: 13px;
+            padding: 15px 4px 15px 4px;
+            min-height: 80px;
+            display: inline;
+            color: #6d7277;
+            line-height: 20px;
+            text-align: center;
+            border: 1px solid #6D7278;
+            &:hover {
+                border: 2px solid #6D7278;
+            }
+            @include media(desktop) {
+                display: block;
+                padding: 8px 11px 8px 11px;
+            }
+            @include media(xldesktop) {
+                padding: 8px 25px 8px 25px;
+            }
+        }
+    }
 }

@@ -10156,25 +10156,225 @@ span.navbar-toggler-icon::before {
     padding: 0 15px;
 }
 
-.learning-journeys .two-column-line {
+.learning-journeys {
+    position: relative;
+    font-size: 0.8125rem;
+}
+
+@media (min-width: 768px) {
+    .learning-journeys {
+        font-size: 0.9375rem;
+    }
+}
+
+.learning-journeys a {
+    text-decoration: none;
+    color: #6d7277;
+}
+
+.learning-journeys-alignment {
+    text-align: left;
+}
+
+@media (min-width: 992px) {
+    .learning-journeys-alignment {
+        text-align: center;
+    }
+}
+
+.learning-journeys-line-two {
     position: absolute;
-    width: 13%;
-    left: 17%;
+    width: 16%;
+    left: 7%;
     top: 5px;
     border-top: 1px solid #dcdcdc;
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .learning-journeys-line-two {
+        display: block;
+    }
+}
+
+.learning-journeys-line-three {
+    position: absolute;
+    width: 33%;
+    left: 7%;
+    top: 5px;
+    border-top: 1px solid #dcdcdc;
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .learning-journeys-line-three {
+        display: block;
+    }
+}
+
+.learning-journeys-line-four {
+    position: absolute;
+    width: 50%;
+    left: 7%;
+    top: 5px;
+    border-top: 1px solid #dcdcdc;
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .learning-journeys-line-four {
+        display: block;
+    }
+}
+
+.learning-journeys-line-five {
+    position: absolute;
+    width: 66%;
+    left: 7%;
+    top: 5px;
+    border-top: 1px solid #dcdcdc;
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .learning-journeys-line-five {
+        display: block;
+    }
+}
+
+.learning-journeys-line-six {
+    position: absolute;
+    width: 83%;
+    left: 7%;
+    top: 5px;
+    border-top: 1px solid #dcdcdc;
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .learning-journeys-line-six {
+        display: block;
+    }
 }
 
 .learning-journeys-image {
-    width: 30%;
+    width: 20%;
+}
+
+@media (min-width: 992px) {
+    .learning-journeys-image {
+        width: 30%;
+    }
+}
+
+.learning-journeys-box-teal {
+    border-radius: 13px;
+    padding: 15px 4px 15px 4px;
+    min-height: 80px;
+    display: inline;
+    color: #6d7277;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #329f9a;
+}
+
+.learning-journeys-box-teal:hover {
+    border: 2px solid #329f9a;
+}
+
+@media (min-width: 992px) {
+    .learning-journeys-box-teal {
+        display: block;
+        padding: 8px 11px 8px 11px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .learning-journeys-box-teal {
+        padding: 8px 25px 8px 25px;
+    }
 }
 
 .learning-journeys-box-orange {
     border-radius: 13px;
-    padding: 8px 25px 8px 25px;
+    padding: 15px 4px 15px 4px;
     min-height: 80px;
-    display: block;
+    display: inline;
     color: #6d7277;
     line-height: 20px;
     text-align: center;
     border: 1px solid #f28b21;
+}
+
+.learning-journeys-box-orange:hover {
+    border: 2px solid #f28b21;
+}
+
+@media (min-width: 992px) {
+    .learning-journeys-box-orange {
+        display: block;
+        padding: 8px 11px 8px 11px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .learning-journeys-box-orange {
+        padding: 8px 25px 8px 25px;
+    }
+}
+
+.learning-journeys-box-green {
+    border-radius: 13px;
+    padding: 15px 4px 15px 4px;
+    min-height: 80px;
+    display: inline;
+    color: #6d7277;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #bbcc33;
+}
+
+.learning-journeys-box-green:hover {
+    border: 2px solid #bbcc33;
+}
+
+@media (min-width: 992px) {
+    .learning-journeys-box-green {
+        display: block;
+        padding: 8px 11px 8px 11px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .learning-journeys-box-green {
+        padding: 8px 25px 8px 25px;
+    }
+}
+
+.learning-journeys-box-grey {
+    border-radius: 13px;
+    padding: 15px 4px 15px 4px;
+    min-height: 80px;
+    display: inline;
+    color: #6d7277;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #6D7278;
+}
+
+.learning-journeys-box-grey:hover {
+    border: 2px solid #6D7278;
+}
+
+@media (min-width: 992px) {
+    .learning-journeys-box-grey {
+        display: block;
+        padding: 8px 11px 8px 11px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .learning-journeys-box-grey {
+        padding: 8px 25px 8px 25px;
+    }
 }
