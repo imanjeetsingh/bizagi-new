@@ -128,7 +128,7 @@
         color: #6d7278;
     }
     .dropdown-menu.show {
-        @include media(desktop) {
+        @include media(xldesktop) {
             display: none !important;
         }
     }
@@ -136,7 +136,7 @@
         @include media(tablet) {
             margin-top: 0;
         }
-        @include media(desktop) {
+        @include media(xldesktop) {
             display: block;
             margin-top: -2rem;
         }
@@ -192,7 +192,7 @@ ul.options>li {
             height: 400px;
             // position: static !important;
         }
-        @include media(xldesktop){
+        @include media(xldesktop) {
             padding: 6px;
             margin: 5px;
             width: 370px;
