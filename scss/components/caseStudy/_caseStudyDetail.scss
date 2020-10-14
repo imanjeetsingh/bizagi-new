@@ -11,7 +11,7 @@
     &-image {
         width: 100%;
         height: auto;
-        @include media(tablet){
+        @include media(tablet) {
             width: auto;
             height: auto;
         }
@@ -53,13 +53,17 @@
         // @include media(desktop){
         //     margin: 1.5625rem 0.625rem 0 0.625rem;
         // }
-        @include media(desktop){
-            margin: -3.75rem 0.625rem 0 0.625rem;
+        @include media(desktop) {
+            // margin: -3.75rem 0.625rem 0 0.625rem;
+            margin: 0px 0.625rem 18px 0.625rem;
         }
         &-box {
             padding: 2.625rem 0.8rem;
+            @include media(desktop) {
+                padding: 0.5rem 0.8rem;
+            }
             &-inner {
-                @include media(desktop){
+                @include media(desktop) {
                     width: 55rem;
                 }
             }

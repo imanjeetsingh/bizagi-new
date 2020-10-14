@@ -33,7 +33,7 @@
                 .cta {
                     font-weight: 400 !important;
                     padding: 0.625rem 1.1875rem;
-                    @include media(desktop){
+                    @include media(desktop) {
                         font-weight: 700 !important;
                     }
                     &-primary {
@@ -60,7 +60,7 @@
                                     color: #009E99;
                                     margin-left: 1.5rem;
                                 }
-                                @include media(xldesktop){
+                                @include media(xldesktop) {
                                     margin-left: 0;
                                     margin-right: 0;
                                 }
@@ -97,13 +97,13 @@
                         .cta {
                             &-content {
                                 color: #ffffff;
-                                @include media(desktop){
-                                margin-left: -0.4375rem;
+                                @include media(desktop) {
+                                    margin-left: -0.4375rem;
                                 }
-                                 @include media(desktop){
-                                margin-left: -0.4375rem;
+                                @include media(desktop) {
+                                    margin-left: -0.4375rem;
                                 }
-                                @include media(xldesktop){
+                                @include media(xldesktop) {
                                     margin-left: 0;
                                 }
                             }
@@ -120,9 +120,9 @@
                 margin-left: 0.5rem;
                 margin-bottom: 7px;
             }
-            @include media(tablet){
+            @include media(tablet) {
                 margin-bottom: 8px;
-                }
+            }
             @include media(desktop) {
                 margin-left: 2rem;
             }
@@ -156,10 +156,10 @@
             display: block;
             width: 100%;
             margin-left: -1rem;
-            @include media (desktop){
+            @include media (desktop) {
                 margin-left: -2rem;
             }
-            @include media (xldesktop){
+            @include media (xldesktop) {
                 margin-left: 0;
             }
         }
@@ -176,8 +176,8 @@
             }
         }
     }
-    .dropdown{
-        &-item{
+    .dropdown {
+        &-item {
             &:hover {
                 background-color: transparent;
                 color: #6D7278;
@@ -298,7 +298,6 @@
     .logo {
         &-white {
             display: none;
-            
         }
         &-grey {
             display: block;
@@ -309,7 +308,7 @@
                 margin-top: -1rem;
                 margin-left: -1rem;
             }
-            @include media(xldesktop){
+            @include media(xldesktop) {
                 margin-left: 0.625rem;
             }
         }
@@ -327,14 +326,16 @@
     }
 }
 
-.home-header.affix .dropdown-item:hover{
+.home-header.affix .dropdown-item:hover {
     background-color: transparent;
     color: #F38D1F;
     font-weight: 600;
 }
-.navbar-light .navbar-toggler-icon{
+
+.navbar-light .navbar-toggler-icon {
     background-image: none !important;
 }
+
 span.navbar-toggler-icon::before {
     content: "\2630";
     display: block;
@@ -343,6 +344,26 @@ span.navbar-toggler-icon::before {
     font-weight: 300
 }
 
+// css edit for cta alignment in ipad pro view start here
+.home-header .cta-group {
+    @include media(desktop) {
+        padding-top: 2rem;
+    }
+    @include media(xldesktop) {
+        padding-top: 0;
+    }
+}
+
+.home-header.affix .cta-group {
+    @include media(desktop) {
+        padding-top: 1rem;
+    }
+    @include media(xldesktop) {
+        padding-top: 0;
+    }
+}
+
+// css edit for cta alignment in ipad pro view start here
 // edit for language button
 // .home-header .multilang-container{
 //     @include media(tablet){
