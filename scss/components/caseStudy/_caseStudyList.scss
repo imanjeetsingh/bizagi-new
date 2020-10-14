@@ -128,7 +128,7 @@
         color: #6d7278;
     }
     .dropdown-menu.show {
-        @include media(desktop) {
+        @include media(xldesktop) {
             display: none !important;
         }
     }
