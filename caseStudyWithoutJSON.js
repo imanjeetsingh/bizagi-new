@@ -22,6 +22,11 @@ function handleIsotope() {
                 var industryResult = industryOptions ? $(this).is(industryOptions) : true;
                 var solutionResult = solutionOptions ? $(this).is(solutionOptions) : true;
                 var searchResult = qsRegex ? $(this).text().match(qsRegex) : true;
+                // var searchResult != qsRegex ?
+                //     ($(this).find('.card-title').text().match(qsRegex) || $(this).find('.card-text').text().match(qsRegex)) :
+                //     true;
+
+
                 return industryResult && solutionResult && searchResult;
             }
         });
