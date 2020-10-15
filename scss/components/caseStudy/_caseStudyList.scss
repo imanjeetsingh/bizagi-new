@@ -192,7 +192,7 @@ ul.options>li {
         @include media(desktop) {
             padding: 10px;
             margin: 0.3125rem 0.3125rem 0.3125rem 1.25rem;
-            width: 300px;
+            width: 295px;
             height: 400px;
             // position: static !important;
         }
@@ -230,5 +230,12 @@ ul.options>li {
     .dropdown-menu {
         border: 1px solid rgba(0, 0, 0, 0.15) !important;
         border-radius: 0.25rem !important;
+        // transform: translate3d(5px, 35px, 0px)!important;
     }
+}
+
+.no-results {
+    font-size: 1.4rem;
+    color: #4b5c67;
+    font-weight: 600;
 }

@@ -4257,6 +4257,12 @@ ul li {
   font-size: 0.813rem;
   white-space: nowrap;
   color: #54645B; }
+  @media (min-width: 768px) {
+    .dropdown-item {
+      padding: 0.25rem 1rem 0.25rem 1rem !important; } }
+  @media (min-width: 992px) {
+    .dropdown-item {
+      padding: 0.25rem 1.563rem 0.25rem 1.563rem !important; } }
   .dropdown-item:hover {
     background-color: transparent;
     color: #F38D1F; }
@@ -4276,6 +4282,12 @@ ul li {
 .navbar-nav .dropdown-menu {
   width: 16rem;
   border-radius: 0; }
+  @media (min-width: 768px) {
+    .navbar-nav .dropdown-menu {
+      width: 13rem; } }
+  @media (min-width: 992px) {
+    .navbar-nav .dropdown-menu {
+      width: 16rem; } }
 
 #navbarCollapse {
   transition: height 0.4s;
@@ -5403,7 +5415,7 @@ ul.options > li {
     margin-top: 0;
     margin-left: -2rem; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .caseStudy .dropdown:hover .dropdown-menu {
     margin-left: 0; } }
 
@@ -5442,7 +5454,7 @@ ul.options > li {
     .caseStudyCard .element-item {
       padding: 10px;
       margin: 0.3125rem 0.3125rem 0.3125rem 1.25rem;
-      width: 300px;
+      width: 295px;
       height: 400px; } }
   @media (min-width: 1200px) {
     .caseStudyCard .element-item {
@@ -5470,6 +5482,11 @@ ul.options > li {
 .caseStudy .dropdown-menu {
   border: 1px solid rgba(0, 0, 0, 0.15) !important;
   border-radius: 0.25rem !important; }
+
+.no-results {
+  font-size: 1.4rem;
+  color: #4b5c67;
+  font-weight: 600; }
 
 .newsList {
   padding: 0 1.5625rem; }
@@ -6272,6 +6289,10 @@ img[alt] {
       margin-top: 0rem;
       margin-left: 0; } }
 
+@-moz-document url-prefix() {
+  .home-header .logo-grey {
+    width: 7rem; } }
+
 .home-header .logo-white {
   display: block;
   width: 100%;
@@ -6282,6 +6303,10 @@ img[alt] {
   @media (min-width: 1200px) {
     .home-header .logo-white {
       margin-left: 0; } }
+
+@-moz-document url-prefix() {
+  .home-header .logo-white {
+    width: 7rem; } }
 
 @media (min-width: 992px) {
   .home-header .headerLogo-link {

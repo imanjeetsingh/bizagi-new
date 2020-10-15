@@ -151,6 +151,9 @@
                 margin-top: 0rem;
                 margin-left: 0;
             }
+            @-moz-document url-prefix() {
+                width: 7rem
+            }
         }
         &-white {
             display: block;
@@ -161,6 +164,9 @@
             }
             @include media (xldesktop) {
                 margin-left: 0;
+            }
+            @-moz-document url-prefix() {
+                width: 7rem
             }
         }
     }

@@ -1,22 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Center</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
@@ -24,261 +16,225 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Case Study List component starts starts -->
     <div class="container caseStudy">
-      <div class="row mt-5">
-        <div class="caseStudy-search-box col-12 col-md-12 col-lg-8">
-          <input
-            type="text"
-            class="caseStudy-search-input quicksearch"
-            placeholder="Search"
-          />
-        </div>
-        <div id="options" class="dropdown col-6 col-md-6 col-lg-4 mt-3 mt-lg-0">
-          <button
-            type=""
-            class="cta cta-primary dropdown-toggle"
-            data-toggle="dropdown"
-          >
+        <div class="row mt-5">
+            <div class="caseStudy-search-box col-12 col-md-12 col-lg-8">
+                <input type="text" class="caseStudy-search-input quicksearch" placeholder="Search" />
+            </div>
+            <div id="options" class="dropdown col-6 col-md-6 col-lg-4 mt-3 mt-lg-0">
+                <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown">
             <span class="cta-content">Filter by Content type</span>
             <span class="cta-icon-box">
               <i class="fa fa-caret-down" aria-hidden="true"></i>
             </span>
           </button>
-          <div class="dropdown-menu">
-            <div class="option-set" data-group="industry">
-              <ul class="options">
-                <!-- <li class="input-all"><input class="all" type="checkbox" value=".all-resources" id="all-resources"><label for="all-resources">All Resources</label></li> -->
-                <li>
-                  <input type="checkbox" value=".guide" id="guide" />
-                  <label for="guide">Guide</label>
-                </li>
-                <li>
-                  <input
-                    type="checkbox"
-                    value=".analystReport"
-                    id="analystReport"
-                  />
-                  <label for="analystReport">Analyst Report</label>
-                </li>
-                <li>
-                  <input type="checkbox" value=".whitepaper" id="whitepaper" />
-                  <label for="whitepaper">Whitepaper</label>
-                </li>
-                <li>
-                  <input
-                    type="checkbox"
-                    value=".professionalServices"
-                    id="professionalServices"
-                  />
-                  <label for="professionalServices"
-                    >Professional Services</label
+                <div class="dropdown-menu">
+                    <div class="option-set" data-group="industry">
+                        <ul class="options">
+                            <!-- <li class="input-all"><input class="all" type="checkbox" value=".all-resources" id="all-resources"><label for="all-resources">All Resources</label></li> -->
+                            <li>
+                                <input type="checkbox" value=".guide" id="guide" />
+                                <label for="guide">Guide</label>
+                                </input>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".analystReport" id="analystReport" />
+                                <label for="analystReport">Analyst Report</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".whitepaper" id="whitepaper" />
+                                <label for="whitepaper">Whitepaper</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".professionalServices" id="professionalServices" />
+                                <label for="professionalServices">Professional Services</label
                   >
                 </li>
                 <li>
                   <input type="checkbox" value=".ebook" id="ebook" />
                   <label for="ebook">Ebook</label>
-                </li>
-                <li>
-                  <input type="checkbox" value=".factsheet" id="factsheet" />
-                  <label for="factsheet">Factsheet</label>
-                </li>
-              </ul>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".factsheet" id="factsheet" />
+                                <label for="factsheet">Factsheet</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
+            <p id="dropdownValue">
+            </p>
 
-        <div class="container">
-          <div class="row grid contentCenterCard" id="cardviewlist">
-            <div class="grid-sizer"></div>
-            <div class="element-item col-12 col-md-4 guide">
-              <div class="card h-100 card-inner">
-                <div class="card-image-box">
-                  <div class="card-tag top-left">Guide</div>
-                  <img
-                    class="card-img-top"
-                    src="./images/testimonio02.png"
-                    alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst"
-                  />
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    The Ultimate Guide To Improving Your Business Processes
-                  </h4>
-                  <p class="card-text">
-                    Get insight from expert users on how to start your process
-                    automation project and the lessons learned during their own
-                    implementations.
-                  </p>
-                  <div class="card-cta">
-                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
-                    <div class="cta-group">
-                      <a href="#" class="cta cta-default cta-icon-right">
-                        <span class="cta-content">Download </span>
-                        <span class="cta-icon-box">
+            <div class="container">
+                <div class="row grid contentCenterCard" id="cardviewlist">
+                    <div class="grid-sizer"></div>
+                    <div class="element-item col-12 col-md-4 guide">
+                        <div class="card h-100 card-inner">
+                            <div class="card-image-box">
+                                <div class="card-tag top-left">Guide</div>
+                                <img class="card-img-top" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    The Ultimate Guide To Improving Your Business Processes
+                                </h4>
+                                <p class="card-text">
+                                    Get insight from expert users on how to start your process automation project and the lessons learned during their own implementations.
+                                </p>
+                                <div class="card-cta">
+                                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                                    <div class="cta-group">
+                                        <a href="#" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Download </span>
+                                            <span class="cta-icon-box">
                           <i class="cta-icon fa fa-arrow-right"></i>
                         </span>
-                      </a>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="element-item col-12 col-md-4 analystReport">
-              <div class="card h-100 card-inner">
-                <div class="card-image-box">
-                  <div class="card-tag top-left">Analyst Report</div>
-                  <img
-                    class="card-img-top"
-                    src="./images/testimonio02.png"
-                    alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst"
-                  />
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    The 3-Step Guide to Business Continuity
-                  </h4>
-                  <p class="card-text">
-                    Discover three key steps that organizations need to take
-                    right now to enable employees to continue working, provide
-                    the best possible service to customers, and to future-proof
-                    the business to remain successful despite Covid-19.
-                  </p>
-                  <div class="card-cta">
-                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
-                    <div class="cta-group">
-                      <a href="#" class="cta cta-default cta-icon-right">
-                        <span class="cta-content">Download </span>
-                        <span class="cta-icon-box">
+                    <div class="element-item col-12 col-md-4 analystReport">
+                        <div class="card h-100 card-inner">
+                            <div class="card-image-box">
+                                <div class="card-tag top-left">Analyst Report</div>
+                                <img class="card-img-top" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    The 3-Step Guide to Business Continuity
+                                </h4>
+                                <p class="card-text">
+                                    Discover three key steps that organizations need to take right now to enable employees to continue working, provide the best possible service to customers, and to future-proof the business to remain successful despite Covid-19.
+                                </p>
+                                <div class="card-cta">
+                                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                                    <div class="cta-group">
+                                        <a href="#" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Download </span>
+                                            <span class="cta-icon-box">
                           <i class="cta-icon fa fa-arrow-right"></i>
                         </span>
-                      </a>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="element-item col-12 col-md-4 whitepaper">
-              <div class="card h-100 card-inner">
-                <div class="card-image-box">
-                  <div class="card-tag top-left">Whitepaper</div>
-                  <img
-                    class="card-img-top"
-                    src="./images/testimonio02.png"
-                    alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst"
-                  />
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    Planning Your Path to Intelligent Process Automation
-                  </h4>
-                  <p class="card-text">
-                    Learn the importance of effectively managing modern
-                    application architecture and how to enable organization-wide
-                    digital capabilities.
-                  </p>
-                  <div class="card-cta">
-                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
-                    <div class="cta-group">
-                      <a href="#" class="cta cta-default cta-icon-right">
-                        <span class="cta-content">Download </span>
-                        <span class="cta-icon-box">
+                    <div class="element-item col-12 col-md-4 whitepaper">
+                        <div class="card h-100 card-inner">
+                            <div class="card-image-box">
+                                <div class="card-tag top-left">Whitepaper</div>
+                                <img class="card-img-top" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Planning Your Path to Intelligent Process Automation
+                                </h4>
+                                <p class="card-text">
+                                    Learn the importance of effectively managing modern application architecture and how to enable organization-wide digital capabilities.
+                                </p>
+                                <div class="card-cta">
+                                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                                    <div class="cta-group">
+                                        <a href="#" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Download </span>
+                                            <span class="cta-icon-box">
                           <i class="cta-icon fa fa-arrow-right"></i>
                         </span>
-                      </a>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="element-item col-12 col-md-4 ebook">
-              <div class="card h-100 card-inner">
-                <div class="card-image-box">
-                  <div class="card-tag top-left">Ebook</div>
-                  <img
-                    class="card-img-top"
-                    src="./images/testimonio02.png"
-                    alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst"
-                  />
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    Intelligent Process Automation: A Springboard to Profitable
-                    Digital Transformation
-                  </h4>
-                  <p class="card-text">
-                    Discover the power of process to unite siloed legacy systems
-                    and drive efficiency and agility in your organization.
-                  </p>
-                  <div class="card-cta">
-                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
-                    <div class="cta-group">
-                      <a href="#" class="cta cta-default cta-icon-right">
-                        <span class="cta-content">Download </span>
-                        <span class="cta-icon-box">
+                    <div class="element-item col-12 col-md-4 ebook">
+                        <div class="card h-100 card-inner">
+                            <div class="card-image-box">
+                                <div class="card-tag top-left">Ebook</div>
+                                <img class="card-img-top" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Intelligent Process Automation: A Springboard to Profitable Digital Transformation
+                                </h4>
+                                <p class="card-text">
+                                    Discover the power of process to unite siloed legacy systems and drive efficiency and agility in your organization.
+                                </p>
+                                <div class="card-cta">
+                                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                                    <div class="cta-group">
+                                        <a href="#" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Download </span>
+                                            <span class="cta-icon-box">
                           <i class="cta-icon fa fa-arrow-right"></i>
                         </span>
-                      </a>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="element-item col-12 col-md-4 factsheet">
-              <div class="card h-100 card-inner">
-                <div class="card-image-box">
-                  <div class="card-tag top-left">Factsheet</div>
-                  <img
-                    class="card-img-top"
-                    src="./images/testimonio02.png"
-                    alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst"
-                  />
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    Navigating the Federal Intelligent Process Revolution
-                  </h4>
-                  <p class="card-text">
-                    Digitization of services has become critical for federal
-                    organizations in the public sector who want to improve the
-                    lives of their constituents.
-                  </p>
-                  <div class="card-cta">
-                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
-                    <div class="cta-group">
-                      <a href="#" class="cta cta-default cta-icon-right">
-                        <span class="cta-content">Download </span>
-                        <span class="cta-icon-box">
+                    <div class="element-item col-12 col-md-4 factsheet">
+                        <div class="card h-100 card-inner">
+                            <div class="card-image-box">
+                                <div class="card-tag top-left">Factsheet</div>
+                                <img class="card-img-top" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    Navigating the Federal Intelligent Process Revolution
+                                </h4>
+                                <p class="card-text">
+                                    Digitization of services has become critical for federal organizations in the public sector who want to improve the lives of their constituents.
+                                </p>
+                                <div class="card-cta">
+                                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                                    <div class="cta-group">
+                                        <a href="#" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Download </span>
+                                            <span class="cta-icon-box">
                           <i class="cta-icon fa fa-arrow-right"></i>
                         </span>
-                      </a>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+
+                <div class="no-results">No Results</div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="no-results">No Results</div>
     </div>
-  </body>
+</body>
 
-  <script>
+<script>
     function checkResults() {
-      var visibleItemsCount = $container.data("isotope").$filteredAtoms.length;
+        var visibleItemsCount = $container.data("isotope").$filteredAtoms.length;
 
-      if (visibleItemsCount > 0) {
-        $(".no-results").hide();
-      } else {
-        $(".no-results").show();
-      }
+        if (visibleItemsCount > 0) {
+            $(".no-results").hide();
+        } else {
+            $(".no-results").show();
+        }
     }
-  </script>
+    $('.options').on('click', function() {
+        var array = [];
+        $("input:checked").each(function() {
+            array.push($(this).val());
+        });
+        $('#dropdownValue').text(array);
+    });
+</script>
 
-  <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-  <script src="caseStudyWithoutJSON.js"></script>
+<script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="caseStudyWithoutJSON.js"></script>
+
 </html>
