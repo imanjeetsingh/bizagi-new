@@ -40,7 +40,7 @@
             var $dropDownBox = $(".nav-container .navbar-nav > .nav-item > .nav-item-suplist > .nav-list");
             $dropDownBox.each(function(index, val) {
                 var $atag = $(val).prev();
-                var mobileLink = $("#mobileLinkId").attr("data-mobileLink");
+                var mobileLink = $(".mobileLinkId").attr("data-mobileLink");
                 var aele = '<li class="nav-list-sublist"><a class="dropdown-item" href="' + $atag.attr('href') + '"> ' + mobileLink + '</a></li>';
                 $(val).prepend(aele)
                 $atag.attr('href', '#')
@@ -134,7 +134,9 @@
                                         <li class="nav-item-suplist">
                                             <a href="amanPlatform" class="nav-link dropdown-toggle" data-toggle="dropdown">Platform</a>
                                             <ul class="nav-list dropdown-menu">
-                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item" id="mobileLinkId" data-mobileLink="Overivew" hidden>Overview</a></li>
+                                                <li class="nav-list-sublist">
+                                                    <a href="#" class="dropdown-item mobileLinkId" data-mobileLink="Overivew" hidden></a>
+                                                </li>
                                                 <li class="nav-list-sublist"><a href="#" class="dropdown-item">Modeler</a>
                                                 </li>
                                                 <li class="nav-list-sublist"><a href="#" class="dropdown-item">Studio</a>
