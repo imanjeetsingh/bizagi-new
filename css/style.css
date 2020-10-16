@@ -6268,7 +6268,11 @@ img[alt] {
       margin-bottom: 8px; } }
   @media (min-width: 992px) {
     .home-header .multilang-container {
-      margin-left: 2rem; } }
+      margin-left: 2rem;
+      margin-top: 1.7rem; } }
+  @media (min-width: 1200px) {
+    .home-header .multilang-container {
+      margin-top: 0; } }
 
 .home-header .multilang-dropdown {
   color: #ffffff; }
@@ -6413,7 +6417,7 @@ img[alt] {
       margin-top: 3rem; } }
   @media (min-width: 992px) {
     .affix .logo-grey {
-      margin-top: -1rem;
+      margin-top: -3rem;
       margin-left: -1rem; } }
   @media (min-width: 1200px) {
     .affix .logo-grey {

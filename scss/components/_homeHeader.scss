@@ -125,6 +125,10 @@
             }
             @include media(desktop) {
                 margin-left: 2rem;
+                margin-top: 1.7rem;
+            }
+            @include media(xldesktop) {
+                margin-top: 0;
             }
         }
         &-dropdown {
@@ -311,7 +315,7 @@
                 margin-top: 3rem;
             }
             @include media(desktop) {
-                margin-top: -1rem;
+                margin-top: -3rem;
                 margin-left: -1rem;
             }
             @include media(xldesktop) {
@@ -368,6 +372,7 @@ span.navbar-toggler-icon::before {
         padding-top: 0;
     }
 }
+
 
 // css edit for cta alignment in ipad pro view start here
 // edit for language button
