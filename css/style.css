@@ -5239,7 +5239,8 @@ ul li {
     list-style: none; }
     @media (min-width: 992px) {
       .client-info-box {
-        border-right: solid 1px #ccc; } }
+        border-right: solid 1px #ccc;
+        padding: 0 1rem 2rem 0; } }
   .client-info-image {
     width: 100%;
     height: auto; }
@@ -7484,7 +7485,11 @@ span.navbar-toggler-icon::before {
 
 .courseCalender .label {
   font-weight: 800;
-  padding: 0.5rem 2rem; }
+  padding: 0.5rem 2rem;
+  width: 130px; }
+  @media (min-width: 768px) {
+    .courseCalender .label {
+      width: 184px; } }
 
 .courseCalender .list-inline {
   margin: 0; }
@@ -7493,4 +7498,35 @@ span.navbar-toggler-icon::before {
   padding: 0.5rem 0 0.5rem 2rem; }
 
 .courseCalender td {
-  padding: 0 3rem 0 2rem; }
+  padding: 0 3rem 0 1rem; }
+  @media (min-width: 768px) {
+    .courseCalender td {
+      padding: 0; } }
+  @media (min-width: 992px) {
+    .courseCalender td {
+      padding: 0 3rem 0 2rem; } }
+
+.courseCalender .city {
+  display: inline-block;
+  width: 85px;
+  font-weight: 600; }
+  @media (min-width: 768px) {
+    .courseCalender .city {
+      width: 139px; } }
+  @media (min-width: 1200px) {
+    .courseCalender .city {
+      width: 145px; } }
+
+.courseCalender .time {
+  width: 137px;
+  display: inline-block; }
+
+.courseCalender .cta-group {
+  margin: 0 -0.5rem; }
+
+.courseCalender .cta-primary {
+  margin-left: 2rem; }
+
+.courseCalender .soldOut {
+  margin-left: 1.6rem;
+  font-weight: 600; }

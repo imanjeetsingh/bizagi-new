@@ -224,6 +224,9 @@ ul.options>li {
     @include media(tablet) {
         left: 0 !important;
     }
+    @include media(desktop) {
+        // transform: translate3d(-5px, 35px, 0px) !important;
+    }
 }
 
 .caseStudy {
