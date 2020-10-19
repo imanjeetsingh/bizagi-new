@@ -1,0 +1,24 @@
+.courseCalender {
+    .eventsBody {
+        color: #6d7278;
+    }
+    .title {
+        // font-size: 1.25rem;
+        // line-height: 1.5rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+    .label {
+        font-weight: 800;
+        padding: 0.5rem 2rem;
+    }
+    .list-inline {
+        margin: 0;
+    }
+    .list-inline>li {
+        padding: 0.5rem 0 0.5rem 2rem;
+    }
+    td {
+        padding: 0 3rem 0 2rem;
+    }
+}

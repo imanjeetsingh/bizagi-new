@@ -6742,7 +6742,8 @@ span.navbar-toggler-icon::before {
   font-weight: 400;
   color: #6D7278;
   font-size: 18px;
-  line-height: 22px; }
+  line-height: 22px;
+  text-align: left; }
 
 @media (max-width: 992px) {
   .bizagi-popup p {
@@ -7404,3 +7405,23 @@ span.navbar-toggler-icon::before {
     @media (min-width: 1200px) {
       .learning-journeys-box-grey {
         padding: 8px 25px 8px 25px; } }
+
+.courseCalender .eventsBody {
+  color: #6d7278; }
+
+.courseCalender .title {
+  font-weight: 800;
+  margin-bottom: 1rem; }
+
+.courseCalender .label {
+  font-weight: 800;
+  padding: 0.5rem 2rem; }
+
+.courseCalender .list-inline {
+  margin: 0; }
+
+.courseCalender .list-inline > li {
+  padding: 0.5rem 0 0.5rem 2rem; }
+
+.courseCalender td {
+  padding: 0 3rem 0 2rem; }
