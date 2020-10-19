@@ -138,6 +138,16 @@ ul li::before {
     }
 }
 
+.client-info-box li::before {
+    list-style: none;
+    content: "";
+}
+
+.calenderDetails li {
+    list-style: none;
+    content: "";
+}
+
 .media-contact-styling p {
     margin-bottom: 0.5rem;
 }

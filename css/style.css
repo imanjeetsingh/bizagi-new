@@ -4118,6 +4118,14 @@ ul li::before {
   list-style: none;
   content: ""; }
 
+.client-info-box li::before {
+  list-style: none;
+  content: ""; }
+
+.calenderDetails li {
+  list-style: none;
+  content: ""; }
+
 .media-contact-styling p {
   margin-bottom: 0.5rem; }
 
@@ -5508,7 +5516,12 @@ ul.options > li {
 
 @media (min-width: 768px) {
   .dropdownTwo {
-    left: 0 !important; } }
+    left: 0 !important;
+    margin-top: 0; } }
+
+@media (min-width: 992px) {
+  .dropdownTwo {
+    left: -41px !important; } }
 
 .caseStudy .dropdown-menu {
   border: 1px solid rgba(0, 0, 0, 0.15) !important;
@@ -7517,10 +7530,10 @@ span.navbar-toggler-icon::before {
 .courseCalender .label {
   font-weight: 800;
   padding: 0.5rem 2rem;
-  width: 130px; }
+  width: 8.125rem; }
   @media (min-width: 768px) {
     .courseCalender .label {
-      width: 184px; } }
+      width: 11.5rem; } }
 
 .courseCalender .list-inline {
   margin: 0; }
@@ -7539,17 +7552,17 @@ span.navbar-toggler-icon::before {
 
 .courseCalender .city {
   display: inline-block;
-  width: 85px;
+  width: 5.3125rem;
   font-weight: 600; }
   @media (min-width: 768px) {
     .courseCalender .city {
-      width: 139px; } }
+      width: 8.625rem; } }
   @media (min-width: 1200px) {
     .courseCalender .city {
-      width: 145px; } }
+      width: 9.0625rem; } }
 
 .courseCalender .time {
-  width: 137px;
+  width: 8.5625rem;
   display: inline-block; }
 
 .courseCalender .cta-group {
@@ -7561,3 +7574,50 @@ span.navbar-toggler-icon::before {
 .courseCalender .soldOut {
   margin-left: 1.6rem;
   font-weight: 600; }
+
+.calenderDetails {
+  color: #6d7278; }
+  .calenderDetails-rowbg {
+    color: #6d7278;
+    background-color: #ececec;
+    padding: 1rem 0;
+    font-size: 1.125rem; }
+    .calenderDetails-rowbg .heading {
+      font-weight: 800; }
+      @media (min-width: 992px) {
+        .calenderDetails-rowbg .heading {
+          font-size: 1rem; } }
+      @media (min-width: 1200px) {
+        .calenderDetails-rowbg .heading {
+          font-size: 1.125rem; } }
+    @media (min-width: 992px) {
+      .calenderDetails-rowbg .details {
+        font-size: 1rem; } }
+    @media (min-width: 1200px) {
+      .calenderDetails-rowbg .details {
+        font-size: 1.125rem; } }
+    @media (min-width: 992px) {
+      .calenderDetails-rowbg .details {
+        margin-top: 0; } }
+    .calenderDetails-rowbg .price {
+      margin-top: 1.5rem; }
+      @media (min-width: 992px) {
+        .calenderDetails-rowbg .price {
+          margin-top: 0; } }
+  .calenderDetails .tile-box:first-child {
+    padding-top: 2rem;
+    border: none; }
+  .calenderDetails .tile-box {
+    border-top: 1px solid #ececec;
+    padding: 1rem; }
+    @media (min-width: 768px) {
+      .calenderDetails .tile-box {
+        padding: 1rem 0; } }
+  .calenderDetails h4 {
+    color: #F38D1E; }
+  .calenderDetails p {
+    color: #6d7268;
+    font-weight: 400; }
+  .calenderDetails li {
+    color: #6d7278;
+    font-weight: 300; }

@@ -11,9 +11,9 @@
     .label {
         font-weight: 800;
         padding: 0.5rem 2rem;
-        width: 130px;
+        width: 8.125rem;
         @include media (tablet) {
-            width: 184px;
+            width: 11.5rem;
         }
     }
     .list-inline {
@@ -33,27 +33,27 @@
     }
     .city {
         display: inline-block;
-        width: 85px;
+        width: 5.3125rem;
         font-weight: 600;
         @include media (tablet) {
-            width: 139px;
+            width: 8.625rem;
         }
         // @include media (desktop) {
-        //     width: 139px;
+        //     width: 8.6875rem;
         // }
         @include media (xldesktop) {
-            width: 145px;
+            width: 9.0625rem;
         }
     }
     .time {
-        width: 137px;
+        width: 8.5625rem;
         display: inline-block;
     }
     .cta-group {
         margin: 0 -0.5rem;
     }
     @include mobile-only {
-        // font-size: 12px;
+        // font-size: 0.75rem;
     }
     .cta-primary {
         margin-left: 2rem;

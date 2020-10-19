@@ -223,8 +223,10 @@ ul.options>li {
     }
     @include media(tablet) {
         left: 0 !important;
+        margin-top: 0;
     }
     @include media(desktop) {
+        left: -41px !important;
         // transform: translate3d(-5px, 35px, 0px) !important;
     }
 }
