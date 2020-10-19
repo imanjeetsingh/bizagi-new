@@ -4073,9 +4073,6 @@ p {
       font-size: 1.125rem;
       line-height: 1.375rem; } }
 
-ul li {
-  list-style: none; }
-
 .card-body ul li::before {
   content: "\2022";
   color: #f38d1e;
@@ -4096,6 +4093,33 @@ ul li {
   padding: 3px 1px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300; }
+
+ul li::before {
+  content: "\2022";
+  color: #f38d1e;
+  font-weight: bold;
+  width: 1em;
+  position: absolute;
+  margin-left: -1rem; }
+
+.home-header ul li::before {
+  list-style: none;
+  content: ""; }
+
+.inner-header ul li::before {
+  list-style: none;
+  content: ""; }
+
+#foot ul li::before {
+  list-style: none;
+  content: ""; }
+
+.dropdown-menu ul li::before {
+  list-style: none;
+  content: ""; }
+
+.media-contact-styling p {
+  margin-bottom: 0.5rem; }
 
 @media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
@@ -4394,6 +4418,12 @@ ul li {
     @media (min-width: 992px) {
       .inner-header .nav-links-box {
         height: 5.3rem !important; } }
+  @media (min-width: 992px) {
+    .inner-header .multilang-container {
+      margin-top: 1.9rem; } }
+  @media (min-width: 1200px) {
+    .inner-header .multilang-container {
+      margin-top: 0; } }
   .inner-header .multilang-dropdown {
     color: #888;
     margin-bottom: 0.5rem;
@@ -6421,7 +6451,8 @@ img[alt] {
       margin-left: -1rem; } }
   @media (min-width: 1200px) {
     .affix .logo-grey {
-      margin-left: 0.625rem; } }
+      margin-left: 0.625rem;
+      margin-top: 0; } }
 
 @media (min-width: 992px) {
   .affix .headerLogo-link {

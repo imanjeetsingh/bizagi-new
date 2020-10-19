@@ -140,7 +140,14 @@
         }
     }
     .multilang {
-        &-container {}
+        &-container {
+            @include media(desktop){
+                margin-top: 1.9rem;
+            }
+            @include media(xldesktop){
+                margin-top: 0;
+            }
+        }
         &-dropdown {
             color: #888;
             margin-bottom: 0.5rem;
