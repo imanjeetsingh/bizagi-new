@@ -135,6 +135,10 @@
     .dropdown:hover .dropdown-menu {
         @include media(tablet) {
             margin-top: 0;
+            margin-left: -2rem;
+        }
+        @include media(desktop) {
+            margin-left: 0;
         }
         @include media(xldesktop) {
             display: block;
@@ -175,26 +179,26 @@ ul.options>li {
     .element-item {
         position: relative;
         float: left;
-        width: 350px;
-        height: 350px;
-        margin: 5px;
+        width: 21.875rem;
+        height: 21.875rem;
+        margin: 0.3125rem;
         padding: 10px;
         @include media(tablet) {
-            padding: 5px;
-            margin: 5px;
+            padding: 0.3125rem;
+            margin: 0.3125rem;
             width: 340px;
             height: 340px;
         }
         @include media(desktop) {
             padding: 10px;
-            margin: 5px;
-            width: 300px;
+            margin: 0.3125rem 0.3125rem 0.3125rem 1.25rem;
+            width: 295px;
             height: 400px;
             // position: static !important;
         }
         @include media(xldesktop) {
             padding: 6px;
-            margin: 5px;
+            margin: 0.3125rem;
             width: 370px;
             height: 370px;
         }
@@ -219,6 +223,11 @@ ul.options>li {
     }
     @include media(tablet) {
         left: 0 !important;
+        margin-top: 0;
+    }
+    @include media(desktop) {
+        left: -41px !important;
+        // transform: translate3d(-5px, 35px, 0px) !important;
     }
 }
 
@@ -226,5 +235,12 @@ ul.options>li {
     .dropdown-menu {
         border: 1px solid rgba(0, 0, 0, 0.15) !important;
         border-radius: 0.25rem !important;
+        // transform: translate3d(5px, 35px, 0px)!important;
     }
+}
+
+.no-results {
+    font-size: 1.4rem;
+    color: #4b5c67;
+    font-weight: 600;
 }

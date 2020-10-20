@@ -11,10 +11,10 @@
         .logo {
             &-grey {
                 margin-top: 0;
-                @include media (tablet){
+                @include media (tablet) {
                     margin-top: -3.1875rem !important;
                 }
-                @include media (desktop){
+                @include media (desktop) {
                     margin-top: 0 !important;
                     margin-left: 0;
                 }
@@ -140,7 +140,14 @@
         }
     }
     .multilang {
-        &-container {}
+        &-container {
+            @include media(desktop){
+                margin-top: 1.9rem;
+            }
+            @include media(xldesktop){
+                margin-top: 0;
+            }
+        }
         &-dropdown {
             color: #888;
             margin-bottom: 0.5rem;
@@ -153,7 +160,7 @@
             @include media(tablet) {
                 margin-top: -0.5rem;
             }
-            @include media(desktop){
+            @include media(desktop) {
                 margin-top: -0.5rem;
             }
         }
@@ -171,17 +178,17 @@
     .logo {
         &-grey {
             width: 100%;
-            @include media (desktop){
+            @include media (desktop) {
                 width: 7rem;
             }
         }
         &-white {
             width: 100%;
             margin-left: -1rem;
-            @include media (desktop){
+            @include media (desktop) {
                 margin-left: -2rem;
             }
-            @include media (xldesktop){
+            @include media (xldesktop) {
                 margin-left: 0;
             }
         }
@@ -247,15 +254,37 @@
         }
     }
 }
-.inner-header{
-    .cta-content{
+
+.inner-header {
+    .cta-content {
         margin: 0 0.3125rem;
-        @include media(desktop){
+        @include media(desktop) {
             margin: 0;
         }
-        @include media(xldesktop){
+        @include media(xldesktop) {
             margin: 0 5px;
         }
     }
 }
+
 // update on 23-09-2020 for header glitch fixed
+// css edit for cta alignment in ipad pro view start here
+.inner-header .cta-group {
+    @include media(desktop) {
+        padding-top: 2rem;
+    }
+    @include media(xldesktop) {
+        padding-top: 0;
+    }
+}
+
+.inner-header.affix .cta-group {
+    @include media(desktop) {
+        padding-top: 1rem;
+    }
+    @include media(xldesktop) {
+        padding-top: 0;
+    }
+}
+
+// css edit for cta alignment in ipad pro view start here

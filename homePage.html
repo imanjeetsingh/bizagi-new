@@ -46,6 +46,10 @@
                 $atag.attr('href', '#')
             })
         }
+
+        if (window.screen.width > 1024) {
+            $('.dropdown-toggle').removeAttr('data-toggle');
+        }
     });
 </script>
 

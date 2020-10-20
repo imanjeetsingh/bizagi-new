@@ -4073,9 +4073,6 @@ p {
       font-size: 1.125rem;
       line-height: 1.375rem; } }
 
-ul li {
-  list-style: none; }
-
 .card-body ul li::before {
   content: "\2022";
   color: #f38d1e;
@@ -4096,6 +4093,41 @@ ul li {
   padding: 3px 1px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300; }
+
+ul li::before {
+  content: "\2022";
+  color: #f38d1e;
+  font-weight: bold;
+  width: 1em;
+  position: absolute;
+  margin-left: -1rem; }
+
+.home-header ul li::before {
+  list-style: none;
+  content: ""; }
+
+.inner-header ul li::before {
+  list-style: none;
+  content: ""; }
+
+#foot ul li::before {
+  list-style: none;
+  content: ""; }
+
+.dropdown-menu ul li::before {
+  list-style: none;
+  content: ""; }
+
+.client-info-box li::before {
+  list-style: none;
+  content: ""; }
+
+.calenderDetails li {
+  list-style: none;
+  content: ""; }
+
+.media-contact-styling p {
+  margin-bottom: 0.5rem; }
 
 @media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
@@ -4257,6 +4289,12 @@ ul li {
   font-size: 0.813rem;
   white-space: nowrap;
   color: #54645B; }
+  @media (min-width: 768px) {
+    .dropdown-item {
+      padding: 0.25rem 1rem 0.25rem 1rem !important; } }
+  @media (min-width: 992px) {
+    .dropdown-item {
+      padding: 0.25rem 1.563rem 0.25rem 1.563rem !important; } }
   .dropdown-item:hover {
     background-color: transparent;
     color: #F38D1F; }
@@ -4276,6 +4314,12 @@ ul li {
 .navbar-nav .dropdown-menu {
   width: 16rem;
   border-radius: 0; }
+  @media (min-width: 768px) {
+    .navbar-nav .dropdown-menu {
+      width: 13rem; } }
+  @media (min-width: 992px) {
+    .navbar-nav .dropdown-menu {
+      width: 16rem; } }
 
 #navbarCollapse {
   transition: height 0.4s;
@@ -4382,6 +4426,12 @@ ul li {
     @media (min-width: 992px) {
       .inner-header .nav-links-box {
         height: 5.3rem !important; } }
+  @media (min-width: 992px) {
+    .inner-header .multilang-container {
+      margin-top: 1.9rem; } }
+  @media (min-width: 1200px) {
+    .inner-header .multilang-container {
+      margin-top: 0; } }
   .inner-header .multilang-dropdown {
     color: #888;
     margin-bottom: 0.5rem;
@@ -4466,6 +4516,22 @@ ul li {
   @media (min-width: 1200px) {
     .inner-header .cta-content {
       margin: 0 5px; } }
+
+@media (min-width: 992px) {
+  .inner-header .cta-group {
+    padding-top: 2rem; } }
+
+@media (min-width: 1200px) {
+  .inner-header .cta-group {
+    padding-top: 0; } }
+
+@media (min-width: 992px) {
+  .inner-header.affix .cta-group {
+    padding-top: 1rem; } }
+
+@media (min-width: 1200px) {
+  .inner-header.affix .cta-group {
+    padding-top: 0; } }
 
 #foot {
   background: #005747;
@@ -5211,7 +5277,8 @@ ul li {
     list-style: none; }
     @media (min-width: 992px) {
       .client-info-box {
-        border-right: solid 1px #ccc; } }
+        border-right: solid 1px #ccc;
+        padding: 0 1rem 2rem 0; } }
   .client-info-image {
     width: 100%;
     height: auto; }
@@ -5245,9 +5312,12 @@ ul li {
     min-height: 63px; }
     @media (min-width: 992px) {
       .client-info-detail {
-        margin: -3.75rem 0.625rem 0 0.625rem; } }
+        margin: 0px 0.625rem 18px 0.625rem; } }
     .client-info-detail-box {
       padding: 2.625rem 0.8rem; }
+      @media (min-width: 992px) {
+        .client-info-detail-box {
+          padding: 0.5rem 0.8rem; } }
       @media (min-width: 992px) {
         .client-info-detail-box-inner {
           width: 55rem; } }
@@ -5381,7 +5451,12 @@ ul.options > li {
 
 @media (min-width: 768px) {
   .caseStudy .dropdown:hover .dropdown-menu {
-    margin-top: 0; } }
+    margin-top: 0;
+    margin-left: -2rem; } }
+
+@media (min-width: 992px) {
+  .caseStudy .dropdown:hover .dropdown-menu {
+    margin-left: 0; } }
 
 @media (min-width: 1200px) {
   .caseStudy .dropdown:hover .dropdown-menu {
@@ -5404,26 +5479,26 @@ ul.options > li {
 .caseStudyCard .element-item {
   position: relative;
   float: left;
-  width: 350px;
-  height: 350px;
-  margin: 5px;
+  width: 21.875rem;
+  height: 21.875rem;
+  margin: 0.3125rem;
   padding: 10px; }
   @media (min-width: 768px) {
     .caseStudyCard .element-item {
-      padding: 5px;
-      margin: 5px;
+      padding: 0.3125rem;
+      margin: 0.3125rem;
       width: 340px;
       height: 340px; } }
   @media (min-width: 992px) {
     .caseStudyCard .element-item {
       padding: 10px;
-      margin: 5px;
-      width: 300px;
+      margin: 0.3125rem 0.3125rem 0.3125rem 1.25rem;
+      width: 295px;
       height: 400px; } }
   @media (min-width: 1200px) {
     .caseStudyCard .element-item {
       padding: 6px;
-      margin: 5px;
+      margin: 0.3125rem;
       width: 370px;
       height: 370px; } }
 
@@ -5441,11 +5516,21 @@ ul.options > li {
 
 @media (min-width: 768px) {
   .dropdownTwo {
-    left: 0 !important; } }
+    left: 0 !important;
+    margin-top: 0; } }
+
+@media (min-width: 992px) {
+  .dropdownTwo {
+    left: -41px !important; } }
 
 .caseStudy .dropdown-menu {
   border: 1px solid rgba(0, 0, 0, 0.15) !important;
   border-radius: 0.25rem !important; }
+
+.no-results {
+  font-size: 1.4rem;
+  color: #4b5c67;
+  font-weight: 600; }
 
 .newsList {
   padding: 0 1.5625rem; }
@@ -6227,7 +6312,11 @@ img[alt] {
       margin-bottom: 8px; } }
   @media (min-width: 992px) {
     .home-header .multilang-container {
-      margin-left: 2rem; } }
+      margin-left: 2rem;
+      margin-top: 1.7rem; } }
+  @media (min-width: 1200px) {
+    .home-header .multilang-container {
+      margin-top: 0; } }
 
 .home-header .multilang-dropdown {
   color: #ffffff; }
@@ -6248,6 +6337,10 @@ img[alt] {
       margin-top: 0rem;
       margin-left: 0; } }
 
+@-moz-document url-prefix() {
+  .home-header .logo-grey {
+    width: 7rem; } }
+
 .home-header .logo-white {
   display: block;
   width: 100%;
@@ -6258,6 +6351,10 @@ img[alt] {
   @media (min-width: 1200px) {
     .home-header .logo-white {
       margin-left: 0; } }
+
+@-moz-document url-prefix() {
+  .home-header .logo-white {
+    width: 7rem; } }
 
 @media (min-width: 992px) {
   .home-header .headerLogo-link {
@@ -6364,11 +6461,12 @@ img[alt] {
       margin-top: 3rem; } }
   @media (min-width: 992px) {
     .affix .logo-grey {
-      margin-top: -1rem;
+      margin-top: -3rem;
       margin-left: -1rem; } }
   @media (min-width: 1200px) {
     .affix .logo-grey {
-      margin-left: 0.625rem; } }
+      margin-left: 0.625rem;
+      margin-top: 0; } }
 
 @media (min-width: 992px) {
   .affix .headerLogo-link {
@@ -6393,6 +6491,22 @@ span.navbar-toggler-icon::before {
   color: #ccc;
   font-size: 1.875rem;
   font-weight: 300; }
+
+@media (min-width: 992px) {
+  .home-header .cta-group {
+    padding-top: 2rem; } }
+
+@media (min-width: 1200px) {
+  .home-header .cta-group {
+    padding-top: 0; } }
+
+@media (min-width: 992px) {
+  .home-header.affix .cta-group {
+    padding-top: 1rem; } }
+
+@media (min-width: 1200px) {
+  .home-header.affix .cta-group {
+    padding-top: 0; } }
 
 .sap-container li {
   font-family: "Open Sans", sans-serif;
@@ -7405,3 +7519,105 @@ span.navbar-toggler-icon::before {
     @media (min-width: 1200px) {
       .learning-journeys-box-grey {
         padding: 8px 25px 8px 25px; } }
+
+.courseCalender .eventsBody {
+  color: #6d7278; }
+
+.courseCalender .title {
+  font-weight: 800;
+  margin-bottom: 1rem; }
+
+.courseCalender .label {
+  font-weight: 800;
+  padding: 0.5rem 2rem;
+  width: 8.125rem; }
+  @media (min-width: 768px) {
+    .courseCalender .label {
+      width: 11.5rem; } }
+
+.courseCalender .list-inline {
+  margin: 0; }
+
+.courseCalender .list-inline > li {
+  padding: 0.5rem 0 0.5rem 2rem; }
+
+.courseCalender td {
+  padding: 0 3rem 0 1rem; }
+  @media (min-width: 768px) {
+    .courseCalender td {
+      padding: 0; } }
+  @media (min-width: 992px) {
+    .courseCalender td {
+      padding: 0 3rem 0 2rem; } }
+
+.courseCalender .city {
+  display: inline-block;
+  width: 5.3125rem;
+  font-weight: 600; }
+  @media (min-width: 768px) {
+    .courseCalender .city {
+      width: 8.625rem; } }
+  @media (min-width: 1200px) {
+    .courseCalender .city {
+      width: 9.0625rem; } }
+
+.courseCalender .time {
+  width: 8.5625rem;
+  display: inline-block; }
+
+.courseCalender .cta-group {
+  margin: 0 -0.5rem; }
+
+.courseCalender .cta-primary {
+  margin-left: 2rem; }
+
+.courseCalender .soldOut {
+  margin-left: 1.6rem;
+  font-weight: 600; }
+
+.calenderDetails {
+  color: #6d7278; }
+  .calenderDetails-rowbg {
+    color: #6d7278;
+    background-color: #ececec;
+    padding: 1rem 0;
+    font-size: 1.125rem; }
+    .calenderDetails-rowbg .heading {
+      font-weight: 800; }
+      @media (min-width: 992px) {
+        .calenderDetails-rowbg .heading {
+          font-size: 1rem; } }
+      @media (min-width: 1200px) {
+        .calenderDetails-rowbg .heading {
+          font-size: 1.125rem; } }
+    @media (min-width: 992px) {
+      .calenderDetails-rowbg .details {
+        font-size: 1rem; } }
+    @media (min-width: 1200px) {
+      .calenderDetails-rowbg .details {
+        font-size: 1.125rem; } }
+    @media (min-width: 992px) {
+      .calenderDetails-rowbg .details {
+        margin-top: 0; } }
+    .calenderDetails-rowbg .price {
+      margin-top: 1.5rem; }
+      @media (min-width: 992px) {
+        .calenderDetails-rowbg .price {
+          margin-top: 0; } }
+  .calenderDetails .tile-box:first-child {
+    padding-top: 2rem;
+    border: none; }
+  .calenderDetails .tile-box {
+    border-top: 1px solid #ececec;
+    padding: 1rem; }
+    @media (min-width: 768px) {
+      .calenderDetails .tile-box {
+        padding: 1rem 0; } }
+  .calenderDetails h4 {
+    color: #F38D1E; }
+  .calenderDetails p {
+    color: #6d7268;
+    font-weight: 400; }
+  .calenderDetails li {
+    color: #6d7278;
+    font-weight: 300; }

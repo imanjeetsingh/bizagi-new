@@ -28,38 +28,37 @@
             </div>
             <div id="options" class="dropdown col-6 col-md-6 col-lg-4 mt-3 mt-lg-0">
                 <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown">
-            <span class="cta-content">Filter by Content type</span>
-            <span class="cta-icon-box">
-              <i class="fa fa-caret-down" aria-hidden="true"></i>
-            </span>
-          </button>
+                    <span class="cta-content">Filter by Content type</span>
+                    <span class="cta-icon-box">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                </button>
                 <div class="dropdown-menu">
                     <div class="option-set" data-group="industry">
                         <ul class="options">
                             <!-- <li class="input-all"><input class="all" type="checkbox" value=".all-resources" id="all-resources"><label for="all-resources">All Resources</label></li> -->
                             <li>
-                                <input type="checkbox" value=".guide" id="guide" />
+                                <input class="filteringList" type="checkbox" value=".guide" id="guide" />
                                 <label for="guide">Guide</label>
                             </li>
                             <li>
-                                <input type="checkbox" value=".analystReport" id="analystReport" />
+                                <input class="filteringList" type="checkbox" value=".analystReport" id="analystReport" />
                                 <label for="analystReport">Analyst Report</label>
                             </li>
                             <li>
-                                <input type="checkbox" value=".whitepaper" id="whitepaper" />
+                                <input class="filteringList" type="checkbox" value=".whitepaper" id="whitepaper" />
                                 <label for="whitepaper">Whitepaper</label>
                             </li>
                             <li>
-                                <input type="checkbox" value=".professionalServices" id="professionalServices" />
-                                <label for="professionalServices">Professional Services</label
-                  >
-                </li>
-                <li>
-                  <input type="checkbox" value=".ebook" id="ebook" />
-                  <label for="ebook">Ebook</label>
+                                <input class="filteringList" type="checkbox" value=".professionalServices" id="professionalServices" />
+                                <label for="professionalServices">Professional Services</label>
                             </li>
                             <li>
-                                <input type="checkbox" value=".factsheet" id="factsheet" />
+                                <input class="filteringList" type="checkbox" value=".ebook" id="ebook" />
+                                <label for="ebook">Ebook</label>
+                            </li>
+                            <li>
+                                <input class="filteringList" type="checkbox" value=".factsheet" id="factsheet" />
                                 <label for="factsheet">Factsheet</label>
                             </li>
                         </ul>
@@ -67,6 +66,9 @@
                 </div>
             </div>
             <p id="dropdownValue">
+                <span class="filteringLabel">You're filtering by</span>
+                <span id="valueContent"></span>
+                <span class="filteringLabel">Solutions</span>
             </p>
             <div class="container">
                 <div class="row grid contentCenterCard" id="cardviewlist">
@@ -90,8 +92,8 @@
                                         <a href="#" class="cta cta-default cta-icon-right">
                                             <span class="cta-content">Download </span>
                                             <span class="cta-icon-box">
-                          <i class="cta-icon fa fa-arrow-right"></i>
-                        </span>
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
@@ -117,8 +119,8 @@
                                         <a href="#" class="cta cta-default cta-icon-right">
                                             <span class="cta-content">Download </span>
                                             <span class="cta-icon-box">
-                          <i class="cta-icon fa fa-arrow-right"></i>
-                        </span>
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
@@ -144,8 +146,8 @@
                                         <a href="#" class="cta cta-default cta-icon-right">
                                             <span class="cta-content">Download </span>
                                             <span class="cta-icon-box">
-                          <i class="cta-icon fa fa-arrow-right"></i>
-                        </span>
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
@@ -171,8 +173,8 @@
                                         <a href="#" class="cta cta-default cta-icon-right">
                                             <span class="cta-content">Download </span>
                                             <span class="cta-icon-box">
-                          <i class="cta-icon fa fa-arrow-right"></i>
-                        </span>
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
@@ -198,8 +200,8 @@
                                         <a href="#" class="cta cta-default cta-icon-right">
                                             <span class="cta-content">Download </span>
                                             <span class="cta-icon-box">
-                          <i class="cta-icon fa fa-arrow-right"></i>
-                        </span>
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
@@ -207,29 +209,39 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="no-results">No Results</div>
             </div>
         </div>
-        <div class="no-results">No Results</div>
     </div>
 </body>
 
 <script>
-    function checkResults() {
-        var visibleItemsCount = $container.data("isotope").$filteredAtoms.length;
-
-        if (visibleItemsCount > 0) {
-            $(".no-results").hide();
-        } else {
-            $(".no-results").show();
-        }
-    }
+    // function checkResults() {
+    //     var visibleItemsCount = $container.data("isotope").$element-item.length;
+    //     if (visibleItemsCount > 0) {
+    //         $(".no-results").hide();
+    //     } else {
+    //         $(".no-results").show();
+    //     }
+    // }
 
     $('.options').on('click', function() {
         var array = [];
         $("input:checked").each(function() {
             array.push($(this).val());
         });
-        $('#dropdownValue').text(array);
+        var test = document.getElementById("valueContent");
+        $('#valueContent').text(array);
+        test.innerHTML = array.join('&nbsp;or&nbsp;');
+    });
+    $(".filteringLabel").hide();
+    $(".filteringList").click(function() {
+        if ($(this).is(":checked")) {
+            $(".filteringLabel").show();
+        } else {
+            $(".filteringLabel").hide();
+        }
     });
 </script>
 
