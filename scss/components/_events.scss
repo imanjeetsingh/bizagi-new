@@ -2,6 +2,7 @@
     z-index: 1;
     position: relative;
 }
+
 .tag-box-v2 {
     background: #fafafa;
     border: solid 1px #eee;
@@ -9,6 +10,7 @@
     padding: 20px;
     margin-bottom: 30px;
 }
+
 // .box-shadow::after, .box-shadow::before {
 //     top: 80%;
 //     left: 5px;
@@ -20,7 +22,6 @@
 //     background: #999;
 //     position: absolute;
 // }
-
 // .shadow-effect-2:after, .shadow-effect-4:after {
 //     left: auto;
 //     right: 5px;
@@ -36,6 +37,7 @@
     text-align: center!important;
     line-height: 1!important;
 }
+
 .eventsDateBadge p span {
     font-size: 14px;
     font-weight: bold;
@@ -45,10 +47,13 @@
     border-radius: 3px;
     padding: 6px 0 6px 0!important;
 }
+
 .eventsDateBadge p span {
     background: #F28C20;
 }
-.btn-group-xs>.btn, .btn-xs {
+
+.btn-group-xs>.btn,
+.btn-xs {
     background-color: #F28C20;
     color: #ffffff;
     border: solid 2px #F28C20;
@@ -57,66 +62,85 @@
     line-height: 1.5;
     border-radius: 3px;
 }
+
 .btn-primary:hover {
     color: #ffffff;
     background: #dc7000;
     border: solid 2px #dc7000;
 }
+
 .list-inline>li {
     display: inline-block;
     padding-right: 5px;
     padding-left: 5px;
 }
 
-.eventsListItem p{
+.eventsListItem p {
     font-size: .825rem;
 }
+
 .eventsInfoDate {
-	display: inline-block;
-	width: 10%;
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-    vertical-align:top;
+    display: inline-block;
+    width: 10%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    vertical-align: top;
     margin-top: 0;
 }
+
 .eventsDateBadge {
-	width: 50px;
-	height: 54px;
-	background: #fcfcfc;
-	border: 1px solid #F28C20;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
+    width: 50px;
+    height: 54px;
+    background: #fcfcfc;
+    border: 1px solid #F28C20;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
     padding: 4px;
     margin-bottom: 1.25rem;
     margin-left: -15px;
-    @include media(tablet){
+    @include media(tablet) {
         margin-bottom: 20px;
         margin-top: 23px;
     }
-    @include media(desktop){
+    @include media(desktop) {
         margin-top: 0;
         margin-left: 0;
     }
 }
+
 .eventsBody {
     display: inline-block;
     width: 100%;
     position: relative;
     min-height: 1px;
-    @include media (desktop){
+    @include media (desktop) {
         width: 89%;
     }
 }
+
 .fc-today {
     background-color: #F28C20 !important;
 }
+
 .fc-header {
     background-color: #ccc;
 }
-.fc-widget-header{
+
+.fc-widget-header {
     height: 3.125rem;
     background-color: #eee;
 }
 
+.fc-event-skin {
+    border-color: #F28C20 !important;
+    background-color: #F28C20 !important;
+    color: #ffffff;
+}
+
+.fc-event-skin {
+    &:hover {
+        text-decoration: none;
+    }
+}

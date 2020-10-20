@@ -18,6 +18,8 @@
     height: 100%;
     padding: 0;
     display: none;
+    object-fit: cover;
+    object-position: center;
     @include media(desktop) {
         display: block;
     }
@@ -28,7 +30,7 @@
     padding: 0;
 }
 
-.green {
+.green-studio {
     background-color: #BBCC33;
     // padding: 0;
 }
@@ -41,4 +43,12 @@
 .white {
     background-color: #ffffff;
     // padding: 0;
+}
+
+.teal {
+    background-color: #009F9A;
+}
+
+.green {
+    background-color: #005346;
 }
