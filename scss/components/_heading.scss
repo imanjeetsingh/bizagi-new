@@ -154,3 +154,8 @@
                         margin-bottom: 0.5rem;
                     }
                 }
+                
+                .eventsBody .list-inline li::before {
+                    list-style: none;
+                    content: "";
+                }

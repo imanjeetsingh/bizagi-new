@@ -4132,6 +4132,10 @@ ul li::before {
 .newsDetail .media-contact-styling p {
   margin-bottom: 0.5rem; }
 
+.eventsBody .list-inline li::before {
+  list-style: none;
+  content: ""; }
+
 @media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
     display: none; }
@@ -7529,18 +7533,36 @@ span.navbar-toggler-icon::before {
       .learning-journeys-box-grey {
         padding: 8px 25px 8px 25px; } }
 
+.carrers-content {
+  padding: 3.75rem; }
+  .carrers-content-white {
+    color: #ffffff; }
+  .carrers-content-grey {
+    color: #6D7278; }
+  .carrers-content p {
+    font-weight: 400; }
+
 .carrersImage {
   width: 100%;
-  height: auto;
-  padding: 0; }
+  height: 100%;
+  padding: 0;
+  display: none; }
+  @media (min-width: 992px) {
+    .carrersImage {
+      display: block; } }
 
-.carrersImageTwo {
+.carrersImageparent {
   object-fit: cover;
-  padding: 01; }
-
-.content {
-  background-color: #BBCC33;
   padding: 0; }
+
+.green {
+  background-color: #BBCC33; }
+
+.orange {
+  background-color: #F28C20; }
+
+.white {
+  background-color: #ffffff; }
 
 .courseCalender .eventsBody {
   color: #6d7278; }
