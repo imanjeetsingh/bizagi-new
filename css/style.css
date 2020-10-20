@@ -5534,6 +5534,10 @@ ul.options > li {
   .dropdownTwo {
     left: 0px !important; } }
 
+@media (max-width: 767px) {
+  .dropdownOne {
+    transform: translate3d(15px, 35px, 0px) !important; } }
+
 .caseStudy .dropdown-menu {
   border: 1px solid rgba(0, 0, 0, 0.15) !important;
   border-radius: 0.25rem !important; }
@@ -7608,13 +7612,13 @@ span.navbar-toggler-icon::before {
   font-weight: 600; }
   @media (min-width: 768px) {
     .courseCalender .city {
-      width: 10.625rem; } }
+      width: 8.625rem; } }
   @media (min-width: 1200px) {
     .courseCalender .city {
       width: 9.0625rem; } }
 
 .courseCalender .time {
-  width: 8.625rem;
+  width: 10.625rem;
   display: inline-block; }
 
 .courseCalender .cta-group {

@@ -36,7 +36,7 @@
         width: 5.3125rem;
         font-weight: 600;
         @include media (tablet) {
-            width: 10.625rem;
+            width: 8.625rem;
         }
         // @include media (desktop) {
         //     width: 8.6875rem;
@@ -46,7 +46,7 @@
         }
     }
     .time {
-        width: 8.625rem;
+        width: 10.625rem;
         display: inline-block;
     }
     .cta-group {

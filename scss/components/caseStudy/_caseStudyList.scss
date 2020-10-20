@@ -234,11 +234,12 @@ ul.options>li {
     }
 }
 
-// .dropdownOne {
-//     @include mobile-only {
-//         transform: translate3d(15px, 35px, 0px) !important;
-//     }
-// }
+.dropdownOne {
+    @include mobile-only {
+        transform: translate3d(15px, 35px, 0px) !important;
+    }
+}
+
 .caseStudy {
     .dropdown-menu {
         border: 1px solid rgba(0, 0, 0, 0.15) !important;
