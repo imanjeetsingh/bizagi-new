@@ -13,8 +13,7 @@
     background: -webkit-linear-gradient(top left, rgb(0, 87, 71) 0%, rgb(0, 172, 161) 100%);
     background: -o-linear-gradient(to bottom right, rgb(0, 87, 71) 0%, rgb(0, 172, 161) 100%);
     background: linear-gradient(to bottom right, rgb(0, 87, 71) 0%, rgb(0, 172, 161) 100%);
-    margin-top: 4.5rem; 
-      
+    margin-top: 4.5rem;
 }
 
 .footer {
@@ -40,8 +39,11 @@
             width: auto;
         }
         &-box {
-            @include media(desktop) {
+            @include media(xldesktop) {
                 margin-right: 8rem;
+            }
+            @include media(desktop) {
+                margin-right: 6rem;
             }
             @include mobile-only {
                 margin-bottom: 3rem;
