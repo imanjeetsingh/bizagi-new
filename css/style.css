@@ -4118,16 +4118,23 @@ ul li::before {
   list-style: none;
   content: ""; }
 
-.client-info-box li::before {
+.newsDetail ul li {
+  list-style: none; }
+
+.newsDetail .client-info-box li::before {
   list-style: none;
   content: ""; }
 
-.calenderDetails li {
+.newsDetail .calenderDetails li {
   list-style: none;
   content: ""; }
 
-.media-contact-styling p {
+.newsDetail .media-contact-styling p {
   margin-bottom: 0.5rem; }
+
+.eventsBody .list-inline li::before {
+  list-style: none;
+  content: ""; }
 
 @media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
@@ -5849,7 +5856,7 @@ a {
         height: 90% !important; } }
     @media (min-width: 992px) {
       .banner-bg-height {
-        height: 35% !important; } }
+        height: 37% !important; } }
     @media (min-width: 1200px) {
       .banner-bg-height {
         top: 2rem !important;
@@ -6816,6 +6823,9 @@ span.navbar-toggler-icon::before {
 .contentCenterCard .element-item {
   position: static !important; }
 
+.no-results {
+  display: none; }
+
 @media (min-width: 992px) {
   .bizagi-popup .modal-lg {
     width: 900px; } }
@@ -7336,8 +7346,11 @@ span.navbar-toggler-icon::before {
     top: 3.9375rem;
     border-top: 1px solid #dcdcdc; }
   .stepper-heading {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 800; }
+    @media (min-width: 768px) {
+      .stepper-heading {
+        font-size: 1.125rem; } }
   .stepper-image {
     height: 5.9375rem !important;
     width: auto !important; }
@@ -7527,6 +7540,37 @@ span.navbar-toggler-icon::before {
     @media (min-width: 1200px) {
       .learning-journeys-box-grey {
         padding: 8px 25px 8px 25px; } }
+
+.carrers-content {
+  padding: 3.75rem; }
+  .carrers-content-white {
+    color: #ffffff; }
+  .carrers-content-grey {
+    color: #6D7278; }
+  .carrers-content p {
+    font-weight: 400; }
+
+.carrersImage {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: none; }
+  @media (min-width: 992px) {
+    .carrersImage {
+      display: block; } }
+
+.carrersImageparent {
+  object-fit: cover;
+  padding: 0; }
+
+.green {
+  background-color: #BBCC33; }
+
+.orange {
+  background-color: #F28C20; }
+
+.white {
+  background-color: #ffffff; }
 
 .courseCalender .eventsBody {
   color: #6d7278; }
