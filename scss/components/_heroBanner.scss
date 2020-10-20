@@ -2,17 +2,16 @@
 .banner {
     &-bg {
         margin-bottom: 6rem;
-        @include media(tablet){
+        @include media(tablet) {
             margin-bottom: 8rem;
         }
-        @include media(desktop){
+        @include media(desktop) {
             margin-bottom: 6rem;
         }
         &-row {
             padding-top: 0rem;
-            @include media(tablet){
+            @include media(tablet) {
                 padding-top: 3rem;
-                
             }
             @include media(desktop) {
                 // padding-top: 6rem;
@@ -27,11 +26,13 @@
                 height: 90% !important;
             }
             @include media(desktop) {
-                height: 35% !important;
+                // height: 35% !important;
+                height: 37% !important;
             }
             @include media(xldesktop) {
                 top: 2rem !important;
                 height: 65% !important;
+                // height: 72% !important;
             }
         }
         &-image {
@@ -67,7 +68,7 @@
                 color: #009E99;
             }
         }
-        p{
+        p {
             color: #ffffff;
         }
     }
@@ -129,16 +130,17 @@
         }
     }
 }
-.navbar-toggler:focus{
+
+.navbar-toggler:focus {
     outline: none !important;
 }
 
-header{
+header {
     height: 7rem;
-    @include media(tablet){
+    @include media(tablet) {
         height: 5rem;
     }
-    @include media(desktop){
+    @include media(desktop) {
         height: 7rem;
     }
 }
