@@ -219,7 +219,7 @@ ul.options>li {
 
 .dropdownTwo {
     @include mobile-only {
-        transform: translate3d(-117px, 38px, 0px) !important;
+        transform: translate3d(-123px, 35px, 0px) !important;
     }
     @include media(tablet) {
         left: 0 !important;
@@ -228,6 +228,15 @@ ul.options>li {
     @include media(desktop) {
         left: -41px !important;
         // transform: translate3d(-5px, 35px, 0px) !important;
+    }
+    @include media(xldesktop) {
+        left: 0px !important;
+    }
+}
+
+.dropdownOne {
+    @include mobile-only {
+        transform: translate3d(15px, 35px, 0px) !important;
     }
 }
 

@@ -5522,7 +5522,7 @@ ul.options > li {
 
 @media (max-width: 767px) {
   .dropdownTwo {
-    transform: translate3d(-117px, 38px, 0px) !important; } }
+    transform: translate3d(-123px, 35px, 0px) !important; } }
 
 @media (min-width: 768px) {
   .dropdownTwo {
@@ -5532,6 +5532,14 @@ ul.options > li {
 @media (min-width: 992px) {
   .dropdownTwo {
     left: -41px !important; } }
+
+@media (min-width: 1200px) {
+  .dropdownTwo {
+    left: 0px !important; } }
+
+@media (max-width: 767px) {
+  .dropdownOne {
+    transform: translate3d(15px, 35px, 0px) !important; } }
 
 .caseStudy .dropdown-menu {
   border: 1px solid rgba(0, 0, 0, 0.15) !important;
@@ -5550,6 +5558,9 @@ ul.options > li {
   @media (min-width: 992px) {
     .newsList {
       margin: 0 auto;
+      width: 85%; } }
+  @media (min-width: 1200px) {
+    .newsList {
       width: 60%; } }
   .newsList-heading {
     font-size: 3rem; }
@@ -5582,7 +5593,8 @@ ul.options > li {
   .newsDetail-heading {
     font-size: 1.125rem;
     line-height: 1.375rem;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-top: 2rem; }
   .newsDetail-subHeading {
     font-size: 1.125rem;
     line-height: 1.375rem;
@@ -7626,7 +7638,7 @@ span.navbar-toggler-icon::before {
       width: 9.0625rem; } }
 
 .courseCalender .time {
-  width: 8.5625rem;
+  width: 10.625rem;
   display: inline-block; }
 
 .courseCalender .cta-group {
