@@ -122,7 +122,14 @@
                     </div>
                 </div>
             </div>
-
+            <p id="dropdownValue">
+                <span class="filteringLabel" style="font-weight: bold;">You're filtering by</span>
+                <span id="valueContent"></span>
+                <span class="filteringLabel" style="font-weight: bold;">Industries</span>
+                <span class="filteringLabel2" style="font-weight: bold;">with</span>
+                <span id="valueContent2"></span>
+                <span class="filteringLabel2" style="font-weight: bold;">Solutions</span>
+            </p>
             <div class="container">
                 <div class="row grid caseStudyCard" id="cardviewlist">
 
@@ -318,7 +325,63 @@
 
 </body>
 
+<script>
+    $('.dropdown').each(function(i) {
+        $(this).addClass('dropdown' + i);
+    });
 
+    $('.dropdown0').on('click', function() {
+        var array1 = [];
+        $(".dropdown0 input:checked").each(function() {
+            array1.push($(this).next().text());
+        });
+        var test = document.getElementById("valueContent");
+        $('#valueContent').text(array1);
+        test.innerHTML = array1.join('&nbsp;or&nbsp;');
+    });
+
+    $('.dropdown1').on('click', function() {
+        var array = [];
+        $(".dropdown1 input:checked").each(function() {
+            array.push($(this).next().text());
+        });
+        var test = document.getElementById("valueContent2");
+        $('#valueContent2').text(array);
+        test.innerHTML = array.join('&nbsp;or&nbsp;');
+    });
+
+    $(".filteringLabel, .filteringLabel2").hide();
+
+    $(".dropdown0 li input[type=checkbox]").on("click", function() {
+        var count = $(".dropdown0 li input[type=checkbox]:checked").length;
+        if (count > 0) {
+            $(".filteringLabel").show();
+        } else {
+            $(".filteringLabel").hide();
+        }
+    });
+
+    $(".dropdown1 li input[type=checkbox]").on("click", function() {
+        var count = $(".dropdown1 li input[type=checkbox]:checked").length;
+        if (count > 0) {
+            $(".filteringLabel2").show();
+        } else {
+            $(".filteringLabel2").hide();
+        }
+    });
+
+    $(".caseStudy-search-input").on("keyup", function() {
+        setTimeout(function() {
+            var numItems = $('.element-item:visible').length;
+            if (numItems == 0) {
+                $(".no-results").show();
+            } else {
+                $(".no-results").hide();
+            }
+            console.log(numItems);
+        }, 700);
+    });
+</script>
 
 
 <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
