@@ -181,9 +181,13 @@
         font-size: 16px !important;
     }
     .tooltip .tooltiptext {
-        top: 1.2rem;
+        margin-top: 1.2rem;
         font-size: 11px;
         text-align: inherit;
+        width: 8.875rem;
+        @include media (tablet) {
+            width: 11.875rem;
+        }
     }
     // .tooltip .tooltiptext::before {
     //     content: "";

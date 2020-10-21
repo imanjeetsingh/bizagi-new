@@ -18,7 +18,7 @@
     position: absolute;
     z-index: 1;
     right: 0rem;
-    top: 1.5rem;
+    margin-top: 1.5rem;
     font-size: 0.875rem;
     transition: visibility 0.3s linear, opacity 0.3s linear;
 }
@@ -50,6 +50,20 @@
     margin-top: 1rem;
 }
 
+.partnerinfo .tooltip {
+    text-align: right;
+    margin-left: 3rem;
+}
+
+// .info-circle::after {
+//     content: "\f05a";
+//     margin-left: 8px;
+//     font: normal normal normal 18px/1 FontAwesome;
+//     text-rendering: auto;
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+//     transform: translate(0, 0);
+// }
 .case-study-image {
     padding: 1rem 0;
 }

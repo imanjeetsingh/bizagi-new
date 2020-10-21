@@ -50,7 +50,7 @@
                             <div>
                                 <span class="plan__frequency">Paid annually</span>
                                 <span class="tooltip">
-                             <i class="fa fa-info-circle"></i> 
+                             <i class="fa fa-info-circle"> </i> 
                              <a class="tooltiptext">
                                 <div>Don&#39;t have access to a corporate credit card? Please use a private card and claim the cost in your expenses. Bizagi is not able to invoice for this subscription service.</div>
                              </a>
@@ -100,7 +100,7 @@
                             <div>
                                 <span class="plan__frequency">Paid annually</span>
                                 <span class="tooltip">
-                             <i class="fa fa-info-circle"></i> 
+                             <i class="fa fa-info-circle"> </i> 
                              <a class="tooltiptext">
                                 <div>Don&#39;t have access to a corporate credit card? Please use a private card and claim the cost in your expenses. Bizagi is not able to invoice for this subscription service.</div>
                              </a>
@@ -199,7 +199,7 @@
             $("#myModal2").on('show.bs.modal', function() {
                 $("#cartoonVideo").attr('src', url2);
             });
-            var url3 = $("#cartoonVideo").attr('src');
+            var url3 = $("#cartoonVideo3").attr('src');
             $("#myModal3").on('hide.bs.modal', function() {
                 $("#cartoonVideo").attr('src', '');
             });
@@ -209,30 +209,5 @@
         });
     </script>
 </body>
-<script>
-    $(document).ready(function() {
-        var url = $("#cartoonVideo").attr('src');
-        $("#myModal").on('hide.bs.modal', function() {
-            $("#cartoonVideo").attr('src', '');
-        });
-        $("#myModal").on('show.bs.modal', function() {
-            $("#cartoonVideo").attr('src', url);
-        });
-        var url2 = $("#cartoonVideo").attr('src');
-        $("#myModal2").on('hide.bs.modal', function() {
-            $("#cartoonVideo").attr('src', '');
-        });
-        $("#myModal2").on('show.bs.modal', function() {
-            $("#cartoonVideo").attr('src', url2);
-        });
-        var url3 = $("#cartoonVideo").attr('src');
-        $("#myModal3").on('hide.bs.modal', function() {
-            $("#cartoonVideo").attr('src', '');
-        });
-        $("#myModal3").on('show.bs.modal', function() {
-            $("#cartoonVideo").attr('src', url3);
-        });
-    });
-</script>
 
 </html>

@@ -5368,7 +5368,7 @@ ul.options > li {
   position: absolute;
   z-index: 1;
   right: 0rem;
-  top: 1.5rem;
+  margin-top: 1.5rem;
   font-size: 0.875rem;
   transition: visibility 0.3s linear, opacity 0.3s linear; }
 
@@ -5392,6 +5392,10 @@ ul.options > li {
   font-weight: 400;
   font-size: 1.125rem;
   margin-top: 1rem; }
+
+.partnerinfo .tooltip {
+  text-align: right;
+  margin-left: 3rem; }
 
 .case-study-image {
   padding: 1rem 0; }
@@ -7301,9 +7305,13 @@ span.navbar-toggler-icon::before {
   font-size: 16px !important; }
 
 .modeler-box .tooltip .tooltiptext {
-  top: 1.2rem;
+  margin-top: 1.2rem;
   font-size: 11px;
-  text-align: inherit; }
+  text-align: inherit;
+  width: 8.875rem; }
+  @media (min-width: 768px) {
+    .modeler-box .tooltip .tooltiptext {
+      width: 11.875rem; } }
 
 .modeler-box .cta {
   margin: 2.2rem 0.7rem 3rem; }
