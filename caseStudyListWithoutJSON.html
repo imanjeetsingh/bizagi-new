@@ -122,17 +122,18 @@
                     </div>
                 </div>
             </div>
+
             <p id="dropdownValue">
-                <span class="filteringLabel" style="font-weight: bold;">You're filtering by</span>
+                <span class="filteringLabel1" style="font-weight: bold;">You're filtering by</span>
                 <span id="valueContent"></span>
-                <span class="filteringLabel" style="font-weight: bold;">Industries</span>
-                <span class="filteringLabel2" style="font-weight: bold;">with</span>
+                <span class="filteringLabel2" style="font-weight: bold;">customers</span>
+                <span class="filteringLabel3" style="font-weight: bold;">with</span>
                 <span id="valueContent2"></span>
-                <span class="filteringLabel2" style="font-weight: bold;">Solutions</span>
+                <span class="filteringLabel4" style="font-weight: bold;">solutions</span>
             </p>
+
             <div class="container">
                 <div class="row grid caseStudyCard" id="cardviewlist">
-
                     <div class="element-item col-12 col-md-4 manufacturingRetail insurance hospitality" data-category="manufacturingRetail insurance hospitality">
                         <div class="card h-100 card-inner">
                             <div class="partnerinfo">
@@ -320,15 +321,32 @@
 
                 </div>
             </div>
+            <div class="no-results">No Results</div>
         </div>
     </div>
 
 </body>
 
-<script>
+
+<!-- <script>
+ 
+    $(".caseStudy-search-input").on("keyup", function() {
+        setTimeout(function() {
+            var numItems = $('.element-item:visible').length;
+            if (numItems == 0) {
+                $(".no-results").show();
+            } else {
+                $(".no-results").hide();
+            }
+            console.log(numItems);
+        }, 700);
+    });
+
     $('.caseStudy .dropdown').each(function(i) {
         $(this).addClass('dropdown' + i);
     });
+
+    $(".filteringLabel1, .filteringLabel2, .filteringLabel3, .filteringLabel4").hide();
 
     $('.dropdown0').on('click', function() {
         var array1 = [];
@@ -338,39 +356,119 @@
         var test = document.getElementById("valueContent");
         $('#valueContent').text(array1);
         test.innerHTML = array1.join('&nbsp;or&nbsp;');
+
+        var boxOne = $(".dropdown0 li input[type=checkbox]:checked").length;
+        var boxTwo = $(".dropdown1 li input[type=checkbox]:checked").length;
+        if (boxOne > 0 && boxTwo == 0) {
+            $(".filteringLabel1, .filteringLabel2").show();
+        } else if (boxOne == 0 && boxTwo > 0) {
+            $(".filteringLabel2, .filteringLabel3").hide();
+        } else if (boxOne > 0 && boxTwo > 0) {
+            $(".filteringLabel1, .filteringLabel2, .filteringLabel3").show();
+        } else if (boxOne == 0 && boxTwo == 0) {
+            $(".filteringLabel1, .filteringLabel2, .filteringLabel3, .filteringLabel4").hide();
+        }
     });
 
-    $('.dropdown1').on('click', function() {
+    $('.dropdown1 li input[type=checkbox]').on('click', function() {
         var array = [];
         $(".dropdown1 input:checked").each(function() {
             array.push($(this).next().text());
         });
+
         var test = document.getElementById("valueContent2");
         $('#valueContent2').text(array);
         test.innerHTML = array.join('&nbsp;or&nbsp;');
-    });
 
-    $(".filteringLabel, .filteringLabel2").hide();
-
-    $(".dropdown0 li input[type=checkbox]").on("click", function() {
-        var count = $(".dropdown0 li input[type=checkbox]:checked").length;
-        if (count > 0) {
-            $(".filteringLabel").show();
-        } else {
-            $(".filteringLabel").hide();
-        }
-    });
-
-    $(".dropdown1 li input[type=checkbox]").on("click", function() {
-        var count = $(".dropdown1 li input[type=checkbox]:checked").length;
-        if (count > 0) {
-            $(".filteringLabel2").show();
-        } else {
+        var boxOne = $(".dropdown0 li input[type=checkbox]:checked").length;
+        var boxTwo = $(".dropdown1 li input[type=checkbox]:checked").length;
+        if (boxOne == 0 && boxTwo > 0) {
+            $(".filteringLabel1, .filteringLabel4").show();
             $(".filteringLabel2").hide();
+        } else if (boxOne > 0 && boxTwo > 0) {
+            $(".filteringLabel1, .filteringLabel3, .filteringLabel4").show();
+        } else if (boxOne == 0 && boxTwo == 0) {
+            $(".filteringLabel1, .filteringLabel3, .filteringLabel4").hide();
+        } else if (boxOne > 0 && boxTwo == 0) {
+            $(".filteringLabel3, .filteringLabel4").hide();
         }
     });
-
+</script> -->
+<script>
+    $(".no-results").hide();
     $(".caseStudy-search-input").on("keyup", function() {
+        setTimeout(function() {
+            var numItems = $('.element-item:visible').length;
+            if (numItems == 0) {
+                $(".no-results").show();
+            } else {
+                $(".no-results").hide();
+            }
+            console.log(numItems);
+        }, 700);
+    });
+
+    $('.caseStudy .dropdown').each(function(i) {
+        $(this).addClass('dropdown' + i);
+    });
+
+    $(".filteringLabel1, .filteringLabel2, .filteringLabel3, .filteringLabel4").hide();
+
+    $('.dropdown0').on('click', function() {
+        var array1 = [];
+        $(".dropdown0 input:checked").each(function() {
+            array1.push($(this).next().text());
+        });
+        var test = document.getElementById("valueContent");
+        $('#valueContent').text(array1);
+        test.innerHTML = array1.join('&nbsp;or&nbsp;');
+
+        var boxOne = $(".dropdown0 li input[type=checkbox]:checked").length;
+        var boxTwo = $(".dropdown1 li input[type=checkbox]:checked").length;
+        if (boxOne > 0 && boxTwo == 0) {
+            $(".filteringLabel1, .filteringLabel2").show();
+        } else if (boxOne == 0 && boxTwo > 0) {
+            $(".filteringLabel2, .filteringLabel3").hide();
+        } else if (boxOne > 0 && boxTwo > 0) {
+            $(".filteringLabel1, .filteringLabel2, .filteringLabel3").show();
+        } else if (boxOne == 0 && boxTwo == 0) {
+            $(".filteringLabel1, .filteringLabel2, .filteringLabel3, .filteringLabel4").hide();
+        }
+
+        setTimeout(function() {
+            var numItems = $('.element-item:visible').length;
+            if (numItems == 0) {
+                $(".no-results").show();
+            } else {
+                $(".no-results").hide();
+            }
+            console.log(numItems);
+        }, 700);
+    });
+
+    $('.dropdown1 li input[type=checkbox]').on('click', function() {
+        var array = [];
+        $(".dropdown1 input:checked").each(function() {
+            array.push($(this).next().text());
+        });
+
+        var test = document.getElementById("valueContent2");
+        $('#valueContent2').text(array);
+        test.innerHTML = array.join('&nbsp;or&nbsp;');
+
+        var boxOne = $(".dropdown0 li input[type=checkbox]:checked").length;
+        var boxTwo = $(".dropdown1 li input[type=checkbox]:checked").length;
+        if (boxOne == 0 && boxTwo > 0) {
+            $(".filteringLabel1, .filteringLabel4").show();
+            $(".filteringLabel2").hide();
+        } else if (boxOne > 0 && boxTwo > 0) {
+            $(".filteringLabel1, .filteringLabel3, .filteringLabel4").show();
+        } else if (boxOne == 0 && boxTwo == 0) {
+            $(".filteringLabel1, .filteringLabel3, .filteringLabel4").hide();
+        } else if (boxOne > 0 && boxTwo == 0) {
+            $(".filteringLabel3, .filteringLabel4").hide();
+        }
+
         setTimeout(function() {
             var numItems = $('.element-item:visible').length;
             if (numItems == 0) {

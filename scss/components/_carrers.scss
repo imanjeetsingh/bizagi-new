@@ -11,6 +11,13 @@
             font-weight: 400;
         }
     }
+    &-section {
+        .contentSection-box {
+            p {
+                text-align: center;
+            }
+        }
+    }
 }
 
 .carrersImage {
@@ -32,23 +39,50 @@
 
 .green-studio {
     background-color: #BBCC33;
-    // padding: 0;
+    h4 {
+        color: #ffffff;
+    }
+    p {
+        color: #ffffff;
+    }
 }
 
 .orange {
     background-color: #F28C20;
-    // padding: 0;
+    h4 {
+        color: #ffffff;
+    }
+    p {
+        color: #ffffff;
+    }
 }
 
 .white {
     background-color: #ffffff;
-    // padding: 0;
+    h4 {
+        color: #6D7278;
+    }
+    p {
+        color: #6D7278;
+    }
 }
 
 .teal {
     background-color: #009F9A;
+    h4 {
+        color: #ffffff;
+    }
+    p {
+        color: #ffffff;
+    }
 }
 
 .green {
     background-color: #005346;
+    h4 {
+        color: #ffffff;
+    }
+    p {
+        color: #ffffff;
+    }
 }
