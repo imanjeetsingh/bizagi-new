@@ -154,6 +154,11 @@ ul li::before {
     content: "";
 }
 
+.nav-tabs li::before {
+    list-style: none;
+    content: "";
+}
+
 .media-contact-styling p {
     margin-bottom: 0.5rem;
 }
