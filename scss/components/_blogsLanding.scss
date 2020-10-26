@@ -1,8 +1,48 @@
 .blog-banner {
-    .banner-heading-box {
-        position: absolute;
-        bottom: 7.42rem;
-        background-color: white;
-        padding: 0;
+    margin-top: 2rem;
+    @include media (xldesktop) {
+        margin: 0;
+    }
+    .banner-heading {
+        font-size: 16px;
+        line-height: 20px;
+        @include media (tablet) {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        @include media (desktop) {
+            font-size: 35px;
+            line-height: 42px;
+        }
+        &-box {
+            position: absolute;
+            bottom: 23.07rem;
+            left: 15px;
+            background-color: white;
+            padding: 0 0 0 5px;
+            width: 80%;
+            @include media (tablet) {
+                bottom: 39.2rem;
+            }
+            @include media (desktop) {
+                bottom: 52.5rem;
+            }
+            @include media (xldesktop) {
+                bottom: 3.97rem;
+            }
+        }
+    }
+    .banner-image-box {
+        position: relative;
+    }
+    p {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 2px;
+        @include media (tablet) {}
+        @include media (desktop) {
+            font-size: 1rem;
+            line-height: 20px;
+        }
     }
 }
