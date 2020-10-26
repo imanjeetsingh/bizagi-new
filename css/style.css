@@ -8665,3 +8665,9 @@ a.clear-results {
   .nextCar,
   .textCar {
     font-size: 11px; } }
+
+.blog-banner .banner-heading-box {
+  position: absolute;
+  bottom: 7.42rem;
+  background-color: white;
+  padding: 0; }
