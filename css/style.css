@@ -7871,10 +7871,6 @@ span.navbar-toggler-icon::before {
     color: #6d7278;
     font-weight: 300; }
 
-html,
-body {
-  overflow: hidden; }
-
 .button-video {
   color: #DDD !important; }
   .button-video:hover {
@@ -7897,7 +7893,9 @@ body {
   color: #fff;
   background: #414141;
   margin: 0;
-  border-bottom: 3px solid #08c; }
+  border-bottom: 3px solid #08c;
+  position: sticky;
+  top: 0; }
 
 #lstVideos {
   margin: 0; }
@@ -7948,14 +7946,14 @@ body {
   border: none; }
   @media (min-width: 768px) {
     .VideoContainer {
-      height: 39.1rem !important; } }
+      height: 100vh !important; } }
 
 .lstContainer {
   width: 100% !important;
-  height: 12rem !important; }
+  height: 100vh !important; }
   @media (min-width: 768px) {
     .lstContainer {
-      height: 39.1rem !important; } }
+      height: 100vh !important; } }
 
 h1,
 h2,
