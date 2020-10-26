@@ -7746,15 +7746,21 @@ span.navbar-toggler-icon::before {
     color: #6d7278;
     font-weight: 300; }
 
-html,
-body {
-  overflow: hidden; }
-
-.button-video {
+/*!
+* Copyright 2013 Bizagi
+*/
+a {
   color: #DDD !important; }
-  .button-video:hover {
-    text-decoration: none !important;
-    color: #999 !important; }
+
+a:hover {
+  text-decoration: none;
+  color: #999; }
+
+#videocontainer {
+  float: left;
+  width: 75%;
+  height: 100%;
+  border: none; }
 
 .lstContainer {
   float: right;
@@ -7800,6 +7806,14 @@ body {
   cursor: pointer;
   background: #2D3747; }
 
+#lstVideos li.featured {
+  background-color: #372F22; }
+
+#lstVideos li.featured a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFF; }
+
 #lstVideos li a span.videoTime {
   font-size: 12px;
   color: #F38A20; }
@@ -7816,18 +7830,17 @@ body {
   margin: 0;
   padding: 0; }
 
-.VideoContainer {
-  width: 100% !important;
-  height: 12rem !important;
-  float: left;
-  border: none; }
-  @media (min-width: 768px) {
-    .VideoContainer {
-      height: 39.1rem !important; } }
-
-.lstContainer {
+.testVideoContainer {
   width: 100% !important;
   height: 12rem !important; }
   @media (min-width: 768px) {
-    .lstContainer {
+    .testVideoContainer {
+      height: 39.1rem !important; } }
+
+.testLstContainer {
+  width: 100% !important;
+  height: 12rem !important;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .testLstContainer {
       height: 39.1rem !important; } }
