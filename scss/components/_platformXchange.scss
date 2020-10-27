@@ -861,3 +861,16 @@ a.clear-results {
         font-size: 11px;
     }
 }
+
+#filterButton {
+    margin-left: 4.5rem;
+    @include media (tablet) {
+        margin-left: 4rem;
+    }
+    @include media (desktop) {
+        margin-left: 7.5rem;
+    }
+    @include media (xldesktop) {
+        margin-left: 10rem;
+    }
+}
