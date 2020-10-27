@@ -18,10 +18,12 @@
             line-height: 42px;
         }
         &-box {
-            left: 15px;
-            padding: 0 0 0 5px;
-            width: 80%;
+            // width: 100%;
+            padding: 0 15px;
             @include media (tablet) {
+                padding: 0 0 0 5px;
+                width: 80%;
+                left: 15px;
                 position: absolute;
                 bottom: 0rem;
                 background-color: white;
@@ -44,6 +46,63 @@
     .cta {
         @include media (xldesktop) {
             padding: 10px 80px;
+        }
+    }
+    .option-set {
+        width: 18rem;
+        padding: 1.25rem 0;
+    }
+    .option-set a {
+        color: #6d7278;
+    }
+    .option-set a:hover {
+        text-decoration: none;
+    }
+    button:focus {
+        outline: none;
+    }
+    .dropdown:hover .dropdown-menu {
+        @include media(tablet) {
+            margin-top: 0;
+            margin-left: -2rem;
+        }
+        @include media(desktop) {
+            margin-left: 0;
+        }
+        @include media(xldesktop) {
+            display: block;
+            margin-top: -2rem;
+        }
+    }
+    .dropdownTwo {
+        @include mobile-only {
+            transform: translate3d(-123px, 35px, 0px) !important;
+        }
+        @include media(tablet) {
+            left: 0 !important;
+            margin-top: 0;
+        }
+        @include media(desktop) {
+            left: -41px !important;
+        }
+        @include media(xldesktop) {
+            left: 0px !important;
+        }
+    }
+    .dropdownOne {
+        @include mobile-only {
+            transform: translate3d(15px, 35px, 0px) !important;
+        }
+        @include media(desktop) {
+            left: -41px !important;
+        }
+        @include media(xldesktop) {
+            left: 0px !important;
+        }
+    }
+    .dropdown-menu.show {
+        @include media(xldesktop) {
+            display: none !important;
         }
     }
 }
