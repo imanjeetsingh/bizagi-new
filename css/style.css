@@ -8671,6 +8671,8 @@ a.clear-results {
   @media (min-width: 1200px) {
     .blog-banner {
       margin: 0; } }
+  .blog-banner-inner {
+    position: relative; }
   .blog-banner .banner-heading {
     font-size: 16px;
     line-height: 20px; }
@@ -8684,13 +8686,13 @@ a.clear-results {
         line-height: 42px; } }
     .blog-banner .banner-heading-box {
       left: 15px;
-      background-color: white;
       padding: 0 0 0 5px;
       width: 80%; }
       @media (min-width: 768px) {
         .blog-banner .banner-heading-box {
           position: absolute;
-          bottom: 0rem; } }
+          bottom: 0rem;
+          background-color: white; } }
   .blog-banner p {
     font-size: 12px;
     line-height: 14px;
@@ -8699,8 +8701,8 @@ a.clear-results {
       .blog-banner p {
         font-size: 1rem;
         line-height: 20px; } }
-  .blog-banner .abc {
-    position: relative; }
+  .blog-banner .blog-cta {
+    justify-content: center; }
   @media (min-width: 1200px) {
     .blog-banner .cta {
       padding: 10px 80px; } }
