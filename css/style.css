@@ -5167,8 +5167,8 @@ ul li::before {
   width: 95%; }
 
 .blogList .article-box {
-  margin: 1.5rem;
-  padding: 0;
+  margin: 1.5rem 0;
+  padding: 0 1.5rem;
   width: 19rem; }
   @media (min-width: 768px) {
     .blogList .article-box {
