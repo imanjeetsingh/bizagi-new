@@ -8706,3 +8706,15 @@ a.clear-results {
   @media (min-width: 1200px) {
     .blog-banner .cta {
       padding: 10px 80px; } }
+
+@media (min-width: 992px) {
+  .vertical-card .card-inner {
+    display: flex;
+    flex-direction: row; } }
+
+.vertical-card .card-img-top {
+  width: 100%;
+  height: 100%; }
+
+.vertical-card-center {
+  justify-content: center; }
