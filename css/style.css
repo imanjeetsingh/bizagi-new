@@ -8685,11 +8685,12 @@ a.clear-results {
         font-size: 35px;
         line-height: 42px; } }
     .blog-banner .banner-heading-box {
-      left: 15px;
-      padding: 0 0 0 5px;
-      width: 80%; }
+      padding: 0 15px; }
       @media (min-width: 768px) {
         .blog-banner .banner-heading-box {
+          padding: 0 0 0 5px;
+          width: 80%;
+          left: 15px;
           position: absolute;
           bottom: 0rem;
           background-color: white; } }
@@ -8718,3 +8719,48 @@ a.clear-results {
 
 .vertical-card-center {
   justify-content: center; }
+  .blog-banner .option-set {
+    width: 18rem;
+    padding: 1.25rem 0; }
+  .blog-banner .option-set a {
+    color: #6d7278; }
+  .blog-banner .option-set a:hover {
+    text-decoration: none; }
+  .blog-banner button:focus {
+    outline: none; }
+  @media (min-width: 768px) {
+    .blog-banner .dropdown:hover .dropdown-menu {
+      margin-top: 0;
+      margin-left: -2rem; } }
+  @media (min-width: 992px) {
+    .blog-banner .dropdown:hover .dropdown-menu {
+      margin-left: 0; } }
+  @media (min-width: 1200px) {
+    .blog-banner .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: -2rem; } }
+  @media (max-width: 767px) {
+    .blog-banner .dropdownTwo {
+      transform: translate3d(-123px, 35px, 0px) !important; } }
+  @media (min-width: 768px) {
+    .blog-banner .dropdownTwo {
+      left: 0 !important;
+      margin-top: 0; } }
+  @media (min-width: 992px) {
+    .blog-banner .dropdownTwo {
+      left: -41px !important; } }
+  @media (min-width: 1200px) {
+    .blog-banner .dropdownTwo {
+      left: 0px !important; } }
+  @media (max-width: 767px) {
+    .blog-banner .dropdownOne {
+      transform: translate3d(15px, 35px, 0px) !important; } }
+  @media (min-width: 992px) {
+    .blog-banner .dropdownOne {
+      left: -41px !important; } }
+  @media (min-width: 1200px) {
+    .blog-banner .dropdownOne {
+      left: 0px !important; } }
+  @media (min-width: 1200px) {
+    .blog-banner .dropdown-menu.show {
+      display: none !important; } }
