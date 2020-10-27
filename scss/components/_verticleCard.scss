@@ -1,0 +1,19 @@
+.vertical-card{
+    .card{
+        &-inner{
+            @include media(desktop){
+                display: flex;
+                flex-direction: row;
+            }
+        }
+        &-img{
+            &-top{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &-center{
+        justify-content: center;
+    }
+}
