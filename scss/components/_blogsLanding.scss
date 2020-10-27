@@ -3,6 +3,9 @@
     @include media (xldesktop) {
         margin: 0;
     }
+    &-inner {
+        position: relative;
+    }
     .banner-heading {
         font-size: 16px;
         line-height: 20px;
@@ -16,23 +19,14 @@
         }
         &-box {
             left: 15px;
-            background-color: white;
             padding: 0 0 0 5px;
             width: 80%;
             @include media (tablet) {
                 position: absolute;
                 bottom: 0rem;
-            }
-            @include media (desktop) {
-                // bottom: 52.5rem;
-            }
-            @include media (xldesktop) {
-                // bottom: 3.97rem;
+                background-color: white;
             }
         }
-    }
-    .banner-image-box {
-        // position: relative;
     }
     p {
         font-size: 12px;
@@ -44,8 +38,8 @@
             line-height: 20px;
         }
     }
-    .abc {
-        position: relative;
+    .blog-cta {
+        justify-content: center;
     }
     .cta {
         @include media (xldesktop) {
