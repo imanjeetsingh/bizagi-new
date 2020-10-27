@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./fonts.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -202,7 +203,7 @@
         </div>
     </header>
     <div class="container-fluid blog-banner">
-        <div class="row">
+        <div class="row abc">
             <div class="col-12 banner-image-box">
                 <img class="banner-image" src="./images/black screen.jpg">
             </div>
@@ -212,7 +213,55 @@
                 </p>
             </div>
         </div>
-    </div>
+
+
+
+
+
+        <div class="row mt-5">
+
+            <div id="options" class="dropdown col-6 col-md-3 offset-md-2 offset-xl-3   mt-3 mt-lg-0">
+                <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="cta-content">Filter by Industries</span>
+                    <span class="cta-icon-box">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+                <div class="dropdown-menu">
+                    <div class="option-set" data-group="industry">
+                        <ul class="options">
+                            <li><a href="">Financial Services</a></li>
+                            <li><a href="">Insurance</a></li>
+                            <li><a href="">Government & Public Sector</a></li>
+                            <li><a href="">Manufacturing</a></li>
+                            <li><a href="">Healthcare</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="options" class="dropdown col-6 col-md-3 offset-md-1 mt-3 mt-lg-0">
+                <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="cta-content">Filter by Topics</span>
+                    <span class="cta-icon-box">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+                <div class="dropdown-menu">
+                    <div class="option-set" data-group="industry">
+                        <ul class="options">
+                            <li><a href="">Use Cases</a></li>
+                            <li><a href="">Intelligent Process Automation</a></li>
+                            <li><a href="">Digital Process Automation</a></li>
+                            <li><a href="">Robotic Process Automation</a></li>
+                            <li><a href="">Digital Transformation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 </body>
 
 </html>

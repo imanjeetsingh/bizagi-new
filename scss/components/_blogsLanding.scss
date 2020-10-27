@@ -15,25 +15,24 @@
             line-height: 42px;
         }
         &-box {
-            position: absolute;
-            bottom: 23.07rem;
             left: 15px;
             background-color: white;
             padding: 0 0 0 5px;
             width: 80%;
             @include media (tablet) {
-                bottom: 39.2rem;
+                position: absolute;
+                bottom: 0rem;
             }
             @include media (desktop) {
-                bottom: 52.5rem;
+                // bottom: 52.5rem;
             }
             @include media (xldesktop) {
-                bottom: 3.97rem;
+                // bottom: 3.97rem;
             }
         }
     }
     .banner-image-box {
-        position: relative;
+        // position: relative;
     }
     p {
         font-size: 12px;
@@ -43,6 +42,14 @@
         @include media (desktop) {
             font-size: 1rem;
             line-height: 20px;
+        }
+    }
+    .abc {
+        position: relative;
+    }
+    .cta {
+        @include media (xldesktop) {
+            padding: 10px 80px;
         }
     }
 }
