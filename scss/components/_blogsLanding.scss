@@ -44,9 +44,19 @@
         justify-content: center;
     }
     .cta {
+        padding: 0.15rem;
+        margin: 0 -41px 32px 0;
+        @include media (tablet) {
+            padding: 10px 20px;
+            margin: 0;
+        }
         @include media (xldesktop) {
             padding: 10px 80px;
+            // margin: 0;
         }
+    }
+    ul.options>li {
+        padding-top: 5px;
     }
     .option-set {
         width: 18rem;
@@ -71,12 +81,12 @@
         }
         @include media(xldesktop) {
             display: block;
-            margin-top: -2rem;
+            margin: 0 0 0 1rem;
         }
     }
     .dropdownTwo {
         @include mobile-only {
-            transform: translate3d(-123px, 35px, 0px) !important;
+            transform: translate3d(-123px, 46px, 0px) !important;
         }
         @include media(tablet) {
             left: 0 !important;
@@ -91,7 +101,7 @@
     }
     .dropdownOne {
         @include mobile-only {
-            transform: translate3d(15px, 35px, 0px) !important;
+            transform: translate3d(15px, 46px, 0px) !important;
         }
         @include media(desktop) {
             left: -41px !important;
