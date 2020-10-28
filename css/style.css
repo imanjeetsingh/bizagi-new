@@ -8707,18 +8707,6 @@ a.clear-results {
   @media (min-width: 1200px) {
     .blog-banner .cta {
       padding: 10px 80px; } }
-
-@media (min-width: 992px) {
-  .vertical-card .card-inner {
-    display: flex;
-    flex-direction: row; } }
-
-.vertical-card .card-img-top {
-  width: 100%;
-  height: 100%; }
-
-.vertical-card-center {
-  justify-content: center; }
   .blog-banner .option-set {
     width: 18rem;
     padding: 1.25rem 0; }
@@ -8764,3 +8752,22 @@ a.clear-results {
   @media (min-width: 1200px) {
     .blog-banner .dropdown-menu.show {
       display: none !important; } }
+
+@media (min-width: 992px) {
+  .vertical-card .card-inner {
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - 2rem) !important; } }
+
+.vertical-card .card-img-top {
+  width: 100%;
+  height: 100%; }
+
+.vertical-card .card-cta {
+  bottom: -0.5rem; }
+
+.vertical-card-center {
+  justify-content: center; }
+
+.horizontal-card-center {
+  justify-content: center; }

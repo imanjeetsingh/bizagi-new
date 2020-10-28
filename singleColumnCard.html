@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vertical Card</title>
+    <title>Single Column Card</title>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -21,10 +21,11 @@
 </head>
 
 <body>
+    <!-- verticle card start here -->
     <section class="mt-4">
         <div class="container-fluid contentSection-container card-container vertical-card">
             <div class="row vertical-card-center">
-                <div class="col-12 col-lg-8 col-md-12 col-sm-12 mt-3">
+                <div class="col-12 col-lg-8 col-xl-7 col-md-12 col-sm-12 mt-3">
                     <div class="card h-100 card-inner ">
                         <div class="card-image-box">
                             <img class="card-img-top" src="./images/home_nb_catalyst-home.png" alt="Old Mutual">
@@ -53,7 +54,42 @@
             </div>
         </div>
     </section>
-
+    <!-- verticle card end here -->
+    <!-- horizontal card start here -->
+    <section class="mt-4">
+        <div class="container-fluid contentSection-container card-container horizontal-card">
+            <div class="row horizontal-card-center">
+                <div class="col-12 col-lg-8 col-xl-7 col-md-12 col-sm-12 mt-3">
+                    <div class="card h-100 card-inner ">
+                        <div class="card-image-box">
+                            <img class="card-img-top" src="./images/studio-01.png" alt="Old Mutual">
+                            <div class="card-tag top-left">Report</div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-price"></p>
+                            <h4 class="card-title">Bizagi named a leader in The Forrester Wave </h4>
+                            <p class="card-text"></p>
+                            <p>See why Bizagi is a leader in this latest evaluation report from Forrester Research on
+                                Software for Digital Process Automation for Deep Deployments, Q2, 2019
+                            </p>
+                            <h6 class="card-subtitle">Lorelei Jensen, Head of Strategic Business Solutions</h6>
+                            <div class="card-cta">
+                                <div class="cta-group">
+                                    <a href="" target="_self" class="cta cta-default cta-icon-right">
+                                        <span class="cta-content">Watch now</span>
+                                        <span class="cta-icon-box">
+                                            <i class="cta-icon fa fa-arrow-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- horizontal card end here -->
 </body>
 
 </html>
