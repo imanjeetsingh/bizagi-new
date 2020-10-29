@@ -8850,9 +8850,68 @@ a.clear-results {
   position: absolute;
   margin-left: -1rem; }
 
-.card {
-  border-right: 1px solid rgba(0, 0, 0, 0.125) !important;
+.platform-card .card {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
   border: none;
-  padding: 0 1.625rem; }
-  .card-footer {
-    border: none; }
+  padding: 0 1rem; }
+  @media (min-width: 992px) {
+    .platform-card .card {
+      border-right: 1px solid rgba(0, 0, 0, 0.125) !important; } }
+  .platform-card .card-unordered-list {
+    font-size: 0.875rem;
+    line-height: 1.125rem; }
+    .platform-card .card-unordered-list-inner {
+      font-size: 0.875rem;
+      line-height: 1.125rem; }
+  .platform-card .card-title {
+    font-size: 1.75rem;
+    line-height: 2rem; }
+  .platform-card .card-text {
+    font-size: 1rem;
+    line-height: 1.125rem; }
+  .platform-card .card-footer {
+    border: none;
+    background-color: #ffffff;
+    text-align: end;
+    padding-right: 0; }
+  .platform-card .card-upper-cta {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem; }
+  .platform-card .card-cta-green a {
+    border: solid 2px #bbcc33;
+    color: #bbcc33; }
+    .platform-card .card-cta-green a:hover {
+      background: #bbcc33;
+      color: #ffffff; }
+  .platform-card .card-cta-green span:hover {
+    color: #ffffff; }
+  .platform-card .card-cta-teal a {
+    border: solid 2px #329f9a;
+    color: #329f9a; }
+    .platform-card .card-cta-teal a:hover {
+      background: #329f9a;
+      color: #ffffff; }
+  .platform-card .card-cta-teal span:hover {
+    color: #ffffff; }
+  .platform-card .card-center-heading {
+    background-color: #F9F9F9;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 1.375rem;
+    line-height: 1.625rem; }
+  .platform-card .card-bottom-heading {
+    text-align: center;
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+    padding: 1.25rem 0; }
+  .platform-card .card-orange {
+    color: #f38d1e; }
+  .platform-card .card-green {
+    color: #bbcc32; }
+  .platform-card .card-teal {
+    color: #009f9a; }
+
+.platform-card ul li::before {
+  list-style: none;
+  color: #6D7278; }
