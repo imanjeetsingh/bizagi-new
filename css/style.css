@@ -6882,53 +6882,6 @@ span.navbar-toggler-icon::before {
 .fc-event-skin:hover {
   text-decoration: none; }
 
-.swiper-button-next:after {
-  content: ""; }
-
-.swiper-button-prev:after {
-  content: ""; }
-
-.swiper-button-next {
-  color: black;
-  font-size: 65px;
-  position: absolute;
-  top: 27rem;
-  left: 6rem; }
-  @media (min-width: 768px) {
-    .swiper-button-next {
-      top: 29rem;
-      left: 6rem; } }
-  @media (min-width: 992px) {
-    .swiper-button-next {
-      top: 33rem;
-      left: 6rem; } }
-  @media (min-width: 1200px) {
-    .swiper-button-next {
-      top: 37rem;
-      left: 14rem; } }
-
-.swiper-button-prev {
-  color: black;
-  font-size: 65px;
-  position: absolute;
-  top: 27rem;
-  left: 2rem; }
-  @media (min-width: 768px) {
-    .swiper-button-prev {
-      top: 29rem;
-      left: 2rem; } }
-  @media (min-width: 992px) {
-    .swiper-button-prev {
-      top: 33rem;
-      left: 2rem; } }
-  @media (min-width: 1200px) {
-    .swiper-button-prev {
-      top: 37rem;
-      left: 10rem; } }
-
-.text {
-  text-align: center; }
-
 .xchange-container .search {
   border-radius: 2.5rem;
   border: solid 1px lightgray;
@@ -6941,53 +6894,6 @@ span.navbar-toggler-icon::before {
     line-height: 1.75rem; }
     .xchange-container .search-heading:focus {
       outline: none; }
-
-.swiper-button-next:after {
-  content: ""; }
-
-.swiper-button-prev:after {
-  content: ""; }
-
-.swiper-button-next {
-  color: black;
-  font-size: 65px;
-  position: absolute;
-  top: 27rem;
-  left: 6rem; }
-  @media (min-width: 768px) {
-    .swiper-button-next {
-      top: 29rem;
-      left: 6rem; } }
-  @media (min-width: 992px) {
-    .swiper-button-next {
-      top: 33rem;
-      left: 6rem; } }
-  @media (min-width: 1200px) {
-    .swiper-button-next {
-      top: 37rem;
-      left: 14rem; } }
-
-.swiper-button-prev {
-  color: black;
-  font-size: 65px;
-  position: absolute;
-  top: 27rem;
-  left: 2rem; }
-  @media (min-width: 768px) {
-    .swiper-button-prev {
-      top: 29rem;
-      left: 2rem; } }
-  @media (min-width: 992px) {
-    .swiper-button-prev {
-      top: 33rem;
-      left: 2rem; } }
-  @media (min-width: 1200px) {
-    .swiper-button-prev {
-      top: 37rem;
-      left: 10rem; } }
-
-.text {
-  text-align: center; }
 
 .contentCenterCard .element-item {
   position: static !important; }
@@ -7192,33 +7098,74 @@ span.navbar-toggler-icon::before {
   z-index: 1000000; }
 
 .swiper-container .article-box {
-  padding: 0; }
+  padding: 0;
+  cursor: pointer; }
 
-.swiper-container .bottom {
-  top: 12.23rem; }
-  @media (min-width: 768px) {
-    .swiper-container .bottom {
-      top: 4.4rem; } }
-  @media (min-width: 992px) {
-    .swiper-container .bottom {
-      top: 6.08rem; } }
-  @media (min-width: 1200px) {
-    .swiper-container .bottom {
-      top: 8.25rem; } }
+.swiper-container .bottom-tag {
+  position: absolute;
+  bottom: 0rem; }
 
 .swiper-container .top {
   top: 0rem; }
 
-@media (min-width: 992px) {
-  .swiper-container .article-heading {
-    margin-top: 1.5rem; } }
+.swiper-container .article-heading {
+  margin-top: 0;
+  font-size: 0.875rem;
+  line-height: 0.9rem; }
+  @media (min-width: 1200px) {
+    .swiper-container .article-heading {
+      font-size: 0.875rem;
+      line-height: 1rem; } }
 
-@media (min-width: 1200px) {
-  .swiper-container .article-heading {
-    margin-top: 0.5rem; } }
+.swiper-container .article-heading:hover {
+  color: #000000; }
+
+.swiper-container .article-image-box {
+  position: relative;
+  height: auto; }
+
+.swiper-container .article-image {
+  display: block; }
+
+.swiper-container .article-image-tag:hover {
+  text-decoration: none;
+  color: #ffffff; }
+
+.swiper-button-next:after {
+  content: ""; }
+
+.swiper-button-prev:after {
+  content: ""; }
 
 .nav-tabs {
   margin: 0 0 1.5rem 0; }
+
+.swiper-button-next {
+  color: black;
+  font-size: 65px;
+  margin-left: 4rem; }
+  @media (min-width: 1200px) {
+    .swiper-button-next {
+      margin-left: 4rem; } }
+
+.carousel-button {
+  display: flex; }
+
+.swiper-btn:focus {
+  outline: none; }
+
+.swiper-btn {
+  position: static;
+  margin-top: 0rem;
+  width: 0; }
+
+.swiper-button-prev {
+  color: black;
+  font-size: 65px;
+  margin-left: 3rem; }
+  @media (min-width: 1200px) {
+    .swiper-button-prev {
+      margin-left: 10.5rem; } }
 
 .officeList-city {
   color: #f38d1e;

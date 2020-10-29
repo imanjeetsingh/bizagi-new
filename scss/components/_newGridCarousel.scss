@@ -1,35 +1,290 @@
 .swiper-container {
     .article-box {
         padding: 0;
+        cursor: pointer;
     }
-    .bottom {
-        top: 12.23rem;
+    .bottom-tag {
+        position: absolute;
+        bottom: 0rem;
         @include media (tablet) {
-            top: 4.4rem;
+            // bottom: 5.3rem;
         }
-        @include media (desktop) {
-            top: 6.08rem;
-        }
-        @include media (xldesktop) {
-            top: 8.25rem;
-        }
+        @include media (desktop) {}
+        @include media (xldesktop) {}
     }
     .top {
         top: 0rem;
     }
     .article-heading {
+        margin-top: 0;
+        font-size: 0.875rem;
+        line-height: 0.9rem;
         @include media (desktop) {
-            margin-top: 1.5rem;
+            // margin-top: 1.5rem;
         }
         @include media (xldesktop) {
-            margin-top: 0.5rem;
+            font-size: 0.875rem;
+            line-height: 1rem;
         }
     }
+    .article-heading:hover {
+        color: #000000;
+    }
+    .article-image-box {
+        position: relative;
+        height: auto;
+    }
+    .article-image {
+        display: block;
+    }
+    .article-image-tag:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+.swiper-button-next:after {
+    content: "";
+}
+
+.swiper-button-prev:after {
+    content: "";
 }
 
 .nav-tabs {
     margin: 0 0 1.5rem 0;
-    // @include media (desktop) {
-    //     margin: 0 0.4375rem 1.5rem 0;
-    // }
 }
+
+.swiper-button-next {
+    color: black;
+    font-size: 65px;
+    margin-left: 4rem;
+    @include media (xldesktop) {
+        margin-left: 4rem;
+    }
+}
+
+.carousel-button {
+    display: flex;
+}
+
+.swiper-btn:focus {
+    outline: none;
+}
+
+.swiper-btn {
+    position: static;
+    margin-top: 0rem;
+    width: 0;
+}
+
+.swiper-button-prev {
+    color: black;
+    font-size: 65px;
+    margin-left: 3rem;
+    @include media (xldesktop) {
+        margin-left: 10.5rem;
+    }
+}
+
+/////////////////////////////////////////////////////////////////
+// .swiper-button-next {
+//     color: black;
+//     font-size: 65px;
+//     margin-left: 4rem;
+//     //     position: absolute;
+//     //     left: 6rem;
+//     //     @include media (tablet) {
+//     //         left: 6rem;
+//     //     }
+//     //     @include media (desktop) {
+//     //         left: 6rem;
+//     //     }
+//     @include media (xldesktop) {
+//         margin-left: 4rem;
+//     }
+// }
+// .carousel-buttons {
+//     display: flex;
+// }
+// .swiper-btn {
+//     position: static;
+//     margin-top: 0rem;
+//     // height: 0;
+//     width: 0;
+//     // margin-top: 0;
+//     // display: block;
+// }
+// .swiper-button-prev {
+//     color: black;
+//     font-size: 65px;
+//     margin-left: 3rem;
+//     //     position: absolute;
+//     //     left: 2rem;
+//     //     @include media (tablet) {
+//     //         left: 2rem;
+//     //     }
+//     //     @include media (desktop) {
+//     //         left: 2rem;
+//     //     }
+//     @include media (xldesktop) {
+//         margin-left: 10.5rem;
+//     }
+// }
+///////////////////////////////////////////////
+// .column-5.row-2 {
+//     .swiper-button-next {
+//         top: 28rem;
+//         @include media (tablet) {
+//             top: 29rem;
+//         }
+//         @include media (desktop) {
+//             top: 33.5rem;
+//         }
+//         @include media (xldesktop) {
+//             top: 37.5rem;
+//         }
+//     }
+//     .swiper-button-prev {
+//         top: 28rem;
+//         @include media (tablet) {
+//             top: 29rem;
+//         }
+//         @include media (desktop) {
+//             top: 33.5rem;
+//         }
+//         @include media (xldesktop) {
+//             top: 37.5rem;
+//         }
+//     }
+// }
+// .column-5.row-3 {
+//     .swiper-button-next {
+//         top: 28rem;
+//         @include media (tablet) {
+//             top: 44rem;
+//         }
+//         @include media (desktop) {
+//             top: 47.5rem;
+//         }
+//         @include media (xldesktop) {
+//             top: 52.5rem;
+//         }
+//     }
+//     .swiper-button-prev {
+//         top: 28rem;
+//         @include media (tablet) {
+//             top: 44rem;
+//         }
+//         @include media (desktop) {
+//             top: 47.5rem;
+//         }
+//         @include media (xldesktop) {
+//             top: 52.5rem;
+//         }
+//     }
+// }
+// .column-4.row-2 {
+//     .swiper-button-next {
+//         top: 28rem;
+//         @include media (tablet) {
+//             top: 32rem;
+//         }
+//         @include media (desktop) {
+//             top: 36.5rem;
+//         }
+//         @include media (xldesktop) {
+//             top: 41.5rem;
+//         }
+//     }
+//     .swiper-button-prev {
+//         top: 28rem;
+//         @include media (tablet) {
+//             top: 32rem;
+//         }
+//         @include media (desktop) {
+//             top: 36.5rem;
+//         }
+//         @include media (xldesktop) {
+//             top: 41.5rem;
+//         }
+//     }
+// }
+// .column-4.row-3 {
+//     .swiper-button-next {
+//         top: 28rem;
+//         @include media (tablet) {
+//             top: 46rem;
+//         }
+//         @include media (desktop) {
+//             top: 52rem;
+//         }
+//         @include media (xldesktop) {
+//             top: 57.5rem;
+//         }
+//     }
+//     .swiper-button-prev {
+//         top: 28rem;
+//         @include media (tablet) {
+//             top: 46rem;
+//         }
+//         @include media (desktop) {
+//             top: 52rem;
+//         }
+//         @include media (xldesktop) {
+//             top: 57.5rem;
+//         }
+//     }
+// }
+// .column-3.row-2 {
+//     .swiper-button-next {
+//         top: 28rem;
+//         @include media (tablet) {
+//             top: 37rem;
+//         }
+//         @include media (desktop) {
+//             top: 42.5rem;
+//         }
+//         @include media (xldesktop) {
+//             top: 49.5rem;
+//         }
+//     }
+//     .swiper-button-prev {
+//         top: 28rem;
+//         @include media (tablet) {
+//             top: 37rem;
+//         }
+//         @include media (desktop) {
+//             top: 42.5rem;
+//         }
+//         @include media (xldesktop) {
+//             top: 49.5rem;
+//         }
+//     }
+// }
+// .column-3.row-3 {
+//     .swiper-button-next {
+//         top: 28rem;
+//         @include media (tablet) {
+//             top: 52rem;
+//         }
+//         @include media (desktop) {
+//             top: 60.5rem;
+//         }
+//         @include media (xldesktop) {
+//             top: 70.5rem;
+//         }
+//     }
+//     .swiper-button-prev {
+//         top: 28rem;
+//         @include media (tablet) {
+//             top: 52rem;
+//         }
+//         @include media (desktop) {
+//             top: 60.5rem;
+//         }
+//         @include media (xldesktop) {
+//             top: 70.5rem;
+//         }
+//     }
+// }
