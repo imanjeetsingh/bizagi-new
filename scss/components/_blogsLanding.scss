@@ -84,7 +84,7 @@
             margin: 0 0 0 1rem;
         }
     }
-    .dropdownTwo {
+    .option-2 {
         @include mobile-only {
             transform: translate3d(-123px, 46px, 0px) !important;
         }
@@ -99,7 +99,7 @@
             left: 0px !important;
         }
     }
-    .dropdownOne {
+    .option-1 {
         @include mobile-only {
             transform: translate3d(15px, 46px, 0px) !important;
         }

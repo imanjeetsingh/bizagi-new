@@ -8713,26 +8713,26 @@ a.clear-results {
       display: block;
       margin: 0 0 0 1rem; } }
   @media (max-width: 767px) {
-    .blog-banner .dropdownTwo {
+    .blog-banner .option-2 {
       transform: translate3d(-123px, 46px, 0px) !important; } }
   @media (min-width: 768px) {
-    .blog-banner .dropdownTwo {
+    .blog-banner .option-2 {
       left: 0 !important;
       margin-top: 0; } }
   @media (min-width: 992px) {
-    .blog-banner .dropdownTwo {
+    .blog-banner .option-2 {
       left: -41px !important; } }
   @media (min-width: 1200px) {
-    .blog-banner .dropdownTwo {
+    .blog-banner .option-2 {
       left: 0px !important; } }
   @media (max-width: 767px) {
-    .blog-banner .dropdownOne {
+    .blog-banner .option-1 {
       transform: translate3d(15px, 46px, 0px) !important; } }
   @media (min-width: 992px) {
-    .blog-banner .dropdownOne {
+    .blog-banner .option-1 {
       left: -41px !important; } }
   @media (min-width: 1200px) {
-    .blog-banner .dropdownOne {
+    .blog-banner .option-1 {
       left: 0px !important; } }
   @media (min-width: 1200px) {
     .blog-banner .dropdown-menu.show {
