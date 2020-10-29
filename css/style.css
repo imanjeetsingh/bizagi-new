@@ -8849,3 +8849,10 @@ a.clear-results {
   width: 1em;
   position: absolute;
   margin-left: -1rem; }
+
+.card {
+  border-right: 1px solid rgba(0, 0, 0, 0.125) !important;
+  border: none;
+  padding: 0 1.625rem; }
+  .card-footer {
+    border: none; }
