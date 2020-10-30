@@ -41,6 +41,13 @@
                 margin-bottom: 1.5rem;
             }
         }
+        .social{
+            &-icon{
+                &-footer{
+                    color: #6D7278;
+                }
+            }
+        }
         &-subheading {}
         &-description {
             color: #6D7278;

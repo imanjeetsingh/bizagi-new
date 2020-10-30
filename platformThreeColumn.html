@@ -182,24 +182,27 @@
         </div>
     </section>
     <script>
-        $( document ).ready(function() {
-        var maxHeight = 0;
+        $(document).ready(function () {
+            var maxHeight = 0;
+            if (window.screen.width > 767) {
 
-        $(".card-upper-section").each(function () {
-            if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+                $(".card-upper-section").each(function () {
+                    if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+                });
+
+                $(".card-upper-section").height(maxHeight);
+
+
+                var bottomHeight = 0;
+
+                $(".card-bottom-section").each(function () {
+                    if ($(this).height() > bottomHeight) { bottomHeight = $(this).height(); }
+                });
+
+                $(".card-bottom-section").height(bottomHeight);
+            }
         });
 
-        $(".card-upper-section").height(maxHeight);
-
-
-        var bottomHeight = 0;
-
-        $(".card-bottom-section").each(function () {
-            if ($(this).height() > bottomHeight) { bottomHeight = $(this).height(); }
-        });
-
-        $(".card-bottom-section").height(bottomHeight);
-    });
     </script>
 
 </body>

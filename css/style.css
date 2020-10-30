@@ -5964,6 +5964,9 @@ a {
       font-size: 2.5rem;
       margin-bottom: 1.5rem; } }
 
+.contentSection-box .social-icon-footer {
+  color: #6D7278; }
+
 .contentSection-box-description {
   color: #6D7278;
   font-size: 1.125rem; }
@@ -7689,7 +7692,7 @@ span.navbar-toggler-icon::before {
   width: 100%;
   height: 100%;
   padding: 0;
-  display: none;
+  display: block;
   object-fit: cover;
   object-position: center; }
   @media (min-width: 992px) {
