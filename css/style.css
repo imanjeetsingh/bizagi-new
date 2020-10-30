@@ -7836,34 +7836,35 @@ span.navbar-toggler-icon::before {
   font-weight: 600; }
 
 .calenderDetails {
-  color: #6d7278; }
-  .calenderDetails-rowbg {
-    color: #6d7278;
-    background-color: #ececec;
-    padding: 1rem 0;
-    font-size: 1.125rem; }
-    .calenderDetails-rowbg .heading {
-      font-weight: 800; }
-      @media (min-width: 992px) {
-        .calenderDetails-rowbg .heading {
-          font-size: 1rem; } }
-      @media (min-width: 1200px) {
-        .calenderDetails-rowbg .heading {
-          font-size: 1.125rem; } }
+  color: #6d7278;
+  background-color: #ececec;
+  padding: 1rem 0;
+  font-size: 1.125rem; }
+  .calenderDetails .heading {
+    font-weight: 800; }
     @media (min-width: 992px) {
-      .calenderDetails-rowbg .detail-info {
+      .calenderDetails .heading {
         font-size: 1rem; } }
     @media (min-width: 1200px) {
-      .calenderDetails-rowbg .detail-info {
+      .calenderDetails .heading {
         font-size: 1.125rem; } }
+  @media (min-width: 992px) {
+    .calenderDetails .detail-info {
+      font-size: 1rem; } }
+  @media (min-width: 992px) {
+    .calenderDetails .detail-info .detail-info {
+      font-size: 1rem; } }
+  @media (min-width: 1200px) {
+    .calenderDetails .detail-info .detail-info {
+      font-size: 1.125rem; } }
+  @media (min-width: 992px) {
+    .calenderDetails .detail-info .detail-info {
+      margin-top: 0; } }
+  .calenderDetails .detail-info .price {
+    margin-top: 1.5rem; }
     @media (min-width: 992px) {
-      .calenderDetails-rowbg .detail-info {
+      .calenderDetails .detail-info .price {
         margin-top: 0; } }
-    .calenderDetails-rowbg .price {
-      margin-top: 1.5rem; }
-      @media (min-width: 992px) {
-        .calenderDetails-rowbg .price {
-          margin-top: 0; } }
   .calenderDetails .tile-box:first-child {
     padding-top: 2rem;
     border: none; }
@@ -8810,7 +8811,8 @@ a.clear-results {
   padding: 0 1rem; }
   @media (min-width: 992px) {
     .platform-card .card {
-      border-right: 1px solid rgba(0, 0, 0, 0.125) !important; } }
+      border-right: 1px solid rgba(0, 0, 0, 0.125) !important;
+      border-bottom: none !important; } }
   .platform-card .card-unordered-list {
     font-size: 0.875rem;
     line-height: 1.125rem; }
@@ -8827,7 +8829,11 @@ a.clear-results {
     border: none;
     background-color: #ffffff;
     text-align: end;
-    padding-right: 0; }
+    padding-right: 0;
+    margin-top: -2rem; }
+    @media (min-width: 768px) {
+      .platform-card .card-footer {
+        margin-top: 0; } }
   .platform-card .card-upper-cta {
     text-align: center;
     margin-top: 2rem;
