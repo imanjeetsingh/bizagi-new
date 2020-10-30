@@ -7535,6 +7535,8 @@ span.navbar-toggler-icon::before {
   @media (min-width: 768px) {
     .learning-journeys {
       font-size: 0.9375rem; } }
+  .learning-journeys-section {
+    margin: 1.875rem 0 6.25rem 0; }
   .learning-journeys a {
     text-decoration: none;
     color: #6d7277; }
@@ -7594,10 +7596,10 @@ span.navbar-toggler-icon::before {
       .learning-journeys-line-six {
         display: block; } }
   .learning-journeys-image {
-    width: 20%; }
+    width: 20% !important; }
     @media (min-width: 992px) {
       .learning-journeys-image {
-        width: 30%; } }
+        width: 30% !important; } }
   .learning-journeys-box-teal {
     border-radius: 13px;
     padding: 15px 4px 15px 4px;
