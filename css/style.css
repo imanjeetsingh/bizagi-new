@@ -6893,7 +6893,7 @@ span.navbar-toggler-icon::before {
 
 .side .swiper-btn {
   position: absolute;
-  top: 5rem; }
+  top: 1.5rem; }
 
 .swiper-slide .partner-logo-image {
   max-width: 100%;
@@ -6901,7 +6901,14 @@ span.navbar-toggler-icon::before {
   margin: 20px 20px 20px 60px; }
 
 .swiper-slide.partner-logo {
-  width: 75%; }
+  width: 75%;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    .swiper-slide.partner-logo {
+      margin: 0 8px !important; } }
+  @media (min-width: 992px) {
+    .swiper-slide.partner-logo {
+      margin: 0 10px 0 8px !important; } }
 
 .xchange-container .search {
   border-radius: 2.5rem;
@@ -6930,7 +6937,7 @@ span.navbar-toggler-icon::before {
 
 .side .swiper-btn {
   position: absolute;
-  top: 5rem; }
+  top: 1.5rem; }
 
 .swiper-slide .partner-logo-image {
   max-width: 100%;
@@ -6938,7 +6945,14 @@ span.navbar-toggler-icon::before {
   margin: 20px 20px 20px 60px; }
 
 .swiper-slide.partner-logo {
-  width: 75%; }
+  width: 75%;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    .swiper-slide.partner-logo {
+      margin: 0 8px !important; } }
+  @media (min-width: 992px) {
+    .swiper-slide.partner-logo {
+      margin: 0 10px 0 8px !important; } }
 
 .contentCenterCard .element-item {
   position: static !important; }

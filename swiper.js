@@ -2547,9 +2547,9 @@ $(document).ready(function() {
                     spaceBetween: 20,
                 },
                 1023: {
-                    slidesPerView: colCountDes,
+                    slidesPerView: 4,
                     slidesPerColumn: rowCountDes,
-                    //     slidesPerGroup: 5,
+                    slidesPerGroup: 4,
                     spaceBetween: space,
                 },
             },
