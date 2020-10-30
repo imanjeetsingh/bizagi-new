@@ -2,204 +2,116 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Swiper demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://swiperjs.com/package/swiper-bundle.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Carousel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="swiper.css" />
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- <script src="swiper.js"></script> -->
 </head>
-<style>
-    .swiper-button-next:after {
-        content: "";
-    }
-    
-    .swiper-button-prev:after {
-        content: "";
-    }
-    
-    .swiper-button-next {
-        color: black;
-        font-size: 65px;
-        position: absolute;
-        top: 20rem;
-        left: 6rem;
-    }
-    
-    @media (min-width: 768px) {
-        .swiper-button-next {
-            top: 19rem;
-            left: 6rem;
-        }
-    }
-    
-    @media (min-width: 992px) {
-        .swiper-button-next {
-            top: 32rem;
-            left: 6rem;
-        }
-    }
-    
-    .swiper-button-prev {
-        color: black;
-        font-size: 65px;
-        position: absolute;
-        top: 20rem;
-        left: 2rem;
-    }
-    
-    @media (min-width: 768px) {
-        .swiper-button-prev {
-            top: 19rem;
-            left: 2rem;
-        }
-    }
-    
-    @media (min-width: 992px) {
-        .swiper-button-prev {
-            top: 32rem;
-            left: 2rem;
-        }
-    }
-    
-    .text {
-        text-align: center;
-    }
-</style>
 
 <body>
-    <!-- Swiper -->
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio01.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">1</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio02.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">2</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio03.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">3</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio04.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">4</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio01.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">5</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio02.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">6</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio02.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">7</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio03.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">8</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio04.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">9</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio01.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">10</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio02.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">11</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio03.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">12</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio04.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">13</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio01.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">14</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio02.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">15</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio03.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">16</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio04.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">17</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio01.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">18</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio02.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">19</div>
-            </div>
-            <div class="swiper-slide">
-                <img class="article-image" src="./images/testimonio03.png" width="100%" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" />
-                <div class="text">20</div>
+    <div class="container-fluid" id="content">
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide partner-logo">
+                    <a href="#" target="">
+                        <img class="partner-logo-image" src="./images/logo1.png" alt="Tableau logo">
+                    </a>
+                </div>
+                <div class="swiper-slide partner-logo">
+                    <a href="#" target="">
+                        <img class="partner-logo-image" src="./images/logo2.png" alt="Tableau logo">
+                    </a>
+                </div>
+                <div class="swiper-slide partner-logo">
+                    <a href="#" target="">
+                        <img class="partner-logo-image" src="./images/logo3.png" alt="Tableau logo">
+                    </a>
+                </div>
+                <div class="swiper-slide partner-logo">
+                    <a href="#" target="">
+                        <img class="partner-logo-image" src="./images/logo4.png" alt="Tableau logo">
+                    </a>
+                </div>
+                <div class="swiper-slide partner-logo">
+                    <a href="#" target="">
+                        <img class="partner-logo-image" src="./images/logo5.png" alt="Tableau logo">
+                    </a>
+                </div>
+                <div class="swiper-slide partner-logo">
+                    <a href="#" target="">
+                        <img class="partner-logo-image" src="./images/logo6.png" alt="Tableau logo">
+                    </a>
+                </div>
+
+
+
             </div>
         </div>
-        <!-- Add Pagination -->
-        <!-- <div class="swiper-pagination"></div> -->
+
     </div>
-    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-a8095a113a205fe0"></div>
-    <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-a8095a113a205fe0"></div>
 
-    <!-- Swiper JS -->
-    <script src="https://swiperjs.com/package/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".swiper-container", {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            slidesPerColumnFill: "row",
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 5,
-                    slidesPerColumn: 2,
-                    slidesPerGroup: 5,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 5,
-                    slidesPerColumn: 2,
-                    slidesPerGroup: 5,
-                    spaceBetween: 20,
-                },
-            },
-        });
-
-        $(".swiper-button-prev").html(
-            '<i class="fa fa-arrow-circle-o-left"></i>'
-        );
-        $(".swiper-button-next").html(
-            '<i class="fa fa-arrow-circle-o-right"></i>'
-        );
-    </script>
+    <div class="carousel-button side">
+        <div class="swiper-button-prev swiper-btn" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-d328c8da281dd8fd">
+            <i class="fa fa fa-caret-left"></i>
+        </div>
+        <div class="swiper-button-next swiper-btn" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-d39eb45b8afdafb8">
+            <i class="fa fa fa-caret-right"></i>
+        </div>
+    </div>
+    <div data-rowCount-mobile="1" id="rCountMob"></div>
+    <div data-colCount-mobile="1" id="cCountMob"></div>
+    <div data-rowCount-tablet="2" id="rCountTab"></div>
+    <div data-colCount-tablet="4" id="cCountTab"></div>
+    <div data-rowCount-desktop="1" id="rCountDes"></div>
+    <div data-colCount-desktop="4" id="cCountDes"></div>
+    <div data-space-desktop="20" id="spaceDes"></div>
+    <!-- data-target="https://dummyapi.io/data/api/user?limit=${limit}&page="> -->
 </body>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var rowCountMob = $("#rCountMob").attr('data-rowCount-mobile');
+    var colCountMob = $("#cCountMob").attr('data-colCount-mobile');
+    var rowCountTab = $("#rCountTab").attr('data-rowCount-tablet');
+    var colCountTab = $("#cCountTab").attr('data-colCount-tablet');
+    var rowCountDes = $("#rCountDes").attr('data-rowCount-desktop');
+    var colCountDes = $("#cCountDes").attr('data-colCount-desktop');
+    var space = $("#spaceDes").attr('data-space-desktop');
+    var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        slidesPerColumnFill: "row",
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            767: {
+                slidesPerView: 5,
+                slidesPerColumn: 2,
+                slidesPerGroup: 5,
+                spaceBetween: 20,
+            },
+            1023: {
+                slidesPerView: 5,
+                slidesPerColumn: 2,
+                slidesPerGroup: 1,
+                spaceBetween: 20,
+            },
+        },
+    });
+</script>
 
 </html>

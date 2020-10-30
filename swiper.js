@@ -2520,6 +2520,13 @@ $(document).ready(function() {
     });
 
     function initCarousel() {
+        var rowCountMob = $("#rCountMob").attr('data-rowCount-mobile');
+        var colCountMob = $("#cCountMob").attr('data-colCount-mobile');
+        var rowCountTab = $("#rCountTab").attr('data-rowCount-tablet');
+        var colCountTab = $("#cCountTab").attr('data-colCount-tablet');
+        var rowCountDes = $("#rCountDes").attr('data-rowCount-desktop');
+        var colCountDes = $("#cCountDes").attr('data-colCount-desktop');
+        var space = $("#spaceDes").attr('data-space-desktop');
         var swiper = new Swiper(".swiper-container", {
             slidesPerView: 1,
             spaceBetween: 0,
@@ -2534,19 +2541,20 @@ $(document).ready(function() {
             },
             breakpoints: {
                 767: {
-                    slidesPerView: 5,
+                    slidesPerView: colCountTab,
                     slidesPerColumn: 2,
                     slidesPerGroup: 5,
                     spaceBetween: 20,
                 },
                 1023: {
-                    slidesPerView: 5,
-                    slidesPerColumn: 2,
-                    slidesPerGroup: 5,
-                    spaceBetween: 20,
+                    slidesPerView: colCountDes,
+                    slidesPerColumn: rowCountDes,
+                    //     slidesPerGroup: 5,
+                    spaceBetween: space,
                 },
             },
         });
     }
     initCarousel();
 });
+// const api = $("#scrollLoad").attr('data-target');

@@ -1,22 +1,20 @@
     .calenderDetails {
         color: #6d7278;
-
-        &-rowbg {
-            color: #6d7278;
-            background-color: #ececec;
-            padding: 1rem 0;
-            font-size: 1.125rem;
-
-            .heading {
-                font-weight: 800;
-
-                @include media (desktop) {
-                    font-size: 1rem;
-                }
-
-                @include media (xldesktop) {
-                    font-size: 1.125rem;
-                }
+        background-color: #ececec;
+        padding: 1rem 0;
+        font-size: 1.125rem;
+        .heading {
+            font-weight: 800;
+            @include media (desktop) {
+                font-size: 1rem;
+            }
+            @include media (xldesktop) {
+                font-size: 1.125rem;
+            }
+        }
+        .detail-info {
+            @include media (desktop) {
+                font-size: 1rem;
             }
 
             .detail-info {
