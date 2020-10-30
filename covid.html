@@ -23,7 +23,7 @@
 <body>
     <!-- covid section start here -->
     <section class="covid-section">
-        <div class="container covid-container owl-carousel owl-theme owl-loaded owl-drag">
+        <div class="container covid-container owl-carousel first owl-theme owl-loaded owl-drag">
             <div class="row owl-stage-outer">
                 <div class="col-md-12 text-center owl-stage">
                     <div class="owl-item ">
@@ -52,13 +52,42 @@
     </section>
     <!-- covid section end here -->
 
+    <section class="covid-section mt-5">
+        <div class="container covid-container owl-carousel second owl-theme owl-loaded owl-drag">
+            <div class="row owl-stage-outer">
+                <div class="col-md-12 text-center owl-stage">
+                    <div class="owl-item ">
+                        <p class="covid-text">Bizagi launches <span class="covid-text-bold">CoronaPass™</span> to
+                            protect
+                            lives and livelihoods.</p>
+                        <a class="covid-link" href="" target="">
+                            <span class="covid-link-text">CoronaPass.org</span>
+                            <i class="covid-icon fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center owl-stage">
+                    <div class="owl-item ">
+                        <p class="covid-text">Bizagi launches <span class="covid-text-bold">CoronaPass™</span> to
+                            protect
+                            lives and livelihoods.</p>
+                        <a class="covid-link" href="" target="">
+                            <span class="covid-link-text">CoronaPass.org</span>
+                            <i class="covid-icon fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script>
-        var owl = $('.owl-carousel');
+        var owl = $('.owl-carousel.first,.second');
         owl.owlCarousel({
             items: 1,
+            
             loop: true,
             autoplay: true,
-            autoplayTimeout: 5000,
+            autoplayTimeout: 50,
             autoplayHoverPause: false,
         });
         $('.play').on('click', function () {
@@ -67,6 +96,22 @@
         $('.stop').on('click', function () {
             owl.trigger('stop.owl.autoplay')
         })
+
+        // var owl = $('.owl-carousel.second');
+        // owl.owlCarousel({
+        //     items: 1,
+        //     loop: true,
+        //     autoplay: true,
+        //     autoplayTimeout: 5000,
+        //     autoplayHoverPause: false,
+        // });
+        // $('.play').on('click', function () {
+        //     owl.trigger('play.owl.autoplay', [1])
+        // })
+        // $('.stop').on('click', function () {
+        //     owl.trigger('stop.owl.autoplay')
+        // })
+        
     </script>
 
 </body>
