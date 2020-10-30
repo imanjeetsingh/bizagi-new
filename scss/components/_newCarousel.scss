@@ -16,7 +16,7 @@
 
 .side .swiper-btn {
     position: absolute;
-    top: 5rem;
+    top: 1.5rem;
 }
 
 .swiper-slide .partner-logo-image {
@@ -27,6 +27,14 @@
 
 .swiper-slide.partner-logo {
     width: 75%;
+    justify-content: center;
+    @include media (tablet) {
+        margin: 0 8px !important;
+    }
+    @include media (desktop) {
+        margin: 0 10px 0 8px !important;
+        // width: 20% !important;
+    }
 }
 
 // .swiper-button-next:after {

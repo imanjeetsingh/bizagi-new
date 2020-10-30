@@ -36,12 +36,12 @@
                 </div>
                 <div class="swiper-slide partner-logo">
                     <a href="#" target="">
-                        <img class="partner-logo-image" src="./images/logo4.png" alt="Tableau logo">
+                        <img class="partner-logo-image" src="./images/logo5.png" alt="Tableau logo">
                     </a>
                 </div>
                 <div class="swiper-slide partner-logo">
                     <a href="#" target="">
-                        <img class="partner-logo-image" src="./images/logo5.png" alt="Tableau logo">
+                        <img class="partner-logo-image" src="./images/logo4.png" alt="Tableau logo">
                     </a>
                 </div>
                 <div class="swiper-slide partner-logo">
@@ -86,8 +86,12 @@
     var colCountDes = $("#cCountDes").attr('data-colCount-desktop');
     var space = $("#spaceDes").attr('data-space-desktop');
     var swiper = new Swiper(".swiper-container", {
+        autoplay: {
+            delay: 200,
+        },
         slidesPerView: 1,
         spaceBetween: 0,
+        loop: true,
         slidesPerColumnFill: "row",
         pagination: {
             el: ".swiper-pagination",
@@ -99,14 +103,14 @@
         },
         breakpoints: {
             767: {
-                slidesPerView: 5,
-                slidesPerColumn: 2,
-                slidesPerGroup: 5,
+                slidesPerView: 3,
+                slidesPerColumn: 1,
+                slidesPerGroup: 1,
                 spaceBetween: 20,
             },
             1023: {
                 slidesPerView: 5,
-                slidesPerColumn: 2,
+                slidesPerColumn: 1,
                 slidesPerGroup: 1,
                 spaceBetween: 20,
             },
