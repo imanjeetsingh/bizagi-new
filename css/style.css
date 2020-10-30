@@ -6157,12 +6157,6 @@ header {
   margin-top: 2rem;
   margin-right: 2rem; }
 
-.partner-logo-image {
-  max-width: 100%; }
-
-.partner-logo {
-  width: 70%; }
-
 .carouselArrow {
   position: absolute;
   top: 2.5rem;
@@ -6882,6 +6876,30 @@ span.navbar-toggler-icon::before {
 .fc-event-skin:hover {
   text-decoration: none; }
 
+.side .swiper-button-prev {
+  margin-left: 1rem; }
+
+.side .swiper-button-next {
+  margin-right: 1rem; }
+
+.carousel-button {
+  display: flex; }
+
+.swiper-btn:focus {
+  outline: none; }
+
+.side .swiper-btn {
+  position: absolute;
+  top: 5rem; }
+
+.swiper-slide .partner-logo-image {
+  max-width: 100%;
+  width: 60%;
+  margin: 20px 20px 20px 60px; }
+
+.swiper-slide.partner-logo {
+  width: 75%; }
+
 .xchange-container .search {
   border-radius: 2.5rem;
   border: solid 1px lightgray;
@@ -6894,6 +6912,30 @@ span.navbar-toggler-icon::before {
     line-height: 1.75rem; }
     .xchange-container .search-heading:focus {
       outline: none; }
+
+.side .swiper-button-prev {
+  margin-left: 1rem; }
+
+.side .swiper-button-next {
+  margin-right: 1rem; }
+
+.carousel-button {
+  display: flex; }
+
+.swiper-btn:focus {
+  outline: none; }
+
+.side .swiper-btn {
+  position: absolute;
+  top: 5rem; }
+
+.swiper-slide .partner-logo-image {
+  max-width: 100%;
+  width: 60%;
+  margin: 20px 20px 20px 60px; }
+
+.swiper-slide.partner-logo {
+  width: 75%; }
 
 .contentCenterCard .element-item {
   position: static !important; }
@@ -7804,13 +7846,13 @@ span.navbar-toggler-icon::before {
         .calenderDetails-rowbg .heading {
           font-size: 1.125rem; } }
     @media (min-width: 992px) {
-      .calenderDetails-rowbg .details {
+      .calenderDetails-rowbg .detail-info {
         font-size: 1rem; } }
     @media (min-width: 1200px) {
-      .calenderDetails-rowbg .details {
+      .calenderDetails-rowbg .detail-info {
         font-size: 1.125rem; } }
     @media (min-width: 992px) {
-      .calenderDetails-rowbg .details {
+      .calenderDetails-rowbg .detail-info {
         margin-top: 0; } }
     .calenderDetails-rowbg .price {
       margin-top: 1.5rem; }
