@@ -6879,6 +6879,9 @@ span.navbar-toggler-icon::before {
 .fc-event-skin:hover {
   text-decoration: none; }
 
+.gallery-carousel {
+  position: relative; }
+
 .side .swiper-button-prev {
   margin-left: 1rem; }
 
@@ -6899,6 +6902,12 @@ span.navbar-toggler-icon::before {
   max-width: 100%;
   width: 60%;
   margin: 20px 20px 20px 60px; }
+  @media (min-width: 992px) {
+    .swiper-slide .partner-logo-image {
+      width: 50%; } }
+  @media (min-width: 1200px) {
+    .swiper-slide .partner-logo-image {
+      width: 60%; } }
 
 .swiper-slide.partner-logo {
   width: 75%;
@@ -6909,6 +6918,20 @@ span.navbar-toggler-icon::before {
   @media (min-width: 992px) {
     .swiper-slide.partner-logo {
       margin: 0 10px 0 8px !important; } }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 80px; }
+
+.swiper-pagination-bullet-active {
+  background-color: #f38b1f; }
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px; }
+
+.card-container .swiper-slide {
+  margin-left: 0;
+  margin-right: 0; }
 
 .xchange-container .search {
   border-radius: 2.5rem;
@@ -6923,6 +6946,9 @@ span.navbar-toggler-icon::before {
     .xchange-container .search-heading:focus {
       outline: none; }
 
+.gallery-carousel {
+  position: relative; }
+
 .side .swiper-button-prev {
   margin-left: 1rem; }
 
@@ -6943,6 +6969,12 @@ span.navbar-toggler-icon::before {
   max-width: 100%;
   width: 60%;
   margin: 20px 20px 20px 60px; }
+  @media (min-width: 992px) {
+    .swiper-slide .partner-logo-image {
+      width: 50%; } }
+  @media (min-width: 1200px) {
+    .swiper-slide .partner-logo-image {
+      width: 60%; } }
 
 .swiper-slide.partner-logo {
   width: 75%;
@@ -6953,6 +6985,20 @@ span.navbar-toggler-icon::before {
   @media (min-width: 992px) {
     .swiper-slide.partner-logo {
       margin: 0 10px 0 8px !important; } }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 80px; }
+
+.swiper-pagination-bullet-active {
+  background-color: #f38b1f; }
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px; }
+
+.card-container .swiper-slide {
+  margin-left: 0;
+  margin-right: 0; }
 
 .contentCenterCard .element-item {
   position: static !important; }

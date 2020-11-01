@@ -14,88 +14,105 @@
 </head>
 
 <body>
-    <div class="container-fluid" id="content">
 
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
+    <section>
+        <div class="container-fluid gallery-carousel" id="content">
 
-                <div class="swiper-slide partner-logo">
-                    <a href="#" target="">
-                        <img class="partner-logo-image" src="./images/logo1.png" alt="Tableau logo">
-                    </a>
-                </div>
-                <div class="swiper-slide partner-logo">
-                    <a href="#" target="">
-                        <img class="partner-logo-image" src="./images/logo2.png" alt="Tableau logo">
-                    </a>
-                </div>
-                <div class="swiper-slide partner-logo">
-                    <a href="#" target="">
-                        <img class="partner-logo-image" src="./images/logo3.png" alt="Tableau logo">
-                    </a>
-                </div>
-                <div class="swiper-slide partner-logo">
-                    <a href="#" target="">
-                        <img class="partner-logo-image" src="./images/logo5.png" alt="Tableau logo">
-                    </a>
-                </div>
-                <div class="swiper-slide partner-logo">
-                    <a href="#" target="">
-                        <img class="partner-logo-image" src="./images/logo4.png" alt="Tableau logo">
-                    </a>
-                </div>
-                <div class="swiper-slide partner-logo">
-                    <a href="#" target="">
-                        <img class="partner-logo-image" src="./images/logo6.png" alt="Tableau logo">
-                    </a>
-                </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide partner-logo">
+                        <a href="#" target="">
+                            <img class="partner-logo-image" src="./images/logo1.png" alt="Tableau logo">
+                        </a>
+                    </div>
+                    <div class="swiper-slide partner-logo">
+                        <a href="#" target="">
+                            <img class="partner-logo-image" src="./images/logo2.png" alt="Tableau logo">
+                        </a>
+                    </div>
+                    <div class="swiper-slide partner-logo">
+                        <a href="#" target="">
+                            <img class="partner-logo-image" src="./images/logo3.png" alt="Tableau logo">
+                        </a>
+                    </div>
+                    <div class="swiper-slide partner-logo">
+                        <a href="#" target="">
+                            <img class="partner-logo-image" src="./images/logo5.png" alt="Tableau logo">
+                        </a>
+                    </div>
+                    <div class="swiper-slide partner-logo">
+                        <a href="#" target="">
+                            <img class="partner-logo-image" src="./images/logo4.png" alt="Tableau logo">
+                        </a>
+                    </div>
+                    <div class="swiper-slide partner-logo">
+                        <a href="#" target="">
+                            <img class="partner-logo-image" src="./images/logo6.png" alt="Tableau logo">
+                        </a>
+                    </div>
 
 
 
+                </div>
+            </div>
+
+        </div>
+
+        <div class="carousel-button side">
+            <div class="swiper-button-prev swiper-btn" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-d328c8da281dd8fd">
+                <i class="fa fa fa-caret-left"></i>
+            </div>
+            <div class="swiper-button-next swiper-btn" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-d39eb45b8afdafb8">
+                <i class="fa fa fa-caret-right"></i>
             </div>
         </div>
+    </section>
+    <div data-rowCount-mobile="1" id="galley-RMob"></div>
+    <div data-colCount-mobile="1" id="galley-CMob"></div>
+    <div data-rowCount-tablet="1" id="galley-RTab"></div>
+    <div data-colCount-tablet="3" id="galley-CTab"></div>
+    <div data-rowCount-desktop="1" id="galley-RDes"></div>
+    <div data-colCount-desktop="5" id="galley-CDes"></div>
+    <div data-slide-tablet="1" id="gallery-SlideTab"></div>
+    <div data-slide-desktop="1" id="gallery-SlideDes"></div>
+    <div data-auto-play-delay="2000" id="gallery-AutoPlayDelay"></div>
+    <div data-loop="true" id="gallery-Loop"></div>
+    <!-- <div data-space-mobile="20" id="gallery-spaceMob"></div>
+    <div data-space-tablet="20" id="gallery-spaceTab"></div>
+    <div data-space-desktop="20" id="gallery-spaceDes"></div> -->
 
-    </div>
-
-    <div class="carousel-button side">
-        <div class="swiper-button-prev swiper-btn" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-d328c8da281dd8fd">
-            <i class="fa fa fa-caret-left"></i>
-        </div>
-        <div class="swiper-button-next swiper-btn" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-d39eb45b8afdafb8">
-            <i class="fa fa fa-caret-right"></i>
-        </div>
-    </div>
-    <div data-rowCount-mobile="1" id="rCountMob"></div>
-    <div data-colCount-mobile="1" id="cCountMob"></div>
-    <div data-rowCount-tablet="2" id="rCountTab"></div>
-    <div data-colCount-tablet="4" id="cCountTab"></div>
-    <div data-rowCount-desktop="1" id="rCountDes"></div>
-    <div data-colCount-desktop="4" id="cCountDes"></div>
-    <div data-space-desktop="20" id="spaceDes"></div>
-    <!-- data-target="https://dummyapi.io/data/api/user?limit=${limit}&page="> -->
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
-    var rowCountMob = $("#rCountMob").attr('data-rowCount-mobile');
-    var colCountMob = $("#cCountMob").attr('data-colCount-mobile');
-    var rowCountTab = $("#rCountTab").attr('data-rowCount-tablet');
-    var colCountTab = $("#cCountTab").attr('data-colCount-tablet');
-    var rowCountDes = $("#rCountDes").attr('data-rowCount-desktop');
-    var colCountDes = $("#cCountDes").attr('data-colCount-desktop');
+    var galleyRMob = $("#galley-RMob").attr('data-rowCount-mobile');
+    var galleyCMob = $("#galley-CMob").attr('data-colCount-mobile');
+    var galleyRTab = $("#galley-RTab").attr('data-rowCount-tablet');
+    var galleyCTab = $("#galley-CTab").attr('data-colCount-tablet');
+    var galleyRDes = $("#galley-RDes").attr('data-rowCount-desktop');
+    var galleyCDes = $("#galley-CDes").attr('data-colCount-desktop');
+    var gallerySlideTab = $("#gallery-SlideTab").attr('data-slide-tablet');
+    var gallerySlideDes = $("#gallery-SlideDes").attr('data-slide-desktop');
+    var galleryAutoPlayDelay = $("#gallery-AutoPlayDelay").attr('data-auto-play-delay');
+    var galleryLoop = $("#gallery-Loop").attr('data-loop');
+    // var galleryspaceMob = $("#gallery-spaceMob").attr('data-space-mobile');
+    // var galleryspaceTab = $("#gallery-spaceTab").attr('data-space-tablet');
+    // var galleryspaceDes = $("#gallery-spaceDes").attr('data-space-desktop');
+
+
     var space = $("#spaceDes").attr('data-space-desktop');
     var swiper = new Swiper(".swiper-container", {
+        slidesPerView: galleyCMob,
         autoplay: {
-            delay: 200,
+            delay: galleryAutoPlayDelay,
         },
-        slidesPerView: 1,
-        spaceBetween: 0,
-        loop: true,
+        loop: galleryLoop,
+        spaceBetween: 20,
         slidesPerColumnFill: "row",
         pagination: {
             el: ".swiper-pagination",
-            clickable: true,
         },
         navigation: {
             nextEl: ".swiper-button-next",
@@ -103,15 +120,15 @@
         },
         breakpoints: {
             767: {
-                slidesPerView: 3,
-                slidesPerColumn: 1,
-                slidesPerGroup: 1,
+                slidesPerView: galleyCTab,
+                slidesPerColumn: galleyRTab,
+                slidesPerGroup: gallerySlideTab,
                 spaceBetween: 20,
             },
             1023: {
-                slidesPerView: 5,
-                slidesPerColumn: 1,
-                slidesPerGroup: 1,
+                slidesPerView: galleyCDes,
+                slidesPerColumn: galleyRDes,
+                slidesPerGroup: gallerySlideDes,
                 spaceBetween: 20,
             },
         },

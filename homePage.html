@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="swiper.css" />
     <link rel="stylesheet" href="./css/style.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
@@ -20,6 +21,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+    <script src="swiper.js"></script>
 </head>
 
 <script>
@@ -576,61 +578,54 @@
 
     <!-- Carousel component starts -->
     <section>
-        <div class="container-fluid text-center">
-            <div class="row mt-5">
-                <div class="contentSection-box col-12">
-                    <h3 class="contentSection-box-heading">Native Integrations</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="carousel-wrap">
-                    <div class="owl-carousel">
-                        <div class="item partner-logo">
-                            <a href="#" target="">
-                                <img class="partner-logo-image" src="./images/logo1.png" alt="Tableau logo">
-                            </a>
-                        </div>
-                        <div class="item partner-logo">
-                            <a href="#" target="">
-                                <img class="partner-logo-image" src="./images/logo2.png" alt="Automation Anywhere logo">
-                            </a>
-                        </div>
-                        <div class="item partner-logo">
-                            <a href="#" target="">
-                                <img class="partner-logo-image" src="./images/logo3.png" alt="Blue Prism logo">
-                            </a>
-                        </div>
-                        <div class="item partner-logo">
-                            <a href="#" target="">
-                                <img class="partner-logo-image" src="./images/logo4.png" alt="UiPath logo">
-                            </a>
-                        </div>
-                        <div class="item partner-logo">
-                            <a href="#" target="">
-                                <img class="partner-logo-image" src="./images/logo5.png" alt="Power BI logo">
-                            </a>
-                        </div>
-                        <div class="item partner-logo">
-                            <a href="#" target="">
-                                <img class="partner-logo-image" src="./images/logo6.png" alt="SAP logo">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <p class="contentSection-box-description">+ Over 130 Connectors & Widgets</p>
-                </div>
-            </div>
-            <div class="row text-center mt-3">
-                <div class="col-12">
-                    <div class="cta-group">
-                        <a href="#" class="cta cta-primary">
-                            <span class="cta-content">Bizagi Xchange</span>
+        <div class="container-fluid gallery-carousel" id="content">
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide partner-logo">
+                        <a href="#" target="">
+                            <img class="partner-logo-image" src="./images/logo1.png" alt="Tableau logo">
                         </a>
                     </div>
+                    <div class="swiper-slide partner-logo">
+                        <a href="#" target="">
+                            <img class="partner-logo-image" src="./images/logo2.png" alt="Tableau logo">
+                        </a>
+                    </div>
+                    <div class="swiper-slide partner-logo">
+                        <a href="#" target="">
+                            <img class="partner-logo-image" src="./images/logo3.png" alt="Tableau logo">
+                        </a>
+                    </div>
+                    <div class="swiper-slide partner-logo">
+                        <a href="#" target="">
+                            <img class="partner-logo-image" src="./images/logo5.png" alt="Tableau logo">
+                        </a>
+                    </div>
+                    <div class="swiper-slide partner-logo">
+                        <a href="#" target="">
+                            <img class="partner-logo-image" src="./images/logo4.png" alt="Tableau logo">
+                        </a>
+                    </div>
+                    <div class="swiper-slide partner-logo">
+                        <a href="#" target="">
+                            <img class="partner-logo-image" src="./images/logo6.png" alt="Tableau logo">
+                        </a>
+                    </div>
+
+
+
                 </div>
+            </div>
+
+        </div>
+        <div class="carousel-button side">
+            <div class="swiper-button-prev swiper-btn" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-d328c8da281dd8fd">
+                <i class="fa fa fa-caret-left"></i>
+            </div>
+            <div class="swiper-button-next swiper-btn" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-d39eb45b8afdafb8">
+                <i class="fa fa fa-caret-right"></i>
             </div>
         </div>
     </section>
@@ -742,7 +737,49 @@
     <!-- Cookie component ends -->
 
 </body>
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script>
+    var rowCountMob = $("#rCountMob").attr('data-rowCount-mobile');
+    var colCountMob = $("#cCountMob").attr('data-colCount-mobile');
+    var rowCountTab = $("#rCountTab").attr('data-rowCount-tablet');
+    var colCountTab = $("#cCountTab").attr('data-colCount-tablet');
+    var rowCountDes = $("#rCountDes").attr('data-rowCount-desktop');
+    var colCountDes = $("#cCountDes").attr('data-colCount-desktop');
+    var space = $("#spaceDes").attr('data-space-desktop');
+    var swiper = new Swiper(".swiper-container", {
+        autoplay: {
+            delay: 200,
+        },
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        slidesPerColumnFill: "row",
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            767: {
+                slidesPerView: 3,
+                slidesPerColumn: 1,
+                slidesPerGroup: 1,
+                spaceBetween: 20,
+            },
+            1023: {
+                slidesPerView: 5,
+                slidesPerColumn: 1,
+                slidesPerGroup: 1,
+                spaceBetween: 20,
+            },
+        },
+    });
+</script>
 
 <!-- <script>
     // Carousel component script starts
