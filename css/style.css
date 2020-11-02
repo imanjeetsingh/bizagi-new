@@ -6933,6 +6933,9 @@ span.navbar-toggler-icon::before {
   margin-left: 0;
   margin-right: 0; }
 
+.carousel-button.side {
+  position: relative; }
+
 .xchange-container .search {
   border-radius: 2.5rem;
   border: solid 1px lightgray;
@@ -6999,6 +7002,9 @@ span.navbar-toggler-icon::before {
 .card-container .swiper-slide {
   margin-left: 0;
   margin-right: 0; }
+
+.carousel-button.side {
+  position: relative; }
 
 .contentCenterCard .element-item {
   position: static !important; }
