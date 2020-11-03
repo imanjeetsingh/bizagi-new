@@ -77,6 +77,7 @@
 
 .eventsListItem p {
     font-size: .825rem;
+    margin-bottom: 2rem;
 }
 
 .eventsInfoDate {
@@ -156,4 +157,7 @@
 }
 .calendar{
     margin-bottom: 2rem;
+    th.fc-widget-header{
+        width: 14.28%;
+    }
 }
