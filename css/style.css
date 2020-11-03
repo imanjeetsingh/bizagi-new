@@ -6860,6 +6860,10 @@ span.navbar-toggler-icon::before {
   @media (min-width: 992px) {
     .eventsBody {
       width: 89%; } }
+  .eventsBody .card-cta {
+    bottom: -1rem; }
+  .eventsBody .tag-box .list-inline li {
+    padding-left: 0; }
 
 .fc-today {
   background-color: #F28C20 !important; }
@@ -6878,6 +6882,9 @@ span.navbar-toggler-icon::before {
 
 .fc-event-skin:hover {
   text-decoration: none; }
+
+.calendar {
+  margin-bottom: 2rem; }
 
 .gallery-carousel {
   position: relative; }

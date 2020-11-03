@@ -118,6 +118,16 @@
     @include media (desktop) {
         width: 89%;
     }
+    .card-cta{
+        bottom: -1rem;
+    }
+    .tag-box{
+        .list-inline{
+            li{
+                padding-left: 0;
+            }
+        }
+    }
 }
 
 .fc-today {
@@ -143,4 +153,7 @@
     &:hover {
         text-decoration: none;
     }
+}
+.calendar{
+    margin-bottom: 2rem;
 }
