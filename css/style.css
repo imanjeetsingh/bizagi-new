@@ -6821,7 +6821,8 @@ span.navbar-toggler-icon::before {
   padding-left: 5px; }
 
 .eventsListItem p {
-  font-size: .825rem; }
+  font-size: .825rem;
+  margin-bottom: 2rem; }
 
 .eventsInfoDate {
   display: inline-block;
@@ -6860,6 +6861,10 @@ span.navbar-toggler-icon::before {
   @media (min-width: 992px) {
     .eventsBody {
       width: 89%; } }
+  .eventsBody .card-cta {
+    bottom: -1rem; }
+  .eventsBody .tag-box .list-inline li {
+    padding-left: 0; }
 
 .fc-today {
   background-color: #F28C20 !important; }
@@ -6878,6 +6883,11 @@ span.navbar-toggler-icon::before {
 
 .fc-event-skin:hover {
   text-decoration: none; }
+
+.calendar {
+  margin-bottom: 2rem; }
+  .calendar th.fc-widget-header {
+    width: 14.28%; }
 
 .gallery-carousel {
   position: relative; }
@@ -7049,6 +7059,24 @@ span.navbar-toggler-icon::before {
 .caseStudy p#dropdownValue {
   text-align: center;
   padding: 0 1rem; }
+
+.grid .card img.card-img-top {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  min-width: 100%;
+  min-height: 100%;
+  width: -webkit-fill-available;
+  height: auto; }
+
+.grid .card .top-left {
+  z-index: 11; }
+
+.grid .card .card-image-box {
+  min-height: 15rem;
+  background-color: #999;
+  overflow: hidden; }
 
 @media (min-width: 992px) {
   .bizagi-popup .modal-lg {
