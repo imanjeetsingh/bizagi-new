@@ -59,14 +59,33 @@
 .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
+    margin: 0 2px;
+}
+
+.swiper-pagination-bullet:focus {
+    outline: none;
 }
 
 .card-container .swiper-slide {
     margin-left: 0;
     margin-right: 0;
 }
-.carousel-button.side{
+
+.carousel-button.side {
     position: relative;
+}
+
+.swiper-pagination {
+    position: unset;
+}
+
+.card-container .swiper-slide {
+    height: auto;
+}
+
+.swiper-slide .card-inner {
+    padding-bottom: 4rem;
+    height: calc(100% - 3rem) !important;
 }
 
 // .swiper-button-next:after {
