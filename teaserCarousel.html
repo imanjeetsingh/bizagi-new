@@ -5,29 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teaser Card Carousel</title>
+    <link rel="stylesheet" href="./style/carousel.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="swiper.css" />
+    <link rel="stylesheet" href="swiper.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- <script src="swiper.js"></script> -->
 </head>
 
+<style>
+    .card-container .swiper-slide {
+        height: auto;
+    }
+    
+    .swiper-slide .card-inner {
+        padding-bottom: 5rem;
+        height: calc(100% - 3rem) !important;
+    }
+</style>
+
 <body>
     <section>
-        <div class="swiper-container container-fluid contentSection-container text-center card-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide row">
-                    <div class="col-12 col-md-6 col-lg-3 col-sm-6">
-                        <div class="card h-100 card-inner">
-                            <div class="card-image-box"> <img class="card-img-top" src="./images/testimonio01.png"
-                                    alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+        <div class="container-fluid contentSection-container text-center card-container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card card-inner">
+                            <div class="card-image-box"> <img class="card-img-top" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title">Old Mutual</h4>
-                                <p class="card-text">“We didn’t realize it would be as successful as it is. We have an
-                                    average of about 3000 transactions per second. Our net promoter score is increasing
-                                    month-on-month.”
+                                <p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”
+                                    <p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”
+                                    </p>
+                                    <h6 class="card-subtitle">Lorelei Jensen, Head of Strategic Business Solutions</h6>
+                                    <div class="card-cta">
+                                        <div class="cta-group">
+                                            <a href="#" class="cta cta-default cta-icon-right">
+                                                <span class="cta-content">See More</span>
+                                                <span class="cta-icon-box">
+                                            <i class="cta-icon fa fa-arrow-right"></i>
+                                        </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card card-inner">
+                            <div class="card-image-box"> <img class="card-img-top" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Old Mutual</h4>
+                                <p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”
                                 </p>
                                 <h6 class="card-subtitle">Lorelei Jensen, Head of Strategic Business Solutions</h6>
                                 <div class="card-cta">
@@ -35,24 +67,21 @@
                                         <a href="#" class="cta cta-default cta-icon-right">
                                             <span class="cta-content">See More</span>
                                             <span class="cta-icon-box">
-                                                <i class="cta-icon fa fa-arrow-right"></i>
-                                            </span>
+                                            <i class="cta-icon fa fa-arrow-right"></i>
+                                        </span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 col-sm-6 ">
-                        <div class="card h-100 card-inner">
-                            <div class="card-image-box"> <img class="card-img-top" src="./images/testimonio01.png"
-                                    alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                    <div class="swiper-slide">
+                        <div class="card card-inner">
+                            <div class="card-image-box"> <img class="card-img-top" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title">Old Mutual</h4>
-                                <p class="card-text">“We didn’t realize it would be as successful as it is. We have an
-                                    average of about 3000 transactions per second. Our net promoter score is increasing
-                                    month-on-month.”
+                                <p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”
                                 </p>
                                 <h6 class="card-subtitle">Lorelei Jensen, Head of Strategic Business Solutions</h6>
                                 <div class="card-cta">
@@ -60,24 +89,21 @@
                                         <a href="#" class="cta cta-default cta-icon-right">
                                             <span class="cta-content">See More</span>
                                             <span class="cta-icon-box">
-                                                <i class="cta-icon fa fa-arrow-right"></i>
-                                            </span>
+                                            <i class="cta-icon fa fa-arrow-right"></i>
+                                        </span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 col-sm-6 ">
-                        <div class="card h-100 card-inner">
-                            <div class="card-image-box"> <img class="card-img-top" src="./images/testimonio01.png"
-                                    alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                    <div class="swiper-slide">
+                        <div class="card card-inner">
+                            <div class="card-image-box"> <img class="card-img-top" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title">Old Mutual</h4>
-                                <p class="card-text">“We didn’t realize it would be as successful as it is. We have an
-                                    average of about 3000 transactions per second. Our net promoter score is increasing
-                                    month-on-month.”
+                                <p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”
                                 </p>
                                 <h6 class="card-subtitle">Lorelei Jensen, Head of Strategic Business Solutions</h6>
                                 <div class="card-cta">
@@ -85,24 +111,21 @@
                                         <a href="#" class="cta cta-default cta-icon-right">
                                             <span class="cta-content">See More</span>
                                             <span class="cta-icon-box">
-                                                <i class="cta-icon fa fa-arrow-right"></i>
-                                            </span>
+                                            <i class="cta-icon fa fa-arrow-right"></i>
+                                        </span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 col-sm-6 ">
-                        <div class="card h-100 card-inner">
-                            <div class="card-image-box"> <img class="card-img-top" src="./images/testimonio01.png"
-                                    alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                    <div class="swiper-slide">
+                        <div class="card card-inner">
+                            <div class="card-image-box"> <img class="card-img-top" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title">Old Mutual</h4>
-                                <p class="card-text">“We didn’t realize it would be as successful as it is. We have an
-                                    average of about 3000 transactions per second. Our net promoter score is increasing
-                                    month-on-month.”
+                                <p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”
                                 </p>
                                 <h6 class="card-subtitle">Lorelei Jensen, Head of Strategic Business Solutions</h6>
                                 <div class="card-cta">
@@ -110,19 +133,17 @@
                                         <a href="#" class="cta cta-default cta-icon-right">
                                             <span class="cta-content">See More</span>
                                             <span class="cta-icon-box">
-                                                <i class="cta-icon fa fa-arrow-right"></i>
-                                            </span>
+                                            <i class="cta-icon fa fa-arrow-right"></i>
+                                        </span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide row">
+                    <div class="swiper-slide">
 
-                    <div class="col-12 col-md-6 col-lg-3 col-sm-6 ">
-                        <div class="card h-100 card-inner">
+                        <div class="card card-inner">
                             <div class="card-image-box"> <img class="card-img-top" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
                             </div>
                             <div class="card-body">
@@ -142,32 +163,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 col-sm-6 ">
-                        <div class="card h-100 card-inner">
-                            <div class="card-image-box"> <img class="card-img-top" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">Old Mutual</h4>
-                                <p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”
-                                </p>
-                                <h6 class="card-subtitle">Lorelei Jensen, Head of Strategic Business Solutions</h6>
-                                <div class="card-cta">
-                                    <div class="cta-group">
-                                        <a href="#" class="cta cta-default cta-icon-right">
-                                            <span class="cta-content">See More</span>
-                                            <span class="cta-icon-box">
-                                            <i class="cta-icon fa fa-arrow-right"></i>
-                                        </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- </div> -->
                     </div>
                 </div>
             </div>
+
 
             <!-- for dots -->
             <div class="swiper-pagination"></div>
@@ -181,23 +180,44 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+
+        <div data-auto-play-delayCard="2000" id="card-AutoPlayDelay"></div>
+        <div data-loopCard="false" id="card-Loop"></div>
+
+        <div data-rowCount-mobileCard="1" id="card-RMob"></div>
+        <div data-colCount-mobileCard="1" id="card-CMob"></div>
+        <div data-rowCount-tabletCard="2" id="card-RTab"></div>
+        <div data-colCount-tabletCard="2" id="card-CTab"></div>
+        <div data-rowCount-desktopCard="1" id="card-RDes"></div>
+        <div data-colCount-desktopCard="4" id="card-CDes"></div>
+        <div data-slide-tabletCard="4" id="card-SlideTab"></div>
+        <div data-slide-desktopCard="4" id="card-SlideDes"></div>
     </section>
 
-    <div data-auto-play-delayCard="2000" id="card-AutoPlayDelay"></div>
-    <div data-loopCard="false" id="card-Loop"></div>
 
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
+    var cardRMob = $("#card-RMob").attr('data-rowCount-mobileCard');
+    var cardCMob = $("#card-CMob").attr('data-colCount-mobileCard');
+    var cardRTab = $("#card-RTab").attr('data-rowCount-tabletCard');
+    var cardCTab = $("#card-CTab").attr('data-colCount-tabletCard');
+    var cardRDes = $("#card-RDes").attr('data-rowCount-desktopCard');
+    var cardCDes = $("#card-CDes").attr('data-colCount-desktopCard');
+    var cardSlideTab = $("#card-SlideTab").attr('data-slide-tabletCard');
+    var cardSlideDes = $("#card-SlideDes").attr('data-slide-desktopCard');
+
     var cardAutoPlayDelay = $("#card-AutoPlayDelay").attr('data-auto-play-delayCard');
     var cardLoop = $("#card-Loop").attr('data-loopCard');
     var swiper = new Swiper(".swiper-container", {
-        autoplay: {
-            delay: cardAutoPlayDelay,
-        },
-        slidesPerView: 1,
+        // autoplay: {
+        //     delay: cardAutoPlayDelay,
+        // },
+        slidesPerView: cardCMob,
         spaceBetween: 0,
         // loop: cardLoop,
         slidesPerColumnFill: "row",
@@ -211,15 +231,15 @@
         },
         breakpoints: {
             767: {
-                slidesPerView: 1,
-                slidesPerColumn: 1,
-                slidesPerGroup: 1,
+                slidesPerView: cardCTab,
+                slidesPerColumn: cardRTab,
+                slidesPerGroup: cardSlideTab,
                 spaceBetween: 20,
             },
             1023: {
-                slidesPerView: 1,
-                slidesPerColumn: 1,
-                slidesPerGroup: 1,
+                slidesPerView: cardCDes,
+                slidesPerColumn: cardRDes,
+                slidesPerGroup: cardSlideDes,
                 spaceBetween: 20,
             },
         },

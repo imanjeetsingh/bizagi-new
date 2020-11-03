@@ -67,32 +67,34 @@
                 <i class="fa fa fa-caret-right"></i>
             </div>
         </div>
+
+        <div data-rowCount-mobile="1" id="gallery-RMob"></div>
+        <div data-colCount-mobile="1" id="gallery-CMob"></div>
+        <div data-rowCount-tablet="1" id="gallery-RTab"></div>
+        <div data-colCount-tablet="3" id="gallery-CTab"></div>
+        <div data-rowCount-desktop="1" id="gallery-RDes"></div>
+        <div data-colCount-desktop="5" id="gallery-CDes"></div>
+        <div data-slide-tablet="1" id="gallery-SlideTab"></div>
+        <div data-slide-desktop="1" id="gallery-SlideDes"></div>
+        <div data-auto-play-delay="2000" id="gallery-AutoPlayDelay"></div>
+        <div data-loop="true" id="gallery-Loop"></div>
+        <!-- <div data-space-mobile="20" id="gallery-spaceMob"></div>
+             <div data-space-tablet="20" id="gallery-spaceTab"></div>
+             <div data-space-desktop="20" id="gallery-spaceDes"></div> -->
+
     </section>
-    <div data-rowCount-mobile="1" id="galley-RMob"></div>
-    <div data-colCount-mobile="1" id="galley-CMob"></div>
-    <div data-rowCount-tablet="1" id="galley-RTab"></div>
-    <div data-colCount-tablet="3" id="galley-CTab"></div>
-    <div data-rowCount-desktop="1" id="galley-RDes"></div>
-    <div data-colCount-desktop="5" id="galley-CDes"></div>
-    <div data-slide-tablet="1" id="gallery-SlideTab"></div>
-    <div data-slide-desktop="1" id="gallery-SlideDes"></div>
-    <div data-auto-play-delay="2000" id="gallery-AutoPlayDelay"></div>
-    <div data-loop="true" id="gallery-Loop"></div>
-    <!-- <div data-space-mobile="20" id="gallery-spaceMob"></div>
-    <div data-space-tablet="20" id="gallery-spaceTab"></div>
-    <div data-space-desktop="20" id="gallery-spaceDes"></div> -->
 
 </body>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
-    var galleyRMob = $("#galley-RMob").attr('data-rowCount-mobile');
-    var galleyCMob = $("#galley-CMob").attr('data-colCount-mobile');
-    var galleyRTab = $("#galley-RTab").attr('data-rowCount-tablet');
-    var galleyCTab = $("#galley-CTab").attr('data-colCount-tablet');
-    var galleyRDes = $("#galley-RDes").attr('data-rowCount-desktop');
-    var galleyCDes = $("#galley-CDes").attr('data-colCount-desktop');
+    var galleryRMob = $("#gallery-RMob").attr('data-rowCount-mobile');
+    var galleryCMob = $("#gallery-CMob").attr('data-colCount-mobile');
+    var galleryRTab = $("#gallery-RTab").attr('data-rowCount-tablet');
+    var galleryCTab = $("#gallery-CTab").attr('data-colCount-tablet');
+    var galleryRDes = $("#gallery-RDes").attr('data-rowCount-desktop');
+    var galleryCDes = $("#gallery-CDes").attr('data-colCount-desktop');
     var gallerySlideTab = $("#gallery-SlideTab").attr('data-slide-tablet');
     var gallerySlideDes = $("#gallery-SlideDes").attr('data-slide-desktop');
     var galleryAutoPlayDelay = $("#gallery-AutoPlayDelay").attr('data-auto-play-delay');
@@ -104,7 +106,7 @@
 
     var space = $("#spaceDes").attr('data-space-desktop');
     var swiper = new Swiper(".swiper-container", {
-        slidesPerView: galleyCMob,
+        slidesPerView: galleryCMob,
         autoplay: {
             delay: galleryAutoPlayDelay,
         },
@@ -120,14 +122,14 @@
         },
         breakpoints: {
             767: {
-                slidesPerView: galleyCTab,
-                slidesPerColumn: galleyRTab,
+                slidesPerView: galleryCTab,
+                slidesPerColumn: galleryRTab,
                 slidesPerGroup: gallerySlideTab,
                 spaceBetween: 20,
             },
             1023: {
-                slidesPerView: galleyCDes,
-                slidesPerColumn: galleyRDes,
+                slidesPerView: galleryCDes,
+                slidesPerColumn: galleryRDes,
                 slidesPerGroup: gallerySlideDes,
                 spaceBetween: 20,
             },
