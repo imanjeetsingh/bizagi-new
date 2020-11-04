@@ -7396,6 +7396,14 @@ span.navbar-toggler-icon::before {
 .officeList-location {
   color: #6d7278; }
 
+.officeList-email {
+  color: #6d7278; }
+  .officeList-email a {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-left: 2rem; }
+
 .officeList-phone {
   color: #6d7278; }
 
