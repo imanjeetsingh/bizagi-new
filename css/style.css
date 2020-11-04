@@ -4932,6 +4932,10 @@ ul li::before {
     .testimonial-box-designation {
       font-size: 1.1rem; } }
 
+.blogDetail-container figure img {
+  width: 100%;
+  height: auto; }
+
 @media (min-width: 992px) {
   .blogDetail-article-box {
     padding-left: 10%;
@@ -5022,13 +5026,16 @@ ul li::before {
       font-size: 0.875rem; } }
 
 .breadcrumb {
-  padding: 0 10%;
+  padding: 0 0%;
   font-size: 0.8125rem;
   line-height: 1.125rem;
   color: #6d7278;
   background-color: #ffffff !important; }
   .breadcrumb a {
     color: #6d7278; }
+  @media (min-width: 992px) {
+    .breadcrumb {
+      padding: 0 10%; } }
 
 .breadcrumb-item + .breadcrumb-item::before {
   content: "\003E" !important; }
@@ -5270,7 +5277,7 @@ ul li::before {
 .category-box .article-heading {
   position: absolute;
   top: -4rem;
-  padding: 0 1rem;
+  padding: 0 1rem 0 0.5rem;
   color: #fff; }
   @media (min-width: 768px) {
     .category-box .article-heading {
@@ -5425,6 +5432,9 @@ ul li::before {
   position: sticky;
   top: 150px;
   margin-top: 4rem; }
+
+.blogAuthor .a2a_default_style {
+  padding: 0 4px 8px 4px; }
 
 .blogAuthor .cta-content-count {
   margin: 0 -1px 0 2px; }
@@ -6316,6 +6326,12 @@ img[alt] {
   @media (min-width: 768px) {
     .tab-content {
       padding: 0; } }
+
+@media (max-width: 767px) {
+  .tab-group li {
+    width: 50%; }
+  .carousel-tab {
+    padding: 11px 15px; } }
 
 .nav {
   display: flex; }
@@ -8011,13 +8027,13 @@ span.navbar-toggler-icon::before {
         .calenderDetails-rowbg .heading {
           font-size: 1.125rem; } }
     @media (min-width: 992px) {
-      .calenderDetails-rowbg .details {
+      .calenderDetails-rowbg .info-details {
         font-size: 1rem; } }
     @media (min-width: 1200px) {
-      .calenderDetails-rowbg .details {
+      .calenderDetails-rowbg .info-details {
         font-size: 1.125rem; } }
     @media (min-width: 992px) {
-      .calenderDetails-rowbg .details {
+      .calenderDetails-rowbg .info-details {
         margin-top: 0; } }
     .calenderDetails-rowbg .price {
       margin-top: 1.5rem; }
