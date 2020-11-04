@@ -7,7 +7,7 @@
     <title>All in One</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="swiper.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
@@ -957,36 +957,6 @@
 
 </body>
 
-<script>
-    // Banner component script starts
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= 10) {
-            $(".home-header").addClass("affix");
-        }
-        if (scroll <= 0) {
-            $(".home-header").removeClass("affix");
-        }
-    });
-    // Banner component script ends
-    $(document).ready(function() {
-        if (window.screen.width < 1025) {
-            var $dropDownBox = $(".nav-container .navbar-nav > .nav-item > .nav-item-suplist > .nav-list");
-            $dropDownBox.each(function(index, val) {
-                var $atag = $(val).prev();
-                var mobileLink = $(".mobileLinkId").attr("data-mobileLink");
-                var aele = '<li class="nav-list-sublist"><a class="dropdown-item" href="' + $atag.attr('href') + '"> ' + mobileLink + '</a></li>';
-                $(val).prepend(aele)
-                $atag.attr('href', '#')
-            })
-        }
-
-        if (window.screen.width > 1024) {
-            $('.dropdown-toggle').removeAttr('data-toggle');
-        }
-    });
-</script>
 <script src="swiper.js"></script>
 
 
