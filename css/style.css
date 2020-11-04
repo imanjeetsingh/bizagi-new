@@ -7976,35 +7976,34 @@ span.navbar-toggler-icon::before {
   font-weight: 600; }
 
 .calenderDetails {
-  color: #6d7278;
-  background-color: #ececec;
-  padding: 1rem 0;
-  font-size: 1.125rem; }
-  .calenderDetails .heading {
-    font-weight: 800; }
+  color: #6d7278; }
+  .calenderDetails-rowbg {
+    color: #6d7278;
+    background-color: #ececec;
+    padding: 1rem 0;
+    font-size: 1.125rem; }
+    .calenderDetails-rowbg .heading {
+      font-weight: 800; }
+      @media (min-width: 992px) {
+        .calenderDetails-rowbg .heading {
+          font-size: 1rem; } }
+      @media (min-width: 1200px) {
+        .calenderDetails-rowbg .heading {
+          font-size: 1.125rem; } }
     @media (min-width: 992px) {
-      .calenderDetails .heading {
+      .calenderDetails-rowbg .details {
         font-size: 1rem; } }
     @media (min-width: 1200px) {
-      .calenderDetails .heading {
+      .calenderDetails-rowbg .details {
         font-size: 1.125rem; } }
-  @media (min-width: 992px) {
-    .calenderDetails .detail-info {
-      font-size: 1rem; } }
-  @media (min-width: 992px) {
-    .calenderDetails .detail-info .detail-info {
-      font-size: 1rem; } }
-  @media (min-width: 1200px) {
-    .calenderDetails .detail-info .detail-info {
-      font-size: 1.125rem; } }
-  @media (min-width: 992px) {
-    .calenderDetails .detail-info .detail-info {
-      margin-top: 0; } }
-  .calenderDetails .detail-info .price {
-    margin-top: 1.5rem; }
     @media (min-width: 992px) {
-      .calenderDetails .detail-info .price {
+      .calenderDetails-rowbg .details {
         margin-top: 0; } }
+    .calenderDetails-rowbg .price {
+      margin-top: 1.5rem; }
+      @media (min-width: 992px) {
+        .calenderDetails-rowbg .price {
+          margin-top: 0; } }
   .calenderDetails .tile-box:first-child {
     padding-top: 2rem;
     border: none; }
