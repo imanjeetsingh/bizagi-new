@@ -42,6 +42,12 @@
     }
     .blog-cta {
         justify-content: center;
+        @include media (tablet) {
+            // margin: 1rem 0 !important;
+        }
+        @include media (xldesktop) {
+            margin: 4rem 0 2rem 0 !important;
+        }
     }
     .cta {
         padding: 0.15rem;
@@ -60,7 +66,7 @@
     }
     .option-set {
         width: 18rem;
-        padding: 1.25rem 0;
+        padding: 0.8rem 0 0 0;
     }
     .option-set a {
         color: #6d7278;
@@ -72,6 +78,7 @@
         outline: none;
     }
     .dropdown:hover .dropdown-menu {
+        display: block;
         @include media(tablet) {
             margin-top: 0;
             margin-left: -2rem;
@@ -80,34 +87,47 @@
             margin-left: 0;
         }
         @include media(xldesktop) {
-            display: block;
             margin: 0 0 0 1rem;
         }
     }
+    .options {
+        padding: 0 1.5rem;
+    }
     .option-2 {
         @include mobile-only {
-            transform: translate3d(-123px, 46px, 0px) !important;
+            transform: translate3d(-90px, -31px, 0px) !important;
+            width: 14.5rem !important;
         }
         @include media(tablet) {
-            left: 0 !important;
             margin-top: 0;
+            left: -2rem;
+            width: 16.5rem;
         }
         @include media(desktop) {
+            left: 0 !important;
             left: -41px !important;
+            width: 16.5rem !important;
         }
         @include media(xldesktop) {
             left: 0px !important;
+            width: 18.5rem !important;
         }
     }
     .option-1 {
         @include mobile-only {
-            transform: translate3d(15px, 46px, 0px) !important;
+            transform: translate3d(0px, -31px, 0px) !important;
+        }
+        @include media(tablet) {
+            margin-top: 0;
+            left: -2rem;
         }
         @include media(desktop) {
             left: -41px !important;
+            width: 17.5rem !important;
         }
         @include media(xldesktop) {
             left: 0px !important;
+            width: 20rem !important;
         }
     }
     .dropdown-menu.show {
