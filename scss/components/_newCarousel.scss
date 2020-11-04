@@ -20,7 +20,16 @@
 
 .side .swiper-btn {
     position: absolute;
-    top: 1.5rem;
+    top: -7.5rem;
+    @include media (tablet) {
+        top: -6rem;
+    }
+    @include media (desktop) {
+        top: -4.5rem;
+    }
+    @include media (xldesktop) {
+        top: -6.5rem;
+    }
 }
 
 .swiper-slide .partner-logo-image {
@@ -69,6 +78,10 @@
 .card-container .swiper-slide {
     margin-left: 0;
     margin-right: 0;
+}
+
+.carousel-button.side {
+    position: relative;
 }
 
 .swiper-pagination {
