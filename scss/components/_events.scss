@@ -89,6 +89,12 @@
     padding-left: 15px;
     vertical-align: top;
     margin-top: 0;
+    @include media(tablet){
+        margin-top: -1.4375rem;
+    }
+    @include media(desktop){
+        margin-top: 0;
+    }
 }
 
 .eventsDateBadge {
@@ -107,7 +113,7 @@
     }
     @include media(desktop) {
         margin-top: 0;
-        margin-left: 0;
+        margin-left: -1.4375rem;
     }
 }
 
@@ -126,6 +132,9 @@
         .list-inline{
             li{
                 padding-left: 0;
+                .fa-map-marker{
+                    margin-top: 1rem;
+                }
             }
         }
     }

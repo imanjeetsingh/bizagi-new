@@ -6845,6 +6845,12 @@ span.navbar-toggler-icon::before {
   padding-left: 15px;
   vertical-align: top;
   margin-top: 0; }
+  @media (min-width: 768px) {
+    .eventsInfoDate {
+      margin-top: -1.4375rem; } }
+  @media (min-width: 992px) {
+    .eventsInfoDate {
+      margin-top: 0; } }
 
 .eventsDateBadge {
   width: 50px;
@@ -6863,7 +6869,7 @@ span.navbar-toggler-icon::before {
   @media (min-width: 992px) {
     .eventsDateBadge {
       margin-top: 0;
-      margin-left: 0; } }
+      margin-left: -1.4375rem; } }
 
 .eventsBody {
   display: inline-block;
@@ -6877,6 +6883,8 @@ span.navbar-toggler-icon::before {
     bottom: -1rem; }
   .eventsBody .tag-box .list-inline li {
     padding-left: 0; }
+    .eventsBody .tag-box .list-inline li .fa-map-marker {
+      margin-top: 1rem; }
 
 .fc-today {
   background-color: #F28C20 !important; }
@@ -7941,11 +7949,11 @@ span.navbar-toggler-icon::before {
 
 .courseCalender .label {
   font-weight: 800;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 0;
   width: 8.125rem; }
   @media (min-width: 768px) {
     .courseCalender .label {
-      width: 11.5rem; } }
+      width: 8.125rem; } }
 
 .courseCalender .list-inline {
   margin: 0; }
@@ -7954,13 +7962,13 @@ span.navbar-toggler-icon::before {
   padding: 0.5rem 0 0.5rem 2rem; }
 
 .courseCalender td {
-  padding: 0 3rem 0 1rem; }
+  padding: 0 0rem 0 0rem; }
   @media (min-width: 768px) {
     .courseCalender td {
       padding: 0; } }
   @media (min-width: 992px) {
     .courseCalender td {
-      padding: 0 3rem 0 2rem; } }
+      padding: 0; } }
 
 .courseCalender .city {
   display: inline-block;
