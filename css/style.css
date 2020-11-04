@@ -4813,18 +4813,30 @@ ul li::before {
 
 .business-list {
   font-family: 'Open Sans', sans-serif;
-  border-bottom: 1px solid #b1b1b1;
   margin-bottom: 1rem;
   padding: 0.9rem 0 0 0.9rem;
   position: relative; }
   .business-list-box {
     font-family: 'Open Sans', sans-serif;
     margin: 0 1rem 0 1rem; }
-  .business-list-description {
+  .business-list p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     color: #6D7278;
-    font-weight: 300; }
+    font-weight: 300;
+    border-bottom: 1px solid #b1b1b1;
+    padding-bottom: 1rem;
+    padding-left: 1rem; }
+    .business-list p a {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1rem;
+      color: #6D7278;
+      font-weight: 300;
+      border-bottom: 1px solid #b1b1b1;
+      padding-bottom: 1rem; }
+      .business-list p a:hover {
+        color: #F38C1A;
+        text-decoration: none; }
 
 .feature-container {
   margin-top: 6.25rem; }
