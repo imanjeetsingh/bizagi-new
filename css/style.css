@@ -6947,9 +6947,6 @@ span.navbar-toggler-icon::before {
   margin-left: 0;
   margin-right: 0; }
 
-.carousel-button.side {
-  position: relative; }
-
 .swiper-pagination {
   position: unset; }
 
@@ -7030,9 +7027,6 @@ span.navbar-toggler-icon::before {
 .card-container .swiper-slide {
   margin-left: 0;
   margin-right: 0; }
-
-.carousel-button.side {
-  position: relative; }
 
 .swiper-pagination {
   position: unset; }
