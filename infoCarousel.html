@@ -4,23 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info Carousel</title>
+    <title>New Carousel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="swiper.css" />
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="swiper.js"></script>
+
 </head>
 
 <body>
+    <!-- info carousel starts -->
     <section class="covid-section">
         <div class="container">
-            <div class="swiper-container">
+            <div class="swiper-container infoCarousel">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide col-12 text-center">
-                        <p class="covid-text">Bizagi launches <span class="covid-text-bold">CoronaPass™</span> to
-                            protect lives and livelihoods.</p>
+                        <p class="covid-text">Bizagi launches <span class="covid-text-bold">CoronaPass™</span> to protect lives and livelihoods.</p>
                         <a class="covid-link" href="" target="">
                             <span class="covid-link-text">CoronaPass.org</span>
                             <i class="covid-icon fa fa-arrow-right"></i>
@@ -37,19 +37,10 @@
             </div>
         </div>
     </section>
-
+    <!-- info carousel ends -->
 
 
 </body>
-<!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-<script>
-    var swiper = new Swiper(".swiper-container", {
-        slidesPerView: 1,
-        autoplay: { delay: 2000, },
-        loop: true,
-    });
-</script>
+<script src="swiper.js"></script>
 
 </html>

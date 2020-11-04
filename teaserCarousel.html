@@ -11,24 +11,15 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <!-- <script src="swiper.js"></script> -->
+
 </head>
 
-<style>
-    .card-container .swiper-slide {
-        height: auto;
-    }
-    
-    .swiper-slide .card-inner {
-        padding-bottom: 5rem;
-        height: calc(100% - 3rem) !important;
-    }
-</style>
 
 <body>
+    <!-- teaser carousel starts -->
     <section>
         <div class="container-fluid contentSection-container text-center card-container">
-            <div class="swiper-container">
+            <div class="swiper-container cardSection">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="card card-inner">
@@ -45,8 +36,8 @@
                                             <a href="#" class="cta cta-default cta-icon-right">
                                                 <span class="cta-content">See More</span>
                                                 <span class="cta-icon-box">
-                                            <i class="cta-icon fa fa-arrow-right"></i>
-                                        </span>
+                                    <i class="cta-icon fa fa-arrow-right"></i>
+                                </span>
                                             </a>
                                         </div>
                                     </div>
@@ -67,8 +58,8 @@
                                         <a href="#" class="cta cta-default cta-icon-right">
                                             <span class="cta-content">See More</span>
                                             <span class="cta-icon-box">
-                                            <i class="cta-icon fa fa-arrow-right"></i>
-                                        </span>
+                                    <i class="cta-icon fa fa-arrow-right"></i>
+                                </span>
                                         </a>
                                     </div>
                                 </div>
@@ -89,8 +80,8 @@
                                         <a href="#" class="cta cta-default cta-icon-right">
                                             <span class="cta-content">See More</span>
                                             <span class="cta-icon-box">
-                                            <i class="cta-icon fa fa-arrow-right"></i>
-                                        </span>
+                                    <i class="cta-icon fa fa-arrow-right"></i>
+                                </span>
                                         </a>
                                     </div>
                                 </div>
@@ -111,8 +102,8 @@
                                         <a href="#" class="cta cta-default cta-icon-right">
                                             <span class="cta-content">See More</span>
                                             <span class="cta-icon-box">
-                                            <i class="cta-icon fa fa-arrow-right"></i>
-                                        </span>
+                                    <i class="cta-icon fa fa-arrow-right"></i>
+                                </span>
                                         </a>
                                     </div>
                                 </div>
@@ -133,8 +124,8 @@
                                         <a href="#" class="cta cta-default cta-icon-right">
                                             <span class="cta-content">See More</span>
                                             <span class="cta-icon-box">
-                                            <i class="cta-icon fa fa-arrow-right"></i>
-                                        </span>
+                                    <i class="cta-icon fa fa-arrow-right"></i>
+                                </span>
                                         </a>
                                     </div>
                                 </div>
@@ -156,8 +147,8 @@
                                         <a href="#" class="cta cta-default cta-icon-right">
                                             <span class="cta-content">See More</span>
                                             <span class="cta-icon-box">
-                                            <i class="cta-icon fa fa-arrow-right"></i>
-                                        </span>
+                                    <i class="cta-icon fa fa-arrow-right"></i>
+                                </span>
                                         </a>
                                     </div>
                                 </div>
@@ -169,7 +160,7 @@
 
 
             <!-- for dots -->
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination-one"></div>
 
             <div class="row mt-5 text-center">
                 <div class="col-12">
@@ -182,6 +173,14 @@
             </div>
         </div>
 
+        <!-- <div class="carousel-button side">
+        <div class="swiper-button-prev swiper-button-prev-one swiper-btn" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-d328c8da281dd8fd">
+            <i class="fa fa fa-caret-left"></i>
+        </div>
+        <div class="swiper-button-next swiper-button-next-one swiper-btn" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-d39eb45b8afdafb8">
+            <i class="fa fa fa-caret-right"></i>
+        </div>
+    </div> -->
 
         <div data-auto-play-delayCard="2000" id="card-AutoPlayDelay"></div>
         <div data-loopCard="false" id="card-Loop"></div>
@@ -195,67 +194,10 @@
         <div data-slide-tabletCard="4" id="card-SlideTab"></div>
         <div data-slide-desktopCard="4" id="card-SlideDes"></div>
     </section>
+    <!-- teaser carousel ends -->
 
 
 </body>
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-    var cardRMob = $("#card-RMob").attr('data-rowCount-mobileCard');
-    var cardCMob = $("#card-CMob").attr('data-colCount-mobileCard');
-    var cardRTab = $("#card-RTab").attr('data-rowCount-tabletCard');
-    var cardCTab = $("#card-CTab").attr('data-colCount-tabletCard');
-    var cardRDes = $("#card-RDes").attr('data-rowCount-desktopCard');
-    var cardCDes = $("#card-CDes").attr('data-colCount-desktopCard');
-    var cardSlideTab = $("#card-SlideTab").attr('data-slide-tabletCard');
-    var cardSlideDes = $("#card-SlideDes").attr('data-slide-desktopCard');
-
-    var cardAutoPlayDelay = $("#card-AutoPlayDelay").attr('data-auto-play-delayCard');
-    var cardLoop = $("#card-Loop").attr('data-loopCard');
-    var swiper = new Swiper(".swiper-container", {
-        // autoplay: {
-        //     delay: cardAutoPlayDelay,
-        // },
-        slidesPerView: cardCMob,
-        spaceBetween: 0,
-        // loop: cardLoop,
-        slidesPerColumnFill: "row",
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            767: {
-                slidesPerView: cardCTab,
-                slidesPerColumn: cardRTab,
-                slidesPerGroup: cardSlideTab,
-                spaceBetween: 20,
-            },
-            1023: {
-                slidesPerView: cardCDes,
-                slidesPerColumn: cardRDes,
-                slidesPerGroup: cardSlideDes,
-                spaceBetween: 20,
-            },
-        },
-    });
-    // var bottomHeight = 0;
-    // $(".card-body").each(function() {
-    //     if ($(this).height() > bottomHeight) {
-    //         bottomHeight = $(this).height();
-    //     }
-    // });
-    // $(".card-body").height(bottomHeight);
-    // $(document).ready(function() {
-    //     if ($(".container-fluid").hasClass("swiper-container")) {
-    //         $(".card-body").addClass("abc");
-    //     }
-    // });
-</script>
+<script src="swiper.js"></script>
 
 </html>

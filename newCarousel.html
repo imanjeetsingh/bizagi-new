@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <!-- <script src="swiper.js"></script> -->
+
 </head>
 
 <body>
 
+    <!-- gallery carousel starts-->
     <section>
         <div class="container-fluid gallery-carousel" id="content">
-
-            <div class="swiper-container">
+            <div class="swiper-container gallerySection">
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide partner-logo">
@@ -56,14 +56,13 @@
 
                 </div>
             </div>
-
         </div>
 
         <div class="carousel-button side">
-            <div class="swiper-button-prev swiper-btn" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-d328c8da281dd8fd">
+            <div class="swiper-button-prev swiper-button-prev-two swiper-btn" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-d328c8da281dd8fd">
                 <i class="fa fa fa-caret-left"></i>
             </div>
-            <div class="swiper-button-next swiper-btn" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-d39eb45b8afdafb8">
+            <div class="swiper-button-next swiper-button-next-two swiper-btn" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-d39eb45b8afdafb8">
                 <i class="fa fa fa-caret-right"></i>
             </div>
         </div>
@@ -83,58 +82,8 @@
              <div data-space-desktop="20" id="gallery-spaceDes"></div> -->
 
     </section>
-
+    <!-- gallery carousel ends -->
 </body>
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-    var galleryRMob = $("#gallery-RMob").attr('data-rowCount-mobile');
-    var galleryCMob = $("#gallery-CMob").attr('data-colCount-mobile');
-    var galleryRTab = $("#gallery-RTab").attr('data-rowCount-tablet');
-    var galleryCTab = $("#gallery-CTab").attr('data-colCount-tablet');
-    var galleryRDes = $("#gallery-RDes").attr('data-rowCount-desktop');
-    var galleryCDes = $("#gallery-CDes").attr('data-colCount-desktop');
-    var gallerySlideTab = $("#gallery-SlideTab").attr('data-slide-tablet');
-    var gallerySlideDes = $("#gallery-SlideDes").attr('data-slide-desktop');
-    var galleryAutoPlayDelay = $("#gallery-AutoPlayDelay").attr('data-auto-play-delay');
-    var galleryLoop = $("#gallery-Loop").attr('data-loop');
-    // var galleryspaceMob = $("#gallery-spaceMob").attr('data-space-mobile');
-    // var galleryspaceTab = $("#gallery-spaceTab").attr('data-space-tablet');
-    // var galleryspaceDes = $("#gallery-spaceDes").attr('data-space-desktop');
-
-
-    var space = $("#spaceDes").attr('data-space-desktop');
-    var swiper = new Swiper(".swiper-container", {
-        slidesPerView: galleryCMob,
-        autoplay: {
-            delay: galleryAutoPlayDelay,
-        },
-        loop: galleryLoop,
-        spaceBetween: 20,
-        slidesPerColumnFill: "row",
-        pagination: {
-            el: ".swiper-pagination",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            767: {
-                slidesPerView: galleryCTab,
-                slidesPerColumn: galleryRTab,
-                slidesPerGroup: gallerySlideTab,
-                spaceBetween: 20,
-            },
-            1023: {
-                slidesPerView: galleryCDes,
-                slidesPerColumn: galleryRDes,
-                slidesPerGroup: gallerySlideDes,
-                spaceBetween: 20,
-            },
-        },
-    });
-</script>
+<script src="swiper.js"></script>
 
 </html>
