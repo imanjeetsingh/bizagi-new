@@ -9,6 +9,16 @@
     &-location {
         color: #6d7278;
     }
+    &-email{
+        color: #6d7278;
+        a{
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 0;
+            // color: #6d7278;
+            margin-left: 2rem;
+        }
+    }
     &-phone {
         color: #6d7278;
     }
