@@ -154,6 +154,10 @@
     }
 }
 
+.category-list:first-child {
+    margin-top: 2rem;
+}
+
 .category-list .category-article-image-tag {
     z-index: 1;
     padding: 0.2rem;

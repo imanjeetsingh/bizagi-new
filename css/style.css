@@ -4936,6 +4936,12 @@ ul li::before {
   width: 100%;
   height: auto; }
 
+.blogDetail-container .breadcrumb {
+  padding: 0; }
+  @media (min-width: 992px) {
+    .blogDetail-container .breadcrumb {
+      padding: 0 10%; } }
+
 @media (min-width: 992px) {
   .blogDetail-article-box {
     padding-left: 10%;
@@ -5026,14 +5032,17 @@ ul li::before {
       font-size: 0.875rem; } }
 
 .breadcrumb {
-  padding: 0 0%;
+  padding: 0 2%;
   font-size: 0.8125rem;
   line-height: 1.125rem;
   color: #6d7278;
   background-color: #ffffff !important; }
   .breadcrumb a {
     color: #6d7278; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
+    .breadcrumb {
+      padding: 0 4%; } }
+  @media (min-width: 1200px) {
     .breadcrumb {
       padding: 0 10%; } }
 
@@ -5361,6 +5370,9 @@ ul li::before {
       left: 0 !important;
       top: 0 !important;
       font-size: 0.75rem !important; } }
+
+.category-list:first-child {
+  margin-top: 2rem; }
 
 .category-list .category-article-image-tag {
   z-index: 1;
@@ -8880,6 +8892,9 @@ a.clear-results {
       margin: 0; } }
   .blog-banner-inner {
     position: relative; }
+    @media (min-width: 768px) {
+      .blog-banner-inner {
+        margin: 0 15px; } }
   .blog-banner .banner-heading {
     font-size: 16px;
     line-height: 20px; }
@@ -8913,17 +8928,24 @@ a.clear-results {
     justify-content: center; }
     @media (min-width: 1200px) {
       .blog-banner .blog-cta {
-        margin: 4rem 0 2rem 0 !important; } }
+        margin: 6rem 0 5rem 0 !important; } }
+  .blog-banner .blogList {
+    margin: 0 15px; }
   .blog-banner .cta {
-    padding: 0.15rem;
-    margin: 0 -41px 32px 0; }
+    padding: 10px 20px;
+    margin: 0 12px; }
     @media (min-width: 768px) {
       .blog-banner .cta {
-        padding: 10px 20px;
-        margin: 0; } }
+        margin: 0 24px; } }
+    @media (min-width: 768px) {
+      .blog-banner .cta {
+        padding: 10px 40px;
+        margin: 0 5px; } }
     @media (min-width: 1200px) {
       .blog-banner .cta {
         padding: 10px 80px; } }
+  .blog-banner .cta-icon-box {
+    margin-top: 4px; }
   .blog-banner ul.options > li {
     padding-top: 5px; }
   .blog-banner .option-set {
@@ -8951,40 +8973,43 @@ a.clear-results {
     padding: 0 1.5rem; }
   @media (max-width: 767px) {
     .blog-banner .option-2 {
-      transform: translate3d(-90px, -31px, 0px) !important;
-      width: 14.5rem !important; } }
+      transform: translate3d(-131px, 1px, 0px) !important;
+      width: 17.5rem !important; } }
   @media (min-width: 768px) {
     .blog-banner .option-2 {
       margin-top: 0;
-      left: -2rem;
-      width: 16.5rem; } }
+      left: 0.5rem;
+      width: 17.5rem; } }
   @media (min-width: 992px) {
     .blog-banner .option-2 {
       left: 0 !important;
-      left: -41px !important;
-      width: 16.5rem !important; } }
+      left: -36px !important; } }
   @media (min-width: 1200px) {
     .blog-banner .option-2 {
-      left: 0px !important;
+      left: -21px !important;
       width: 18.5rem !important; } }
   @media (max-width: 767px) {
     .blog-banner .option-1 {
-      transform: translate3d(0px, -31px, 0px) !important; } }
+      transform: translate3d(25px, 1px, 0px) !important;
+      width: 17.5rem !important; } }
   @media (min-width: 768px) {
     .blog-banner .option-1 {
       margin-top: 0;
-      left: -2rem; } }
+      left: 0.5rem;
+      width: 17.5rem !important; } }
   @media (min-width: 992px) {
     .blog-banner .option-1 {
-      left: -41px !important;
-      width: 17.5rem !important; } }
+      left: -21px !important; } }
   @media (min-width: 1200px) {
     .blog-banner .option-1 {
-      left: 0px !important;
-      width: 20rem !important; } }
+      left: -8px !important;
+      width: 18.5rem !important; } }
   @media (min-width: 1200px) {
     .blog-banner .dropdown-menu.show {
       display: none !important; } }
+  .blog-banner .dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem; }
 
 @media (min-width: 992px) {
   .vertical-card .card-inner {
