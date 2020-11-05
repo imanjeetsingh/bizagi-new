@@ -5,6 +5,10 @@
             width: 100%;
             height: auto;
         }
+        img {
+            width: 100%;
+            height: auto;
+        }
         .breadcrumb {
             padding: 0;
             @include media (desktop) {
@@ -12,6 +16,18 @@
             }
         }
     }
+    // .mb-4.order-sm-4.order-md-1.col-12 {
+    //     height: 11rem;
+    //     @include media (tablet) {
+    //         height: 22rem;
+    //     }
+    //     @include media (desktop) {
+    //         height: 26rem;
+    //     }
+    //     @include media (xldesktop) {
+    //         height: 38rem;
+    //     }
+    // }
     &-article {
         &-box {
             @include media(desktop) {
@@ -29,7 +45,21 @@
         }
         &-image {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            &-box {
+                height: 11rem;
+                @include media (tablet) {
+                    height: 22rem;
+                }
+                @include media (desktop) {
+                    height: 26rem;
+                }
+                @include media (xldesktop) {
+                    height: 38rem;
+                }
+            }
         }
         &-heading {
             font-family: "Open Sans", sans-serif;
@@ -83,13 +113,13 @@
                         text-decoration: none !important;
                     }
                 }
-                p{
+                p {
+                    font-size: 1rem;
                     margin-left: 2.625rem;
-                    a{
+                    a {
                         margin-left: 0;
                         margin-top: 0.5rem;
                         line-height: 1rem;
-
                     }
                 }
             }
@@ -128,13 +158,13 @@
             }
         }
     }
-    &-placeholder{
-        &-image{
+    &-placeholder {
+        &-image {
             display: inline-block;
-            img{
-            border-radius: 50%;
-            width: 5rem;
-            height: auto;
+            img {
+                border-radius: 50%;
+                width: 5rem;
+                height: auto;
             }
         }
     }

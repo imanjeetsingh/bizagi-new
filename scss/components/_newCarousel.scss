@@ -2,6 +2,10 @@
     position: relative;
 }
 
+.gallery-carousel .swiper-slide {
+    width: 15rem !important;
+}
+
 .side .swiper-button-prev {
     margin-left: 1rem;
 }

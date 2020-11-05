@@ -32,10 +32,24 @@
     }
     .article-image-box {
         position: relative;
-        height: auto;
+        // height: auto;
+        height: 13rem;
+        @include media(tablet) {
+            height: 5rem;
+        }
+        @include media(desktop) {
+            height: 7rem;
+        }
+        @include media(xldesktop) {
+            height: 9rem;
+        }
     }
     .article-image {
         display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
     .article-image-tag:hover {
         text-decoration: none;
@@ -81,7 +95,7 @@
 .swiper-button-prev {
     color: black;
     font-size: 50px;
-    margin-left: 8.5rem;
+    margin-left: 8.7rem;
     @include media (tablet) {
         margin-left: 20rem;
     }

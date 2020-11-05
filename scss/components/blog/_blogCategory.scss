@@ -100,6 +100,7 @@
                     &-tag {}
                 }
                 &-heading {
+                    cursor: pointer;
                     padding-top: 0;
                     @include media(tablet) {
                         font-size: 1rem;
@@ -133,6 +134,10 @@
             }
         }
     }
+}
+
+.category-list-box.no-link {
+    cursor: text;
 }
 
 .category-box.category-article-image-tag {
@@ -181,10 +186,10 @@
     bottom: 0;
     content: "";
     display: block;
-    height: 350%;
+    height: 200%;
     width: 100%;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     background: -moz-linear-gradient( top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
     background: -webkit-gradient( linear, left top, left bottom, color-stop(40%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.7)));
     background: -webkit-linear-gradient( top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
@@ -192,9 +197,30 @@
     background: -ms-linear-gradient( top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
     background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
     // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);
+    @include media (tablet) {
+        height: 350%;
+        z-index: 1;
+    }
+}
+
+.category-box .article-image-box {
+    height: 13rem;
+    @include media (tablet) {
+        height: 10rem;
+    }
+    @include media (desktop) {
+        height: 12rem;
+    }
+    @include media (xldesktop) {
+        height: 14.5rem;
+    }
 }
 
 .category-box .article-image-box .article-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     transition-timing-function: ease !important;
     transition: transform 0.7s ease, opacity 0.7s;
     -webkit-transition: -webkit-transform 0.7s ease, opacity 0.7s;

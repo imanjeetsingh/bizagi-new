@@ -199,12 +199,21 @@
         }
         &-image {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
             &-box {
+                position: relative;
                 height: 9.75rem;
                 overflow: hidden;
                 @include media(tablet) {
-                    height: 7.8rem;
-                    ;
+                    height: 11rem;
+                }
+                @include media(desktop) {
+                    height: 11rem;
+                }
+                @include media(xldesktop) {
+                    height: 16rem;
                 }
             }
             &-tag {
@@ -215,10 +224,15 @@
                 @include media(desktop) {
                     font-size: 0.8rem;
                 }
+                &:hover {
+                    text-decoration: none;
+                    color: #ffffff;
+                }
                 &-link {}
             }
         }
         &-heading {
+            cursor: pointer;
             padding: 0.3rem;
             @include media(desktop) {
                 padding: 0;
@@ -231,13 +245,10 @@
             color: #6d7278;
         }
     }
-    .bottom {
-        @include media(tablet) {
-            top: 6.35rem;
-        }
-        @include media(xldesktop) {
-            top: 6.4rem;
-        }
+    .bottom-tag {
+        position: absolute;
+        bottom: 0rem;
+        left: 0;
     }
 }
 
