@@ -5,6 +5,15 @@
     }
     &-inner {
         position: relative;
+        .banner-image-box{
+            object-fit: cover;
+            .banner-image{
+                width: 100%;
+                height: 50%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
     }
     .banner-heading {
         font-size: 16px;
@@ -27,6 +36,9 @@
                 position: absolute;
                 bottom: 0rem;
                 background-color: white;
+            }
+            @include media(desktop){
+                bottom: 18rem;
             }
         }
     }
