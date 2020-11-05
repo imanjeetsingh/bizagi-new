@@ -55,7 +55,7 @@
                 @include media(desktop) {
                     font-size: 1rem !important;
                     line-height: 1.5rem !important;
-                    top: -4.5rem !important;
+                    top: -3.5rem !important;
                 }
             }
         }
@@ -181,7 +181,7 @@
     bottom: 0;
     content: "";
     display: block;
-    height: 70%;
+    height: 350%;
     width: 100%;
     position: absolute;
     z-index: 1;
@@ -200,7 +200,7 @@
     -webkit-transition: -webkit-transform 0.7s ease, opacity 0.7s;
 }
 
-.category-box .article-image-box .article-image:hover {
+.category-box .article-image-box:hover .article-image {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }

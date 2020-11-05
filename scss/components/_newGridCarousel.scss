@@ -57,7 +57,7 @@
 
 .swiper-button-next {
     color: black;
-    font-size: 65px;
+    font-size: 50px;
     margin-left: 4rem;
     @include media (xldesktop) {
         margin-left: 4rem;
@@ -80,17 +80,23 @@
 
 .swiper-button-prev {
     color: black;
-    font-size: 65px;
-    margin-left: 3rem;
+    font-size: 50px;
+    margin-left: 8.5rem;
+    @include media (tablet) {
+        margin-left: 20rem;
+    }
+    @include media (desktop) {
+        margin-left: 27rem;
+    }
     @include media (xldesktop) {
-        margin-left: 10.5rem;
+        margin-left: 45rem;
     }
 }
 
 /////////////////////////////////////////////////////////////////
 // .swiper-button-next {
 //     color: black;
-//     font-size: 65px;
+//     font-size: 50px;
 //     margin-left: 4rem;
 //     //     position: absolute;
 //     //     left: 6rem;
@@ -117,7 +123,7 @@
 // }
 // .swiper-button-prev {
 //     color: black;
-//     font-size: 65px;
+//     font-size: 50px;
 //     margin-left: 3rem;
 //     //     position: absolute;
 //     //     left: 2rem;
