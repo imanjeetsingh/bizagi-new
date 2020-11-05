@@ -141,17 +141,17 @@
     }
     .option-2 {
         @include mobile-only {
-            transform: translate3d(-131px, 1px, 0px) !important;
+            transform: translate3d(-131px, 46px, 0px) !important;
             width: 17.5rem !important;
         }
         @include media(tablet) {
             margin-top: 0;
-            left: 0.5rem;
+            left: 18px !important;
             width: 17.5rem;
         }
         @include media(desktop) {
             left: 0 !important;
-            left: -36px !important;
+            left: -52px !important;
         }
         @include media(xldesktop) {
             left: -21px !important;
@@ -160,16 +160,16 @@
     }
     .option-1 {
         @include mobile-only {
-            transform: translate3d(25px, 1px, 0px) !important;
+            transform: translate3d(25px, 46px, 0px) !important;
             width: 17.5rem !important;
         }
         @include media(tablet) {
             margin-top: 0;
-            left: 0.5rem;
+            left: 10px;
             width: 17.5rem !important;
         }
         @include media(desktop) {
-            left: -21px !important;
+            left: -43px !important;
         }
         @include media(xldesktop) {
             left: -8px !important;
