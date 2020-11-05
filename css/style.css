@@ -8973,49 +8973,48 @@ a.clear-results {
     text-decoration: none; }
   .blog-banner button:focus {
     outline: none; }
-  .blog-banner .dropdown:hover .dropdown-menu {
-    display: block; }
-    @media (min-width: 768px) {
-      .blog-banner .dropdown:hover .dropdown-menu {
-        margin-top: 0;
-        margin-left: -2rem; } }
-    @media (min-width: 992px) {
-      .blog-banner .dropdown:hover .dropdown-menu {
-        margin-left: 0; } }
-    @media (min-width: 1200px) {
-      .blog-banner .dropdown:hover .dropdown-menu {
-        margin: 0 0 0 1rem; } }
+  @media (min-width: 768px) {
+    .blog-banner .dropdown:hover .dropdown-menu {
+      margin-top: 0;
+      margin-left: -2rem; } }
+  @media (min-width: 992px) {
+    .blog-banner .dropdown:hover .dropdown-menu {
+      margin-left: 0; } }
+  @media (min-width: 1200px) {
+    .blog-banner .dropdown:hover .dropdown-menu {
+      display: block;
+      margin: 0 0 0 1rem; } }
   .blog-banner .options {
     padding: 0 1.5rem; }
   @media (max-width: 767px) {
     .blog-banner .option-2 {
-      transform: translate3d(-131px, 1px, 0px) !important;
+      transform: translate3d(-131px, 46px, 0px) !important;
       width: 17.5rem !important; } }
   @media (min-width: 768px) {
     .blog-banner .option-2 {
       margin-top: 0;
-      left: 0.5rem;
+      left: 18px !important;
       width: 17.5rem; } }
   @media (min-width: 992px) {
     .blog-banner .option-2 {
       left: 0 !important;
-      left: -36px !important; } }
+      left: -52px !important; } }
   @media (min-width: 1200px) {
     .blog-banner .option-2 {
       left: -21px !important;
       width: 18.5rem !important; } }
   @media (max-width: 767px) {
     .blog-banner .option-1 {
-      transform: translate3d(25px, 1px, 0px) !important;
+      transform: translate3d(25px, 46px, 0px) !important;
       width: 17.5rem !important; } }
   @media (min-width: 768px) {
     .blog-banner .option-1 {
       margin-top: 0;
-      left: 0.5rem;
+      left: 10px;
       width: 17.5rem !important; } }
   @media (min-width: 992px) {
     .blog-banner .option-1 {
-      left: -21px !important; } }
+      left: -43px !important; } }
   @media (min-width: 1200px) {
     .blog-banner .option-1 {
       left: -8px !important;
