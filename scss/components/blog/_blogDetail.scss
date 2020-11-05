@@ -55,12 +55,12 @@
             font-family: "Open Sans", sans-serif;
             &-box {
                 border: 0.0625rem solid #ededed;
-                padding: 2rem 3.5rem;
+                padding: 2rem 0rem;
                 @include media(tablet) {
-                    padding: 2rem 14rem;
+                    padding: 2rem 1rem;
                 }
                 @include media(desktop) {
-                    padding: 2rem 10rem;
+                    padding: 2rem 0;
                 }
                 .blogDetail-article-authorName {
                     &:hover {
@@ -76,9 +76,20 @@
                     }
                 }
                 a {
-                    display: block;
+                    // display: block;
+                    display: inline-block;
+                    margin-left: 2rem;
                     &:hover {
                         text-decoration: none !important;
+                    }
+                }
+                p{
+                    margin-left: 2.625rem;
+                    a{
+                        margin-left: 0;
+                        margin-top: 0.5rem;
+                        line-height: 1rem;
+
                     }
                 }
             }
@@ -114,6 +125,16 @@
                 @include media(xldesktop) {
                     font-size: 0.875rem;
                 }
+            }
+        }
+    }
+    &-placeholder{
+        &-image{
+            display: inline-block;
+            img{
+            border-radius: 50%;
+            width: 5rem;
+            height: auto;
             }
         }
     }
