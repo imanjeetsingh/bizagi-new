@@ -1,4 +1,6 @@
-    .calenderDetails {
+.calenderDetails {
+    color: #6d7278;
+    &-rowbg {
         color: #6d7278;
         background-color: #ececec;
         padding: 1rem 0;
@@ -12,59 +14,44 @@
                 font-size: 1.125rem;
             }
         }
-        .detail-info {
+        .info-details {
             @include media (desktop) {
                 font-size: 1rem;
             }
-
-            .detail-info {
-                @include media (desktop) {
-                    font-size: 1rem;
-                }
-
-                @include media (xldesktop) {
-                    font-size: 1.125rem;
-                }
-
-                @include media (desktop) {
-                    margin-top: 0;
-                }
+            @include media (xldesktop) {
+                font-size: 1.125rem;
             }
-
-            .price {
-                margin-top: 1.5rem;
-
-                @include media (desktop) {
-                    margin-top: 0;
-                }
+            @include media (desktop) {
+                margin-top: 0;
             }
         }
-
-        .tile-box:first-child {
-            padding-top: 2rem;
-            border: none;
-        }
-
-        .tile-box {
-            border-top: 1px solid #ececec;
-            padding: 1rem;
-
-            @include media (tablet) {
-                padding: 1rem 0;
+        .price {
+            margin-top: 1.5rem;
+            @include media (desktop) {
+                margin-top: 0;
             }
-        }
-
-        h4 {
-            color: #F38D1E;
-        }
-
-        p {
-            color: #6d7268;
-            font-weight: 400;
-        }
-
-        li {
-            color: #6d7278;
-            font-weight: 300;
         }
     }
+    .tile-box:first-child {
+        padding-top: 2rem;
+        border: none;
+    }
+    .tile-box {
+        border-top: 1px solid #ececec;
+        padding: 1rem;
+        @include media (tablet) {
+            padding: 1rem 0;
+        }
+    }
+    h4 {
+        color: #F38D1E;
+    }
+    p {
+        color: #6d7268;
+        font-weight: 400;
+    }
+    li {
+        color: #6d7278;
+        font-weight: 300;
+    }
+}

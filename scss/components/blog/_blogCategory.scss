@@ -41,7 +41,7 @@
             &-heading {
                 position: absolute;
                 top: -4rem;
-                padding: 0 1rem;
+                padding: 0 1rem 0 0.5rem;
                 color: #fff;
                 @include media(tablet) {
                     font-size: 0.8rem !important;
@@ -152,6 +152,10 @@
         top: 0 !important;
         font-size: 0.75rem !important;
     }
+}
+
+.category-list:first-child {
+    margin-top: 2rem;
 }
 
 .category-list .category-article-image-tag {

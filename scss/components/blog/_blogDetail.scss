@@ -1,6 +1,17 @@
 // Blog Detail component CSS starts
 .blogDetail {
-    &-container {}
+    &-container {
+        figure img {
+            width: 100%;
+            height: auto;
+        }
+        .breadcrumb {
+            padding: 0;
+            @include media (desktop) {
+                padding: 0 10%;
+            }
+        }
+    }
     &-article {
         &-box {
             @include media(desktop) {
@@ -109,13 +120,19 @@
 }
 
 .breadcrumb {
-    padding: 0 10%;
+    padding: 0 2%;
     font-size: 0.8125rem;
     line-height: 1.125rem;
     color: #6d7278;
     background-color: #ffffff !important;
     a {
         color: #6d7278;
+    }
+    @include media(tablet) {
+        padding: 0 4%;
+    }
+    @include media(xldesktop) {
+        padding: 0 10%;
     }
 }
 
