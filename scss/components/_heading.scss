@@ -346,3 +346,11 @@ ul li::before {
     list-style: none;
     content: "";
 }
+.infoCarousel{
+    .swiper-slide{
+        width: 23rem !important;
+    }
+}
+.covid-section{
+    width: 100% !important;
+}
