@@ -5033,7 +5033,8 @@ ul li::before {
     .blogDetail-article-authorName-box p {
       font-size: 1rem;
       margin-left: 2.625rem;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      padding: 0 1rem; }
       .blogDetail-article-authorName-box p a {
         margin-left: 0;
         margin-top: 0.5rem;
