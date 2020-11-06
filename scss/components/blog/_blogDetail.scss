@@ -86,6 +86,7 @@
             &-box {
                 border: 0.0625rem solid #ededed;
                 padding: 2rem 0rem;
+                background-color: #ececec;
                 @include media(tablet) {
                     padding: 2rem 1rem;
                 }
