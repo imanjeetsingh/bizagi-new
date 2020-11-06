@@ -9164,6 +9164,9 @@ a.clear-results {
 .vertical-card-center {
   justify-content: center; }
 
+.vertical-card .card-image-box {
+  height: auto !important; }
+
 .horizontal-card-center {
   justify-content: center; }
 
