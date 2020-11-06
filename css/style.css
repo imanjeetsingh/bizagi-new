@@ -5021,6 +5021,9 @@ ul li::before {
       font-style: italic; }
       .blogDetail-article-authorName-box .blogDetail-article-linkName:hover {
         color: #F38D1E; }
+      .blogDetail-article-authorName-box .blogDetail-article-linkName-link {
+        display: block;
+        margin-left: 9rem; }
     .blogDetail-article-authorName-box a {
       display: inline-block;
       margin-left: 2rem; }
@@ -5028,7 +5031,9 @@ ul li::before {
         text-decoration: none !important; }
     .blogDetail-article-authorName-box p {
       font-size: 1rem;
-      margin-left: 2.625rem; }
+      margin-left: 2.625rem;
+      margin-top: 1rem;
+      padding: 0 1rem; }
       .blogDetail-article-authorName-box p a {
         margin-left: 0;
         margin-top: 0.5rem;
