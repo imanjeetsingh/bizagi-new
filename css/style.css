@@ -5007,7 +5007,7 @@ ul li::before {
   .blogDetail-article-authorName-box {
     border: 0.0625rem solid #ededed;
     padding: 2rem 0rem;
-    background-color: #efefef; }
+    background-color: #ececec; }
     @media (min-width: 768px) {
       .blogDetail-article-authorName-box {
         padding: 2rem 1rem; } }
