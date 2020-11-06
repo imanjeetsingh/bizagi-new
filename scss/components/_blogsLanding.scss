@@ -89,6 +89,10 @@
     .blogList {
         margin: 0 15px;
     }
+    .blogList .bottom-tag {
+        position: absolute;
+        bottom: 0;
+    }
     .cta {
         padding: 10px 20px;
         margin: 0 12px;
@@ -119,6 +123,7 @@
     }
     .option-set a:hover {
         text-decoration: none;
+        color: #F28C20;
     }
     button:focus {
         outline: none;
