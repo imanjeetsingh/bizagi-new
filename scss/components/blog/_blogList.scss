@@ -276,3 +276,12 @@
     position: sticky;
     top: 7.25rem;
 }
+
+.article-box.col-lg-3 .article-image-box {
+    @include media(desktop) {
+        height: 7.8rem;
+    }
+    @include media(xldesktop) {
+        height: 12rem;
+    }
+}

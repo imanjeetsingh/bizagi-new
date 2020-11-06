@@ -4943,8 +4943,7 @@ ul li::before {
   height: auto; }
 
 .blogDetail-container img {
-  width: 100%;
-  height: auto; }
+  width: 100%; }
 
 .blogDetail-container .breadcrumb {
   padding: 0; }
@@ -5314,6 +5313,14 @@ ul li::before {
   position: sticky;
   top: 7.25rem; }
 
+@media (min-width: 992px) {
+  .article-box.col-lg-3 .article-image-box {
+    height: 7.8rem; } }
+
+@media (min-width: 1200px) {
+  .article-box.col-lg-3 .article-image-box {
+    height: 12rem; } }
+
 .category-box .article-image-box {
   overflow: hidden;
   min-height: 10rem;
@@ -5511,9 +5518,10 @@ ul li::before {
     font-size: 0.75rem;
     margin: 0 0.2rem 0.5rem 0.2rem; }
 
-.blogAuthor .blogList {
-  margin-left: -0.5rem;
-  margin-right: -3rem; }
+@media (min-width: 768px) {
+  .blogAuthor .blogList {
+    margin-left: -0.5rem;
+    margin-right: -3rem; } }
 
 .blogAuthor .a2a_default_style {
   position: sticky;
@@ -5895,17 +5903,7 @@ ul.options > li {
   height: calc(100% - 1rem) !important; }
 
 .card-image-box {
-  position: relative;
-  height: 13.7rem; }
-  @media (min-width: 768px) {
-    .card-image-box {
-      height: 14.7rem; } }
-  @media (min-width: 992px) {
-    .card-image-box {
-      height: 9rem; } }
-  @media (min-width: 1200px) {
-    .card-image-box {
-      height: 14.7rem; } }
+  position: relative; }
 
 .card-tag {
   padding: 2px 20px;
@@ -5978,12 +5976,6 @@ ul.options > li {
 
 .card-price {
   color: #F38D1E; }
-
-.card-img-top {
-  width: 100%;
-  height: 100% !important;
-  object-fit: cover;
-  object-position: center; }
 
 .cta {
   display: flex;
@@ -7112,6 +7104,10 @@ span.navbar-toggler-icon::before {
   padding-bottom: 4rem;
   height: calc(100% - 3rem) !important; }
 
+@media (min-width: 992px) {
+  .swiper-center {
+    justify-content: center; } }
+
 .xchange-container .search {
   border-radius: 2.5rem;
   border: solid 1px lightgray;
@@ -7204,6 +7200,10 @@ span.navbar-toggler-icon::before {
 .swiper-slide .card-inner {
   padding-bottom: 4rem;
   height: calc(100% - 3rem) !important; }
+
+@media (min-width: 992px) {
+  .swiper-center {
+    justify-content: center; } }
 
 .contentCenterCard .element-item {
   position: static !important; }
