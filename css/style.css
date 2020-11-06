@@ -5006,7 +5006,8 @@ ul li::before {
   font-family: "Open Sans", sans-serif; }
   .blogDetail-article-authorName-box {
     border: 0.0625rem solid #ededed;
-    padding: 2rem 0rem; }
+    padding: 2rem 0rem;
+    background-color: #efefef; }
     @media (min-width: 768px) {
       .blogDetail-article-authorName-box {
         padding: 2rem 1rem; } }
