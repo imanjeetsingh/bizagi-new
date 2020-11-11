@@ -1,5 +1,7 @@
-$(document).ready(function() {
-    handleIsotope();
+$(document).ready(function () {
+    setTimeout(() => {
+        handleIsotope();
+    }, 1000);
 })
 
 function handleIsotope() {
