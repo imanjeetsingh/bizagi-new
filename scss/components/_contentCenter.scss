@@ -89,10 +89,7 @@ button:focus{
         flex: 0 0 50%;
     }
     @include media(desktop){
-        flex: 0 0 26%;
-    }
-    @include media(xldesktop){
-        flex: 0 0 50%;
+        flex: 0 0 25%;
     }
 }
 
