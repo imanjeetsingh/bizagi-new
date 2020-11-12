@@ -9489,6 +9489,7 @@ var swiper = new Swiper(".cardSection", {
     //     delay: cardAutoPlayDelay,
     // },
     slidesPerView: cardCMob,
+    slidesPerColumn: cardRMob,
     spaceBetween: 0,
     // loop: cardLoop,
     slidesPerColumnFill: "row",
@@ -9550,7 +9551,7 @@ var swiper = new Swiper(".gallerySection", {
     autoplay: {
         delay: galleryAutoPlayDelay,
     },
-    loop: galleryLoop,
+    loop: window.screen.width > 766 ? false : galleryLoop,
     spaceBetween: 20,
     slidesPerColumnFill: "row",
     pagination: {
