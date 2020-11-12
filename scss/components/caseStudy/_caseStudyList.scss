@@ -201,29 +201,29 @@ ul.options>li {
     .element-item {
         position: relative;
         float: left;
-        width: 23rem;
-        height: 23rem;
-        margin: 0.3125rem;
-        padding: 10px;
-        @include media(tablet) {
-            padding: 0.3125rem;
-            margin: 0.3125rem;
-            width: 348px;
-            height: 348px;
-        }
-        @include media(desktop) {
-            padding: 10px;
-            margin: 0.3125rem 0.3125rem 0.3125rem 1.25rem;
-            width: 295px;
-            height: 400px;
-            // position: static !important;
-        }
-        @include media(xldesktop) {
-            padding: 6px;
-            margin: 0.3125rem;
-            width: 370px;
-            height: 370px;
-        }
+        // width: 23rem;
+        // height: 23rem;
+        // margin: 0.3125rem;
+        // padding: 10px;
+        // @include media(tablet) {
+        //     padding: 0.3125rem;
+        //     margin: 0.3125rem;
+        //     width: 348px;
+        //     height: 348px;
+        // }
+        // @include media(desktop) {
+        //     padding: 10px;
+        //     margin: 0.3125rem 0.3125rem 0.3125rem 1.25rem;
+        //     width: 295px;
+        //     height: 400px;
+        //     // position: static !important;
+        // }
+        // @include media(xldesktop) {
+        //     padding: 6px;
+        //     margin: 0.3125rem;
+        //     width: 370px;
+        //     height: 370px;
+        // }
     }
     img.customer_logo {
         width: 9.375rem;

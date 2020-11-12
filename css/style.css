@@ -5772,29 +5772,7 @@ ul.options > li {
 
 .caseStudyCard .element-item {
   position: relative;
-  float: left;
-  width: 23rem;
-  height: 23rem;
-  margin: 0.3125rem;
-  padding: 10px; }
-  @media (min-width: 768px) {
-    .caseStudyCard .element-item {
-      padding: 0.3125rem;
-      margin: 0.3125rem;
-      width: 348px;
-      height: 348px; } }
-  @media (min-width: 992px) {
-    .caseStudyCard .element-item {
-      padding: 10px;
-      margin: 0.3125rem 0.3125rem 0.3125rem 1.25rem;
-      width: 295px;
-      height: 400px; } }
-  @media (min-width: 1200px) {
-    .caseStudyCard .element-item {
-      padding: 6px;
-      margin: 0.3125rem;
-      width: 370px;
-      height: 370px; } }
+  float: left; }
 
 .caseStudyCard img.customer_logo {
   width: 9.375rem; }
@@ -7203,10 +7181,7 @@ button:focus {
       flex: 0 0 50%; } }
   @media (min-width: 992px) {
     .control-box .filter-dropdown {
-      flex: 0 0 26%; } }
-  @media (min-width: 1200px) {
-    .control-box .filter-dropdown {
-      flex: 0 0 50%; } }
+      flex: 0 0 25%; } }
 
 .control-box .filter-dropdown .dropdown-toggle {
   width: 100%;
