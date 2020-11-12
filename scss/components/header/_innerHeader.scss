@@ -3,7 +3,7 @@
     &.affix {
         position: fixed;
         top: 0;
-        z-index: 999999;
+        z-index: 999999 !important;
         background-color: #ffffff !important;
         margin-top: auto;
         background: transparent;
@@ -94,7 +94,8 @@
 .inner-header {
     padding: 1rem;
     position: fixed;
-    z-index: 1;
+    z-index: 999999 !important;
+    background-color: #ffffff !important;
     @include media(tablet) {
         margin-top: -1.5rem;
     }

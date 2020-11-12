@@ -60,6 +60,8 @@ String.prototype.replaceAll = function(search, replacement) {
     return target.split(search).join(replacement);
 };
 
+var parMeter = "https://www.bizagi.com/";
+
 /*Namespace*/
 window.APP = {};
 
@@ -75,7 +77,7 @@ APP.BizagiXchange.prototype = {
 
 
         $.ajax({
-            url: 'https://www.bizagi.com//widgetxchange/services/xchange.svc/GetAllItems/' + $('#langConnectorXchange').val(),
+            url: ''+ parMeter +'/widgetxchange/services/xchange.svc/GetAllItems/' + $('#langConnectorXchange').val(),
             cache: false,
             type: 'get',
             dataType: "json",
@@ -92,7 +94,7 @@ APP.BizagiXchange.prototype = {
         });
 
         $.ajax({
-            url: 'https://www.bizagi.com/connectorxchange/services/xchange.svc/GetAllItems/' + $('#langConnectorXchange').val(),
+            url: ''+ parMeter +'/connectorxchange/services/xchange.svc/GetAllItems/' + $('#langConnectorXchange').val(),
             cache: false,
             type: 'get',
             dataType: "json",
@@ -109,7 +111,7 @@ APP.BizagiXchange.prototype = {
         });
 
         $.ajax({
-            url: 'https://www.bizagi.com/processxchange/services/ProcessCentral.svc/Processes/GetViewAll/' + $('#langConnectorXchange').val(),
+            url: ''+ parMeter +'processxchange/services/ProcessCentral.svc/Processes/GetViewAll/' + $('#langConnectorXchange').val(),
             cache: false,
             type: 'get',
             dataType: "json",
@@ -184,7 +186,7 @@ APP.BizagiXchange.prototype = {
             //$('.li-category').removeClass('active');
             //Process
             $.ajax({
-                url: 'https://www.bizagi.com//processxchange/services/ProcessCentral.svc/Processes/GetRecently/' + $('#langConnectorXchange').val(),
+                url: ''+ parMeter +'/processxchange/services/ProcessCentral.svc/Processes/GetRecently/' + $('#langConnectorXchange').val(),
                 cache: false,
                 type: 'get',
                 dataType: "json",
@@ -195,7 +197,7 @@ APP.BizagiXchange.prototype = {
 
             //Connectors
             $.ajax({
-                url: 'https://www.bizagi.com/connectorxchange/services/xchange.svc/GetItemsRecentlyAdded/' + $('#langConnectorXchange').val(),
+                url: ''+ parMeter +'connectorxchange/services/xchange.svc/GetItemsRecentlyAdded/' + $('#langConnectorXchange').val(),
                 cache: false,
                 type: 'get',
                 dataType: "json",
@@ -206,7 +208,7 @@ APP.BizagiXchange.prototype = {
 
             //Widgets
             $.ajax({
-                url: 'https://www.bizagi.com//widgetxchange/services/xchange.svc/GetItemsRecentlyAdded/' + $('#langConnectorXchange').val(),
+                url: ''+ parMeter +'/widgetxchange/services/xchange.svc/GetItemsRecentlyAdded/' + $('#langConnectorXchange').val(),
                 cache: false,
                 type: 'get',
                 dataType: "json",
@@ -223,7 +225,7 @@ APP.BizagiXchange.prototype = {
             //$('.li-category').removeClass('active');
             //Process
             $.ajax({
-                url: 'https://www.bizagi.com/processxchange/services/ProcessCentral.svc/Processes/GetTopDownloads/' + $('#langConnectorXchange').val(),
+                url: ''+ parMeter +'processxchange/services/ProcessCentral.svc/Processes/GetTopDownloads/' + $('#langConnectorXchange').val(),
                 cache: false,
                 type: 'get',
                 dataType: "json",
@@ -234,7 +236,7 @@ APP.BizagiXchange.prototype = {
 
             //Connectors
             $.ajax({
-                url: 'https://www.bizagi.com/connectorxchange/services/xchange.svc/GetItemsTopDownload/' + $('#langConnectorXchange').val(),
+                url: ''+ parMeter +'connectorxchange/services/xchange.svc/GetItemsTopDownload/' + $('#langConnectorXchange').val(),
                 cache: false,
                 type: 'get',
                 dataType: "json",
@@ -245,7 +247,7 @@ APP.BizagiXchange.prototype = {
 
             //Widgets
             $.ajax({
-                url: 'https://www.bizagi.com/widgetxchange/services/xchange.svc/GetItemsTopDownload/' + $('#langConnectorXchange').val(),
+                url: ''+ parMeter +'widgetxchange/services/xchange.svc/GetItemsTopDownload/' + $('#langConnectorXchange').val(),
                 cache: false,
                 type: 'get',
                 dataType: "json",
@@ -264,7 +266,7 @@ APP.BizagiXchange.prototype = {
             //$('.li-category').removeClass('active');
             //Process
             $.ajax({
-                url: 'https://www.bizagi.com/processxchange/services/ProcessCentral.svc/Processes/GetTopRanked/' + $('langConnectorXchange').val(),
+                url: ''+ parMeter +'processxchange/services/ProcessCentral.svc/Processes/GetTopRanked/' + $('langConnectorXchange').val(),
                 cache: false,
                 type: 'get',
                 dataType: "json",
@@ -275,7 +277,7 @@ APP.BizagiXchange.prototype = {
 
             //Connectors
             $.ajax({
-                url: 'https://www.bizagi.com/connectorxchange/services/xchange.svc/GetItemsTopRanked/' + $('#langConnectorXchange').val(),
+                url: ''+ parMeter +'connectorxchange/services/xchange.svc/GetItemsTopRanked/' + $('#langConnectorXchange').val(),
                 cache: false,
                 type: 'get',
                 dataType: "json",
@@ -286,7 +288,7 @@ APP.BizagiXchange.prototype = {
 
             //Widgets
             $.ajax({
-                url: 'https://www.bizagi.com/widgetxchange/services/xchange.svc/GetItemsTopRanked/' + $('#langConnectorXchange').val(),
+                url: ''+ parMeter +'widgetxchange/services/xchange.svc/GetItemsTopRanked/' + $('#langConnectorXchange').val(),
                 cache: false,
                 type: 'get',
                 dataType: "json",
@@ -342,10 +344,10 @@ APP.BizagiXchange.prototype = {
                 if (itemType == "Widget" || itemType == "Connector") {
                     switch (itemType) {
                         case 'Widget':
-                            webURL = 'https://www.bizagi.com/widgetxchange/services.ashx';
+                            webURL = ''+ parMeter +'widgetxchange/services.ashx';
                             break;
                         case 'Connector':
-                            webURL = 'https://www.bizagi.com/connectorxchange/services.ashx';
+                            webURL = ''+ parMeter +'connectorxchange/services.ashx';
                             break;
                         default:
                     }
@@ -378,7 +380,7 @@ APP.BizagiXchange.prototype = {
 
                     $.ajax({
                         type: 'POST',
-                        url: 'https://www.bizagi.com/processxchange/services/ProcessCentral.svc/Processes/SaveReview/' + $('#langConnectorXchange').val(),
+                        url: ''+ parMeter +'processxchange/services/ProcessCentral.svc/Processes/SaveReview/' + $('#langConnectorXchange').val(),
                         data: JSON.stringify(reviewData),
                         contentType: "application/json; charset=utf-8",
                         dataType: "json",
@@ -418,7 +420,7 @@ APP.BizagiXchange.prototype = {
             if ($('#frm-share').valid()) {
                 switch (itemType) {
                     case 'Widget':
-                        webURL = 'https://www.bizagi.com/widgetxchange/services/xchange.svc/Share/' + $('#langConnectorXchange').val();
+                        webURL = ''+ parMeter +'widgetxchange/services/xchange.svc/Share/' + $('#langConnectorXchange').val();
                         shareData = {
                             "IdItem": $('#hd-id-item-share').val(),
                             "NameSender": $('#txtNameSenderShare').val(),
@@ -433,7 +435,7 @@ APP.BizagiXchange.prototype = {
                         };
                         break;
                     case 'Connector':
-                        webURL = 'https://www.bizagi.com/connectorxchange/services/xchange.svc/Share/' + $('#langConnectorXchange').val();
+                        webURL = ''+ parMeter +'connectorxchange/services/xchange.svc/Share/' + $('#langConnectorXchange').val();
                         shareData = {
                             "IdItem": $('#hd-id-item-share').val(),
                             "NameSender": $('#txtNameSenderShare').val(),
@@ -448,7 +450,7 @@ APP.BizagiXchange.prototype = {
                         };
                         break;
                     case 'Process':
-                        webURL = 'https://www.bizagi.com/processxchange/services/ProcessCentral.svc/Processes/Share/' + $('#langConnectorXchange').val();
+                        webURL = ''+ parMeter +'processxchange/services/ProcessCentral.svc/Processes/Share/' + $('#langConnectorXchange').val();
 
                         shareData = {
                             "IdTemplate": $('#hd-id-item-share').val(),
@@ -547,7 +549,7 @@ APP.BizagiXchange.prototype = {
     },
     render_items_by_category: function(object_sender) {
         $.ajax({
-            url: 'https://www.bizagi.com/connectorxchange/services/xchange.svc/GetAllItemsByCategory/' + $('#langConnectorXchange').val() + '/' + $(object_sender).data('category-id'),
+            url: ''+ parMeter +'connectorxchange/services/xchange.svc/GetAllItemsByCategory/' + $('#langConnectorXchange').val() + '/' + $(object_sender).data('category-id'),
             cache: false,
             type: 'get',
             dataType: "json",
@@ -622,7 +624,7 @@ APP.BizagiXchange.prototype = {
         var box = $('<div/>').addClass('box-process');
 
         var head = $('<div/>').addClass('head-grad-process');
-        var imghead = $('<img/>').addClass('icon-process').attr('src', 'https://www.bizagi.com/processxchange/Documents/' + item.GuidTemplate + '/images/icon-xchange.svg')
+        var imghead = $('<img/>').addClass('icon-process').attr('src', ''+ parMeter +'processxchange/Documents/' + item.GuidTemplate + '/images/icon-xchange.svg')
             //var imghead = $('<img/>').addClass('icon-process').attr('src','https://i.imgur.com/Y7lTW6s.png')
 
         head.append(imghead);
@@ -663,7 +665,7 @@ APP.BizagiXchange.prototype = {
         var valueThisReference = this;
         var containerItemGeneral = $('<div/>').addClass('col-lg-3 col-md-3 col-sm-4 col-xs-10 col-xs-offset-1 xchItem');
         var elementEventItemGeneral = $('<a/>').addClass('xchItemLink').attr('href','#').data('item-id-detail', item.ItemId).click(function(e){e.preventDefault();valueThisReference.render_widget_item_detail($(this));});
-        var itemBox = $('<div/>').addClass('xchItemBox').append($('<div/>').addClass('xchItemCost').text((item.CostTypeId == 1 ? item.CostTypeName : item.Cost + ' USD'))).append($('<div/>').addClass('xchItemName').text(item.ItemName)).append($('<div/>').addClass('xchItemThumbnail').append($('<img/>').attr('src','https://www.bizagi.com//widgetxchange/Resources/'+item.GuidItem+'/thumbnail.png'))).append($('<div/>').addClass('xchItemInfo').append($('<span/>').addClass('xchItemRate').append($('<i/>').addClass('fa fa-star').attr('aria-hidden',true)).append(item.Rating.toFixed(1))));
+        var itemBox = $('<div/>').addClass('xchItemBox').append($('<div/>').addClass('xchItemCost').text((item.CostTypeId == 1 ? item.CostTypeName : item.Cost + ' USD'))).append($('<div/>').addClass('xchItemName').text(item.ItemName)).append($('<div/>').addClass('xchItemThumbnail').append($('<img/>').attr('src',''+ parMeter +'/widgetxchange/Resources/'+item.GuidItem+'/thumbnail.png'))).append($('<div/>').addClass('xchItemInfo').append($('<span/>').addClass('xchItemRate').append($('<i/>').addClass('fa fa-star').attr('aria-hidden',true)).append(item.Rating.toFixed(1))));
 
         elementEventItemGeneral.append(itemBox);
         containerItemGeneral.append(elementEventItemGeneral);
@@ -676,7 +678,7 @@ APP.BizagiXchange.prototype = {
         var box = $('<div/>').addClass('box-widget');
 
         var head = $('<div/>').addClass('head-grad-widget');
-        var imghead = $('<img/>').addClass('icon-widget').attr('src', 'https://www.bizagi.com/widgetxchange/Resources/' + item.GuidItem + '/images/icon-xchange.svg')
+        var imghead = $('<img/>').addClass('icon-widget').attr('src', ''+ parMeter +'widgetxchange/Resources/' + item.GuidItem + '/images/icon-xchange.svg')
             //var imghead = $('<img/>').addClass('icon-process').attr('src','https://i.imgur.com/Y7lTW6s.png')
 
         head.append(imghead);
@@ -717,9 +719,9 @@ APP.BizagiXchange.prototype = {
         var valueThisReference = this;
         var containerItemGeneral = $('<div/>').addClass('col-lg-3 col-md-3 col-sm-4 col-xs-10 col-xs-offset-1 xchItem');
         var elementEventItemGeneral = $('<a/>').addClass('xchItemLink').attr('href','#').data('item-id-detail', item.ItemId).click(function(e){e.preventDefault();valueThisReference.render_connector_item_detail($(this));});
-        //var itemBox = $('<div/>').addClass('xchItemBox').append($('<div/>').addClass('xchItemCost').text((item.CostTypeId == 1 ? item.CostTypeName : item.Cost + ' USD'))).append($('<div/>').addClass('xchItemName').text(item.ItemName)).append($('<div/>').addClass('xchItemThumbnail').append($('<img/>').attr('src','https://www.bizagi.com/connectorxchange/Resources/'+item.GuidItem+'/thumbnail.png'))).append($('<div/>').addClass('xchItemInfo').append($('<span/>').addClass('xchItemRate').append($('<i/>').addClass('fa fa-star').attr('aria-hidden',true)).append(item.Rating.toFixed(1))).append($('<span/>').addClass('xchItemDownloads').append($('<i/>').addClass('fa fa-download').attr('aria-hidden',true)).append(item.CounterDownloads)));
+        //var itemBox = $('<div/>').addClass('xchItemBox').append($('<div/>').addClass('xchItemCost').text((item.CostTypeId == 1 ? item.CostTypeName : item.Cost + ' USD'))).append($('<div/>').addClass('xchItemName').text(item.ItemName)).append($('<div/>').addClass('xchItemThumbnail').append($('<img/>').attr('src',''+ parMeter +'connectorxchange/Resources/'+item.GuidItem+'/thumbnail.png'))).append($('<div/>').addClass('xchItemInfo').append($('<span/>').addClass('xchItemRate').append($('<i/>').addClass('fa fa-star').attr('aria-hidden',true)).append(item.Rating.toFixed(1))).append($('<span/>').addClass('xchItemDownloads').append($('<i/>').addClass('fa fa-download').attr('aria-hidden',true)).append(item.CounterDownloads)));
         //.append($('<div/>').addClass('xchItemType').text(item.ItemType))
-        var itemBox = $('<div/>').addClass('xchItemBox').append($('<div/>').addClass('xchItemCost').text((item.CostTypeId == 1 ? item.CostTypeName : item.Cost + ' USD'))).append($('<div/>').addClass('xchItemName').text(item.ItemName)).append($('<div/>').addClass('xchItemThumbnail').append($('<img/>').attr('src','https://www.bizagi.com/connectorxchange/Resources/'+item.GuidItem+'/thumbnail.png'))).append($('<div/>').addClass('xchItemInfo').append($('<span/>').addClass('xchItemRate').append($('<i/>').addClass('fa fa-star').attr('aria-hidden',true)).append(item.Rating.toFixed(1))).append($('<span/>')));
+        var itemBox = $('<div/>').addClass('xchItemBox').append($('<div/>').addClass('xchItemCost').text((item.CostTypeId == 1 ? item.CostTypeName : item.Cost + ' USD'))).append($('<div/>').addClass('xchItemName').text(item.ItemName)).append($('<div/>').addClass('xchItemThumbnail').append($('<img/>').attr('src',''+ parMeter +'connectorxchange/Resources/'+item.GuidItem+'/thumbnail.png'))).append($('<div/>').addClass('xchItemInfo').append($('<span/>').addClass('xchItemRate').append($('<i/>').addClass('fa fa-star').attr('aria-hidden',true)).append(item.Rating.toFixed(1))).append($('<span/>')));
 
         elementEventItemGeneral.append(itemBox);
         containerItemGeneral.append(elementEventItemGeneral);
@@ -743,7 +745,7 @@ APP.BizagiXchange.prototype = {
         var box = $('<div/>').addClass('box-connector');
 
         var head = $('<div/>').addClass('head-grad-connector');
-        var imghead = $('<img/>').addClass('icon-connector').attr('src', 'https://www.bizagi.com/connectorxchange/Resources/' + item.GuidItem + '/images/icon-xchange.svg')
+        var imghead = $('<img/>').addClass('icon-connector').attr('src', ''+ parMeter +'connectorxchange/Resources/' + item.GuidItem + '/images/icon-xchange.svg')
             //var imghead = $('<img/>').addClass('icon-process').attr('src','https://i.imgur.com/Y7lTW6s.png')
         if (isbeta) {
             head.append([
@@ -814,18 +816,18 @@ APP.BizagiXchange.prototype = {
                 // $('#modal-updated').addClass("ti-txt16 ti-color1 text-center border-right-darkteal");
                 $('#modal-updated').addClass("ti-txt16 ti-color1 text-center");
 
-                modalData.webserviceUrl = 'https://www.bizagi.com/processxchange/services/ProcessCentral.svc/Processes/GetTemplate/' + $(object_sender).data('item-id-detail') + '/' + $('#langConnectorXchange').val();
+                modalData.webserviceUrl = ''+ parMeter +'processxchange/services/ProcessCentral.svc/Processes/GetTemplate/' + $(object_sender).data('item-id-detail') + '/' + $('#langConnectorXchange').val();
                 modalData.tabshare_title = "Share Bizagi process templates with clients, colleagues and friends. Just include their complete name and email adresses below:";
                 modalData.tabshare_message = "Hi [Friend's Name]</p><textarea name=\"txtTextBodyShare\" id=\"txtTextBodyShare\" class=\"input-share\">IÂ´ve been using BizagiÂ´s Process Xchange and I highly recommend it. You can download templates from Bizagi Studio through Process Xchange menu, or browse them in the website http://www.bizagi.com/en/community/process-xchange. Enjoy!</textarea><p class=\"ti-txt14 ti-color ti-f500 ti-margin-b10 ti-margin-t20\">Kind regards<br><br><b>[ Your name and email ]</b></p>";
 
                 modalData.parseData = function(data) {
                     this.title = data.GetTemplateResult.TemplateName;
-                    this.iconSrc = 'https://www.bizagi.com/processxchange/Documents/' + data.GetTemplateResult.GuidTemplate + '/images/icon-xchange.svg';
+                    this.iconSrc = ''+ parMeter +'processxchange/Documents/' + data.GetTemplateResult.GuidTemplate + '/images/icon-xchange.svg';
                     this.version = data.GetTemplateResult.TemplateVersion;
                     this.updated = data.GetTemplateResult.ReleaseDate;
                     this.rate = data.GetTemplateResult.AverageRating.toFixed(1);
                     this.imgsSlider = data.GetTemplateResult.Images;
-                    this.imgsSliderPath = 'https://www.bizagi.com/processxchange/Documents/' + data.GetTemplateResult.GuidTemplate + '/images/';
+                    this.imgsSliderPath = ''+ parMeter +'processxchange/Documents/' + data.GetTemplateResult.GuidTemplate + '/images/';
                     this.shortDescription = data.GetTemplateResult.ShortDescription;
                     this.videoSrc = data.GetTemplateResult.Videos[0].PathFile;
                     this.description = data.GetTemplateResult.Description;
@@ -843,26 +845,26 @@ APP.BizagiXchange.prototype = {
                 // $('#modal-updated').addClass("ti-txt16 ti-color1 text-center border-right-darkyellow");
                 $('#modal-updated').addClass("ti-txt16 ti-color1 text-center");
 
-                modalData.webserviceUrl = 'https://www.bizagi.com/connectorxchange/services/xchange.svc/GetItemDetail/' + $('#langConnectorXchange').val() + '/' + $(object_sender).data('item-id-detail');
+                modalData.webserviceUrl = ''+ parMeter +'connectorxchange/services/xchange.svc/GetItemDetail/' + $('#langConnectorXchange').val() + '/' + $(object_sender).data('item-id-detail');
                 modalData.tabshare_title = "Share Bizagi connectors with clients, colleagues and friends. Just include their complete name and email adresses below:";
                 modalData.tabshare_message = "Hi [Friend's Name]</p><textarea name=\"txtTextBodyShare\" id=\"txtTextBodyShare\" class=\"input-share\">IÂ´ve been using BizagiÂ´s connectors library, Connectors Xchange, and I highly recommend it. If you want to use it just open your Bizagi Studio and go to Connectors in the Tools menu. Enjoy!</textarea><p class=\"ti-txt14 ti-color ti-f500 ti-margin-b10 ti-margin-t20\">Kind regards<br><br><b>[ Your name and email ]</b></p>";
 
                 modalData.parseData = function(data) {
                     this.title = data.GetItemDetailResult.ItemName;
-                    this.iconSrc = 'https://www.bizagi.com/connectorxchange/Resources/' + data.GetItemDetailResult.GuidItem + '/images/icon-xchange.svg';
+                    this.iconSrc = ''+ parMeter +'connectorxchange/Resources/' + data.GetItemDetailResult.GuidItem + '/images/icon-xchange.svg';
                     this.version = data.GetItemDetailResult.Version;
                     this.updated = data.GetItemDetailResult.UpdatedDateString;
                     this.rate = data.GetItemDetailResult.Rating.toFixed(1);
                     this.itemDownload = data.GetItemDetailResult.SetupFileName;
                     this.itemGUID = data.GetItemDetailResult.GuidItem;
                     this.imgsSlider = data.GetItemDetailResult.Images;
-                    this.imgsSliderPath = 'https://www.bizagi.com/connectorxchange/Resources/' + data.GetItemDetailResult.GuidItem + '/gallery/';
+                    this.imgsSliderPath = ''+ parMeter +'connectorxchange/Resources/' + data.GetItemDetailResult.GuidItem + '/gallery/';
                     this.shortDescription = data.GetItemDetailResult.Overview;
                     //this.videoSrc = data.GetItemDetailResult.Videos[0].PathFile;
                     this.description = data.GetItemDetailResult.Description;
                     this.details = data.GetItemDetailResult.Detail.replaceAll('replacereferenceh', 'href');
                     if (data.GetItemDetailResult.FileRelated) {
-                        this.instructionSrc = 'https://www.bizagi.com/connectorxchange/Resources/' + data.GetItemDetailResult.GuidItem + '/docs/' + data.GetItemDetailResult.FileRelated;
+                        this.instructionSrc = ''+ parMeter +'connectorxchange/Resources/' + data.GetItemDetailResult.GuidItem + '/docs/' + data.GetItemDetailResult.FileRelated;
                     }
                     this.idItem = data.GetItemDetailResult.ItemId;
                     this.idItemReview = data.GetItemDetailResult.GuidItem;
@@ -878,20 +880,20 @@ APP.BizagiXchange.prototype = {
                 // $('#modal-updated').addClass("ti-txt16 ti-color1 text-center border-right-darkteal");
                 $('#modal-updated').addClass("ti-txt16 ti-color1 text-center");
 
-                modalData.webserviceUrl = 'https://www.bizagi.com/widgetxchange/services/xchange.svc/GetItemDetail/' + $('#langConnectorXchange').val() + '/' + $(object_sender).data('item-id-detail');
+                modalData.webserviceUrl = ''+ parMeter +'widgetxchange/services/xchange.svc/GetItemDetail/' + $('#langConnectorXchange').val() + '/' + $(object_sender).data('item-id-detail');
                 modalData.tabshare_title = "Share Bizagi widgets with clients, colleagues and friends. Just include their complete name and email adresses below:";
                 modalData.tabshare_message = "Hi [Friend's Name]</p><textarea name=\"txtTextBodyShare\" id=\"txtTextBodyShare\" class=\"input-share\">IÂ´ve been using BizagiÂ´s Widget Xchange and I highly recommend it. If you want to use it just open your Bizagi Studio and go to the Forms designer and move to the Controls tab. Browse them all and enjoy!</textarea><p class=\"ti-txt14 ti-color ti-f500 ti-margin-b10 ti-margin-t20\">Kind regards<br><br><b>[ Your name and email ]</b></p>";
 
                 modalData.parseData = function(data) {
                     this.title = data.GetItemDetailResult.ItemName;
-                    this.iconSrc = 'https://www.bizagi.com/widgetxchange/Resources/' + data.GetItemDetailResult.GuidItem + '/images/icon-xchange.svg';
+                    this.iconSrc = ''+ parMeter +'widgetxchange/Resources/' + data.GetItemDetailResult.GuidItem + '/images/icon-xchange.svg';
                     this.version = data.GetItemDetailResult.Version;
                     this.updated = data.GetItemDetailResult.UpdatedDateString;
                     this.rate = data.GetItemDetailResult.Rating.toFixed(1);
                     this.itemDownload = data.GetItemDetailResult.SetupFileName;
                     this.itemGUID = data.GetItemDetailResult.GuidItem;
                     this.imgsSlider = data.GetItemDetailResult.Images;
-                    this.imgsSliderPath = 'https://www.bizagi.com/widgetxchange/Resources/' + data.GetItemDetailResult.GuidItem + '/gallery/';
+                    this.imgsSliderPath = ''+ parMeter +'widgetxchange/Resources/' + data.GetItemDetailResult.GuidItem + '/gallery/';
                     this.shortDescription = data.GetItemDetailResult.Overview;
                     //this.videoSrc = data.GetItemDetailResult.Videos[0].PathFile;
                     this.description = data.GetItemDetailResult.Description;
@@ -1039,13 +1041,13 @@ APP.BizagiXchange.prototype = {
             webserviceUrl = "";
             switch (itemType) {
                 case 'Process':
-                    webserviceUrl = 'https://www.bizagi.com/processxchange/services/ProcessCentral.svc/Processes/GetReviewsByPage/' + $('#hd-id-item').val() + '/';
+                    webserviceUrl = ''+ parMeter +'processxchange/services/ProcessCentral.svc/Processes/GetReviewsByPage/' + $('#hd-id-item').val() + '/';
                     break;
                 case 'Widget':
-                    webserviceUrl = 'https://www.bizagi.com/widgetxchange/services/xchange.svc/GetItemReviewsByPage/' + $('#hd-id-item').val() + '/';
+                    webserviceUrl = ''+ parMeter +'widgetxchange/services/xchange.svc/GetItemReviewsByPage/' + $('#hd-id-item').val() + '/';
                     break;
                 case 'Connector':
-                    webserviceUrl = 'https://www.bizagi.com/connectorxchange/services/xchange.svc/GetItemReviewsByPage/' + $('#hd-id-item').val() + '/';
+                    webserviceUrl = ''+ parMeter +'connectorxchange/services/xchange.svc/GetItemReviewsByPage/' + $('#hd-id-item').val() + '/';
                     break;
                 default:
             }
@@ -1126,10 +1128,10 @@ APP.BizagiXchange.prototype = {
         downloadUrl = "";
         switch (itemType) {
             case 'Widget':
-                downloadUrl = 'https://www.bizagi.com/widgetxchange/Resources/' + $(object_sender).data('item-guid') + '/install/' + $(object_sender).data('item-download');
+                downloadUrl = ''+ parMeter +'widgetxchange/Resources/' + $(object_sender).data('item-guid') + '/install/' + $(object_sender).data('item-download');
                 break;
             case 'Connector':
-                downloadUrl = 'https://www.bizagi.com/connectorxchange/Resources/' + $(object_sender).data('item-guid') + '/install/' + $(object_sender).data('item-download');
+                downloadUrl = ''+ parMeter +'connectorxchange/Resources/' + $(object_sender).data('item-guid') + '/install/' + $(object_sender).data('item-download');
                 break;
             default:
         }
@@ -1175,13 +1177,13 @@ APP.BizagiXchange.prototype = {
         webserviceUrl = "";
         switch (itemType) {
             case 'Process':
-                webserviceUrl = 'https://www.bizagi.com/processxchange/services/ProcessCentral.svc/Processes/GetReviewsByPage/' + $('#hd-id-item').val() + '/';
+                webserviceUrl = ''+ parMeter +'processxchange/services/ProcessCentral.svc/Processes/GetReviewsByPage/' + $('#hd-id-item').val() + '/';
                 break;
             case 'Widget':
-                webserviceUrl = 'https://www.bizagi.com/widgetxchange/services/xchange.svc/GetItemReviewsByPage/' + $('#hd-id-item').val() + '/';
+                webserviceUrl = ''+ parMeter +'widgetxchange/services/xchange.svc/GetItemReviewsByPage/' + $('#hd-id-item').val() + '/';
                 break;
             case 'Connector':
-                webserviceUrl = 'https://www.bizagi.com/connectorxchange/services/xchange.svc/GetItemReviewsByPage/' + $('#hd-id-item').val() + '/';
+                webserviceUrl = ''+ parMeter +'connectorxchange/services/xchange.svc/GetItemReviewsByPage/' + $('#hd-id-item').val() + '/';
                 break;
             default:
         }

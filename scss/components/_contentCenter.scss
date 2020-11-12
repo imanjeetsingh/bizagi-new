@@ -24,6 +24,53 @@
 }
 
 // added by abhishek
+.grid{
+    height: auto !important;
+}
+
+.grid .element-item {
+    position: static !important;
+}
+.grid .element-item .card-image-box {
+    text-align: center;
+}
+.grid .element-item .card-img-top {
+    max-width: 100%;
+    margin: 0 auto;
+    width: auto;
+}
+.control-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+}
+
+/* FOR MOBILE */
+/* flex: 0 0 100%; */
+.control-box .filter-searchbox {
+    flex: 0 0 100%;
+    padding: 0.75rem 0.5rem;
+    @include media(desktop){
+        flex: 0 0 50%;
+    }
+}
+
+/* FOR MOBILE */
+/* flex: 0 0 100%; */
+.control-box .filter-dropdown {
+    flex: 0 0 100%;
+    padding: 0.5rem;
+    @include media(desktop){
+        flex: 0 0 25%;
+    }
+}
+
+.control-box .filter-dropdown .dropdown-toggle {
+    width: 100%;
+    margin: 0;
+}
+
+
 
 // .grid .card {
 //     img.card-img-top {

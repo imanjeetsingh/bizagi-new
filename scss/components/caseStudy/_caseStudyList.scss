@@ -79,7 +79,15 @@
         text-align: justify;
     }
 }
-
+.search-input{
+    border-radius: 2.5rem;
+    border: solid 1px lightgray;
+    padding: 0.3rem 1rem;
+    width: 100%;
+    &:focus {
+        outline: none;
+    }
+}
 .caseStudy {
     // display: ;
     &-search {

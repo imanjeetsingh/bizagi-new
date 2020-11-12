@@ -679,6 +679,10 @@ a.clear-results {
     background-color: #f5f5f5;
 }
 
+.modal{
+    z-index: 10000000;
+}
+
 @media (max-width: 1199px) {
     .box-xchange {
         padding: 10px;
