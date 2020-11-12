@@ -117,20 +117,23 @@ button:focus {
     flex: 0 0 100%;
     display: none;
 }
-
-.filter-dropdown:hover .dropdown-menu {
-    @include media(tablet) {
-        // margin-top: 0;
-        // margin-left: -2rem;
-    }
-    @include media(desktop) {
-        // margin-left: 0;
-    }
-    @include media(xldesktop) {
-        display: block;
-        // margin: 0 0 0 1rem;
-    }
+.control-box .filter-dropdown .dropdown-menu{
+    z-index: 1071;
 }
+
+// .filter-dropdown:hover .dropdown-menu {
+//     @include media(tablet) {
+//         // margin-top: 0;
+//         // margin-left: -2rem;
+//     }
+//     @include media(desktop) {
+//         // margin-left: 0;
+//     }
+//     @include media(xldesktop) {
+//         display: block;
+//         // margin: 0 0 0 1rem;
+//     }
+// }
 
 // .grid .card {
 //     img.card-img-top {

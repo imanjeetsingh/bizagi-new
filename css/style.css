@@ -7192,9 +7192,8 @@ button:focus {
   flex: 0 0 100%;
   display: none; }
 
-@media (min-width: 1200px) {
-  .filter-dropdown:hover .dropdown-menu {
-    display: block; } }
+.control-box .filter-dropdown .dropdown-menu {
+  z-index: 1071; }
 
 @media (min-width: 992px) {
   .bizagi-popup .modal-lg {
