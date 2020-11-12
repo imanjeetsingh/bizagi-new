@@ -22,12 +22,13 @@
     text-align: center;
     padding: 0 1rem;
 }
-.control{
-    &-box{
-        .filter{
-            &-dropdown{
-                .dropdown{
-                    &-menu{
+
+.control {
+    &-box {
+        .filter {
+            &-dropdown {
+                .dropdown {
+                    &-menu {
                         margin-top: 0;
                     }
                 }
@@ -36,59 +37,72 @@
     }
 }
 
-button:focus{
+button:focus {
     outline: none;
 }
 
 // added by abhishek
-.grid{
+.grid {
     height: auto !important;
 }
 
 .grid .element-item {
     position: static !important;
 }
+
 .grid .element-item .card-image-box {
     text-align: center;
 }
+
 .grid .element-item .card-img-top {
     max-width: 100%;
     margin: 0 auto;
     width: auto;
 }
+
 .control-box {
     display: flex;
     flex-wrap: wrap;
     margin: -0.5rem;
 }
+
 .control-box .filter-dropdown .cta-icon-box {
     margin-top: 3px;
 }
+
+
 /* FOR MOBILE */
+
+
 /* flex: 0 0 100%; */
+
 .control-box .filter-searchbox {
     flex: 0 0 100%;
     padding: 0.75rem 0.5rem;
-    @include media(desktop){
+    @include media(desktop) {
         flex: 0 0 48%;
     }
-    @include media (xldesktop){
+    @include media (xldesktop) {
         flex: 0 0 50%;
     }
 }
 
+
 /* FOR MOBILE */
+
+
 /* flex: 0 0 100%; */
+
 .control-box .filter-dropdown {
     flex: 0 0 100%;
     padding: 0.5rem;
-    &:focus{
+    &:focus {
         outline: none;
     }
-    @include media(tablet){
+    @include media(tablet) {
         flex: 0 0 50%;
     }
-    @include media(desktop){
+    @include media(desktop) {
         flex: 0 0 25%;
     }
 }
@@ -98,12 +112,25 @@ button:focus{
     margin: 0;
 }
 
-.control-box .filtering-data-viewer, .control-box .no-results {
+.control-box .filtering-data-viewer,
+.control-box .no-results {
     flex: 0 0 100%;
     display: none;
+}
+
+.filter-dropdown:hover .dropdown-menu {
+    @include media(tablet) {
+        // margin-top: 0;
+        // margin-left: -2rem;
     }
-
-
+    @include media(desktop) {
+        // margin-left: 0;
+    }
+    @include media(xldesktop) {
+        display: block;
+        // margin: 0 0 0 1rem;
+    }
+}
 
 // .grid .card {
 //     img.card-img-top {
@@ -116,11 +143,9 @@ button:focus{
 //         width: -webkit-fill-available;
 //         height: auto;
 //     }
-
 //     .top-left {
 //         z-index: 11;
 //     }
-
 //     .card-image-box {
 //         min-height: 15rem;
 //         background-color: #999;

@@ -7187,9 +7187,14 @@ button:focus {
   width: 100%;
   margin: 0; }
 
-.control-box .filtering-data-viewer, .control-box .no-results {
+.control-box .filtering-data-viewer,
+.control-box .no-results {
   flex: 0 0 100%;
   display: none; }
+
+@media (min-width: 1200px) {
+  .filter-dropdown:hover .dropdown-menu {
+    display: block; } }
 
 @media (min-width: 992px) {
   .bizagi-popup .modal-lg {
