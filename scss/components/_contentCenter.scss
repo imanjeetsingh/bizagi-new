@@ -22,6 +22,23 @@
     text-align: center;
     padding: 0 1rem;
 }
+.control{
+    &-box{
+        .filter{
+            &-dropdown{
+                .dropdown{
+                    &-menu{
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+button:focus{
+    outline: none;
+}
 
 // added by abhishek
 .grid{
@@ -44,13 +61,18 @@
     flex-wrap: wrap;
     margin: -0.5rem;
 }
-
+.control-box .filter-dropdown .cta-icon-box {
+    margin-top: 3px;
+}
 /* FOR MOBILE */
 /* flex: 0 0 100%; */
 .control-box .filter-searchbox {
     flex: 0 0 100%;
     padding: 0.75rem 0.5rem;
     @include media(desktop){
+        flex: 0 0 48%;
+    }
+    @include media (xldesktop){
         flex: 0 0 50%;
     }
 }
@@ -60,8 +82,17 @@
 .control-box .filter-dropdown {
     flex: 0 0 100%;
     padding: 0.5rem;
+    &:focus{
+        outline: none;
+    }
+    @include media(tablet){
+        flex: 0 0 50%;
+    }
     @include media(desktop){
-        flex: 0 0 25%;
+        flex: 0 0 26%;
+    }
+    @include media(xldesktop){
+        flex: 0 0 50%;
     }
 }
 
@@ -69,6 +100,11 @@
     width: 100%;
     margin: 0;
 }
+
+.control-box .filtering-data-viewer, .control-box .no-results {
+    flex: 0 0 100%;
+    display: none;
+    }
 
 
 
