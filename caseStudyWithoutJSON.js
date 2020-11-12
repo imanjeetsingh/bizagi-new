@@ -5,91 +5,96 @@ $(document).ready(function () {
 })
 
 function handleIsotope() {
-    var $grid = $('.grid');
-    var $checkboxes_industry = $('.option-set[data-group="industry"] .options input');
-    var $checkboxes_solution = $('.option-set[data-group="solution"] .options input');
-    var $quicksearch = $('.quicksearch');
+    $('.grid').each(function (index, ele) {
+        var $currentGrid = $(ele);
+        var currentGridId = $(ele).attr('id');
 
-    var qsRegex;
-    var industryOptions = "";
-    var solutionOptions = "";
+        var $checkboxInput = $('[data-control-group="' + currentGridId + '"] .options input');
+        var $searchInput = $('[data-control-search="' + currentGridId + '"]');
+        var $filterDataViewer = $(ele).siblings('.filtering-data-viewer');
+        var $noresultbox = $(ele).siblings('.no-results');
+        $noresultbox.hide();
+        var $elementitems = $currentGrid.find('.element-item');
+        
+        $elementitems.each(function(index, ele) {
+                var filterdata = $(ele)
+                .find('[data-filter-list]')
+                    .attr('data-filter-list');
+                    if(!!filterdata) {
+                        $(ele).addClass(filterdata)
+                    }
+                });
 
-    $grid.isotope({
-        itemSelector: '.element-item',
-    });
-
-    function updatefilter() {
-        $grid.isotope({
-            filter: function() {
-                var industryResult = industryOptions ? $(this).is(industryOptions) : true;
-                var solutionResult = solutionOptions ? $(this).is(solutionOptions) : true;
-                var searchResult = qsRegex ?
-                    ($(this).find('.partnerinfo').text().match(qsRegex) || $(this).find('.card-body *:not("[class*=\'cta\']")').text().match(qsRegex)) :
-                    true;
-                // var searchResult = qsRegex ?
-                //     ($(this).find('.card').text().match(qsRegex) || $(this).find('.card-text').text().match(qsRegex)) :
-                //     true;
-
-                return industryResult && solutionResult && searchResult;
+                
+        var qsRegex;
+        var checkboxResult = "";
+        
+        $currentGrid.isotope({
+            itemSelector: '.element-item',
+            resizable: false, // disable normal resizing
+            layoutMode: 'fitRows' 
+        });
+        function updatefilter() {
+            if(!!checkboxResult && checkboxResult.length>0) {
+                $filterDataViewer.show();
+                var viewstring = 'You\'re filtering by ';
+                checkboxResult = checkboxResult.split('.').join(' ');
+                viewstring+='<strong>'+checkboxResult.split(',')+'</strong>';
+                $filterDataViewer.html('<p class="filtering-data-content">'+viewstring+'</p>');
+            } else {
+                $filterDataViewer.hide();
             }
-        });
-    };
 
-    var quicksearch = $quicksearch.on("keyup", debounce(function() {
-        if (quicksearch.val() !== '') {
-            qsRegex = new RegExp(quicksearch.val(), 'gi');
-        } else {
-            qsRegex = false;
-        }
-        updatefilter();
-    }, 200));
+            $currentGrid.isotope({
+                filter: function () {
+                    var checkboxResultLocal = checkboxResult ? $(this).is(checkboxResult) : true;
 
-    $checkboxes_industry.on("change", function() {
-        var filters = [];
-        $checkboxes_industry.filter(':checked').each(function() {
-            filters.push(this.value);
+                    var searchResult = qsRegex ?
+                        $(this).find('.card-body *:not("[class*=\'cta\']")').text().match(qsRegex)
+                        : true;
+
+                    return checkboxResultLocal && searchResult;
+                }
+            }).on( 'arrangeComplete', function( event, filteredItems ) {
+                if(filteredItems.length === 0) {
+                    $noresultbox.show();
+                } else {
+                    $noresultbox.hide();
+                }
+            });
+        };
+
+        var quicksearch = $searchInput.on("keyup", debounce(function () {
+            if (quicksearch.val() !== '') {
+                qsRegex = new RegExp(quicksearch.val(), 'gi');
+            } else {
+                qsRegex = false;
+            }
+            updatefilter();
+        }, 200));
+
+        $checkboxInput.on("change", function () {
+            var filters = [];
+            $checkboxInput.filter(':checked').each(function () {
+                filters.push(this.value);
+            });
+            checkboxResult = filters.join(', ');
+            updatefilter();
         });
-        industryOptions = filters.join(', ');
-        updatefilter();
     });
-
-    $checkboxes_solution.on("change", function() {
-        var filters = [];
-        $checkboxes_solution.filter(':checked').each(function() {
-            filters.push(this.value);
-        });
-        solutionOptions = filters.join(', ');
-        updatefilter();
-    });
+    // debounce so filtering doesn't happen every millisecond
+    function debounce(fn, threshold) {
+        var timeout;
+        return function debounced() {
+            if (timeout) {
+                clearTimeout(timeout);
+            }
+    
+            function delayed() {
+                fn();
+                timeout = null;
+            }
+            timeout = setTimeout(delayed, threshold || 100);
+        };
+    }
 }
-
-// debounce so filtering doesn't happen every millisecond
-function debounce(fn, threshold) {
-    var timeout;
-    return function debounced() {
-        if (timeout) {
-            clearTimeout(timeout);
-        }
-
-        function delayed() {
-            fn();
-            timeout = null;
-        }
-        timeout = setTimeout(delayed, threshold || 100);
-    };
-}
-
-(function() {
-    $container = $('#container');
-    createContent();
-    var $filterDisplay = $('#filter-display');
-    $container.isotope();
-    // do stuff when checkbox change
-    $('#options').on('change', function(jQEvent) {
-        var $checkbox = $(jQEvent.target);
-        manageCheckbox($checkbox);
-        var comboFilter = getComboFilter(filters);
-        $container.isotope({ filter: comboFilter });
-        $filterDisplay.text(comboFilter);
-    });
-});

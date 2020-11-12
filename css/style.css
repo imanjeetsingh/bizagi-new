@@ -4797,6 +4797,7 @@ ul li::before {
 .cookie-close {
   position: absolute;
   right: 0;
+  top: 0;
   padding-right: 1rem;
   color: #c5c5c5;
   font-size: 1rem; }
@@ -7150,6 +7151,12 @@ span.navbar-toggler-icon::before {
   text-align: center;
   padding: 0 1rem; }
 
+.control-box .filter-dropdown .dropdown-menu {
+  margin-top: 0; }
+
+button:focus {
+  outline: none; }
+
 .grid {
   height: auto !important; }
 
@@ -7169,12 +7176,18 @@ span.navbar-toggler-icon::before {
   flex-wrap: wrap;
   margin: -0.5rem; }
 
+.control-box .filter-dropdown .cta-icon-box {
+  margin-top: 3px; }
+
 /* FOR MOBILE */
 /* flex: 0 0 100%; */
 .control-box .filter-searchbox {
   flex: 0 0 100%;
   padding: 0.75rem 0.5rem; }
   @media (min-width: 992px) {
+    .control-box .filter-searchbox {
+      flex: 0 0 48%; } }
+  @media (min-width: 1200px) {
     .control-box .filter-searchbox {
       flex: 0 0 50%; } }
 
@@ -7183,13 +7196,25 @@ span.navbar-toggler-icon::before {
 .control-box .filter-dropdown {
   flex: 0 0 100%;
   padding: 0.5rem; }
+  .control-box .filter-dropdown:focus {
+    outline: none; }
+  @media (min-width: 768px) {
+    .control-box .filter-dropdown {
+      flex: 0 0 50%; } }
   @media (min-width: 992px) {
     .control-box .filter-dropdown {
-      flex: 0 0 25%; } }
+      flex: 0 0 26%; } }
+  @media (min-width: 1200px) {
+    .control-box .filter-dropdown {
+      flex: 0 0 50%; } }
 
 .control-box .filter-dropdown .dropdown-toggle {
   width: 100%;
   margin: 0; }
+
+.control-box .filtering-data-viewer, .control-box .no-results {
+  flex: 0 0 100%;
+  display: none; }
 
 @media (min-width: 992px) {
   .bizagi-popup .modal-lg {
