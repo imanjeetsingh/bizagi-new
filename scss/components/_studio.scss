@@ -1,0 +1,63 @@
+.studio {
+    &-card {
+        &-center {
+            justify-content: center;
+        }
+
+        &-heading {
+            background: #E8F4CD;
+            padding: 16px 0;
+
+            h5 {
+                color: #588800;
+                font-weight: 800;
+                font-size: 18px;
+
+            }
+        }
+
+        &-body {
+            padding: 1rem;
+            @include media(desktop){
+                padding: 1rem 0;
+            }
+
+            &-text {
+                p {
+                    display: inline-block;
+                }
+            }
+        }
+
+        &-icon {}
+
+        &-list {
+            display: flex;
+            padding: 0 1rem;
+
+            &-icon {
+                &-box {
+                    font-size: 2rem;
+                    color: #BBCC32;
+                }
+            }
+
+            &-description {
+                margin-left: 2rem;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                color: #6D7278;
+                font-size: 18px;
+                line-height: 22px
+            }
+        }
+    }
+}
+
+// .card{
+//     &-heading{
+//         background: #E8F4CD;
+//         padding: 16px 0;
+//        
+//     }
+// }
