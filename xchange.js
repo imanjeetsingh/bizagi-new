@@ -919,7 +919,7 @@ APP.BizagiXchange.prototype = {
             context: this
         }).done(function(data) {
             modalData.parseData(data);
-
+            
             var valueThisReference = this;
 
             $('#modal-title').text(modalData.title);
@@ -1344,3 +1344,4 @@ APP.BizagiXchange.prototype = {
     },
 
 };
+
