@@ -374,6 +374,18 @@ span.navbar-toggler-icon::before {
     }
 }
 
+// add css for active class on header
+li.nav-item-suplist.active .nav-link {
+    color: #F28C20 !important;
+}
+
+li.nav-list-sublist.active .dropdown-item {
+    color: #F28C20!important;
+    background-color: #f5f5f5;
+    font-weight: 600;
+}
+
+
 
 // css edit for cta alignment in ipad pro view start here
 // edit for language button
