@@ -43,11 +43,14 @@
             }
 
             &-description {
-                margin-left: 2rem;
+                margin-left: 1rem;
+                @include media(desktop){
+                    margin-left: 1rem;
+                }
                 font-family: 'Open Sans', sans-serif;
                 font-weight: 400;
                 color: #6D7278;
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 22px
             }
         }

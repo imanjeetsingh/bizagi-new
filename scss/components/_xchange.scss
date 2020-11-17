@@ -915,3 +915,28 @@ a.clear-results {
         margin-left: 10rem;
     }
 }
+.pagerbutt {
+    padding: 1em;
+    border: none;
+    color: #83939c;
+    font-weight: bold;
+    background: none;
+}
+
+.pageradbutt {
+    display: none;
+}
+
+.pagerlbl {
+    padding: 1em;
+    cursor: pointer;
+}
+
+.pageradbutt:checked+label {
+    font-weight: bold;
+    color: #213641;
+}
+
+#pagerdiv {
+    text-align: center;
+}
