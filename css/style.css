@@ -4272,6 +4272,10 @@ ul li::before {
   list-style: none;
   content: ""; }
 
+.cd-timeline-navigation li::before {
+  list-style: none;
+  content: ""; }
+
 .infoCarousel .swiper-slide {
   width: 23rem !important; }
 
