@@ -8,7 +8,7 @@
     }
     &-box {
         &-image {
-            width: 18%;
+            width: 18% !important;
             @include media(tablet) {
                 margin-left: -1rem;
                 width: 9% !important;
