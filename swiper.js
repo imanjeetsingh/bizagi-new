@@ -9551,7 +9551,7 @@ var swiper = new Swiper(".gallerySection", {
     autoplay: {
         delay: galleryAutoPlayDelay,
     },
-    loop: window.screen.width > 766 ? false : galleryLoop,
+    loop: galleryLoop,
     spaceBetween: 20,
     slidesPerColumnFill: "row",
     pagination: {
@@ -9585,34 +9585,82 @@ $(document).ready(function() {
         setTimeout(initCarousel);
     });
 
-    function initCarousel() {
-        var swiper = new Swiper(".multiRowCarousel", {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            slidesPerColumnFill: "row",
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next-three",
-                prevEl: ".swiper-button-prev-three",
-            },
-            breakpoints: {
-                767: {
-                    slidesPerView: 5,
-                    slidesPerColumn: 2,
-                    slidesPerGroup: 5,
-                    spaceBetween: 20,
-                },
-                1023: {
-                    slidesPerView: 5,
-                    slidesPerColumn: 2,
-                    slidesPerGroup: 5,
-                    spaceBetween: 20,
-                },
-            },
-        });
-    }
+
     initCarousel();
+    test();
+    test2();
 });
+
+function initCarousel() {
+    var swiper = new Swiper(".multiRowCarousel", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        slidesPerColumnFill: "row",
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next-three",
+            prevEl: ".swiper-button-prev-three",
+        },
+        breakpoints: {
+            767: {
+                slidesPerView: 5,
+                slidesPerColumn: 2,
+                slidesPerGroup: 5,
+                spaceBetween: 20,
+            },
+            1023: {
+                slidesPerView: 5,
+                slidesPerColumn: 2,
+                slidesPerGroup: 5,
+                spaceBetween: 20,
+            },
+        },
+    });
+}
+
+function test() {
+    /* hide left arrow by deafult */
+    var arrow = document.getElementsByClassName('swiper-button-prev')[0];
+    arrow.classList.add("swiper-button-disabled");
+
+    swiper.on('slideChange', function() {
+        var realIndex = swiper.realIndex;
+        if (realIndex == 0) {
+            // console.log("real index:" + realIndex + " - hide arrow");
+            arrow.classList.remove("swiper-button-disabled");
+        } else {
+            console.log("real index:" + realIndex + " - show arrow");
+            arrow.classList.add("swiper-button-disabled");
+        }
+    });
+}
+
+function test2() {
+    $(".nav-tabs a").on("click", function() {
+        var arrow = document.getElementsByClassName('swiper-button-prev')[0];
+        var realIndex = swiper.realIndex;
+        // console.log(realIndex);
+        if ((realIndex == 0) || (realIndex == "undefined")) {
+            setTimeout(function() {
+                arrow.classList.remove("swiper-button-disabled");
+            }, 100);
+        } else {
+            setTimeout(function() {
+                arrow.classList.add("swiper-button-disabled");
+            }, 100);
+        }
+    });
+}
+
+// $(document).ready(function() {
+(function() {
+    var $swiperBtn = $('.swiper-btn');
+    var checkbuttonDisabled = Array.from($swiperBtn).every((element) => $(element).hasClass('swiper-button-disabled'))
+    if (checkbuttonDisabled) {
+        $swiperBtn.hide();
+    }
+});
+// });
