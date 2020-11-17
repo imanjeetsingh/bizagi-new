@@ -9667,7 +9667,7 @@ function navHide() {
             } else {
                 $(".carousel-button").show();
             }
-        }, 100)
+        }, 200)
     });
 }
 
