@@ -59,8 +59,8 @@
 
     (function () {
         // Check cookie 
-        if (getCookie('cookiePolicyChecked') != "active") {
-            $('#showCookieMessageDiv').show();
+        if (getCookie('cookiePolicyChecked') == "active") {
+            $('#showCookieMessageDiv').hide();
         }
 
         //Assign cookie on click
