@@ -9551,7 +9551,7 @@ var swiper = new Swiper(".gallerySection", {
     autoplay: {
         delay: galleryAutoPlayDelay,
     },
-    loop: galleryLoop,
+    loop: window.screen.width > 766 ? false : galleryLoop,
     spaceBetween: 20,
     slidesPerColumnFill: "row",
     pagination: {
@@ -9587,8 +9587,9 @@ $(document).ready(function() {
 
 
     initCarousel();
-    test();
-    test2();
+    defaultDisabled();
+    disablenavBtn();
+    navHide();
 });
 
 function initCarousel() {
@@ -9621,7 +9622,7 @@ function initCarousel() {
     });
 }
 
-function test() {
+function defaultDisabled() {
     /* hide left arrow by deafult */
     var arrow = document.getElementsByClassName('swiper-button-prev')[0];
     arrow.classList.add("swiper-button-disabled");
@@ -9638,7 +9639,7 @@ function test() {
     });
 }
 
-function test2() {
+function disablenavBtn() {
     $(".nav-tabs a").on("click", function() {
         var arrow = document.getElementsByClassName('swiper-button-prev')[0];
         var realIndex = swiper.realIndex;
@@ -9655,12 +9656,27 @@ function test2() {
     });
 }
 
+function navHide() {
+    $(".nav-tabs li a").on("click", function() {
+        setTimeout(function() {
+            var tabLen = $(".tab-pane.active").find(".swiper-slide").length;
+            console.log(tabLen);
+
+            if (tabLen == 0) {
+                $(".carousel-button").hide();
+            } else {
+                $(".carousel-button").show();
+            }
+        }, 100)
+    });
+}
+
 // $(document).ready(function() {
-(function() {
-    var $swiperBtn = $('.swiper-btn');
-    var checkbuttonDisabled = Array.from($swiperBtn).every((element) => $(element).hasClass('swiper-button-disabled'))
-    if (checkbuttonDisabled) {
-        $swiperBtn.hide();
-    }
-});
+// (function() {
+//     var $swiperBtn = $('.swiper-btn');
+//     var checkbuttonDisabled = Array.from($swiperBtn).every((element) => $(element).hasClass('swiper-button-disabled'))
+//     if (checkbuttonDisabled) {
+//         $swiperBtn.hide();
+//     }
+// })();
 // });

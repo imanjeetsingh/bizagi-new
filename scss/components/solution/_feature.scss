@@ -59,11 +59,18 @@
     }
 }
 
-.featureDescription-list{
+.featureDescription-list {
     display: flex;
 }
+
 .featue-list-box .cta-group {
-    display: block; float: right;
+    display: block;
+    float: right;
     margin-top: -0.8rem;
 }
+
+.col-md-8 .feature-container {
+    margin-top: 2rem;
+}
+
 // Feature component CSS ends
