@@ -9,9 +9,9 @@
     &-box {
         &-image {
             width: 18%;
-            @include media(tablet){
+            @include media(tablet) {
                 margin-left: -1rem;
-                width: 9%;
+                width: 9% !important;
             }
         }
         &-comment {
