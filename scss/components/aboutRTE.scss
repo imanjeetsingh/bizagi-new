@@ -1,7 +1,8 @@
+.nb-section-margin {
+    margin: 100px 0;
+}
+
 .timeline-section {
-    section.nb-section-margin {
-        margin: 100px 0;
-    }
     section::after,
     section::before {
         position: absolute;

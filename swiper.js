@@ -9643,15 +9643,15 @@ function disablenavBtn() {
     $(".nav-tabs a").on("click", function() {
         var arrow = document.getElementsByClassName('swiper-button-prev')[0];
         var realIndex = swiper.realIndex;
-        // console.log(realIndex);
+        console.log(realIndex);
         if ((realIndex == 0) || (realIndex == "undefined")) {
             setTimeout(function() {
                 arrow.classList.remove("swiper-button-disabled");
-            }, 100);
+            }, 300);
         } else {
             setTimeout(function() {
                 arrow.classList.add("swiper-button-disabled");
-            }, 100);
+            }, 300);
         }
     });
 }
@@ -9667,7 +9667,7 @@ function navHide() {
             } else {
                 $(".carousel-button").show();
             }
-        }, 200)
+        }, 180)
     });
 }
 

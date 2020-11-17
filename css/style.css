@@ -4915,7 +4915,7 @@ ul li::before {
     justify-content: center; } }
 
 .testimonial-box-image {
-  width: 18%; }
+  width: 18% !important; }
   @media (min-width: 768px) {
     .testimonial-box-image {
       margin-left: -1rem;
@@ -10023,12 +10023,13 @@ a.clear-results {
 .resultsList ol li .resultslistDesc {
   color: #6D7278; }
 
+.nb-section-margin {
+  margin: 100px 0; }
+
 .timeline-section {
   /* -------------------------------- 
     Main Components 
     -------------------------------- */ }
-  .timeline-section section.nb-section-margin {
-    margin: 100px 0; }
   .timeline-section section::after,
   .timeline-section section::before {
     position: absolute;
