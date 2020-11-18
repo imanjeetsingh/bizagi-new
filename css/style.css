@@ -6913,7 +6913,6 @@ li.nav-list-sublist.active .dropdown-item {
   position: relative; }
 
 .tag-box-v2 {
-  background: #fafafa;
   border: solid 1px #eee;
   padding: 20px;
   margin-bottom: 30px; }
@@ -6996,12 +6995,8 @@ li.nav-list-sublist.active .dropdown-item {
 
 .eventsBody {
   display: inline-block;
-  width: 100%;
   position: relative;
   min-height: 1px; }
-  @media (min-width: 992px) {
-    .eventsBody {
-      width: 89%; } }
   .eventsBody .card-cta {
     bottom: -1rem; }
   .eventsBody .tag-box .list-inline li {
@@ -10484,3 +10479,19 @@ a.clear-results {
     @media (min-width: 992px) {
       .studio-card-list-description {
         margin-left: 1rem; } }
+
+.courseCalenerSection .eventsInfoDate {
+  display: inline-flex;
+  margin-bottom: 1rem; }
+
+.courseCalenerSection .eventsDateBadge.margin-top-20 {
+  margin: 0 1rem; }
+
+.courseCalenerSection .eventsListItem p {
+  width: 2.5rem; }
+
+.courseCalenerSection .eventsDateBadge {
+  width: 60px; }
+
+.courseCalenerSection .events-date-to {
+  margin-top: 1rem; }
