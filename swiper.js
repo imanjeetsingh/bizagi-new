@@ -445,7 +445,7 @@
         this.forEach(function(el) {
             var _el$classList;
 
-            (_el$classList = el.classList).add.apply(_el$classList, classNames);
+            // (_el$classList = el.classList).add.apply(_el$classList, classNames);
         });
         return this;
     }
@@ -9589,7 +9589,6 @@ $(document).ready(function() {
     initCarousel();
     defaultDisabled();
     disablenavBtn();
-    navHide();
 });
 
 function initCarousel() {
@@ -9642,34 +9641,49 @@ function defaultDisabled() {
 function disablenavBtn() {
     $(".nav-tabs a").on("click", function() {
         var arrow = document.getElementsByClassName('swiper-button-prev')[0];
+        // var arrow2 = document.getElementsByClassName('swiper-button-next')[0];
         var realIndex = swiper.realIndex;
         console.log(realIndex);
-        if ((realIndex == 0) || (realIndex == "undefined")) {
+        if ((realIndex == 0) || (realIndex === "undefined")) {
             setTimeout(function() {
                 arrow.classList.remove("swiper-button-disabled");
-            }, 300);
+                // arrow2.classList.remove("swiper-button-disabled");
+            }, 100);
         } else {
             setTimeout(function() {
                 arrow.classList.add("swiper-button-disabled");
-            }, 300);
+            }, 100);
         }
-    });
-}
 
-function navHide() {
-    $(".nav-tabs li a").on("click", function() {
         setTimeout(function() {
             var tabLen = $(".tab-pane.active").find(".swiper-slide").length;
             console.log(tabLen);
-
             if (tabLen == 0) {
                 $(".carousel-button").hide();
             } else {
                 $(".carousel-button").show();
+                //  $(".swiper-button-next").removeClass("swiper-button-disabled");
+                initCarousel();
+                defaultDisabled();
             }
-        }, 180)
+        }, 160)
     });
 }
+
+// function navHide() {
+//     $(".nav-tabs li a").on("click", function() {
+//         setTimeout(function() {
+//             var tabLen = $(".tab-pane.active").find(".swiper-slide").length;
+//             console.log(tabLen);
+
+//             if (tabLen == 0) {
+//                 $(".carousel-button").hide();
+//             } else {
+//                 $(".carousel-button").show();
+//             }
+//         }, 180)
+//     });
+// }
 
 // $(document).ready(function() {
 // (function() {
