@@ -4,7 +4,7 @@
 }
 
 .tag-box-v2 {
-    background: #fafafa;
+    // background: #fafafa;
     border: solid 1px #eee;
     // border-left: solid 2px #e74c3c;
     padding: 20px;
@@ -119,12 +119,12 @@
 
 .eventsBody {
     display: inline-block;
-    width: 100%;
+    // width: 100%;
     position: relative;
     min-height: 1px;
-    @include media (desktop) {
-        width: 89%;
-    }
+    // @include media (desktop) {
+    //     width: 89%;
+    // }
     .card-cta{
         bottom: -1rem;
     }
