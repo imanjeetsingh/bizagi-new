@@ -7127,6 +7127,9 @@ li.nav-list-sublist.active .dropdown-item {
   .swiper-center {
     justify-content: center; } }
 
+.card-container .row.mt-5.text-center {
+  justify-content: center; }
+
 .xchange-container .search {
   border-radius: 2.5rem;
   border: solid 1px lightgray;
