@@ -1,5 +1,5 @@
 #es {
-    .cta.ctaheader {
+    .cta.cta-header {
         font-size: 13px;
         @include media(desktop) {
             font-size: 9px;
@@ -32,7 +32,7 @@
 }
 
 #pt {
-    .cta.ctaheader {
+    .cta.cta-header {
         font-size: 14px;
         @include media(desktop) {
             font-size: 9px;
