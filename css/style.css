@@ -8891,6 +8891,12 @@ button:focus {
   margin-left: 1.6rem;
   font-weight: 600; }
 
+.courseCalenerSection .contentSection-box-heading {
+  font-size: 0.8rem; }
+  @media (min-width: 992px) {
+    .courseCalenerSection .contentSection-box-heading {
+      font-size: 1.5rem; } }
+
 .calenderDetails {
   color: #6d7278; }
   .calenderDetails-rowbg {
@@ -10595,7 +10601,7 @@ a.clear-results {
   font-size: 11px; }
   @media (min-width: 992px) {
     #es .cta.cta-header {
-      font-size: 9px; } }
+      font-size: 10px; } }
   @media (min-width: 1200px) {
     #es .cta.cta-header {
       font-size: 11px; } }
@@ -10620,12 +10626,6 @@ a.clear-results {
 
 #pt .cta.cta-header {
   font-size: 11px; }
-  @media (min-width: 992px) {
-    #pt .cta.cta-header {
-      font-size: 9px; } }
-  @media (min-width: 1200px) {
-    #pt .cta.cta-header {
-      font-size: 11px; } }
 
 #pt .inner-banner .banner-heading {
   font-size: 1.5rem; }

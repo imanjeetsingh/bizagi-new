@@ -2,7 +2,7 @@
     .cta.cta-header {
         font-size: 11px;
         @include media(desktop) {
-            font-size: 9px;
+            font-size: 10px;
         }
         @include media(xldesktop) {
             font-size: 11px;
@@ -34,12 +34,6 @@
 #pt {
     .cta.cta-header {
         font-size: 11px;
-        @include media(desktop) {
-            font-size: 9px;
-        }
-        @include media(xldesktop) {
-            font-size: 11px;
-        }
     }
     .inner-banner .banner-heading {
         font-size: 1.5rem;
