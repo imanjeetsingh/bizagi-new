@@ -10591,13 +10591,13 @@ a.clear-results {
 .courseCalenerSection .events-date-to {
   margin-top: 1rem; }
 
-#es .cta.ctaheader {
+#es .cta.cta-header {
   font-size: 13px; }
   @media (min-width: 992px) {
-    #es .cta.ctaheader {
+    #es .cta.cta-header {
       font-size: 9px; } }
   @media (min-width: 1200px) {
-    #es .cta.ctaheader {
+    #es .cta.cta-header {
       font-size: 13px; } }
 
 #es .inner-banner .banner-heading {
@@ -10618,13 +10618,13 @@ a.clear-results {
     #de .inner-banner .banner-heading {
       font-size: 3rem !important; } }
 
-#pt .cta.ctaheader {
+#pt .cta.cta-header {
   font-size: 14px; }
   @media (min-width: 992px) {
-    #pt .cta.ctaheader {
+    #pt .cta.cta-header {
       font-size: 9px; } }
   @media (min-width: 1200px) {
-    #pt .cta.ctaheader {
+    #pt .cta.cta-header {
       font-size: 14px; } }
 
 #pt .inner-banner .banner-heading {
