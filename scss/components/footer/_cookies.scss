@@ -2,12 +2,15 @@
 .cookie {
     &-container {
         position: fixed;
-        bottom: 0;
+        bottom: -33px;
         width: 100%;
         text-align: center;
         background: white;
         z-index: 9999;
         box-shadow: 0.125rem 0.25rem 0.813rem 0 black;
+        @include media(tablet){
+            bottom: -5px;
+        }
     }
     &-row {
         padding-left: 1.8rem;
@@ -41,8 +44,12 @@
         right: 0;
         top: 0;
         padding-right: 1rem;
-        color: #c5c5c5;
+        color: #c5c5c5 !important;
         font-size: 1rem;
+        cursor: pointer;
+        &:hover{
+            color: #01090c;
+        }
     }
 }
 

@@ -78,15 +78,16 @@
 .eventsListItem p {
     font-size: .825rem;
     margin-bottom: 2rem;
+    // width: 2.5rem;
 }
 
 .eventsInfoDate {
-    display: inline-block;
+    display: inline-flex;
     width: 10%;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
-    padding-left: 15px;
+    // padding-left: 15px;
     vertical-align: top;
     margin-top: 0;
     @include media(tablet){
@@ -106,15 +107,23 @@
     -webkit-border-radius: 4px;
     padding: 4px;
     margin-bottom: 1.25rem;
-    margin-left: -15px;
+    // margin-left: -15px;
     @include media(tablet) {
-        margin-bottom: 20px;
-        margin-top: 23px;
+        // margin-bottom: 20px;
+        // margin-top: 23px;
     }
     @include media(desktop) {
         margin-top: 0;
-        margin-left: -1.4375rem;
+        // margin-left: -1.4375rem;
     }
+}
+
+.eventsDateBadge.margin-top-20 p{
+    width: 2.5rem;
+}
+
+.events-date-to{
+    margin: 1rem;
 }
 
 .eventsBody {

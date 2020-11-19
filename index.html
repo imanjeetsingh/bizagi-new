@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./fonts.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -610,6 +610,36 @@
     </div>
     <!-- Carousel component ends -->
 
+    <!-- scroll to top start  -->
+    <div class="dmtop">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+    <!-- scroll to top end -->
+    <script>
+        $(document).ready(function () {
+            backToTop();
+        });
+
+        function backToTop() {
+            var btn = $('.dmtop');
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 10) {
+                    btn.css("bottom", "20px");
+                }
+                else {
+                    btn.css("bottom", "-100px");
+                }
+            });
+
+            btn.on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, '300');
+            });
+        }
+
+    </script>
+   
     <!-- Footer component starts -->
     <section id="foot">
         <div class="container footer-container">
