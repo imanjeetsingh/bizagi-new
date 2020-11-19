@@ -282,7 +282,9 @@ $(document).ready(function () {
 });
 
 // for focus on search
-$('.search-box-searchIcon').click(function(){
-    $('#searchTerm').focus();
-    $('#searchTerm').removeAttr('placeholder');
-    });
+$(document).ready(function () {
+    $('.search-box-searchIcon').click(function(){
+        $('#searchTerm').focus();
+        $('#searchTerm').removeAttr('placeholder');
+        });
+});
