@@ -4900,7 +4900,11 @@ ul li::before {
         margin-right: 2rem; } }
 
 .featureDescription-list {
-  display: flex; }
+  display: flex;
+  margin-top: 3rem; }
+
+.featureDescription-list:first-child {
+  margin-top: 0rem; }
 
 .featue-list-box .cta-group {
   display: block;
@@ -4909,6 +4913,13 @@ ul li::before {
 
 .col-md-8 .feature-container {
   margin-top: 2rem; }
+
+.container.contentSection-container .contentSection-box.col-12.text-left .row .col-md-4 {
+  margin-top: 2rem; }
+
+.featureDescription-cta {
+  position: absolute;
+  right: 0; }
 
 @media (min-width: 992px) {
   .testimonial-row {
@@ -10495,3 +10506,48 @@ a.clear-results {
 
 .courseCalenerSection .events-date-to {
   margin-top: 1rem; }
+
+#es .cta {
+  font-size: 13px; }
+  @media (min-width: 992px) {
+    #es .cta {
+      font-size: 9px; } }
+  @media (min-width: 1200px) {
+    #es .cta {
+      font-size: 13px; } }
+
+#es .inner-banner .banner-heading {
+  font-size: 1.5rem; }
+  @media (min-width: 992px) {
+    #es .inner-banner .banner-heading {
+      font-size: 2.5rem !important; } }
+  @media (min-width: 1200px) {
+    #es .inner-banner .banner-heading {
+      font-size: 3rem !important; } }
+
+#de .inner-banner .banner-heading {
+  font-size: 1.5rem; }
+  @media (min-width: 992px) {
+    #de .inner-banner .banner-heading {
+      font-size: 2.5rem !important; } }
+  @media (min-width: 1200px) {
+    #de .inner-banner .banner-heading {
+      font-size: 3rem !important; } }
+
+#pt .cta {
+  font-size: 14px; }
+  @media (min-width: 992px) {
+    #pt .cta {
+      font-size: 9px; } }
+  @media (min-width: 1200px) {
+    #pt .cta {
+      font-size: 14px; } }
+
+#pt .inner-banner .banner-heading {
+  font-size: 1.5rem; }
+  @media (min-width: 992px) {
+    #pt .inner-banner .banner-heading {
+      font-size: 2.5rem !important; } }
+  @media (min-width: 1200px) {
+    #pt .inner-banner .banner-heading {
+      font-size: 3rem !important; } }

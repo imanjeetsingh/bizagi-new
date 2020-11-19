@@ -445,7 +445,7 @@
         this.forEach(function(el) {
             var _el$classList;
 
-            // (_el$classList = el.classList).add.apply(_el$classList, classNames);
+            (_el$classList = el.classList).add.apply(_el$classList, classNames);
         });
         return this;
     }
@@ -9465,13 +9465,16 @@
 //# sourceMappingURL=swiper-bundle.js.map
 
 // for info carousel
-var swiper = new Swiper(".infoCarousel", {
-    slidesPerView: 1,
-    autoplay: {
-        delay: 2000,
-    },
-    loop: true,
-});
+var slideCount = $(".swiper-slide").length;
+if (slideCount > 1) {
+    var swiper = new Swiper(".infoCarousel", {
+        slidesPerView: 1,
+        autoplay: {
+            delay: 2000,
+        },
+        loop: true,
+    });
+}
 // for treaser Carousel
 var cardRMob = $("#card-RMob").attr('data-rowCount-mobileCard');
 var cardCMob = $("#card-CMob").attr('data-colCount-mobileCard');
@@ -9485,13 +9488,13 @@ var cardSlideDes = $("#card-SlideDes").attr('data-slide-desktopCard');
 var cardAutoPlayDelay = $("#card-AutoPlayDelay").attr('data-auto-play-delayCard');
 var cardLoop = $("#card-Loop").attr('data-loopCard');
 var swiper = new Swiper(".cardSection", {
-    // autoplay: {
-    //     delay: cardAutoPlayDelay,
-    // },
+    autoplay: {
+        delay: cardAutoPlayDelay,
+    },
     slidesPerView: cardCMob,
     slidesPerColumn: cardRMob,
     spaceBetween: 0,
-    // loop: cardLoop,
+    loop: cardLoop,
     slidesPerColumnFill: "row",
     pagination: {
         el: ".swiper-pagination-one",
@@ -9586,9 +9589,11 @@ $(document).ready(function() {
     });
 
 
-    initCarousel();
-    defaultDisabled();
-    disablenavBtn();
+    if ($(".swiper-button-prev-three").length) {
+        initCarousel();
+        defaultDisabled();
+        disablenavBtn();
+    }
 });
 
 function initCarousel() {
@@ -9623,7 +9628,7 @@ function initCarousel() {
 
 function defaultDisabled() {
     /* hide left arrow by deafult */
-    var arrow = document.getElementsByClassName('swiper-button-prev')[0];
+    var arrow = document.getElementsByClassName('swiper-button-prev-three')[0];
     arrow.classList.add("swiper-button-disabled");
 
     swiper.on('slideChange', function() {
@@ -9640,7 +9645,7 @@ function defaultDisabled() {
 
 function disablenavBtn() {
     $(".nav-tabs a").on("click", function() {
-        var arrow = document.getElementsByClassName('swiper-button-prev')[0];
+        var arrow = document.getElementsByClassName('swiper-button-prev-three')[0];
         // var arrow2 = document.getElementsByClassName('swiper-button-next')[0];
         var realIndex = swiper.realIndex;
         console.log(realIndex);
@@ -9666,7 +9671,7 @@ function disablenavBtn() {
                 initCarousel();
                 defaultDisabled();
             }
-        }, 160)
+        }, 155)
     });
 }
 

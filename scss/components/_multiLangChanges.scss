@@ -1,0 +1,53 @@
+#es {
+    .cta.ctaheader {
+        font-size: 13px;
+        @include media(desktop) {
+            font-size: 9px;
+        }
+        @include media(xldesktop) {
+            font-size: 13px;
+        }
+    }
+    .inner-banner .banner-heading {
+        font-size: 1.5rem;
+        @include media(desktop) {
+            font-size: 2.5rem !important;
+        }
+        @include media(xldesktop) {
+            font-size: 3rem !important;
+        }
+    }
+}
+
+#de {
+    .inner-banner .banner-heading {
+        font-size: 1.5rem;
+        @include media(desktop) {
+            font-size: 2.5rem !important;
+        }
+        @include media(xldesktop) {
+            font-size: 3rem !important;
+        }
+    }
+}
+
+#pt {
+    .cta.ctaheader {
+        font-size: 14px;
+        @include media(desktop) {
+            font-size: 9px;
+        }
+        @include media(xldesktop) {
+            font-size: 14px;
+        }
+    }
+    .inner-banner .banner-heading {
+        font-size: 1.5rem;
+        @include media(desktop) {
+            font-size: 2.5rem !important;
+        }
+        @include media(xldesktop) {
+            font-size: 3rem !important;
+        }
+    }
+}

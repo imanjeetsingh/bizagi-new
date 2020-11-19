@@ -61,6 +61,11 @@
 
 .featureDescription-list {
     display: flex;
+    margin-top: 3rem;
+}
+
+.featureDescription-list:first-child {
+    margin-top: 0rem;
 }
 
 .featue-list-box .cta-group {
@@ -71,6 +76,18 @@
 
 .col-md-8 .feature-container {
     margin-top: 2rem;
+}
+
+.container.contentSection-container .contentSection-box.col-12.text-left .row .col-md-4 {
+    margin-top: 2rem;
+}
+
+// .container.contentSection-container .contentSection-box.col-12.text-left .row .col-md-4 h4 {
+//     margin-top: 3rem;
+// }
+.featureDescription-cta {
+    position: absolute;
+    right: 0;
 }
 
 // Feature component CSS ends
