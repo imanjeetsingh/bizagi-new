@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./fonts.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -610,6 +610,57 @@
     </div>
     <!-- Carousel component ends -->
 
+    <!-- scroll to top start  -->
+    <div class="dmtop">
+        <img src="./images/arrow-top.png" alt="Scroll to Top" title="Scroll to Top">
+    </div>
+    <!-- scroll to top end -->
+    <script>
+        $(document).ready(function () {
+            backToTop();
+        });
+
+        function backToTop() {
+            var btn = $('.dmtop');
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 10) {
+                    btn.css("bottom", "20px");
+                }
+                else {
+                    btn.css("bottom", "-100px");
+                }
+            });
+
+            btn.on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, '300');
+            });
+        }
+
+    </script>
+    <style>
+        .dmtop {
+            background-color: #f28b21 !important;
+            z-index: 999;
+            width: 40px;
+            height: 40px;
+            border-radius: 0;
+            position: fixed;
+            bottom: -100px;
+            left: 25px;
+            cursor: pointer;
+            -webkit-transition: all .7s ease-in-out;
+            -moz-transition: all .7s ease-in-out;
+            -o-transition: all .7s ease-in-out;
+            -ms-transition: all .7s ease-in-out;
+            transition: all .7s ease-in-out;
+            overflow: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
     <!-- Footer component starts -->
     <section id="foot">
         <div class="container footer-container">

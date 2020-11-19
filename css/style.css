@@ -6959,12 +6959,11 @@ li.nav-list-sublist.active .dropdown-item {
   margin-bottom: 2rem; }
 
 .eventsInfoDate {
-  display: inline-block;
+  display: inline-flex;
   width: 10%;
   position: relative;
   min-height: 1px;
   padding-right: 15px;
-  padding-left: 15px;
   vertical-align: top;
   margin-top: 0; }
   @media (min-width: 768px) {
@@ -6982,16 +6981,16 @@ li.nav-list-sublist.active .dropdown-item {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   padding: 4px;
-  margin-bottom: 1.25rem;
-  margin-left: -15px; }
-  @media (min-width: 768px) {
-    .eventsDateBadge {
-      margin-bottom: 20px;
-      margin-top: 23px; } }
+  margin-bottom: 1.25rem; }
   @media (min-width: 992px) {
     .eventsDateBadge {
-      margin-top: 0;
-      margin-left: -1.4375rem; } }
+      margin-top: 0; } }
+
+.eventsDateBadge.margin-top-20 p {
+  width: 2.5rem; }
+
+.events-date-to {
+  margin: 1rem; }
 
 .eventsBody {
   display: inline-block;
@@ -10483,12 +10482,12 @@ a.clear-results {
 .courseCalenerSection .eventsInfoDate {
   display: inline-flex;
   margin-bottom: 1rem; }
+  @media (min-width: 992px) {
+    .courseCalenerSection .eventsInfoDate {
+      margin-bottom: 1rem; } }
 
 .courseCalenerSection .eventsDateBadge.margin-top-20 {
   margin: 0 1rem; }
-
-.courseCalenerSection .eventsListItem p {
-  width: 2.5rem; }
 
 .courseCalenerSection .eventsDateBadge {
   width: 60px; }
