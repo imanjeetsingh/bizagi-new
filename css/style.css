@@ -4910,7 +4910,7 @@ ul li::before {
   margin-top: 3rem; }
 
 .featureDescription-list:first-child {
-  margin-top: 0rem; }
+  margin-top: 0.0rem; }
 
 .featue-list-box .cta-group {
   display: block;
@@ -10530,14 +10530,13 @@ a.clear-results {
 .courseCalenerSection .events-date-to {
   margin-top: 1rem; }
 
-<<<<<<< HEAD
-#es .cta {
+#es .cta.ctaheader {
   font-size: 13px; }
   @media (min-width: 992px) {
-    #es .cta {
+    #es .cta.ctaheader {
       font-size: 9px; } }
   @media (min-width: 1200px) {
-    #es .cta {
+    #es .cta.ctaheader {
       font-size: 13px; } }
 
 #es .inner-banner .banner-heading {
@@ -10558,13 +10557,13 @@ a.clear-results {
     #de .inner-banner .banner-heading {
       font-size: 3rem !important; } }
 
-#pt .cta {
+#pt .cta.ctaheader {
   font-size: 14px; }
   @media (min-width: 992px) {
-    #pt .cta {
+    #pt .cta.ctaheader {
       font-size: 9px; } }
   @media (min-width: 1200px) {
-    #pt .cta {
+    #pt .cta.ctaheader {
       font-size: 14px; } }
 
 #pt .inner-banner .banner-heading {
@@ -10575,7 +10574,7 @@ a.clear-results {
   @media (min-width: 1200px) {
     #pt .inner-banner .banner-heading {
       font-size: 3rem !important; } }
-=======
+
 .dmtop {
   background-color: #f28b21 !important;
   z-index: 999;
@@ -10597,4 +10596,3 @@ a.clear-results {
   justify-content: center;
   color: #ffffff;
   font-size: 12px; }
->>>>>>> iman
