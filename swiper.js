@@ -9554,7 +9554,7 @@ var swiper = new Swiper(".gallerySection", {
     autoplay: {
         delay: galleryAutoPlayDelay,
     },
-    loop: window.screen.width > 766 ? false : galleryLoop,
+    loop: window.screen.width <= 766 ? true : galleryLoop,
     spaceBetween: 20,
     slidesPerColumnFill: "row",
     pagination: {
