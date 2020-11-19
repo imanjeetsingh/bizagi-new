@@ -10023,6 +10023,24 @@ a.clear-results {
 .resultsList ol li .resultslistDesc {
   color: #6D7278; }
 
+#search-form-header {
+  left: -8rem !important;
+  position: absolute !important;
+  right: 40px !important;
+  top: 4.5rem !important; }
+
+.search-results {
+  background: #fff;
+  border-radius: .3rem;
+  margin: .5rem 0 0;
+  padding: 1.25rem;
+  height: 300px;
+  overflow-y: auto; }
+  .search-results a {
+    display: inline-block;
+    font-size: .75rem;
+    margin: 0 0 .5rem 0; }
+
 .nb-section-margin {
   margin: 100px 0; }
 
