@@ -4766,12 +4766,15 @@ ul li::before {
 
 .cookie-container {
   position: fixed;
-  bottom: 0;
+  bottom: -33px;
   width: 100%;
   text-align: center;
   background: white;
   z-index: 9999;
   box-shadow: 0.125rem 0.25rem 0.813rem 0 black; }
+  @media (min-width: 768px) {
+    .cookie-container {
+      bottom: -5px; } }
 
 .cookie-row {
   padding-left: 1.8rem;
@@ -4804,8 +4807,11 @@ ul li::before {
   right: 0;
   top: 0;
   padding-right: 1rem;
-  color: #c5c5c5;
-  font-size: 1rem; }
+  color: #c5c5c5 !important;
+  font-size: 1rem;
+  cursor: pointer; }
+  .cookie-close:hover {
+    color: #01090c; }
 
 .business-container {
   margin-top: 6.25rem; }
