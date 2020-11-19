@@ -34,11 +34,11 @@
     });
 })($);
 // platform page how it works card component js
-$(document).ready(function () {
+$(document).ready(function() {
     var maxHeight = 0;
     if (window.screen.width > 767) {
 
-        $(".card-upper-section").each(function () {
+        $(".card-upper-section").each(function() {
             if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
         });
 
@@ -47,7 +47,7 @@ $(document).ready(function () {
 
         var bottomHeight = 0;
 
-        $(".card-bottom-section").each(function () {
+        $(".card-bottom-section").each(function() {
             if ($(this).height() > bottomHeight) { bottomHeight = $(this).height(); }
         });
 
@@ -73,7 +73,7 @@ $(document).ready(function () {
 //         var $noresultbox = $(ele).siblings('.no-results');
 //         $noresultbox.hide();
 //         var $elementitems = $currentGrid.find('.element-item');
-        
+
 //         $elementitems.each(function(index, ele) {
 //                 var filterdata = $(ele)
 //                 .find('[data-filter-list]')
@@ -83,10 +83,10 @@ $(document).ready(function () {
 //                     }
 //                 });
 
-                
+
 //         var qsRegex;
 //         var checkboxResult = "";
-        
+
 //         $currentGrid.isotope({
 //             itemSelector: '.element-item',
 //             resizable: false, // disable normal resizing
@@ -147,7 +147,7 @@ $(document).ready(function () {
 //             if (timeout) {
 //                 clearTimeout(timeout);
 //             }
-    
+
 //             function delayed() {
 //                 fn();
 //                 timeout = null;
@@ -159,23 +159,22 @@ $(document).ready(function () {
 
 // scrolltop js
 
-$(document).ready(function () {
+$(document).ready(function() {
     backToTop();
 });
 
 function backToTop() {
     var btn = $('.dmtop');
 
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         if ($(window).scrollTop() > 10) {
             btn.css("bottom", "20px");
-        }
-        else {
+        } else {
             btn.css("bottom", "-100px");
         }
     });
 
-    btn.on('click', function (e) {
+    btn.on('click', function(e) {
         e.preventDefault();
         $('html, body').animate({ scrollTop: 0 }, '300');
     });
@@ -197,7 +196,7 @@ function payloadGetter(searchTerm, params) {
   }`;
 };
 
-function clearResults(searchResultElement){
+function clearResults(searchResultElement) {
     searchResultElement.html('');
 }
 
@@ -220,27 +219,27 @@ function displaySearchResult(searchResult, params) {
 function getSearchResult(searchTerm, params) {
     var url = params.url;
     const query = payloadGetter(searchTerm, params);
-   
+
     return $.ajax({
         url: url,
-      contentType:'application/json;charset=UTF-8',
+        contentType: 'application/json;charset=UTF-8',
         method: 'POST',
         // method: 'GET',
-      data:  JSON.stringify({query}),
+        data: JSON.stringify({ query }),
     })
 }
 
 function handleSearchInput(params) {
     var inputElement = params.inputElement;
-    inputElement.on('keyup', function (event) {
+    inputElement.on('keyup', function(event) {
         var searchTerm = event.target.value || '';
         var strippedSearchTerm = searchTerm.trim();
 
-        if(strippedSearchTerm.length === 0) clearResults(params.searchResultElement);
+        if (strippedSearchTerm.length === 0) clearResults(params.searchResultElement);
 
         if (strippedSearchTerm.length < 3) return; // proceed with search only if 3 or more characters aree entered
 
-        getSearchResult(strippedSearchTerm, params).done(function (response) {
+        getSearchResult(strippedSearchTerm, params).done(function(response) {
             // console.log(response);
             var hits = response.data.search.results.hits;
             displaySearchResult(hits, params);
@@ -268,7 +267,7 @@ function initSearch() {
     handleSearchInput(params);
 
     // handling form enter
-    formElement.on('submit', function (event) {
+    formElement.on('submit', function(event) {
         event.preventDefault(); // disable form default submit behavior
         var searchTerm = params.inputElement.val();
         var searchUrl = formElement.attr('action');
@@ -277,7 +276,7 @@ function initSearch() {
 }
 
 // on ready
-$(document).ready(function () {
+$(document).ready(function() {
     initSearch();
 });
 
