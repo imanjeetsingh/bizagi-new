@@ -1,11 +1,11 @@
 #es {
     .cta.cta-header {
-        font-size: 13px;
+        font-size: 11px;
         @include media(desktop) {
-            font-size: 9px;
+            font-size: 10px;
         }
         @include media(xldesktop) {
-            font-size: 13px;
+            font-size: 11px;
         }
     }
     .inner-banner .banner-heading {
@@ -33,13 +33,7 @@
 
 #pt {
     .cta.cta-header {
-        font-size: 14px;
-        @include media(desktop) {
-            font-size: 9px;
-        }
-        @include media(xldesktop) {
-            font-size: 14px;
-        }
+        font-size: 11px;
     }
     .inner-banner .banner-heading {
         font-size: 1.5rem;

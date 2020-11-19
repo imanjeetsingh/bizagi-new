@@ -9465,7 +9465,7 @@
 //# sourceMappingURL=swiper-bundle.js.map
 
 // for info carousel
-var slideCount = $(".swiper-slide").length;
+var slideCount = $(".infoslide").length;
 if (slideCount > 1) {
     var swiper = new Swiper(".infoCarousel", {
         slidesPerView: 1,
