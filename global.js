@@ -278,12 +278,12 @@ function initSearch() {
 // on ready
 $(document).ready(function() {
     initSearch();
-});
-
 // for focus on search
-$(document).ready(function () {
     $('.search-box-searchIcon').click(function(){
-        $('#searchTerm').focus();
+        setTimeout(function(){  $('#searchTerm').focus();}, 100);
         $('#searchTerm').removeAttr('placeholder');
         });
 });
+
+
+    
