@@ -7012,7 +7012,8 @@ li.nav-list-sublist.active .dropdown-item {
 .eventsBody {
   display: inline-block;
   position: relative;
-  min-height: 1px; }
+  min-height: 1px;
+  min-width: 100%; }
   .eventsBody .card-cta {
     bottom: -1rem; }
   .eventsBody .tag-box .list-inline li {
@@ -7915,10 +7916,17 @@ a#modal-tab-overview.active:after {
   text-decoration: none; }
 
 #modal-tabs.nav.nav-tabs.nav-justified.tabs-modal {
-  border-bottom: none; }
+  border-bottom: none;
+  justify-content: center; }
 
 #modal-tabs.nav.nav-tabs.nav-justified.tabs-modal li {
-  padding: 0 3.8rem; }
+  padding: 0 4px; }
+  @media (min-width: 768px) {
+    #modal-tabs.nav.nav-tabs.nav-justified.tabs-modal li {
+      padding: 0 1rem; } }
+  @media (min-width: 992px) {
+    #modal-tabs.nav.nav-tabs.nav-justified.tabs-modal li {
+      padding: 0 3.8rem; } }
 
 #modal-tabs .item-tab a {
   position: relative; }

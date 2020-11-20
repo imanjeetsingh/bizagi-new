@@ -986,10 +986,17 @@ a#modal-tab-overview.active:after {
 
 #modal-tabs.nav.nav-tabs.nav-justified.tabs-modal {
     border-bottom: none;
+    justify-content: center;
 }
 
 #modal-tabs.nav.nav-tabs.nav-justified.tabs-modal li {
-    padding: 0 3.8rem;
+    padding: 0 4px;
+    @include media(tablet){
+        padding: 0 1rem;
+    }
+    @include media(desktop){
+        padding: 0 3.8rem;
+    }
 }
 
 #modal-tabs .item-tab a {
