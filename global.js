@@ -248,6 +248,7 @@ function handleSearchInput(params) {
 }
 
 function submitSearchForm(searchTerm, redirectUrl) {
+    if (searchTerm.length < 3) return;
     window.location.href = redirectUrl + '?q=' + searchTerm;
 }
 
@@ -256,13 +257,14 @@ function initSearch() {
     var formElement = searchContainer.find('form');
     searchContainer.append("<div class='search-results'></div>")
     var searchResultElem = searchContainer.find('.search-results');
+                              
     var params = {
         inputElement: formElement.find('#searchTerm'),
         searchResultElement: searchResultElem,
         url: '/modules/graphql',
-        siteKey: 'bizagi-www',
-        language: 'en',
-        workspace: 'EDIT',
+        siteKey: searchContainer.find('input[name ="src_sites.values"]').val(),
+        language: searchContainer.find('input[name ="src_languages.values"]').val(),
+        workspace: searchContainer.find('input[name ="mode"]').val().toUpperCase(),
     }
     handleSearchInput(params);
 
@@ -283,7 +285,22 @@ $(document).ready(function() {
         setTimeout(function(){  $('#searchTerm').focus();}, 100);
         $('#searchTerm').removeAttr('placeholder');
         });
+
+        // search out click
+        $(document).mouseup(function(e)
+{
+        var container = $("#search-form-header");
+
+// if the target of the click isn't the container nor a descendant of the container
+        if (!container.is(e.target) && container.has(e.target).length === 0)
+        {
+            container.hide();
+            container.removeClass("active");
+        }
+    });
 });
+
+
 
 
     
