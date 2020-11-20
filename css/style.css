@@ -6930,12 +6930,14 @@ li.nav-list-sublist.active .dropdown-item {
 
 .shadow-wrapper {
   z-index: 1;
-  position: relative; }
+  position: relative;
+  height: 100%; }
 
 .tag-box-v2 {
   border: solid 1px #eee;
   padding: 20px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  height: 100%; }
 
 .eventsDateBadge p {
   font-size: 18px;
@@ -7013,7 +7015,8 @@ li.nav-list-sublist.active .dropdown-item {
   display: inline-block;
   position: relative;
   min-height: 1px;
-  min-width: 100%; }
+  min-width: 100%;
+  height: 100%; }
   .eventsBody .card-cta {
     bottom: -1rem; }
   .eventsBody .tag-box .list-inline li {
@@ -7043,6 +7046,14 @@ li.nav-list-sublist.active .dropdown-item {
   margin-bottom: 2rem; }
   .calendar th.fc-widget-header {
     width: 14.28%; }
+
+.eventsListItem {
+  display: table;
+  height: 100%;
+  width: 100%; }
+
+.course-calender-heading {
+  margin: 1rem 0; }
 
 .gallery-carousel {
   position: relative; }
