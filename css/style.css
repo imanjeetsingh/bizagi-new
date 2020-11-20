@@ -4444,7 +4444,7 @@ ul li::before {
   line-height: 1.42857;
   padding: 0.25rem 1.563rem 0.25rem 1.563rem;
   font-size: 0.813rem;
-  white-space: nowrap;
+  white-space: initial;
   color: #54645B; }
   @media (min-width: 768px) {
     .dropdown-item {
@@ -7006,9 +7006,6 @@ li.nav-list-sublist.active .dropdown-item {
     .eventsDateBadge {
       margin-top: 0; } }
 
-.eventsDateBadge.margin-top-20 p {
-  width: 2.5rem; }
-
 .events-date-to {
   margin: 1rem; }
 
@@ -7529,15 +7526,6 @@ li.item-tab.active a {
   font-weight: 600;
   padding: 5px 15px; }
 
-li.item-tab.active a::after {
-  content: "";
-  height: 2px;
-  width: 30px;
-  background-color: #485d6b;
-  display: block;
-  margin: 0 auto;
-  transition: display 0.5s ease; }
-
 li.item-tab.active a:hover,
 li.item-tab.active a:focus {
   background-color: transparent;
@@ -7908,6 +7896,52 @@ a.clear-results {
 
 .nb-orange-buttom:hover {
   border: none !important; }
+
+a#modal-tab-overview.active:after {
+  content: "";
+  height: 2px;
+  width: 30px;
+  background-color: #485d6b;
+  display: block;
+  margin: 0 auto;
+  transition: display 0.5s ease; }
+
+.tab-pane#overview .slideshow-container .prevCar,
+.nextCar {
+  display: none; }
+
+#modal-tabs.nav-tabs > li > a:hover {
+  background-color: unset;
+  text-decoration: none; }
+
+#modal-tabs.nav.nav-tabs.nav-justified.tabs-modal {
+  border-bottom: none; }
+
+#modal-tabs.nav.nav-tabs.nav-justified.tabs-modal li {
+  padding: 0 3.8rem; }
+
+#modal-tabs .item-tab a {
+  position: relative; }
+
+#modal-tabs .item-tab a.active:after {
+  content: "";
+  height: 2px;
+  width: 30px;
+  background-color: #485d6b;
+  display: block;
+  margin: 0 auto;
+  transition: display 0.5s ease;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+#modal-download-btn:hover {
+  text-decoration: none !important; }
+
+#modal-tabs li.item-tab a {
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; }
 
 .contentCenterCard .element-item {
   position: static !important; }
@@ -9335,7 +9369,8 @@ button:focus {
   padding: 1.5rem;
   width: 320px;
   border-top: 3px solid #F28C20;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 1; }
   @media (min-width: 992px) {
     #search-form-header {
       top: 5.5rem !important;
@@ -9343,6 +9378,24 @@ button:focus {
   @media (min-width: 1200px) {
     #search-form-header {
       right: 30px !important; } }
+
+.home-header.affix #search-form-header {
+  border-top: 3px solid #F28C20; }
+
+.home-header.affix #search-form-header:before {
+  position: absolute;
+  top: -9px;
+  right: 19px;
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5.5px 6px 5.5px;
+  border-color: transparent transparent #F28C20 transparent; }
+  @media (min-width: 1200px) {
+    .home-header.affix #search-form-header:before {
+      right: 40px; } }
 
 .home-header #search-form-header {
   border-top: 3px solid #ffffff; }
@@ -9358,6 +9411,9 @@ button:focus {
   border-style: solid;
   border-width: 0 5.5px 6px 5.5px;
   border-color: transparent transparent #ffffff transparent; }
+  @media (min-width: 1200px) {
+    .home-header #search-form-header:before {
+      right: 40px; } }
 
 #search-form-header:before {
   position: absolute;
@@ -9370,6 +9426,9 @@ button:focus {
   border-style: solid;
   border-width: 0 5.5px 6px 5.5px;
   border-color: transparent transparent #F28C20 transparent; }
+  @media (min-width: 1200px) {
+    #search-form-header:before {
+      right: 40px; } }
 
 .search-results {
   background: #fff;
@@ -9445,9 +9504,8 @@ button:focus {
   .bodywrapper .sui-layout-main {
     margin: 0 !important; }
   .bodywrapper .sui-result__details {
-    padding: 12px !important;
     list-style: none !important;
-    padding: 12px 0px !important; } }
+    padding: 12px 24px !important; } }
 
 .sui-search-box__text-input {
   border-radius: 2.5rem !important;
@@ -9492,6 +9550,56 @@ button:focus {
   @media (min-width: 768px) {
     .sui-layout-header__inner {
       padding: 0 24px; } }
+
+.sui-search-box__text-input:focus {
+  box-shadow: none !important;
+  border: 1px solid #ccc !important; }
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #ccc;
+  outline: 0;
+  box-shadow: none; }
+
+ul.rc-pagination.sui-paging li::before {
+  list-style: none !important;
+  content: ""; }
+
+.sui-paging .rc-pagination-item a {
+  color: #dc7000 !important; }
+
+.sui-paging .rc-pagination-item:hover a {
+  color: #dc7000 !important; }
+
+.bodywrapper .sui-result {
+  line-height: 1.5;
+  font-weight: 400;
+  list-style: none;
+  padding: 0 !important;
+  text-decoration: none;
+  display: block;
+  border: 0 none !important;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.1);
+  overflow-wrap: break-word;
+  overflow: hidden;
+  border-bottom: 1px solid #f0f0f0 !important;
+  font-family: inherit !important;
+  margin: 0px !important; }
+
+.sui-result em {
+  position: relative;
+  color: inherit !important;
+  font-weight: 700;
+  font-style: inherit; }
+
+.sui-result em {
+  position: relative;
+  color: inherit !important;
+  font-weight: 700;
+  font-style: inherit; }
 
 .nb-section-margin {
   margin: 100px 0; }
@@ -9970,6 +10078,9 @@ button:focus {
 
 .courseCalenerSection .events-date-to {
   margin-top: 1rem; }
+
+.courseCalender .eventsDateBadge.margin-top-20 p {
+  width: 2.5rem; }
 
 #es .cta.cta-header {
   font-size: 11px; }
