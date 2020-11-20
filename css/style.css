@@ -10101,6 +10101,9 @@ ul.rc-pagination.sui-paging li::before {
 .courseCalender .eventsDateBadge.margin-top-20 p {
   width: 2.5rem; }
 
+.courseCalender .eventsInfoDate {
+  width: 10%; }
+
 #es .cta.cta-header {
   font-size: 11px; }
   @media (min-width: 992px) {
