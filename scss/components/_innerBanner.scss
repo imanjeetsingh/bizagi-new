@@ -65,6 +65,10 @@
       @include media(desktop) {
         padding: 0;
       }
+      @include media(xxldesktop){
+        width: auto;
+        height: auto;
+      }
     }
   }
 }

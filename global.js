@@ -302,5 +302,12 @@ $(document).ready(function() {
 
 
 
-
+// change for search color change
+// $(document).ready(function () {
+//     $('.eWmThW').removeClass('eWmThW');
+//     $(".sui-multi-checkbox-facet .sc-bdnylx").on('click', function(e){
+//         $('.eWmThW').removeClass('eWmThW');
+//         $(this).find('.sc-bdnylx').addClass("eWmThW");
+//     });
+// })
     
