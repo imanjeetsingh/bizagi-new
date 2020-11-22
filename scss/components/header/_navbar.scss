@@ -193,7 +193,8 @@
         line-height: 1.42857;
         padding: 0.25rem 1.563rem 0.25rem 1.563rem;
         font-size: 0.813rem;
-        white-space: nowrap;
+        // white-space: nowrap;
+        white-space: initial;
         color: #54645B;
         @include media(tablet) {
             padding: 0.25rem 1rem 0.25rem 1rem !important;

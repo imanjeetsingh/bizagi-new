@@ -1,6 +1,7 @@
 .shadow-wrapper {
     z-index: 1;
     position: relative;
+    height: 100%;
 }
 
 .tag-box-v2 {
@@ -9,6 +10,7 @@
     // border-left: solid 2px #e74c3c;
     padding: 20px;
     margin-bottom: 30px;
+    height: 100%;
 }
 
 // .box-shadow::after, .box-shadow::before {
@@ -118,9 +120,9 @@
     }
 }
 
-.eventsDateBadge.margin-top-20 p{
-    width: 2.5rem;
-}
+// .eventsDateBadge.margin-top-20 p{
+//     width: 2.5rem;
+// }
 
 .events-date-to{
     margin: 1rem;
@@ -131,6 +133,8 @@
     // width: 100%;
     position: relative;
     min-height: 1px;
+    min-width: 100%;
+    height: 100%;
     // @include media (desktop) {
     //     width: 89%;
     // }
@@ -144,6 +148,13 @@
                 .fa-map-marker{
                     margin-top: 1rem;
                 }
+            }
+        }
+    }
+    .shadow-wrapper{
+        .tag-box{
+            h2{
+                font-weight: 700;
             }
         }
     }
@@ -178,4 +189,14 @@
     th.fc-widget-header{
         width: 14.28%;
     }
+}
+// edit card  height equal
+.eventsListItem{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.course-calender-heading{
+    margin-top: 3rem;
+    font-size: 2rem;
 }
