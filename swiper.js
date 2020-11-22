@@ -9476,19 +9476,20 @@ if (slideCount > 1) {
     });
 }
 // for treaser Carousel
-var cardRMob = $("#card-RMob").attr('data-rowCount-mobileCard');
-var cardCMob = $("#card-CMob").attr('data-colCount-mobileCard');
-var cardRTab = $("#card-RTab").attr('data-rowCount-tabletCard');
-var cardCTab = $("#card-CTab").attr('data-colCount-tabletCard');
-var cardRDes = $("#card-RDes").attr('data-rowCount-desktopCard');
-var cardCDes = $("#card-CDes").attr('data-colCount-desktopCard');
-var cardSlideTab = $("#card-SlideTab").attr('data-slide-tabletCard');
-var cardSlideDes = $("#card-SlideDes").attr('data-slide-desktopCard');
-
-var cardAutoPlayDelay = $("#card-AutoPlayDelay").attr('data-auto-play-delayCard');
-var cardLoop = $("#card-Loop").attr('data-loopCard');
-var swiper = new Swiper(".cardSection", {
-    autoplay: {
+$(".cardSection" ).each(function() {
+	var cardRMob = $(this).parent(".card-container").find('[data-id="card-RMob"]').attr('data-rowCount-mobileCard');
+	var cardCMob = $(this).parent(".card-container").find('[data-id="card-CMob"]').attr('data-colCount-mobileCard');
+	var cardRTab = $(this).parent(".card-container").find('[data-id="card-RTab"]').attr('data-rowCount-tabletCard');
+	var cardCTab = $(this).parent(".card-container").find('[data-id="card-CTab"]').attr('data-colCount-tabletCard');
+	var cardRDes = $(this).parent(".card-container").find('[data-id="card-RDes"]').attr('data-rowCount-desktopCard');
+	var cardCDes = $(this).parent(".card-container").find('[data-id="card-CDes"]').attr('data-colCount-desktopCard');
+	var cardSlideTab = $(this).parent(".card-container").find('[data-id="card-SlideTab"]').attr('data-slide-tabletCard');
+	var cardSlideDes = $(this).parent(".card-container").find('[data-id="card-SlideDes"]').attr('data-slide-desktopCard');
+	var cardAutoPlayDelay = $(this).parent(".card-container").find('[data-id="card-AutoPlayDelay"]').attr('data-auto-play-delayCard');
+    var cardLoop = $(this).parent(".card-container").find('[data-id="card-Loop"]').attr('data-loopCard');
+     var dotsSwipe = $(this).parent(".card-container").find('.swiper-pagination-one');
+    var test = 1;
+	var swiper = new Swiper(this, {    autoplay: {
         delay: cardAutoPlayDelay,
     },
     slidesPerView: cardCMob,
@@ -9497,9 +9498,10 @@ var swiper = new Swiper(".cardSection", {
     loop: cardLoop,
     slidesPerColumnFill: "row",
     pagination: {
-        el: ".swiper-pagination-one",
+        el: '.swiper-pagination-one',
         clickable: true,
     },
+
     navigation: {
         nextEl: ".swiper-button-next-one",
         prevEl: ".swiper-button-prev-one",
@@ -9518,6 +9520,7 @@ var swiper = new Swiper(".cardSection", {
             spaceBetween: 20,
         },
     },
+});
 });
 // var bottomHeight = 0;
 // $(".card-body").each(function() {
