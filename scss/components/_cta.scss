@@ -103,4 +103,12 @@ a {
     transition: background-color .3s linear, color .3s linear;
 }
 
+.cta-no-style {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: unset;
+}
+
 // CTA component CSS ends

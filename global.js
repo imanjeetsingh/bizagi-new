@@ -298,16 +298,19 @@ $(document).ready(function() {
             container.removeClass("active");
         }
     });
+    $('.search-results').css({"display":"none"});
+k.fn.init [div.search-results, prevObject: k.fn.init(1)]
+$("#searchTerm").keyup(function(){
+if ($(".search-results").has("div").length < 1) {
+$('.search-results').css({"display":"none"});
+}
+else{
+$('.search-results').css({"display":"block"});
+}
+});
 });
 
 
 
-// change for search color change
-// $(document).ready(function () {
-//     $('.eWmThW').removeClass('eWmThW');
-//     $(".sui-multi-checkbox-facet .sc-bdnylx").on('click', function(e){
-//         $('.eWmThW').removeClass('eWmThW');
-//         $(this).find('.sc-bdnylx').addClass("eWmThW");
-//     });
-// })
+
     
