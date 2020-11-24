@@ -1,13 +1,13 @@
 // Banner component CSS starts
 .banner {
     &-bg {
-        margin-bottom: 6rem;
-        @include media(tablet) {
-            margin-bottom: 8rem;
-        }
-        @include media(desktop) {
-            margin-bottom: 6rem;
-        }
+        // margin-bottom: 6rem;
+        // @include media(tablet) {
+        //     margin-bottom: 8rem;
+        // }
+        // @include media(desktop) {
+        //     margin-bottom: 6rem;
+        // }
         &-row {
             padding-top: 0rem;
             @include media(tablet) {
