@@ -39,7 +39,9 @@ $(document).ready(function() {
     if (window.screen.width > 767) {
 
         $(".card-upper-section").each(function() {
-            if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+            if ($(this).height() > maxHeight) {
+                maxHeight = $(this).height();
+            }
         });
 
         $(".card-upper-section").height(maxHeight);
@@ -48,7 +50,9 @@ $(document).ready(function() {
         var bottomHeight = 0;
 
         $(".card-bottom-section").each(function() {
-            if ($(this).height() > bottomHeight) { bottomHeight = $(this).height(); }
+            if ($(this).height() > bottomHeight) {
+                bottomHeight = $(this).height();
+            }
         });
 
         $(".card-bottom-section").height(bottomHeight);
@@ -176,7 +180,9 @@ function backToTop() {
 
     btn.on('click', function(e) {
         e.preventDefault();
-        $('html, body').animate({ scrollTop: 0 }, '300');
+        $('html, body').animate({
+            scrollTop: 0
+        }, '300');
     });
 }
 
@@ -225,7 +231,9 @@ function getSearchResult(searchTerm, params) {
         contentType: 'application/json;charset=UTF-8',
         method: 'POST',
         // method: 'GET',
-        data: JSON.stringify({ query }),
+        data: JSON.stringify({
+            query
+        }),
     })
 }
 
@@ -257,7 +265,7 @@ function initSearch() {
     var formElement = searchContainer.find('form');
     searchContainer.append("<div class='search-results'></div>")
     var searchResultElem = searchContainer.find('.search-results');
-                              
+
     var params = {
         inputElement: formElement.find('#searchTerm'),
         searchResultElement: searchResultElem,
@@ -280,37 +288,37 @@ function initSearch() {
 // on ready
 $(document).ready(function() {
     initSearch();
-// for focus on search
-    $('.search-box-searchIcon').click(function(){
-        setTimeout(function(){  $('#searchTerm').focus();}, 100);
+    // for focus on search
+    $('.search-box-searchIcon').click(function() {
+        setTimeout(function() {
+            $('#searchTerm').focus();
+        }, 100);
         $('#searchTerm').removeAttr('placeholder');
-        });
+    });
 
-        // search out click
-        $(document).mouseup(function(e)
-{
+    // search out click
+    $(document).mouseup(function(e) {
         var container = $("#search-form-header");
 
-// if the target of the click isn't the container nor a descendant of the container
-        if (!container.is(e.target) && container.has(e.target).length === 0)
-        {
+        // if the target of the click isn't the container nor a descendant of the container
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
             container.hide();
             container.removeClass("active");
         }
     });
-    $('.search-results').css({"display":"none"});
-k.fn.init [div.search-results, prevObject: k.fn.init(1)]
-$("#searchTerm").keyup(function(){
-if ($(".search-results").has("div").length < 1) {
-$('.search-results').css({"display":"none"});
-}
-else{
-$('.search-results').css({"display":"block"});
-}
+    // $('.search-results').css({
+    //     "display": "none"
+    // });
+
+    // $("#searchTerm").keyup(function() {
+    //     if ($(".search-results").has("div").length < 1) {
+    //         $('.search-results').css({
+    //             "display": "none"
+    //         });
+    //     } else {
+    //         $('.search-results').css({
+    //             "display": "block"
+    //         });
+    //     }
+    // });
 });
-});
-
-
-
-
-    
