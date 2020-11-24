@@ -9549,8 +9549,8 @@ $(".gallerySection").each(function () {
     var galleryCTab = $(this).parent(".gallery-carousel").find('[data-id="gallery-CTab"]').attr('data-colCount-tablet');
     var galleryRDes = $(this).parent(".gallery-carousel").find('[data-id="gallery-RDes"]').attr('data-rowCount-desktop');
     var galleryCDes = $(this).parent(".gallery-carousel").find('[data-id="gallery-CDes"]').attr('data-colCount-desktop');
-    var gallerySlideTab = $(this).parent(".gallery-carousel").find('[data-id="gallery-SlideTab"]').attr('data-slide-tablet');
-    var gallerySlideDes = $(this).parent(".gallery-carousel").find('[data-id="gallery-SlideDes"]').attr('data-slide-desktop');
+    var gallerySlideTab = 1;
+    var gallerySlideDes = 1;
     var galleryAutoPlayDelay = $(this).parent(".gallery-carousel").find('[data-id="gallery-AutoPlayDelay"]').attr('data-auto-play-delay');
     var galleryLoop = false;
     var navItemNamePrev = $(this).parent(".gallery-carousel").find('.swiper-button-prev-two').attr('id');
