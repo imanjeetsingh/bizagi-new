@@ -68,7 +68,7 @@
     z-index: 1;
     @include media(tablet){
         left: unset !important;
-        right: -29px;
+        right: -34px !important;
     }
 
     @include media(desktop) {
@@ -82,8 +82,22 @@
     }
 }
 
+.inner-header.affix #search-form-header{
+    @include media(desktop){
+        margin-top: -1.5rem;
+    }
+}
+
 .home-header.affix #search-form-header {
     border-top: 3px solid #F28C20;
+    @include media(desktop){
+        right: 9px !important;
+        margin-top: -1.2rem;
+    }
+    @include media(xldesktop){
+        right: 2.25rem !important;
+        margin-top: -1.5rem;
+    }
 }
 
 .home-header.affix #search-form-header:before {
@@ -106,9 +120,6 @@
         right: 25px;
         left: unset;
     }
-    @include media(desktop){
-        right: 0px !important;
-    }
 }
 
 .home-header #search-form-header {
@@ -116,6 +127,12 @@
     @include media(tablet){
         left: unset !important;
         right: -34px !important;
+    }
+    @include media(desktop){
+        right: -6px !important;
+    }
+    @include media(xldesktop){
+        right: 5px !important;
     }
 
 }
@@ -142,7 +159,7 @@
 #search-form-header:before {
     position: absolute;
     top: -9px;
-    right: 19px;
+    left: 15px;
     display: block;
     content: '';
     width: 0;
