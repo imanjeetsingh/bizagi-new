@@ -1,15 +1,20 @@
 // Covid component css starts
 .covid {
     &-container {
-        height: 7rem;
+        height: auto;
         margin-top: 1rem;
         @include media(tablet) {
-            padding: 2rem 0;
+            padding: 1rem 0;
             margin-top: 0;
+            height: 7rem;
         }
+        @include media(desktop){
+            height: auto;
+        }
+
         @include media(xldesktop) {
-            height: 3.125rem;
-            padding: 12px 0 0 0;
+            // height: 3.125rem;
+            padding: 1rem;
         }
     }
     &-text {

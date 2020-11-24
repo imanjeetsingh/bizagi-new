@@ -55,10 +55,10 @@
 
 #search-form-header {
     // left: -13rem!important;
-    left: unset !important;
+    right: unset !important;
     position: absolute !important;
     // right: 131px !important;
-    right: -29px !important;
+    left: -20px !important;
     top: 4.5rem !important;
     background: #fff;
     padding: 1.5rem;
@@ -66,6 +66,10 @@
     border-top: 3px solid #F28C20;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
     z-index: 1;
+    @include media(tablet){
+        left: unset !important;
+        right: -29px;
+    }
 
     @include media(desktop) {
         top: 5.5rem !important;
@@ -73,7 +77,8 @@
     }
 
     @include media(xldesktop) {
-        right: 30px !important;
+        right: 0px !important;
+        left: unset !important;
     }
 }
 
@@ -84,7 +89,8 @@
 .home-header.affix #search-form-header:before {
     position: absolute;
     top: -9px;
-    right: 19px;
+    // right: 19px;
+    left: 15px;
     display: block;
     content: '';
     width: 0;
@@ -92,21 +98,33 @@
     border-style: solid;
     border-width: 0 5.5px 6px 5.5px;
     border-color: transparent transparent #F28C20 transparent;
+    // @include media(tablet){
+    //     right: 15px;
+    // }
 
-    @include media(xldesktop) {
-        right: 40px;
+    @include media(tablet) {
+        right: 25px;
+        left: unset;
+    }
+    @include media(desktop){
+        right: 0px !important;
     }
 }
 
 .home-header #search-form-header {
     border-top: 3px solid #ffffff;
+    @include media(tablet){
+        left: unset !important;
+        right: -34px !important;
+    }
 
 }
 
 .home-header #search-form-header:before {
     position: absolute;
     top: -9px;
-    right: 19px;
+    left: 15px;
+    // right: 19px;
     display: block;
     content: '';
     width: 0;
@@ -115,8 +133,9 @@
     border-width: 0 5.5px 6px 5.5px;
     border-color: transparent transparent #ffffff transparent;
 
-    @include media(xldesktop) {
-        right: 40px;
+    @include media(tablet) {
+        right: 25px;
+        left: unset;
     }
 }
 
@@ -132,8 +151,9 @@
     border-width: 0 5.5px 6px 5.5px;
     border-color: transparent transparent #F28C20 transparent;
 
-    @include media(xldesktop) {
-        right: 40px;
+    @include media(tablet) {
+        right: 25px;
+        left: unset;
     }
 }
 
@@ -144,7 +164,7 @@
     padding: 1.25rem 3px 0 3px;
     max-height: 300px;
     overflow-y: auto;
-    border: 1px solid #ced4da;
+    // border: 1px solid #ced4da;
 
     a {
         display: inline-block;

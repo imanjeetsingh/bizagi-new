@@ -148,6 +148,7 @@
         height: 5rem;
         @include media(tablet) {
             height: 3rem;
+            justify-content: center;
         }
         @include media(desktop) {
             height: 5rem;
@@ -165,7 +166,7 @@
         @include mobile-only {
             height: 5rem;
             display: flex !important;
-            margin-right: 2.5rem;
+            margin-left: 2rem;
         }
         @include media(tablet) {
             margin-left: 8rem;
