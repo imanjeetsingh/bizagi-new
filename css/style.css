@@ -7598,6 +7598,9 @@ li.nav-list-sublist.active .dropdown-item {
 .card-container .row.mt-5.text-center {
   justify-content: center; }
 
+.swiper-slide .card.card-inner .card-body {
+  text-align: left; }
+
 .xchange-container .search {
   border-radius: 2.5rem;
   border: solid 1px lightgray;
@@ -9558,15 +9561,6 @@ button:focus {
     position: relative; }
     .blog-banner-inner .banner-image-box {
       object-fit: cover; }
-      @media (min-width: 768px) {
-        .blog-banner-inner .banner-image-box {
-          margin-bottom: -6rem; } }
-      @media (min-width: 992px) {
-        .blog-banner-inner .banner-image-box {
-          margin-bottom: -4rem; } }
-      @media (min-width: 1200px) {
-        .blog-banner-inner .banner-image-box {
-          margin-bottom: -21rem; } }
       .blog-banner-inner .banner-image-box .banner-image {
         width: 100%;
         height: 100%;
@@ -9574,13 +9568,13 @@ button:focus {
         object-position: center; }
         @media (min-width: 768px) {
           .blog-banner-inner .banner-image-box .banner-image {
-            height: 60%; } }
+            height: 26rem; } }
         @media (min-width: 992px) {
           .blog-banner-inner .banner-image-box .banner-image {
-            height: 57%; } }
+            height: 32rem; } }
         @media (min-width: 1200px) {
           .blog-banner-inner .banner-image-box .banner-image {
-            height: 50%; } }
+            height: 35rem; } }
   .blog-banner .banner-heading {
     font-size: 16px;
     line-height: 20px; }
@@ -9593,25 +9587,24 @@ button:focus {
         font-size: 35px;
         line-height: 42px; } }
     .blog-banner .banner-heading-box {
-      padding: 0 15px;
+      padding: 8px 15px 1px 17px;
       margin-top: 1rem; }
       @media (min-width: 768px) {
         .blog-banner .banner-heading-box {
-          margin-top: 0; } }
-      @media (min-width: 768px) {
-        .blog-banner .banner-heading-box {
-          padding: 0 0 0 5px;
+          margin-top: 0;
+          padding: 8px 8px 5px 8px;
           width: 80%;
-          left: 15px;
+          left: 14.5px;
           position: absolute;
-          bottom: 0rem;
+          bottom: -9rem;
           background-color: white; } }
       @media (min-width: 992px) {
         .blog-banner .banner-heading-box {
-          bottom: 4rem; } }
+          padding: 8px 15px 5px 8px;
+          bottom: -1px; } }
       @media (min-width: 1200px) {
         .blog-banner .banner-heading-box {
-          bottom: -2rem; } }
+          bottom: 0; } }
   .blog-banner p {
     font-size: 12px;
     line-height: 14px;
@@ -9622,9 +9615,15 @@ button:focus {
         line-height: 20px; } }
   .blog-banner .blog-cta {
     justify-content: center; }
+    @media (min-width: 768px) {
+      .blog-banner .blog-cta {
+        margin-top: 13rem !important; } }
+    @media (min-width: 992px) {
+      .blog-banner .blog-cta {
+        margin-top: 6rem !important; } }
     @media (min-width: 1200px) {
       .blog-banner .blog-cta {
-        margin: 6rem 0 5rem 0 !important; } }
+        margin: 8rem 0 5rem 0 !important; } }
   .blog-banner .blogList {
     margin: 0 15px; }
   .blog-banner .blogList .bottom-tag {

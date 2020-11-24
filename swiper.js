@@ -9492,15 +9492,7 @@ $(".cardSection").each(function () {
     var cardLoop = false;
     var navItemName = $(this).parent(".card-container").find('.swiper-pagination-one').attr('id');
     
-    if (window.screen.width > 1023) {
-        cardLoop = cardslideCount > cardRDes * cardCDes ? true : false;
-    }
-    else if (window.screen.width > 766) {
-        cardLoop = cardslideCount > cardRTab * cardCTab ? true : false;
-    }
-    else if (cardslideCount > 1) {
-        cardLoop = true;
-    }
+
     var swiper = new Swiper(this, {
 
         autoplay: {
@@ -9510,7 +9502,7 @@ $(".cardSection").each(function () {
         slidesPerColumn: cardRMob,
         spaceBetween: 0,
         speed: 1500,
-        loop: cardLoop,
+        loop: false,
         slidesPerColumnFill: "row",
         pagination: {
             el: "#" + navItemName,
@@ -9521,13 +9513,13 @@ $(".cardSection").each(function () {
             767: {
                 slidesPerView: cardCTab,
                 slidesPerColumn: cardRTab,
-                slidesPerGroup: cardSlideTab,
+                slidesPerGroup: cardslideCount % cardSlideTab === 0 ? cardSlideTab : 1,
                 spaceBetween: 20,
             },
             1023: {
                 slidesPerView: cardCDes,
                 slidesPerColumn: cardRDes,
-                slidesPerGroup: cardSlideDes,
+                slidesPerGroup: cardslideCount % cardSlideDes === 0 ? cardSlideDes : 1,
                 spaceBetween: 20,
             },
         },
