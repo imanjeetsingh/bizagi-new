@@ -297,13 +297,17 @@ $(document).ready(function() {
     });
 
     // search out click
-    $(document).mouseup(function(e) {
+    $(document).click(function(e) {
         var container = $("#search-form-header");
+        var searchButton = $(".search-box-searchIcon")
 
         // if the target of the click isn't the container nor a descendant of the container
-        if (!container.is(e.target) && container.has(e.target).length === 0) {
+        if (!container.is(e.target) && container.has(e.target).length === 0 && !searchButton.is(e.target) && searchButton.has(e.target).length === 0) {
             container.hide();
             container.removeClass("active");
+        }
+        else{
+            container.addClass("active");
         }
     });
     // $('.search-results').css({
@@ -311,7 +315,7 @@ $(document).ready(function() {
     // });
 
     // $("#searchTerm").keyup(function() {
-    //     if ($(".search-results").has("div").length < 1) {
+    //     if ($(".search-results").val("div").length < 1) {
     //         $('.search-results').css({
     //             "display": "none"
     //         });
