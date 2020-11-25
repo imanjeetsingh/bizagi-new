@@ -6960,7 +6960,7 @@ img[alt] {
     .covid-container {
       padding: 1rem 0;
       margin-top: 0;
-      height: 7rem; } }
+      height: auto; } }
   @media (min-width: 992px) {
     .covid-container {
       height: auto; } }
@@ -7000,7 +7000,7 @@ img[alt] {
 
 @media (min-width: 768px) {
   .home-header {
-    margin-top: -3rem; } }
+    margin-top: 0; } }
 
 @media (min-width: 992px) {
   .home-header {
@@ -7015,9 +7015,13 @@ img[alt] {
   background-color: #ffffff !important;
   background: transparent;
   border-bottom: 1px solid #efefef; }
+  @media (min-width: 768px) {
+    .home-header.affix {
+      margin-top: -3rem; } }
   @media (min-width: 992px) {
     .home-header.affix {
-      padding: 3rem 0 0 0; } }
+      padding: 3rem 0 0 0;
+      margin-top: 0; } }
   @media (min-width: 1200px) {
     .home-header.affix {
       padding: 0.5rem 0 0 0; } }

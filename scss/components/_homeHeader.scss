@@ -1,7 +1,7 @@
 // Home header CSS starts
 .home-header {
     @include media(tablet) {
-        margin-top: -3rem;
+        margin-top: 0;
     }
     @include media(desktop) {
         position: fixed;
@@ -15,8 +15,12 @@
         background-color: #ffffff !important;
         background: transparent;
         border-bottom: 1px solid #efefef;
+        @include media(tablet){
+            margin-top: -3rem;
+        }
         @include media(desktop) {
             padding: 3rem 0 0 0;
+            margin-top: 0;
         }
         @include media(xldesktop) {
             padding: 0.5rem 0 0 0;
