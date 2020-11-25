@@ -109,7 +109,9 @@
 .card-container .row.mt-5.text-center {
     justify-content: center;
 }
-
+.swiper-slide .card.card-inner .card-body {
+    text-align: left;
+}
 // .swiper-button-next:after {
 //     content: "";
 // }

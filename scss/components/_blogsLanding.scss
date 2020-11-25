@@ -22,28 +22,28 @@
         position: relative;
         .banner-image-box {
             object-fit: cover;
-            @include media(tablet) {
-                margin-bottom: -6rem;
-            }
-            @include media(desktop) {
-                margin-bottom: -4rem;
-            }
-            @include media(xldesktop) {
-                margin-bottom: -21rem;
-            }
+            // @include media(tablet) {
+            //     margin-bottom: -4rem;
+            // }
+            // @include media(desktop) {
+            //     margin-bottom: -6rem;
+            // }
+            // @include media(xldesktop) {
+            //     margin-bottom: -29rem;
+            // }
             .banner-image {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 object-position: center;
                 @include media(tablet) {
-                    height: 60%;
+                    height: 26rem;
                 }
                 @include media(desktop) {
-                    height: 57%;
+                    height: 32rem;
                 }
                 @include media(xldesktop) {
-                    height: 50%;
+                    height: 35rem;
                 }
             }
         }
@@ -61,24 +61,24 @@
         }
         &-box {
             // width: 100%;
-            padding: 0 15px;
+            padding: 8px 15px 1px 17px;
             margin-top: 1rem;
-            @include media(tablet) {
-                margin-top: 0;
-            }
             @include media (tablet) {
-                padding: 0 0 0 5px;
+                margin-top: 0;
+                padding: 8px 8px 5px 8px;
                 width: 80%;
-                left: 15px;
+                left: 14.5px;
                 position: absolute;
-                bottom: 0rem;
+                bottom: -9rem;
                 background-color: white;
+                
             }
             @include media(desktop) {
-                bottom: 4rem;
+                padding: 8px 15px 5px 8px;
+                bottom: -1px;
             }
             @include media(xldesktop) {
-                bottom: -2rem;
+                bottom: 0;
             }
         }
     }
@@ -95,10 +95,13 @@
     .blog-cta {
         justify-content: center;
         @include media (tablet) {
-            // margin: 1rem 0 !important;
+            margin-top: 13rem !important;
+        }
+        @include media (desktop) {
+            margin-top: 6rem !important;
         }
         @include media (xldesktop) {
-            margin: 6rem 0 5rem 0 !important;
+            margin: 8rem 0 5rem 0 !important;
         }
     }
     .blogList {

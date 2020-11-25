@@ -10,11 +10,11 @@
  * Released on: October 30, 2020
  */
 
-(function(global, factory) {
+(function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
         typeof define === 'function' && define.amd ? define(factory) :
-        (global = global || self, global.Swiper = factory());
-}(this, (function() {
+            (global = global || self, global.Swiper = factory());
+}(this, (function () {
     'use strict';
 
     function _defineProperties(target, props) {
@@ -34,7 +34,7 @@
     }
 
     function _extends() {
-        _extends = Object.assign || function(target) {
+        _extends = Object.assign || function (target) {
             for (var i = 1; i < arguments.length; i++) {
                 var source = arguments[i];
 
@@ -77,7 +77,7 @@
             src = {};
         }
 
-        Object.keys(src).forEach(function(key) {
+        Object.keys(src).forEach(function (key) {
             if (typeof target[key] === 'undefined') target[key] = src[key];
             else if (isObject(src[key]) && isObject(target[key]) && Object.keys(src[key]).length > 0) {
                 extend(target[key], src[key]);
@@ -87,10 +87,10 @@
 
     var ssrDocument = {
         body: {},
-        addEventListener: function addEventListener() {},
-        removeEventListener: function removeEventListener() {},
+        addEventListener: function addEventListener() { },
+        removeEventListener: function removeEventListener() { },
         activeElement: {
-            blur: function blur() {},
+            blur: function blur() { },
             nodeName: ''
         },
         querySelector: function querySelector() {
@@ -104,7 +104,7 @@
         },
         createEvent: function createEvent() {
             return {
-                initEvent: function initEvent() {}
+                initEvent: function initEvent() { }
             };
         },
         createElement: function createElement() {
@@ -112,7 +112,7 @@
                 children: [],
                 childNodes: [],
                 style: {},
-                setAttribute: function setAttribute() {},
+                setAttribute: function setAttribute() { },
                 getElementsByTagName: function getElementsByTagName() {
                     return [];
                 }
@@ -158,16 +158,16 @@
             search: ''
         },
         history: {
-            replaceState: function replaceState() {},
-            pushState: function pushState() {},
-            go: function go() {},
-            back: function back() {}
+            replaceState: function replaceState() { },
+            pushState: function pushState() { },
+            go: function go() { },
+            back: function back() { }
         },
         CustomEvent: function CustomEvent() {
             return this;
         },
-        addEventListener: function addEventListener() {},
-        removeEventListener: function removeEventListener() {},
+        addEventListener: function addEventListener() { },
+        removeEventListener: function removeEventListener() { },
         getComputedStyle: function getComputedStyle() {
             return {
                 getPropertyValue: function getPropertyValue() {
@@ -175,11 +175,11 @@
                 }
             };
         },
-        Image: function Image() {},
-        Date: function Date() {},
+        Image: function Image() { },
+        Date: function Date() { },
         screen: {},
-        setTimeout: function setTimeout() {},
-        clearTimeout: function clearTimeout() {},
+        setTimeout: function setTimeout() { },
+        clearTimeout: function clearTimeout() { },
         matchMedia: function matchMedia() {
             return {};
         },
@@ -246,7 +246,7 @@
         if (typeof Proxy === "function") return true;
 
         try {
-            Date.prototype.toString.call(Reflect.construct(Date, [], function() {}));
+            Date.prototype.toString.call(Reflect.construct(Date, [], function () { }));
             return true;
         } catch (e) {
             return false;
@@ -330,7 +330,7 @@
         });
     }
 
-    var Dom7 = /*#__PURE__*/ function(_Array) {
+    var Dom7 = /*#__PURE__*/ function (_Array) {
         _inheritsLoose(Dom7, _Array);
 
         function Dom7(items) {
@@ -350,7 +350,7 @@
         }
 
         var res = [];
-        arr.forEach(function(el) {
+        arr.forEach(function (el) {
             if (Array.isArray(el)) {
                 res.push.apply(res, arrayFlat(el));
             } else {
@@ -439,10 +439,10 @@
             classes[_key] = arguments[_key];
         }
 
-        var classNames = arrayFlat(classes.map(function(c) {
+        var classNames = arrayFlat(classes.map(function (c) {
             return c.split(' ');
         }));
-        this.forEach(function(el) {
+        this.forEach(function (el) {
             var _el$classList;
 
             (_el$classList = el.classList).add.apply(_el$classList, classNames);
@@ -455,10 +455,10 @@
             classes[_key2] = arguments[_key2];
         }
 
-        var classNames = arrayFlat(classes.map(function(c) {
+        var classNames = arrayFlat(classes.map(function (c) {
             return c.split(' ');
         }));
-        this.forEach(function(el) {
+        this.forEach(function (el) {
             var _el$classList2;
 
             (_el$classList2 = el.classList).remove.apply(_el$classList2, classNames);
@@ -471,11 +471,11 @@
             classes[_key3] = arguments[_key3];
         }
 
-        var classNames = arrayFlat(classes.map(function(c) {
+        var classNames = arrayFlat(classes.map(function (c) {
             return c.split(' ');
         }));
-        this.forEach(function(el) {
-            classNames.forEach(function(className) {
+        this.forEach(function (el) {
+            classNames.forEach(function (className) {
                 el.classList.toggle(className);
             });
         });
@@ -486,11 +486,11 @@
             classes[_key4] = arguments[_key4];
         }
 
-        var classNames = arrayFlat(classes.map(function(c) {
+        var classNames = arrayFlat(classes.map(function (c) {
             return c.split(' ');
         }));
-        return arrayFilter(this, function(el) {
-            return classNames.filter(function(className) {
+        return arrayFilter(this, function (el) {
+            return classNames.filter(function (className) {
                 return el.classList.contains(className);
             }).length > 0;
         }).length > 0;
@@ -707,7 +707,7 @@
                         bubbles: true,
                         cancelable: true
                     });
-                    el.dom7EventData = args.filter(function(data, dataIndex) {
+                    el.dom7EventData = args.filter(function (data, dataIndex) {
                         return dataIndex > 0;
                     });
                     el.dispatchEvent(evt);
@@ -824,7 +824,7 @@
 
     function each(callback) {
         if (!callback) return this;
-        this.forEach(function(el, index) {
+        this.forEach(function (el, index) {
             callback.apply(el, [el, index]);
         });
         return this;
@@ -1186,13 +1186,13 @@
         filter: filter,
         remove: remove
     };
-    Object.keys(Methods).forEach(function(methodName) {
+    Object.keys(Methods).forEach(function (methodName) {
         $.fn[methodName] = Methods[methodName];
     });
 
     function deleteProps(obj) {
         var object = obj;
-        Object.keys(object).forEach(function(key) {
+        Object.keys(object).forEach(function (key) {
             try {
                 object[key] = null;
             } catch (e) { // no getter for object
@@ -1232,7 +1232,7 @@
             curTransform = curStyle.transform || curStyle.webkitTransform;
 
             if (curTransform.split(',').length > 6) {
-                curTransform = curTransform.split(', ').map(function(a) {
+                curTransform = curTransform.split(', ').map(function (a) {
                     return a.replace(',', '.');
                 }).join(', ');
             } // Some old versions of Webkit choke when 'none' is passed; pass
@@ -1297,9 +1297,9 @@
     }
 
     function bindModuleMethods(instance, obj) {
-        Object.keys(obj).forEach(function(key) {
+        Object.keys(obj).forEach(function (key) {
             if (isObject$1(obj[key])) {
-                Object.keys(obj[key]).forEach(function(subKey) {
+                Object.keys(obj[key]).forEach(function (subKey) {
                     if (typeof obj[key][subKey] === 'function') {
                         obj[key][subKey] = obj[key][subKey].bind(instance);
                     }
@@ -1478,7 +1478,7 @@
             var window = getWindow();
             var swiper = this;
             var ObserverFunc = window.MutationObserver || window.WebkitMutationObserver;
-            var observer = new ObserverFunc(function(mutations) {
+            var observer = new ObserverFunc(function (mutations) {
                 // The observerUpdate event should only be triggered
                 // once despite the number of mutations.  Additional
                 // triggers are redundant and are very costly
@@ -1527,7 +1527,7 @@
         },
         destroy: function destroy() {
             var swiper = this;
-            swiper.observer.observers.forEach(function(observer) {
+            swiper.observer.observers.forEach(function (observer) {
                 observer.disconnect();
             });
             swiper.observer.observers = [];
@@ -1562,7 +1562,7 @@
         useParams: function useParams(instanceParams) {
             var instance = this;
             if (!instance.modules) return;
-            Object.keys(instance.modules).forEach(function(moduleName) {
+            Object.keys(instance.modules).forEach(function (moduleName) {
                 var module = instance.modules[moduleName]; // Extend params
 
                 if (module.params) {
@@ -1577,12 +1577,12 @@
 
             var instance = this;
             if (!instance.modules) return;
-            Object.keys(instance.modules).forEach(function(moduleName) {
+            Object.keys(instance.modules).forEach(function (moduleName) {
                 var module = instance.modules[moduleName];
                 var moduleParams = modulesParams[moduleName] || {}; // Add event listeners
 
                 if (module.on && instance.on) {
-                    Object.keys(module.on).forEach(function(moduleEventName) {
+                    Object.keys(module.on).forEach(function (moduleEventName) {
                         instance.on(moduleEventName, module.on[moduleEventName]);
                     });
                 } // Module create callback
@@ -1601,7 +1601,7 @@
             var self = this;
             if (typeof handler !== 'function') return self;
             var method = priority ? 'unshift' : 'push';
-            events.split(' ').forEach(function(event) {
+            events.split(' ').forEach(function (event) {
                 if (!self.eventsListeners[event]) self.eventsListeners[event] = [];
                 self.eventsListeners[event][method](handler);
             });
@@ -1653,11 +1653,11 @@
         off: function off(events, handler) {
             var self = this;
             if (!self.eventsListeners) return self;
-            events.split(' ').forEach(function(event) {
+            events.split(' ').forEach(function (event) {
                 if (typeof handler === 'undefined') {
                     self.eventsListeners[event] = [];
                 } else if (self.eventsListeners[event]) {
-                    self.eventsListeners[event].forEach(function(eventHandler, index) {
+                    self.eventsListeners[event].forEach(function (eventHandler, index) {
                         if (eventHandler === handler || eventHandler.__emitterProxy && eventHandler.__emitterProxy === handler) {
                             self.eventsListeners[event].splice(index, 1);
                         }
@@ -1689,19 +1689,19 @@
 
             data.unshift(context);
             var eventsArray = Array.isArray(events) ? events : events.split(' ');
-            eventsArray.forEach(function(event) {
+            eventsArray.forEach(function (event) {
                 if (self.eventsAnyListeners && self.eventsAnyListeners.length) {
-                    self.eventsAnyListeners.forEach(function(eventHandler) {
+                    self.eventsAnyListeners.forEach(function (eventHandler) {
                         eventHandler.apply(context, [event].concat(data));
                     });
                 }
 
                 if (self.eventsListeners && self.eventsListeners[event]) {
                     var handlers = [];
-                    self.eventsListeners[event].forEach(function(eventHandler) {
+                    self.eventsListeners[event].forEach(function (eventHandler) {
                         handlers.push(eventHandler);
                     });
-                    handlers.forEach(function(eventHandler) {
+                    handlers.forEach(function (eventHandler) {
                         eventHandler.apply(context, data);
                     });
                 }
@@ -2052,12 +2052,12 @@
 
         if (params.centeredSlides && params.centeredSlidesBounds) {
             var allSlidesSize = 0;
-            slidesSizesGrid.forEach(function(slideSizeValue) {
+            slidesSizesGrid.forEach(function (slideSizeValue) {
                 allSlidesSize += slideSizeValue + (params.spaceBetween ? params.spaceBetween : 0);
             });
             allSlidesSize -= params.spaceBetween;
             var maxSnap = allSlidesSize - swiperSize;
-            snapGrid = snapGrid.map(function(snap) {
+            snapGrid = snapGrid.map(function (snap) {
                 if (snap < 0) return -offsetBefore;
                 if (snap > maxSnap) return maxSnap + offsetAfter;
                 return snap;
@@ -2066,17 +2066,17 @@
 
         if (params.centerInsufficientSlides) {
             var _allSlidesSize = 0;
-            slidesSizesGrid.forEach(function(slideSizeValue) {
+            slidesSizesGrid.forEach(function (slideSizeValue) {
                 _allSlidesSize += slideSizeValue + (params.spaceBetween ? params.spaceBetween : 0);
             });
             _allSlidesSize -= params.spaceBetween;
 
             if (_allSlidesSize < swiperSize) {
                 var allSlidesOffset = (swiperSize - _allSlidesSize) / 2;
-                snapGrid.forEach(function(snap, snapIndex) {
+                snapGrid.forEach(function (snap, snapIndex) {
                     snapGrid[snapIndex] = snap - allSlidesOffset;
                 });
-                slidesGrid.forEach(function(snap, snapIndex) {
+                slidesGrid.forEach(function (snap, snapIndex) {
                     slidesGrid[snapIndex] = snap + allSlidesOffset;
                 });
             }
@@ -2122,7 +2122,7 @@
 
         if (swiper.params.slidesPerView !== 'auto' && swiper.params.slidesPerView > 1) {
             if (swiper.params.centeredSlides) {
-                swiper.visibleSlides.each(function(slide) {
+                swiper.visibleSlides.each(function (slide) {
                     activeSlides.push(slide);
                 });
             } else {
@@ -2954,14 +2954,14 @@
         }
 
         var normalizedTranslate = normalize(translate);
-        var normalizedSnapGrid = snapGrid.map(function(val) {
+        var normalizedSnapGrid = snapGrid.map(function (val) {
             return normalize(val);
         });
         var currentSnap = snapGrid[normalizedSnapGrid.indexOf(normalizedTranslate)];
         var prevSnap = snapGrid[normalizedSnapGrid.indexOf(normalizedTranslate) - 1];
 
         if (typeof prevSnap === 'undefined' && params.cssMode) {
-            snapGrid.forEach(function(snap) {
+            snapGrid.forEach(function (snap) {
                 if (!prevSnap && normalizedTranslate >= snap) prevSnap = snap;
             });
         }
@@ -3051,7 +3051,7 @@
                 if (slideToIndex < swiper.loopedSlides - slidesPerView / 2 || slideToIndex > swiper.slides.length - swiper.loopedSlides + slidesPerView / 2) {
                     swiper.loopFix();
                     slideToIndex = $wrapperEl.children("." + params.slideClass + "[data-swiper-slide-index=\"" + realIndex + "\"]:not(." + params.slideDuplicateClass + ")").eq(0).index();
-                    nextTick(function() {
+                    nextTick(function () {
                         swiper.slideTo(slideToIndex);
                     });
                 } else {
@@ -3060,7 +3060,7 @@
             } else if (slideToIndex > swiper.slides.length - slidesPerView) {
                 swiper.loopFix();
                 slideToIndex = $wrapperEl.children("." + params.slideClass + "[data-swiper-slide-index=\"" + realIndex + "\"]:not(." + params.slideDuplicateClass + ")").eq(0).index();
-                nextTick(function() {
+                nextTick(function () {
                     swiper.slideTo(slideToIndex);
                 });
             } else {
@@ -3113,7 +3113,7 @@
 
         var prependSlides = [];
         var appendSlides = [];
-        slides.each(function(el, index) {
+        slides.each(function (el, index) {
             var slide = $(el);
 
             if (index < swiper.loopedSlides) {
@@ -3759,7 +3759,7 @@
         }
 
         data.lastClickTime = now();
-        nextTick(function() {
+        nextTick(function () {
             if (!swiper.destroyed) swiper.allowClick = true;
         });
 
@@ -3882,7 +3882,7 @@
                 }
 
                 if (needsLoopFix) {
-                    swiper.once('transitionEnd', function() {
+                    swiper.once('transitionEnd', function () {
                         swiper.loopFix();
                     });
                 } // Fix duration
@@ -3925,13 +3925,13 @@
                     swiper.setTranslate(newPosition);
                     swiper.transitionStart(true, swiper.swipeDirection);
                     swiper.animating = true;
-                    $wrapperEl.transitionEnd(function() {
+                    $wrapperEl.transitionEnd(function () {
                         if (!swiper || swiper.destroyed || !data.allowMomentumBounce) return;
                         swiper.emit('momentumBounce');
                         swiper.setTransition(params.speed);
-                        setTimeout(function() {
+                        setTimeout(function () {
                             swiper.setTranslate(afterBouncePosition);
-                            $wrapperEl.transitionEnd(function() {
+                            $wrapperEl.transitionEnd(function () {
                                 if (!swiper || swiper.destroyed) return;
                                 swiper.transitionEnd();
                             });
@@ -3945,7 +3945,7 @@
 
                     if (!swiper.animating) {
                         swiper.animating = true;
-                        $wrapperEl.transitionEnd(function() {
+                        $wrapperEl.transitionEnd(function () {
                             if (!swiper || swiper.destroyed) return;
                             swiper.transitionEnd();
                         });
@@ -4124,7 +4124,7 @@
 
     var dummyEventAttached = false;
 
-    function dummyEventListener() {}
+    function dummyEventListener() { }
 
     function attachEvents() {
         var swiper = this;
@@ -4269,7 +4269,7 @@
             var breakpointOnlyParams = breakpoint in breakpoints ? breakpoints[breakpoint] : undefined;
 
             if (breakpointOnlyParams) {
-                ['slidesPerView', 'spaceBetween', 'slidesPerGroup', 'slidesPerGroupSkip', 'slidesPerColumn'].forEach(function(param) {
+                ['slidesPerView', 'spaceBetween', 'slidesPerGroup', 'slidesPerGroupSkip', 'slidesPerColumn'].forEach(function (param) {
                     var paramValue = breakpointOnlyParams[param];
                     if (typeof paramValue === 'undefined') return;
 
@@ -4332,7 +4332,7 @@
 
         if (!breakpoints) return undefined;
         var breakpoint = false;
-        var points = Object.keys(breakpoints).map(function(point) {
+        var points = Object.keys(breakpoints).map(function (point) {
             if (typeof point === 'string' && point.indexOf('@') === 0) {
                 var minRatio = parseFloat(point.substr(1));
                 var value = window.innerHeight * minRatio;
@@ -4347,7 +4347,7 @@
                 point: point
             };
         });
-        points.sort(function(a, b) {
+        points.sort(function (a, b) {
             return parseInt(a.value, 10) - parseInt(b.value, 10);
         });
 
@@ -4412,7 +4412,7 @@
             suffixes.push('css-mode');
         }
 
-        suffixes.forEach(function(suffix) {
+        suffixes.forEach(function (suffix) {
             classNames.push(params.containerModifierClass + suffix);
         });
         $el.addClass(classNames.join(' '));
@@ -4665,7 +4665,7 @@
     };
     var extendedDefaults = {};
 
-    var Swiper = /*#__PURE__*/ function() {
+    var Swiper = /*#__PURE__*/ function () {
         function Swiper() {
             var el;
             var params;
@@ -4698,7 +4698,7 @@
                 swiper.modules = {};
             }
 
-            Object.keys(swiper.modules).forEach(function(moduleName) {
+            Object.keys(swiper.modules).forEach(function (moduleName) {
                 var module = swiper.modules[moduleName];
 
                 if (module.params) {
@@ -4731,7 +4731,7 @@
             swiper.passedParams = extend$1({}, params); // add event listeners
 
             if (swiper.params && swiper.params.on) {
-                Object.keys(swiper.params.on).forEach(function(eventName) {
+                Object.keys(swiper.params.on).forEach(function (eventName) {
                     swiper.on(eventName, swiper.params.on[eventName]);
                 });
             }
@@ -4752,7 +4752,7 @@
 
             if ($el.length > 1) {
                 var swipers = [];
-                $el.each(function(containerEl) {
+                $el.each(function (containerEl) {
                     var newParams = extend$1({}, params, {
                         el: containerEl
                     });
@@ -4768,7 +4768,7 @@
             if (el && el.shadowRoot && el.shadowRoot.querySelector) {
                 $wrapperEl = $(el.shadowRoot.querySelector("." + swiper.params.wrapperClass)); // Children needs to return slot items
 
-                $wrapperEl.children = function(options) {
+                $wrapperEl.children = function (options) {
                     return $el.children(options);
                 };
             } else {
@@ -4888,7 +4888,7 @@
         _proto.emitContainerClasses = function emitContainerClasses() {
             var swiper = this;
             if (!swiper.params._emitClasses || !swiper.el) return;
-            var classes = swiper.el.className.split(' ').filter(function(className) {
+            var classes = swiper.el.className.split(' ').filter(function (className) {
                 return className.indexOf('swiper-container') === 0 || className.indexOf(swiper.params.containerModifierClass) === 0;
             });
             swiper.emit('_containerClasses', classes.join(' '));
@@ -4896,7 +4896,7 @@
 
         _proto.getSlideClasses = function getSlideClasses(slideEl) {
             var swiper = this;
-            return slideEl.className.split(' ').filter(function(className) {
+            return slideEl.className.split(' ').filter(function (className) {
                 return className.indexOf('swiper-slide') === 0 || className.indexOf(swiper.params.slideClass) === 0;
             }).join(' ');
         };
@@ -4904,7 +4904,7 @@
         _proto.emitSlidesClasses = function emitSlidesClasses() {
             var swiper = this;
             if (!swiper.params._emitClasses || !swiper.el) return;
-            swiper.slides.each(function(slideEl) {
+            swiper.slides.each(function (slideEl) {
                 var classNames = swiper.getSlideClasses(slideEl);
                 swiper.emit('_slideClass', slideEl, classNames);
             });
@@ -5019,7 +5019,7 @@
             swiper.$el.removeClass("" + swiper.params.containerModifierClass + currentDirection).addClass("" + swiper.params.containerModifierClass + newDirection);
             swiper.emitContainerClasses();
             swiper.params.direction = newDirection;
-            swiper.slides.each(function(slideEl) {
+            swiper.slides.each(function (slideEl) {
                 if (newDirection === 'vertical') {
                     slideEl.style.width = '';
                 } else {
@@ -5123,7 +5123,7 @@
 
             swiper.emit('destroy'); // Detach emitter events
 
-            Object.keys(swiper.eventsListeners).forEach(function(eventName) {
+            Object.keys(swiper.eventsListeners).forEach(function (eventName) {
                 swiper.off(eventName);
             });
 
@@ -5148,7 +5148,7 @@
 
         Swiper.use = function use(module) {
             if (Array.isArray(module)) {
-                module.forEach(function(m) {
+                module.forEach(function (m) {
                     return Swiper.installModule(m);
                 });
                 return Swiper;
@@ -5173,8 +5173,8 @@
         return Swiper;
     }();
 
-    Object.keys(prototypes).forEach(function(prototypeGroup) {
-        Object.keys(prototypes[prototypeGroup]).forEach(function(protoMethod) {
+    Object.keys(prototypes).forEach(function (prototypeGroup) {
+        Object.keys(prototypes[prototypeGroup]).forEach(function (protoMethod) {
             Swiper.prototype[protoMethod] = prototypes[prototypeGroup][protoMethod];
         });
     });
@@ -5289,12 +5289,12 @@
                 }
             }
 
-            appendIndexes.forEach(function(index) {
+            appendIndexes.forEach(function (index) {
                 swiper.$wrapperEl.append(renderSlide(slides[index], index));
             });
-            prependIndexes.sort(function(a, b) {
+            prependIndexes.sort(function (a, b) {
                 return b - a;
-            }).forEach(function(index) {
+            }).forEach(function (index) {
                 swiper.$wrapperEl.prepend(renderSlide(slides[index], index));
             });
             swiper.$wrapperEl.children('.swiper-slide').css(offsetProp, offset + "px");
@@ -5346,7 +5346,7 @@
             if (swiper.params.virtual.cache) {
                 var cache = swiper.virtual.cache;
                 var newCache = {};
-                Object.keys(cache).forEach(function(cachedIndex) {
+                Object.keys(cache).forEach(function (cachedIndex) {
                     var $cachedEl = cache[cachedIndex];
                     var cachedElIndex = $cachedEl.attr('data-swiper-slide-index');
 
@@ -5844,7 +5844,7 @@
 
                             _recentWheelEvents.splice(0);
 
-                            swiper.mousewheel.timeout = nextTick(function() {
+                            swiper.mousewheel.timeout = nextTick(function () {
                                 swiper.slideToClosest(swiper.params.speed, true, undefined, snapToThreshold);
                             }, 0); // no delay; move on next tick
                         }
@@ -5853,7 +5853,7 @@
                             // if we get here, then we haven't detected the end of a momentum scroll, so
                             // we'll consider a scroll "complete" when there haven't been any wheel events
                             // for 500ms.
-                            swiper.mousewheel.timeout = nextTick(function() {
+                            swiper.mousewheel.timeout = nextTick(function () {
                                 var snapToThreshold = 0.5;
                                 swiper.mousewheel.lastEventBeforeSnap = _newEvent;
 
@@ -6255,7 +6255,7 @@
                 bullets.removeClass(params.bulletActiveClass + " " + params.bulletActiveClass + "-next " + params.bulletActiveClass + "-next-next " + params.bulletActiveClass + "-prev " + params.bulletActiveClass + "-prev-prev " + params.bulletActiveClass + "-main");
 
                 if ($el.length > 1) {
-                    bullets.each(function(bullet) {
+                    bullets.each(function (bullet) {
                         var $bullet = $(bullet);
                         var bulletIndex = $bullet.index();
 
@@ -6594,7 +6594,7 @@
             if (params.hide) {
                 clearTimeout(swiper.scrollbar.timeout);
                 $el[0].style.opacity = 1;
-                swiper.scrollbar.timeout = setTimeout(function() {
+                swiper.scrollbar.timeout = setTimeout(function () {
                     $el[0].style.opacity = 0;
                     $el.transition(400);
                 }, 1000);
@@ -6737,7 +6737,7 @@
 
             if (params.hide) {
                 clearTimeout(swiper.scrollbar.dragTimeout);
-                swiper.scrollbar.dragTimeout = nextTick(function() {
+                swiper.scrollbar.dragTimeout = nextTick(function () {
                     $el.css('opacity', 0);
                     $el.transition(400);
                 }, 1000);
@@ -6947,10 +6947,10 @@
                 slides = swiper.slides,
                 progress = swiper.progress,
                 snapGrid = swiper.snapGrid;
-            $el.children('[data-swiper-parallax], [data-swiper-parallax-x], [data-swiper-parallax-y], [data-swiper-parallax-opacity], [data-swiper-parallax-scale]').each(function(el) {
+            $el.children('[data-swiper-parallax], [data-swiper-parallax-x], [data-swiper-parallax-y], [data-swiper-parallax-opacity], [data-swiper-parallax-scale]').each(function (el) {
                 swiper.parallax.setTransform(el, progress);
             });
-            slides.each(function(slideEl, slideIndex) {
+            slides.each(function (slideEl, slideIndex) {
                 var slideProgress = slideEl.progress;
 
                 if (swiper.params.slidesPerGroup > 1 && swiper.params.slidesPerView !== 'auto') {
@@ -6958,7 +6958,7 @@
                 }
 
                 slideProgress = Math.min(Math.max(slideProgress, -1), 1);
-                $(slideEl).find('[data-swiper-parallax], [data-swiper-parallax-x], [data-swiper-parallax-y], [data-swiper-parallax-opacity], [data-swiper-parallax-scale]').each(function(el) {
+                $(slideEl).find('[data-swiper-parallax], [data-swiper-parallax-x], [data-swiper-parallax-y], [data-swiper-parallax-opacity], [data-swiper-parallax-scale]').each(function (el) {
                     swiper.parallax.setTransform(el, slideProgress);
                 });
             });
@@ -6970,7 +6970,7 @@
 
             var swiper = this;
             var $el = swiper.$el;
-            $el.find('[data-swiper-parallax], [data-swiper-parallax-x], [data-swiper-parallax-y], [data-swiper-parallax-opacity], [data-swiper-parallax-scale]').each(function(parallaxEl) {
+            $el.find('[data-swiper-parallax], [data-swiper-parallax-x], [data-swiper-parallax-y], [data-swiper-parallax-opacity], [data-swiper-parallax-scale]').each(function (parallaxEl) {
                 var $parallaxEl = $(parallaxEl);
                 var parallaxDuration = parseInt($parallaxEl.attr('data-swiper-parallax-duration'), 10) || duration;
                 if (duration === 0) parallaxDuration = 0;
@@ -7624,7 +7624,7 @@
             }
 
             if ($images.length === 0) return;
-            $images.each(function(imageEl) {
+            $images.each(function (imageEl) {
                 var $imageEl = $(imageEl);
                 $imageEl.addClass(params.loadingClass);
                 var background = $imageEl.attr('data-background');
@@ -7632,7 +7632,7 @@
                 var srcset = $imageEl.attr('data-srcset');
                 var sizes = $imageEl.attr('data-sizes');
                 var $pictureEl = $imageEl.parent('picture');
-                swiper.loadImage($imageEl[0], src || background, srcset, sizes, false, function() {
+                swiper.loadImage($imageEl[0], src || background, srcset, sizes, false, function () {
                     if (typeof swiper === 'undefined' || swiper === null || !swiper || swiper && !swiper.params || swiper.destroyed) return;
 
                     if (background) {
@@ -7650,7 +7650,7 @@
                         }
 
                         if ($pictureEl.length) {
-                            $pictureEl.children('source').each(function(sourceEl) {
+                            $pictureEl.children('source').each(function (sourceEl) {
                                 var $source = $(sourceEl);
 
                                 if ($source.attr('data-srcset')) {
@@ -7725,7 +7725,7 @@
             if (!swiper.lazy.initialImageLoaded) swiper.lazy.initialImageLoaded = true;
 
             if (swiper.params.watchSlidesVisibility) {
-                $wrapperEl.children("." + swiperParams.slideVisibleClass).each(function(slideEl) {
+                $wrapperEl.children("." + swiperParams.slideVisibleClass).each(function (slideEl) {
                     var index = isVirtual ? $(slideEl).attr('data-swiper-slide-index') : $(slideEl).index();
                     swiper.lazy.loadInSlide(index);
                 });
@@ -7835,7 +7835,7 @@
                 var maxIndex;
                 var minIndex;
                 var guess;
-                return function(array, val) {
+                return function (array, val) {
                     minIndex = -1;
                     maxIndex = array.length;
 
@@ -7941,12 +7941,12 @@
                     c.transitionStart();
 
                     if (c.params.autoHeight) {
-                        nextTick(function() {
+                        nextTick(function () {
                             c.updateAutoHeight();
                         });
                     }
 
-                    c.$wrapperEl.transitionEnd(function() {
+                    c.$wrapperEl.transitionEnd(function () {
                         if (!controlled) return;
 
                         if (c.params.loop && swiper.params.controller.by === 'slide') {
@@ -8148,7 +8148,7 @@
             var params = swiper.params.a11y;
 
             if (swiper.pagination && swiper.params.pagination.clickable && swiper.pagination.bullets && swiper.pagination.bullets.length) {
-                swiper.pagination.bullets.each(function(bulletEl) {
+                swiper.pagination.bullets.each(function (bulletEl) {
                     var $bulletEl = $(bulletEl);
                     swiper.a11y.makeElFocusable($bulletEl);
 
@@ -8193,7 +8193,7 @@
             }
 
             swiper.a11y.addElRole($(swiper.slides), 'group');
-            swiper.slides.each(function(slideEl) {
+            swiper.slides.each(function (slideEl) {
                 var $slideEl = $(slideEl);
                 swiper.a11y.addElLabel($slideEl, $slideEl.index() + 1 + " / " + swiper.slides.length);
             }); // Navigation
@@ -8360,7 +8360,7 @@
                 location = window.location;
             }
 
-            var pathArray = location.pathname.slice(1).split('/').filter(function(part) {
+            var pathArray = location.pathname.slice(1).split('/').filter(function (part) {
                 return part !== '';
             });
             var total = pathArray.length;
@@ -8583,7 +8583,7 @@
             }
 
             clearTimeout(swiper.autoplay.timeout);
-            swiper.autoplay.timeout = nextTick(function() {
+            swiper.autoplay.timeout = nextTick(function () {
                 var autoplayResult;
 
                 if (swiper.params.autoplay.reverseDirection) {
@@ -8780,7 +8780,7 @@
 
             if (swiper.params.virtualTranslate && duration !== 0) {
                 var eventTriggered = false;
-                slides.transitionEnd(function() {
+                slides.transitionEnd(function () {
                     if (eventTriggered) return;
                     if (!swiper || swiper.destroyed) return;
                     eventTriggered = true;
@@ -9469,6 +9469,7 @@ var slideCount = $(".infoslide").length;
 if (slideCount > 1) {
     var swiper = new Swiper(".infoCarousel", {
         slidesPerView: 1,
+        speed: 1500,
         autoplay: {
             delay: 2000,
         },
@@ -9476,113 +9477,130 @@ if (slideCount > 1) {
     });
 }
 // for treaser Carousel
-var cardRMob = $("#card-RMob").attr('data-rowCount-mobileCard');
-var cardCMob = $("#card-CMob").attr('data-colCount-mobileCard');
-var cardRTab = $("#card-RTab").attr('data-rowCount-tabletCard');
-var cardCTab = $("#card-CTab").attr('data-colCount-tabletCard');
-var cardRDes = $("#card-RDes").attr('data-rowCount-desktopCard');
-var cardCDes = $("#card-CDes").attr('data-colCount-desktopCard');
-var cardSlideTab = $("#card-SlideTab").attr('data-slide-tabletCard');
-var cardSlideDes = $("#card-SlideDes").attr('data-slide-desktopCard');
 
-var cardAutoPlayDelay = $("#card-AutoPlayDelay").attr('data-auto-play-delayCard');
-var cardLoop = $("#card-Loop").attr('data-loopCard');
-var swiper = new Swiper(".cardSection", {
-    autoplay: {
-        delay: cardAutoPlayDelay,
-    },
-    slidesPerView: cardCMob,
-    slidesPerColumn: cardRMob,
-    spaceBetween: 0,
-    loop: cardLoop,
-    slidesPerColumnFill: "row",
-    pagination: {
-        el: ".swiper-pagination-one",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next-one",
-        prevEl: ".swiper-button-prev-one",
-    },
-    breakpoints: {
-        767: {
-            slidesPerView: cardCTab,
-            slidesPerColumn: cardRTab,
-            slidesPerGroup: cardSlideTab,
-            spaceBetween: 20,
+$(".cardSection").each(function () {
+    var cardslideCount = $(this).find(".swiper-slide").length;
+    var cardRMob = $(this).parent(".card-container").find('[data-id="card-RMob"]').attr('data-rowCount-mobileCard');
+    var cardCMob = $(this).parent(".card-container").find('[data-id="card-CMob"]').attr('data-colCount-mobileCard');
+    var cardRTab = $(this).parent(".card-container").find('[data-id="card-RTab"]').attr('data-rowCount-tabletCard');
+    var cardCTab = $(this).parent(".card-container").find('[data-id="card-CTab"]').attr('data-colCount-tabletCard');
+    var cardRDes = $(this).parent(".card-container").find('[data-id="card-RDes"]').attr('data-rowCount-desktopCard');
+    var cardCDes = $(this).parent(".card-container").find('[data-id="card-CDes"]').attr('data-colCount-desktopCard');
+    var cardSlideTab = cardRTab * cardCTab;
+	var cardSlideDes = cardRDes * cardCDes;
+    var cardAutoPlayDelay = $(this).parent(".card-container").find('[data-id="card-AutoPlayDelay"]').attr('data-auto-play-delayCard');
+    var cardLoop = false;
+    var navItemName = $(this).parent(".card-container").find('.swiper-pagination-one').attr('id');
+    
+
+    var swiper = new Swiper(this, {
+
+        autoplay: {
+            delay: cardAutoPlayDelay,
         },
-        1023: {
-            slidesPerView: cardCDes,
-            slidesPerColumn: cardRDes,
-            slidesPerGroup: cardSlideDes,
-            spaceBetween: 20,
+        slidesPerView: cardCMob,
+        slidesPerColumn: cardRMob,
+        spaceBetween: 0,
+        speed: 1500,
+        loop: false,
+        slidesPerColumnFill: "row",
+        pagination: {
+            el: "#" + navItemName,
+            clickable: true,
         },
-    },
+
+        breakpoints: {
+            767: {
+                slidesPerView: cardCTab,
+                slidesPerColumn: cardRTab,
+                slidesPerGroup: cardslideCount % cardSlideTab === 0 ? cardSlideTab : 1,
+                spaceBetween: 20,
+            },
+            1023: {
+                slidesPerView: cardCDes,
+                slidesPerColumn: cardRDes,
+                slidesPerGroup: cardslideCount % cardSlideDes === 0 ? cardSlideDes : 1,
+                spaceBetween: 20,
+            },
+        },
+    });
 });
-// var bottomHeight = 0;
-// $(".card-body").each(function() {
-//     if ($(this).height() > bottomHeight) {
-//         bottomHeight = $(this).height();
-//     }
-// });
-// $(".card-body").height(bottomHeight);
-// $(document).ready(function() {
-//     if ($(".container-fluid").hasClass("swiper-container")) {
-//         $(".card-body").addClass("abc");
-//     }
-// });
 
 // for gallery carousel
-var galleryRMob = $("#gallery-RMob").attr('data-rowCount-mobile');
-var galleryCMob = $("#gallery-CMob").attr('data-colCount-mobile');
-var galleryRTab = $("#gallery-RTab").attr('data-rowCount-tablet');
-var galleryCTab = $("#gallery-CTab").attr('data-colCount-tablet');
-var galleryRDes = $("#gallery-RDes").attr('data-rowCount-desktop');
-var galleryCDes = $("#gallery-CDes").attr('data-colCount-desktop');
-var gallerySlideTab = $("#gallery-SlideTab").attr('data-slide-tablet');
-var gallerySlideDes = $("#gallery-SlideDes").attr('data-slide-desktop');
-var galleryAutoPlayDelay = $("#gallery-AutoPlayDelay").attr('data-auto-play-delay');
-var galleryLoop = $("#gallery-Loop").attr('data-loop');
+
 // var galleryspaceMob = $("#gallery-spaceMob").attr('data-space-mobile');
 // var galleryspaceTab = $("#gallery-spaceTab").attr('data-space-tablet');
 // var galleryspaceDes = $("#gallery-spaceDes").attr('data-space-desktop');
 
-
 var space = $("#spaceDes").attr('data-space-desktop');
-var swiper = new Swiper(".gallerySection", {
-    slidesPerView: galleryCMob,
-    autoplay: {
-        delay: galleryAutoPlayDelay,
-    },
-    loop: window.screen.width <= 766 ? true : galleryLoop,
-    spaceBetween: 20,
-    slidesPerColumnFill: "row",
-    pagination: {
-        el: ".swiper-pagination-two",
-    },
-    navigation: {
-        nextEl: ".swiper-button-next-two",
-        prevEl: ".swiper-button-prev-two",
-    },
-    breakpoints: {
-        767: {
-            slidesPerView: galleryCTab,
-            slidesPerColumn: galleryRTab,
-            slidesPerGroup: gallerySlideTab,
-            spaceBetween: 20,
+$(".gallerySection").each(function () {
+    var slideCount2 = $(this).find(".partner-logo").length;
+    var galleryRMob = $(this).parent(".gallery-carousel").find('[data-id="gallery-RMob"]').attr('data-rowCount-mobile');
+    var galleryCMob = $(this).parent(".gallery-carousel").find('[data-id="gallery-CMob"]').attr('data-colCount-mobile');
+    var galleryRTab = $(this).parent(".gallery-carousel").find('[data-id="gallery-RTab"]').attr('data-rowCount-tablet');
+    var galleryCTab = $(this).parent(".gallery-carousel").find('[data-id="gallery-CTab"]').attr('data-colCount-tablet');
+    var galleryRDes = $(this).parent(".gallery-carousel").find('[data-id="gallery-RDes"]').attr('data-rowCount-desktop');
+    var galleryCDes = $(this).parent(".gallery-carousel").find('[data-id="gallery-CDes"]').attr('data-colCount-desktop');
+    var gallerySlideTab = 1;
+    var gallerySlideDes = 1;
+    var galleryAutoPlayDelay = $(this).parent(".gallery-carousel").find('[data-id="gallery-AutoPlayDelay"]').attr('data-auto-play-delay');
+    var galleryLoop = false;
+    var navItemNamePrev = $(this).parent(".gallery-carousel").find('.swiper-button-prev-two').attr('id');
+    var navItemNameNext = $(this).parent(".gallery-carousel").find('.swiper-button-next-two').attr('id');
+
+     
+    if (window.screen.width > 1023) {
+        galleryLoop = slideCount2 > galleryRDes * galleryCDes ? true : false;
+    }
+    else if (window.screen.width > 766) {
+        galleryLoop = slideCount2 > galleryRTab * galleryCTab ? true : false;
+    }
+    else if (slideCount2 > 1) {
+        galleryLoop = true;
+    }
+
+    if(!galleryLoop) {
+        $(this).parent(".gallery-carousel").find('.carousel-button').remove();
+    } 
+    var swiper = new Swiper(this, {
+
+        slidesPerView: galleryCMob,
+        autoplay: {
+            delay: galleryAutoPlayDelay,
         },
-        1023: {
-            slidesPerView: galleryCDes,
-            slidesPerColumn: galleryRDes,
-            slidesPerGroup: gallerySlideDes,
-            spaceBetween: 20,
+        loop: galleryLoop,
+        spaceBetween: 20,
+        speed: 1500,
+        slidesPerColumnFill: "row",
+        pagination: {
+            el: ".swiper-pagination-two",
         },
-    },
+        navigation: {
+            nextEl: "#" + navItemNameNext,
+            prevEl: "#" + navItemNamePrev,
+        },
+        breakpoints: {
+            767: {
+                slidesPerView: galleryCTab,
+                slidesPerColumn: galleryRTab,
+                slidesPerGroup: gallerySlideTab,
+                spaceBetween: 20,
+            },
+            1023: {
+                slidesPerView: galleryCDes,
+                slidesPerColumn: galleryRDes,
+                slidesPerGroup: gallerySlideDes,
+                spaceBetween: 20,
+            },
+        },
+    });
 });
 
+
+
 // for multirow Carousel
-$(document).ready(function() {
-    $('.carousel-tab').click(function() {
+$(document).ready(function () {
+    $('.carousel-tab').click(function () {
         $('.carousel-tab').removeClass("carousel-tab-active");
         $(this).addClass("carousel-tab-active");
         setTimeout(initCarousel);
@@ -9600,6 +9618,7 @@ function initCarousel() {
     var swiper = new Swiper(".multiRowCarousel", {
         slidesPerView: 1,
         spaceBetween: 0,
+        speed: 1500,
         slidesPerColumnFill: "row",
         pagination: {
             el: ".swiper-pagination",
@@ -9631,7 +9650,7 @@ function defaultDisabled() {
     var arrow = document.getElementsByClassName('swiper-button-prev-three')[0];
     arrow.classList.add("swiper-button-disabled");
 
-    swiper.on('slideChange', function() {
+    swiper.on('slideChange', function () {
         var realIndex = swiper.realIndex;
         if (realIndex == 0) {
             // console.log("real index:" + realIndex + " - hide arrow");
@@ -9644,23 +9663,23 @@ function defaultDisabled() {
 }
 
 function disablenavBtn() {
-    $(".nav-tabs a").on("click", function() {
+    $(".nav-tabs a").on("click", function () {
         var arrow = document.getElementsByClassName('swiper-button-prev-three')[0];
         // var arrow2 = document.getElementsByClassName('swiper-button-next')[0];
         var realIndex = swiper.realIndex;
         console.log(realIndex);
         if ((realIndex == 0) || (realIndex === "undefined")) {
-            setTimeout(function() {
+            setTimeout(function () {
                 arrow.classList.remove("swiper-button-disabled");
                 // arrow2.classList.remove("swiper-button-disabled");
             }, 100);
         } else {
-            setTimeout(function() {
+            setTimeout(function () {
                 arrow.classList.add("swiper-button-disabled");
             }, 100);
         }
 
-        setTimeout(function() {
+        setTimeout(function () {
             var tabLen = $(".tab-pane.active").find(".swiper-slide").length;
             console.log(tabLen);
             if (tabLen == 0) {
@@ -9674,28 +9693,3 @@ function disablenavBtn() {
         }, 155)
     });
 }
-
-// function navHide() {
-//     $(".nav-tabs li a").on("click", function() {
-//         setTimeout(function() {
-//             var tabLen = $(".tab-pane.active").find(".swiper-slide").length;
-//             console.log(tabLen);
-
-//             if (tabLen == 0) {
-//                 $(".carousel-button").hide();
-//             } else {
-//                 $(".carousel-button").show();
-//             }
-//         }, 180)
-//     });
-// }
-
-// $(document).ready(function() {
-// (function() {
-//     var $swiperBtn = $('.swiper-btn');
-//     var checkbuttonDisabled = Array.from($swiperBtn).every((element) => $(element).hasClass('swiper-button-disabled'))
-//     if (checkbuttonDisabled) {
-//         $swiperBtn.hide();
-//     }
-// })();
-// });
