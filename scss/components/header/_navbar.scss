@@ -76,6 +76,9 @@
             margin-top: 0;
             margin-left: 0;
         }
+        // @include media(xxldesktop){
+        //     justify-content: center;
+        // }
     }
     &-item {
         font-family: 'Open Sans', sans-serif;
@@ -176,6 +179,10 @@
         }
         @include media(desktop) {
             margin-left: 0;
+            margin-top: 0.5rem;
+        }
+        @include media(xldesktop){
+            margin-top: 0;
         }
     }
 }
@@ -264,9 +271,13 @@
 .home-header.affix .nav-search-box {
     @include media(desktop){
         margin-left: -12px;
+        position: absolute;
+        margin-top: 12px;
     }
     @include media(xldesktop){
         margin-left: 0;
+        position: relative;
+        margin-top: 0;
     }
 }
 // added for ipad pro view header cta positionig on affix classes
@@ -277,14 +288,37 @@
     @include media(xldesktop){
         margin-left: 24px;
     }
+    @include media(xxldesktop){
+        margin-left: 3000px;
+    }
 }
 .inner-header.affix .nav-links-box.nav-search-box{
     @include media(desktop){
         margin-left: 3px;
-        margin-top: 2rem;
+        margin-top: 3.1875rem;
     }
     @include media(xldesktop){
         margin-left: 1.28rem;
+        margin-top: 2rem;
+    }
+    @include media(xxldesktop){
+     margin-left: 0;   
     }
 }
+.inner-header .nav-search-box{
+    @include media(desktop){
+        margin-top: 19px;
+    }
+    @include media(xldesktop){
+        margin-top: 0;
+    }
+}
+// .home-header.affix{
+//     @include media(tablet){
+//         margin-top: -3rem;
+//     }
+//     @include media(desktop){
+//         margin-top: 0;
+//     }
+// }
 // Navbar component CSS ends
