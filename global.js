@@ -315,7 +315,7 @@ $(document).ready(function() {
     // });
 
     // $("#searchTerm").keyup(function() {
-    //     if ($(".search-results").val("div").length < 1) {
+    //     if ($(".search-results").has("div").length < 1) {
     //         $('.search-results').css({
     //             "display": "none"
     //         });
