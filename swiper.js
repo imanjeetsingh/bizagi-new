@@ -9491,7 +9491,7 @@ $(".cardSection").each(function () {
     var cardAutoPlayDelay = $(this).parent(".card-container").find('[data-id="card-AutoPlayDelay"]').attr('data-auto-play-delayCard');
     var cardLoop = false;
     var navItemName = $(this).parent(".card-container").find('.swiper-pagination-one').attr('id');
-    
+
 
     var swiper = new Swiper(this, {
 
@@ -9552,15 +9552,20 @@ $(".gallerySection").each(function () {
     if (window.screen.width > 1023) {
         galleryLoop = slideCount2 > galleryRDes * galleryCDes ? true : false;
     }
-    else if (window.screen.width > 766) {
+    else if (window.screen.width > 767) {
         galleryLoop = slideCount2 > galleryRTab * galleryCTab ? true : false;
     }
     else if (slideCount2 > 1) {
         galleryLoop = true;
     }
-
-    if(!galleryLoop) {
-        $(this).parent(".gallery-carousel").find('.carousel-button').remove();
+    if  (galleryRDes > 1 || galleryRTab > 1){
+        galleryLoop = false;
+    }
+    else if (galleryRDes == 1 || galleryRTab == 1){
+        if(!galleryLoop) {
+            $(this).parent(".gallery-carousel").find('.carousel-button').remove();
+            $(this).parent(".gallery-carousel").find(".swiper-wrapper").addClass('swiper-wrapper-center');
+        } 
     } 
     var swiper = new Swiper(this, {
 

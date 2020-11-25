@@ -7601,6 +7601,9 @@ li.nav-list-sublist.active .dropdown-item {
 .swiper-slide .card.card-inner .card-body {
   text-align: left; }
 
+.swiper-wrapper-center {
+  justify-content: center; }
+
 .xchange-container .search {
   border-radius: 2.5rem;
   border: solid 1px lightgray;
@@ -9588,7 +9591,7 @@ button:focus {
         line-height: 42px; } }
     .blog-banner .banner-heading-box {
       padding: 8px 15px 1px 17px;
-      margin-top: 1rem; }
+      margin-top: 0.2rem; }
       @media (min-width: 768px) {
         .blog-banner .banner-heading-box {
           margin-top: 0;
@@ -9596,15 +9599,15 @@ button:focus {
           width: 80%;
           left: 14.5px;
           position: absolute;
-          bottom: -9rem;
-          background-color: white; } }
+          background-color: white;
+          top: 26rem; } }
       @media (min-width: 992px) {
         .blog-banner .banner-heading-box {
           padding: 8px 15px 5px 8px;
-          bottom: -1px; } }
+          top: 32rem; } }
       @media (min-width: 1200px) {
         .blog-banner .banner-heading-box {
-          bottom: 0; } }
+          top: 30rem; } }
   .blog-banner p {
     font-size: 12px;
     line-height: 14px;
@@ -9617,13 +9620,14 @@ button:focus {
     justify-content: center; }
     @media (min-width: 768px) {
       .blog-banner .blog-cta {
-        margin-top: 13rem !important; } }
+        margin-top: 13rem !important;
+        margin-bottom: 4rem !important; } }
     @media (min-width: 992px) {
       .blog-banner .blog-cta {
-        margin-top: 6rem !important; } }
+        margin-top: 16rem !important; } }
     @media (min-width: 1200px) {
       .blog-banner .blog-cta {
-        margin: 8rem 0 5rem 0 !important; } }
+        margin: 9rem 0 6rem 0 !important; } }
   .blog-banner .blogList {
     margin: 0 15px; }
   .blog-banner .blogList .bottom-tag {
