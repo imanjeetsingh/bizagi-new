@@ -62,24 +62,24 @@
         &-box {
             // width: 100%;
             padding: 8px 15px 1px 17px;
-            margin-top: 1rem;
+            margin-top: 0.2rem;
             @include media (tablet) {
                 margin-top: 0;
                 padding: 8px 8px 5px 8px;
                 width: 80%;
                 left: 14.5px;
                 position: absolute;
-                bottom: -9rem;
                 background-color: white;
+                top: 26rem;
                 
             }
             @include media(desktop) {
                 padding: 8px 15px 5px 8px;
-                bottom: -1px;
+                top: 32rem;
             }
             @include media(xldesktop) {
-                bottom: 0;
-            }
+                top: 30rem;
+               }
         }
     }
     p {
@@ -96,12 +96,13 @@
         justify-content: center;
         @include media (tablet) {
             margin-top: 13rem !important;
+            margin-bottom: 4rem !important;
         }
         @include media (desktop) {
-            margin-top: 6rem !important;
+            margin-top: 16rem !important;
         }
         @include media (xldesktop) {
-            margin: 8rem 0 5rem 0 !important;
+            margin: 9rem 0 6rem 0 !important;
         }
     }
     .blogList {

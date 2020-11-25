@@ -6,7 +6,7 @@
         @include media(tablet) {
             padding: 1rem 0;
             margin-top: 0;
-            height: 7rem;
+            height: auto
         }
         @include media(desktop){
             height: auto;
