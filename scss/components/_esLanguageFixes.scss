@@ -1,0 +1,24 @@
+#es {
+
+    .inner-header {
+        #languages {
+            @include media(desktop) {
+                margin-left: -5px;
+            }
+
+        }
+
+        .affix {
+            #languages {
+                @include media(desktop) {
+                    position: absolute;
+                    margin-left: -3px;
+                }
+
+                @include media(xldesktop) {
+                    top: 0.625rem;
+                }
+            }
+        }
+    }
+}

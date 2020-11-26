@@ -325,4 +325,8 @@ $(document).ready(function() {
     //         });
     //     }
     // });
+    // changes for header in mobile view
+    if ($('.covid-section').length > 0) {
+        $('.home-header .navbar-collapse').css('top', '12rem');
+    } 
 });

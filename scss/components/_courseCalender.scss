@@ -33,17 +33,17 @@
     }
     .city {
         display: inline-block;
-        width: 5.3125rem;
+        width: 100%;
         font-weight: 600;
-        @include media (tablet) {
-            width: 8.625rem;
-        }
+        // @include media (tablet) {
+        //     width: 8.625rem;
+        // }
         // @include media (desktop) {
         //     width: 8.6875rem;
         // }
-        @include media (xldesktop) {
-            width: 9.0625rem;
-        }
+        // @include media (xldesktop) {
+        //     width: 9.0625rem;
+        // }
     }
     .time {
         width: 11.625rem;

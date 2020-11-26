@@ -34,7 +34,7 @@
             overflow-y: auto;
             overflow-x: hidden;
             left: 0;
-            top: 12rem;
+            top: 8rem;
             z-index: 10;
             background: white;
         }
@@ -289,7 +289,7 @@
         margin-left: 24px;
     }
     @include media(xxldesktop){
-        margin-left: 3000px;
+        margin-left: -1px;
     }
 }
 .inner-header.affix .nav-links-box.nav-search-box{

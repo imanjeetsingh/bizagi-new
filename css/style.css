@@ -4729,7 +4729,7 @@ ul li::before {
       overflow-y: auto;
       overflow-x: hidden;
       left: 0;
-      top: 12rem;
+      top: 8rem;
       z-index: 10;
       background: white; } }
 
@@ -4927,7 +4927,7 @@ ul li::before {
 
 @media (min-width: 3000px) {
   .inner-header.affix .nav-links-box {
-    margin-left: 3000px; } }
+    margin-left: -1px; } }
 
 @media (min-width: 992px) {
   .inner-header.affix .nav-links-box.nav-search-box {
@@ -9423,14 +9423,8 @@ button:focus {
 
 .courseCalender .city {
   display: inline-block;
-  width: 5.3125rem;
+  width: 100%;
   font-weight: 600; }
-  @media (min-width: 768px) {
-    .courseCalender .city {
-      width: 8.625rem; } }
-  @media (min-width: 1200px) {
-    .courseCalender .city {
-      width: 9.0625rem; } }
 
 .courseCalender .time {
   width: 11.625rem;
@@ -10714,3 +10708,16 @@ ul.rc-pagination.sui-paging li::before {
   @media (min-width: 3000px) {
     .banner-bg {
       padding: 140px 0 250px 0; } }
+
+@media (min-width: 992px) {
+  #es .inner-header #languages {
+    margin-left: -5px; } }
+
+@media (min-width: 992px) {
+  #es .inner-header .affix #languages {
+    position: absolute;
+    margin-left: -3px; } }
+
+@media (min-width: 1200px) {
+  #es .inner-header .affix #languages {
+    top: 0.625rem; } }
