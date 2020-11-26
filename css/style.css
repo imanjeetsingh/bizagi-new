@@ -9419,6 +9419,9 @@ button:focus {
       padding: 0; } }
   @media (min-width: 992px) {
     .courseCalender td {
+      padding: 0 10px; } }
+  @media (min-width: 1200px) {
+    .courseCalender td {
       padding: 0; } }
 
 .courseCalender .city {
