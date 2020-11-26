@@ -80,6 +80,10 @@
         right: 0px !important;
         left: unset !important;
     }
+    @include media(xxldesktop){
+        right: unset !important;
+        left: -16rem !important;
+    }
 }
 
 .inner-header.affix #search-form-header{
@@ -133,6 +137,10 @@
     }
     @include media(xldesktop){
         right: 5px !important;
+    }
+    @include media(xxldesktop){
+        right: unset !important;
+        left: -16rem !important;
     }
 
 }

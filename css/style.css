@@ -9890,6 +9890,10 @@ button:focus {
     #search-form-header {
       right: 0px !important;
       left: unset !important; } }
+  @media (min-width: 3000px) {
+    #search-form-header {
+      right: unset !important;
+      left: -16rem !important; } }
 
 @media (min-width: 992px) {
   .inner-header.affix #search-form-header {
@@ -9934,6 +9938,10 @@ button:focus {
   @media (min-width: 1200px) {
     .home-header #search-form-header {
       right: 5px !important; } }
+  @media (min-width: 3000px) {
+    .home-header #search-form-header {
+      right: unset !important;
+      left: -16rem !important; } }
 
 .home-header #search-form-header:before {
   position: absolute;
