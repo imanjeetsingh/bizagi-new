@@ -10659,6 +10659,14 @@ ul.rc-pagination.sui-paging li::before {
 #pt .cta.cta-header {
   font-size: 11px; }
 
+@media (min-width: 992px) {
+  #pt {
+    font-size: 10px; } }
+
+@media (min-width: 1200px) {
+  #pt {
+    font-size: 11px; } }
+
 #pt .inner-banner .banner-heading {
   font-size: 1.5rem; }
   @media (min-width: 992px) {
