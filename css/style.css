@@ -10756,3 +10756,12 @@ ul.rc-pagination.sui-paging li::before {
   #es .inner-header.affix .multilang-dropdown {
     position: absolute;
     margin-top: -27px; } }
+
+.navbar .navmenu.level_1 a {
+  color: #6d7278; }
+
+.navbar .navmenu.level_1 a:hover {
+  color: #dc7000; }
+
+.navbar .navmenu.level_1 {
+  margin-top: 3rem; }
