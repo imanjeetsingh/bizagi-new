@@ -126,3 +126,13 @@
 //     object-fit: cover;
 //     object-position: center
 // }
+.fiveColumnLayout .card-subtitle.text-center{
+    font-size: 1.125rem;
+    font-weight: 700;
+    @include media(desktop){
+        margin: 0 -0.6875rem;
+    }
+    @include media(xldesktop){
+        margin: 0;
+    }
+}

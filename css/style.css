@@ -5505,7 +5505,7 @@ ul li::before {
   .blogDetail-article-authorName-box {
     border: 0.0625rem solid #ededed;
     padding: 2rem 0rem;
-    background-color: #ececec; }
+    background-color: #ffffff; }
     @media (min-width: 768px) {
       .blogDetail-article-authorName-box {
         padding: 2rem 1rem; } }
@@ -6465,6 +6465,16 @@ ul.options > li {
 
 .card-price {
   color: #F38D1E; }
+
+.fiveColumnLayout .card-subtitle.text-center {
+  font-size: 1.125rem;
+  font-weight: 700; }
+  @media (min-width: 992px) {
+    .fiveColumnLayout .card-subtitle.text-center {
+      margin: 0 -0.6875rem; } }
+  @media (min-width: 1200px) {
+    .fiveColumnLayout .card-subtitle.text-center {
+      margin: 0; } }
 
 .cta {
   display: flex;
@@ -10728,7 +10738,7 @@ ul.rc-pagination.sui-paging li::before {
 
 @media (min-width: 992px) {
   #es .inner-header #languages {
-    margin-left: -5px; } }
+    margin-left: -2px; } }
 
 @media (min-width: 992px) {
   #es .inner-header .affix #languages {
@@ -10738,3 +10748,8 @@ ul.rc-pagination.sui-paging li::before {
 @media (min-width: 1200px) {
   #es .inner-header .affix #languages {
     top: 0.625rem; } }
+
+@media (min-width: 992px) {
+  #es .inner-header.affix .multilang-dropdown {
+    position: absolute;
+    margin-top: -27px; } }
