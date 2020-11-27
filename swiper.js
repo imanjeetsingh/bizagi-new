@@ -9619,6 +9619,8 @@ $(document).ready(function () {
     }
 });
 
+var swipe = $(".swiper-container");
+
 function initCarousel() {
     var swiper = new Swiper(".multiRowCarousel", {
         slidesPerView: 1,
@@ -9655,8 +9657,8 @@ function defaultDisabled() {
     var arrow = document.getElementsByClassName('swiper-button-prev-three')[0];
     arrow.classList.add("swiper-button-disabled");
 
-    swiper.on('slideChange', function () {
-        var realIndex = swiper.realIndex;
+    swipe.on('slideChange', function () {
+        var realIndex = swipe.realIndex;
         if (realIndex == 0) {
             // console.log("real index:" + realIndex + " - hide arrow");
             arrow.classList.remove("swiper-button-disabled");
@@ -9671,7 +9673,7 @@ function disablenavBtn() {
     $(".nav-tabs a").on("click", function () {
         var arrow = document.getElementsByClassName('swiper-button-prev-three')[0];
         // var arrow2 = document.getElementsByClassName('swiper-button-next')[0];
-        var realIndex = swiper.realIndex;
+        var realIndex = swipe.realIndex;
         console.log(realIndex);
         if ((realIndex == 0) || (realIndex === "undefined")) {
             setTimeout(function () {
