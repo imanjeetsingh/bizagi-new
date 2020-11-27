@@ -3,7 +3,7 @@
     .inner-header {
         #languages {
             @include media(desktop) {
-                margin-left: -5px;
+                margin-left: -2px;
             }
 
         }
@@ -20,5 +20,11 @@
                 }
             }
         }
+    }
+}
+#es .inner-header.affix .multilang-dropdown{
+    @include media(desktop){
+        position: absolute;
+        margin-top: -27px;
     }
 }

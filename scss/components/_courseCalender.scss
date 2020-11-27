@@ -27,7 +27,10 @@
         @include media (tablet) {
             padding: 0;
         }
-        @include media (desktop) {
+        @include media(desktop){
+            padding: 0 10px;
+        }
+        @include media (xldesktop) {
             padding: 0;
         }
     }

@@ -5505,7 +5505,7 @@ ul li::before {
   .blogDetail-article-authorName-box {
     border: 0.0625rem solid #ededed;
     padding: 2rem 0rem;
-    background-color: #ececec; }
+    background-color: #ffffff; }
     @media (min-width: 768px) {
       .blogDetail-article-authorName-box {
         padding: 2rem 1rem; } }
@@ -6468,6 +6468,16 @@ ul.options > li {
 
 .card-price {
   color: #F38D1E; }
+
+.fiveColumnLayout .card-subtitle.text-center {
+  font-size: 1.125rem;
+  font-weight: 700; }
+  @media (min-width: 992px) {
+    .fiveColumnLayout .card-subtitle.text-center {
+      margin: 0 -0.6875rem; } }
+  @media (min-width: 1200px) {
+    .fiveColumnLayout .card-subtitle.text-center {
+      margin: 0; } }
 
 .cta {
   display: flex;
@@ -9422,6 +9432,9 @@ button:focus {
       padding: 0; } }
   @media (min-width: 992px) {
     .courseCalender td {
+      padding: 0 10px; } }
+  @media (min-width: 1200px) {
+    .courseCalender td {
       padding: 0; } }
 
 .courseCalender .city {
@@ -9893,6 +9906,10 @@ button:focus {
     #search-form-header {
       right: 0px !important;
       left: unset !important; } }
+  @media (min-width: 3000px) {
+    #search-form-header {
+      right: unset !important;
+      left: -16rem !important; } }
 
 @media (min-width: 992px) {
   .inner-header.affix #search-form-header {
@@ -9937,6 +9954,10 @@ button:focus {
   @media (min-width: 1200px) {
     .home-header #search-form-header {
       right: 5px !important; } }
+  @media (min-width: 3000px) {
+    .home-header #search-form-header {
+      right: unset !important;
+      left: -16rem !important; } }
 
 .home-header #search-form-header:before {
   position: absolute;
@@ -10720,7 +10741,7 @@ ul.rc-pagination.sui-paging li::before {
 
 @media (min-width: 992px) {
   #es .inner-header #languages {
-    margin-left: -5px; } }
+    margin-left: -2px; } }
 
 @media (min-width: 992px) {
   #es .inner-header .affix #languages {
@@ -10730,3 +10751,8 @@ ul.rc-pagination.sui-paging li::before {
 @media (min-width: 1200px) {
   #es .inner-header .affix #languages {
     top: 0.625rem; } }
+
+@media (min-width: 992px) {
+  #es .inner-header.affix .multilang-dropdown {
+    position: absolute;
+    margin-top: -27px; } }
