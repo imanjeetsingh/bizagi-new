@@ -6310,6 +6310,9 @@ ul.options > li {
   font-weight: 600;
   margin-left: 1rem; }
 
+.pagination {
+  margin-top: 3rem; }
+
 .newsList {
   padding: 0 1.5625rem; }
   @media (min-width: 768px) {
@@ -10245,7 +10248,7 @@ ul.rc-pagination.sui-paging li::before {
     box-sizing: border-box; }
   .timeline-section .cd-horizontal-timeline {
     opacity: 0;
-    margin: 10px auto;
+    margin: 38px auto 10px auto;
     -webkit-transition: opacity 0.2s;
     -moz-transition: opacity 0.2s;
     transition: opacity 0.2s; }
