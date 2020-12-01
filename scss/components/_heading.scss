@@ -348,8 +348,8 @@ ul li::before {
 }
 
 .cd-timeline-navigation li::before {
-    list-style: none;
-    content: "";
+    list-style: none !important;
+    content: "" !important;
 }
 
 .infoCarousel {

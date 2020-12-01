@@ -330,3 +330,24 @@ $(document).ready(function() {
         $('.home-header .navbar-collapse').css('top', '12rem');
     } 
 });
+
+
+// For pagination scroll top (newsList)
+$(document).ready(function () {
+    backToTopPagination();
+});
+
+function backToTopPagination() {
+    var btn = $('.pagination');
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 10) {
+            btn.css("bottom", "20px");
+        }
+    });
+
+    btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '300');
+    });
+}

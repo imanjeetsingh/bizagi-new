@@ -5,13 +5,22 @@
 // .gallery-carousel .swiper-slide {
 //     width: 15rem !important;
 // }
-.side .swiper-button-prev {
-    margin-left: 1rem;
-}
+// .side .swiper-button-prev {
+//     margin-left: 1rem;
+// }
 
-.side .swiper-button-next {
-    margin-right: 1rem;
-}
+// .side .swiper-button-next {
+//     margin-right: 1rem;
+// }
+.gallery-carousel-inner{
+    position: relative;
+ }
+ .gallery-carousel-inner .carousel-button.side .swiper-btn {
+    position: absolute !important;
+    top: 50% !important;
+    margin-top: -29px !important;
+    margin-left: 0 !important;
+ }
 
 .carousel-button {
     display: flex;
@@ -21,19 +30,19 @@
     outline: none;
 }
 
-.side .swiper-btn {
-    position: absolute;
-    top: -7.5rem;
-    @include media (tablet) {
-        top: -4rem;
-    }
-    @include media (desktop) {
-        top: -4.5rem;
-    }
-    @include media (xldesktop) {
-        top: -6.5rem;
-    }
-}
+// .side .swiper-btn {
+//     position: absolute;
+//     top: -7.5rem;
+//     @include media (tablet) {
+//         top: -4rem;
+//     }
+//     @include media (desktop) {
+//         top: -4.5rem;
+//     }
+//     @include media (xldesktop) {
+//         top: -6.5rem;
+//     }
+// }
 
 .swiper-slide .partner-logo-image {
     max-width: 100%;
@@ -81,11 +90,14 @@
 .card-container .swiper-slide {
     margin-left: 0;
     margin-right: 0;
+    @include mobile-only {
+       padding: 0 0.5rem;
+    }
 }
 
-.carousel-button.side {
-    position: relative;
-}
+// .carousel-button.side {
+//     position: relative;
+// }
 
 .swiper-pagination {
     position: unset;

@@ -47,6 +47,8 @@
             }
             @include mobile-only {
                 margin-bottom: 3rem;
+                justify-content: center;
+                text-align: center;
             }
         }
         &-image {}

@@ -9535,18 +9535,18 @@ $(".cardSection").each(function () {
 var space = $("#spaceDes").attr('data-space-desktop');
 $(".gallerySection").each(function () {
     var slideCount2 = $(this).find(".partner-logo").length;
-    var galleryRMob = $(this).parent(".gallery-carousel").find('[data-id="gallery-RMob"]').attr('data-rowCount-mobile');
-    var galleryCMob = $(this).parent(".gallery-carousel").find('[data-id="gallery-CMob"]').attr('data-colCount-mobile');
-    var galleryRTab = $(this).parent(".gallery-carousel").find('[data-id="gallery-RTab"]').attr('data-rowCount-tablet');
-    var galleryCTab = $(this).parent(".gallery-carousel").find('[data-id="gallery-CTab"]').attr('data-colCount-tablet');
-    var galleryRDes = $(this).parent(".gallery-carousel").find('[data-id="gallery-RDes"]').attr('data-rowCount-desktop');
-    var galleryCDes = $(this).parent(".gallery-carousel").find('[data-id="gallery-CDes"]').attr('data-colCount-desktop');
+    var galleryRMob = $(this).parent(".gallery-carousel-inner").find('[data-id="gallery-RMob"]').attr('data-rowCount-mobile');
+    var galleryCMob = $(this).parent(".gallery-carousel-inner").find('[data-id="gallery-CMob"]').attr('data-colCount-mobile');
+    var galleryRTab = $(this).parent(".gallery-carousel-inner").find('[data-id="gallery-RTab"]').attr('data-rowCount-tablet');
+    var galleryCTab = $(this).parent(".gallery-carousel-inner").find('[data-id="gallery-CTab"]').attr('data-colCount-tablet');
+    var galleryRDes = $(this).parent(".gallery-carousel-inner").find('[data-id="gallery-RDes"]').attr('data-rowCount-desktop');
+    var galleryCDes = $(this).parent(".gallery-carousel-inner").find('[data-id="gallery-CDes"]').attr('data-colCount-desktop');
     var gallerySlideTab = 1;
     var gallerySlideDes = 1;
-    var galleryAutoPlayDelay = $(this).parent(".gallery-carousel").find('[data-id="gallery-AutoPlayDelay"]').attr('data-auto-play-delay');
+    var galleryAutoPlayDelay = $(this).parent(".gallery-carousel-inner").find('[data-id="gallery-AutoPlayDelay"]').attr('data-auto-play-delay');
     var galleryLoop = false;
-    var navItemNamePrev = $(this).parent(".gallery-carousel").find('.swiper-button-prev-two').attr('id');
-    var navItemNameNext = $(this).parent(".gallery-carousel").find('.swiper-button-next-two').attr('id');
+    var navItemNamePrev = $(this).parent(".gallery-carousel-inner").find('.swiper-button-prev-two').attr('id');
+    var navItemNameNext = $(this).parent(".gallery-carousel-inner").find('.swiper-button-next-two').attr('id');
 
      
     if (window.screen.width > 1023) {
@@ -9563,8 +9563,8 @@ $(".gallerySection").each(function () {
     }
     else if (galleryRDes == 1 || galleryRTab == 1){
         if(!galleryLoop) {
-            $(this).parent(".gallery-carousel").find('.carousel-button').remove();
-            $(this).parent(".gallery-carousel").find(".swiper-wrapper").addClass('swiper-wrapper-center');
+            $(this).parent(".gallery-carousel-inner").find('.carousel-button').remove();
+            $(this).parent(".gallery-carousel-inner").find(".swiper-wrapper").addClass('swiper-wrapper-center');
         } 
     } 
     var swiper = new Swiper(this, {

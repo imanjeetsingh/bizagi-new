@@ -4688,8 +4688,8 @@ ul li::before {
   content: ""; }
 
 .cd-timeline-navigation li::before {
-  list-style: none;
-  content: ""; }
+  list-style: none !important;
+  content: "" !important; }
 
 .infoCarousel .swiper-slide {
   width: 23rem !important; }
@@ -5192,7 +5192,9 @@ ul li::before {
       margin-right: 6rem; } }
   @media (max-width: 767px) {
     .footer-logo-box {
-      margin-bottom: 3rem; } }
+      margin-bottom: 3rem;
+      justify-content: center;
+      text-align: center; } }
 
 @media (max-width: 767px) {
   .footer-column {
@@ -5296,11 +5298,12 @@ ul li::before {
   color: #6D7278; }
   @media (min-width: 768px) {
     .business-box-heading {
-      text-align: left; } }
+      text-align: center; } }
   @media (min-width: 992px) {
     .business-box-heading {
       font-weight: 800;
-      font-size: 40px; } }
+      font-size: 40px;
+      text-align: left; } }
 
 .business-list {
   font-family: 'Open Sans', sans-serif;
@@ -7558,30 +7561,20 @@ li.nav-list-sublist.active .dropdown-item {
 .gallery-carousel {
   position: relative; }
 
-.side .swiper-button-prev {
-  margin-left: 1rem; }
+.gallery-carousel-inner {
+  position: relative; }
 
-.side .swiper-button-next {
-  margin-right: 1rem; }
+.gallery-carousel-inner .carousel-button.side .swiper-btn {
+  position: absolute !important;
+  top: 50% !important;
+  margin-top: -29px !important;
+  margin-left: 0 !important; }
 
 .carousel-button {
   display: flex; }
 
 .swiper-btn:focus {
   outline: none; }
-
-.side .swiper-btn {
-  position: absolute;
-  top: -7.5rem; }
-  @media (min-width: 768px) {
-    .side .swiper-btn {
-      top: -4rem; } }
-  @media (min-width: 992px) {
-    .side .swiper-btn {
-      top: -4.5rem; } }
-  @media (min-width: 1200px) {
-    .side .swiper-btn {
-      top: -6.5rem; } }
 
 .swiper-slide .partner-logo-image {
   max-width: 100%;
@@ -7621,9 +7614,9 @@ li.nav-list-sublist.active .dropdown-item {
 .card-container .swiper-slide {
   margin-left: 0;
   margin-right: 0; }
-
-.carousel-button.side {
-  position: relative; }
+  @media (max-width: 767px) {
+    .card-container .swiper-slide {
+      padding: 0 0.5rem; } }
 
 .swiper-pagination {
   position: unset; }
