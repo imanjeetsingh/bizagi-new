@@ -7397,7 +7397,7 @@ li.nav-list-sublist.active .dropdown-item {
         @media (min-width: 768px) {
           .inner-banner .banner-heading-box p {
             margin-top: 1rem;
-            text-align: center; } }
+            text-align: left; } }
         @media (min-width: 992px) {
           .inner-banner .banner-heading-box p {
             margin-top: 1rem;
@@ -7433,7 +7433,8 @@ li.nav-list-sublist.active .dropdown-item {
   border: solid 1px #eee;
   padding: 20px;
   margin-bottom: 30px;
-  height: 100%; }
+  height: 100%;
+  box-shadow: 0 0 11px 0 rgba(166, 166, 166, 0.5); }
 
 .eventsDateBadge p {
   font-size: 18px;
@@ -7516,7 +7517,8 @@ li.nav-list-sublist.active .dropdown-item {
   .eventsBody .card-cta {
     bottom: -1rem; }
   .eventsBody .tag-box .list-inline li {
-    padding-left: 0; }
+    padding-left: 0;
+    color: #6d7278; }
     .eventsBody .tag-box .list-inline li .fa-map-marker {
       margin-top: 1rem; }
   .eventsBody .shadow-wrapper .tag-box h2 {
@@ -10701,12 +10703,12 @@ ul.rc-pagination.sui-paging li::before {
 .dmtop {
   background-color: #f28b21 !important;
   z-index: 999;
-  width: 40px;
-  height: 40px;
+  width: 28px;
+  height: 32px;
   border-radius: 0;
   position: fixed;
   bottom: -100px;
-  left: 25px;
+  left: 5px;
   cursor: pointer;
   -webkit-transition: all .7s ease-in-out;
   -moz-transition: all .7s ease-in-out;
@@ -10719,6 +10721,11 @@ ul.rc-pagination.sui-paging li::before {
   justify-content: center;
   color: #ffffff;
   font-size: 12px; }
+  @media (min-width: 768px) {
+    .dmtop {
+      width: 40px;
+      height: 40px;
+      left: 25px; } }
 
 .banner-bg {
   position: relative;
