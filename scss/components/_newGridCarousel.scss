@@ -2,6 +2,9 @@
     .article-box {
         padding: 0;
         cursor: pointer;
+        @include mobile-only {
+            padding: 0 0.5rem;
+        }
     }
     .bottom-tag {
         position: absolute;
@@ -70,8 +73,8 @@
 }
 
 .swiper-button-next {
-    color: black;
-    font-size: 50px;
+    color: #F28C20;
+    font-size: 33px;
     margin-left: 4rem;
     @include media (xldesktop) {
         margin-left: 4rem;
@@ -93,8 +96,8 @@
 }
 
 .swiper-button-prev {
-    color: black;
-    font-size: 50px;
+    color: #F28C20;
+    font-size: 33px;
     margin-left: 8.7rem;
     @include media (tablet) {
         margin-left: 20rem;
@@ -105,6 +108,10 @@
     @include media (xldesktop) {
         margin-left: 45rem;
     }
+}
+
+.fa-angle-left, .fa-angle-right{
+    font-size: 50px;
 }
 
 /////////////////////////////////////////////////////////////////

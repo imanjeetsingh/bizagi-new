@@ -81,7 +81,7 @@
             font-weight: bold;
             font-size: 1rem;
             font-weight: 600;
-            color: #000000;
+            color: #F28C20;
             font-family: "Open Sans", sans-serif;
             &-box {
                 border: 0.0625rem solid #ededed;
@@ -95,7 +95,7 @@
                 }
                 .blogDetail-article-authorName {
                     &:hover {
-                        color: #F38D1E;
+                        color: #dc7000;
                     }
                 }
                 .blogDetail-article-linkName {
@@ -103,7 +103,7 @@
                     font-size: 0.75rem;
                     font-style: italic;
                     &:hover {
-                        color: #F38D1E;
+                        color: #dc7000;
                     }
                     &-link{
                         display: block;
@@ -198,4 +198,7 @@
     content: "\003E" !important;
 }
 
+.blogDetail-article-authorName:hover{
+    color: #dc7000;
+}
 // Blog Detail component CSS ends

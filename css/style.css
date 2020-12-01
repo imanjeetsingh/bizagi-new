@@ -5503,7 +5503,7 @@ ul li::before {
   font-weight: bold;
   font-size: 1rem;
   font-weight: 600;
-  color: #000000;
+  color: #F28C20;
   font-family: "Open Sans", sans-serif; }
   .blogDetail-article-authorName-box {
     border: 0.0625rem solid #ededed;
@@ -5516,13 +5516,13 @@ ul li::before {
       .blogDetail-article-authorName-box {
         padding: 2rem 0; } }
     .blogDetail-article-authorName-box .blogDetail-article-authorName:hover {
-      color: #F38D1E; }
+      color: #dc7000; }
     .blogDetail-article-authorName-box .blogDetail-article-linkName {
       color: #000000;
       font-size: 0.75rem;
       font-style: italic; }
       .blogDetail-article-authorName-box .blogDetail-article-linkName:hover {
-        color: #F38D1E; }
+        color: #dc7000; }
       .blogDetail-article-authorName-box .blogDetail-article-linkName-link {
         display: block;
         margin-left: 9rem; }
@@ -5593,6 +5593,9 @@ ul li::before {
 
 .breadcrumb-item + .breadcrumb-item::before {
   content: "\003E" !important; }
+
+.blogDetail-article-authorName:hover {
+  color: #dc7000; }
 
 .blog-heading {
   font-family: 'Open Sans', sans-serif;
@@ -8737,6 +8740,9 @@ button:focus {
 .swiper-container .article-box {
   padding: 0;
   cursor: pointer; }
+  @media (max-width: 767px) {
+    .swiper-container .article-box {
+      padding: 0 0.5rem; } }
 
 .swiper-container .bottom-tag {
   position: absolute;
@@ -8791,8 +8797,8 @@ button:focus {
   margin: 0 0 1.5rem 0; }
 
 .swiper-button-next {
-  color: black;
-  font-size: 50px;
+  color: #F28C20;
+  font-size: 33px;
   margin-left: 4rem; }
   @media (min-width: 1200px) {
     .swiper-button-next {
@@ -8810,8 +8816,8 @@ button:focus {
   width: 0; }
 
 .swiper-button-prev {
-  color: black;
-  font-size: 50px;
+  color: #F28C20;
+  font-size: 33px;
   margin-left: 8.7rem; }
   @media (min-width: 768px) {
     .swiper-button-prev {
@@ -8822,6 +8828,9 @@ button:focus {
   @media (min-width: 1200px) {
     .swiper-button-prev {
       margin-left: 45rem; } }
+
+.fa-angle-left, .fa-angle-right {
+  font-size: 50px; }
 
 .officeList-city {
   color: #f38d1e;

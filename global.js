@@ -292,7 +292,7 @@ $(document).ready(function() {
     $('.search-box-searchIcon').click(function() {
         setTimeout(function() {
             $('#searchTerm').focus();
-        }, 100);
+        }, 3000);
         $('#searchTerm').removeAttr('placeholder');
     });
 
