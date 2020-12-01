@@ -6473,7 +6473,8 @@ ul.options > li {
   margin-top: 2rem; }
 
 .card-price {
-  color: #F38D1E; }
+  color: #6D7278;
+  font-weight: 400; }
 
 .fiveColumnLayout .card-subtitle.text-center {
   font-size: 1.125rem;
@@ -7437,7 +7438,7 @@ li.nav-list-sublist.active .dropdown-item {
 
 .tag-box-v2 {
   border: solid 1px #eee;
-  padding: 20px;
+  padding: 20px 8px 20px 8px;
   margin-bottom: 30px;
   height: 100%;
   box-shadow: 0 0 11px 0 rgba(166, 166, 166, 0.5); }
@@ -7491,9 +7492,6 @@ li.nav-list-sublist.active .dropdown-item {
   padding-right: 15px;
   vertical-align: top;
   margin-top: 0; }
-  @media (min-width: 768px) {
-    .eventsInfoDate {
-      margin-top: -1.4375rem; } }
   @media (min-width: 992px) {
     .eventsInfoDate {
       margin-top: 0; } }
@@ -8798,11 +8796,8 @@ button:focus {
 
 .swiper-button-next {
   color: #F28C20;
-  font-size: 33px;
-  margin-left: 4rem; }
-  @media (min-width: 1200px) {
-    .swiper-button-next {
-      margin-left: 4rem; } }
+  font-size: 25px;
+  margin-left: 3rem; }
 
 .carousel-button {
   display: flex; }
@@ -8817,7 +8812,7 @@ button:focus {
 
 .swiper-button-prev {
   color: #F28C20;
-  font-size: 33px;
+  font-size: 25px;
   margin-left: 8.7rem; }
   @media (min-width: 768px) {
     .swiper-button-prev {
@@ -8830,7 +8825,7 @@ button:focus {
       margin-left: 45rem; } }
 
 .fa-angle-left, .fa-angle-right {
-  font-size: 50px; }
+  font-size: 38px; }
 
 .officeList-city {
   color: #f38d1e;
@@ -8901,6 +8896,9 @@ button:focus {
   top: 100%;
   width: 0;
   border-top: 5.77px solid #c2c7c7; }
+
+dd.officeList-direction a {
+  font-size: 16px; }
 
 .modeler-box .row.is-flex:before,
 .modeler-box .row.is-flex:after {
