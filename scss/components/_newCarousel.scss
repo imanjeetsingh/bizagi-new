@@ -15,7 +15,14 @@
 .gallery-carousel-inner{
     position: relative;
  }
- .gallery-carousel-inner .carousel-button.side .swiper-btn {
+ .gallery-carousel-inner .carousel-button.side .swiper-button-prev-two {
+    position: absolute !important;
+    top: 50% !important;
+    margin-top: -29px !important;
+    margin-left: 0 !important;
+ }
+
+ .gallery-carousel-inner .carousel-button.side .swiper-button-next-two {
     position: absolute !important;
     top: 50% !important;
     margin-top: -29px !important;
