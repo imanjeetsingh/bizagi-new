@@ -178,11 +178,12 @@
             margin-left: -6rem;
         }
         @include media(desktop) {
-            margin-left: 3.125rem;
+            margin-left: 0rem;
             margin-top: 0.7rem;
         }
         @include media(xldesktop){
-            margin-top: 0;
+            margin-top: -2px;
+            margin-left: -5rem;
         }
     }
 }
@@ -270,12 +271,12 @@
 // added for ipad pro view search icon positionig on affix classes
 .home-header.affix .nav-search-box {
     @include media(desktop){
-        margin-left: -35px;
+        margin-left: -14px;
         position: absolute;
         margin-top: 22px;
     }
     @include media(xldesktop){
-        margin-left: -28px;
+        margin-left: -38px;
         position: relative;
         margin-top: 0;
     }
