@@ -7451,7 +7451,8 @@ li.nav-list-sublist.active .dropdown-item {
   margin: 0; }
 
 .shadow-wrapper .cta.cta-primary:hover {
-  background-color: #F28C20; }
+  background-color: #F28C20;
+  border: solid 2px #F28C20 !important; }
 
 .eventsDateBadge p {
   font-size: 18px;
