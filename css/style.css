@@ -4847,7 +4847,7 @@ ul li::before {
 
 @media (min-width: 992px) {
   .nav-search-box {
-    margin-left: 3.125rem;
+    margin-left: 0rem;
     margin-top: 0.7rem; } }
 
 @media (min-width: 1200px) {
@@ -4907,7 +4907,7 @@ ul li::before {
 
 @media (min-width: 992px) {
   .home-header.affix .nav-search-box {
-    margin-left: -35px;
+    margin-left: -14px;
     position: absolute;
     margin-top: 22px; } }
 
@@ -9961,7 +9961,7 @@ dd.officeList-direction a {
       right: 34px !important; } }
   @media (min-width: 992px) {
     .home-header #search-form-header {
-      right: 23px !important; } }
+      right: -4px !important; } }
   @media (min-width: 1200px) {
     .home-header #search-form-header {
       right: 5px !important; } }
