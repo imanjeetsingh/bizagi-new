@@ -99,7 +99,7 @@
         margin-top: -0.2rem;
     }
     @include media(xldesktop){
-        right: 2.25rem !important;
+        right: 3.25rem !important;
         margin-top: -1.5rem;
     }
 }
@@ -130,10 +130,10 @@
     border-top: 3px solid #ffffff;
     @include media(tablet){
         left: unset !important;
-        right: -34px !important;
+        right: 34px !important;
     }
     @include media(desktop){
-        right: -6px !important;
+        right: 23px !important;
     }
     @include media(xldesktop){
         right: 5px !important;
