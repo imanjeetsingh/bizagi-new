@@ -4937,8 +4937,8 @@ ul li::before {
 
 @media (min-width: 1200px) {
   .inner-header.affix .nav-links-box.nav-search-box {
-    margin-left: 1.28rem;
-    margin-top: 2rem; } }
+    margin-left: -18px;
+    margin-top: 2.3rem; } }
 
 @media (min-width: 3000px) {
   .inner-header.affix .nav-links-box.nav-search-box {
@@ -4950,7 +4950,7 @@ ul li::before {
 
 @media (min-width: 1200px) {
   .inner-header .nav-search-box {
-    margin-top: 0; } }
+    margin-top: 5px; } }
 
 .headerLogo-container {
   height: 5rem;
@@ -9916,14 +9916,14 @@ dd.officeList-direction a {
   @media (min-width: 768px) {
     #search-form-header {
       left: unset !important;
-      right: -34px !important; } }
+      right: 34px !important; } }
   @media (min-width: 992px) {
     #search-form-header {
       top: 5.5rem !important;
       right: 0px !important; } }
   @media (min-width: 1200px) {
     #search-form-header {
-      right: 0px !important;
+      right: 2.75rem !important;
       left: unset !important; } }
   @media (min-width: 3000px) {
     #search-form-header {
