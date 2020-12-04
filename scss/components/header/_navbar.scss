@@ -289,7 +289,7 @@
     @include media(xldesktop){
         margin-left: 24px;
     }
-    @include media(xxldesktop){
+    @include media(xxldesktop){ 
         margin-left: -1px;
     }
 }
