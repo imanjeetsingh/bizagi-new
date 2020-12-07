@@ -102,6 +102,9 @@
         right: 4.25rem !important;
         margin-top: -1.5rem;
     }
+    @include media(xxldesktop){
+        left: -14rem;
+    }
 }
 
 .home-header.affix #search-form-header:before {
@@ -140,7 +143,7 @@
     }
     @include media(xxldesktop){
         right: unset !important;
-        left: -16rem !important;
+        left: -15rem !important;
     }
 
 }
