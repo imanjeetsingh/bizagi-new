@@ -3,12 +3,15 @@
     .navbar .nav-item .dropdown-menu {
         display: none;
     }
+
     .navbar .nav-item:hover .nav-link {
         color: #fff;
     }
+
     .navbar .nav-item:hover .dropdown-menu {
         display: block;
     }
+
     .navbar .nav-item .dropdown-menu {
         margin-top: 0;
     }
@@ -19,13 +22,17 @@
         border-color: #f5f5f5 !important;
         position: relative;
         z-index: 10;
+
         &-icon {}
     }
+
     &-collapse {
         padding-top: 2.5rem;
+
         @include media(tablet) {
             padding: 0;
         }
+
         @include mobile-only {
             padding-top: .5rem;
             position: fixed;
@@ -46,10 +53,12 @@
         height: calc(100% - 6rem);
         top: 6rem;
     }
+
     .inner-header.affix .navbar-collapse {
         height: calc(100% - 6rem);
         top: 6rem;
     }
+
     .inner-header .navbar-collapse {
         height: calc(100% - 6rem);
         top: 6rem;
@@ -62,24 +71,29 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
         @include media(tablet) {
             height: 0rem;
             margin-left: 6rem;
         }
+
         @include media(desktop) {
             justify-content: flex-end;
             align-items: center;
             height: 5rem;
             margin-top: 1rem;
         }
+
         @include media(xldesktop) {
             margin-top: 0;
             margin-left: 0;
         }
+
         // @include media(xxldesktop){
         //     justify-content: center;
         // }
     }
+
     &-item {
         font-family: 'Open Sans', sans-serif;
         font-size: 1rem;
@@ -88,6 +102,7 @@
         list-style: none;
         padding-inline-start: 0;
     }
+
     &-link {
         color: #54646f !important;
         font-size: 1rem;
@@ -96,9 +111,11 @@
         padding: 0.5rem 0.625 !important;
         text-decoration: none;
         position: relative;
+
         @include media(desktop) {
             color: #ffffff !important;
         }
+
         &::before {
             content: '';
             position: absolute;
@@ -110,6 +127,7 @@
             width: 0%;
             transition: 0.2s all;
         }
+
         // &:focus{
         //     content: "";
         //     height: 0.15rem;
@@ -123,18 +141,22 @@
         &:hover {
             background-color: transparent;
             border-top: transparent;
+
             // transform: scale(1.1);
             &::before {
                 width: 100%;
             }
         }
     }
+
     &-list {
         &-suplist {
             padding-inline-start: 0 !important;
         }
+
         &-sublist {
             list-style: none;
+
             &-heading {
                 margin-left: 0.625rem;
                 color: #54645B;
@@ -145,45 +167,59 @@
             }
         }
     }
+
     &-links-box {
         display: flex;
         align-items: center;
         height: 5rem;
+
         @include media(tablet) {
             height: 3rem;
             justify-content: center;
         }
+
         @include media(desktop) {
             height: 5rem;
             margin-left: -3rem;
         }
+
         @include media(xldesktop) {
-            margin-left: -2px;
+            margin-left: -22px;
         }
-        @include media(xxldesktop){
+
+        @include media(xxldesktop) {
             justify-content: end;
         }
+
         @include mobile-only {
             height: 2rem;
             justify-content: center;
         }
     }
+
     &-search-box {
         @include mobile-only {
             height: 5rem;
             display: flex !important;
             margin-left: 2rem;
         }
+
         @include media(tablet) {
             margin-left: -6rem;
         }
+
         @include media(desktop) {
             margin-left: 0rem;
             margin-top: 0.7rem;
         }
-        @include media(xldesktop){
+
+        @include media(xldesktop) {
             margin-top: -2px;
             margin-left: -5rem;
+        }
+
+        @include media(xxldesktop) {
+            margin-left: 1rem;
         }
     }
 }
@@ -194,12 +230,14 @@
             content: none !important;
         }
     }
+
     &-menu {
         box-shadow: none;
         // border: 0.063rem solid #efefef;
         padding: 0;
         margin-top: 1.313rem;
     }
+
     &-item {
         font-weight: 300;
         line-height: 1.42857;
@@ -208,12 +246,15 @@
         // white-space: nowrap;
         white-space: initial;
         color: #54645B;
+
         @include media(tablet) {
             padding: 0.25rem 1rem 0.25rem 1rem !important;
         }
+
         @include media(desktop) {
             padding: 0.25rem 1.563rem 0.25rem 1.563rem !important;
         }
+
         &:hover {
             background-color: transparent;
             color: #F38D1F;
@@ -230,15 +271,18 @@
             margin-top: 0;
         }
     }
+
     .nav {
         &-list {
             padding-inline-start: unset;
             margin-block-end: 0;
         }
+
         &-item {
             margin: 0;
         }
     }
+
     .navbar {
         &-collapse {
             border-top: 0.063rem solid #e0e0e0;
@@ -252,9 +296,11 @@
             &-menu {
                 width: 16rem;
                 border-radius: 0;
+
                 @include media(tablet) {
                     width: 13rem;
                 }
+
                 @include media(desktop) {
                     width: 16rem;
                 }
@@ -270,56 +316,99 @@
 
 // added for ipad pro view search icon positionig on affix classes
 .home-header.affix .nav-search-box {
-    @include media(desktop){
+    @include media(desktop) {
         margin-left: -14px;
         position: absolute;
         margin-top: 22px;
     }
-    @include media(xldesktop){
+
+    @include media(xldesktop) {
         margin-left: -38px;
         position: relative;
         margin-top: 0;
     }
 }
+
 // added for ipad pro view header cta positionig on affix classes
-.inner-header.affix .nav-links-box{
-    @include media(desktop){
-        margin-left: -2.5625rem;
-    }
-    @include media(xldesktop){
-        margin-left: 24px;
-    }
-    @include media(xxldesktop){ 
-        margin-left: -1px;
+.inner-header .nav-links-box {
+    @include media(xxldesktop) {
+        margin-left: -2rem;
     }
 }
-.inner-header.affix .nav-links-box.nav-search-box{
-    @include media(desktop){
-        margin-left: 3px;
-        margin-top: 3.1875rem;
-    }
-    @include media(xldesktop){
-        margin-left: -18px;
-        margin-top: 2.3rem;
-    }
-    @include media(xxldesktop){
-     margin-left: 0;   
+
+.inner-header .nav-search-box {
+    @include media(xxldesktop) {
+        margin-left: 2rem;
     }
 }
-.inner-header .nav-search-box{
-    @include media(desktop){
-        margin-top: 19px;
+
+
+    .inner-header.affix .nav-links-box {
+        @include media(desktop) {
+            margin-left: -2.5625rem;
+        }
+
+        @include media(xldesktop) {
+            margin-left: -15px;
+        }
+
+        @include media(xxldesktop) {
+            margin-left: -22px;
+        }
     }
-    @include media(xldesktop){
-        margin-top: 5px;
+
+    .inner-header.affix .multilang-container {
+        @include media(xxldesktop) {
+            position: absolute;
+            margin-top: 13px;
+            margin-left: 10px;
+        }
     }
-}
-// .home-header.affix{
-//     @include media(tablet){
-//         margin-top: -3rem;
-//     }
-//     @include media(desktop){
-//         margin-top: 0;
-//     }
-// }
-// Navbar component CSS ends
+
+    .inner-header.affix .nav-links-box.nav-search-box {
+        @include media(desktop) {
+            margin-left: 3px;
+            margin-top: 3.1875rem;
+        }
+
+        @include media(xldesktop) {
+            margin-left: -18px;
+            margin-top: 2.3rem;
+        }
+
+        @include media(xxldesktop) {
+            margin-left: 0;
+        }
+    }
+
+    .inner-header .nav-search-box {
+        @include media(desktop) {
+            margin-top: 19px;
+        }
+
+        @include media(xldesktop) {
+            margin-top: 5px;
+        }
+    }
+
+    .affix.home-header .nav-links-box {
+        @include media(xxldesktop) {
+            margin-left: -9px !important;
+        }
+
+        .search-container {
+            margin-right: 1rem;
+            margin-left: 3rem;
+        }
+    }
+    
+
+    // .home-header.affix{
+    //     @include media(tablet){
+    //         margin-top: -3rem;
+    //     }
+    //     @include media(desktop){
+    //         margin-top: 0;
+    //     }
+    // }
+    // Navbar component CSS ends
