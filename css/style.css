@@ -8551,6 +8551,9 @@ button:focus {
   margin: 0 auto;
   width: auto; }
 
+.element-item.col-12.col-lg-6.col-md-6.col-sm-12 .card-img-top {
+  width: 100% !important; }
+
 .control-box {
   display: flex;
   flex-wrap: wrap;
