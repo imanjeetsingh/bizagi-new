@@ -9515,7 +9515,6 @@ $(".cardSection").each(function() {
 
     if ((!cardLoop) && (removePagination)) {
         $(this).parent(".card-container").find('.swiper-pagination-one').remove();
-        // $(this).parent(".gallery-carousel-inner").find(".swiper-wrapper").addClass('swiper-wrapper-center');
     }
 
 
