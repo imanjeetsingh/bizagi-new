@@ -184,7 +184,7 @@
         }
 
         @include media(xldesktop) {
-            margin-left: -22px;
+            margin-left: -155px;
         }
 
         @include media(xxldesktop) {
@@ -215,7 +215,7 @@
 
         @include media(xldesktop) {
             margin-top: -2px;
-            margin-left: -5rem;
+            margin-left: -4rem;
         }
 
         @include media(xxldesktop) {
@@ -323,7 +323,8 @@
     }
 
     @include media(xldesktop) {
-        margin-left: -38px;
+        // margin-left: -38px;
+        margin-left: -60px;
         position: relative;
         margin-top: 0;
     }
@@ -392,6 +393,9 @@
     }
 
     .affix.home-header .nav-links-box {
+        @include media(xldesktop){
+            margin-left: -28px;
+        }
         @include media(xxldesktop) {
             margin-left: -9px !important;
         }
