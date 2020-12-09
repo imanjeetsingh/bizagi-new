@@ -149,7 +149,8 @@
                 margin-top: 0;
             }
             @include media(xxldesktop){
-                margin-left: -4rem;
+                margin-left: 15.4rem;
+                position: absolute;
             }
         }
         &-dropdown {

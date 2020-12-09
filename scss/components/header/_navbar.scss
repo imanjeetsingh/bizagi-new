@@ -189,6 +189,7 @@
 
         @include media(xxldesktop) {
             justify-content: end;
+            margin-left: -14px;
         }
 
         @include mobile-only {
@@ -332,11 +333,12 @@
 
 // added for ipad pro view header cta positionig on affix classes
 .inner-header .nav-links-box {
-    @include media(xldesktop){
+    @include media(xldesktop) {
         margin-left: -61px;
     }
+
     @include media(xxldesktop) {
-        margin-left: -2rem;
+        margin-left: -1.4rem;
     }
 }
 
@@ -347,78 +349,87 @@
 }
 
 
-    .inner-header.affix .nav-links-box {
-        @include media(desktop) {
-            margin-left: -2.5625rem;
-        }
-
-        @include media(xldesktop) {
-            margin-left: -36px;
-        }
-
-        @include media(xxldesktop) {
-            margin-left: -22px;
-        }
-        @media only screen and (min-width: 1280px) and (max-width: 1300px) {
-            margin-left: -26px;
-        }
+.inner-header.affix .nav-links-box {
+    @include media(desktop) {
+        margin-left: -2.5625rem;
     }
 
-    .inner-header.affix .multilang-container {
-        @include media(xxldesktop) {
-            position: absolute;
-            margin-top: 13px;
-            margin-left: 10px;
-        }
+    @include media(xldesktop) {
+        margin-left: -36px;
     }
 
-    .inner-header.affix .nav-links-box.nav-search-box {
-        @include media(desktop) {
-            margin-left: 3px;
-            margin-top: 3.1875rem;
-        }
-
-        @include media(xldesktop) {
-            margin-left: -18px;
-            margin-top: 2.3rem;
-        }
-
-        @include media(xxldesktop) {
-            margin-left: 0;
-        }
+    @include media(xxldesktop) {
+        margin-left: -22px;
     }
 
-    .inner-header .nav-search-box {
-        @include media(desktop) {
-            margin-top: 19px;
-        }
+    @media only screen and (min-width: 1280px) and (max-width: 1300px) {
+        margin-left: -26px;
+    }
+}
 
-        @include media(xldesktop) {
-            margin-top: 5px;
-        }
+.inner-header.affix .multilang-container {
+    @include media(xxldesktop) {
+        position: absolute;
+        margin-top: 13px;
+        margin-left: 10px;
+    }
+}
+
+.inner-header.affix .nav-links-box.nav-search-box {
+    @include media(desktop) {
+        margin-left: 3px;
+        margin-top: 3.1875rem;
     }
 
-    .affix.home-header .nav-links-box {
-        @include media(xldesktop){
-            margin-left: -28px;
-        }
-        @include media(xxldesktop) {
-            margin-left: -9px !important;
-        }
-
-        .search-container {
-            margin-right: 1rem;
-            margin-left: 3rem;
-        }
+    @include media(xldesktop) {
+        margin-left: -18px;
+        margin-top: 2.3rem;
     }
-    
 
-    // .home-header.affix{
-    //     @include media(tablet){
-    //         margin-top: -3rem;
-    //     }
-    //     @include media(desktop){
-    //         margin-top: 0;
-    //     }
-    // }
-    // Navbar component CSS ends
+    @include media(xxldesktop) {
+        margin-left: 32px;
+    }
+}
+
+.inner-header .nav-search-box {
+    @include media(desktop) {
+        margin-top: 19px;
+    }
+
+    @include media(xldesktop) {
+        margin-top: 5px;
+    }
+}
+
+.affix.home-header .nav-links-box {
+    @include media(xldesktop) {
+        margin-left: -28px;
+    }
+
+    @include media(xxldesktop) {
+        margin-left: -9px !important;
+    }
+
+    .search-container {
+        margin-right: 1rem;
+        margin-left: 3rem;
+    }
+}
+
+.affix.home-header .nav-links-box .search-container {
+    @include media(xxldesktop) {
+        margin-right: 1rem;
+        margin-left: 2rem;
+        margin-top: 30px;
+    }
+}
+
+// .home-header.affix{
+//     @include media(tablet){
+//         margin-top: -3rem;
+//     }
+//     @include media(desktop){
+//         margin-top: 0;
+//     }
+// }
+// Navbar component CSS ends
