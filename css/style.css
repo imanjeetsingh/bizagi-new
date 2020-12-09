@@ -4946,6 +4946,10 @@ ul li::before {
   .inner-header.affix .nav-links-box {
     margin-left: -22px; } }
 
+@media only screen and (min-width: 1280px) and (max-width: 1300px) {
+  .inner-header.affix .nav-links-box {
+    margin-left: -26px; } }
+
 @media (min-width: 3000px) {
   .inner-header.affix .multilang-container {
     position: absolute;
