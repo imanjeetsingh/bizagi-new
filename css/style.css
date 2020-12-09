@@ -7712,6 +7712,9 @@ li.nav-list-sublist.active .dropdown-item {
 .swiper-wrapper-center {
   justify-content: center; }
 
+.gallerySection.swiper-container-multirow > .swiper-wrapper {
+  margin-left: -1rem; }
+
 .xchange-container .search {
   border-radius: 2.5rem;
   border: solid 1px lightgray;
