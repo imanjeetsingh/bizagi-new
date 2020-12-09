@@ -324,7 +324,7 @@
 
     @include media(xldesktop) {
         // margin-left: -38px;
-        margin-left: -60px;
+        margin-left: -60px !important;
         position: relative;
         margin-top: 0;
     }
@@ -332,6 +332,9 @@
 
 // added for ipad pro view header cta positionig on affix classes
 .inner-header .nav-links-box {
+    @include media(xldesktop){
+        margin-left: -61px;
+    }
     @include media(xxldesktop) {
         margin-left: -2rem;
     }
@@ -350,7 +353,7 @@
         }
 
         @include media(xldesktop) {
-            margin-left: -15px;
+            margin-left: -36px;
         }
 
         @include media(xxldesktop) {
