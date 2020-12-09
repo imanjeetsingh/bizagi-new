@@ -9507,13 +9507,14 @@ $(".cardSection").each(function() {
 
     } else if (window.screen.width <= 767) {
         if (cardslideCount > 1) {
-            cardLoop = true;
+            cardLoop = cardRMob == 1;
         } else {
             removePagination = true;
         }
     }
 
-    if ((!cardLoop) && (removePagination)) {
+
+    if (removePagination) {
         $(this).parent(".card-container").find('.swiper-pagination-one').remove();
     }
 
@@ -9572,22 +9573,33 @@ $(".gallerySection").each(function() {
     var galleryLoop = false;
     var navItemNamePrev = $(this).parent(".gallery-carousel-inner").find('.swiper-button-prev-two').attr('id');
     var navItemNameNext = $(this).parent(".gallery-carousel-inner").find('.swiper-button-next-two').attr('id');
-
-
+    var removeNavigation = false;
+    var centerAllign = false;
     if (window.screen.width > 1023) {
-        galleryLoop = slideCount2 > galleryRDes * galleryCDes ? true : false;
-    } else if (window.screen.width > 767) {
-        galleryLoop = slideCount2 > galleryRTab * galleryCTab ? true : false;
-    } else if (slideCount2 > 1) {
-        galleryLoop = true;
-    }
-    if (galleryRDes > 1 || galleryRTab > 1) {
-        galleryLoop = false;
-    } else if (galleryRDes == 1 || galleryRTab == 1) {
-        if (!galleryLoop) {
-            $(this).parent(".gallery-carousel-inner").find('.carousel-button').remove();
-            $(this).parent(".gallery-carousel-inner").find(".swiper-wrapper").addClass('swiper-wrapper-center');
+        if (galleryRDes == 1) {
+            galleryLoop = slideCount2 > galleryCDes;
+            centerAllign = true;
         }
+        removeNavigation = !(slideCount2 > galleryRDes * galleryCDes);
+    } else if (window.screen.width > 767) {
+        if (galleryRTab == 1) {
+            galleryLoop = slideCount2 > galleryCTab;
+            centerAllign = true;
+        }
+        removeNavigation = !(slideCount2 > galleryRTab * galleryCTab);
+    } else if (window.screen.width <= 767) {
+        if (slideCount2 > 1) {
+            galleryLoop = galleryRMob == 1;
+        } else {
+            removeNavigation = true;
+
+        }
+    }
+    if ((centerAllign) && (!galleryLoop)) {
+        $(this).parent(".gallery-carousel-inner").find(".swiper-wrapper").addClass('swiper-wrapper-center');
+    }
+    if (removeNavigation) {
+        $(this).parent(".gallery-carousel-inner").find('.carousel-button').remove();
     }
     var swiper = new Swiper(this, {
 
