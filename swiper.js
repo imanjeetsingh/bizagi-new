@@ -9508,9 +9508,8 @@ $(".cardSection").each(function() {
     } else if (window.screen.width <= 767) {
         if (cardslideCount > 1) {
             cardLoop = cardRMob == 1;
-        } else {
-            removePagination = true;
         }
+        removePagination = !(cardslideCount > cardRMob * cardCMob);
     }
 
 
@@ -9590,10 +9589,8 @@ $(".gallerySection").each(function() {
     } else if (window.screen.width <= 767) {
         if (slideCount2 > 1) {
             galleryLoop = galleryRMob == 1;
-        } else {
-            removeNavigation = true;
-
         }
+        removeNavigation = !(slideCount2 > galleryRMob * galleryCMob);
     }
     if ((centerAllign) && (!galleryLoop)) {
         $(this).parent(".gallery-carousel-inner").find(".swiper-wrapper").addClass('swiper-wrapper-center');
