@@ -77,7 +77,7 @@
     }
 
     @include media(xldesktop) {
-        right: 2.75rem !important;
+        right: 2.5rem !important;
         left: unset !important;
     }
     @include media(xxldesktop){
@@ -99,7 +99,7 @@
         margin-top: -0.2rem;
     }
     @include media(xldesktop){
-        right: 3.5rem !important;
+        right: 2.8rem !important;
         margin-top: -1.5rem;
     }
     @include media(xxldesktop){
@@ -139,7 +139,7 @@
         right: -4px !important;
     }
     @include media(xldesktop){
-        right: 2.8rem !important;
+        right: 2rem !important;
     }
     @include media(xxldesktop){
         right: unset !important;
