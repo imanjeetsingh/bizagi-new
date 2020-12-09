@@ -4918,9 +4918,13 @@ ul li::before {
 
 @media (min-width: 1200px) {
   .home-header.affix .nav-search-box {
-    margin-left: -60px;
+    margin-left: -60px !important;
     position: relative;
     margin-top: 0; } }
+
+@media (min-width: 1200px) {
+  .inner-header .nav-links-box {
+    margin-left: -61px; } }
 
 @media (min-width: 3000px) {
   .inner-header .nav-links-box {
@@ -4936,7 +4940,7 @@ ul li::before {
 
 @media (min-width: 1200px) {
   .inner-header.affix .nav-links-box {
-    margin-left: -15px; } }
+    margin-left: -36px; } }
 
 @media (min-width: 3000px) {
   .inner-header.affix .nav-links-box {
