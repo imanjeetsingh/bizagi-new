@@ -10945,6 +10945,11 @@ ul.rc-pagination.sui-paging li::before {
   #es .affix.home-header .nav-links-box {
     margin-left: -48px !important; } }
 
+@media (min-width: 1200px) {
+  #es .inner-header.affix .nav-links-box {
+    margin-left: -49px;
+    margin-top: 2px; } }
+
 @media (min-width: 3000px) {
   #pt .home-header .nav-links-box {
     margin-left: -3rem; } }

@@ -169,6 +169,12 @@
         margin-left: -48px !important;
     }
 }
+#es .inner-header.affix .nav-links-box{
+    @include media(xldesktop){
+        margin-left: -49px;
+        margin-top: 2px;
+    }
+}
 #pt .home-header .nav-links-box{
     @include media(xxldesktop){
         margin-left: -3rem;
