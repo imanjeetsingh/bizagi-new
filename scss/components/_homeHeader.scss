@@ -136,6 +136,9 @@
                 margin-right: -5rem;
                 margin-left: 1rem;
             }
+            @include media(xxldesktop){
+                margin-left: 0;
+            }
         }
         &-dropdown {
             color: #ffffff;
