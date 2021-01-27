@@ -4997,6 +4997,11 @@ ul li::before {
     margin-left: 2rem;
     margin-top: 30px; } }
 
+@media (min-width: 1200px) {
+  .home-header .nav-container {
+    position: relative;
+    z-index: 1; } }
+
 .headerLogo-container {
   height: 5rem;
   display: flex;
@@ -10823,6 +10828,9 @@ ul.rc-pagination.sui-paging li::before {
   @media (min-width: 992px) {
     .banner-bg {
       margin-top: -8rem; } }
+  @media (min-width: 1200px) {
+    .banner-bg {
+      position: unset; } }
   @media (min-width: 3000px) {
     .banner-bg {
       padding: 140px 0 250px 0; } }

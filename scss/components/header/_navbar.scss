@@ -433,3 +433,13 @@
 //     }
 // }
 // Navbar component CSS ends
+
+// added for nav container overlap
+@include media(xldesktop){
+    .home-header{
+        .nav-container{
+            position: relative;
+            z-index: 1;
+        }
+    }
+}

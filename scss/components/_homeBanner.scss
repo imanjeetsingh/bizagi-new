@@ -3,7 +3,7 @@
     height: auto;
     padding: 140px 0 100px 0;
     margin-top: -7rem;
-   // background-image: url(../../images/banner-home.png);
+    // background-image: url(../../images/banner-home.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -13,6 +13,9 @@
     }
     @include media(desktop){
         margin-top: -8rem;
+    }
+    @include media(xldesktop){
+        position: unset;
     }
     @include media(xxldesktop) {
         padding: 140px 0 250px 0;
