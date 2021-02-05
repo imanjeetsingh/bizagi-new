@@ -26,3 +26,63 @@ ul li::before {
 .yellow .card-title {
     color: #f9c53e;
 }
+
+.cta {
+    color: #bbcc31;
+}
+
+.cta-default:hover {
+    color: #bbcc31;
+}
+
+.cta-primary {
+    background-color: #bbcc31;
+    color: #ffffff;
+    border: solid 2px #bbcc31;
+}
+
+.cta-primary:hover {
+    color: #ffffff;
+    background: #bbcc31;
+    border: solid 2px #bbcc31 !important;
+}
+
+.cta-secondary {
+    border: solid 2px #bbcc31;
+    color: #bbcc31;
+}
+
+.cta-secondary:hover {
+    color: #ffffff;
+    background: #bbcc31;
+}
+
+.yellow .cta {
+    color: #f9c53e;
+}
+
+.yellow .cta-default:hover {
+    color: #f9c53e;
+}
+
+.yellow .cta-primary {
+    background-color: #f9c53e;
+    color: #ffffff;
+    border: solid 2px #f9c53e;
+}
+
+.yellow .cta-primary:hover {
+    color: #ffffff;
+    background: #f9c53e;
+    border: solid 2px #f9c53e !important;
+}
+
+.yellow .cta-secondary {
+    border: solid 2px #f9c53e;
+    color: #f9c53e;
+}
+
+.yellow .cta-secondary:hover {
+    color: #ffffff;
+    background: #f9c53e;
+}

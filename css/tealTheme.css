@@ -1,4 +1,4 @@
-    .feature-list-icon-box {
+.feature-list-icon-box {
     color: #329f9a;
 }
 
@@ -43,12 +43,46 @@ ul li::before {
 .cta-secondary:hover {
     color: #ffffff;
     background: #329f9a;
-    .cyan .card-title {
-        color: #bbcc31;
-    }
-    .teal .card-title {
-        color: #329f9a;
-    }
-    .yellow .card-title {
-        color: #f9c53e;
-    }
+}
+
+.yellow .cta {
+    color: #f9c53e;
+}
+
+.yellow .cta-default:hover {
+    color: #f9c53e;
+}
+
+.yellow .cta-primary {
+    background-color: #f9c53e;
+    color: #ffffff;
+    border: solid 2px #f9c53e;
+}
+
+.yellow .cta-primary:hover {
+    color: #ffffff;
+    background: #f9c53e;
+    border: solid 2px #f9c53e !important;
+}
+
+.yellow .cta-secondary {
+    border: solid 2px #f9c53e;
+    color: #f9c53e;
+}
+
+.yellow .cta-secondary:hover {
+    color: #ffffff;
+    background: #f9c53e;
+}
+
+.cyan .card-title {
+    color: #bbcc31;
+}
+
+.teal .card-title {
+    color: #329f9a;
+}
+
+.yellow .card-title {
+    color: #f9c53e;
+}
