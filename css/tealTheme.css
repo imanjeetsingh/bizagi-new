@@ -64,7 +64,7 @@ ul li::before {
 }
 
 .yellow-color .cta-primary:hover {
-    color: #ffffff;
+    color: #ffffff !important;
     background: #f9c53e;
     border: solid 2px #f9c53e !important;
 }
@@ -75,7 +75,7 @@ ul li::before {
 }
 
 .yellow-color .cta-secondary:hover {
-    color: #ffffff;
+    color: #ffffff !important;
     background: #f9c53e;
 }
 
@@ -94,7 +94,7 @@ ul li::before {
 }
 
 .teal-color .cta-primary:hover {
-    color: #ffffff;
+    color: #ffffff !important;
     background: #f9c53e;
     border: solid 2px #f9c53e !important;
 }
@@ -105,7 +105,7 @@ ul li::before {
 }
 
 .teal-color .cta-secondary:hover {
-    color: #ffffff;
+    color: #ffffff !important;
     background: #f9c53e;
 }
 
@@ -124,7 +124,7 @@ ul li::before {
 }
 
 .green-color .cta-primary:hover {
-    color: #ffffff;
+    color: #ffffff !important;
     background: #f9c53e;
     border: solid 2px #f9c53e !important;
 }
@@ -135,7 +135,7 @@ ul li::before {
 }
 
 .green-color .cta-secondary:hover {
-    color: #ffffff;
+    color: #ffffff !important;
     background: #f9c53e;
 }
 
