@@ -1,13 +1,46 @@
-.feature-list-icon-box{
+.feature-list-icon-box {
     color: #329f9a;
 }
-.card-tag{
+
+.card-tag {
     color: #fff;
     background-color: #329f9a;
 }
-.contentSection-container ul li::before{
+
+.contentSection-container ul li::before {
     color: #329f9a !important;
 }
-ul li::before{
+
+ul li::before {
     color: #329f9a !important;
+}
+
+.cta {
+    color: #329f9a;
+}
+
+.cta-default:hover {
+    color: #329f9a;
+}
+
+.cta-primary {
+    background-color: #329f9a;
+    color: #ffffff;
+    border: solid 2px #329f9a;
+}
+
+.cta-primary:hover {
+    color: #ffffff;
+    background: #329f9a;
+    border: solid 2px #329f9a !important;
+}
+
+.cta-secondary {
+    border: solid 2px #329f9a;
+    color: #329f9a;
+}
+
+.cta-secondary:hover {
+    color: #ffffff;
+    background: #329f9a;
 }

@@ -1,13 +1,46 @@
-.feature-list-icon-box{
+.feature-list-icon-box {
     color: #bbcc31;
 }
-.card-tag{
+
+.card-tag {
     color: #fff;
     background-color: #bbcc31;
 }
-.contentSection-container ul li::before{
+
+.contentSection-container ul li::before {
     color: #bbcc31 !important;
 }
-ul li::before{
+
+ul li::before {
     color: #bbcc31 !important;
+}
+
+.cta {
+    color: #bbcc31;
+}
+
+.cta-default:hover {
+    color: #bbcc31;
+}
+
+.cta-primary {
+    background-color: #bbcc31;
+    color: #ffffff;
+    border: solid 2px #bbcc31;
+}
+
+.cta-primary:hover {
+    color: #ffffff;
+    background: #bbcc31;
+    border: solid 2px #bbcc31 !important;
+}
+
+.cta-secondary {
+    border: solid 2px #bbcc31;
+    color: #bbcc31;
+}
+
+.cta-secondary:hover {
+    color: #ffffff;
+    background: #bbcc31;
 }
