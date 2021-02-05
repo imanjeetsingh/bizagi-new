@@ -46,7 +46,7 @@ ul li::before {
 }
 
 .cta-primary:hover {
-    color: #ffffff;
+    color: #ffffff !important;
     background: #bbcc31;
     border: solid 2px #bbcc31 !important;
 }
@@ -57,7 +57,7 @@ ul li::before {
 }
 
 .cta-secondary:hover {
-    color: #ffffff;
+    color: #ffffff !important;
     background: #bbcc31;
 }
 
