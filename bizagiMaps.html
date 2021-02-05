@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/579865/jquery-jvectormap-1.1.1.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/579865/jquery-jvectormap-world-mill.js"></script>
+</head>
+<style>
+    .map-world {
+        background-color: #F9F9F9;
+        margin-top: 4rem;
+    }
+    
+    @media (min-width: 1200px) {
+        .map-container {
+            padding-bottom: 3rem;
+        }
+    }
+    
+    .jvectormap-container {
+        background-color: unset !important;
+        min-height: 500px;
+    }
+    
+    @media (min-width: 1200px) {
+        .jvectormap-container {
+            min-width: 945px;
+        }
+    }
+    
+    .jvectormap-label {
+        position: absolute;
+        display: none;
+        border: solid 1px #CDCDCD;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        background: #292929;
+        color: white;
+        font-family: sans-serif, Verdana;
+        font-size: smaller;
+        padding: 3px;
+    }
+    
+    .jvectormap-zoomin,
+    .jvectormap-zoomout {
+        display: none;
+    }
+    
+    .academyMod .modal-header {
+        background: #f7f7f7;
+        border-radius: 4px 4px 0 0;
+    }
+    
+    button.close {
+        right: 10px;
+        margin: 0;
+        clear: both;
+        position: absolute;
+        z-index: 1;
+        font-size: 1.1rem;
+        color: #d9d9d9;
+        border: none;
+    }
+    
+    button.close:hover {
+        color: #d9d9d9;
+    }
+    
+    .academyMod img {
+        border: 1px solid #ddd;
+    }
+    
+    .academyMod h2 {
+        font-size: 22px;
+        font-weight: 600;
+        font-family: "Source Sans Pro", "Titillium Web", "Helvetica Neue", Helvetica, sans-serif;
+        color: #4b5c67;
+        padding-left: 0.6rem;
+        margin-right: auto;
+    }
+    
+    .univlist {
+        padding: 20px 30px;
+        max-height: 400px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    
+    .modal-body {
+        background: #fff;
+        border-radius: 10px;
+        text-align: left;
+    }
+    
+    .univlist ul {
+        padding: 0 20px;
+        margin: 0;
+    }
+    
+    .univlist ul li {
+        padding: 5px 0;
+        color: #6d7278;
+        line-height: 27.5px;
+    }
+    
+    .pull-left {
+        width: auto !important;
+    }
+    
+    #academicList li::before,
+    #academicList li::marker {
+        list-style: none !important;
+        content: "" !important;
+    }
+    
+    @media (min-width: 768px) {
+        .modal-dialog {
+            max-width: 580px !important;
+        }
+    }
+</style>
+
+<body>
+    <section class="map-world">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 map-container">
+                    <h3 class="contentSection-box-heading text-center">Click on the map to see universities that already joined!</h3>
+                    <div id="map"></div>
+                    <div class="modal fade academyMod" id="modalDetailMap" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="modalLabelCountryName">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">
+                                    <span aria-hidden="true">&times;</span>
+                                    <span class="sr-only">X</span>
+                                </button>
+                                    <img id="imgFlag" class="pull-left" border="0" width="60" height="30" />
+                                    <h2 class="modal-title" id="modalLabelCountryName"></h2>
+                                </div>
+                                <div class="modal-body univlist">
+                                    <ul id="academicList"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    $(function() {
+        $('#modalDetailMap').modal({
+            show: false
+        });
+
+        var dataCountries = null;
+
+        $.get("https://www.bizagi.com/assets/data/universities.xml", function(data) {
+            dataCountries = data;
+        });
+
+        //INITIAL MAPS
+        $.getJSON('https://www.bizagi.com/assets/data/universities.json', function(cdata) {
+            $('#map').vectorMap({
+                map: 'world_mill',
+                zoomButtons: false,
+                zoomOnScroll: false,
+                backgroundColor: '#F9F9F9',
+                regionsSelectable: false,
+                regionStyle: {
+                    initial: {
+                        fill: '#CCE6E3'
+                    }
+                },
+                series: {
+                    //this is the object for passing country/region data into
+                    regions: [{
+                        //define the range of color values
+                        scale: ['#FFFFFF', '#1EA59A'],
+                        //define the function that maps data to color range
+                        normalizeFunction: 'linear',
+                        //define the coloration method
+                        attribute: 'fill',
+                        //define the array of country data
+                        values: cdata
+                    }]
+                }
+            });
+            $('#map').on('click', function(e) {
+                if (~e.target.className.baseVal.indexOf('jvectormap-region')) {
+                    $('#academicList').html('');
+                    code = $(e.target).attr("data-code").toLowerCase();
+                    var $nodeCountry = $(dataCountries).find("code:contains('" + code + "')").parent()
+                    if ($nodeCountry.length > 0) {
+                        $('#modalLabelCountryName').text($nodeCountry.find('label_en').text());
+                        $('#imgFlag').attr('src', 'https://www.bizagi.com/assets/images/flags/' + $nodeCountry.find('flag').text());
+                        $nodeCountry.find('universities > name').each(function(index, element) {
+                            var li = $('<li/>').text($(element).text());
+                            $('#academicList').append(li);
+                        });
+                        $('#modalDetailMap').modal('show');
+                    }
+                }
+            });
+            //FINAL MAPAS
+        });
+    });
+</script>
+
+</html>
