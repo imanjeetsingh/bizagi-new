@@ -151,7 +151,6 @@ ul li::before {
     color: #f9c53e;
 }
 
-a {}
 
 a {
     color: #329f9a;
@@ -161,4 +160,14 @@ a:hover {
     color: #329f9a !important;
     text-decoration: underline;
     transition: background-color .3s ease-out, color .3s linear;
+}
+
+.yellow-color .card-title {
+    color: #f9c53e;
+}
+.teal-color .card-title{
+    color: #329f9a;
+}
+.green-color .card-title{
+    color: #bbcc31;
 }
