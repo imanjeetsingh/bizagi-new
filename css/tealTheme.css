@@ -1,0 +1,13 @@
+.feature-list-icon-box{
+    color: #329f9a;
+}
+.card-tag{
+    color: #fff;
+    background-color: #329f9a;
+}
+.contentSection-container ul li::before{
+    color: #329f9a !important;
+}
+ul li::before{
+    color: #329f9a !important;
+}
