@@ -6413,7 +6413,8 @@ ul.options > li {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.125rem;
   line-height: 1.375rem;
-  color: #6D7278; }
+  color: #6D7278;
+  font-weight: 300; }
   .newsDetail-heading {
     font-size: 1.125rem;
     line-height: 1.375rem;
@@ -6622,6 +6623,78 @@ a {
   padding-top: 0;
   padding-bottom: 0;
   justify-content: unset; }
+
+.yellow-color .cta {
+  color: #f9c53e; }
+
+.yellow-color .cta-default:hover {
+  color: #f9c53e; }
+
+.yellow-color .cta-primary {
+  background-color: #f9c53e;
+  color: #ffffff;
+  border: solid 2px #f9c53e; }
+
+.yellow-color .cta-primary:hover {
+  color: #ffffff !important;
+  background: #f9c53e;
+  border: solid 2px #f9c53e !important; }
+
+.yellow-color .cta-secondary {
+  border: solid 2px #f9c53e;
+  color: #f9c53e; }
+
+.yellow-color .cta-secondary:hover {
+  color: #ffffff !important;
+  background: #f9c53e; }
+
+.teal-color .cta {
+  color: #f9c53e; }
+
+.teal-color .cta-default:hover {
+  color: #f9c53e; }
+
+.teal-color .cta-primary {
+  background-color: #f9c53e;
+  color: #ffffff;
+  border: solid 2px #f9c53e; }
+
+.teal-color .cta-primary:hover {
+  color: #ffffff !important;
+  background: #f9c53e;
+  border: solid 2px #f9c53e !important; }
+
+.teal-color .cta-secondary {
+  border: solid 2px #f9c53e;
+  color: #f9c53e; }
+
+.teal-color .cta-secondary:hover {
+  color: #ffffff !important;
+  background: #f9c53e; }
+
+.green-color .cta {
+  color: #f9c53e; }
+
+.green-color .cta-default:hover {
+  color: #f9c53e; }
+
+.green-color .cta-primary {
+  background-color: #f9c53e;
+  color: #ffffff;
+  border: solid 2px #f9c53e; }
+
+.green-color .cta-primary:hover {
+  color: #ffffff !important;
+  background: #f9c53e;
+  border: solid 2px #f9c53e !important; }
+
+.green-color .cta-secondary {
+  border: solid 2px #f9c53e;
+  color: #f9c53e; }
+
+.green-color .cta-secondary:hover {
+  color: #ffffff !important;
+  background: #f9c53e; }
 
 .contentSection-container ul li {
   font-family: "Open Sans", sans-serif;
@@ -7445,8 +7518,7 @@ li.nav-list-sublist.active .dropdown-item {
   .inner-banner .banner-heading {
     font-size: 2.5rem;
     line-height: 2.75rem;
-    margin-bottom: 1rem;
-    word-break: break-word; }
+    margin-bottom: 1rem; }
     @media (min-width: 992px) {
       .inner-banner .banner-heading {
         padding: 7.2rem 0 0 0;
