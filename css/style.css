@@ -7446,7 +7446,8 @@ li.nav-list-sublist.active .dropdown-item {
   .inner-banner .banner-heading {
     font-size: 2.5rem;
     line-height: 2.75rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    word-break: break-word; }
     @media (min-width: 992px) {
       .inner-banner .banner-heading {
         padding: 7.2rem 0 0 0;
@@ -10814,7 +10815,6 @@ ul.rc-pagination.sui-paging li::before {
       left: 25px; } }
 
 .banner-bg {
-  position: relative;
   height: auto;
   padding: 140px 0 100px 0;
   margin-top: -7rem;
@@ -10828,9 +10828,6 @@ ul.rc-pagination.sui-paging li::before {
   @media (min-width: 992px) {
     .banner-bg {
       margin-top: -8rem; } }
-  @media (min-width: 1200px) {
-    .banner-bg {
-      position: unset; } }
   @media (min-width: 3000px) {
     .banner-bg {
       padding: 140px 0 250px 0; } }
