@@ -1,18 +1,18 @@
 .feature-list-icon-box {
-    color: #329f9a;
+    color: #bbcc31;
 }
 
 .card-tag {
     color: #fff;
-    background-color: #329f9a;
+    background-color: #bbcc31;
 }
 
 .contentSection-container ul li::before {
-    color: #329f9a !important;
+    color: #bbcc31 !important;
 }
 
 ul li::before {
-    color: #329f9a !important;
+    color: #bbcc31 !important;
 }
 
 .cyan .card-title {
