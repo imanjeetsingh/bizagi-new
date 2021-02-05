@@ -6649,52 +6649,52 @@ a {
   background: #f9c53e; }
 
 .teal-color .cta {
-  color: #f9c53e; }
+  color: #329f9a; }
 
 .teal-color .cta-default:hover {
-  color: #f9c53e; }
+  color: #329f9a; }
 
 .teal-color .cta-primary {
-  background-color: #f9c53e;
+  background-color: #329f9a;
   color: #ffffff;
-  border: solid 2px #f9c53e; }
+  border: solid 2px #329f9a; }
 
 .teal-color .cta-primary:hover {
   color: #ffffff !important;
-  background: #f9c53e;
-  border: solid 2px #f9c53e !important; }
+  background: #329f9a;
+  border: solid 2px #329f9a !important; }
 
 .teal-color .cta-secondary {
-  border: solid 2px #f9c53e;
-  color: #f9c53e; }
+  border: solid 2px #329f9a;
+  color: #329f9a; }
 
 .teal-color .cta-secondary:hover {
   color: #ffffff !important;
-  background: #f9c53e; }
+  background: #329f9a; }
 
 .green-color .cta {
-  color: #f9c53e; }
+  color: #bbcc31; }
 
 .green-color .cta-default:hover {
-  color: #f9c53e; }
+  color: #bbcc31; }
 
 .green-color .cta-primary {
-  background-color: #f9c53e;
+  background-color: #bbcc31;
   color: #ffffff;
-  border: solid 2px #f9c53e; }
+  border: solid 2px #bbcc31; }
 
 .green-color .cta-primary:hover {
   color: #ffffff !important;
-  background: #f9c53e;
-  border: solid 2px #f9c53e !important; }
+  background: #bbcc31;
+  border: solid 2px #bbcc31 !important; }
 
 .green-color .cta-secondary {
-  border: solid 2px #f9c53e;
-  color: #f9c53e; }
+  border: solid 2px #bbcc31;
+  color: #bbcc31; }
 
 .green-color .cta-secondary:hover {
   color: #ffffff !important;
-  background: #f9c53e; }
+  background: #bbcc31; }
 
 .contentSection-container ul li {
   font-family: "Open Sans", sans-serif;
