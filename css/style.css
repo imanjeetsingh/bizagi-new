@@ -11156,3 +11156,48 @@ ul.rc-pagination.sui-paging li::before {
 
 .navbar .navmenu.level_1 {
   margin-top: 3rem; }
+
+.yellow-color .card-title {
+  color: #f9c53e; }
+
+.teal-color .card-title {
+  color: #329f9a; }
+
+.green-color .card-title {
+  color: #bbcc31; }
+
+.teal-color .card-title {
+  order: 2; }
+
+.teal-color img {
+  order: 1; }
+
+.teal-color p {
+  order: 3; }
+
+.teal-color .cta-group {
+  order: 4; }
+
+.green-color .card-title {
+  order: 2; }
+
+.green-color img {
+  order: 1; }
+
+.green-color p {
+  order: 3; }
+
+.green-color .cta-group {
+  order: 4; }
+
+.yellow-color .card-title {
+  order: 2; }
+
+.yellow-color img {
+  order: 1; }
+
+.yellow-color p {
+  order: 3; }
+
+.yellow-color .cta-group {
+  order: 4; }
