@@ -151,6 +151,12 @@ ul li::before {
     color: #f9c53e;
 }
 
+a {}
+
+a {
+    color: #329f9a;
+}
+
 a:hover {
     color: #329f9a !important;
     text-decoration: underline;

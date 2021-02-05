@@ -1,6 +1,7 @@
 .search-form-side #search-input-side {
     display: none;
 }
+
 .feature-list-icon-box {
     color: #bbcc31;
 }
@@ -149,6 +150,11 @@ ul li::before {
     color: #ffffff;
     background: #f9c53e;
 }
+
+a {
+    color: #bbcc31;
+}
+
 a:hover {
     color: #bbcc31 !important;
     text-decoration: underline;
