@@ -1,4 +1,4 @@
-.feature-list-icon-box {
+    .feature-list-icon-box {
     color: #329f9a;
 }
 
@@ -43,4 +43,12 @@ ul li::before {
 .cta-secondary:hover {
     color: #ffffff;
     background: #329f9a;
-}
+    .cyan .card-title {
+        color: #bbcc31;
+    }
+    .teal .card-title {
+        color: #329f9a;
+    }
+    .yellow .card-title {
+        color: #f9c53e;
+    }

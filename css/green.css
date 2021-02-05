@@ -1,0 +1,28 @@
+.feature-list-icon-box {
+    color: #bbcc31;
+}
+
+.card-tag {
+    color: #fff;
+    background-color: #bbcc31;
+}
+
+.contentSection-container ul li::before {
+    color: #bbcc31 !important;
+}
+
+ul li::before {
+    color: #bbcc31 !important;
+}
+
+.cyan .card-title {
+    color: #bbcc31;
+}
+
+.teal .card-title {
+    color: #329f9a;
+}
+
+.yellow .card-title {
+    color: #f9c53e;
+}
