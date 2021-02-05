@@ -60,32 +60,92 @@ ul li::before {
     background: #bbcc31;
 }
 
-.yellow .cta {
+.yellow-color .cta {
     color: #f9c53e;
 }
 
-.yellow .cta-default:hover {
+.yellow-color .cta-default:hover {
     color: #f9c53e;
 }
 
-.yellow .cta-primary {
+.yellow-color .cta-primary {
     background-color: #f9c53e;
     color: #ffffff;
     border: solid 2px #f9c53e;
 }
 
-.yellow .cta-primary:hover {
+.yellow-color .cta-primary:hover {
     color: #ffffff;
     background: #f9c53e;
     border: solid 2px #f9c53e !important;
 }
 
-.yellow .cta-secondary {
+.yellow-color .cta-secondary {
     border: solid 2px #f9c53e;
     color: #f9c53e;
 }
 
-.yellow .cta-secondary:hover {
+.yellow-color .cta-secondary:hover {
+    color: #ffffff;
+    background: #f9c53e;
+}
+
+.teal-color .cta {
+    color: #f9c53e;
+}
+
+.teal-color .cta-default:hover {
+    color: #f9c53e;
+}
+
+.teal-color .cta-primary {
+    background-color: #f9c53e;
+    color: #ffffff;
+    border: solid 2px #f9c53e;
+}
+
+.teal-color .cta-primary:hover {
+    color: #ffffff;
+    background: #f9c53e;
+    border: solid 2px #f9c53e !important;
+}
+
+.teal-color .cta-secondary {
+    border: solid 2px #f9c53e;
+    color: #f9c53e;
+}
+
+.teal-color .cta-secondary:hover {
+    color: #ffffff;
+    background: #f9c53e;
+}
+
+.green-color .cta {
+    color: #f9c53e;
+}
+
+.green-color .cta-default:hover {
+    color: #f9c53e;
+}
+
+.green-color .cta-primary {
+    background-color: #f9c53e;
+    color: #ffffff;
+    border: solid 2px #f9c53e;
+}
+
+.green-color .cta-primary:hover {
+    color: #ffffff;
+    background: #f9c53e;
+    border: solid 2px #f9c53e !important;
+}
+
+.green-color .cta-secondary {
+    border: solid 2px #f9c53e;
+    color: #f9c53e;
+}
+
+.green-color .cta-secondary:hover {
     color: #ffffff;
     background: #f9c53e;
 }
