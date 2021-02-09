@@ -4,6 +4,13 @@
     height: 100%;
 }
 
+// @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+//     .shadow-wrapper {
+//         min-height: 100%;
+
+//     }
+// }
+
 .tag-box-v2 {
     // background: #fafafa;
     border: solid 1px #eee;
@@ -19,9 +26,10 @@
     padding: 2px 7px;
     font-weight: 500;
     margin: 0;
-} 
-.shadow-wrapper .cta.cta-primary:hover { 
-    background-color: #F28C20; 
+}
+
+.shadow-wrapper .cta.cta-primary:hover {
+    background-color: #F28C20;
     border: solid 2px #F28C20 !important;
 }
 
@@ -49,18 +57,18 @@
 // }
 .eventsDateBadge p {
     font-size: 18px;
-    text-align: center!important;
-    line-height: 1!important;
+    text-align: center !important;
+    line-height: 1 !important;
 }
 
 .eventsDateBadge p span {
     font-size: 14px;
     font-weight: bold;
     color: #fff;
-    text-transform: uppercase!important;
-    display: block!important;
+    text-transform: uppercase !important;
+    display: block !important;
     border-radius: 3px;
-    padding: 6px 0 6px 0!important;
+    padding: 6px 0 6px 0 !important;
 }
 
 .eventsDateBadge p span {
@@ -105,10 +113,12 @@
     // padding-left: 15px;
     vertical-align: top;
     margin-top: 0;
-    @include media(tablet){
+
+    @include media(tablet) {
         // margin-top: -1.4375rem;
     }
-    @include media(desktop){
+
+    @include media(desktop) {
         margin-top: 0;
     }
 }
@@ -122,11 +132,13 @@
     -webkit-border-radius: 4px;
     padding: 4px;
     margin-bottom: 1.25rem;
+
     // margin-left: -15px;
     @include media(tablet) {
         // margin-bottom: 20px;
         // margin-top: 23px;
     }
+
     @include media(desktop) {
         margin-top: 0;
         // margin-left: -1.4375rem;
@@ -137,7 +149,7 @@
 //     width: 2.5rem;
 // }
 
-.events-date-to{
+.events-date-to {
     margin: 1rem;
 }
 
@@ -148,26 +160,30 @@
     min-height: 1px;
     min-width: 100%;
     height: 100%;
+
     // @include media (desktop) {
     //     width: 89%;
     // }
-    .card-cta{
-        bottom: -1rem;
-    }
-    .tag-box{
-        .list-inline{
-            li{
+    // .card-cta {
+    //     bottom: -1rem;
+    // }
+
+    .tag-box {
+        .list-inline {
+            li {
                 padding-left: 0;
                 color: #6d7278;
-                .fa-map-marker{
+
+                .fa-map-marker {
                     margin-top: 1rem;
                 }
             }
         }
     }
-    .shadow-wrapper{
-        .tag-box{
-            h2{
+
+    .shadow-wrapper {
+        .tag-box {
+            h2 {
                 font-weight: 700;
             }
         }
@@ -198,19 +214,23 @@
         text-decoration: none;
     }
 }
-.calendar{
+
+.calendar {
     margin-bottom: 2rem;
-    th.fc-widget-header{
+
+    th.fc-widget-header {
         width: 14.28%;
     }
 }
+
 // edit card  height equal
-.eventsListItem{
+.eventsListItem {
     display: table;
     height: 100%;
     width: 100%;
 }
-.course-calender-heading{
+
+.course-calender-heading {
     margin-top: 3rem;
     font-size: 2rem;
     text-transform: capitalize;
