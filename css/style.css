@@ -5526,7 +5526,8 @@ ul li::before {
   height: auto; }
 
 .blogDetail-container img {
-  width: 100%; }
+  width: 100% !important;
+  height: auto !important; }
 
 .blogDetail-container .breadcrumb {
   padding: 0; }
@@ -10039,14 +10040,6 @@ dd.officeList-direction a {
 .platform-card ul li::before {
   list-style: none;
   color: #6D7278; }
-
-.platform-three-column-card {
-  min-height: 100%; }
-  .platform-three-column-card .card {
-    position: unset; }
-    @media (min-width: 768px) {
-      .platform-three-column-card .card {
-        position: relative; } }
 
 .resultsList h3 {
   font-weight: 800;
