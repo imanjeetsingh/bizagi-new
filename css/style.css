@@ -5655,8 +5655,8 @@ ul li::before {
   display: inline-block; }
   .blogDetail-placeholder-image img {
     border-radius: 50%;
-    width: 5rem;
-    height: auto; }
+    width: 5rem !important;
+    height: auto !important; }
 
 .breadcrumb {
   padding: 0 2%;

@@ -170,8 +170,8 @@
             display: inline-block;
             img {
                 border-radius: 50%;
-                width: 5rem;
-                height: auto;
+                width: 5rem !important;
+                height: auto !important;
             }
         }
     }
