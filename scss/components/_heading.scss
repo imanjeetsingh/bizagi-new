@@ -364,3 +364,20 @@ ul li::before {
 .navmenu.level_1 li{
     list-style: none !important;
 }
+// for video test
+.youtue-responsive-video {
+    width: 100%;
+    height: 203px;
+    @include media(tablet){
+        width: 85%;
+        height: 345px;
+    }
+    @include media(desktop){
+        width: 100%;
+        height: 512px;
+    }
+    @include media(xldesktop) {
+        width: 45%;
+        height: 288px;
+    }
+}

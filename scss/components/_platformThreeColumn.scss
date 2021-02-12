@@ -111,3 +111,12 @@
             color: #6D7278;
         }
     }
+    .platform-three-column-card{
+        min-height: 100%;
+        .card{
+            position: unset;
+            @include media(tablet){
+                position: relative;
+            }
+        }
+    }
