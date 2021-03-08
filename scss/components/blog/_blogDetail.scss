@@ -6,7 +6,7 @@
             height: auto;
         }
         img {
-            width: 100% !important;
+            width: 50% !important;
             height: auto !important;
         }
         .breadcrumb {
@@ -49,16 +49,16 @@
             object-fit: cover;
             object-position: center;
             &-box {
-                height: 11rem;
-                @include media (tablet) {
-                    height: 22rem;
-                }
-                @include media (desktop) {
-                    height: 26rem;
-                }
-                @include media (xldesktop) {
-                    height: 38rem;
-                }
+                // height: 11rem;
+                // @include media (tablet) {
+                //     height: 22rem;
+                // }
+                // @include media (desktop) {
+                //     height: 26rem;
+                // }
+                // @include media (xldesktop) {
+                //     height: 38rem;
+                // }
             }
         }
         &-heading {

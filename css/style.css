@@ -5526,7 +5526,7 @@ ul li::before {
   height: auto; }
 
 .blogDetail-container img {
-  width: 100% !important;
+  width: 50% !important;
   height: auto !important; }
 
 .blogDetail-container .breadcrumb {
@@ -5553,17 +5553,6 @@ ul li::before {
   height: 100%;
   object-fit: cover;
   object-position: center; }
-  .blogDetail-article-image-box {
-    height: 11rem; }
-    @media (min-width: 768px) {
-      .blogDetail-article-image-box {
-        height: 22rem; } }
-    @media (min-width: 992px) {
-      .blogDetail-article-image-box {
-        height: 26rem; } }
-    @media (min-width: 1200px) {
-      .blogDetail-article-image-box {
-        height: 38rem; } }
 
 .blogDetail-article-heading {
   font-family: "Open Sans", sans-serif;
