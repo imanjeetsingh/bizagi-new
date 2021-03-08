@@ -5526,7 +5526,8 @@ ul li::before {
   height: auto; }
 
 .blogDetail-container img {
-  width: 100%; }
+  width: 50% !important;
+  height: auto !important; }
 
 .blogDetail-container .breadcrumb {
   padding: 0; }
@@ -5552,17 +5553,6 @@ ul li::before {
   height: 100%;
   object-fit: cover;
   object-position: center; }
-  .blogDetail-article-image-box {
-    height: 11rem; }
-    @media (min-width: 768px) {
-      .blogDetail-article-image-box {
-        height: 22rem; } }
-    @media (min-width: 992px) {
-      .blogDetail-article-image-box {
-        height: 26rem; } }
-    @media (min-width: 1200px) {
-      .blogDetail-article-image-box {
-        height: 38rem; } }
 
 .blogDetail-article-heading {
   font-family: "Open Sans", sans-serif;
@@ -5654,8 +5644,8 @@ ul li::before {
   display: inline-block; }
   .blogDetail-placeholder-image img {
     border-radius: 50%;
-    width: 5rem;
-    height: auto; }
+    width: 5rem !important;
+    height: auto !important; }
 
 .breadcrumb {
   padding: 0 2%;
@@ -10039,14 +10029,6 @@ dd.officeList-direction a {
 .platform-card ul li::before {
   list-style: none;
   color: #6D7278; }
-
-.platform-three-column-card {
-  min-height: 100%; }
-  .platform-three-column-card .card {
-    position: unset; }
-    @media (min-width: 768px) {
-      .platform-three-column-card .card {
-        position: relative; } }
 
 .resultsList h3 {
   font-weight: 800;
