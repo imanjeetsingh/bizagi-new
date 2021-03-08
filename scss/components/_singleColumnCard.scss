@@ -1,0 +1,33 @@
+.vertical-card {
+    .card {
+        &-inner {
+            @include media(desktop) {
+                display: flex;
+                flex-direction: row;
+                height: calc(100% - 2rem) !important;
+            }
+        }
+        &-img {
+            &-top {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-cta {
+            bottom: -0.5rem;
+        }
+    }
+    &-center {
+        justify-content: center;
+    }
+    .card-image-box {
+        height: auto !important;
+        width: 100%;
+    }
+}
+
+.horizontal-card {
+    &-center {
+        justify-content: center;
+    }
+}

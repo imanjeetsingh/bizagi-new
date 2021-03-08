@@ -1,0 +1,422 @@
+#es {
+
+    .inner-header {
+        #languages {
+            @include media(desktop) {
+                margin-left: -1px;
+            }
+
+        }
+
+        .affix {
+            #languages {
+                @include media(desktop) {
+                    position: absolute;
+                    margin-left: -3px;
+                }
+
+                @include media(xldesktop) {
+                    top: 0.625rem;
+                }
+            }
+        }
+    }
+
+    .home-header .nav-links-box {
+        @include media(xxldesktop) {
+            margin-left: -37px;
+        }
+    }
+
+    .home-header .nav-search-box {
+        @include media(xxldesktop) {
+            margin-left: 30px;
+        }
+    }
+
+    .affix.home-header .nav-links-box {
+        @include media(xxldesktop) {
+            margin-left: -50px !important;
+        }
+    }
+}
+
+.inner-header.affix .multilang-dropdown {
+    @include media(desktop) {
+        position: absolute;
+        margin-top: -27px;
+    }
+
+    .affix.home-header .multilang-container {
+        @include media(xxldesktop) {
+            margin-left: -9px;
+        }
+    }
+}
+
+#es .affix.home-header .nav-links-box .search-container {
+    @include media(xxldesktop) {
+        margin-left: 5rem;
+        margin-top: 1rem;
+    }
+}
+
+#de {
+    .affix.home-header .nav-links-box {
+        @include media(xxldesktop) {
+            margin-left: -18px !important;
+        }
+    }
+
+    .home-header .multilang-container {
+        @include media(xxldesktop) {
+            margin-left: -3px;
+        }
+    }
+
+    .home-header.affix .multilang-container {
+        @include media(xxldesktop) {
+            margin-left: -8px;
+        }
+    }
+
+    .inner-header.affix .nav-links-box {
+        margin-left: -10px;
+
+        @media only screen and (min-width: 1280px) and (max-width: 1300px) {
+            margin-left: -31px;
+        }
+
+        @include media(xxldesktop) {
+            margin-left: -29px;
+        }
+    }
+
+    .inner-header.affix .nav-search-box {
+        margin-left: -10px;
+
+        @media only screen and (min-width: 1280px) and (max-width: 1300px) {
+            margin-left: -16px;
+        }
+
+        @include media(xxldesktop) {
+            margin-left: 20px;
+        }
+    }
+
+    .inner-header .multilang-container {
+        @include media(xxldesktop) {
+            margin-left: 15.2rem;
+        }
+    }
+
+    .inner-header .nav-links-box {
+        @include media(xxldesktop) {
+            margin-left: -29px;
+        }
+    }
+
+    .inner-header .nav-search-box {
+        @include media(xxldesktop) {
+            margin-left: 20px;
+        }
+    }
+
+    .inner-header.affix .multilang-container {
+        @include media(xxldesktop) {
+            margin-left: 0;
+            margin-top: 41px;
+        }
+    }
+
+    .inner-header.affix #search-form-header {
+        @media only screen and (min-width: 1280px) and (max-width: 1300px) {
+            margin-right: 0;
+        }
+    }
+}
+
+#es .affix.home-header .multilang-container {
+    @include media(xxldesktop) {
+        margin-left: -10px;
+    }
+}
+
+#es .inner-header .nav-links-box {
+    @media only screen and (min-width: 1280px) and (max-width: 1300px) {
+        margin-left: -82px;
+    }
+
+    @include media(xxldesktop) {
+        margin-left: -3rem;
+    }
+}
+
+#es .inner-header .nav-search-box {
+    @include media(xxldesktop) {
+        margin-left: 10px;
+    }
+}
+
+#es .inner-header #languages {
+    @include media(xxldesktop) {
+        margin-left: 16.2rem;
+    }
+}
+
+#es .affix.inner-header #languages {
+    @include media(xxldesktop) {
+        margin-left: -0.2rem;
+        margin-top: 2.4rem;
+    }
+}
+
+#es .home-header.affix #search-form-header {
+    @include media(xxldesktop) {
+        left: -12.5rem !important;
+    }
+}
+
+#es .affix.home-header .nav-links-box {
+    @include media(desktop) {
+        margin-left: -48px !important;
+    }
+}
+
+#es .inner-header.affix .nav-links-box {
+    @include media(xldesktop) {
+        margin-left: -18px;
+        margin-top: 2px;
+    }
+
+    @media only screen and (min-width: 1280px) and (max-width: 1300px) {
+        margin-left: -49px;
+    }
+
+    @include media(xxldesktop) {
+        margin-left: -48px;
+    }
+}
+
+#pt .home-header .nav-links-box {
+    @include media(xxldesktop) {
+        margin-left: -3rem;
+    }
+}
+
+#pt .home-header .nav-search-box {
+    @include media(xxldesktop) {
+        margin-left: 10px;
+    }
+}
+
+#pt .affix.home-header .nav-links-box {
+    @include media(xxldesktop) {
+        margin-left: -50px !important;
+    }
+}
+
+#pt .affix.home-header .nav-links-box .search-container {
+    @include media(xxldesktop) {
+        margin-left: 5rem;
+        margin-top: 1rem;
+    }
+}
+
+#pt .home-header.affix #search-form-header {
+    @include media(xxldesktop) {
+        margin-left: 3.5rem !important;
+    }
+}
+
+#pt .inner-header .nav-links-box {
+    @include media(desktop) {
+        margin-left: -45px;
+    }
+
+    @media only screen and (min-width: 1280px) and (max-width: 1300px) {
+        margin-left: -9px;
+    }
+
+    @include media(xxldesktop) {
+        margin-left: -48px;
+    }
+}
+
+#pt .affix.inner-header .nav-links-box {
+    @include media(xldesktop) {
+        margin-left: -7px;
+        margin-top: 2px;
+    }
+
+    // @include media(xxldesktop){
+    //     margin-left: -51px !important;
+    // }
+    @include media(xxldesktop) {
+        margin-left: -49px;
+    }
+}
+
+#pt .affix.inner-header .nav-search-box {
+    @include media(xldesktop) {
+        margin-left: -2px;
+        margin-top: 2.3rem;
+    }
+
+    @media only screen and (min-width: 1280px) and (max-width: 1300px) {
+        margin-left: 10px;
+    }
+
+    @include media(xxldesktop) {
+        margin-left: 10px;
+    }
+}
+
+#pt .affix.inner-header #search-form-header {
+    @include media(desktop) {
+        margin-right: -1rem;
+    }
+
+    @media only screen and (min-width: 1280px) and (max-width: 1300px) {
+        margin-right: -2rem;
+    }
+}
+
+#pt .inner-header #search-form-header {
+    @include media(desktop) {
+        margin-right: -1rem;
+    }
+
+    @media only screen and (min-width: 1280px) and (max-width: 1300px) {
+        margin-right: -2rem;
+    }
+}
+
+#pt .inner-header .multilang-container {
+    @include media(xxldesktop) {
+        margin-left: 15.5rem;
+    }
+}
+
+#pt .inner-header .nav-search-box {
+    @include media(xxldesktop) {
+        margin-left: 10px;
+    }
+}
+
+#pt .affix.inner-header .multilang-container {
+    @include media(xxldesktop) {
+        margin-top: 38px;
+        margin-left: 0px;
+    }
+}
+
+#en .inner-header.affix .multilang-container {
+    @include media(xxldesktop) {
+        margin-top: 41px !important;
+    }
+}
+
+#es .inner-header.affix .nav-search-box {
+    @include media(xldesktop) {
+        margin-left: -10px;
+        margin-top: 37px;
+    }
+
+    @media only screen and (min-width: 1280px) and (max-width: 1300px) {
+        margin-left: -27px;
+    }
+
+    @include media(xxldesktop) {
+        margin-left: 10px;
+    }
+}
+
+#en .affix.inner-header .multilang-container {
+    @include media(xldesktop) {
+        margin-top: 5px;
+    }
+}
+
+#de .inner-header .multilang-container {
+    @include media(desktop) {
+        margin-top: 5px;
+    }
+}
+// landscape view ipad
+
+#de .inner-header .multilang-container {
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        margin-top: 2.5rem;
+    }
+}
+#de .inner-header.affix .nav-links-box {
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        margin-left: -2.9rem;
+    }
+}
+#de .inner-header.affix .search-box{
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        margin-left: 3.1rem;
+    }
+}
+#en .inner-header .multilang-container{
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        margin-top: 2.3rem;
+    }
+}
+#es .inner-header #languages{
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        margin-left: 2px;
+    }
+}
+#es .inner-header .cta-group{
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        margin-left: -0.7rem;
+    }
+}
+#es .inner-header.affix .nav-links-box{
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        margin-left: -3rem;
+        margin-top: 3px
+    }
+}
+#es .inner-header.affix .search-container{
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        margin-top: 2.7rem;
+        margin-left: 4.2rem;
+    }
+}
+#pt .inner-header.affix .search-box{
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        margin-left: 3.1rem;
+    }
+}
+#pt .affix.inner-header #search-form-header{
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        margin-right: 1rem;
+    }
+}
+#pt .inner-header #search-form-header{
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        margin-right: 1rem;
+    }
+}
+#pt .inner-header.affix .nav-links-box{
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        margin-top: 3px;
+        margin-left: -42px;
+
+    }
+}
+#pt .inner-header.affix .search-container{
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        margin-top: 2.7rem;
+        margin-left: -10px;    
+    }
+}
+#pt .inner-header.affix .multilang-dropdown{
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        margin-top: -28px;
+    }
+}

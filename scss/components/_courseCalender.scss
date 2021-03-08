@@ -1,0 +1,76 @@
+.courseCalender {
+    .eventsBody {
+        color: #6d7278;
+    }
+    .title {
+        // font-size: 1.25rem;
+        // line-height: 1.5rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+    .label {
+        font-weight: 800;
+        padding: 0.5rem 0;
+        width: 8.125rem;
+        @include media (tablet) {
+            width: 8.125rem;
+        }
+    }
+    .list-inline {
+        margin: 0;
+    }
+    .list-inline>li {
+        padding: 0.5rem 0 0.5rem 2rem;
+    }
+    td {
+        padding: 0 0rem 0 0rem;
+        @include media (tablet) {
+            padding: 0;
+        }
+        @include media(desktop){
+            padding: 0 10px;
+        }
+        @include media (xldesktop) {
+            padding: 0;
+        }
+    }
+    .city {
+        display: inline-block;
+        width: 100%;
+        font-weight: 600;
+        // @include media (tablet) {
+        //     width: 8.625rem;
+        // }
+        // @include media (desktop) {
+        //     width: 8.6875rem;
+        // }
+        // @include media (xldesktop) {
+        //     width: 9.0625rem;
+        // }
+    }
+    .time {
+        width: 11.625rem;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+    .cta-group {
+        margin: 0 -0.5rem;
+    }
+    @include mobile-only {
+        // font-size: 0.75rem;
+    }
+    .cta-primary {
+        margin-left: 2rem;
+    }
+    .soldOut {
+        margin-left: 1.6rem;
+        font-weight: 600;
+    }
+}
+
+.courseCalenerSection .contentSection-box-heading {
+    font-size: 0.8rem;
+    @include media (desktop) {
+        font-size: 1.5rem;
+    }
+}

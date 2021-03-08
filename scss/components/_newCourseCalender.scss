@@ -1,0 +1,35 @@
+.courseCalenerSection{
+    // .course{
+    //     &-calender{
+    //         &-heading{
+    //         }
+            
+    //     }
+    // }
+    .eventsInfoDate{
+        display: inline-flex;
+        margin-bottom: 1rem;
+        @include media (desktop){
+            margin-bottom: 1rem;
+        }
+    }
+    .eventsDateBadge.margin-top-20{
+        margin: 0 1rem;
+    }
+    // .eventsListItem p{
+        // width: 2.5rem;
+    // }
+    .eventsDateBadge{
+        width: 60px;
+    }
+    .events-date-to{
+        margin-top: 1rem;
+    }
+}
+.courseCalender .eventsDateBadge.margin-top-20 p{
+    width: 2.5rem;
+}
+.courseCalender .eventsInfoDate {
+    width: 10%;
+}
+

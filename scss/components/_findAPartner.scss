@@ -1,0 +1,37 @@
+.fapCard {
+    .element-item {
+        text-align: center;
+        @include media (tablet) {
+            text-align: left;
+        }
+    }
+    .card-inner {
+        // height: calc(100% - -2rem) !important;
+        width: 16rem;
+        @include media (tablet) {
+            width: 20.5rem;
+        }
+        @include media (desktop) {
+            width: 13rem;
+        }
+        @include media (xldesktop) {
+            width: 16rem;
+        }
+    }
+    .card-image-box {
+        position: static;
+        padding: 5rem 0 4rem 0;
+    }
+    .header-text {
+        background-color: #F28C20;
+        color: #ffffff;
+        padding: 0 1.2rem;
+        font-size: 0.875rem;
+        font-weight: 700;
+        line-height: 1.375rem;
+        position: absolute;
+        @include mobile-only {
+            left: 0;
+        }
+    }
+}

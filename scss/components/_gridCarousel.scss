@@ -1,0 +1,208 @@
+// Grid Carousel CSS starts 
+.owl {
+    &-carousel {
+        padding: 0;
+    }
+    &-prev {
+        margin: 0.5rem;
+    }
+    &-next {
+        margin: 0.5rem;
+    }
+}
+
+.flex-container {
+    display: block;
+    flex-wrap: nowrap;
+    @include media(tablet) {
+        display: flex;
+    }
+}
+
+.item {
+    &-row {
+        margin: 0 -0.125rem;
+    }
+}
+
+.article {
+    &-box {
+        // margin: 0 12px 2rem 0;
+        padding: 0 15px 0 15px;
+        font-size: 30px;
+        position: relative;
+        // width: calc(20% - 0.3rem);
+        width: 20%;
+        // @include media(tablet) {
+        //     width: 9.290624rem;
+        // }
+        // @include media(xldesktop) {
+        //     width: 13.882811737rem;
+        // }
+        @include media(tablet) {
+            padding: 0 2px 0 15px;
+            margin-bottom: 6px;
+        }
+        @include media(desktop) {
+            padding: 0 15px 0 15px;
+            font-size: 30px;
+            position: relative;
+            width: 20%;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+        &-link {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    &-image {
+        &-box {
+            // position: relative;
+            background-color: #ececec;
+            width: auto;
+            @include media(desktop) {
+                height: 94.83px;
+            }
+            @include media(xldesktop) {
+                height: 143.8px;
+            }
+        }
+        &-tag {
+            z-index: 1;
+            padding: 0.2rem;
+            background: #F38D1E;
+            color: #ffffff;
+            font-size: 0.75rem;
+            @include media(tablet) {
+                font-size: 0.45rem;
+            }
+            @include media(desktop) {
+                font-size: 0.75rem;
+            }
+        }
+    }
+    &-heading {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        color: #000000;
+        font-size: 0.875rem;
+        line-height: 1rem;
+        margin-top: 0;
+        padding-top: 0.3rem;
+        @include media(tablet) {
+            font-size: 0.75rem;
+            line-height: 0.9rem;
+        }
+        @include media(desktop) {
+            font-size: 0.875rem;
+            line-height: 1rem;
+        }
+        &:hover {
+            color: #F28C20;
+        }
+    }
+}
+
+img[alt] {
+    font-size: 1rem;
+}
+
+.carousel {
+    &-tab {
+        color: #F28C20;
+        display: flex;
+        justify-content: center;
+        border-radius: 3px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none !important;
+        padding: 11px 20px;
+        &:hover {
+            color: #F28C20;
+        }
+        &-active {
+            background-color: #F28C20;
+            color: #ffffff !important;
+            // border: solid 2px #F28C20;
+            margin: 0;
+        }
+        &-content {
+            margin: 0 5px;
+        }
+    }
+}
+
+.tab {
+    &-group {
+        margin: 1rem 0;
+        flex-wrap: wrap;
+        width: 100%;
+        // padding: 0;
+        @include media(tablet) {
+            padding: 0 1rem;
+            margin: 1rem 0;
+        }
+        @include media(desktop) {
+            margin: 1rem 0;
+        }
+        @include media(xldesktop) {
+            padding: 0 9rem;
+        }
+    }
+    &-content {
+        padding: 0 0.35rem 0 0;
+        @include media(tablet) {
+            padding: 0;
+        }
+    }
+}
+
+@include mobile-only {
+    .tab-group li {
+        width: 50%;
+    }
+    .carousel-tab {
+        padding: 11px 15px;
+    }
+}
+
+.nav {
+    display: flex;
+    &-tabs {
+        border-bottom: 2px solid #F28C20;
+        margin-right: 0.4375rem;
+        @include media(tablet) {
+            margin-right: 0;
+        }
+    }
+}
+
+.top {
+    position: absolute;
+    top: 0.2rem;
+}
+
+.bottom {
+    position: absolute;
+    top: 8.15rem;
+    @include media(tablet) {
+        top: 2.65rem;
+    }
+    @include media(desktop) {
+        top: 4.7rem;
+    }
+    @include media(xldesktop) {
+        top: 7.55rem;
+    }
+}
+
+.owl-item {
+    margin-top: 1rem;
+}
+
+// Grid Carousel CSS ends

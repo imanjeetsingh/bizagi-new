@@ -1,0 +1,505 @@
+// Home header CSS starts
+.home-header {
+    @include media(tablet) {
+        margin-top: 0;
+    }
+
+    @include media(desktop) {
+        position: fixed;
+        z-index: 1;
+        margin: 0;
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        padding-top: 1.5rem;
+    }
+
+
+    &.affix {
+        position: fixed;
+        top: 0;
+        z-index: 999999;
+        background-color: #ffffff !important;
+        background: transparent;
+        border-bottom: 1px solid #efefef;
+
+        @include media(tablet) {
+            margin-top: -3rem;
+        }
+
+        @include media(desktop) {
+            padding: 3rem 0 0 0;
+            margin-top: 0;
+        }
+
+        @include media(xldesktop) {
+            padding: 0.5rem 0 0 0;
+        }
+    }
+
+    .nav {
+        &-link {
+            @include media(tablet) {
+                color: #ffffff !important;
+            }
+        }
+
+        &-links {
+            &-box {
+                .cta {
+                    font-weight: 400 !important;
+                    padding: 0.625rem 1.1875rem;
+
+                    @include media(desktop) {
+                        font-weight: 700 !important;
+                    }
+
+                    &-primary {
+                        background: transparent;
+
+                        @include mobile-only {
+                            margin-left: 0;
+                        }
+
+                        @include media(tablet) {
+                            margin-right: 0;
+                            padding-left: 0;
+                        }
+
+                        @include media(desktop) {
+                            background-color: #ffffff;
+                        }
+
+                        @include media(xldesktop) {
+                            margin-right: 1rem;
+                            padding-left: 1rem;
+                        }
+
+                        border: none;
+
+                        .cta {
+                            &-content {
+                                color: #ffffff;
+
+                                @include media(desktop) {
+                                    color: #009E99;
+                                    margin-left: 1.5rem;
+                                }
+
+                                @include media(xldesktop) {
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            border: none !important;
+                        }
+                    }
+
+                    &-secondary {
+                        border: solid 2px #ffffff;
+
+                        @include mobile-only {
+                            margin-left: 0;
+                        }
+
+                        @include media(tablet) {
+                            border: none;
+                            margin-right: 0;
+                            padding-right: 0.5rem;
+                        }
+
+                        @include media(desktop) {
+                            border: solid 2px #ffffff;
+                        }
+
+                        @include media(xldesktop) {
+                            margin-right: 1rem;
+                            padding-right: 1rem;
+                        }
+
+                        &:hover {
+                            background: #ffffff !important;
+                            color: #009E99 !important;
+                        }
+
+                        &:hover .cta-content {
+                            color: #009E99;
+                        }
+
+                        .cta {
+                            &-content {
+                                color: #ffffff;
+
+                                @include media(desktop) {
+                                    margin-left: -0.4375rem;
+                                }
+
+                                @include media(desktop) {
+                                    margin-left: -0.4375rem;
+                                }
+
+                                @include media(xldesktop) {
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .multilang {
+        &-container {
+            margin-bottom: 0.3rem;
+
+            @include mobile-only {
+                margin-left: 0.5rem;
+                margin-bottom: 7px;
+            }
+
+            @include media(tablet) {
+                margin-bottom: 8px;
+            }
+
+            @include media(desktop) {
+                margin-left: 2rem;
+                margin-top: 1.7rem;
+            }
+
+            @include media(xldesktop) {
+                margin-top: 0;
+                margin-right: -5rem;
+                margin-left: 1rem;
+            }
+
+            @include media(xxldesktop) {
+                margin-left: 0;
+            }
+        }
+
+        &-dropdown {
+            color: #ffffff;
+        }
+    }
+
+    .search {
+        &-box {
+            &-searchIcon {
+                color: #ffffff;
+            }
+        }
+    }
+
+    .logo {
+        &-grey {
+            display: none;
+            width: 100%;
+            margin-left: -1rem;
+
+            @include media(desktop) {
+                margin-top: -2rem;
+                margin-left: -2rem;
+            }
+
+            @include media(xldesktop) {
+                margin-top: 0rem;
+                margin-left: 0;
+            }
+
+            @-moz-document url-prefix() {
+                width: 7rem
+            }
+        }
+
+        &-white {
+            display: block;
+            width: 100%;
+            margin-left: -1rem;
+
+            @include media (desktop) {
+                margin-left: -2rem;
+            }
+
+            @include media (xldesktop) {
+                margin-left: 0;
+            }
+
+            @-moz-document url-prefix() {
+                width: 7rem
+            }
+
+            @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+                margin-left: -1.5rem;
+                margin-top: -4.5rem;
+            }
+        }
+    }
+
+    .headerLogo {
+        &-link {
+            @include media(desktop) {
+                margin-right: -2rem;
+                margin-top: 2rem;
+            }
+
+            @include media(xldesktop) {
+                margin-right: 3rem;
+                margin-top: 0;
+            }
+        }
+    }
+
+    .dropdown {
+        &-item {
+            &:hover {
+                background-color: transparent;
+                color: #6D7278;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.affix {
+
+    // padding: 0;
+    @include media(tablet) {
+        padding: 1rem;
+    }
+
+    @include media(desktop) {
+        // padding: 0;
+        // aman changed for inner header 8-aug
+    }
+
+    .navbar {
+        display: block;
+
+        @include media(tablet) {
+            display: none;
+        }
+
+        @include media(desktop) {
+            display: block;
+        }
+    }
+
+    .nav {
+        &-link {
+            color: #54646f !important;
+        }
+
+        &-links {
+            &-box {
+                display: block;
+
+                @include media(tablet) {
+                    display: none;
+                }
+
+                @include media(desktop) {
+                    display: block;
+                }
+
+                .cta {
+                    &-primary {
+                        background-color: #F28C20;
+                        color: #ffffff;
+                        display: none;
+
+                        @include media(tablet) {
+                            display: block;
+                        }
+
+                        @include media(desktop) {
+                            display: block;
+                        }
+
+                        .cta {
+                            &-content {
+                                color: #ffffff;
+                            }
+                        }
+
+                        &:hover {
+                            color: #ffffff;
+                            background: #dc7000;
+                        }
+                    }
+
+                    &-secondary {
+                        border: solid 2px #F28C20;
+                        color: #F28C20;
+                        display: none;
+
+                        @include media(tablet) {
+                            display: block;
+                        }
+
+                        @include media(desktop) {
+                            display: block;
+                        }
+
+                        &:hover {
+                            color: #ffffff !important;
+                            background: #dc7000 !important;
+                        }
+
+                        &:hover .cta-content {
+                            color: #ffffff;
+                        }
+
+                        .cta {
+                            &-content {
+                                color: #F28C20;
+
+                                &:hover {
+                                    color: #ffffff !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .multilang {
+        &-container {
+            display: inline-flex;
+        }
+
+        &-dropdown {
+            color: #54646f;
+            display: none;
+
+            @include media(tablet) {
+                display: block;
+            }
+
+            @include media(desktop) {
+                display: block;
+            }
+        }
+    }
+
+    .search {
+        &-box {
+            margin-top: 0;
+
+            @include media(desktop) {
+                margin-top: 1.5rem;
+            }
+
+            &-searchIcon {
+                color: #F28C20;
+            }
+        }
+    }
+
+    .logo {
+        &-white {
+            display: none;
+        }
+
+        &-grey {
+            display: block;
+
+            @include media (tablet) {
+                margin-top: 3rem;
+            }
+
+            @include media(desktop) {
+                margin-top: -3rem;
+                margin-left: -1rem;
+            }
+
+            @include media(xldesktop) {
+                margin-left: 0.625rem;
+                margin-top: 0;
+            }
+
+            @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+                margin-top: -5rem;
+            }
+        }
+    }
+
+    .headerLogo {
+        &-link {
+            @include media(desktop) {
+                margin-right: -2rem;
+            }
+
+            @include media(xldesktop) {
+                margin-right: 3rem;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.home-header.affix .dropdown-item:hover {
+    background-color: transparent;
+    color: #F38D1F;
+    font-weight: 600;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: none !important;
+}
+
+span.navbar-toggler-icon::before {
+    content: "\2630";
+    display: block;
+    color: #ccc;
+    font-size: 1.875rem;
+    font-weight: 300
+}
+
+// css edit for cta alignment in ipad pro view start here
+.home-header .cta-group {
+    @include media(desktop) {
+        padding-top: 2rem;
+    }
+
+    @include media(xldesktop) {
+        padding-top: 0;
+    }
+}
+
+.home-header.affix .cta-group {
+    @include media(desktop) {
+        padding-top: 1rem;
+    }
+
+    @include media(xldesktop) {
+        padding-top: 0;
+    }
+}
+
+// add css for active class on header
+li.nav-item-suplist.active .nav-link {
+    color: #F28C20 !important;
+}
+
+li.nav-list-sublist.active .dropdown-item {
+    color: #F28C20 !important;
+    background-color: #f5f5f5;
+    font-weight: 600;
+}
+
+
+
+// css edit for cta alignment in ipad pro view start here
+// edit for language button
+// .home-header .multilang-container{
+//     @include media(tablet){
+//     margin-bottom: 8px;
+//     }
+// }
+// Home header CSS ends

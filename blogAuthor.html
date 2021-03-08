@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Author</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+    <script src="blogList.js"></script>
+</head>
+
+<body>
+    <!-- Header component starts -->
+    <header>
+        <div class="container-fluid inner-header">
+            <div class="row">
+                <!-- Header Logo Component starts -->
+                <div class="col-7 order-2 order-sm-1 col-md-3 col-lg-2">
+                    <div class="headerLogo-container">
+                        <a class="headerLogo-link" href="#" title="Home">
+                            <img class="headerLogo-image logo-grey" src="./images/Bizagi-Logo-Grey-No-Tagline.png" alt="Bizagi-The Digital Business Platform">
+                            <img class="headerLogo-image logo-white" src="./images/footerlogo.png" alt="Bizagi-The Digital Business Platform">
+                        </a>
+                    </div>
+                </div>
+                <!-- Header Logo Component ends -->
+
+                <!-- Navbar component starts -->
+                <div class="col-3 order-1 order-sm-2 col-md-12 col-lg-6">
+                    <div class="nav-container">
+                        <nav class="navbar navbar-expand-md navbar-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                                <div class="navbar-nav">
+                                    <ul class="nav-item dropdown">
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Solutions</a>
+                                            <ul class="nav-list dropdown-menu">
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
+                                                <li class="nav-list-sublist-heading">Industry Solution </li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Financial
+                                                Services</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Manufacturing</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Public
+                                                Sector</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Health
+                                                Care</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Education</a>
+                                                </li>
+                                                <li class="nav-list-sublist-heading">Business Solutions</li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Customer
+                                                Experience</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Risk and
+                                                Compliance</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">HR and
+                                                Employee Engagement</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Finance</a>
+                                                </li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">IT
+                                                Services</a></li>
+                                                <li class="nav-list-sublist-heading">Technology Solutions</li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Intelligent
+                                                Process Automation</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Digital
+                                                Process Automation</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Robotic
+                                                Process Automation</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Artificial
+                                                Intelligence</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">SAP</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav-item dropdown">
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Platform</a>
+                                            <ul class="nav-list dropdown-menu">
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Modeler</a>
+                                                </li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Studio</a>
+                                                </li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Automation</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">XChange</a>
+                                                </li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Platform
+                                                Capabilities</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Trust
+                                                Center</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav-item dropdown">
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Customers</a>
+                                            <ul class="nav-list dropdown-menu d-md-none">
+                                                <li class="nav-list-sublist"> <a href="#" class="dropdown-item">
+                                                Customers Stories</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav-item dropdown">
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
+                                            <ul class="nav-list dropdown-menu">
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Bizagi
+                                                Demos</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">User
+                                                Guides</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Blogs</a>
+                                                </li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Learning</a>
+                                                </li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Events</a>
+                                                </li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Newsroom</a>
+                                                </li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Community</a>
+                                                </li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Content
+                                                Center</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav-item dropdown">
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
+                                            <ul class="nav-list dropdown-menu">
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Our Trust
+                                                & Promise</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">The
+                                                Team</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Partners</a>
+                                                </li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Carees</a>
+                                                </li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Offices</a>
+                                                </li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Contact
+                                                Us</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Navbar component ends -->
+
+                <div class="col-12 order-4 order-sm-3 order-md-1 order-lg-2 col-md-6 col-lg-3">
+                    <div class="nav-links-box">
+                        <!-- Header Cta starts-->
+                        <div class="cta-group">
+                            <a href="#" class="cta cta-secondary cta-header">
+                                <!-- "cta-header" class to be included for cta mobile view -->
+                                <span class="cta-content">Log in</span>
+                            </a>
+                            <a href="#" class="cta cta-primary cta-header">
+                                <!-- "cta-header" class to be included for cta mobile view -->
+                                <span class="cta-content">Contact us</span>
+                            </a>
+                        </div>
+                        <!-- Header Cta ends-->
+
+                        <!-- Multi Language Dropdown component starts -->
+                        <div class="multilang-container">
+                            <select name="lang" class="multilang-dropdown" size="1">
+                        <option class="multilang-dropdown-option" id="#" value="#" selected="selected">EN
+                        </option>
+                        <option class="multilang-dropdown-option" id="#" value="#">ES </option>
+                        <option class="multilang-dropdown-option" id="#" value="#">PT </option>
+                        <option class="multilang-dropdown-option" id="#" value="#">DE </option>
+                    </select>
+                        </div>
+                        <!-- Multi Language Dropdown component ends -->
+                    </div>
+                </div>
+
+                <div class="col-2 order-3 order-sm-4 col-md-1 order-md-1 order-lg-3">
+                    <div class="nav-links-box nav-search-box">
+
+                        <!-- Search Box component starts -->
+                        <div class="search-container">
+                            <div class="search-box">
+                                <a class="search-box-searchIcon" href="#" role="button">
+                                    <i class="search-icon fa fa-search"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Search Box component ends -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header component ends -->
+
+
+    <div class="container blogAuthor">
+        <div class="row">
+            <div class="col-md-8">
+
+                <!-- bread-crumb starts -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Authors</a></li>
+                        <li class="breadcrumb-item" aria-current="page">Posts by Tim Burton, Editor</li>
+                    </ol>
+                </nav>
+                <!-- bread-crumb ends -->
+
+                <div class="blogAuthor-heading">
+                    <h3 class="">Tim Burton, Editor</h3>
+                </div>
+
+                <div class="blogDetail-article-authorName-box">
+                    <div class="cta-group">
+                        <span class="cta cta-primary">
+                            <span class="cta-content-count" id="itemcount"></span>
+                        <span class="cta-content">Posts</span>
+                        </span>
+
+                        <span class="cta cta-primary">
+                            <span class="cta-content">0 Comments</span>
+                        </span>
+                    </div>
+                    <a class="blogDetail-article-linkName-link" href="#">
+                        <span class="blogDetail-article-linkName">www.bizagi.com</span>
+                    </a>
+                </div>
+
+                <div class="blogList" id="tilesbox">
+                    <div class="row" id="result"></div>
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center" id="pagination" data-target="https://dummyapi.io/data/api/user?limit=12&page="></ul>
+                    </nav>
+                </div>
+
+            </div>
+
+            <div class="col-md-4"><!-- AddToAny BEGIN -->
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style" style="/* line-height: 32px; */">
+                <a class="a2a_button_linkedin" target="_blank" href="/#linkedin" rel="nofollow noopener"><span class="a2a_svg a2a_s__default a2a_s_linkedin" style="background-color: rgb(0, 123, 181);"><svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M6.227 12.61h4.19v13.48h-4.19V12.61zm2.095-6.7a2.43 2.43 0 0 1 0 4.86c-1.344 0-2.428-1.09-2.428-2.43s1.084-2.43 2.428-2.43m4.72 6.7h4.02v1.84h.058c.56-1.058 1.927-2.176 3.965-2.176 4.238 0 5.02 2.792 5.02 6.42v7.395h-4.183v-6.56c0-1.564-.03-3.574-2.178-3.574-2.18 0-2.514 1.7-2.514 3.46v6.668h-4.187V12.61z" fill="#FFF"></path></svg></span><span class="a2a_label">LinkedIn</span></a>
+                <a class="a2a_button_twitter" target="_blank" href="/#twitter" rel="nofollow noopener"><span class="a2a_svg a2a_s__default a2a_s_twitter" style="background-color: rgb(85, 172, 238);"><svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="#FFF" d="M28 8.557a9.913 9.913 0 0 1-2.828.775 4.93 4.93 0 0 0 2.166-2.725 9.738 9.738 0 0 1-3.13 1.194 4.92 4.92 0 0 0-3.593-1.55 4.924 4.924 0 0 0-4.794 6.049c-4.09-.21-7.72-2.17-10.15-5.15a4.942 4.942 0 0 0-.665 2.477c0 1.71.87 3.214 2.19 4.1a4.968 4.968 0 0 1-2.23-.616v.06c0 2.39 1.7 4.38 3.952 4.83-.414.115-.85.174-1.297.174-.318 0-.626-.03-.928-.086a4.935 4.935 0 0 0 4.6 3.42 9.893 9.893 0 0 1-6.114 2.107c-.398 0-.79-.023-1.175-.068a13.953 13.953 0 0 0 7.55 2.213c9.056 0 14.01-7.507 14.01-14.013 0-.213-.005-.426-.015-.637.96-.695 1.795-1.56 2.455-2.55z"></path></svg></span><span class="a2a_label">Twitter</span></a>
+                <a class="a2a_button_facebook" target="_blank" href="https://www.addtoany.com/add_to/facebook?linkurl=https%3A%2F%2Fbizagi-dev-acdigital.azure.jahia.com%2Fcontents%2Fpersons%2Feditors%2Fdrew-jaehnig.html&amp;linkname=drew-jaehnig&amp;linknote=%0A" rel="nofollow noopener"><span class="a2a_svg a2a_s__default a2a_s_facebook" style="background-color: rgb(24, 119, 242);"><svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="#FFF" d="M17.78 27.5V17.008h3.522l.527-4.09h-4.05v-2.61c0-1.182.33-1.99 2.023-1.99h2.166V4.66c-.375-.05-1.66-.16-3.155-.16-3.123 0-5.26 1.905-5.26 5.405v3.016h-3.53v4.09h3.53V27.5h4.223z"></path></svg></span><span class="a2a_label">Facebook</span></a>
+                <a class="a2a_button_email" target="_blank" href="https://www.addtoany.com/add_to/email?linkurl=https%3A%2F%2Fbizagi-dev-acdigital.azure.jahia.com%2Fcontents%2Fpersons%2Feditors%2Fdrew-jaehnig.html&amp;linkname=drew-jaehnig&amp;linknote=" rel="nofollow noopener"><span class="a2a_svg a2a_s__default a2a_s_email" style="background-color: rgb(1, 102, 255);"><svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="#FFF" d="M26 21.25v-9s-9.1 6.35-9.984 6.68C15.144 18.616 6 12.25 6 12.25v9c0 1.25.266 1.5 1.5 1.5h17c1.266 0 1.5-.22 1.5-1.5zm-.015-10.765c0-.91-.265-1.235-1.485-1.235h-17c-1.255 0-1.5.39-1.5 1.3l.015.14s9.035 6.22 10 6.56c1.02-.395 9.985-6.7 9.985-6.7l-.015-.065z"></path></svg></span><span class="a2a_label">Email</span></a>
+                <a class="a2a_button_xing" target="_blank" href="https://www.addtoany.com/add_to/xing?linkurl=https%3A%2F%2Fbizagi-dev-acdigital.azure.jahia.com%2Fcontents%2Fpersons%2Feditors%2Fdrew-jaehnig.html&amp;linkname=drew-jaehnig&amp;linknote=" rel="nofollow noopener"><span class="a2a_svg a2a_s__default a2a_s_xing" style="background-color: rgb(22, 91, 102);"><svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M7.647 8.74c-.208 0-.384.072-.473.216-.09.147-.075.338.02.53l2.342 4.053c.003.004.003.01 0 .02l-3.68 6.49c-.095.19-.09.38 0 .53.09.14.245.23.454.23h3.46c.52 0 .768-.347.945-.667l3.736-6.607-2.38-4.15c-.17-.308-.43-.65-.96-.65H7.65zM22.187 4c-.516 0-.74.325-.926.66l-7.7 13.657 4.92 9.023c.17.307.437.66.967.66h3.458c.208 0 .37-.08.46-.222.092-.148.09-.344-.008-.535l-4.88-8.915c-.005-.007-.005-.017 0-.023l7.665-13.55c.096-.19.097-.387.006-.535-.088-.142-.25-.22-.46-.22H22.19z" fill="#FFF"></path></svg></span><span class="a2a_label">XING</span></a>
+                <a class="a2a_dd" href="https://www.addtoany.com/share#url=https%3A%2F%2Fbizagi-dev-acdigital.azure.jahia.com%2Fcontents%2Fpersons%2Feditors%2Fdrew-jaehnig.html&amp;title=drew-jaehnig"><span class="a2a_svg a2a_s__default a2a_s_a2a" style="background-color: rgb(1, 102, 255);"><svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g fill="#FFF"><path d="M14 7h4v18h-4z"></path><path d="M7 14h18v4H7z"></path></g></svg></span><span class="a2a_label a2a_localize" data-a2a-localize="inner,Share">Share</span></a>
+                <div style="clear: both;"></div></div>
+                <script async="" src="https://static.addtoany.com/menu/page.js"></script>
+                <!-- AddToAny END --></div>
+        </div>
+        <div></div>
+    </div>
+
+
+   
+   <!-- Footer component starts -->
+   <!-- <section id="foot">
+    <div class="container footer-container">
+        <div class="footer-inner">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="footer-logo-box">
+                        <div class="footer-logo">
+                            <img class="footer-logo-imange" src="./images/footerlogo.png" alt="bizagi-logo">
+                        </div> -->
+                        <!-- Social Icons component starts -->
+                        <!-- <div class="social-icon-box">
+                            <a class="social-icon-link" href="http://www.linkedin.com/company/bizagi" target="_blank">
+                                <i class="social-icon fa fa-linkedin-square social-icon-footer"></i>
+                            </a>
+                            <a class="social-icon-link" href="http://www.twitter.com/bizagi" target="_blank">
+                                <i class="social-icon fa fa-twitter-square social-icon-footer"></i>
+                            </a>
+                            <a class="social-icon-link" href="http://www.youtube.com/user/Bizagi" target="_blank">
+                                <i class="social-icon fa fa-youtube-square social-icon-footer"></i>
+                            </a>
+                            <a class="social-icon-link" href="https://www.facebook.com/bizagi" target="_blank">
+                                <i class="social-icon fa fa-facebook-square social-icon-footer"></i>
+                            </a>
+                        </div> -->
+                        <!-- Social Icons component ends -->
+                        <!-- <div class="footer-content-box">
+                            <p>Bizagi's process platform wraps around rigid, sioled systems, helping organizations to trnsform into digiatl business
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="footer-column">
+                        <div class="footer-column-box">
+                            <h3 class="footer-column-box-heading">Company</h3>
+                            <ul class="footer-column-list">
+                                <li class="list-item"><a class="link" href="/en/about">About Us</a></li>
+                                <li class="list-item"><a class="link" href="/en/community/partners">Partners</a></li>
+                                <li class="list-item"><a class="link" href="/en/contact-us">Contact Us</a></li>
+                                <li class="list-item"><a class="link" href="/en/about/careers">Careers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <div class="footer-column">
+                        <div class="footer-column-box">
+                            <h3 class="footer-column-box-heading">Platform</h3>
+                            <ul class="footer-column-list">
+                                <li class="list-item"><a class="link" href="/en/platform/modeler">Modeler</a></li>
+                                <li class="list-item"><a class="link" href="/en/platform/studio">Studio</a></li>
+                                <li class="list-item"><a class="link" href="/en/platform/automation">Automation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-2">
+                    <div class="footer-column">
+                        <div class="footer-column-box">
+                            <h3 class="footer-column-box-heading">Resources</h3>
+                            <ul class="footer-column-list">
+                                <li class="list-item"><a class="link" href="/en/community">Community</a></li>
+                                <li class="list-item"><a class="link" href="/en/resources/help">User Guides</a></li>
+                                <li class="list-item"><a class="link" href="/en/learning">Learning</a></li>
+                                <li class="list-item"><a class="link" href="/en/resources/content-center">Content
+                                    Center</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-12 footer-copyright">
+                <p class="footer-copyright-content">
+                    Copyright © 2002-2020 - Bizagi&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a class="link" href="#">Terms of use</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a class="link" href="#">Privacy Policy</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a class="link" href="#">Sitemap</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- Footer component ends -->
+<!-- <script>
+      $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 50) {
+                $(".a2a_default_style").addClass("aman");
+            }
+        });
+</script>
+<style>
+    .aman{
+        top: 2rem;
+        position: sticky;
+    }
+</style> -->
+</body>
+
+</html>

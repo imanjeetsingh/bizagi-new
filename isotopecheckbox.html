@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isotopeCheckbox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+</head>
+
+
+<style>
+    body {
+        font-family: sans-serif;
+    }
+    
+    .item {
+        width: 80px;
+        height: 80px;
+        padding: 5px;
+        margin: 5px;
+        color: white;
+        float: left;
+    }
+    
+    p {
+        margin: 0;
+    }
+    
+    #filter-display {
+        font-size: 18px;
+        padding: 0.5em;
+        border: 1px solid #CCC;
+        color: blue;
+    }
+    
+    .red {
+        background: red;
+    }
+    
+    .blue {
+        background: blue;
+    }
+    
+    .green {
+        background: green;
+    }
+    
+    .yellow {
+        background: yellow;
+        color: black;
+    }
+    
+    .dropdown input {
+        /* display: block; */
+        line-height: 2rem;
+        margin: 0.3125rem 0 0.3125rem 1rem;
+    }
+    
+    .dropdown label {
+        font-weight: 700;
+        color: #6d7278;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    
+    .option-set {
+        width: 18rem;
+    }
+</style>
+
+<body>
+    <h1>Isotope combination filters with checkboxes</h1>
+
+    <div id="options" class="dropdown">
+        <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown">
+            <span class="cta-content">Filter by Industries</span>
+            <span class="cta-icon-box">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </span>     
+        </button>
+        <div class="dropdown-menu">
+            <div class="option-set" data-group="industry">
+                <!-- <div>
+                    <input type="checkbox" value="" id="industry-all" class="all" checked />
+                    <label for="industry-all">all industries</label>
+                </div> -->
+                <div>
+                    <input type="checkbox" value=".manufacturingRetail" id="industry1" />
+                    <label for="industry1">Manufacturing & Retail</label>
+                </div>
+                <div>
+                    <input type="checkbox" value=".financialServices" id="industry2" />
+                    <label for="industry2">Financial Services</label>
+                </div>
+                <div>
+                    <input type="checkbox" value=".insurance" id="industry3" />
+                    <label for="industry3">Insurance</label>
+                </div>
+                <div>
+                    <input type="checkbox" value=".professionalServices" id="industry4" />
+                    <label for="industry4">Professional Services</label>
+                </div>
+                <div>
+                    <input type="checkbox" value=".transportationLogistics" id="industry4" />
+                    <label for="industry4">Transportation & Logistics</label>
+                </div>
+                <div>
+                    <input type="checkbox" value=".utilitiesEnergy" id="industry4" />
+                    <label for="industry4">Utilities & Energy</label>
+                </div>
+                <div>
+                    <input type="checkbox" value=".healthcare" id="industry4" />
+                    <label for="industry4">Healthcare</label>
+                </div>
+                <div>
+                    <input type="checkbox" value=".governmentEducation" id="industry4" />
+                    <label for="industry4">Government & Education</label>
+                </div>
+                <div>
+                    <input type="checkbox" value=".hospitality" id="industry4" />
+                    <label for="industry4">Hospitality</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="options" class="dropdown">
+        <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown" style="float: right;">
+            <span class="cta-content">Filter by Solutions</span>
+            <span class="cta-icon-box">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </span>     
+        </button>
+        <div class="dropdown-menu">
+            <div class="option-set" data-group="solution">
+                <!-- <div>
+                    <input type="checkbox" value="" id="solution-all" class="all" checked />
+                    <label for="solution-all">all solutions</label>
+                </div> -->
+                <div>
+                    <input type="checkbox" value=".digitalOperations" id="solution1" />
+                    <label for="solution1">Digital Operations</label>
+                </div>
+                <div>
+                    <input type="checkbox" value=".finances" id="solution2" />
+                    <label for="solution2">Finances</label>
+                </div>
+                <div>
+                    <input type="checkbox" value=".mrketingSales" id="solution3" />
+                    <label for="solution3">Marketing & Sales</label>
+                </div>
+                <div>
+                    <input type="checkbox" value=".customerEngagement" id="solution4" />
+                    <label for="solution4">Customer Engagement</label>
+                </div>
+                <div>
+                    <input type="checkbox" value=".goveranceCompliance" id="solution5" />
+                    <label for="solution4">Goverance & Compliance</label>
+                </div>
+                <div>
+                    <input type="checkbox" value=".humanResources" id="solution6" />
+                    <label for="solution4">Human Resources</label>
+                </div>
+                <div>
+                    <input type="checkbox" value=".customerExperience" id="solution7" />
+                    <label for="solution4">Customer Experience</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="option-set" data-group="color">
+        <input type="checkbox" value="" id="color-all" class="all" checked /><label for="color-all">all colors</label>
+        <input type="checkbox" value=".red" id="red" /><label for="red">red</label>
+        <input type="checkbox" value=".blue" id="blue" /><label for="blue">blue</label>
+        <input type="checkbox" value=".green" id="green" /><label for="green">green</label>
+        <input type="checkbox" value=".yellow" id="yellow" /><label for="yellow">yellow</label>
+    </div>
+    <div class="option-set" data-group="size">
+        <input type="checkbox" value="" id="size-all" class="all" checked /><label for="size-all">all sizes</label>
+        <input type="checkbox" value=".uk-size8" id="uk-size8" /><label for="uk-size8">uk-size8</label>
+        <input type="checkbox" value=".uk-size9" id="uk-size9" /><label for="uk-size9">uk-size9</label>
+        <input type="checkbox" value=".uk-size10" id="uk-size10" /><label for="uk-size10">uk-size10</label>
+        <input type="checkbox" value=".uk-size11" id="uk-size11" /><label for="uk-size11">uk-size11</label>
+    </div> -->
+
+
+    <p id="filter-display"></p>
+
+    <div id="container"></div>
+
+
+
+    <!-- <div class="container contentSection-container card-container">
+
+        <div class="row">
+
+            <div class="col-12 col-md-4">
+                <div class="card h-100 card-inner">
+                    <div class="partnerinfo"><span>Adidas</span>
+                        <div class="tooltip mt-4"><i class="fa fa-info-circle"></i><a class="tooltiptext"><b><div class="Industry">Manufacturing &amp; Retail</div></b><div class="Solution">Digital Operations</div><div class="Solution2">Finance</div><div class="Solution3">Marketing &amp; Sales</div><div class="Solution4"></div></a></div>
+                    </div>
+                    <div class="card-image-box image-box"><img class="card-img-top" src="./images/logo_adidas.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" style="width: 150px;"></div>
+                    <div class="card-body">
+                        <p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”</p>
+                        <div class="card-cta">
+                            <div class="cta-group"><a href="#" class="cta cta-default cta-icon-right"><span class="cta-content">Full Story</span><span class="cta-icon-box"><i class="cta-icon fa fa-arrow-right"></i></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+</body>
+
+
+<script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script>
+    /*jshint browser:true, undef: true, unused: true, jquery: true */
+
+    var $container;
+    var filters = {};
+
+    $(function() {
+
+        $container = $('#container');
+
+        createContent();
+
+        var $filterDisplay = $('#filter-display');
+
+        $container.isotope();
+        // do stuff when checkbox change
+        $('#options').on('change', function(jQEvent) {
+            var $checkbox = $(jQEvent.target);
+            manageCheckbox($checkbox);
+
+            var comboFilter = getComboFilter(filters);
+
+            $container.isotope({
+                filter: comboFilter
+            });
+
+            $filterDisplay.text(comboFilter);
+        });
+
+    });
+
+
+    var data = {
+        industries: 'manufacturingRetail financialServices insurance professionalServices transportationLogistics utilitiesEnergy healthcare governmentEducation hospitality'.split(' '),
+        solutions: 'digitalOperations finances mrketingSales customerEngagement goveranceCompliance humanResources customerExperience'.split(' '),
+        colors: '',
+        tooltip: 'industries solution1 solution2 solution3 solution4'.split(' '),
+        // sizes: 'uk-size8 uk-size9 uk-size10 uk-size11'.split(' ')
+    };
+
+    function createContent() {
+        var industry, solution, color, size;
+        var items = '<div container contentSection-container card-container> <div class="row"> <div class="col-12 col-md-4"> <div class="card h-100 card-inner"><div class="partnerinfo"><span>Adidas</span><div class="tooltip mt-4"><i class="fa fa-info-circle"></i><a class="tooltiptext"><b><div class="industries">Manufacturing &amp; Retail</div></b><div class="Solution">Digital Operations</div><div class="Solution2">Finance</div><div class="Solution3">Marketing &amp; Sales</div><div class="Solution4"></div></a></div></div><div class="card-image-box image-box"><img class="card-img-top" src="./images/logo_adidas.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" style="width: 150px;"></div><div class="card-body"><p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”</p><div class="card-cta"><div class="cta-group"><a href="#" class="cta cta-default cta-icon-right"><span class="cta-content">Full Story</span><span class="cta-icon-box"><i class="cta-icon fa fa-arrow-right"></i></span></a></div></div></div></div></div></div></div>';
+        // dynamically create content
+        for (var i = 0, len1 = data.industries.length; i < len1; i++) {
+            industry = data.industries[i];
+            for (var j = 0, len2 = data.solutions.length; j < len2; j++) {
+                solution = data.solutions[j];
+                for (var l = 0, len3 = data.tooltip.length; l < len3; l++) {
+                    color = data.tooltip[l];
+
+                    var itemHtml = '<div class="item' + industry + ' ' +
+                        solution + ' ' + color + ' ' + size + '">' +
+                        '<p>' + industry + '</p>' +
+                        '<p>' + solution + '</p>' +
+                        '<p>' + color + '</p>' +
+
+                        '</div>';
+                    items += itemHtml;
+
+                }
+            }
+        }
+
+        $container.append(items);
+    }
+
+
+    function getComboFilter(filters) {
+        var i = 0;
+        var comboFilters = [];
+        var message = [];
+
+        for (var prop in filters) {
+            message.push(filters[prop].join(' '));
+            var filterGroup = filters[prop];
+            // skip to next filter group if it doesn't have any values
+            if (!filterGroup.length) {
+                continue;
+            }
+            if (i === 0) {
+                // copy to new array
+                comboFilters = filterGroup.slice(0);
+            } else {
+                var filterSelectors = [];
+                // copy to fresh array
+                var groupCombo = comboFilters.slice(0); // [ A, B ]
+                // merge filter Groups
+                // for (var k = 0, len3 = filterGroup.length; k < len3; k++) {
+                for (var j = 0, len2 = groupCombo.length; j < len2; j++) {
+                    filterSelectors.push(groupCombo[j]); // [ 1, 2 ]
+                }
+
+                // }
+                // apply filter selectors to combo filters for next group
+                comboFilters = filterSelectors;
+            }
+            i++;
+        }
+
+        var comboFilter = comboFilters.join(', ');
+        return comboFilter;
+    }
+
+    function manageCheckbox($checkbox) {
+        var checkbox = $checkbox[0];
+
+        var group = $checkbox.parents('.option-set').attr('data-group');
+        // create array for filter group, if not there yet
+        var filterGroup = filters[group];
+        if (!filterGroup) {
+            filterGroup = filters[group] = [];
+        }
+
+        var isAll = $checkbox.hasClass('all');
+        // reset filter group if the all box was checked
+        if (isAll) {
+            delete filters[group];
+            if (!checkbox.checked) {
+                checkbox.checked = 'checked';
+            }
+        }
+        // index of
+        var index = $.inArray(checkbox.value, filterGroup);
+
+        if (checkbox.checked) {
+            var selector = isAll ? 'input' : 'input.all';
+            $checkbox.siblings(selector).removeAttr('checked');
+
+
+            if (!isAll && index === -1) {
+                // add filter to group
+                filters[group].push(checkbox.value);
+            }
+
+        } else if (!isAll) {
+            // remove filter from group
+            filters[group].splice(index, 1);
+            // if unchecked the last box, check the all
+            if (!$checkbox.siblings('[checked]').length) {
+                $checkbox.siblings('input.all').attr('checked', 'checked');
+            }
+        }
+
+    }
+</script>
+
+</html>

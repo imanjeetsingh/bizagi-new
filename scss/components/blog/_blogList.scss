@@ -1,0 +1,287 @@
+// Blog List component CSS starts
+.blog {
+    &-heading {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5rem;
+        position: absolute;
+        line-height: 2rem;
+        font-weight: 300;
+        top: 3rem;
+        z-index: 1;
+        padding-left: 1rem;
+        color: #fff;
+        width: 91%;
+        @include media(tablet) {
+            width: 97%;
+            font-size: 0.8rem !important;
+            line-height: 1rem !important;
+        }
+        @include media(desktop) {
+            font-size: 1.4375rem !important;
+            line-height: 1.8rem !important;
+            width: 98%;
+        }
+        &-link {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+    &-box {
+        // padding: 0 0.2rem;
+        // margin: 0 -0.3125rem 0 -0.4375rem;
+        &-link {}
+        &-1 {
+            .blog-image-box {
+                &:before {
+                    -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+                    -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+                    box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+                    opacity: 0.6;
+                    bottom: 0;
+                    content: "";
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    z-index: 1;
+                    background: #4db2ec;
+                    background: -moz-linear-gradient(45deg, #4db2ec 0%, #4a8f5e 100%);
+                    background: -webkit-gradient(left bottom, right top, color-stop(0%, #4db2ec), color-stop(100%, #4a8f5e));
+                    /* background: -webkit-linear-gradient(45deg, #4db2ec 0%, #4a8f5e 100%); */
+                    background: -o-linear-gradient(45deg, #4db2ec 0%, #4a8f5e 100%);
+                    background: -ms-linear-gradient(45deg, #4db2ec 0%, #4a8f5e 100%);
+                    /* background: linear-gradient(45deg, #4db2ec 0%, #4a8f5e 100%); */
+                    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#4db2ec', endColorstr='#4a8f5e', GradientType=1);
+                }
+            }
+        }
+        &-2 {
+            .blog-image-box {
+                &:before {
+                    background: #B3B936 !important;
+                }
+                &:before {
+                    bottom: 0;
+                    content: "";
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    z-index: 1;
+                    background: #d17646;
+                    background: -moz-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: -webkit-gradient(left bottom, right top, color-stop(0%, #d17646), color-stop(100%, #c63939));
+                    background: -webkit-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: -o-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: -ms-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#d17646', endColorstr='#c63939', GradientType=1);
+                    -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+                    -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+                    box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+                    opacity: 0.6;
+                }
+            }
+        }
+        &-3 {
+            .blog-image-box {
+                &:before {
+                    background: #696969 !important;
+                }
+                &:before {
+                    bottom: 0;
+                    content: "";
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    z-index: 1;
+                    background: #d17646;
+                    background: -moz-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: -webkit-gradient(left bottom, right top, color-stop(0%, #d17646), color-stop(100%, #c63939));
+                    background: -webkit-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: -o-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: -ms-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#d17646', endColorstr='#c63939', GradientType=1);
+                    -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+                    -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+                    box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+                    opacity: 0.6;
+                }
+            }
+            .blog-heading {
+                font-size: 1rem;
+                line-height: 1.3125rem;
+            }
+        }
+        &-4 {
+            .blog-image-box {
+                &:before {
+                    background: #2F3A47 !important;
+                }
+                &:before {
+                    bottom: 0;
+                    content: "";
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    z-index: 1;
+                    background: #d17646;
+                    background: -moz-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: -webkit-gradient(left bottom, right top, color-stop(0%, #d17646), color-stop(100%, #c63939));
+                    background: -webkit-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: -o-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: -ms-linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    background: linear-gradient(45deg, #d17646 0%, #c63939 100%);
+                    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#d17646', endColorstr='#c63939', GradientType=1);
+                    -webkit-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+                    -moz-box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+                    box-shadow: inset 0 0 3.125rem 0 rgba(0, 0, 0, 0.5);
+                    opacity: 0.6;
+                }
+            }
+            .blog-heading {
+                font-size: 1rem;
+                line-height: 1.3125rem;
+            }
+        }
+    }
+    &-image {
+        width: 100%;
+        &-box {
+            position: relative;
+            overflow: hidden;
+            margin-top: 0.1rem;
+            height: 100%;
+            background-color: #ececec;
+            @include media(tablet) {
+                margin-right: -1.5625rem;
+            }
+        }
+        &-category {
+            // background: rgba(0, 0, 0, 0.2);
+            background: #F38D1E;
+            text-transform: uppercase;
+            margin: 1.2rem 0 0.3125rem 0.8rem;
+            padding: 0.1875rem 0.4375rem;
+            line-height: 0.8215rem;
+            pointer-events: auto;
+            font-size: 0.6875rem;
+            z-index: 1;
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            &-link {}
+        }
+    }
+}
+
+.blogList {
+    &-tabs {
+        border-bottom: 0.125rem solid #F28C20;
+        width: 95%;
+    }
+    .article {
+        &-box {
+            margin: 1.5rem 0;
+            padding: 0 1.5rem;
+            width: 19rem;
+            @include media(tablet) {
+                width: 11.5rem;
+            }
+            &-link {}
+        }
+        &-image {
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            &-box {
+                position: relative;
+                height: 9.75rem;
+                overflow: hidden;
+                @include media(tablet) {
+                    height: 11rem;
+                }
+                @include media(desktop) {
+                    height: 11rem;
+                }
+                @include media(xldesktop) {
+                    height: 16rem;
+                }
+            }
+            &-tag {
+                font-size: 0.8rem;
+                @include media(tablet) {
+                    font-size: 0.7rem;
+                }
+                @include media(desktop) {
+                    font-size: 0.8rem;
+                }
+                &:hover {
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+                &-link {}
+            }
+        }
+        &-heading {
+            cursor: pointer;
+            padding: 0.3rem;
+            @include media(desktop) {
+                padding: 0;
+            }
+            @include media(desktop) {
+                padding: 0.3rem;
+                font-size: 1rem;
+                line-height: 1.2rem;
+            }
+            color: #6d7278;
+        }
+    }
+    .bottom-tag {
+        position: absolute;
+        bottom: 0rem;
+        left: 0;
+    }
+}
+
+.side-image {
+    width: 100%;
+}
+
+.blog-image-box .blog-image {
+    transition-timing-function: ease !important;
+    transition: transform 0.7s ease, opacity 0.7s;
+    -webkit-transition: -webkit-transform 0.7s ease, opacity 0.7s;
+}
+
+.blog-image-box:hover .blog-image {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+// .blog-box:hover .blog-image-category {
+//     background: rgba(0, 0, 0, 0.5);
+// }
+// Blog List component CSS ends
+.stick {
+    position: sticky;
+    top: 7.25rem;
+}
+
+.article-box.col-lg-3 .article-image-box {
+    @include media(desktop) {
+        height: 7.8rem;
+    }
+    @include media(xldesktop) {
+        height: 12rem;
+    }
+}

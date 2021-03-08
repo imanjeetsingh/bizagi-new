@@ -1,0 +1,2043 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Center</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+
+    <style>
+        .grid .element-item {
+            position: static !important;
+        }
+        .grid .element-item .card-image-box {
+            text-align: center;
+        }
+        .grid .element-item .card-img-top {
+            max-width: 100%;
+            margin: 0 auto;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Case Study List component starts starts -->
+    <div class="container ">
+        <div class="row mt-5">
+            <div class="caseStudy-search-box col">
+                <input type="text" class="caseStudy-search-input quicksearch" placeholder="Search"
+                    data-control-search="cardviewlist" />
+            </div>
+            <div id="options" class="dropdown col">
+                <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="cta-content">Filter by Content type</span>
+                    <span class="cta-icon-box">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+                <div class="dropdown-menu">
+                    <div class="option-set" data-group="industry" data-control-group="cardviewlist">
+                        <ul class="options">
+                            <!-- <li class="input-all"><input class="all" type="checkbox" value=".all-resources" id="all-resources"><label for="all-resources">All Resources</label></li> -->
+                            <li>
+                                <label for="guide_cardviewlist">
+                                    <input id="guide_cardviewlist" type="checkbox" name="cardviewlist" value=".guide" />
+                                    Guide
+                                </label>
+                            </li>
+                            <li>
+                                <label for="analystReport_cardviewlist">
+                                    <input id="analystReport_cardviewlist" type="checkbox" name="cardviewlist"
+                                        value=".analystReport" />
+                                    Analyst Report
+                                </label>
+                            </li>
+                            <li>
+                                <label for="whitepaper_cardviewlist">
+                                    <input id="whitepaper_cardviewlist" type="checkbox" name="cardviewlist"
+                                        value=".whitepaper" />
+                                    Whitepaper
+                                </label>
+                            </li>
+                            <li>
+                                <label for="professionalService_cardviewlist">
+                                    <input id="professionalService_cardviewlist" type="checkbox" name="cardviewlist"
+                                        value=".professionalServices" />
+                                    Professional Services
+                                </label>
+                            </li>
+                            <li>
+                                <label for="ebook_cardviewlist">
+                                    <input id="ebook_cardviewlist" type="checkbox" name="cardviewlist" value=".ebook" />
+                                    Ebook
+                                </label>
+                            </li>
+                            <li>
+                                <label for="factsheet_cardviewlist">
+                                    <input id="factsheet_cardviewlist" type="checkbox" name="cardviewlist"
+                                        value=".factsheet" />
+                                    Factsheet
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="options" class="dropdown col">
+                <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="cta-content">Filter by Content type</span>
+                    <span class="cta-icon-box">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+
+                <div class="dropdown-menu">
+                    <div class="option-set" data-group="industry" data-control-group="cardviewlist">
+                        <ul class="options">
+                            <!-- <li class="input-all"><input class="all" type="checkbox" value=".all-resources" id="all-resources"><label for="all-resources">All Resources</label></li> -->
+                            <li>
+                                <label for="guide_1_cardviewlist">
+                                    <input id="guide_1_cardviewlist" type="checkbox" name="cardviewlist_1"
+                                        value=".guide" />
+                                    Guide
+                                </label>
+                            </li>
+                            <li>
+                                <label for="analystReport_1_cardviewlist">
+                                    <input id="analystReport_1_cardviewlist" type="checkbox" name="cardviewlist_1"
+                                        value=".analystReport" />
+                                    Analyst Report
+                                </label>
+                            </li>
+                            <li>
+                                <label for="whitepaper_1_cardviewlist">
+                                    <input id="whitepaper_1_cardviewlist" type="checkbox" name="cardviewlist_1"
+                                        value=".whitepaper" />
+                                    Whitepaper
+                                </label>
+                            </li>
+                            <li>
+                                <label for="professionalService_1_cardviewlist">
+                                    <input id="professionalService_1_cardviewlist" type="checkbox" name="cardviewlist_1"
+                                        value=".professionalServices" />
+                                    Professional Services
+                                </label>
+                            </li>
+                            <li>
+                                <label for="ebook_1_cardviewlist">
+                                    <input id="ebook_1_cardviewlist" type="checkbox" name="cardviewlist_1"
+                                        value=".ebook" />
+                                    Ebook
+                                </label>
+                            </li>
+                            <li>
+                                <label for="factsheet_1_cardviewlist">
+                                    <input id="factsheet_1_cardviewlist" type="checkbox" name="cardviewlist_1"
+                                        value=".factsheet" />
+                                    Factsheet
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row grid" id="cardviewlist">
+                    <div class="element-item col-12 col-lg-4 col-md-6 col-sm-12 mt-3">
+
+                        <div class="card h-100 card-inner guide">
+                            <div class="card-image-box">
+                                <div class="card-tag top-left">Guide</div>
+                                <img class="card-img-top" src="./Content Center_files/033.png"
+                                    alt="The Ultimate Guide To Improving Your Business Processes">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price"></p>
+                                <h4 class="card-title">The Ultimate Guide To Improving Your Business Processes</h4>
+                                <p class="card-text"></p>
+                                <p>Get insight from expert users on how to start your process automation project and the
+                                    lessons learned
+                                    during their own implementations.</p>
+                                <p></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://go.bizagi.com/NA_Q2_FY21_AIIM-BPM--RPA-Study-2020_Registration-Page.html"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Download</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-lg-4 col-md-6 col-sm-12 mt-3">
+
+                        <div class="card h-100 card-inner guide">
+                            <div class="card-image-box">
+                                <div class="card-tag top-left">Guide</div>
+                                <img class="card-img-top" src="./Content Center_files/032.png"
+                                    alt="The 3-Step Guide to Business Continuity">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price"></p>
+                                <h4 class="card-title">The 3-Step Guide to Business Continuity</h4>
+                                <p class="card-text"></p>
+                                <p>Discover three key steps that organizations need to take right now to enable
+                                    employees to continue
+                                    working, provide the best possible service to customers, and to future-proof the
+                                    business to remain
+                                    successful despite Covid-19.</p>
+                                <p></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://go.bizagi.com/The-3-Step-Guide-to-Business-Continuity-Download.html"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Download</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-lg-4 col-md-6 col-sm-12 mt-3">
+
+                        <div class="card h-100 card-inner factsheet">
+                            <div class="card-image-box">
+                                <div class="card-tag top-left">Factsheet</div>
+                                <img class="card-img-top" src="./Content Center_files/019.png" alt="Spark Framework">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price"></p>
+                                <h4 class="card-title">Spark Framework</h4>
+                                <p class="card-text"></p>
+                                <p>Say goodbye to rigid project deployment, welcome agile methodology. Bizagi’s Spark is
+                                    a tried &amp;
+                                    tested approach that takes you from Project to Program in 3 steps.</p>
+                                <p></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="http://download.bizagi.com/docs/Spark.pdf" target="_blank"
+                                            class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Download</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-lg-4 col-md-6 col-sm-12 mt-3">
+
+                        <div class="card h-100 card-inner factsheet">
+                            <div class="card-image-box">
+                                <div class="card-tag top-left">Factsheet</div>
+                                <img class="card-img-top" src="./Content Center_files/021.png"
+                                    alt="On-Target Methodology">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price"></p>
+                                <h4 class="card-title">On-Target Methodology</h4>
+                                <p class="card-text"></p>
+                                <p>Empower: Bizagi’s On-Target methodology helps you to define Best Practice and
+                                    replicate your
+                                    QuickStart success across new areas of your busines</p>
+                                <p></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="http://download.bizagi.com/docs/Spark.pdf" target="_blank"
+                                            class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Download</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-lg-4 col-md-6 col-sm-12 mt-3">
+
+                        <div class="card h-100 card-inner factsheet">
+                            <div class="card-image-box">
+                                <div class="card-tag top-left">Factsheet</div>
+                                <img class="card-img-top" src="./Content Center_files/023.png"
+                                    alt="Quickstart Overview">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price"></p>
+                                <h4 class="card-title">Quickstart Overview</h4>
+                                <p class="card-text"></p>
+                                <p>Energize: QuickStart your BPM program and get results fast! In as little as 7 weeks,
+                                    achieve tangible
+                                    results with our agile approach that helps instil confidence in BPM.</p>
+                                <p></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/home/resources/content-center.html"
+                                            target="_self" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Download</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-lg-4 col-md-6 col-sm-12 mt-3">
+
+                        <div class="card h-100 card-inner ">
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Content Center_files/030.png"
+                                    alt="Planning Your Path to Intelligent Process Automation">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price"></p>
+                                <h4 class="card-title">Planning Your Path to Intelligent Process Automation</h4>
+                                <p class="card-text"></p>
+                                <p>Learn the importance of effectively managing modern application architecture and how
+                                    to enable
+                                    organization-wide digital capabilities.</p>
+                                <p></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/home/resources/content-center.html"
+                                            target="_self" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Download</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-lg-4 col-md-6 col-sm-12 mt-3">
+
+                        <div class="card h-100 card-inner whitepaper">
+                            <div class="card-image-box">
+                                <div class="card-tag top-left">Whitepaper</div>
+                                <img class="card-img-top" src="./Content Center_files/029.png"
+                                    alt="Navigating the Federal Intelligent Process Revolution">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price"></p>
+                                <h4 class="card-title">Navigating the Federal Intelligent Process Revolution</h4>
+                                <p class="card-text"></p>
+                                <p>Digitization of services has become critical for federal organizations in the public
+                                    sector who want
+                                    to improve the lives of their constituents.</p>
+                                <p></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/home/resources/content-center.html"
+                                            target="_self" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Download</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-lg-4 col-md-6 col-sm-12 mt-3">
+
+                        <div class="card h-100 card-inner analyst-report">
+                            <div class="card-image-box">
+                                <div class="card-tag top-left">Analyst Report</div>
+                                <img class="card-img-top" src="./Content Center_files/031.png"
+                                    alt="Intelligent Process Automation: A Springboard to Profitable Digital Transformation">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price"></p>
+                                <h4 class="card-title">Intelligent Process Automation: A Springboard to Profitable
+                                    Digital
+                                    Transformation</h4>
+                                <p class="card-text"></p>
+                                <p>Discover the power of process to unite siloed legacy systems and drive efficiency and
+                                    agility in your
+                                    organization.</p>
+                                <p></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/home/resources/content-center.html"
+                                            target="_self" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Download</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-lg-4 col-md-6 col-sm-12 mt-3">
+
+                        <div class="card h-100 card-inner ebook">
+                            <div class="card-image-box">
+                                <div class="card-tag top-left">Ebook</div>
+                                <img class="card-img-top" src="./Content Center_files/028.png"
+                                    alt="Why Bizagi &amp; RPA Are Better Together">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price"></p>
+                                <h4 class="card-title">Why Bizagi &amp; RPA Are Better Together</h4>
+                                <p class="card-text"></p>
+                                <p>Identify the difference between Bizagi and RPA technologies, along with how and why
+                                    to use them
+                                    together.</p>
+                                <p></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://go.bizagi.com/RPA-EBOOK/" target="_blank"
+                                            class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Download</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="no-results">No Results</div>
+            </div>
+        </div>
+    </div>
+    <div class="container caseStudy">
+        <div class="row mt-5">
+            <div class="caseStudy-search-box col-12 col-md-12 col-lg-8">
+                <input type="text" class="caseStudy-search-input quicksearch" placeholder="Search"
+                    data-control-search="cardviewlist2" />
+            </div>
+            <div id="options" class="dropdown col-6 col-md-6 col-lg-4 mt-3 mt-lg-0">
+                <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="cta-content">Filter by Content type</span>
+                    <span class="cta-icon-box">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+                <div class="dropdown-menu">
+                    <div class="option-set" data-group="industry" data-control-group="cardviewlist2">
+                        <ul class="options">
+                            <!-- <li class="input-all"><input class="all" type="checkbox" value=".all-resources" id="all-resources"><label for="all-resources">All Resources</label></li> -->
+                            <li>
+                                <label for="guide_cardviewlist2">
+                                    <input id="guide_cardviewlist2" type="checkbox" name="cardviewlist2"
+                                        value=".guide" />
+                                    Guide
+                                </label>
+                            </li>
+                            <li>
+                                <label for="analystReport_cardviewlist2">
+                                    <input id="analystReport_cardviewlist2" type="checkbox" name="cardviewlist2"
+                                        value=".analystReport" />
+                                    Analyst Report
+                                </label>
+                            </li>
+                            <li>
+                                <label for="whitepaper_cardviewlist2">
+                                    <input id="whitepaper_cardviewlist2" type="checkbox" name="cardviewlist2"
+                                        value=".whitepaper" />
+                                    Whitepaper
+                                </label>
+                            </li>
+                            <li>
+                                <label for="professionalService_cardviewlist2">
+                                    <input id="professionalService_cardviewlist2" type="checkbox" name="cardviewlist2"
+                                        value=".professionalServices" />
+                                    Professional Services
+                                </label>
+                            </li>
+                            <li>
+                                <label for="ebook_cardviewlist2">
+                                    <input id="ebook_cardviewlist2" type="checkbox" name="cardviewlist2"
+                                        value=".ebook" />
+                                    Ebook
+                                </label>
+                            </li>
+                            <li>
+                                <label for="factsheet_cardviewlist2">
+                                    <input id="factsheet_cardviewlist2" type="checkbox" name="cardviewlist2"
+                                        value=".factsheet" />
+                                    Factsheet
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row grid icon-grid" id="cardviewlist2">
+                    <div class="element-item col-12 col-lg-3 col-md-6 col-sm-12">
+                        <div class="card h-100 card-inner ">
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Find A Partner_files/logo_infosys.jpg" alt="Infosys">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price"></p>
+                                <p class="card-text"></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://www.infosys.com/services/digital-process-automation/offerings/bizagi.html"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Vist website</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-lg-3 col-md-6 col-sm-12">
+
+                        <div class="card h-100 card-inner ">
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Find A Partner_files/logo_gtk.jpg" alt="GTK">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price"></p>
+                                <p class="card-text"></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://www.infosys.com/services/digital-process-automation/offerings/bizagi.html"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Vist website</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-lg-3 col-md-6 col-sm-12">
+
+                        <div class="card h-100 card-inner ">
+                            <div class="card-image-box">
+                                <img class="card-img-top"
+                                    src="./Find A Partner_files/partners-page_partner-logo_nimble.png" alt="Nimble">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price"></p>
+                                <p class="card-text"></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://www.infosys.com/services/digital-process-automation/offerings/bizagi.html"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Vist website</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-lg-3 col-md-6 col-sm-12">
+
+                        <div class="card h-100 card-inner ">
+                            <div class="card-image-box">
+                                <img class="card-img-top"
+                                    src="./Find A Partner_files/partners-page_partner-logo_big-acronotics.png"
+                                    alt="Acronotics">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price"></p>
+                                <p class="card-text"></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://www.infosys.com/services/digital-process-automation/offerings/bizagi.html"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Vist website</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-lg-3 col-md-6 col-sm-12">
+
+                        <div class="card h-100 card-inner ">
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Find A Partner_files/logo_innovelocity.jpg"
+                                    alt="Infosys">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price"></p>
+                                <p class="card-text"></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://www.infosys.com/services/digital-process-automation/offerings/bizagi.html"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Vist website</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-lg-3 col-md-6 col-sm-12">
+
+                        <div class="card h-100 card-inner ">
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Find A Partner_files/logo_backspace.jpg"
+                                    alt="Backspace">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price"></p>
+                                <p class="card-text"></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://www.infosys.com/services/digital-process-automation/offerings/bizagi.html"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Vist website</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-lg-3 col-md-6 col-sm-12">
+
+                        <div class="card h-100 card-inner ">
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Find A Partner_files/logo_IMTIC.jpg" alt="IMTIC">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price"></p>
+                                <p class="card-text"></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://www.infosys.com/services/digital-process-automation/offerings/bizagi.html"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Vist website</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-lg-3 col-md-6 col-sm-12">
+
+                        <div class="card h-100 card-inner ">
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Find A Partner_files/logo_fujixerox.jpg" alt="Xerox">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price"></p>
+                                <p class="card-text"></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://www.infosys.com/services/digital-process-automation/offerings/bizagi.html"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Vist website</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="no-results">No Results</div>
+            </div>
+        </div>
+    </div>
+    <div class="container caseStudy">
+        <div class="row mt-5">
+            <div class="caseStudy-search-box col-12 col-md-12 col-lg-8">
+                <input type="text" class="caseStudy-search-input quicksearch" placeholder="Search"
+                    data-control-search="cardviewlist3" />
+            </div>
+            <div id="options" class="dropdown col-6 col-md-6 col-lg-4 mt-3 mt-lg-0">
+                <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="cta-content">Filter by Content type</span>
+                    <span class="cta-icon-box">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+                <div class="dropdown-menu">
+                    <div class="option-set" data-group="industry" data-control-group="cardviewlist3">
+                        <ul class="options">
+                            <!-- <li class="input-all"><input class="all" type="checkbox" value=".all-resources" id="all-resources"><label for="all-resources">All Resources</label></li> -->
+                            <li>
+                                <label for="guide_cardviewlist3">
+                                    <input id="guide_cardviewlist3" type="checkbox" name="cardviewlist3"
+                                        value=".guide" />
+                                    Guide
+                                </label>
+                            </li>
+                            <li>
+                                <label for="analystReport_cardviewlist3">
+                                    <input id="analystReport_cardviewlist3" type="checkbox" name="cardviewlist3"
+                                        value=".analystReport" />
+                                    Analyst Report
+                                </label>
+                            </li>
+                            <li>
+                                <label for="whitepaper_cardviewlist3">
+                                    <input id="whitepaper_cardviewlist3" type="checkbox" name="cardviewlist3"
+                                        value=".whitepaper" />
+                                    Whitepaper
+                                </label>
+                            </li>
+                            <li>
+                                <label for="professionalService_cardviewlist3">
+                                    <input id="professionalService_cardviewlist3" type="checkbox" name="cardviewlist3"
+                                        value=".professionalServices" />
+                                    Professional Services
+                                </label>
+                            </li>
+                            <li>
+                                <label for="ebook_cardviewlist3">
+                                    <input id="ebook_cardviewlist3" type="checkbox" name="cardviewlist3"
+                                        value=".ebook" />
+                                    Ebook
+                                </label>
+                            </li>
+                            <li>
+                                <label for="factsheet_cardviewlist3">
+                                    <input id="factsheet_cardviewlist3" type="checkbox" name="cardviewlist3"
+                                        value=".factsheet" />
+                                    Factsheet
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row grid icon-grid" id="cardviewlist3" style="position: relative; height: 1300.8px;">
+                    <div class="element-item instructor-led-workshop classroom-course self-paced col-12 col-lg-4 col-md-6 col-sm-12"
+                        style="position: absolute; left: 0px; top: 0px;">
+                        <div class="card h-100 card-inner self-pacedprocess-modelling">
+                            <div class="card-image-box">
+                                <div class="card-tag top-left">Self-paced</div>
+                                <img class="card-img-top" src="./Course Calatog_files/self-placed-bizagi-courses.png"
+                                    alt="Get Started with Bizagi Modeler">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price">Free</p>
+                                <h4 class="card-title">Get Started with Bizagi Modeler</h4>
+                                <p class="card-text"></p>
+                                <p>Online: A series of free digital resources to be consumed at your own convenience.
+                                </p>
+
+                                <p>Register for our free, self-paced eLearning course and learn how to model, document,
+                                    simulate, and
+                                    publish processes collaboratively using Bizagi Modeler.</p>
+                                <p></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="http://elearning.bizagi.com/my/startedbizagimodelers.php"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Learn more</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item self-paced classroom-course col-12 col-lg-4 col-md-6 col-sm-12"
+                        style="position: absolute; left: 379.987px; top: 0px;">
+                        <div class="card h-100 card-inner self-pacedprocess-modelling">
+                            <div class="card-image-box">
+                                <div class="card-tag top-left">Self-paced</div>
+                                <img class="card-img-top" src="./Course Calatog_files/self-placed-bizagi-courses-08.png"
+                                    alt="Process Modeling">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price">Free</p>
+                                <h4 class="card-title">Process Modeling</h4>
+                                <p class="card-text"></p>
+                                <p>Online: A series of free digital resources to be consumed at your own convenience.
+                                </p>
+
+                                <p>Register for our free, self-paced eLearning course and learn how to use Bizagi
+                                    Modeler to model,
+                                    document and publish business processes using BPMN best practice.</p>
+                                <p></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="http://elearning.bizagi.com/my/startedbizagimodelers.php"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Learn more</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item classroom-course col-12 col-lg-4 col-md-6 col-sm-12"
+                        style="position: absolute; left: 759.974px; top: 0px;">
+                        <div class="card h-100 card-inner instructor-led-workshopprocess-modelling">
+                            <div class="card-image-box">
+                                <div class="card-tag top-left">Instructor-led workshop</div>
+                                <img class="card-img-top" src="./Course Calatog_files/instructor-bizagi-courses.png"
+                                    alt="Process Modeling">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price">Free</p>
+                                <h4 class="card-title">Process Modeling</h4>
+                                <p class="card-text"></p>
+                                <p>Online: Live and first-hand interaction with an expert consultant.</p>
+
+                                <p>Join one of our process modeling experts in live, interactive training sessions that
+                                    complement the
+                                    Process Modeling self-paced course, to gain further insight into process modeling
+                                    concepts, best
+                                    practices and common errors.</p>
+                                <p></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://www.bizagi.com/en/workshop-of-process-modeling" target="_blank"
+                                            class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Learn more</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item classroom-course col-12 col-lg-4 col-md-6 col-sm-12"
+                        style="position: absolute; left: 379.987px; top: 638.4px;">
+                        <div class="card h-100 card-inner instructor-led-workshopprocess-automation">
+                            <div class="card-image-box">
+                                <div class="card-tag top-left">Instructor-led workshop</div>
+                                <img class="card-img-top" src="./Course Calatog_files/self-placed-bizagi-courses.png"
+                                    alt="Get Started with Bizagi Modeler">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-price">Free</p>
+                                <h4 class="card-title">Get Started with Bizagi Modeler</h4>
+                                <p class="card-text"></p>
+                                <p>Online: A series of free digital resources to be consumed at your own convenience.
+                                </p>
+
+                                <p>Register for our free, self-paced eLearning course and learn how to model, document,
+                                    simulate, and
+                                    publish processes collaboratively using Bizagi Modeler.</p>
+                                <p></p>
+                                <h6 class="card-subtitle"></h6>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="http://elearning.bizagi.com/my/startedbizagimodelers.php"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Learn more</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="no-results">No Results</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="caseStudy-search-box col-12 col-md-12 col-lg-8">
+                <input type="text" class="caseStudy-search-input quicksearch" placeholder="Search"
+                    data-control-search="cardviewlist4" />
+            </div>
+            <div id="options" class="dropdown col-6 col-md-6 col-lg-4 mt-3 mt-lg-0">
+                <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="cta-content">Filter by Content type</span>
+                    <span class="cta-icon-box">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+                <div class="dropdown-menu">
+                    <div class="option-set" data-group="industry" data-control-group="cardviewlist4">
+                        <ul class="options">
+                            <!-- <li class="input-all"><input class="all" type="checkbox" value=".all-resources" id="all-resources"><label for="all-resources">All Resources</label></li> -->
+                            <li>
+                                <label for="guide_cardviewlist4">
+                                    <input id="guide_cardviewlist4" type="checkbox" name="cardviewlist4"
+                                        value=".guide" />
+                                    Guide
+                                </label>
+                            </li>
+                            <li>
+                                <label for="analystReport_cardviewlist4">
+                                    <input id="analystReport_cardviewlist4" type="checkbox" name="cardviewlist4"
+                                        value=".analystReport" />
+                                    Analyst Report
+                                </label>
+                            </li>
+                            <li>
+                                <label for="whitepaper_cardviewlist4">
+                                    <input id="whitepaper_cardviewlist4" type="checkbox" name="cardviewlist4"
+                                        value=".whitepaper" />
+                                    Whitepaper
+                                </label>
+                            </li>
+                            <li>
+                                <label for="professionalService_cardviewlist4">
+                                    <input id="professionalService_cardviewlist4" type="checkbox" name="cardviewlist4"
+                                        value=".professionalServices" />
+                                    Professional Services
+                                </label>
+                            </li>
+                            <li>
+                                <label for="ebook_cardviewlist4">
+                                    <input id="ebook_cardviewlist4" type="checkbox" name="cardviewlist4"
+                                        value=".ebook" />
+                                    Ebook
+                                </label>
+                            </li>
+                            <li>
+                                <label for="factsheet_cardviewlist4">
+                                    <input id="factsheet_cardviewlist4" type="checkbox" name="cardviewlist4"
+                                        value=".factsheet" />
+                                    Factsheet
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row grid" id="cardviewlist4"
+                    style="position: relative; height: 3420px;">
+                    <div class="element-item col-12 col-md-6 col-lg-4 financial-services customer-engagement marketing--sales"
+                        data-category="financial-services customer-engagement marketing--sales"
+                        style="position: absolute; left: 0px; top: 0px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        Old Mutual</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Financial Services</div>
+                                        </b>
+                                        <div class="Solution0">Customer Engagement</div>
+                                        <div class="Solution1">Marketing &amp; Sales</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/logo_oldmutualcase.png"
+                                    alt="Old Mutual"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Leading African financial services group makes bank branch queues 9X shorter and
+                                    sees 15% NPS increa ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/old-mutual"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 insurance finance governance-compliance digital-operations"
+                        data-category="insurance finance governance-compliance digital-operations"
+                        style="position: absolute; left: 380px; top: 0px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        BNP Paribas Cardif Japan</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Insurance</div>
+                                        </b>
+                                        <div class="Solution0">Finance</div>
+                                        <div class="Solution1">Governance &amp; Compliance</div>
+                                        <div class="Solution2">Digital Operations</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/logo_bnpparibas.png"
+                                    alt="BNP Paribas Cardif Japan"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Japanese insurance arm of the eighth largest bank in the world transforms their
+                                    B2B insurance claims ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/bnp-paribas-cardif-japan"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 professional-services customer-engagement digital-operations"
+                        data-category="professional-services customer-engagement digital-operations"
+                        style="position: absolute; left: 760px; top: 0px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        ManpowerGroup (Portugal)</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Professional Services</div>
+                                        </b>
+                                        <div class="Solution0">Customer Engagement</div>
+                                        <div class="Solution1">Digital Operations</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/logo_manpower.png"
+                                    alt="ManpowerGroup (Portugal)"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    The world's third-largest staffing firm's Portuguese operation transforms
+                                    patchwork IT systems to cu ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/manpowergroup-portugal"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 manufacturing--retail finance digital-operations"
+                        data-category="manufacturing--retail finance digital-operations"
+                        style="position: absolute; left: 0px; top: 380px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        Audi Japan KK</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Manufacturing &amp; Retail</div>
+                                        </b>
+                                        <div class="Solution0">Finance</div>
+                                        <div class="Solution1">Digital Operations</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/logo_audi.png" alt="Audi Japan KK">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Global car manufacturer's Japanese branch automates core finance processes,
+                                    shrinking processing tim ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/audi-japan-kk"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 insurance governance-compliance"
+                        data-category="insurance governance-compliance"
+                        style="position: absolute; left: 380px; top: 380px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        GENERALI CEE</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Insurance</div>
+                                        </b>
+                                        <div class="Solution0">Governance &amp; Compliance</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/logo_generali.png" alt="GENERALI CEE">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Division of the world's third-largest insurer fully automates audit process
+                                    while cutting complex of ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/generali-cee"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 financial-services finance digital-operations"
+                        data-category="financial-services finance digital-operations"
+                        style="position: absolute; left: 760px; top: 380px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        Bancolombia</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Financial Services</div>
+                                        </b>
+                                        <div class="Solution0">Finance</div>
+                                        <div class="Solution1">Digital Operations</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/logo_bancolombia.png"
+                                    alt="Bancolombia"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Largest bank in Colombia combines Bizagi and RPA to free over 51,500 hours per
+                                    year in-branch.</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/bancolombia"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 financial-services finance digital-operations customer-experience"
+                        data-category="financial-services finance digital-operations customer-experience"
+                        style="position: absolute; left: 0px; top: 760px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        Citizens Bank</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Financial Services</div>
+                                        </b>
+                                        <div class="Solution0">Finance</div>
+                                        <div class="Solution1">Digital Operations</div>
+                                        <div class="Solution2">Customer Experience</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/logo-citizens-bank_case.png"
+                                    alt="Citizens Bank"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    One of the largest banks in the US deploys Bizagi &amp; RPA to reduce customer
+                                    onboarding time by 85%.</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/citizens-bank"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 financial-services finance governance-compliance"
+                        data-category="financial-services finance governance-compliance"
+                        style="position: absolute; left: 380px; top: 760px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        Aon</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Financial Services</div>
+                                        </b>
+                                        <div class="Solution0">Finance</div>
+                                        <div class="Solution1">Governance &amp; Compliance</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/aon_logo.png" alt="Aon"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Global investment consulting arm of leading insurer gains more control and
+                                    visibility by reducing co ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/aon"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 financial-services human-resource"
+                        data-category="financial-services human-resource"
+                        style="position: absolute; left: 760px; top: 760px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        OCS Group</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Financial Services</div>
+                                        </b>
+                                        <div class="Solution0">Human Resource</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/ocs-group.png" alt="OCS Group">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    The world's largest privately-owned facilities management services company
+                                    automates new starter pro ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/ocs-group"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 manufacturing--retail customer-engagement governance-compliance digital-operations"
+                        data-category="manufacturing--retail customer-engagement governance-compliance digital-operations"
+                        style="position: absolute; left: 0px; top: 1140px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        Harrods</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Manufacturing &amp; Retail</div>
+                                        </b>
+                                        <div class="Solution0">Customer Engagement</div>
+                                        <div class="Solution1">Governance &amp; Compliance</div>
+                                        <div class="Solution2">Digital Operations</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/Harrods_logo.png" alt="Harrods">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    World-famous luxury department store automates its watch repair process for
+                                    improved security and op ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/harrods"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 utilities--energy customer-engagement"
+                        data-category="utilities--energy customer-engagement"
+                        style="position: absolute; left: 380px; top: 1140px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        WeMag</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Utilities &amp; Energy</div>
+                                        </b>
+                                        <div class="Solution0">Customer Engagement</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/wemag.png" alt="WeMag"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    German eco-energy provider digitizes operations to halve the time it takes to
+                                    complete forms-based s ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/wemag"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 financial-services digital-operations"
+                        data-category="financial-services digital-operations"
+                        style="position: absolute; left: 760px; top: 1140px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        DZHYP</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Financial Services</div>
+                                        </b>
+                                        <div class="Solution0">Digital Operations</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/logo_wlbank.png" alt="DZHYP"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Leading German mortgage bank halves the time it takes to approve loans through
+                                    agile process automat ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/case-studies/dzhyp"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 transportation-logistics governance-compliance digital-operations"
+                        data-category="transportation-logistics governance-compliance digital-operations"
+                        style="position: absolute; left: 0px; top: 1520px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        Cofco International</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Transportation &amp; Logistics</div>
+                                        </b>
+                                        <div class="Solution0">Governance &amp; Compliance</div>
+                                        <div class="Solution1">Digital Operations</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/logo_cofco.png"
+                                    alt="Cofco International"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Global agriculture supply chain company digitizes processes to increase agility
+                                    and ensure complianc ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/cofco-international"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 healthcare finance digital-operations"
+                        data-category="healthcare finance digital-operations"
+                        style="position: absolute; left: 380px; top: 1520px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        Takeda</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Healthcare</div>
+                                        </b>
+                                        <div class="Solution0">Finance</div>
+                                        <div class="Solution1">Digital Operations</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/logo_takeda.png" alt="Takeda">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Leading pharmaceutical company increases procurement efficiency to deliver cost
+                                    savings in just 10 w ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/takeda"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 utilities--energy customer-engagement digital-operations"
+                        data-category="utilities--energy customer-engagement digital-operations"
+                        style="position: absolute; left: 760px; top: 1520px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        Eidsiva Broadband</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Utilities &amp; Energy</div>
+                                        </b>
+                                        <div class="Solution0">Customer Engagement</div>
+                                        <div class="Solution1">Digital Operations</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/logo_eidsiva.png"
+                                    alt="Eidsiva Broadband"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    One of Norway's largest broadband providers saved three man-years' worth of work
+                                    by automating core ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/eidsiva-bredband"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 utilities--energy governance-compliance digital-operations"
+                        data-category="utilities--energy governance-compliance digital-operations"
+                        style="position: absolute; left: 0px; top: 1900px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        Abengoa (Simosa)</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Utilities &amp; Energy</div>
+                                        </b>
+                                        <div class="Solution0">Governance &amp; Compliance</div>
+                                        <div class="Solution1">Digital Operations</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/logo_abengoa.png"
+                                    alt="Abengoa (Simosa)"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Sustainable energy company creates process factory to automate over 360
+                                    processes in 2 years.</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/case-studies/abengoa"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 utilities--energy digital-operations"
+                        data-category="utilities--energy digital-operations"
+                        style="position: absolute; left: 380px; top: 1900px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        Tatweer Petroleum</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Utilities &amp; Energy</div>
+                                        </b>
+                                        <div class="Solution0">Digital Operations</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/logo_tatweer.png"
+                                    alt="Tatweer Petroleum"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Bahraini oil and energy company automated 50 processes in one year to ensure
+                                    over 1,500 oil wells ar ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/case-studies/tatweer-petroleum"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 manufacturing--retail customer-engagement"
+                        data-category="manufacturing--retail customer-engagement"
+                        style="position: absolute; left: 760px; top: 1900px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        Adidas</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Manufacturing &amp; Retail</div>
+                                        </b>
+                                        <div class="Solution0">Customer Engagement</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/logo_adidas.png" alt="Adidas">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/case-studies/test-case-study-title"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 hospitality finance governance-compliance"
+                        data-category="hospitality finance governance-compliance"
+                        style="position: absolute; left: 0px; top: 2280px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        Prestigious Group of Hotels and Casinos</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Hospitality</div>
+                                        </b>
+                                        <div class="Solution0">Finance</div>
+                                        <div class="Solution1">Governance &amp; Compliance</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top"
+                                    src="./Customers_files/Premier-Group-of-Hotels-&amp;-Casinos.png"
+                                    alt="Prestigious Group of Hotels and Casinos"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Renowned casino chain digitized manual activities of the credit approval for
+                                    patrons to ensure that ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/case-studies/prestigious-group-of-hotels--cas"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 manufacturing--retail governance-compliance digital-operations"
+                        data-category="manufacturing--retail governance-compliance digital-operations"
+                        style="position: absolute; left: 380px; top: 2280px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        Global Consumer Goods Manufacturer</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Manufacturing &amp; Retail</div>
+                                        </b>
+                                        <div class="Solution0">Governance &amp; Compliance</div>
+                                        <div class="Solution1">Digital Operations</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/customers-page_consumer-goods.png"
+                                    alt="Global Consumer Goods Manufacturer"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Global Consumer Goods Manufacturer creates process factory with Bizagi resulting
+                                    in 70% cost reducti ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/case-studies/global-consumer-goods-manufactur"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 insurance customer-engagement"
+                        data-category="insurance customer-engagement"
+                        style="position: absolute; left: 760px; top: 2280px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        Chilean Insurance Syndicate</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Insurance</div>
+                                        </b>
+                                        <div class="Solution0">Customer Engagement</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/logo_prose-an.png"
+                                    alt="Chilean Insurance Syndicate"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Chilean insurance syndicate implemented a centralized tracking system,
+                                    increasing vehicle recovery r ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/case-studies/chilean-insurance-syndicate"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 utilities--energy governance-compliance digital-operations"
+                        data-category="utilities--energy governance-compliance digital-operations"
+                        style="position: absolute; left: 0px; top: 2660px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        International Oill &amp; Gas Explorations and Production Company</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Utilities &amp; Energy</div>
+                                        </b>
+                                        <div class="Solution0">Governance &amp; Compliance</div>
+                                        <div class="Solution1">Digital Operations</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top"
+                                    src="./Customers_files/International-Oil-&amp;-Gas-Exploration-and-Production-Company.png"
+                                    alt="International Oill &amp; Gas Explorations and Production Company"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Oil &amp; gas company automates land management to see over $85,500 a year in
+                                    savings</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/case-studies/oil--gas-explorations-and-produc"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 government--education customer-engagement human-resource digital-operations"
+                        data-category="government--education customer-engagement human-resource digital-operations"
+                        style="position: absolute; left: 380px; top: 2660px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        Blackpool &amp; The Flyde College</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Government &amp; Education</div>
+                                        </b>
+                                        <div class="Solution0">Customer Engagement</div>
+                                        <div class="Solution1">Human Resource</div>
+                                        <div class="Solution2">Digital Operations</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top" src="./Customers_files/logo_blackpool (1).png"
+                                    alt="Blackpool &amp; The Flyde College"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Best large college in England facilitates innovation in education with first
+                                    process live in just 5 ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/case-studies/government--education-blackpool"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 insurance governance-compliance digital-operations"
+                        data-category="insurance governance-compliance digital-operations"
+                        style="position: absolute; left: 760px; top: 2660px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        UK-Based Underwriter of Speciality Insurance</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Insurance</div>
+                                        </b>
+                                        <div class="Solution0">Governance &amp; Compliance</div>
+                                        <div class="Solution1">Digital Operations</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top"
+                                    src="./Customers_files/logo-UK-Based-Underwriter-of-Speciality-Insurance.png"
+                                    alt="UK-Based Underwriter of Speciality Insurance"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Speciality insurer automates peer review process to see 200% quality improvement
+                                    and automated audit ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/case-studies/insurance-uk-based-underwriter-o"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-item col-12 col-md-6 col-lg-4 insurance governance-compliance digital-operations"
+                        data-category="insurance governance-compliance digital-operations"
+                        style="position: absolute; left: 0px; top: 3040px;">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>
+                                        UK-Based Underwriter of Speciality Insurance</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext">
+                                        <b>
+                                            <div class="Industry">Insurance</div>
+                                        </b>
+                                        <div class="Solution0">Governance &amp; Compliance</div>
+                                        <div class="Solution1">Digital Operations</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card-image-box">
+                                <img class="card-img-top"
+                                    src="./Customers_files/logo-UK-Based-Underwriter-of-Speciality-Insurance.png"
+                                    alt="UK-Based Underwriter of Speciality Insurance"></div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Speciality insurer automates peer review process to see 200% quality improvement
+                                    and automated audit ...</p>
+                                <div class="card-cta">
+                                    <div class="cta-group">
+                                        <a href="https://bizagi-dev-acdigital.azure.jahia.com/customers/case-studies/insurance-uk-based-underwriter-o-1"
+                                            target="_blank" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">
+                                                Full Story</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="no-results">No Results</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function checkResults() {
+        var visibleItemsCount = $container.data("isotope").$filteredAtoms.length;
+
+        if (visibleItemsCount > 0) {
+            $(".no-results").hide();
+        } else {
+            $(".no-results").show();
+        }
+    }
+    $('.options').on('click', function () {
+        var array = [];
+        $("input:checked").each(function () {
+            array.push($(this).val());
+        });
+        $('#dropdownValue').text(array);
+    });
+</script>
+
+<script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="caseStudyWithoutJSON.js"></script>
+
+</html>

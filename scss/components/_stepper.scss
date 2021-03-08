@@ -1,0 +1,32 @@
+.stepper {
+    text-align: center;
+    position: relative;
+    &-line {
+        position: absolute;
+        width: 61%;
+        left: 20%;
+        top: 3.9375rem;
+        border-top: 1px solid #dcdcdc
+    }
+    &-heading {
+        font-size: 1rem;
+        font-weight: 800;
+        @include media(tablet) {
+            font-size: 1.125rem;
+        }
+    }
+    &-image {
+        height: 5.9375rem !important;
+        width: auto !important;
+    }
+    &-subheading {
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    &-highlight {
+        color: #6D7278;
+    }
+    &-opacity {
+        opacity: 0.5;
+    }
+}

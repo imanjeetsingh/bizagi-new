@@ -1,0 +1,9 @@
+.blogTag {
+  .breadcrumb {
+    padding: 0;
+    margin-top: 2.5rem;
+    @include media(desktop) {
+      margin-top: 1rem;
+    }
+  }
+}

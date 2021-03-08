@@ -1,0 +1,237 @@
+.shadow-wrapper {
+    z-index: 1;
+    position: relative;
+    height: 100%;
+}
+
+// @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+//     .shadow-wrapper {
+//         min-height: 100%;
+
+//     }
+// }
+
+.tag-box-v2 {
+    // background: #fafafa;
+    border: solid 1px #eee;
+    // border-left: solid 2px #e74c3c;
+    padding: 20px 8px 20px 8px;
+    margin-bottom: 30px;
+    height: 100%;
+    box-shadow: 0 0 11px 0 rgba(166, 166, 166, 0.5);
+}
+
+.shadow-wrapper .cta.cta-primary {
+    font-size: 11px;
+    padding: 2px 7px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.shadow-wrapper .cta.cta-primary:hover {
+    background-color: #F28C20;
+    border: solid 2px #F28C20 !important;
+}
+
+
+// .box-shadow::after, .box-shadow::before {
+//     top: 80%;
+//     left: 5px;
+//     width: 50%;
+//     z-index: -1;
+//     content: "";
+//     bottom: 15px;
+//     max-width: 300px;
+//     background: #999;
+//     position: absolute;
+// }
+// .shadow-effect-2:after, .shadow-effect-4:after {
+//     left: auto;
+//     right: 5px;
+//     transform: rotate(3deg);
+//     -o-transform: rotate(3deg);
+//     -ms-transform: rotate(3deg);
+//     -moz-transform: rotate(3deg);
+//     -webkit-transform: rotate(3deg);
+//     -webkit-box-shadow: 0 15px 10px #999;
+// }
+.eventsDateBadge p {
+    font-size: 18px;
+    text-align: center !important;
+    line-height: 1 !important;
+}
+
+.eventsDateBadge p span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase !important;
+    display: block !important;
+    border-radius: 3px;
+    padding: 6px 0 6px 0 !important;
+}
+
+.eventsDateBadge p span {
+    background: #F28C20;
+}
+
+.btn-group-xs>.btn,
+.btn-xs {
+    background-color: #F28C20;
+    color: #ffffff;
+    border: solid 2px #F28C20;
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+    background: #dc7000;
+    border: solid 2px #dc7000;
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.eventsListItem p {
+    font-size: .825rem;
+    margin-bottom: 2rem;
+    // width: 2.5rem;
+}
+
+.eventsInfoDate {
+    display: inline-flex;
+    width: 10%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    // padding-left: 15px;
+    vertical-align: top;
+    margin-top: 0;
+
+    @include media(tablet) {
+        // margin-top: -1.4375rem;
+    }
+
+    @include media(desktop) {
+        margin-top: 0;
+    }
+}
+
+.eventsDateBadge {
+    width: 50px;
+    height: 54px;
+    background: #fcfcfc;
+    border: 1px solid #F28C20;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 4px;
+    margin-bottom: 1.25rem;
+
+    // margin-left: -15px;
+    @include media(tablet) {
+        // margin-bottom: 20px;
+        // margin-top: 23px;
+    }
+
+    @include media(desktop) {
+        margin-top: 0;
+        // margin-left: -1.4375rem;
+    }
+}
+
+// .eventsDateBadge.margin-top-20 p{
+//     width: 2.5rem;
+// }
+
+.events-date-to {
+    margin: 1rem;
+}
+
+.eventsBody {
+    display: inline-block;
+    // width: 100%;
+    position: relative;
+    min-height: 1px;
+    min-width: 100%;
+    height: 100%;
+
+    // @include media (desktop) {
+    //     width: 89%;
+    // }
+    // .card-cta {
+    //     bottom: -1rem;
+    // }
+
+    .tag-box {
+        .list-inline {
+            li {
+                padding-left: 0;
+                color: #6d7278;
+
+                .fa-map-marker {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    .shadow-wrapper {
+        .tag-box {
+            h2 {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.fc-today {
+    background-color: #F28C20 !important;
+}
+
+.fc-header {
+    background-color: #ccc;
+}
+
+.fc-widget-header {
+    height: 3.125rem;
+    background-color: #eee;
+}
+
+.fc-event-skin {
+    border-color: #F28C20 !important;
+    background-color: #F28C20 !important;
+    color: #ffffff;
+}
+
+.fc-event-skin {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.calendar {
+    margin-bottom: 2rem;
+
+    th.fc-widget-header {
+        width: 14.28%;
+    }
+}
+
+// edit card  height equal
+.eventsListItem {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.course-calender-heading {
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}

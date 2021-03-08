@@ -8,7 +8,9 @@
         width: 35px!important;
         height: 47px!important;
         background-position: 100% 50%;
-        &-option {}
+        &-option {
+            color: #000000;
+        }
         &:focus {
             outline: none;
         }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+</head>
+
+<body>
+    <div class="container sap-container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-center">SAP + Bizagi: 2 integration options</h3>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-10">
+                <h4 class="">Connector-based integration</h4>
+                <p class="">You configure your processes to invoke BAPI wrappers to either query, create or update records directly in SAP. Choose either to activate a button's click in the user interface; through asynchronous task handling timeouts; or a preset
+                    number of automatic retries. The SAP connector authenticates directly with an authorized SAP user, instead of delegating security to your web service setup.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img class="sap-image" src="./images/sap002.png" alt="Bizagi SAP connector graphic">
+            </div>
+            <div class="col-md-6">
+                <h5 class="">Benefits of choosing the Bizagi SAP Connector</h5>
+                <ul class="">
+                    <li>Out of the box, standardized interface to applications and data on SAP server</li>
+                    <li>Simple setup - graphical mapping for SAP inputs and outputs</li>
+                    <li>Powerful features for exception &amp; error management</li>
+                    <li>Full support for SAP’s BAPI protocol used for real time queries and updates</li>
+                    <li>Direct authentication via SAP users for flexibility and ease of maintenance</li>
+                    <li>Enterprise-level integration for any SAP module (FI, SD, MM, HR, CO and more)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-9 offset-lg-3">
+                <h4 class="right-allign">Web services (SOA)</h4>
+                <p class="right-allign">Prefer a generic connector? No problem. Simply connect via the Bizagi integration layer and communicate with SAP directly. What’s more, you can use SAP NetWeaver as a broker to act as an integration hub serving as a middleware between
+                    SAP and Bizagi. This option simply decouples the business process from the SAP system and enables real-time processing.</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h5 class="">Benefits of choosing the Web Services (SOA) </h5>
+                <ul class="">
+                    <li>Support for XMLs and external servers – platform-independent, and the programming language used in the services implementation.</li>
+                    <li>Allows business information from process to be sent as input to external service</li>
+                    <li>Works with master and transactional data</li>
+                    <li>User-friendly definitions allow interfaces to be defined by Business users</li>
+                    <li>Support for SAP Brokers (e.g. NetWeaver) to house message routing &amp; data transformation logic</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="./images/sap001.png" class="sap-image" alt="Bizagi web services graphic">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
