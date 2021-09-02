@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2 POC</title>
+    <!-- https://codepen.io/Niqname/pen/wgOrzd -->
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: sans-serif;
+    }
+    /* ---- button ---- */
+    
+    .button {
+        display: inline-block;
+        padding: 0.5em 1.0em;
+        background: #EEE;
+        border: none;
+        border-radius: 7px;
+        background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2));
+        color: #222;
+        font-family: sans-serif;
+        font-size: 16px;
+        text-shadow: 0 1px white;
+        cursor: pointer;
+    }
+    
+    .button:hover {
+        background-color: #8CF;
+        text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+        color: #222;
+    }
+    
+    .button:active,
+    .button.is-checked {
+        background-color: #28F;
+    }
+    
+    .button.is-checked {
+        color: white;
+        text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+    }
+    
+    .button:active {
+        box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+    }
+    /* ---- button-group ---- */
+    
+    .button-group {
+        margin-bottom: 20px;
+    }
+    
+    .button-group:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    .button-group .button {
+        float: left;
+        border-radius: 0;
+        margin-left: 0;
+        margin-right: 1px;
+    }
+    
+    .button-group .button:first-child {
+        border-radius: 0.5em 0 0 0.5em;
+    }
+    
+    .button-group .button:last-child {
+        border-radius: 0 0.5em 0.5em 0;
+    }
+    /* ---- isotope ---- */
+    
+    .grid {
+        border: 1px solid #333;
+    }
+    /* clear fix */
+    
+    .grid:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    /* ---- .element-item ---- */
+    
+    .element-item {
+        position: relative;
+        float: left;
+        width: 200px;
+        height: 300px;
+        margin: 5px;
+        padding: 10px;
+        background: #888;
+        color: #262524;
+    }
+    
+    .element-item>* {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .element-item .author {
+        position: absolute;
+        left: 10px;
+        top: 60px;
+        text-transform: none;
+        letter-spacing: 0;
+        font-size: 12px;
+        font-weight: normal;
+    }
+    
+    .element-item .title {
+        position: absolute;
+        left: 10px;
+        top: 0px;
+        font-size: 42px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .element-item .isbn {
+        position: absolute;
+        left: 10px;
+        top: 76px;
+        font-size: 12px;
+    }
+    
+    .element-item .isbn::before {
+        content: 'ISBN ';
+    }
+    
+    .element-item .price {
+        position: absolute;
+        left: 10px;
+        top: 96px;
+        font-size: 14px;
+    }
+    
+    .element-item .price::before {
+        content: '€ ';
+    }
+    
+    .highlights {
+        border: 2px solid yellow;
+    }
+    
+    [data-category="ebooks"]::before {
+        background-color: purple;
+        color: white;
+        content: 'ebook';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 120px;
+        height: 30px;
+    }
+    
+    .element-item.ebook {
+        background: red;
+    }
+    
+    .element-item.popular {
+        background: orange;
+    }
+    
+    .publicationdate {
+        margin-top: 2rem;
+    }
+    
+    .mt-4 {
+        margin-top: 4rem;
+    }
+    
+    .processAccelerators {
+        background-color: #967100;
+    }
+    
+    .widget {
+        background-color: #96003a;
+    }
+    
+    .connectors {
+        background-color: #006e96;
+    }
+    
+    .inline {
+        display: flex;
+    }
+</style>
+
+<body>
+    <div class="inline">
+        <div id="filters" class="button-group">
+            <button class="button is-checked" data-filter="*">Clear Filter</button>
+            <button class="button" data-filter=".processAccelerators">Process Accelerators</button>
+            <button class="button" data-filter=".widget">Widget</button>
+            <button class="button" data-filter=".connectors">Connectors</button>
+
+            <!-- <button class="button" data-sort-by="publicationdate" data-sort-direction="asc">Date Asc</button> -->
+        </div>
+
+        <div id="recent" class="button-group">
+            <button class="button is-checked" data-filter="*">Sort By</button>
+            <button class="button" data-sort-buy="publicationdate" data-sort-directions="desc">Recent</button>
+        </div>
+    </div>
+
+    <div id="sorts" class="button-group">
+        <button class="button is-checked" data-sort-by="original-order">original order</button>
+        <button class="button" data-sort-by="title" data-sort-direction="asc">A to Z</button>
+        <button class="button" data-sort-by="title" data-sort-direction="desc">Z to A</button>
+    </div>
+
+    <div class="grid">
+        <div class="element-item processAccelerators" data-category="processAccelerators">
+            <p class="title">Apple</p>
+            <p class="mt-4">Process Accelerators 1</p>
+            <p class="publicationdate">2000/09/01</p>
+        </div>
+        <div class="element-item widget" data-category="widget">
+            <p class="title">Fish</p>
+            <p class="mt-4">Widget 2</p>
+            <p class="publicationdate">2000/09/06</p>
+        </div>
+        <div class="element-item processAccelerators" data-category="processAccelerators">
+            <p class="title">Banana</p>
+            <p class="mt-4">Process Accelerators 2</p>
+            <p class="publicationdate">2000/09/02</p>
+        </div>
+        <div class="element-item connectors" data-category="connectors">
+            <p class="title">Igloo</p>
+            <p class="mt-4">Connectors 1</p>
+            <p class="publicationdate">2000/09/09</p>
+        </div>
+        <div class="element-item widget" data-category="widget">
+            <p class="title">Giraffe</p>
+            <p class="mt-4">Widget 3</p>
+            <p class="publicationdate">2000/09/07</p>
+        </div>
+        <div class="element-item processAccelerators" data-category="processAccelerators">
+            <p class="title">Cat</p>
+            <p class="mt-4">Process Accelerators 3</p>
+            <p class="publicationdate">2000/09/04</p>
+        </div>
+        <div class="element-item connectors" data-category="connectors">
+            <p class="title">Lion</p>
+            <p class="mt-4">Connectors 4</p>
+            <p class="publicationdate">1999/09/12</p>
+        </div>
+        <div class="element-item processAccelerators" data-category="processAccelerators">
+            <p class="title">Dog</p>
+            <p class="mt-4">Process Accelerators 4</p>
+            <p class="publicationdate">2000/09/03</p>
+        </div>
+        <div class="element-item widget" data-category="widget">
+            <p class="title">Elephant</p>
+            <p class="mt-4">Widget 1</p>
+            <p class="publicationdate">2000/09/05</p>
+        </div>
+        <div class="element-item connectors" data-category="connectors">
+            <p class="title">Joker</p>
+            <p class="mt-4">Connectors 2</p>
+            <p class="publicationdate">2000/09/10</p>
+        </div>
+        <div class="element-item widget" data-category="widget">
+            <p class="title">Horse</p>
+            <p class="mt-4">Widget 4</p>
+            <p class="publicationdate">2000/09/08</p>
+        </div>
+        <div class="element-item connectors" data-category="connectors">
+            <p class="title">Kite</p>
+            <p class="mt-4">Connectors 3</p>
+            <p class="publicationdate">2000/09/11</p>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script>
+    // external js: isotope.pkgd.js
+
+    // init Isotope
+    var $grid = $('.grid').isotope({
+        itemSelector: '.element-item',
+        layoutMode: 'fitRows',
+        getSortData: {
+            title: '.title',
+            // author: '.author',
+            // isbn: '.isbn',
+            // price: '.price',
+            publicationdate: '.publicationdate',
+            category: '[data-category]',
+            // price: function(itemElem) { // function
+            //     var weight = $(itemElem).find('.price').text();
+            //     return parseFloat(weight.replace(/[\(\)]/g, ''));
+            // }
+        }
+    });
+
+    // bind sort button click
+    // ascending descending sort 
+    $('#sorts').on('click', 'button', function() {
+        /* Get the element name to sort */
+        var sortValue = $(this).attr('data-sort-by');
+        /* Get the sorting direction: asc||desc */
+        var sortDirection = $(this).attr('data-sort-direction');
+        /* convert it to a boolean */
+        sortDirection = sortDirection == 'asc';
+        /* pass it to isotope */
+        $grid.isotope({
+            sortBy: sortValue,
+            sortAscending: sortDirection
+        });
+    });
+    $('#recent').on('click', 'button', function() {
+        /* Get the element name to sort */
+        var sortValues = $(this).attr('data-sort-buy');
+        /* Get the sorting direction: asc||desc */
+        var sortDirections = $(this).attr('data-sort-directions');
+        /* convert it to a boolean */
+        sortDirections = sortDirections == 'asc';
+        /* pass it to isotope */
+        $grid.isotope({
+            sortBy: sortValues,
+            sortAscending: sortDirections
+        });
+    });
+
+    // filter functions
+    var filterFns = {
+        // show if name ends with -ium
+        // ium: function() {
+        //   var name = $(this).find('.name').text();
+        //   return name.match(/ium$/);
+        // }
+    };
+
+    // bind filter button click
+    $('#filters').on('click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        // use filterFn if matches value
+        filterValue = filterFns[filterValue] || filterValue;
+        $grid.isotope({
+            filter: filterValue
+        });
+    });
+
+
+
+    // change is-checked class on buttons
+    $('.button-group').each(function(i, buttonGroup) {
+        var $buttonGroup = $(buttonGroup);
+        $buttonGroup.on('click', 'button', function() {
+            $buttonGroup.find('.is-checked').removeClass('is-checked');
+            $(this).addClass('is-checked');
+        });
+    });
+
+    //****************************
+    // Isotope Load more button
+    //****************************
+    var initShow = 6; //number of items loaded on init & onclick load more button
+    var counter = initShow; //counter for load more button
+    var iso = $grid.data('isotope'); // get Isotope instance
+
+    loadMore(initShow); //execute function onload
+
+    function loadMore(toShow) {
+        $grid.find(".hidden").removeClass("hidden");
+
+        var hiddenElems = iso.filteredItems.slice(toShow, iso.filteredItems.length).map(function(item) {
+            return item.element;
+        });
+        $(hiddenElems).addClass('hidden');
+        $grid.isotope('layout');
+
+        //when no more to load, hide show more button
+        if (hiddenElems.length == 0) {
+            jQuery("#load-more").hide();
+        } else {
+            jQuery("#load-more").show();
+        };
+
+    }
+
+    //append load more button
+    $grid.after('<button id="load-more"> Load More</button>');
+
+    //when load more button clicked
+    $("#load-more").click(function() {
+        if ($('#filters').data('clicked')) {
+            //when filter button clicked, set initial value for counter
+            counter = initShow;
+            $('#filters').data('clicked', false);
+        } else {
+            counter = counter;
+        };
+
+        counter = counter + initShow;
+
+        loadMore(counter);
+    });
+
+    //when filter button clicked
+    $("#filters").click(function() {
+        $(this).data('clicked', true);
+
+        loadMore(initShow);
+    });
+</script>
+
+</html>

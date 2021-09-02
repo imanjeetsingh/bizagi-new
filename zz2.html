@@ -86,5 +86,18 @@
 
 <script src="swiperJS.js"></script>
 <script src="swiperJS 3.js"></script>
+<script>
+    // var element = document.getElementsByClassName('add-request-quote-button');
+    // element.onclick = function(this) {
+    // }
+
+    var element = document.getElementsByClassName('add-request-quote-button');
+
+    function myFunction(this) {
+        var one = obj.getAttribute('data-product_id');
+        console.log(one);
+    }
+    element.onclick = myFunction;
+</script>
 
 </html>
