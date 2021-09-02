@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="algolia-styles.css" />
     <link rel="stylesheet" href="font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script> -->
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700&display=swap" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -29,7 +32,7 @@
             appId: "B1G2GM9NG0",
             searchApiKey: "aadef574be1f9252bb48d4ea09b5cfe5",
             hitsTemplateId: "newTemplate",
-        }, ];
+        },];
     </script>
 
 
@@ -87,14 +90,16 @@
         <div class="pagination"></div>
     </div>
 
-    <h3 class="xchange-heading">Search our selection of <span class="process">Process</span>, <span class="Widgets">Widgets</span> and <span class="Connectors">Connectors</span> </h3>
+    <h3 class="xchange-heading mb-4">Search our selection of <span class="xchange-heading-process">Process</span>, <span
+            class="xchange-heading-Widgets">Widgets</span> and <span
+            class="xchange-heading-Connectors">Connectors</span> </h3>
 
     <div id="search-widget-xyz1" class="searchContainer container partner-finder">
         <div class="row">
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-4">
                 <div class="searchbox search-input"></div>
             </div>
-            <div class="col-12 col-md-6 cta-parent">
+            <div class="col-12 col-md-8 cta-parent">
                 <div class="cta-group cta-blue">
                     <a href="#" class="cta cta-secondary">
                         <span class="cta-content">Create a widget</span>
@@ -105,46 +110,48 @@
                         <span class="cta-content">Create a connector</span>
                     </a>
                 </div>
-            </div>
-            <div class="col-12 col-md-3">
                 <div id="list1" class="dropdown-check-list">
                     <!-- <span class="anchor"><img class="filter-icon" src="./images/noun_filter_215634.svg" alt=""></span> -->
                     <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="panel">
                             <div class="panel-heading facets" role="tab" id="headingOne">
                                 <h4 class="panel-title facet">
-                                    <a role="button" class="facet-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <img class="filter-icon" src="./images/noun_filter_215634.svg" alt="">
+                                    <a role="button" class="facet-title" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <div>
+                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                        </div>
                                     </a>
                                 </h4>
                             </div>
-                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                aria-labelledby="headingOne">
                                 <div class="panel-body" id="brands">
                                     <ul class="panel-options">
                                         <h4>Filters</h4>
                                         <li>
                                             <label for="Filter_#1_A">
-                                          <input type="checkbox" value="" name="" id="Filter_#1_A">
-                                         <span>
-                                             Process accelerators
-                                         </span> 
-                                      </label>
+                                                <input type="checkbox" value="" name="" id="Filter_#1_A">
+                                                <span>
+                                                    Process accelerators
+                                                </span>
+                                            </label>
                                         </li>
                                         <li>
                                             <label for="Filter_#1_B">
-                                          <input type="checkbox" value="" name="" id="Filter_#1_B">
-                                         <span>
-                                             Widgets
-                                         </span> 
-                                      </label>
+                                                <input type="checkbox" value="" name="" id="Filter_#1_B">
+                                                <span>
+                                                    Widgets
+                                                </span>
+                                            </label>
                                         </li>
                                         <li>
                                             <label for="Filter_#1_C">
-                                          <input type="checkbox" value="" name="" id="Filter_#1_C">
-                                        <span>
-                                            Connectors
-                                        </span>
-                                      </label>
+                                                <input type="checkbox" value="" name="" id="Filter_#1_C">
+                                                <span>
+                                                    Connectors
+                                                </span>
+                                            </label>
                                         </li>
 
                                     </ul>
@@ -163,6 +170,12 @@
 
 
                 </div>
+                        <i onclick="myFunction(this)" class="sortig-icon fa fa-sort-alpha-asc"></i>
+            </div>
+
+            <div class="col-12 col-md-3 tesrr">
+                
+
             </div>
         </div>
         <div class="row mt-4">
@@ -184,15 +197,21 @@
     <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
     <script src="./algoliaSearch.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // js for accordion arrows
-            $('#accordion').on('show.bs.collapse', function(a) {
+            $('#accordion').on('show.bs.collapse', function (a) {
                 $(a.target).prev('.panel-heading').addClass('active');
             })
-            $('#accordion').on('hide.bs.collapse', function(a) {
+            $('#accordion').on('hide.bs.collapse', function (a) {
                 $(a.target).prev('.panel-heading').removeClass('active');
             });
         });
+        // sorting
+        function myFunction(x) {
+            x.classList.toggle("fa-sort-alpha-asc");
+            x.classList.toggle("fa-sort-alpha-desc");
+
+        }
     </script>
 </body>
 
