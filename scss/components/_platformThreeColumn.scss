@@ -1,0 +1,108 @@
+.platform-card {
+    .card {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
+        @include media(desktop) {
+            border-right: 1px solid rgba(0, 0, 0, 0.125) !important;
+            border-bottom: none !important;
+        }
+        &-unordered {
+            &-list {
+                font-size: 0.875rem;
+                line-height: 1.125rem;
+                &-inner {
+                    font-size: 0.875rem;
+                    line-height: 1.125rem;
+                }
+            }
+        }
+        border: none;
+        padding: 0 1rem;
+        &-title {
+            font-size: 1.75rem;
+            line-height: 2rem;
+        }
+        &-text {
+            font-size: 1rem;
+            line-height: 1.125rem;
+        }
+        &-footer {
+            border: none;
+            background-color: #ffffff;
+            text-align: end;
+            padding-right: 0;
+            margin-top: -2rem;
+            @include media(tablet) {
+                margin-top: 0;
+            }
+        }
+        &-upper {
+            &-cta {
+                text-align: center;
+                margin-top: 2rem;
+                margin-bottom: 4rem;
+            }
+        }
+        &-cta {
+            &-green {
+                a {
+                    border: solid 2px#bbcc33;
+                    color: #bbcc33;
+                    &:hover {
+                        background: #bbcc33;
+                        color: #ffffff;
+                    }
+                }
+                span {
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+            &-teal {
+                a {
+                    border: solid 2px#329f9a;
+                    color: #329f9a;
+                    &:hover {
+                        background: #329f9a;
+                        color: #ffffff;
+                    }
+                }
+                span {
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        &-center {
+            &-heading {
+                background-color: #F9F9F9;
+                text-align: center;
+                margin-bottom: 4rem;
+                font-size: 1.375rem;
+                line-height: 1.625rem;
+            }
+        }
+        &-bottom {
+            &-heading {
+                text-align: center;
+                font-size: 1.375rem;
+                line-height: 1.625rem;
+                padding: 1.25rem 0;
+            }
+        }
+        &-orange {
+            color: #f38d1e;
+        }
+        &-green {
+            color: #bbcc32;
+        }
+        &-teal {
+            color: #009f9a;
+        }
+    }
+    ul li::before {
+        list-style: none;
+        color: #6D7278;
+    }
+}

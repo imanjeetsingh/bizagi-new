@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algolia Carousel</title>
+    <link rel="stylesheet" href="swiper.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    .swiper-slide {
+        height: 40rem;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/003.jpg) no-repeat 0 0;
+        background-size: cover;
+        background-position: top;
+    }
+</style>
+
+<body>
+    <!-- gallery carousel starts-->
+    <section>
+        <div class="container-fluid gallery-carousel" id="content">
+            <div class="gallery-carousel-inner">
+
+                <div class="swiper-container gallerySection">
+                    <div class="swiper-wrapper">
+
+                        <div class="col-sm-10 col-sm-offset-1 text-center swiper-slide">
+                            <h1>Heading</h1>
+
+                            <h1><span style="font-size:36px;">algolia is relaunching its partner programs</span></h1>
+
+                            <p>Want to learn more? Submit your application to get the conversation started!</p>
+
+
+
+                            <p class="button-container"><a class="btn btn-primary" href="https://partners.algolia.com/English/register_email.aspx">Apply</a></p>
+                        </div>
+                        <div class="col-sm-10 col-sm-offset-1 text-center swiper-slide">
+                            <h1>Heading 2</h1>
+
+                            <h1><span style="font-size:36px;">algolia is relaunching its partner programs</span></h1>
+
+                            <p>Want to learn more? Submit your application to get the conversation started!</p>
+
+
+
+                            <p class="button-container"><a class="btn btn-primary" href="https://partners.algolia.com/English/register_email.aspx">Apply</a></p>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="carousel-button side">
+                    <div class="swiper-button-prev swiper-button-prev-two swiper-btn" id="swiperBtnPrev-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-d328c8da281dd8fd">
+                        <i class="fa fa fa-caret-left"></i>
+                    </div>
+                    <div class="swiper-button-next swiper-button-next-two swiper-btn" id="swiperBtnNext-1" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-d39eb45b8afdafb8">
+                        <i class="fa fa fa-caret-right"></i>
+                    </div>
+                </div>
+
+
+                <div data-rowCount-mobile="1" data-id="gallery-RMob"></div>
+                <div data-colCount-mobile="1" data-id="gallery-CMob"></div>
+                <div data-rowCount-tablet="1" data-id="gallery-RTab"></div>
+                <div data-colCount-tablet="3" data-id="gallery-CTab"></div>
+                <div data-rowCount-desktop="1" data-id="gallery-RDes"></div>
+                <div data-colCount-desktop="1" data-id="gallery-CDes"></div>
+                <div data-slide-tablet="1" data-id="gallery-SlideTab"></div>
+                <div data-slide-desktop="1" data-id="gallery-SlideDes"></div>
+                <div data-auto-play-delay="2000" data-id="gallery-AutoPlayDelay"></div>
+                <!-- <div data-loop="true" data-id="gallery-Loop"></div> -->
+            </div>
+        </div>
+
+
+        <!-- <div data-space-mobile="20" data-id="gallery-spaceMob"></div>
+             <div data-space-tablet="20" data-id="gallery-spaceTab"></div>
+             <div data-space-desktop="20" data-id="gallery-spaceDes"></div> -->
+
+    </section>
+    <!-- gallery carousel ends -->
+</body>
+
+<script src="swiperJS.js"></script>
+<script src="swiperJS 2.js"></script>
+
+</html>

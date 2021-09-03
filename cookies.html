@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Cookie component starts -->
+    <div id="showCookieMessageDiv" class="cookie-container">
+        <div class="cookie-container-row">
+            <span class="cookie-row-content col-12">
+                This website uses cookies. By continuing to browse the site, you are agreeing to our
+            </span>
+            <a class="cookie-link" href="/privacy-policy"> privacy policy.</a>
+            <a href="javascript:void(0);" onclick="pushHidePrivacyMessageEvent()" class="cookie-close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Cookie component ends -->
+</body>
+
+<!-- Cookie component script starts -->
+<script>
+    // function pushHidePrivacyMessageEvent() {
+    //     document.getElementById("showCookieMessageDiv").style.display = "none";
+    // }
+    $(document).on('ready', function () {
+        cookiesPolicyBar()
+    });
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    (function () {
+        // Check cookie 
+        if (getCookie('cookiePolicyChecked') == "active") {
+            $('#showCookieMessageDiv').hide();
+        }
+
+        //Assign cookie on click
+        $('#showCookieMessageDiv .cookie-close').on('click', function () {
+            setCookie('cookiePolicyChecked', 'active', 1); // cookie will expire in one day
+            $('#showCookieMessageDiv').fadeOut();
+        });
+    })();
+</script>
+<!-- Cookie component script ends -->
+
+</html>

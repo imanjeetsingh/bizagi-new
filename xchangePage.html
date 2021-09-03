@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bizagi Xchange</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="algolia-styles.css" />
+    <link rel="stylesheet" href="font-awesome.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700&display=swap" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script>
+        var ALGOLIA_SEARCH_CONFIG = [{
+            //     containerId: "search-widget-xyz",
+            //     indexName: "test-index",
+            //     appId: "4IHT5CFI63",
+            //     searchApiKey: "20d517e381daf51ac18dd80fef8392f6",
+            //     hitsTemplateId: "newTemplate",
+            // }, {
+            containerId: "search-widget-xyz1",
+            indexName: "demo_ecommerce",
+            appId: "B1G2GM9NG0",
+            searchApiKey: "aadef574be1f9252bb48d4ea09b5cfe5",
+            hitsTemplateId: "newTemplate",
+        },];
+    </script>
+
+
+    <script type="text/template" id="defaultTemplate">
+        <div class="searchResults">
+            <div>{{name}}</div>
+            <div>
+                {{email}}
+            </div>
+            <div>
+                {{company}} {{city}}
+            </div>
+        </div>
+    </script>
+
+
+    <script type="text/template" id="newTemplate">
+
+        <div class="searchResults">
+            <div class="card">
+                <img src="{{image}}" alt="{{name}}" class="partner-logo" />
+                <div class="card-body text-center">
+                    <h4 class="partner-name">
+                        {{name}}
+                    </h4>
+                    <div class="partner-type">
+                        $ {{price}}
+                    </div>
+                </div>
+                <div class="card-body-info">
+                    <h4 class="partner-name"> {{name}}</h4>
+                    <p class="partner-type"> $ {{price}}</p>
+                    <div class="partner-details">
+                        {{description}}
+                    </div>
+                    <div class="cta-group">
+                        <a target="_self" href="">
+                            <button class="cta cta-primary">
+                                  <span class="cta-content">More Info</span>
+                              </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </script>
+
+</head>
+
+<body>
+    <div id="search-widget-xyz" class="searchContainer">
+        <div class="searchbox" class="searchBox "></div>
+        <div class="hits"></div>
+        <div class="pagination"></div>
+    </div>
+
+    <h3 class="xchange-heading mb-4">Search our selection of <span class="xchange-heading-process">Process</span>, <span
+            class="xchange-heading-Widgets">Widgets</span> and <span
+            class="xchange-heading-Connectors">Connectors</span> </h3>
+
+    <div id="search-widget-xyz1" class="searchContainer container partner-finder">
+        <div class="row">
+            <div class="col-12 col-md-4 align-self-center">
+                <div class="searchbox search-input"></div>
+            </div>
+            <div class="col-12 col-md-8 cta-parent">
+                <div class="cta-group cta-blue">
+                    <a href="#" class="cta cta-secondary">
+                        <span class="cta-content">Create a widget</span>
+                    </a>
+                </div>
+                <div class="cta-group cta-green">
+                    <a href="#" class="cta cta-secondary">
+                        <span class="cta-content">Create a connector</span>
+                    </a>
+                </div>
+                <div id="list1" class="dropdown-check-list">
+                    <!-- <span class="anchor"><img class="filter-icon" src="./images/noun_filter_215634.svg" alt=""></span> -->
+                    <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel">
+                            <div class="panel-heading facets" role="tab" id="headingOne">
+                                <h4 class="panel-title facet">
+                                    <a role="button" class="facet-title" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <div>
+                                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                                        </div>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                aria-labelledby="headingOne">
+                                <div class="panel-body" id="brands">
+                                    <ul class="panel-options">
+                                        <h4>Filters</h4>
+                                        <li>
+                                            <label for="Filter_#1_A">
+                                                <input type="checkbox" value="" name="" id="Filter_#1_A">
+                                                <span>
+                                                    Process accelerators
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="Filter_#1_B">
+                                                <input type="checkbox" value="" name="" id="Filter_#1_B">
+                                                <span>
+                                                    Widgets
+                                                </span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="Filter_#1_C">
+                                                <input type="checkbox" value="" name="" id="Filter_#1_C">
+                                                <span>
+                                                    Connectors
+                                                </span>
+                                            </label>
+                                        </li>
+
+                                    </ul>
+                                    <ul class="items panel-options">
+
+                                        <li><input type="checkbox" /><span class="ml-3"> </span></li>
+                                        <li><input type="checkbox" /><span class="ml-3"></span></span>
+                                        </li>
+                                        <li><input type="checkbox" /><span class="ml-3"></span></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                        <i onclick="myFunction(this)" class="sortig-icon fa fa-sort-alpha-asc"></i>
+            </div>
+
+            <div class="col-12 col-md-3 tesrr">
+                
+
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-3">
+
+
+            </div>
+            <div class="col-lg-9">
+                <div class="hits"></div>
+                <div class="pagination"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
+    <script src="./algoliaSearch.js"></script>
+    <script>
+        $(document).ready(function () {
+            // js for accordion arrows
+            $('#accordion').on('show.bs.collapse', function (a) {
+                $(a.target).prev('.panel-heading').addClass('active');
+            })
+            $('#accordion').on('hide.bs.collapse', function (a) {
+                $(a.target).prev('.panel-heading').removeClass('active');
+            });
+        });
+        // sorting
+        function myFunction(x) {
+            x.classList.toggle("fa-sort-alpha-asc");
+            x.classList.toggle("fa-sort-alpha-desc");
+
+        }
+    </script>
+</body>
+
+</html>

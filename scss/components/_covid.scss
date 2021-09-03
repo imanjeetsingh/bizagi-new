@@ -1,0 +1,54 @@
+// Covid component css starts
+.covid {
+    &-container {
+        height: auto;
+        margin-top: 1rem;
+        @include media(tablet) {
+            padding: 1rem 0;
+            margin-top: 0;
+            height: auto
+        }
+        @include media(desktop){
+            height: auto;
+        }
+
+        @include media(xldesktop) {
+            // height: 3.125rem;
+            padding: 1rem;
+        }
+    }
+    &-text {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        color: #6D7278;
+        @include media(tablet) {
+            display: inline-block;
+        }
+        @include media(xldesktop) {
+            display: inline-block;
+            font-size: 1.125rem;
+        }
+        &-bold {
+            font-weight: 700;
+        }
+    }
+    &-link {
+        @include media(xldesktop) {
+            margin-left: 1.2rem;
+        }
+        &-text {
+            font-size: 1.125rem;
+            line-height: 0px;
+            margin-top: 0.625rem;
+            color: #F38C1A;
+            font-weight: 700;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+    &-icon {
+        width: 1.5rem;
+    }
+}
+
+// Covid component css ends

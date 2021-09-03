@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="tilesbox"></div>
+    </div>
+    <script>
+        var obj = {
+            "items": [{
+                "title": "Bizagi Modeler: Always Free, Always Needed, Especially Right Now During the...",
+                "image": "https://blog.bizagi.com/wp-content/uploads/2020/03/Bizagi-Xchange-324x160.png",
+                "url": "https://blog.bizagi.com/2020/03/27/always-free-always-needed-especially-right-now-during-the-coronavirus-pandemic/",
+                "categories": [{
+                    "title": "Digital Process Automation",
+                    "url": "https://blog.bizagi.com/category/digital-process-automation/"
+                }, {
+                    "title": "Business Process",
+                    "url": "https://blog.bizagi.com/category/business-processes/"
+                }]
+            }, {
+                "title": "Bizagi Modeler: Always Free, Always Needed, Especially Right Now During the...",
+                "image": "https://blog.bizagi.com/wp-content/uploads/2020/03/Bizagi-Xchange-324x160.png",
+                "url": "https://blog.bizagi.com/2020/03/27/always-free-always-needed-especially-right-now-during-the-coronavirus-pandemic/",
+                "categories": [{
+                    "title": "Digital Process Automation",
+                    "url": "https://blog.bizagi.com/category/digital-process-automation/"
+                }, {
+                    "title": "Business Process",
+                    "url": "https://blog.bizagi.com/category/business-processes/"
+                }]
+            }, {
+                "title": "Bizagi Modeler: Always Free, Always Needed, Especially Right Now During the...",
+                "image": "https://blog.bizagi.com/wp-content/uploads/2020/03/Bizagi-Xchange-324x160.png",
+                "url": "https://blog.bizagi.com/2020/03/27/always-free-always-needed-especially-right-now-during-the-coronavirus-pandemic/",
+                "categories": [{
+                    "title": "Digital Process Automation",
+                    "url": "https://blog.bizagi.com/category/digital-process-automation/"
+                }, {
+                    "title": "Business Process",
+                    "url": "https://blog.bizagi.com/category/business-processes/"
+                }]
+            }, {
+                "title": "HyperAutomation: What is it and How Could it Save Your Business?",
+                "image": "https://blog.bizagi.com/wp-content/uploads/2020/08/manufacturing-process-automation-324x160.jpg",
+                "url": "https://blog.bizagi.com/2020/08/18/hyperautomation-what-is-it-how-could-save-business/",
+                "categories": [{
+                    "title": "Digital Process Automation",
+                    "url": "https://blog.bizagi.com/category/digital-process-automation/"
+                }, {
+                    "title": "Digital Process Automation",
+                    "url": "https://blog.bizagi.com/category/digital-process-automation/"
+                }, {
+                    "title": "Digital Process Automation",
+                    "url": "https://blog.bizagi.com/category/digital-process-automation/"
+                }, ]
+            }],
+            "pageSize": 12,
+            "currentPage": 1,
+            "totalPages": 14,
+            "navType": "pagination",
+            "pageText": "Page",
+            "ofText": "of",
+            "buttonLabel": "Load more"
+        };
+
+        const output = [];
+        for (const pdata of obj.items) {
+            output.push(`
+            <div class="article-box col-md-6">
+                <a class="article-box-link" href="${pdata.url}" target="_self" id="article-box-link">
+                    <div class="article-image-box">
+                        <img class="article-image" src="${pdata.image}" alt="${pdata.title} image" style="width: 100%;">
+                    </div>
+                    <h3 class="article-heading">${pdata.title}</h3>
+                </a>
+                <div>
+                ${pdata.categories.map((data) => `
+                    <a class="article-image-tag-link" href="${data.url}" target="_self">
+                        <div class="article-image-tag top">${data.title}</div>
+                    </a>
+                `).join('')}
+                </div>
+            </div>
+        `)
+    }
+    document.getElementById('tilesbox').innerHTML = output.join('');
+    </script>
+</body>
+
+</html>

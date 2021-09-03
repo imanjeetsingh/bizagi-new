@@ -1,0 +1,47 @@
+// Testimonial component CSS starts
+.testimonial {
+    &-container {}
+    &-row {
+        @include media(desktop) {
+            justify-content: center;
+        }
+    }
+    &-box {
+        &-image {
+            width: 18% !important;
+            @include media(tablet) {
+                margin-left: -1rem;
+                width: 9% !important;
+            }
+        }
+        &-comment {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 300;
+            color: #6D7278;
+            @include media(xldesktop) {
+                font-size: 1.1rem;
+            }
+        }
+        &-name {
+            font-family: 'Open Sans', sans-serif;
+            color: #F38D1E;
+            font-weight: 700;
+            font-size: 1rem;
+            @include media(xldesktop) {
+                font-size: 1.1rem;
+            }
+        }
+        &-designation {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            color: #6D7278;
+            font-size: 1rem;
+            @include media(xldesktop) {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+// Testimonial component CSS ends

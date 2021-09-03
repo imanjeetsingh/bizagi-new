@@ -1,0 +1,48 @@
+.blogAuthor {
+    .breadcrumb {
+        padding: 0;
+        margin-top: 2.5rem;
+        @include media (desktop) {
+            margin-top: 1rem;
+        }
+    }
+    .blogDetail-article-authorName-box {
+        padding: 0.5rem 5.5rem;
+        @include media (tablet) {
+            padding: 2rem 8rem;
+        }
+        .cta-group {
+            @include media (tablet) {
+                display: -webkit-inline-box;
+                flex-wrap: inherit;
+            }
+            margin: 0 -0.5rem;
+        }
+        .cta {
+            padding: 0;
+            font-size: 0.75rem;
+            margin: 0 0.2rem 0.5rem 0.2rem;
+        }
+    }
+    .blogList {
+        @include media (tablet) {
+            margin-left: -0.5rem;
+            margin-right: -3rem;
+        }
+    }
+    .a2a_default_style {
+        position: sticky;
+        top: 150px;
+        margin-top: 4rem;
+        padding: 0 4px 8px 4px;
+    }
+    .a2a_default_style a {
+        margin-bottom: 4px;
+    }
+    .cta-content-count {
+        margin: 0 -1px 0 2px;
+    }
+    .article-image-tag {
+        z-index: 0;
+    }
+}

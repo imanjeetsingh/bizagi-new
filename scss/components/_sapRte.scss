@@ -1,0 +1,37 @@
+.sap {
+    &-container {
+        li {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300;
+            font-size: 0.875rem;
+            line-height: 1.125rem;
+            color: #6d7278;
+            list-style: none;
+            margin: 5px 0;
+        }
+        li::before {
+            content: "\2022";
+            color: #F28C1E;
+            font-weight: bold;
+            display: inline-block;
+            width: 1rem;
+            margin-left: -1rem;
+        }
+    }
+    &-image {
+        height: auto;
+        max-width: 100%;
+        @include media(tablet) {
+            padding: 5rem 0 0 0;
+        }
+        @include media(desktop) {
+            padding: 0;
+        }
+    }
+}
+
+.right-allign {
+    @include media(desktop) {
+        text-align: right;
+    }
+}

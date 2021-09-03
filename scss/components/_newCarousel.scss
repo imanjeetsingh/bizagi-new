@@ -1,0 +1,188 @@
+.gallery-carousel {
+    position: relative;
+}
+
+// .gallery-carousel .swiper-slide {
+//     width: 15rem !important;
+// }
+// .side .swiper-button-prev {
+//     margin-left: 1rem;
+// }
+// .side .swiper-button-next {
+//     margin-right: 1rem;
+// }
+.gallery-carousel-inner {
+    position: relative;
+}
+
+.gallery-carousel-inner .carousel-button.side .swiper-button-prev-two {
+    position: absolute !important;
+    top: 50% !important;
+    margin-top: -29px !important;
+    margin-left: 0 !important;
+}
+
+.gallery-carousel-inner .carousel-button.side .swiper-button-next-two {
+    position: absolute !important;
+    top: 50% !important;
+    margin-top: -29px !important;
+    margin-left: 0 !important;
+}
+
+.carousel-button {
+    display: flex;
+}
+
+.swiper-btn:focus {
+    outline: none;
+}
+
+// .side .swiper-btn {
+//     position: absolute;
+//     top: -7.5rem;
+//     @include media (tablet) {
+//         top: -4rem;
+//     }
+//     @include media (desktop) {
+//         top: -4.5rem;
+//     }
+//     @include media (xldesktop) {
+//         top: -6.5rem;
+//     }
+// }
+.swiper-slide .partner-logo-image {
+    max-width: 100%;
+    width: 60%;
+    margin: 20px 20px 20px 60px;
+    @include media (desktop) {
+        width: 50%;
+    }
+    @include media (xldesktop) {
+        width: 60%;
+    }
+}
+
+.swiper-slide.partner-logo {
+    width: 75%;
+    justify-content: center;
+    @include media (tablet) {
+        margin: 0 8px !important;
+    }
+    @include media (desktop) {
+        margin: 0 10px 0 8px !important;
+        // width: 20% !important;
+    }
+}
+
+// teaser carousel
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 80px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #f38b1f;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+}
+
+.swiper-pagination-bullet:focus {
+    outline: none;
+}
+
+.card-container .swiper-slide {
+    margin-left: 0;
+    margin-right: 0;
+    @include mobile-only {
+        padding: 0 0.5rem;
+    }
+}
+
+// .carousel-button.side {
+//     position: relative;
+// }
+.swiper-pagination {
+    position: unset;
+}
+
+.card-container .swiper-slide {
+    height: auto;
+}
+
+.swiper-slide .card-inner {
+    padding-bottom: 4rem;
+    height: calc(100% - 3rem) !important;
+}
+
+.swiper-center {
+    @include media (desktop) {
+        justify-content: center;
+    }
+}
+
+.card-container .row.mt-5.text-center {
+    justify-content: center;
+}
+
+.swiper-slide .card.card-inner .card-body {
+    text-align: left;
+}
+
+.swiper-wrapper-center {
+    justify-content: center;
+}
+
+.gallerySection.swiper-container-multirow>.swiper-wrapper {
+    margin-left: -1rem;
+}
+
+// .swiper-button-next:after {
+//     content: "";
+// }
+// .swiper-button-prev:after {
+//     content: "";
+// }
+// .swiper-button-next {
+//     color: black;
+//     font-size: 65px;
+//     position: absolute;
+//     top: 27rem;
+//     left: 6rem;
+//     @include media (tablet) {
+//         top: 29rem;
+//         left: 6rem;
+//     }
+//     @include media (desktop) {
+//         top: 33rem;
+//         left: 6rem;
+//     }
+//     @include media (xldesktop) {
+//         top: 37rem;
+//         left: 14rem;
+//     }
+// }
+// .swiper-button-prev {
+//     color: black;
+//     font-size: 65px;
+//     position: absolute;
+//     top: 27rem;
+//     left: 2rem;
+//     @include media (tablet) {
+//         top: 29rem;
+//         left: 2rem;
+//     }
+//     @include media (desktop) {
+//         top: 33rem;
+//         left: 2rem;
+//     }
+//     @include media (xldesktop) {
+//         top: 37rem;
+//         left: 10rem;
+//     }
+// }
+// .text {
+//     text-align: center;
+// }

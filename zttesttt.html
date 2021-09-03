@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Case Study List component starts starts -->
+    <div class="container caseStudy fap">
+        <div class="row mt-5">
+            <div class="caseStudy-search-box col-12 col-md-12 col-lg-6">
+                <input type="text" class="caseStudy-search-input quicksearch" placeholder="Search">
+            </div>
+            <div id="options" class="dropdown col-6 col-md-6 col-lg-3 mt-3 mt-lg-0">
+                <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="cta-content">Filter by region</span>
+                    <span class="cta-icon-box">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+                <div class="dropdown-menu">
+                    <div class="option-set" data-group="industry">
+                        <ul class="options">
+                            <!-- <li class="input-all"><input class="all" type="checkbox" value=".all-resources" id="all-resources"><label for="all-resources">All Resources</label></li> -->
+                            <li>
+                                <input type="checkbox" value=".apac" id="apac">
+                                <label for="apac">APAC</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".usa-canada" id="usa-canada">
+                                <label for="usa-canada">USA/CANADA</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".emea" id="emea">
+                                <label for="emea">EMEA</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".latam" id="latam">
+                                <label for="latam">LATAM</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="options" class="dropdown col-6 col-md-6 col-lg-3 mt-3 mt-lg-0">
+                <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown" style="float: right;">
+                    <span class="cta-content">Filter by partner type</span>
+                    <span class="cta-icon-box">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+                <div class="dropdown-menu dropdownTwo">
+                    <div class="option-set" data-group="solution">
+                        <ul class="options">
+                            <!-- <li class="input-all"><input class="all" type="checkbox" value=".all-services" id="all-services"><label for="all-services">All Services L1</label></li> -->
+                            <li>
+                                <input type="checkbox" value=".goldservicesPartner" id="goldservicesPartner">
+                                <label for="goldservicesPartner">Gold Services Partner</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".certifiedServicesPartner" id="certifiedServicesPartner">
+                                <label for="certifiedServicesPartner">Certified Services Partner</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".authorizedBusinessPartner" id="authorizedBusinessPartner">
+                                <label for="authorizedBusinessPartner">Authorized Business Partner</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row grid fapCard" id="cardviewlist">
+
+                    <div class="element-item col-12 col-md-6 col-lg-3 apac goldservicesPartner" data-category="">
+                        <div class="card h-100 card-inner">
+                            <div class="card-Header">
+                                <span class="header-text">Gold Service Partner</span>
+                            </div>
+                            <div class="card-image-box image-box text-center">
+                                <span class="partnerName" hidden>infosys</span>
+                                <span class="regionType" hidden>apac</span>
+                                <img class="card-img-top" src="//resourcesbizagi.azureedge.net/images/partners-page/partner-logo/logo_infosys.jpg" alt="" style="width: 150px;">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                </p>
+                                <div class="card-cta">
+                                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                                    <div class="cta-group">
+                                        <a href="#" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Visit Website</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="element-item col-12 col-md-6 col-lg-3 usa-canada certifiedServicesPartner" data-category="">
+                        <div class="card h-100 card-inner">
+                            <div class="card-Header">
+                                <span class="header-text">Certified Services Partner</span>
+                            </div>
+                            <div class="card-image-box image-box text-center">
+                                <span class="partnerName" hidden>backspace</span>
+                                <span class="regionType" hidden>usa-canada</span>
+                                <img class="card-img-top" src="//resourcesbizagi.azureedge.net/images/partners-page/partner-logo/logo_backspace.jpg" alt="" style="width: 150px;">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                </p>
+                                <div class="card-cta">
+                                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                                    <div class="cta-group">
+                                        <a href="#" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Visit Website</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="element-item col-12 col-md-6 col-lg-3 authorizedBusinessPartner emea" data-category="">
+                        <div class="card h-100 card-inner">
+                            <div class="card-Header">
+                                <span class="header-text">Authorized Business Partner</span>
+                            </div>
+                            <div class="card-image-box image-box text-center">
+                                <span class="partnerName" hidden>digitalinnovationag</span>
+                                <span class="regionType" hidden>emea</span>
+                                <img class="card-img-top" src="//resourcesbizagi.azureedge.net/images/partners-page/partner-logo/logo-digi-in-ag.png" alt="" style="width: 150px;">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                </p>
+                                <div class="card-cta">
+                                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                                    <div class="cta-group">
+                                        <a href="#" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Visit Website</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="element-item col-12 col-md-6 col-lg-3 latam goldservicesPartner" data-category="">
+                        <div class="card h-100 card-inner">
+                            <div class="card-Header">
+                                <span class="header-text">Gold Service Partner</span>
+                            </div>
+                            <div class="card-image-box image-box text-center">
+                                <span class="partnerName" hidden>fujixerox</span>
+                                <span class="regionType" hidden>latam</span>
+                                <img class="card-img-top" src="//resourcesbizagi.azureedge.net/images/partners-page/partner-logo/logo_fujixerox.jpg" alt="" style="width: 150px;">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                </p>
+                                <div class="card-cta">
+                                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                                    <div class="cta-group">
+                                        <a href="#" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">Visit Website</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+
+<script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="caseStudyWithoutJSON.js"></script>
+
+</html>

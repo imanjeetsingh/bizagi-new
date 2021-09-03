@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study List without Json</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Case Study List component starts starts -->
+    <div class="container caseStudy">
+        <div class="row mt-5">
+            <div class="caseStudy-search-box col-12 col-md-12 col-lg-6">
+                <input type="text" class="caseStudy-search-input quicksearch" placeholder="Search">
+            </div>
+            <div id="options" class="dropdown col-6 col-md-6 col-lg-3 mt-3 mt-lg-0">
+                <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="cta-content">Filter by Industries</span>
+                    <span class="cta-icon-box">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+                <div class="dropdown-menu">
+                    <div class="option-set" data-group="industry">
+                        <ul class="options">
+                            <!-- <li class="input-all"><input class="all" type="checkbox" value=".all-resources" id="all-resources"><label for="all-resources">All Resources</label></li> -->
+                            <li>
+                                <input type="checkbox" value=".manufacturingRetail" id="manufacturingRetail">
+                                <label for="manufacturingRetail">Manufacturing & Retail</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".financialServices" id="financialServices">
+                                <label for="financialServices">Financial Services</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".insurance" id="insurance">
+                                <label for="insurance">Insurance</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".professionalServices" id="professionalServices">
+                                <label for="professionalServices">Professional Services</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".transportationLogistics" id="transportationLogistics">
+                                <label for="transportationLogistics">Transportation & Logistics</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".utilitiesEnergy" id="utilitiesEnergy">
+                                <label for="utilitiesEnergy">Utilities & Energy</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".healthcare" id="healthcare">
+                                <label for="healthcare">Healthcare</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".governmentEducation" id="governmentEducation">
+                                <label for="governmentEducation">Government & Education</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".hospitality" id="hospitality">
+                                <label for="hospitality">Hospitality</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="options" class="dropdown col-6 col-md-6 col-lg-3 mt-3 mt-lg-0">
+                <button type="" class="cta cta-primary dropdown-toggle" data-toggle="dropdown" style="float: right;">
+                    <span class="cta-content">Filter by Solutions</span>
+                    <span class="cta-icon-box">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                </button>
+                <div class="dropdown-menu dropdownTwo">
+                    <div class="option-set" data-group="solution">
+                        <ul class="options">
+                            <!-- <li class="input-all"><input class="all" type="checkbox" value=".all-services" id="all-services"><label for="all-services">All Services L1</label></li> -->
+                            <li>
+                                <input type="checkbox" value=".digitalOperations" id="digitalOperations">
+                                <label for="digitalOperations">Digital Operations</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".finances" id="finances">
+                                <label for="finances">Finances</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".mrketingSales" id="mrketingSales">
+                                <label for="mrketingSales">Marketing & Sales</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".customerEngagement" id="customerEngagement">
+                                <label for="customerEngagement">Customer Engagement</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".goveranceCompliance" id="goveranceCompliance">
+                                <label for="goveranceCompliance">Goverance & Compliance</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".humanResources" id="humanResources">
+                                <label for="humanResources">Human Resources</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value=".customerExperience" id="customerExperience">
+                                <label for="customerExperience">Customer Experience</label>
+                            </li>
+
+                            <!-- <li><input type="checkbox" value=".fm" id="fm"><label for="fm">FM</label></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <p id="dropdownValue">
+                <span class="filteringLabel1" style="font-weight: bold;">You're filtering by</span>
+                <span id="valueContent"></span>
+                <span class="filteringLabel2" style="font-weight: bold;">customers</span>
+                <span class="filteringLabel3" style="font-weight: bold;">with</span>
+                <span id="valueContent2"></span>
+                <span class="filteringLabel4" style="font-weight: bold;">solutions</span>
+            </p>
+
+            <div class="container">
+                <div class="row grid caseStudyCard" id="cardviewlist">
+                    <div class="element-item col-12 col-md-4 manufacturingRetail insurance hospitality" data-category="manufacturingRetail insurance hospitality">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>Adidas</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext"><b>
+                                            <div class="Industry">Manufacturing &amp; Retail</div>
+                                        </b>
+                                        <div class="Solution">Digital Operations</div>
+                                        <div class="Solution2">Finance</div>
+                                        <div class="Solution3">Marketing &amp; Sales</div>
+                                        <div class="Solution4"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-image-box image-box">
+                                <img class="card-img-top" src="//resourcesbizagi.azureedge.net/images/logo-clients/logo_adidas.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" style="width: 150px;">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”
+                                </p>
+                                <div class="card-cta">
+                                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                                    <div class="cta-group">
+                                        <a href="#" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">read more</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="element-item col-12 col-md-4 hospitality digitalOperations" data-category="hospitality digitalOperations">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>Adidas2</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext"><b>
+                                            <div class="Industry">Manufacturing &amp; Retail blassh</div>
+                                        </b>
+                                        <div class="Solution">Digital Operations</div>
+                                        <div class="Solution2">Finance yo</div>
+                                        <div class="Solution3">Marketing &amp; Sales</div>
+                                        <div class="Solution4"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-image-box image-box">
+                                <img class="card-img-top" src="//resourcesbizagi.azureedge.net/images/logo-clients/logo_adidas.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" style="width: 150px;">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”
+                                </p>
+                                <div class="card-cta">
+                                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                                    <div class="cta-group">
+                                        <a href="#" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">read more</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="element-item col-12 col-md-4 manufacturingRetail digitalOperations" data-category="manufacturingRetail">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>Adidas3</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext"><b>
+                                            <div class="Industry">Manufacturing &amp; Retail</div>
+                                        </b>
+                                        <div class="Solution">Digital Operations</div>
+                                        <div class="Solution2">Finance</div>
+                                        <div class="Solution3">Marketing &amp; Sales</div>
+                                        <div class="Solution4"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-image-box image-box">
+                                <img class="card-img-top" src="//resourcesbizagi.azureedge.net/images/logo-clients/logo_adidas.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" style="width: 150px;">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”
+                                </p>
+                                <div class="card-cta">
+                                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                                    <div class="cta-group">
+                                        <a href="#" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">read more</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="element-item col-12 col-md-4 manufacturingRetail hospitality" data-category="manufacturingRetail hospitality">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span>Adidas4</span>
+                                    <i class="fa fa-info-circle"></i>
+                                    <a class="tooltiptext"><b>
+                                            <div class="Industry">Manufacturing &amp; Retail</div>
+                                        </b>
+                                        <div class="Solution">Digital Operations</div>
+                                        <div class="Solution2">Finance</div>
+                                        <div class="Solution3">Marketing &amp; Sales</div>
+                                        <div class="Solution4"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-image-box image-box">
+                                <img class="card-img-top" src="//resourcesbizagi.azureedge.net/images/logo-clients/logo_adidas.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst" style="width: 150px;">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”
+                                </p>
+                                <div class="card-cta">
+                                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                                    <div class="cta-group">
+                                        <a href="#" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">read more</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="element-item col-12 col-md-4 manufacturingRetail hospitality" data-category="manufacturingRetail hospitality">
+                        <div class="card h-100 card-inner">
+                            <div class="partnerinfo">
+                                <div class="tooltip mt-4">
+                                    <span class="">Adidas5</span>
+                                    <i class=" fa fa-info-circle "></i>
+                                    <a class="tooltiptext "><b>
+                                            <div class="Industry ">Manufacturing &amp; Retail</div>
+                                        </b>
+                                        <div class="Solution ">ttest</div>
+                                        <div class="Solution2 ">Finance</div>
+                                        <div class="Solution3 ">Marketing &amp; Sales</div>
+                                        <div class="Solution4 "></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-image-box image-box ">
+                                <img class="card-img-top " src="//resourcesbizagi.azureedge.net/images/logo-clients/logo_adidas.png " alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst " style="width: 150px; ">
+                            </div>
+                            <div class="card-body ">
+                                <p class="card-text ">“aman is testing this component”
+                                </p>
+                                <div class="card-cta ">
+                                    <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                                    <div class="cta-group">
+                                        <a href="#" class="cta cta-default cta-icon-right">
+                                            <span class="cta-content">download</span>
+                                            <span class="cta-icon-box">
+                                                <i class="cta-icon fa fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="no-results">No Results</div>
+        </div>
+    </div>
+
+</body>
+
+
+<!-- <script>
+ 
+    $(".caseStudy-search-input").on("keyup", function() {
+        setTimeout(function() {
+            var numItems = $('.element-item:visible').length;
+            if (numItems == 0) {
+                $(".no-results").show();
+            } else {
+                $(".no-results").hide();
+            }
+            console.log(numItems);
+        }, 700);
+    });
+
+    $('.caseStudy .dropdown').each(function(i) {
+        $(this).addClass('dropdown' + i);
+    });
+
+    $(".filteringLabel1, .filteringLabel2, .filteringLabel3, .filteringLabel4").hide();
+
+    $('.dropdown0').on('click', function() {
+        var array1 = [];
+        $(".dropdown0 input:checked").each(function() {
+            array1.push($(this).next().text());
+        });
+        var test = document.getElementById("valueContent");
+        $('#valueContent').text(array1);
+        test.innerHTML = array1.join('&nbsp;or&nbsp;');
+
+        var boxOne = $(".dropdown0 li input[type=checkbox]:checked").length;
+        var boxTwo = $(".dropdown1 li input[type=checkbox]:checked").length;
+        if (boxOne > 0 && boxTwo == 0) {
+            $(".filteringLabel1, .filteringLabel2").show();
+        } else if (boxOne == 0 && boxTwo > 0) {
+            $(".filteringLabel2, .filteringLabel3").hide();
+        } else if (boxOne > 0 && boxTwo > 0) {
+            $(".filteringLabel1, .filteringLabel2, .filteringLabel3").show();
+        } else if (boxOne == 0 && boxTwo == 0) {
+            $(".filteringLabel1, .filteringLabel2, .filteringLabel3, .filteringLabel4").hide();
+        }
+    });
+
+    $('.dropdown1 li input[type=checkbox]').on('click', function() {
+        var array = [];
+        $(".dropdown1 input:checked").each(function() {
+            array.push($(this).next().text());
+        });
+
+        var test = document.getElementById("valueContent2");
+        $('#valueContent2').text(array);
+        test.innerHTML = array.join('&nbsp;or&nbsp;');
+
+        var boxOne = $(".dropdown0 li input[type=checkbox]:checked").length;
+        var boxTwo = $(".dropdown1 li input[type=checkbox]:checked").length;
+        if (boxOne == 0 && boxTwo > 0) {
+            $(".filteringLabel1, .filteringLabel4").show();
+            $(".filteringLabel2").hide();
+        } else if (boxOne > 0 && boxTwo > 0) {
+            $(".filteringLabel1, .filteringLabel3, .filteringLabel4").show();
+        } else if (boxOne == 0 && boxTwo == 0) {
+            $(".filteringLabel1, .filteringLabel3, .filteringLabel4").hide();
+        } else if (boxOne > 0 && boxTwo == 0) {
+            $(".filteringLabel3, .filteringLabel4").hide();
+        }
+    });
+</script> -->
+<script>
+    $(".no-results").hide();
+    $(".caseStudy-search-input").on("keyup", function() {
+        setTimeout(function() {
+            var numItems = $('.element-item:visible').length;
+            if (numItems == 0) {
+                $(".no-results").show();
+            } else {
+                $(".no-results").hide();
+            }
+            console.log(numItems);
+        }, 700);
+    });
+
+    $('.caseStudy .dropdown').each(function(i) {
+        $(this).addClass('dropdown' + i);
+    });
+
+    $(".filteringLabel1, .filteringLabel2, .filteringLabel3, .filteringLabel4").hide();
+
+    $('.dropdown0').on('click', function() {
+        var array1 = [];
+        $(".dropdown0 input:checked").each(function() {
+            array1.push($(this).next().text());
+        });
+        var test = document.getElementById("valueContent");
+        $('#valueContent').text(array1);
+        test.innerHTML = array1.join('&nbsp;or&nbsp;');
+
+        var boxOne = $(".dropdown0 li input[type=checkbox]:checked").length;
+        var boxTwo = $(".dropdown1 li input[type=checkbox]:checked").length;
+        if (boxOne > 0 && boxTwo == 0) {
+            $(".filteringLabel1, .filteringLabel2").show();
+        } else if (boxOne == 0 && boxTwo > 0) {
+            $(".filteringLabel2, .filteringLabel3").hide();
+        } else if (boxOne > 0 && boxTwo > 0) {
+            $(".filteringLabel1, .filteringLabel2, .filteringLabel3").show();
+        } else if (boxOne == 0 && boxTwo == 0) {
+            $(".filteringLabel1, .filteringLabel2, .filteringLabel3, .filteringLabel4").hide();
+        }
+
+        setTimeout(function() {
+            var numItems = $('.element-item:visible').length;
+            if (numItems == 0) {
+                $(".no-results").show();
+            } else {
+                $(".no-results").hide();
+            }
+            console.log(numItems);
+        }, 700);
+    });
+
+    $('.dropdown1 li input[type=checkbox]').on('click', function() {
+        var array = [];
+        $(".dropdown1 input:checked").each(function() {
+            array.push($(this).next().text());
+        });
+
+        var test = document.getElementById("valueContent2");
+        $('#valueContent2').text(array);
+        test.innerHTML = array.join('&nbsp;or&nbsp;');
+
+        var boxOne = $(".dropdown0 li input[type=checkbox]:checked").length;
+        var boxTwo = $(".dropdown1 li input[type=checkbox]:checked").length;
+        if (boxOne == 0 && boxTwo > 0) {
+            $(".filteringLabel1, .filteringLabel4").show();
+            $(".filteringLabel2").hide();
+        } else if (boxOne > 0 && boxTwo > 0) {
+            $(".filteringLabel1, .filteringLabel3, .filteringLabel4").show();
+        } else if (boxOne == 0 && boxTwo == 0) {
+            $(".filteringLabel1, .filteringLabel3, .filteringLabel4").hide();
+        } else if (boxOne > 0 && boxTwo == 0) {
+            $(".filteringLabel3, .filteringLabel4").hide();
+        }
+
+        setTimeout(function() {
+            var numItems = $('.element-item:visible').length;
+            if (numItems == 0) {
+                $(".no-results").show();
+            } else {
+                $(".no-results").hide();
+            }
+            console.log(numItems);
+        }, 700);
+    });
+</script>
+
+
+<script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="caseStudyWithoutJSON.js"></script>
+
+</html>

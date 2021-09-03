@@ -1,17 +1,9 @@
 // Partner component CSS starts
 .partner {
-    &-container {}
-    &-box {
-        color: #6D7278;
-        &-heading {
-            font-weight: 800;
-            font-size: 40px;
-            line-height: 44px;
-        }
-        &-description {}
-    }
     &-logo {
-        &-box {}
+        &-box {
+            justify-content: center;
+        }
         &-image {
             width: 75%;
             margin: 20px;
@@ -19,4 +11,4 @@
     }
 }
 
-// Partner component CSS starts
+// Partner component CSS ends

@@ -1,49 +1,98 @@
 // Banner component CSS starts
 .banner {
     &-bg {
-        &-row{
-            // padding-top: 22rem;
-            // @include mobile-only {
-            //     padding: 0;
-            // }
+        // margin-bottom: 6rem;
+        // @include media(tablet) {
+        //     margin-bottom: 8rem;
+        // }
+        // @include media(desktop) {
+        //     margin-bottom: 6rem;
+        // }
+        &-row {
+            padding-top: 0rem;
+            @include media(tablet) {
+                padding-top: 3rem;
+            }
+            @include media(desktop) {
+                // padding-top: 6rem;
+                padding-top: 0;
+                margin-bottom: -2rem;
+            }
         }
-        &-image{
+        &-height {
+            top: 7rem !important;
+            @include media(tablet) {
+                top: 4rem !important;
+                height: 90% !important;
+            }
+            @include media(desktop) {
+                // height: 35% !important;
+                height: 37% !important;
+            }
+            @include media(xldesktop) {
+                top: 2rem !important;
+                height: 65% !important;
+                // height: 72% !important;
+            }
+        }
+        &-image {
             position: absolute;
             width: 100%;
-            @include mobile-only {
-                height: 100%;
+            height: 100%;
+            // object-fit: cover;
+            z-index: -1;
+            top: 0;
+            @include media (tablet) {
+                height: 85%;
+                // object-fit: cover;
+                z-index: -1;
+                top: 0;
+                // padding: 5rem 0;
+            }
+            @include media (xldesktop) {
+                height: 65%;
+                // top: 3rem;
+                padding: 18px 0 0 0;
             }
         }
-        .cta{
+        .cta {
             background-color: #FFFFFF;
             border: none;
-            &-group{
+            &-group {
                 margin: 1rem 0;
             }
-            &:hover{
+            &:hover {
                 border: none !important;
             }
-            &-content{
+            &-content {
                 color: #009E99;
             }
         }
+        p {
+            color: #ffffff;
+        }
     }
-   
     &-bg &-heading {
         color: #ffffff;
         font-family: 'Open Sans', sans-serif;
         font-weight: 800;
-        font-size: 60px;
-        @include mobile-only {
-           font-size: 2.5rem;
+        font-size: 2.5rem;
+        @include media(tablet) {
+            font-size: 2.875rem;
+        }
+        @include media(xldesktop) {
+            font-size: 3.75rem;
         }
     }
     &-bg &-subheading {
         font-family: 'Open Sans', sans-serif;
         font-weight: 800;
-        font-size: 24px;
+        font-size: 1.313rem;
         color: #FFFFFF;
         line-height: 30px;
+        @include media(tablet) {
+            font-size: 1.5rem;
+        }
     }
     &-bg &-content {
         color: #ffffff;
@@ -57,6 +106,9 @@
         font-family: 'Open Sans', sans-serif;
         font-weight: 800;
         font-size: 60px;
+        &-box {
+            padding: 8.2rem 0 0 0;
+        }
     }
     &-subheading {
         color: #6D7278;
@@ -72,11 +124,44 @@
         width: 100%;
         height: auto;
     }
-    &-content{
-        &-right{
+    &-content {
+        &-right {
             flex-direction: row-reverse;
         }
     }
 }
 
-// Banner component CSS starts
+.navbar-toggler:focus {
+    outline: none !important;
+}
+
+header {
+    height: 7rem;
+    @include media(tablet) {
+        height: 5rem;
+    }
+    @include media(desktop) {
+        height: 7rem;
+    }
+}
+
+// @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+//     .banner-bg-height {
+//         height: 55% !important;
+//     }
+// }
+// .home-header{
+//     .affix{
+//         .banner{
+//             &-bg{
+//                 &-row{
+//                     @include media(tablet){
+//                         padding-top: 0rem;
+//                         margin-top: -2.875rem;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// Banner component CSS ends

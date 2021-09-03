@@ -1,17 +1,83 @@
 // Content Section component CSS starts
 .contentSection {
-    &-container {}
+  
+      
+    &-container {
+        ul {
+            li {
+              font-family: "Open Sans", sans-serif;
+              font-weight: 300;
+              font-size: 0.9375rem;
+              line-height: 1.125rem;
+              color: #6d7278;
+              list-style: none;
+              margin: 5px 0;
+            }
+            li::before {
+              content: "\2022";
+              color: #f28c1e;
+              font-weight: bold;
+              display: inline-block;
+              width: 1rem;
+              margin-left: -1rem;
+            }
+          }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
     &-box {
         &-heading {
             font-weight: 800;
-            font-size: 40px;
-            line-height: 44px;
+            // line-height: 44px;
+            margin-top: 2.5rem;
+            font-family: 'Open Sans', sans-serif;
             color: #6D7278;
-            text-align: center;
+            font-size: 1.5rem;
+            @include media(desktop) {
+                margin-top: 3.5rem;
+                font-size: 2.5rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+        .social{
+            &-icon{
+                &-footer{
+                    color: #6D7278;
+                }
+            }
         }
         &-subheading {}
-        &-description {}
+        &-description {
+            color: #6D7278;
+            font-size: 1.125rem;
+        }
+        .cta{
+            &-group{
+                justify-content: center;
+                // text-align: center;
+            }
+            &-icon{
+                &-box{
+                    width: 1.375rem;
+                    height: auto;
+                }
+            }
+        }
     }
 }
 
-// Content Section component CSS starts
+.fivecolumnheading {
+    text-align: center;
+    @include media(tablet) {
+        text-align: center;
+        // margin-left: 8rem;
+    }
+    @include media(desktop) {
+        text-align: left;
+        // margin-left: 5rem;
+    }
+}
+
+// Content Section component CSS ends
