@@ -95,7 +95,7 @@
                 border: 1px solid #BDBDBD;
                 position: absolute;
                 z-index: 1;
-                left: 0;
+                left: auto;
                 right: 0;
             }
 
@@ -109,6 +109,11 @@
             }
 
             .ais {
+                &-RefinementList{
+                    &-list{
+                        text-align: left;
+                    }
+                }
                 &-RefinementList-item {
                     &::marker {
                         content: "";
@@ -122,6 +127,14 @@
                             padding: 1rem 2rem;
                         }
                     }
+                }
+            }
+        }
+        .dropdown{
+            &-check{
+                &-list{
+                    margin: 0 1rem;
+                    display: inline-block;
                 }
             }
         }
