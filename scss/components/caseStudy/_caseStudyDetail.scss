@@ -1,0 +1,100 @@
+.client-info {
+    color: #6d7278;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5rem;
+    &-box {
+        list-style: none;
+        @include media (desktop) {
+            border-right: solid 1px #ccc;
+            padding: 0 1rem 2rem 0;
+        }
+    }
+    &-image {
+        width: 100%;
+        height: auto;
+        @include media(tablet) {
+            width: auto;
+            height: auto;
+        }
+        @include media (desktop) {
+            width: 100%;
+            height: auto;
+        }
+        &-box {}
+        &-input {
+            border-radius: 2.5rem;
+            border: solid 1px lightgray;
+            padding: 0.3rem 1rem;
+            width: 100%;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .cta {
+        padding: 5px 55px;
+        outline: none;
+    }
+    &-customer {
+        font-weight: 600;
+    }
+    &-name {}
+    &-industry {
+        font-weight: 600;
+    }
+    &-name {}
+    &-location {
+        font-weight: 600;
+        &-name {}
+    }
+    &-detail {
+        border-bottom: solid 1px #ccc;
+        margin: 5px 10px;
+        min-height: 63px;
+        // @include media(desktop){
+        //     margin: 1.5625rem 0.625rem 0 0.625rem;
+        // }
+        @include media(desktop) {
+            // margin: -3.75rem 0.625rem 0 0.625rem;
+            margin: 0px 0.625rem 18px 0.625rem;
+        }
+        &-box {
+            padding: 2.625rem 0.8rem;
+            @include media(desktop) {
+                padding: 0.5rem 0.8rem;
+            }
+            &-inner {
+                @include media(desktop) {
+                    width: 55rem;
+                }
+            }
+        }
+        &-percent {
+            font-size: 36px;
+            line-height: 42px;
+            display: block;
+            float: left;
+            margin-right: 10px;
+            color: #F38D1E;
+            font-weight: 600;
+            &-box {}
+        }
+        &-description {
+            &-box {}
+        }
+        li {
+            padding: 3px 0;
+        }
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .option-set {
+        width: 18rem;
+        padding: 20px 0;
+    }
+}
+
+ul.options>li {
+    list-style: none;
+}

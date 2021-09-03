@@ -1,0 +1,57 @@
+.newsList {
+    padding: 0 1.5625rem;
+    @include media (tablet) {
+        padding: 0;
+    }
+    @include media (desktop) {
+        margin: 0 auto;
+        width: 85%;
+    }
+    @include media (xldesktop) {
+        // margin: 0 auto;
+        width: 60%;
+    }
+    &-heading {
+        font-size: 3rem;
+        &-box {}
+    }
+    &-box {
+        border-top: 1px solid #EFEFEF;
+        &:hover {
+            background-color: #f5f5f5;
+        }
+        &-title {
+            color: #6d7278;
+            font-size: 1rem;
+            font-weight: 400;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.4375rem;
+            // padding: 8px;
+            // vertical-align: top;
+            // border-top: 1px solid #EFEFEF;
+            &:hover {
+                text-decoration: none;
+                color: #6d7278;
+            }
+        }
+        &-date {
+            // padding: 8px;
+            // vertical-align: top;
+            // border-top: 1px solid #EFEFEF;
+            color: #f28c20;
+            font-size: 1rem;
+            font-weight: 700;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.4375rem;
+            text-align: right;
+            @include media (tablet) {
+                // position: absolute;
+                // right: 5rem;
+            }
+            @include media (desktop) {
+                // position: absolute;
+                // right: 11rem;
+            }
+        }
+    }
+}

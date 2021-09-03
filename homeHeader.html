@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Header</title>
+    <title>Header</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -13,17 +13,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <script>
-
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 0) {
+        if (scroll >= 100) {
             $(".home-header").addClass("affix");
         }
         if (scroll <= 0) {
             $(".home-header").removeClass("affix");
         }
-    }); 
+    });
 </script>
 
 <body>
@@ -35,8 +34,7 @@
                 <div class="col-7 order-2 order-sm-1 col-md-2">
                     <div class="headerLogo-container">
                         <a class="headerLogo-link" href="#" title="Home">
-                            <img class="headerLogo-image" src="./images/footerlogo.png"
-                                alt="Bizagi-The Digital Business Platform">
+                            <img class="headerLogo-image" src="./images/Bizagi-Logo-Grey-No-Tagline.png" alt="Bizagi-The Digital Business Platform">
                         </a>
                     </div>
                 </div>
@@ -46,104 +44,84 @@
                 <div class="col-3 order-1 order-sm-2 col-md-6">
                     <div class="nav-container">
                         <nav class="navbar navbar-expand-lg navbar-light">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarCollapse">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                                 <div class="navbar-nav">
-                                    <div class="nav-item dropdown">
-                                        <!-- please follow this structure for sub menu -->
-                                        <a href="#" class="nav-link dropdown-toggle"
-                                            data-toggle="dropdown">Solutions</a>
-                                        <ul class="nav-list">
-                                            <li class="dropdown-menu">
-                                                <a href="#" class="dropdown-item d-md-none">Overview</a>
-                                                <ul>
-                                                    <li class="nav-list-sublist">
-                                                        <span class="nav-list-sublist-heading">Industry Solution</span>
-                                                        <a href="#" class="dropdown-item">Financial Services</a>
-                                                        <a href="#" class="dropdown-item">Manufacturing</a>
-                                                        <a href="#" class="dropdown-item">Public Sector</a>
-                                                        <a href="#" class="dropdown-item">Health Care</a>
-                                                        <a href="#" class="dropdown-item">Education</a>
-                                                    </li>
-                                                    <li class="nav-list-sublist">
-                                                        <span class="nav-list-sublist-heading">Business Solutions</span>
-                                                        <a href="#" class="dropdown-item">Customer Experience</a>
-                                                        <a href="#" class="dropdown-item">Risk and Compliance</a>
-                                                        <a href="#" class="dropdown-item">HR and Employee Engagement</a>
-                                                        <a href="#" class="dropdown-item">Finance</a>
-                                                        <a href="#" class="dropdown-item">IT Services</a>
-                                                    </li>
-                                                    <li class="nav-list-sublist">
-                                                        <span class="nav-list-sublist-heading">Technology
-                                                            Solutions</span>
-                                                        <a href="#" class="dropdown-item">Intelligent Process
-                                                            Automation</a>
-                                                        <a href="#" class="dropdown-item">Digital Process Automation</a>
-                                                        <a href="#" class="dropdown-item">Robotic Process Automation</a>
-                                                        <a href="#" class="dropdown-item">Artificial Intelligence</a>
-                                                        <a href="#" class="dropdown-item">SAP</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Platform</a>
-                                        <ul class="nav-list">
-                                            <li class="dropdown-menu">
-                                                <a href="#" class="dropdown-item d-md-none">Overview</a>
-                                                <a href="#" class="dropdown-item">Modeler</a>
-                                                <a href="#" class="dropdown-item">Studio</a>
-                                                <a href="#" class="dropdown-item">Automation</a>
-                                                <a href="#" class="dropdown-item">XChange</a>
-                                                <a href="#" class="dropdown-item">Platform Capabilities</a>
-                                                <a href="#" class="dropdown-item">Trust Center</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle"
-                                            data-toggle="dropdown">Customers</a>
-                                        <ul class="nav-list d-md-none">
-                                            <li class="dropdown-menu">
-                                                <a href="#" class="dropdown-item"> Customers Stories</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle"
-                                            data-toggle="dropdown">Resources</a>
-                                        <ul class="nav-list">
-                                            <li class="dropdown-menu">
-                                                <a href="#" class="dropdown-item d-md-none">Overview</a>
-                                                <a href="#" class="dropdown-item">Bizagi Demos</a>
-                                                <a href="#" class="dropdown-item">User Guides</a>
-                                                <a href="#" class="dropdown-item">Blogs</a>
-                                                <a href="#" class="dropdown-item">Learning</a>
-                                                <a href="#" class="dropdown-item">Events</a>
-                                                <a href="#" class="dropdown-item">Newsroom</a>
-                                                <a href="#" class="dropdown-item">Community</a>
-                                                <a href="#" class="dropdown-item">Content Center</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
-                                        <ul class="nav-list">
-                                            <li class="dropdown-menu">
-                                                <a href="#" class="dropdown-item d-md-none">Overview</a>
-                                                <a href="#" class="dropdown-item">Our Trust & Promise</a>
-                                                <a href="#" class="dropdown-item">The Team</a>
-                                                <a href="#" class="dropdown-item">Partners</a>
-                                                <a href="#" class="dropdown-item">Carees</a>
-                                                <a href="#" class="dropdown-item">Offices</a>
-                                                <a href="#" class="dropdown-item">Contact Us</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <ul class="nav-item dropdown">
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Solutions</a>
+                                            <ul class="nav-list dropdown-menu">
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
+                                                <li class="nav-list-sublist-heading">Industry Solution </li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Financial Services</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Manufacturing</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Public Sector</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Health Care</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Education</a></li>
+                                                <li class="nav-list-sublist-heading">Business Solutions</li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Customer Experience</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Risk and Compliance</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">HR and Employee Engagement</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Finance</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">IT Services</a></li>
+                                                <li class="nav-list-sublist-heading">Technology Solutions</li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Intelligent Process Automation</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Digital Process Automation</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Robotic Process Automation</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Artificial Intelligence</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">SAP</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav-item dropdown">
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Platform</a>
+                                            <ul class="nav-list dropdown-menu">
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Modeler</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Studio</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Automation</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">XChange</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Platform Capabilities</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Trust Center</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav-item dropdown">
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Customers</a>
+                                            <ul class="nav-list dropdown-menu d-md-none">
+                                                <li class="nav-list-sublist"> <a href="#" class="dropdown-item"> Customers Stories</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav-item dropdown">
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
+                                            <ul class="nav-list dropdown-menu">
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Bizagi Demos</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">User Guides</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Blogs</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Learning</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Events</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Newsroom</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Community</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Content Center</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav-item dropdown">
+                                        <li class="nav-item-suplist"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
+                                            <ul class="nav-list dropdown-menu">
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item d-md-none">Overview</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Our Trust & Promise</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">The Team</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Partners</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Carees</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Offices</a></li>
+                                                <li class="nav-list-sublist"><a href="#" class="dropdown-item">Contact Us</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </nav>
@@ -169,14 +147,13 @@
                         <!-- Multi Language Dropdown component starts -->
                         <div class="multilang-container">
                             <select name="lang" class="multilang-dropdown" size="1">
-                                <option class="multilang-dropdown-option" id="#" value="#" selected="selected">EN
-                                </option>
-                                <option class="multilang-dropdown-option" id="#" value="#">ES </option>
-                                <option class="multilang-dropdown-option" id="#" value="#">PT </option>
-                                <option class="multilang-dropdown-option" id="#" value="#">DE </option>
-                            </select>
+                            <option class="multilang-dropdown-option" id="#" value="#" selected="selected">EN </option>
+                            <option class="multilang-dropdown-option" id="#" value="#">ES </option>
+                            <option class="multilang-dropdown-option" id="#" value="#">PT </option>
+                            <option class="multilang-dropdown-option" id="#" value="#">DE </option>
+                        </select>
                         </div>
-                        <!-- Multi Language Dropdown component starts -->
+                        <!-- Multi Language Dropdown component ends -->
                     </div>
                 </div>
 
@@ -186,21 +163,24 @@
                         <!-- Search Box component starts -->
                         <div class="search-container">
                             <div class="search-box">
-                                <a class="search-box-icon" href="#" role="button">
+                                <a class="search-box-searchIcon" href="#" role="button">
                                     <i class="search-icon fa fa-search"></i>
                                 </a>
                             </div>
                         </div>
-                        <!-- Search Box component starts -->
+                        <!-- Search Box component ends -->
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <!-- Header component starts -->
+    <!-- Header component ends -->
+
+    <!-- banner components starts -->
     <div class="container-fluid">
         <div class="row banner-bg">
             <img class="banner-bg-image" src="./images/banner-home.png" alt="">
+            <!-- Background image in hero banner -->
             <div class="container">
                 <div class="row banner-bg-row banner-content-right">
                     <div class="col-12 col-md-6">
@@ -219,6 +199,120 @@
             </div>
         </div>
     </div>
+    <!-- banner component ends -->
+   <!-- Card components container starts -->
+   <div class="container-fluid card-container">
+    <div class="row">
+        <!-- Card components starts -->
+        <div class="col-12 col-md-3 col-sm-6">
+            <div class="card h-100 card-inner">
+                <div class="card-image-box">
+                    <div class="card-tag top-left">Blog</div>
+                    <img class="card-img-top" src="./images/testimonio01.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Old Mutual</h4>
+                    <p class="card-text">“We didn’t realize it would be as successful as it is. We have an average of about 3000 transactions per second. Our net promoter score is increasing month-on-month.”</p>
+                    <h6 class="card-subtitle">Lorelei Jensen, Head of Strategic Business Solutions</h6>
+                    <div class="card-cta">
+                        <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                        <div class="cta-group">
+                            <a href="#" class="cta cta-default cta-icon-right">
+                                <span class="cta-content">See More</span>
+                                <span class="cta-icon-box">
+                              <i class="cta-icon fa fa-arrow-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card components ends -->
+
+        <!-- Card components starts -->
+        <div class="col-12 col-md-3 col-sm-6">
+            <div class="card h-100 card-inner">
+                <div class="card-image-box">
+                    <div class="card-tag top-left">Blog</div>
+                    <img class="card-img-top" src="./images/testimonio02.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Kyocera</h4>
+                    <p class="card-text">“The integration of Bizagi with our ERP system, SAP, was an emotional breakthrough for our organization. We’re going to continue to scale.” </p>
+                    <h6 class="card-subtitle">Kyohei Shimada, Senior Manager, Technology Center</h6>
+                    <div class="card-cta">
+                        <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                        <div class="cta-group">
+                            <a href="#" class="cta cta-default cta-icon-right">
+                                <span class="cta-content">See More</span>
+                                <span class="cta-icon-box">
+                              <i class="cta-icon fa fa-arrow-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card components ends -->
+
+        <!-- Card components starts -->
+        <div class="col-12 col-md-3 col-sm-6">
+            <div class="card h-100 card-inner">
+                <div class="card-image-box">
+                    <div class="card-tag bottom-left">Blog</div>
+                    <img class="card-img-top" src="./images/testimonio03.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Bancolombia</h4>
+                    <p class="card-text">“Bancolombia has more than 16,000 suppliers. Bizagi is one of the top 50 strategic partners we have in our bank right now.” </p>
+                    <h6 class="card-subtitle">Jorge Otalvaro, VP of Service Delivery & Operations</h6>
+                    <div class="card-cta">
+                        <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                        <div class="cta-group">
+                            <a href="#" class="cta cta-default cta-icon-right">
+                                <span class="cta-content">See More</span>
+                                <span class="cta-icon-box">
+                              <i class="cta-icon fa fa-arrow-right"></i>
+                             </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card components ends -->
+
+        <!-- Card components starts -->
+        <div class="col-12 col-md-3 col-sm-6">
+            <div class="card h-100 card-inner">
+                <div class="card-image-box">
+                    <div class="card-tag bottom-left">Blog</div>
+                    <img class="card-img-top" src="./images/testimonio04.png" alt="Lorelei Jensen from Old Mutual speaking at Bizagi Catalyst">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Citizens Bank</h4>
+                    <p class="card-text">“When new systems come into the bank, we make sure that on day 1 when they land that it is hooked into Bizagi, and we’ve got it hooked into RPA as well.” </p>
+                    <h6 class="card-subtitle">Matt Lavoie, Head of RPA & iBPMS</h6>
+                    <div class="card-cta">
+                        <!-- Cta Component to be included inside "<div class="card-cta">" in Card Component -->
+                        <div class="cta-group">
+                            <a href="#" class="cta cta-default cta-icon-right">
+                                <span class="cta-content">See More</span>
+                                <span class="cta-icon-box">
+                              <i class="cta-icon fa fa-arrow-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card components ends -->
+    </div>
+</div>
+<!-- Card components container ends -->
 </body>
 
 </html>

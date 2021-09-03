@@ -1,0 +1,145 @@
+.xchange-heading {
+    text-align: center;
+    font-weight: 700;
+
+    &-Connectors {
+        color: #68b631;
+    }
+
+    &-Widgets {
+        color: #119496;
+    }
+
+    &-process {
+        color: #BF5000;
+    }
+}
+
+.search {
+    &-input {
+        border: none;
+    }
+}
+
+.ais {
+    &-SearchBox {
+        &-form {
+            display: flex;
+            border: 1px solid #BDBDBD;
+        }
+
+        &-input {
+            width: 100% !important;
+            /* border-radius: 0.4375rem; */
+            border: none;
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1.25rem;
+        }
+
+        button {
+            outline: none;
+            padding: 0.4rem;
+            min-width: 3rem;
+            background-color: #f28c20;
+            border: none;
+            /* margin-left: 1rem; */
+        }
+    }
+
+}
+
+.cta {
+    &-parent {
+        text-align: end;
+    }
+
+    &-blue {
+        .cta-secondary {
+            border: solid 2px #119496;
+            color: #119496;
+
+            &:hover {
+                color: #ffffff;
+                background: #119496;
+            }
+        }
+    }
+
+    &-green {
+        .cta-secondary {
+            border: solid 2px #68b631;
+            color: #68b631;
+
+            &:hover {
+                color: #ffffff;
+                background: #68b631;
+            }
+        }
+    }
+}
+
+.filter-icon {
+    width: auto;
+    height: 4rem;
+}
+
+
+
+.partner {
+    &-finder {
+        .panel {
+            &-body {
+                background-color: #ffffff;
+                border-radius: 0.4375rem;
+                border: 1px solid #BDBDBD;
+                position: absolute;
+                z-index: 1;
+                left: auto;
+                right: 0;
+            }
+
+            &-optios {
+                li {
+                    &::marker {
+                        content: "";
+                        list-style: none;
+                    }
+                }
+            }
+
+            .ais {
+                &-RefinementList{
+                    &-list{
+                        text-align: left;
+                    }
+                }
+                &-RefinementList-item {
+                    &::marker {
+                        content: "";
+                        list-style: none;
+                    }
+                    &::before{
+                        content: "";
+                    }
+                    &-RefinementList{
+                        &-list{
+                            padding: 1rem 2rem;
+                        }
+                    }
+                }
+            }
+        }
+        .dropdown{
+            &-check{
+                &-list{
+                    margin: 0 1rem;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+.sortig-icon{
+    font-size: 2rem !important;
+}

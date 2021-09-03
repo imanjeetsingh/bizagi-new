@@ -1,0 +1,356 @@
+// with affix styling
+.inner-header {
+    &.affix {
+        position: fixed;
+        top: 0;
+        z-index: 999999 !important;
+        background-color: #ffffff !important;
+        margin-top: auto;
+        background: transparent;
+        border-bottom: 1px solid #efefef;
+
+        .logo {
+            &-grey {
+                margin-top: 0;
+
+                @include media (tablet) {
+                    margin-top: -3.1875rem !important;
+                }
+
+                @include media (desktop) {
+                    margin-top: 0 !important;
+                    margin-left: 0;
+                }
+
+                @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+                    margin-top: -2rem !important;
+                }
+            }
+        }
+
+        .headerLogo {
+            &-link {
+                @include media(xldesktop) {
+                    margin-right: 5rem;
+                }
+            }
+        }
+
+        .search {
+            &-box {
+                @include media(xldesktop) {
+                    margin-top: 2rem;
+                }
+            }
+        }
+
+        .multilang {
+            &-dropdown {
+                @include media(desktop) {
+                    margin-left: 0.2rem !important;
+                    padding: 0;
+                    color: #888;
+                }
+            }
+        }
+    }
+
+    .nav {
+        &-container {
+            // top: 2rem;
+            // position: absolute;
+            // left: 17rem;
+        }
+
+        &-link {
+            color: #54646f !important
+        }
+
+        &-links {
+            &-box {
+                .cta {
+                    &-primary {
+                        .cta {
+                            &-content {}
+                        }
+                    }
+
+                    &-secondary {
+                        @include media(tablet) {
+                            // border: none;
+                        }
+
+                        .cta {
+                            &-content {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .multilang {
+        &-container {}
+
+        &-dropdown {}
+    }
+
+    .search {
+        &-box {
+            &-searchIcon {}
+        }
+    }
+
+    .logo {
+        &-grey {}
+
+        &-white {
+            display: none;
+        }
+    }
+}
+
+// without affix styling
+.inner-header {
+    padding: 1rem;
+    position: fixed;
+    z-index: 999999 !important;
+    background-color: #ffffff !important;
+
+    @include media(tablet) {
+        margin-top: -1.5rem;
+    }
+
+    @include media(desktop) {
+        margin-top: 0rem;
+        position: fixed;
+        z-index: 1;
+    }
+
+    height: 7rem;
+
+    // aman added padding height
+    // @include media(tablet) {
+    //     margin-top: 1rem;
+    // }
+    .nav {
+        &-container {}
+
+        &-link {}
+
+        &-links {
+            &-box {
+                height: 2.5rem;
+
+                @include media(tablet) {
+                    height: 5rem;
+                }
+
+                @include media(desktop) {
+                    height: 5.3rem !important;
+                }
+
+                .cta {
+                    &-primary {
+                        .cta {
+                            &-content {
+                                // margin: 0;
+                            }
+                        }
+                    }
+
+                    &-secondary {
+                        .cta {
+                            &-content {
+                                // margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .multilang {
+        &-container {
+            @include media(desktop) {
+                margin-top: 1.9rem;
+            }
+
+            @include media(xldesktop) {
+                margin-top: 0;
+            }
+
+            @include media(xxldesktop) {
+                margin-left: 14.7rem;
+                position: absolute;
+            }
+        }
+
+        &-dropdown {
+            color: #888;
+            margin-bottom: 0.5rem;
+            margin-left: 0.4375rem !important;
+        }
+    }
+
+    .search {
+        &-container {
+            margin-top: 2.5rem;
+
+            @include media(tablet) {
+                margin-top: -0.5rem;
+            }
+
+            @include media(desktop) {
+                margin-top: -0.5rem;
+            }
+        }
+
+        &-box {
+            @include media(tablet) {
+                // margin-left: 8rem;
+            }
+
+            @include media(desktop) {
+                margin-left: 0;
+                margin-top: -0.8rem;
+            }
+
+            &-searchIcon {}
+        }
+    }
+
+    .logo {
+        &-grey {
+            width: 100%;
+
+            @include media (desktop) {
+                width: 7rem;
+            }
+
+            @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+                margin-top: -2rem;
+            }
+        }
+
+        &-white {
+            width: 100%;
+            margin-left: -1rem;
+
+            @include media (desktop) {
+                margin-left: -2rem;
+            }
+
+            @include media (xldesktop) {
+                margin-left: 0;
+            }
+        }
+    }
+
+    @include media(tablet) {
+        .cta {
+            &-secondary {
+                color: #888;
+                border: none;
+                background: none;
+                padding: 0;
+                font-size: 17px;
+                font-weight: 100;
+            }
+
+            &-primary {
+                color: #888;
+                border: none;
+                background: none;
+                padding: 0;
+                font-size: 17px;
+                font-weight: 100;
+            }
+        }
+    }
+
+    @include media(desktop) {
+        .cta {
+            display: flex;
+            justify-content: center;
+            border-radius: 3px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none !important;
+            padding: 10px 20px;
+            color: #F28C20;
+            margin: 0 0.5rem 0.5rem;
+
+            &-primary {
+                background-color: #F28C20;
+                color: #ffffff;
+                border: solid 2px #F28C20;
+
+                &:hover {
+                    color: #ffffff;
+                    background: #dc7000;
+                    border: solid 2px #dc7000 !important;
+                }
+            }
+
+            &-secondary {
+                border: solid 2px #F28C20;
+                color: #F28C20;
+
+                &:hover {
+                    color: #ffffff;
+                    background: #dc7000;
+                }
+            }
+        }
+    }
+
+    .headerLogo {
+        &-link {
+            @include media(desktop) {
+                margin-right: 5rem;
+            }
+        }
+    }
+}
+
+.inner-header {
+    .cta-content {
+        margin: 0 0.3125rem;
+
+        @include media(desktop) {
+            margin: 0;
+        }
+
+        @include media(xldesktop) {
+            margin: 0 5px;
+        }
+    }
+}
+
+// update on 23-09-2020 for header glitch fixed
+// css edit for cta alignment in ipad pro view start here
+.inner-header .cta-group {
+    @include media(desktop) {
+        padding-top: 2rem;
+    }
+
+    @include media(xldesktop) {
+        padding-top: 0;
+    }
+}
+
+.inner-header.affix .cta-group {
+    @include media(desktop) {
+        padding-top: 1rem;
+    }
+
+    @include media(xldesktop) {
+        padding-top: 0;
+    }
+}
+
+// css edit for cta alignment in ipad pro view start here

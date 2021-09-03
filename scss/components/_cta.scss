@@ -1,4 +1,5 @@
 // CTA component CSS starts
+$buttongap: 0.5rem;
 .cta {
     display: flex;
     justify-content: center;
@@ -10,10 +11,10 @@
     text-decoration: none !important;
     padding: 10px 20px;
     color: #F28C20;
-    margin: 0 0.5rem;
+    margin: 0 $buttongap 0.5rem;
     &-group {
         display: inline-flex;
-        margin: 1rem 0.5rem;
+        margin: 1rem -#{$buttongap};
         flex-wrap: wrap;
     }
     &-default {
@@ -43,7 +44,10 @@
         margin: 0 5px;
     }
     &-icon {
+        margin-top: 0.3rem !important;
         &-box {
+            width: 1.375rem !important;
+            height: auto !important;
             img {
                 vertical-align: text-bottom;
             }
@@ -56,9 +60,145 @@
         }
     }
     &-image {
-        width: 55px;
-        height: auto;
+        width: auto;
+        height: 100%;
+        text-align: center;
     }
 }
 
-// CTA component CSS starts
+.card-noBorder {
+    .card {
+        border: none;
+        &-title {
+            font-size: 1.125rem;
+            text-align: center;
+            color: #6d7278;
+        }
+        &-img {
+            &-top {
+                width: auto;
+                height: 5.938rem;
+            }
+        }
+        &-body {}
+        &-text {
+            text-align: center;
+        }
+    }
+    .cta {
+        &-group {
+            justify-content: center;
+            margin-top: auto;
+            padding-top: 1rem;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: background-color .3s linear, color .3s linear;
+    -moz-transition: background-color .3s linear, color .3s linear;
+    -o-transition: background-color .3s linear, color .3s linear;
+    -ms-transition: background-color .3s linear, color .3s linear;
+    transition: background-color .3s linear, color .3s linear;
+}
+
+.cta-no-style {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: unset;
+}
+
+.yellow-color .cta {
+    color: #f9c53e;
+}
+
+.yellow-color .cta-default:hover {
+    color: #f9c53e;
+}
+
+.yellow-color .cta-primary {
+    background-color: #f9c53e;
+    color: #ffffff;
+    border: solid 2px #f9c53e;
+}
+
+.yellow-color .cta-primary:hover {
+    color: #ffffff !important;
+    background: #f9c53e;
+    border: solid 2px #f9c53e !important;
+}
+
+.yellow-color .cta-secondary {
+    border: solid 2px #f9c53e;
+    color: #f9c53e;
+}
+
+.yellow-color .cta-secondary:hover {
+    color: #ffffff !important;
+    background: #f9c53e;
+}
+
+.teal-color .cta {
+    color: #329f9a;
+}
+
+.teal-color .cta-default:hover {
+    color: #329f9a;
+}
+
+.teal-color .cta-primary {
+    background-color: #329f9a;
+    color: #ffffff;
+    border: solid 2px #329f9a;
+}
+
+.teal-color .cta-primary:hover {
+    color: #ffffff !important;
+    background: #329f9a;
+    border: solid 2px #329f9a !important;
+}
+
+.teal-color .cta-secondary {
+    border: solid 2px #329f9a;
+    color: #329f9a;
+}
+
+.teal-color .cta-secondary:hover {
+    color: #ffffff !important;
+    background: #329f9a;
+}
+
+.green-color .cta {
+    color: #bbcc31;
+}
+
+.green-color .cta-default:hover {
+    color: #bbcc31;
+}
+
+.green-color .cta-primary {
+    background-color: #bbcc31;
+    color: #ffffff;
+    border: solid 2px #bbcc31;
+}
+
+.green-color .cta-primary:hover {
+    color: #ffffff !important;
+    background: #bbcc31;
+    border: solid 2px #bbcc31 !important;
+}
+
+.green-color .cta-secondary {
+    border: solid 2px #bbcc31;
+    color: #bbcc31;
+}
+
+.green-color .cta-secondary:hover {
+    color: #ffffff !important;
+    background: #bbcc31;
+}
+
+// CTA component CSS ends

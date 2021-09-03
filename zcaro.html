@@ -1,0 +1,289 @@
+Most Viewed Most Downloaded Most Popular Featured logo Search code... Bootstrap BOOTSTRAPAngular ANGULARReactJS REACTJSjQueryJQUERYVueJSVUEJSHTMLHTMLCSSCSSJAVASCRIPT Multi Row Slider with Swiper.js In this example below you will see how to do a Multi
+Row Slider with Swiper.js with some HTML / CSS and Javascript Thumbnail This awesome code was written by digistate, you can see more from this user in the personal repository. You can find the original code on Codepen.io Copyright digistate © 11 DOWNLOADS
+303 VIEWS DOWNLOAD NOW VIEW DEMO
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Multi Row Slider with Swiper.js</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<style>
+    [class^="swiper-button-"],
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet::before {
+        transition: all .3s ease;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .swiper-container {
+        width: 100%;
+        height: auto;
+        transition: opacity .6s ease;
+    }
+    
+    .swiper-container.loading {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .swiper-container:hover .swiper-button-prev,
+    .swiper-container:hover .swiper-button-next {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        height: 16vw;
+    }
+    
+    .swiper-slide .entity-img {
+        display: none;
+    }
+    
+    .swiper-slide .content {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 64%;
+        padding-left: 5%;
+        color: #fff;
+    }
+    
+    .swiper-slide .content .title {
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    
+    .swiper-slide .content .caption {
+        display: block;
+        font-size: 12px;
+        line-height: 1.4;
+    }
+    
+    [class^="swiper-button-"] {
+        width: 44px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .swiper-button-prev {
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+    }
+    
+    .swiper-button-next {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+    }
+    
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 9px;
+        position: relative;
+        width: 12px;
+        height: 12px;
+        background-color: #fff;
+        opacity: .4;
+    }
+    
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 18px;
+        height: 18px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border: 0px solid #fff;
+        border-radius: 50%;
+    }
+    
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:hover,
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        opacity: 1;
+    }
+    
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+        border-width: 1px;
+    }
+    
+    @media (max-width: 1023px) {
+        .swiper-container {
+            height: 40vw;
+        }
+    }
+</style>
+
+<body>
+
+    <section class="swiper-container loading">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLbVhsNzdIYmlfN1E)">
+                <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLbVhsNzdIYmlfN1E" class="entity-img" />
+                <div class="content">
+                    <p class="title">Shaun Matthews</p>
+                    <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLWTdaX3J5b1VueDg)">
+                <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLWTdaX3J5b1VueDg" class="entity-img" />
+                <div class="content">
+                    <p class="title">Alexis Berry</p>
+                    <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLRml1b3B6eXVqQ2s)">
+                <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLRml1b3B6eXVqQ2s" class="entity-img" />
+                <div class="content">
+                    <p class="title">Billie Pierce</p>
+                    <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLVUpEems2ZXpHYVk)">
+                <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLVUpEems2ZXpHYVk" class="entity-img" />
+                <div class="content">
+                    <p class="title">Trevor Copeland</p>
+                    <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLNXBIcEdOUFVIWmM)">
+                <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLNXBIcEdOUFVIWmM" class="entity-img" />
+                <div class="content">
+                    <p class="title">Bernadette Newman</p>
+                    <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLNWJSc1pSVDRicDg)">
+                <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLNWJSc1pSVDRicDg" class="entity-img" />
+                <div class="content">
+                    <p class="title">Marsha Hoffman</p>
+                    <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLeWFKOEpuT0hrcTA)">
+                <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLeWFKOEpuT0hrcTA" class="entity-img" />
+                <div class="content">
+                    <p class="title">Lucille Brock</p>
+                    <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLUUdpSi1qNUM2cU0)">
+                <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLUUdpSi1qNUM2cU0" class="entity-img" />
+                <div class="content">
+                    <p class="title">Teresa Williamson</p>
+                    <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLNmxKV1p6SzczeUE)">
+                <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLNmxKV1p6SzczeUE" class="entity-img" />
+                <div class="content">
+                    <p class="title">Bobbie Rivera</p>
+                    <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLNk0yQ3paU3FwVmM)">
+                <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLNk0yQ3paU3FwVmM" class="entity-img" />
+                <div class="content">
+                    <p class="title">Rachael Vasquez</p>
+                    <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(https://drive.google.com/uc?export=view&id=1b1Mkld8hldEYvaR0ocXuLUSH7acZyGZc)">
+                <img src="https://drive.google.com/uc?export=view&id=1b1Mkld8hldEYvaR0ocXuLUSH7acZyGZc" class="entity-img" />
+                <div class="content">
+                    <p class="title">Alexandra Holloway</p>
+                    <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLRHp3aUxwS1JEOUU)">
+                <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLRHp3aUxwS1JEOUU" class="entity-img" />
+                <div class="content">
+                    <p class="title">Elizabeth Gutierrez</p>
+                    <span class="caption">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+    </section>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
+
+
+
+    <script src="js/index.js"></script>
+
+
+
+
+</body>
+<script>
+    var sliderSelector = '.swiper-container',
+        options = {
+            init: false,
+            speed: 800,
+            slidesPerView: 3, // or 'auto'
+            slidesPerColumn: 2,
+            slidesPerGroup: 3,
+            spaceBetween: 5,
+            grabCursor: true,
+            autoplay: {
+                delay: 3000
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                1023: {
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                }
+            },
+            // Events
+            on: {
+                init: function() {
+                    this.autoplay.stop();
+                },
+                imagesReady: function() {
+                    this.autoplay.start();
+                    this.el.classList.remove('loading');
+                }
+            }
+        };
+    var mySwiper = new Swiper(sliderSelector, options);
+
+    // Initialize slider
+    mySwiper.init();
+</script>
+
+</html>
+Comments More from digistate Grid layout sample #3 by muuri.js (Filter/Sort) Grid layout sample #3 by muuri.js (Filter/Sort) By digistate Reveal text test Reveal text test By digistate Scale out by scrolling Scale out by scrolling By digistate 3D rotating
+hidden menu using only CSS 3D rotating hidden menu using only CSS By digistate You Might Also Like UK Tables - Commodities UK Tables - Commodities By stevescales Service Boxes Service Boxes By SFM93 Sticky Back to Top Button Sticky Back to Top Button
+By yying6 FCC: Simon Game FCC: Simon Game By CheshireCrab A Pen by Riyan Firmansyah A Pen by Riyan Firmansyah By blogriby Pure CSS3 Flyout Navigation Pure CSS3 Flyout Navigation By ey_intuitive RxJS - First Steps RxJS - First Steps By Andrew SVG material
+resize animation SVG material resize animation By suez Codeseek Logo© 2018 - Copyright CodeSeek.co contact email
