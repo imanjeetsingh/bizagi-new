@@ -1,12 +1,15 @@
 .xchange-heading {
     text-align: center;
     font-weight: 700;
+
     &-Connectors {
         color: #68b631;
     }
+
     &-Widgets {
         color: #119496;
     }
+
     &-process {
         color: #BF5000;
     }
@@ -15,6 +18,16 @@
 .search {
     &-input {
         border: none;
+
+        svg.ais {
+            &-SearchBox {
+                &-submitIcon {
+                    fill: #FFFFFF;
+                    width: auto;
+                    height: 1rem;
+                }
+            }
+        }
     }
 }
 
@@ -24,6 +37,7 @@
             display: flex;
             border: 1px solid #BDBDBD;
         }
+
         &-input {
             width: 100% !important;
             /* border-radius: 0.4375rem; */
@@ -32,6 +46,7 @@
             font-weight: 400;
             line-height: 1.25rem;
         }
+
         button {
             outline: none;
             padding: 0.4rem;
@@ -46,21 +61,30 @@
 .cta {
     &-parent {
         text-align: end;
+        .cta{
+            &-group {
+                margin: 0;
+            }
+        }
     }
+
     &-blue {
         .cta-secondary {
             border: solid 2px #119496;
             color: #119496;
+
             &:hover {
                 color: #ffffff;
                 background: #119496;
             }
         }
     }
+
     &-green {
         .cta-secondary {
             border: solid 2px #68b631;
             color: #68b631;
+
             &:hover {
                 color: #ffffff;
                 background: #68b631;
@@ -86,6 +110,7 @@
                 left: auto;
                 right: 0;
             }
+
             &-optios {
                 li {
                     &::marker {
@@ -94,20 +119,24 @@
                     }
                 }
             }
+
             .ais {
                 &-RefinementList {
                     &-list {
                         text-align: left;
                     }
                 }
+
                 &-RefinementList-item {
                     &::marker {
                         content: "";
                         list-style: none;
                     }
+
                     &::before {
                         content: "";
                     }
+
                     &-RefinementList {
                         &-list {
                             padding: 1rem 2rem;
@@ -116,6 +145,7 @@
                 }
             }
         }
+
         .dropdown {
             &-check {
                 &-list {
@@ -128,5 +158,10 @@
 }
 
 .sortig-icon {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
+    color: #BDBDBD;
+}
+.fa-sliders{
+    font-size: 1.5rem !important;
+    color: #595959;
 }

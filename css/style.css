@@ -11299,6 +11299,10 @@ ul.rc-pagination.sui-paging li::before {
 
 .search-input {
   border: none; }
+  .search-input svg.ais-SearchBox-submitIcon {
+    fill: #FFFFFF;
+    width: auto;
+    height: 1rem; }
 
 .ais-SearchBox-form {
   display: flex;
@@ -11322,6 +11326,8 @@ ul.rc-pagination.sui-paging li::before {
 
 .cta-parent {
   text-align: end; }
+  .cta-parent .cta-group {
+    margin: 0; }
 
 .cta-blue .cta-secondary {
   border: solid 2px #119496;
@@ -11348,8 +11354,7 @@ ul.rc-pagination.sui-paging li::before {
   position: absolute;
   z-index: 1;
   left: auto;
-  right: 0;
-  left: 0; }
+  right: 0; }
 
 .partner-finder .panel-optios li::marker {
   content: "";
@@ -11373,4 +11378,9 @@ ul.rc-pagination.sui-paging li::before {
   display: inline-block; }
 
 .sortig-icon {
-  font-size: 2rem !important; }
+  font-size: 1.5rem !important;
+  color: #BDBDBD; }
+
+.fa-sliders {
+  font-size: 1.5rem !important;
+  color: #595959; }
