@@ -1,28 +1,3 @@
-/* * {
-    box-sizing: border-box;
-}
-
-body,
-html {
-    font-family: "Roboto Slab", serif;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-} */
-
-/* .searchContainer {
-    margin-top: 2rem;
-    padding: 2rem 1rem;
-} */
-
-.searchbox [type="search"] {
-    width: 15rem;
-    padding: 0.5rem;
-}
-
-
-
 .ais-Hits-list {
     display: flex;
     flex-wrap: wrap;
@@ -40,11 +15,6 @@ html {
     width: 15rem;
     list-style: none;
     margin: 0rem 2rem;
-    /* padding: 2rem;
-    background-color: aliceblue;
-    position: relative;
-    border-radius: 12px;
-    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1); */
 }
 
 @media (min-width:992px) {
@@ -75,33 +45,9 @@ li.ais-Pagination-item {
 
 /* added by aman */
 
-
-/* 
-.ais-SearchBox-input {
-    width: 100% !important; */
-    /* border-radius: 0.4375rem; */
-    /* border: solid 0.0025rem #767676;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.25rem;
-} */
-
 .ais-SearchBox-input:focus {
     outline: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .partner-finder .panel-options li {
     font-size: 1rem;
@@ -114,17 +60,8 @@ li.ais-Pagination-item {
     cursor: pointer;
 }
 
-
-
-
-.partner-finder #accordion .panel-heading.active a:before {
-    transform: rotate(90deg);
-    transition: all 0.5s;
-    color: #7d8cff;
-}
-
 .partner-logo {
-    width: 30%;
+    width: 14%;
     align-self: center;
     margin-top: 2rem;
 }
@@ -132,7 +69,8 @@ li.ais-Pagination-item {
 .partner-finder .card {
     position: relative;
     margin-top: 1.5rem;
-    height: 20rem;
+    height: 8rem;
+    flex-direction: row;
 }
 
 .partner-finder .card-img {
@@ -144,19 +82,6 @@ li.ais-Pagination-item {
 .partner-finder .card-body {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
-    padding-top: 3.5rem;
-}
-
-@media (min-width:992px) {
-    .partner-finder .card-body {
-        padding-top: 7rem;
-    }
-}
-
-@media (min-width:1200px) {
-    .partner-finder .card-body {
-        padding-top: 5rem;
-    }
 }
 
 .partner-finder .card-body-info {
@@ -179,18 +104,6 @@ li.ais-Pagination-item {
     padding-top: 2rem;
     display: flex;
     justify-content: center;
-}
-
-.partner-finder .card:hover .card-body {
-    opacity: 0;
-}
-
-.partner-finder .card:hover .card-img {
-    opacity: 0;
-}
-
-.partner-finder .card:hover .card-body-info {
-    opacity: 1;
 }
 
 .partner-finder .partner-name {
@@ -230,62 +143,3 @@ li.ais-Pagination-item {
         margin-left: 15.7rem;
     }
 }
-
-
-
-
-
-/* filter css */
-
-.dropdown-check-list .anchor {
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-    /* padding: 5px 50px 5px 10px;
-    border: 1px solid #ccc; */
-}
-
-
-/* .dropdown-check-list .anchor:after {
-    position: absolute;
-    content: "";
-    border-left: 2px solid black;
-    border-top: 2px solid black;
-    padding: 5px;
-    right: 10px;
-    top: 20%;
-    -moz-transform: rotate(-135deg);
-    -ms-transform: rotate(-135deg);
-    -o-transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-    transform: rotate(-135deg);
-  } */
-
-
-/* .dropdown-check-list .anchor:active:after {
-    right: 8px;
-    top: 21%;
-  } */
-
-.dropdown-check-list ul.items {
-    padding: 1rem;
-    display: none;
-    margin: 0;
-    border: 2px solid #ccc;
-}
-
-.dropdown-check-list ul.items li {
-    list-style: none;
-}
-
-.dropdown-check-list.visible .anchor {
-    color: #0094ff;
-}
-
-.dropdown-check-list.visible .items {
-    display: block;
-    position: absolute;
-    z-index: 2;
-    background-color: #fff;
-}
-
