@@ -11347,12 +11347,15 @@ ul.rc-pagination.sui-paging li::before {
   border: 1px solid #BDBDBD;
   position: absolute;
   z-index: 1;
-  left: 0;
+  left: auto;
   right: 0; }
 
 .partner-finder .panel-optios li::marker {
   content: "";
   list-style: none; }
+
+.partner-finder .panel .ais-RefinementList-list {
+  text-align: left; }
 
 .partner-finder .panel .ais-RefinementList-item::marker {
   content: "";
@@ -11363,6 +11366,10 @@ ul.rc-pagination.sui-paging li::before {
 
 .partner-finder .panel .ais-RefinementList-item-RefinementList-list {
   padding: 1rem 2rem; }
+
+.partner-finder .dropdown-check-list {
+  margin: 0 1rem;
+  display: inline-block; }
 
 .sortig-icon {
   font-size: 2rem !important; }
