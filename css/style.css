@@ -11348,7 +11348,8 @@ ul.rc-pagination.sui-paging li::before {
   position: absolute;
   z-index: 1;
   left: auto;
-  right: 0; }
+  right: 0;
+  left: 0; }
 
 .partner-finder .panel-optios li::marker {
   content: "";
