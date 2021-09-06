@@ -1,50 +1,19 @@
-.ais-Hits-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding-inline-start: 0;
-    justify-content: center;
-}
-
+/* 
 @media (min-width:1200px) {
     .ais-Hits-list {
         justify-content: left;
     }
 }
-
-.ais-Hits-list .ais-Hits-item {
-    width: 15rem;
-    list-style: none;
-    margin: 0rem 2rem;
-}
-
-@media (min-width:992px) {
-    .ais-Hits-list .ais-Hits-item {
-        margin: 0rem 2rem 0rem 0rem;
-    }
-}
-
 .searchResults>div {
     margin-bottom: 0.6rem;
 }
-
-.ais-Pagination-list {
-    display: flex;
-}
-
-li.ais-Pagination-item {
-    width: 20px;
-    list-style: none;
-}
-
 .ais-Hits.ais-Hits--empty {
     font-size: 2rem;
     margin-top: 2rem;
     text-align: center;
-}
-
-
+} */
 /* added by aman */
-
+/* 
 .ais-SearchBox-input:focus {
     outline: none;
 }
@@ -61,17 +30,10 @@ li.ais-Pagination-item {
 }
 
 .partner-logo {
-    width: 14%;
-    align-self: center;
-    margin-top: 2rem;
+   
 }
 
-.partner-finder .card {
-    position: relative;
-    margin-top: 1.5rem;
-    height: 8rem;
-    flex-direction: row;
-}
+
 
 .partner-finder .card-img {
     padding-top: 2.5rem;
@@ -126,20 +88,5 @@ li.ais-Pagination-item {
     font-size: 0.8rem;
     color: #767676;
     margin-top: -0.5rem;
-}
+} */
 
-.partner-finder .pagination {
-    margin-left: 1.7rem;
-}
-
-@media (min-width:768px) {
-    .partner-finder .pagination {
-        margin-left: 12rem;
-    }
-}
-
-@media (min-width:1200px) {
-    .partner-finder .pagination {
-        margin-left: 15.7rem;
-    }
-}

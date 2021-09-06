@@ -11315,6 +11315,8 @@ ul.rc-pagination.sui-paging li::before {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem; }
+  .ais-SearchBox-input:focus-visible {
+    outline: none; }
 
 .ais-SearchBox button {
   outline: none;
@@ -11376,6 +11378,42 @@ ul.rc-pagination.sui-paging li::before {
 .partner-finder .dropdown-check-list {
   margin: 0 1rem;
   display: inline-block; }
+
+.partner-finder .ais-Hits-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline-start: 0; }
+  .partner-finder .ais-Hits-list .ais-Hits-item {
+    min-width: 31.93%;
+    list-style: none;
+    margin-left: 1rem; }
+    .partner-finder .ais-Hits-list .ais-Hits-item .card {
+      position: relative;
+      margin-top: 1.5rem;
+      height: 8rem;
+      flex-direction: row; }
+      .partner-finder .ais-Hits-list .ais-Hits-item .card .partner-logo {
+        max-width: 14%;
+        align-self: center;
+        margin-top: 2rem;
+        position: absolute;
+        margin: 0 1rem; }
+      .partner-finder .ais-Hits-list .ais-Hits-item .card .partner-name {
+        font-weight: bold; }
+      .partner-finder .ais-Hits-list .ais-Hits-item .card .card-body .cta-group {
+        position: absolute;
+        margin: 0; }
+
+.partner-finder .pagination {
+  justify-content: center; }
+  .partner-finder .pagination .ais-Pagination-list {
+    display: flex; }
+  .partner-finder .pagination .ais-Pagination-item {
+    width: 20px;
+    list-style: none; }
+
+.partner-finder a:hover {
+  text-decoration: none; }
 
 .sortig-icon {
   font-size: 1.5rem !important;
