@@ -11426,12 +11426,8 @@ ul.rc-pagination.sui-paging li::before {
         font-weight: bold; }
       .partner-finder .ais-Hits-list .ais-Hits-item .card .card-body .cta-group {
         position: absolute;
-        margin: 0; }
-        @media (min-width: 768px) {
-          .partner-finder .ais-Hits-list .ais-Hits-item .card .card-body .cta-group {
-            position: static;
-            width: 100%;
-            justify-content: end; } }
+        margin: 0;
+        min-width: 11rem; }
 
 .partner-finder .pagination {
   justify-content: center; }
