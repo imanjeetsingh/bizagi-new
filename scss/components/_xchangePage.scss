@@ -36,6 +36,7 @@
         &-form {
             display: flex;
             border: 1px solid #BDBDBD;
+            border-radius: 0.35rem;
         }
 
         &-input {
@@ -56,6 +57,7 @@
             min-width: 3rem;
             background-color: #f28c20;
             border: none;
+            border-radius: 0.30rem;
             /* margin-left: 1rem; */
         }
     }
@@ -63,10 +65,18 @@
 
 .cta {
     &-parent {
-        text-align: end;
+        // text-align: end;
+        @include media(tablet){
+            text-align: center;
+        }
         .cta {
             &-group {
                 margin: 0;
+                display: none;
+                @include media(tablet){
+                    display: inline-flex;
+                }
+
             }
         }
     }
@@ -104,14 +114,22 @@
 .partner {
     &-finder {
         .panel {
+            position: relative;
+            #collapseOne{
+                position: absolute;
+                z-index: 1;
+                right: calc(100% - 1rem);
+                min-width: 16rem;
+                padding-top: 1rem;
+            }
             &-body {
                 background-color: #ffffff;
                 border-radius: 0.4375rem;
                 border: 1px solid #BDBDBD;
-                position: absolute;
-                z-index: 1;
-                left: auto;
-                right: 0;
+                // position: absolute;
+                // z-index: 1;
+                // left: auto;
+                // right: 0;
             }
 
             &-optios {
@@ -171,9 +189,18 @@
                 .ais {
                     &-Hits {
                         &-item {
-                            min-width: 31.93%;
+                            min-width: 92%;
                             list-style: none;
                             margin-left: 1rem;
+                            @include media(tablet){
+                                min-width: 47%;
+                            }
+                            @include media(desktop){
+                            min-width: 31%;
+                            }
+                            @include media(xldesktop){
+                            min-width: 31.93%;
+                            }
 
                             .card {
                                 position: relative;
@@ -198,6 +225,11 @@
                                             &-group{
                                                 position: absolute;
                                                 margin: 0;
+                                                @include media(tablet){
+                                                    position: static;
+                                                    width: 100%;
+                                                    justify-content: end;
+                                                }
                                             }
                                         }
                                     }
@@ -241,4 +273,11 @@
 .fa-sliders {
     font-size: 1.5rem !important;
     color: #595959;
+}
+.cta-mobile{
+        display: inline-flex !important;
+        padding-left: 1.5rem;
+        @include media(tablet){
+            display: none !important;
+        }
 }
