@@ -11458,3 +11458,13 @@ ul.rc-pagination.sui-paging li::before {
   @media (min-width: 768px) {
     .cta-mobile {
       display: none !important; } }
+
+.cta-mobile .dropdown-menu.show {
+  width: 11rem;
+  border: 1px solid #e3e3e3; }
+
+.text-blue {
+  color: #119496; }
+
+.text-green {
+  color: #68b631; }
