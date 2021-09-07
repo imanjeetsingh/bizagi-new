@@ -11429,7 +11429,7 @@ ul.rc-pagination.sui-paging li::before {
       height: 8rem;
       flex-direction: row; }
       .partner-finder .ais-Hits-list .ais-Hits-item .card .partner-logo {
-        max-width: 14%;
+        max-height: 6rem;
         align-self: center;
         margin-top: 2rem;
         position: absolute;
