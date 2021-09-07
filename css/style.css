@@ -11454,7 +11454,7 @@ ul.rc-pagination.sui-paging li::before {
 
 .cta-mobile {
   display: inline-flex !important;
-  padding-left: 2.5rem; }
+  padding-left: 1.5rem; }
   @media (min-width: 768px) {
     .cta-mobile {
       display: none !important; } }
