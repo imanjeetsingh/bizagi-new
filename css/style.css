@@ -11339,6 +11339,14 @@ ul.rc-pagination.sui-paging li::before {
     .cta-parent .cta-group {
       display: inline-flex; } }
 
+@media (min-width: 992px) {
+  .cta-parent .cta-dropdown {
+    text-align: end; } }
+
+@media (min-width: 992px) {
+  .cta-parent .cta-filter {
+    text-align: end; } }
+
 .cta-blue .cta-secondary {
   border: solid 2px #119496;
   color: #119496; }
@@ -11446,7 +11454,7 @@ ul.rc-pagination.sui-paging li::before {
 
 .cta-mobile {
   display: inline-flex !important;
-  padding-left: 1.5rem; }
+  padding-left: 2.5rem; }
   @media (min-width: 768px) {
     .cta-mobile {
       display: none !important; } }

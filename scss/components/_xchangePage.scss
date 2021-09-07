@@ -78,6 +78,18 @@
                 }
 
             }
+            &-dropdown{
+                @include media(desktop){
+                text-align: end;
+                // margin-right: -1rem;
+                }
+            }
+            &-filter{
+                @include media(desktop){
+                    // margin-left: -2rem;
+                    text-align: end;
+                }
+            }
         }
     }
 
@@ -276,7 +288,7 @@
 }
 .cta-mobile{
         display: inline-flex !important;
-        padding-left: 1.5rem;
+        padding-left: 2.5rem;
         @include media(tablet){
             display: none !important;
         }

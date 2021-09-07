@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="algolia-styles.css" />
     <link rel="stylesheet" href="font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -21,7 +23,7 @@
             appId: "B1G2GM9NG0",
             searchApiKey: "aadef574be1f9252bb48d4ea09b5cfe5",
             hitsTemplateId: "newTemplate",
-        }, ];
+        },];
     </script>
 
 
@@ -75,88 +77,99 @@
         <div class="pagination"></div>
     </div>
 
-    <h3 class="xchange-heading mb-4">Search our selection of <span class="xchange-heading-process">Process</span>, <span class="xchange-heading-Widgets">Widgets</span> and <span class="xchange-heading-Connectors">Connectors</span> </h3>
+    <h3 class="xchange-heading mb-4">Search our selection of <span class="xchange-heading-process">Process</span>, <span
+            class="xchange-heading-Widgets">Widgets</span> and <span
+            class="xchange-heading-Connectors">Connectors</span> </h3>
 
     <div id="search-widget-xyz1" class="searchContainer container partner-finder">
         <div class="row">
-            <div class="col-12 col-lg-5 col-xl-4">
+            <div class="col-12 col-lg-5 col-xl-4 mt-2">
                 <div class="searchbox search-input"></div>
             </div>
             <div class="col-12 col-lg-7 col-xl-8 cta-parent px-0">
-                <div class="cta-group cta-blue">
-                    <a href="#" class="cta cta-secondary">
-                        <span class="cta-content">Create a widget</span>
-                    </a>
+                <div class="row mt-2">
+                <div class="col-8 col-lg-10 px-0 cta-dropdown">
+                    <div class="cta-group cta-blue">
+                        <a href="#" class="cta cta-secondary">
+                            <span class="cta-content">Create a widget</span>
+                        </a>
+                    </div>
+                    <div class="cta-group cta-green">
+                        <a href="#" class="cta cta-secondary">
+                            <span class="cta-content">Create a connector</span>
+                        </a>
+                    </div>
+                    <div class="cta-group cta-green cta-mobile">
+                        <a href="#" class="cta cta-secondary">
+                            <span class="cta-content">Create +</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="cta-group cta-green">
-                    <a href="#" class="cta cta-secondary">
-                        <span class="cta-content">Create a connector</span>
-                    </a>
-                </div>
-                <div class="cta-group cta-green cta-mobile">
-                    <a href="#" class="cta cta-secondary">
-                        <span class="cta-content">Create +</span>
-                    </a>
-                </div>
-                <div id="list1" class="dropdown-check-list">
+                <div class="col-4 col-lg-2 px-0 cta-filter">
+                    <div id="list1" class="dropdown-check-list">
 
-                    <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="true">
-                        <div class="panel">
-                            <div class="panel-heading facets" role="tab" id="headingOne">
-                                <h4 class="panel-title facet">
-                                    <a role="button" class="facet-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <div>
-                                            <i class="fa fa-sliders" aria-hidden="true"></i>
-                                        </div>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                <div class="panel-body" id="brands">
-                                    <ul class="panel-options">
-                                        <h4>Filters</h4>
-                                        <li>
-                                            <label for="Filter_#1_A">
-                                                <input type="checkbox" value="" name="" id="Filter_#1_A">
-                                                <span>
-                                                    Process accelerators
-                                                </span>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label for="Filter_#1_B">
-                                                <input type="checkbox" value="" name="" id="Filter_#1_B">
-                                                <span>
-                                                    Widgets
-                                                </span>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label for="Filter_#1_C">
-                                                <input type="checkbox" value="" name="" id="Filter_#1_C">
-                                                <span>
-                                                    Connectors
-                                                </span>
-                                            </label>
-                                        </li>
+                        <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel">
+                                <div class="panel-heading facets" role="tab" id="headingOne">
+                                    <h4 class="panel-title facet">
+                                        <a role="button" class="facet-title" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <div>
+                                                <i class="fa fa-sliders" aria-hidden="true"></i>
+                                            </div>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="panel-body" id="brands">
+                                        <ul class="panel-options">
+                                            <h4>Filters</h4>
+                                            <li>
+                                                <label for="Filter_#1_A">
+                                                    <input type="checkbox" value="" name="" id="Filter_#1_A">
+                                                    <span>
+                                                        Process accelerators
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="Filter_#1_B">
+                                                    <input type="checkbox" value="" name="" id="Filter_#1_B">
+                                                    <span>
+                                                        Widgets
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="Filter_#1_C">
+                                                    <input type="checkbox" value="" name="" id="Filter_#1_C">
+                                                    <span>
+                                                        Connectors
+                                                    </span>
+                                                </label>
+                                            </li>
 
-                                    </ul>
-                                    <ul class="items panel-options">
+                                        </ul>
+                                        <ul class="items panel-options">
 
-                                        <li><input type="checkbox" /><span class="ml-3"> </span></li>
-                                        <li><input type="checkbox" /><span class="ml-3"></span></span>
-                                        </li>
-                                        <li><input type="checkbox" /><span class="ml-3"></span></span>
-                                        </li>
-                                    </ul>
+                                            <li><input type="checkbox" /><span class="ml-3"> </span></li>
+                                            <li><input type="checkbox" /><span class="ml-3"></span></span>
+                                            </li>
+                                            <li><input type="checkbox" /><span class="ml-3"></span></span>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="d-inline">
-                    <i onclick="myFunction(this)" class="sortig-icon fa fa-sort-alpha-asc"></i>
+                    <div class="d-inline">
+                        <i onclick="myFunction(this)" class="sortig-icon fa fa-sort-alpha-asc"></i>
                     </div>
+                </div>
+            </div>
             </div>
         </div>
 
@@ -176,12 +189,12 @@
     <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
     <script src="./algoliaSearch.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // js for accordion arrows
-            $('#accordion').on('show.bs.collapse', function(a) {
+            $('#accordion').on('show.bs.collapse', function (a) {
                 $(a.target).prev('.panel-heading').addClass('active');
             })
-            $('#accordion').on('hide.bs.collapse', function(a) {
+            $('#accordion').on('hide.bs.collapse', function (a) {
                 $(a.target).prev('.panel-heading').removeClass('active');
             });
         });
