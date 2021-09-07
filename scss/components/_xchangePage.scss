@@ -35,6 +35,11 @@
 }
 
 .ais {
+    &-Pagination-item--selected{
+        .ais-Pagination-link{
+            color: black;
+        }
+    }
     &-SearchBox {
         &-form {
             display: flex;
@@ -206,7 +211,7 @@
                     display: flex;
                     flex-wrap: wrap;
                     padding-inline-start: 0;
-                    // justify-content: center;                
+                    // justify-content: center;         
                 .ais {
                     &-Hits {
                         &-item {
