@@ -11289,7 +11289,8 @@ ul.rc-pagination.sui-paging li::before {
 
 .xchange-heading {
   text-align: center;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 1.5rem; }
   .xchange-heading-Connectors {
     color: #68b631; }
   .xchange-heading-Widgets {
@@ -11298,7 +11299,9 @@ ul.rc-pagination.sui-paging li::before {
     color: #BF5000; }
 
 .search-input {
-  border: none; }
+  border: none;
+  padding-left: 0;
+  padding-right: 0; }
   .search-input svg.ais-SearchBox-submitIcon {
     fill: #FFFFFF;
     width: auto;
@@ -11339,12 +11342,21 @@ ul.rc-pagination.sui-paging li::before {
     .cta-parent .cta-group {
       display: inline-flex; } }
 
+@media (min-width: 768px) {
+  .cta-parent .cta-dropdown {
+    margin-left: -1.5rem; } }
+
 @media (min-width: 992px) {
   .cta-parent .cta-dropdown {
     text-align: end; } }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
+  .cta-parent .cta-dropdown {
+    margin-left: 0; } }
+
+@media (min-width: 768px) {
   .cta-parent .cta-filter {
+    margin-left: -0.75rem;
     text-align: end; } }
 
 .cta-blue .cta-secondary {
@@ -11417,7 +11429,7 @@ ul.rc-pagination.sui-paging li::before {
       height: 8rem;
       flex-direction: row; }
       .partner-finder .ais-Hits-list .ais-Hits-item .card .partner-logo {
-        max-width: 14%;
+        max-height: 6rem;
         align-self: center;
         margin-top: 2rem;
         position: absolute;

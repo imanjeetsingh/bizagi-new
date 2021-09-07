@@ -1,6 +1,7 @@
 .xchange-heading {
     text-align: center;
     font-weight: 700;
+    font-size: 1.5rem;
 
     &-Connectors {
         color: #68b631;
@@ -18,6 +19,8 @@
 .search {
     &-input {
         border: none;
+        padding-left: 0;
+        padding-right: 0;
 
         svg.ais {
             &-SearchBox {
@@ -79,14 +82,20 @@
 
             }
             &-dropdown{
+                @include media(tablet){
+                    margin-left: -1.5rem;
+                }
                 @include media(desktop){
                 text-align: end;
                 // margin-right: -1rem;
                 }
+                @include media(xldesktop){
+                    margin-left: 0;
+                }
             }
             &-filter{
-                @include media(desktop){
-                    // margin-left: -2rem;
+                @include media(tablet){
+                    margin-left: -0.75rem;
                     text-align: end;
                 }
             }
@@ -221,7 +230,7 @@
                                 flex-direction: row;
                                 .partner{
                                     &-logo{
-                                        max-width: 14%;
+                                        max-height: 6rem;
                                         align-self: center;
                                         margin-top: 2rem;
                                         position: absolute;
