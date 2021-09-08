@@ -11317,7 +11317,7 @@ ul.rc-pagination.sui-paging li::before {
 
 .ais-SearchBox-input {
   width: 100% !important;
-  /* border-radius: 0.4375rem; */
+  border-radius: 0.4375rem;
   border: none;
   font-size: 0.875rem;
   font-weight: 400;
