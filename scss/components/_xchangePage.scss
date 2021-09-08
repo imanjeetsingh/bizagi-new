@@ -35,6 +35,19 @@
 }
 
 .ais {
+    &-Pagination-link{
+        color: black;
+    }
+    &-Pagination-item--selected{
+        .ais-Pagination-link{
+            color: #dc7000;
+        }
+    }
+    &-Pagination-item--disabled{
+        .ais-Pagination-link{
+            color: #cec7c7c5;
+        }
+    }
     &-SearchBox {
         &-form {
             display: flex;
@@ -44,11 +57,12 @@
 
         &-input {
             width: 100% !important;
-            /* border-radius: 0.4375rem; */
+            border-radius: 0.4375rem; 
             border: none;
             font-size: 0.875rem;
             font-weight: 400;
             line-height: 1.25rem;
+            padding-left: 1rem;
             &:focus-visible{
                 outline: none;
             }
@@ -60,7 +74,9 @@
             min-width: 3rem;
             background-color: #f28c20;
             border: none;
-            border-radius: 0.30rem;
+            border-top-right-radius: 0.30rem;
+            border-bottom-right-radius: 0.30rem;
+            // border-radius: 0.30rem;
             /* margin-left: 1rem; */
         }
     }
@@ -71,6 +87,11 @@
         // text-align: end;
         @include media(tablet){
             text-align: center;
+            padding-right: 0;
+            margin-top: 1rem;
+        }
+        @include media(desktop){
+            margin-top: 0;
         }
         .cta {
             &-group {
@@ -83,7 +104,7 @@
             }
             &-dropdown{
                 @include media(tablet){
-                    margin-left: -1.5rem;
+                    margin-left: -2.6875rem;
                 }
                 @include media(desktop){
                 text-align: end;
@@ -95,8 +116,21 @@
             }
             &-filter{
                 @include media(tablet){
-                    margin-left: -0.75rem;
+                    margin-left: 0.5rem;
                     text-align: end;
+                    padding-right: 0;
+                }
+                @include media(desktop){
+                    padding-left: 0;
+                }
+                @include media(xldesktop){
+                    margin-left: 0;
+                }
+                &-child{
+                    text-align: right;
+                    @include media(xldesktop){
+                        margin-right: 1rem;
+                    }
                 }
             }
         }
@@ -191,8 +225,10 @@
         .dropdown {
             &-check {
                 &-list {
-                    margin: 0 1rem;
                     display: inline-block;
+                    @include media(tablet){
+                    margin: 0 1rem;
+                    }
                 }
             }
         }
@@ -203,20 +239,25 @@
     .ais {
         &-Hits {
             &-list {
+                padding: 0;
+                margin: 0 1.5rem;
+                @include media(tablet){
                     display: flex;
                     flex-wrap: wrap;
                     padding-inline-start: 0;
-                    // justify-content: center;                
+                    margin: 0;
+                }
+                    // justify-content: center;         
                 .ais {
                     &-Hits {
                         &-item {
                             min-width: 92%;
                             list-style: none;
-                            margin-left: 1rem;
                             @include media(tablet){
-                                min-width: 47%;
+                                min-width: 48%;
                             }
                             @include media(desktop){
+                            margin-left: 1rem;
                             min-width: 31%;
                             }
                             @include media(xldesktop){
@@ -228,29 +269,38 @@
                                 margin-top: 1.5rem;
                                 height: 8rem;
                                 flex-direction: row;
+                                box-shadow: 0px 0px 4px 1px rgba(166, 166, 166, 0.5);
                                 .partner{
                                     &-logo{
                                         max-height: 6rem;
                                         align-self: center;
                                         margin-top: 2rem;
-                                        position: absolute;
+                                        // position: absolute;
                                         margin: 0 1rem;
+                                        border: 1px solid  #DEDEDE;
                                     }
                                     &-name{
                                         font-weight: bold;
+                                        margin-bottom: 0.5rem;
                                     }
                                 }
                                 .card{
                                     &-body{
+                                        padding: 1.25rem 0;
+                                        overflow: hidden;
                                         .cta{
                                             &-group{
-                                                position: absolute;
+                                                // position: absolute;
                                                 margin: 0;
-                                                min-width: 11rem;
+                                                // min-width: 11rem;
+                                                display: block;
                                                 @include media(tablet){
                                                     // position: static;
                                                     // width: 100%;
                                                     // justify-content: end;
+                                                }
+                                                .cta{
+                                                    justify-content: end;
                                                 }
                                             }
                                         }
@@ -290,6 +340,8 @@
 .sortig-icon {
     font-size: 1.5rem !important;
     color: #BDBDBD;
+    margin-left: 0.8rem;
+    margin-right: 3px;
 }
 
 .fa-sliders {
@@ -298,14 +350,21 @@
 }
 .cta-mobile{
         display: inline-flex !important;
-        padding-left: 1.5rem;
+        padding-left: 0.5rem;
         @include media(tablet){
             display: none !important;
         }
+        .dropdown{
+            &-item{
+                font-size: 1rem;
+                padding: 0.25rem 1.563rem 0.5rem 1.563rem;
+            }
+        }
 }
 .cta-mobile .dropdown-menu.show {
-    width: 11rem;
+    width: 13rem;
     border: 1px solid #e3e3e3;
+    padding: 0.6rem 0;
 }
 
 .text-blue {
@@ -315,3 +374,4 @@
 .text-green {
     color: #68b631;
 }
+
