@@ -28,6 +28,7 @@
                     fill: #FFFFFF;
                     width: auto;
                     height: 1rem;
+                    margin-top: 0.375rem;
                 }
             }
         }
@@ -45,7 +46,7 @@
     }
     &-Pagination-item--disabled{
         .ais-Pagination-link{
-            color: #cec7c7c5;
+            color: gray;
         }
     }
     &-SearchBox {
@@ -200,6 +201,8 @@
                 &-RefinementList {
                     &-list {
                         text-align: left;
+                        padding-left: 1.5rem;
+                        padding-top: 1.5rem;
                     }
                 }
 
@@ -254,14 +257,16 @@
                             min-width: 92%;
                             list-style: none;
                             @include media(tablet){
-                                min-width: 48%;
+                                min-width: 45%;
+                                margin-left: 1.5rem;
                             }
                             @include media(desktop){
                             margin-left: 1rem;
                             min-width: 31%;
                             }
                             @include media(xldesktop){
-                            min-width: 31.93%;
+                            min-width: 31%;
+                            margin-left: 1.5rem;
                             }
 
                             .card {
@@ -272,12 +277,13 @@
                                 box-shadow: 0px 0px 4px 1px rgba(166, 166, 166, 0.5);
                                 .partner{
                                     &-logo{
-                                        max-height: 6rem;
+                                        max-height: 6.5rem;
                                         align-self: center;
                                         margin-top: 2rem;
                                         // position: absolute;
                                         margin: 0 1rem;
                                         border: 1px solid  #DEDEDE;
+                                        padding: 0.5rem;
                                     }
                                     &-name{
                                         font-weight: bold;
@@ -301,6 +307,8 @@
                                                 }
                                                 .cta{
                                                     justify-content: end;
+                                                    display: block;
+                                                    text-align: right;
                                                 }
                                             }
                                         }
@@ -321,6 +329,7 @@
             &-Pagination{
                 &-list{
                     display: flex;
+                    padding-left: 0;
                 }
                 &-item{
                         width: 20px;
@@ -375,3 +384,8 @@
     color: #68b631;
 }
 
+.partner{
+    &-type{
+        color: #8B8B8B;
+    }
+}
