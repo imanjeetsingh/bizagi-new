@@ -49,7 +49,7 @@
             </div>
                 <div class="card-body">
                     <p class="partner-name">
-                        {{name}}
+                        {name}
                     </p>
                     <div class="partner-type">
                         $ {{price}}
@@ -100,8 +100,8 @@
                                 <span class="cta-content">Create a connector</span>
                             </a>
                         </div>
-                        <div class="cta-group cta-blue cta-mobile dropdown">
-                            <a href="#" class="cta cta-secondary dropdown-toggle" id="dropdownMenuLink"
+                        <div class="cta-group  cta-mobile dropdown">
+                            <a href="#" class="cta cta-secondary cta-blue dropdown-toggle" id="dropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="cta-content">Create +</span>
                             </a>
@@ -183,7 +183,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <svg class="asc-disabled-sort" width="24" height="25"
+                            <span class="sort-icon">
+                            <svg class="asc-disabled-sort" width="25" height="25"
                                 viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M10.3 17.4L7 20.7V1.1C7 0.5 6.6 0.1 6 0.1C5.4 0.1 5 0.5 5 1.1V20.7L1.7 17.4C1.3 17 0.7 17 0.3 17.4C-0.1 17.8 -0.1 18.4 0.3 18.8L5.3 23.8C5.5 24 5.7 24.1 6 24.1C6.3 24.1 6.5 24 6.7 23.8L11.7 18.8C12.1 18.4 12.1 17.8 11.7 17.4C11.3 17 10.7 17 10.3 17.4Z"
@@ -211,7 +212,7 @@
                                     d="M23.5488 24H16.1488V22.6L20.9488 15.7H16.2488V14H23.4488V15.4L18.6488 22.3H23.5488V24Z"
                                     fill="#595959" />
                             </svg>
-
+                        </span>
                         </div>
                     </div>
                 </div>
@@ -264,13 +265,13 @@
         $(".asc-disabled-sort").show();
     });
     </script>
-    <script>
+    <!-- <script>
         $(document).ready(function () {
            $(".ais-Hits-item").addClass("col-12");
            $(".ais-Hits-item").addClass("col-lg-4");
            $(".ais-Hits-item").addClass("col-md-6");
        });
-   </script>    
+   </script>     -->
 </body>
 
-</html>
+</html> 
