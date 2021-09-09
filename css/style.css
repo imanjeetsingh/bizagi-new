@@ -11392,17 +11392,17 @@ ul.rc-pagination.sui-paging li::before {
     .cta-parent .cta-filter-child {
       margin-right: 1rem; } }
 
-.cta-blue .cta-secondary {
+.cta-blue {
   border: solid 2px #119496;
   color: #119496; }
-  .cta-blue .cta-secondary:hover {
+  .cta-blue:hover {
     color: #ffffff;
     background: #119496; }
 
-.cta-green .cta-secondary {
+.cta-green {
   border: solid 2px #68b631;
   color: #68b631; }
-  .cta-green .cta-secondary:hover {
+  .cta-green:hover {
     color: #ffffff;
     background: #68b631; }
 
@@ -11453,33 +11453,25 @@ ul.rc-pagination.sui-paging li::before {
       padding-inline-start: 0;
       margin: 0; } }
   .partner-finder .ais-Hits-list .ais-Hits-item {
-    min-width: 92%;
     list-style: none; }
-    @media (min-width: 768px) {
-      .partner-finder .ais-Hits-list .ais-Hits-item {
-        min-width: 45%;
-        margin-left: 1.5rem; } }
-    @media (min-width: 992px) {
-      .partner-finder .ais-Hits-list .ais-Hits-item {
-        margin-left: 1rem;
-        min-width: 31%; } }
-    @media (min-width: 1200px) {
-      .partner-finder .ais-Hits-list .ais-Hits-item {
-        min-width: 31%;
-        margin-left: 1.5rem; } }
     .partner-finder .ais-Hits-list .ais-Hits-item .card {
-      position: relative;
       margin-top: 1.5rem;
-      height: 8rem;
       flex-direction: row;
-      box-shadow: 0px 0px 4px 1px rgba(166, 166, 166, 0.5); }
+      box-shadow: 0px 0px 4px 1px rgba(166, 166, 166, 0.5);
+      height: 100%; }
       .partner-finder .ais-Hits-list .ais-Hits-item .card .partner-logo {
-        max-height: 6.5rem;
-        align-self: center;
-        margin-top: 2rem;
-        margin: 0 1rem;
-        border: 1px solid  #DEDEDE;
-        padding: 0.5rem; }
+        width: 9rem;
+        position: relative;
+        height: 4.2rem;
+        overflow: hidden;
+        border: 1px solid #DEDEDE;
+        margin: 1rem;
+        display: flex;
+        justify-content: center; }
+        .partner-finder .ais-Hits-list .ais-Hits-item .card .partner-logo img {
+          max-width: 100%;
+          height: -webkit-fill-available;
+          padding: 0.5rem; }
       .partner-finder .ais-Hits-list .ais-Hits-item .card .partner-name {
         font-weight: bold;
         margin-bottom: 0.5rem; }
@@ -11539,3 +11531,6 @@ ul.rc-pagination.sui-paging li::before {
 
 .partner-type {
   color: #8B8B8B; }
+
+.disabled-sort {
+  color: grey; }

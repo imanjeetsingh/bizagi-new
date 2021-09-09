@@ -44,10 +44,12 @@
 
         <div class="searchResults">
             <div class="card">
-                <img src="{{image}}" alt="{{name}}" class="partner-logo" />
+                <div class="partner-logo">
+                <img src="{{image}}" alt="{{name}}"/>
+            </div>
                 <div class="card-body">
                     <p class="partner-name">
-                        {name}
+                        {{name}}
                     </p>
                     <div class="partner-type">
                         $ {{price}}
@@ -90,18 +92,17 @@
             <div class="col-12 col-lg-7 col-xl-8 cta-parent">
                 <div class="row mt-2">
                     <div class="col-8 col-lg-10 px-0 cta-dropdown">
-                        <div class="cta-group cta-blue">
-                            <a href="#" class="cta cta-secondary">
+                        <div class="cta-group ">
+                            <a href="#" class="cta cta-secondary cta-blue">
                                 <span class="cta-content">Create a widget</span>
                             </a>
-                        </div>
-                        <div class="cta-group cta-green">
-                            <a href="#" class="cta cta-secondary">
+                            <a href="#" class="cta cta-secondary cta-green">
                                 <span class="cta-content">Create a connector</span>
                             </a>
                         </div>
                         <div class="cta-group cta-blue cta-mobile dropdown">
-                            <a href="#" class="cta cta-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a href="#" class="cta cta-secondary dropdown-toggle" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="cta-content">Create +</span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -112,67 +113,101 @@
                     </div>
                     <div class="col-4 col-lg-2 cta-filter mt-2">
                         <div class="cta-filter-child">
-                        <div id="list1" class="dropdown-check-list">
+                            <div id="list1" class="dropdown-check-list">
 
-                            <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="true">
-                                <div class="panel">
-                                    <div class="panel-heading facets" role="tab" id="headingOne">
-                                        <h4 class="panel-title facet">
-                                            <a role="button" class="facet-title" data-toggle="collapse"
-                                                data-parent="#accordion" href="#collapseOne" aria-expanded="true"
-                                                aria-controls="collapseOne">
-                                                <div>
-                                                    <i class="fa fa-sliders" aria-hidden="true"></i>
-                                                </div>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
-                                        aria-labelledby="headingOne">
-                                        <div class="panel-body" id="brands">
-                                            <ul class="panel-options d-none">
-                                                <h4>Filters</h4>
-                                                <li>
-                                                    <label for="Filter_#1_A">
-                                                        <input type="checkbox" value="" name="" id="Filter_#1_A">
-                                                        <span>
-                                                            Process accelerators
-                                                        </span>
-                                                    </label>
-                                                </li>
-                                                <li>
-                                                    <label for="Filter_#1_B">
-                                                        <input type="checkbox" value="" name="" id="Filter_#1_B">
-                                                        <span>
-                                                            Widgets
-                                                        </span>
-                                                    </label>
-                                                </li>
-                                                <li>
-                                                    <label for="Filter_#1_C">
-                                                        <input type="checkbox" value="" name="" id="Filter_#1_C">
-                                                        <span>
-                                                            Connectors
-                                                        </span>
-                                                    </label>
-                                                </li>
+                                <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel">
+                                        <div class="panel-heading facets" role="tab" id="headingOne">
+                                            <h4 class="panel-title facet">
+                                                <a role="button" class="facet-title" data-toggle="collapse"
+                                                    data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <div>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M23 10.9998H21.86C21.6297 10.1525 21.127 9.40441 20.4294 8.87109C19.7318 8.33778 18.8781 8.04883 18 8.04883C17.1219 8.04883 16.2682 8.33778 15.5706 8.87109C14.873 9.40441 14.3703 10.1525 14.14 10.9998H1C0.734784 10.9998 0.48043 11.1052 0.292893 11.2927C0.105357 11.4803 0 11.7346 0 11.9998C0 12.265 0.105357 12.5194 0.292893 12.7069C0.48043 12.8945 0.734784 12.9998 1 12.9998H14.14C14.3703 13.8472 14.873 14.5952 15.5706 15.1286C16.2682 15.6619 17.1219 15.9508 18 15.9508C18.8781 15.9508 19.7318 15.6619 20.4294 15.1286C21.127 14.5952 21.6297 13.8472 21.86 12.9998H23C23.2652 12.9998 23.5196 12.8945 23.7071 12.7069C23.8946 12.5194 24 12.265 24 11.9998C24 11.7346 23.8946 11.4803 23.7071 11.2927C23.5196 11.1052 23.2652 10.9998 23 10.9998ZM18 13.9998C17.6044 13.9998 17.2178 13.8825 16.8889 13.6628C16.56 13.443 16.3036 13.1306 16.1522 12.7652C16.0009 12.3997 15.9613 11.9976 16.0384 11.6096C16.1156 11.2217 16.3061 10.8653 16.5858 10.5856C16.8655 10.3059 17.2219 10.1154 17.6098 10.0383C17.9978 9.96109 18.3999 10.0007 18.7654 10.1521C19.1308 10.3034 19.4432 10.5598 19.6629 10.8887C19.8827 11.2176 20 11.6043 20 11.9998C20 12.5303 19.7893 13.039 19.4142 13.414C19.0391 13.7891 18.5304 13.9998 18 13.9998Z"
+                                                                fill="#8B8B8B" />
+                                                            <path
+                                                                d="M1 4.99983H2.14C2.37028 5.8472 2.873 6.59525 3.5706 7.12856C4.26819 7.66188 5.1219 7.95083 6 7.95083C6.8781 7.95083 7.73181 7.66188 8.4294 7.12856C9.127 6.59525 9.62972 5.8472 9.86 4.99983H23C23.2652 4.99983 23.5196 4.89447 23.7071 4.70694C23.8946 4.5194 24 4.26505 24 3.99983C24 3.73461 23.8946 3.48026 23.7071 3.29272C23.5196 3.10519 23.2652 2.99983 23 2.99983H9.86C9.62972 2.15246 9.127 1.40441 8.4294 0.871093C7.73181 0.337776 6.8781 0.0488281 6 0.0488281C5.1219 0.0488281 4.26819 0.337776 3.5706 0.871093C2.873 1.40441 2.37028 2.15246 2.14 2.99983H1C0.734784 2.99983 0.48043 3.10519 0.292893 3.29272C0.105357 3.48026 0 3.73461 0 3.99983C0 4.26505 0.105357 4.5194 0.292893 4.70694C0.48043 4.89447 0.734784 4.99983 1 4.99983ZM6 1.99983C6.39556 1.99983 6.78224 2.11713 7.11114 2.33689C7.44004 2.55665 7.69638 2.86901 7.84776 3.23446C7.99913 3.59991 8.03874 4.00205 7.96157 4.39001C7.8844 4.77797 7.69392 5.13434 7.41421 5.41404C7.13451 5.69375 6.77814 5.88423 6.39018 5.9614C6.00222 6.03857 5.60009 5.99896 5.23463 5.84759C4.86918 5.69621 4.55682 5.43987 4.33706 5.11097C4.1173 4.78207 4 4.39539 4 3.99983C4 3.4694 4.21071 2.96069 4.58579 2.58562C4.96086 2.21054 5.46957 1.99983 6 1.99983Z"
+                                                                fill="#8B8B8B" />
+                                                            <path
+                                                                d="M23 18.9998H9.86C9.62972 18.1525 9.127 17.4044 8.4294 16.8711C7.73181 16.3378 6.8781 16.0488 6 16.0488C5.1219 16.0488 4.26819 16.3378 3.5706 16.8711C2.873 17.4044 2.37028 18.1525 2.14 18.9998H1C0.734784 18.9998 0.48043 19.1052 0.292893 19.2927C0.105357 19.4803 0 19.7346 0 19.9998C0 20.265 0.105357 20.5194 0.292893 20.7069C0.48043 20.8945 0.734784 20.9998 1 20.9998H2.14C2.37028 21.8472 2.873 22.5952 3.5706 23.1286C4.26819 23.6619 5.1219 23.9508 6 23.9508C6.8781 23.9508 7.73181 23.6619 8.4294 23.1286C9.127 22.5952 9.62972 21.8472 9.86 20.9998H23C23.2652 20.9998 23.5196 20.8945 23.7071 20.7069C23.8946 20.5194 24 20.265 24 19.9998C24 19.7346 23.8946 19.4803 23.7071 19.2927C23.5196 19.1052 23.2652 18.9998 23 18.9998ZM6 21.9998C5.60444 21.9998 5.21776 21.8825 4.88886 21.6628C4.55996 21.443 4.30362 21.1306 4.15224 20.7652C4.00087 20.3997 3.96126 19.9976 4.03843 19.6096C4.1156 19.2217 4.30608 18.8653 4.58579 18.5856C4.86549 18.3059 5.22186 18.1154 5.60982 18.0383C5.99778 17.9611 6.39991 18.0007 6.76537 18.1521C7.13082 18.3034 7.44318 18.5598 7.66294 18.8887C7.8827 19.2176 8 19.6043 8 19.9998C8 20.5303 7.78929 21.039 7.41421 21.414C7.03914 21.7891 6.53043 21.9998 6 21.9998Z"
+                                                                fill="#8B8B8B" />
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                            aria-labelledby="headingOne">
+                                            <div class="panel-body" id="brands">
+                                                <ul class="panel-options d-none">
+                                                    <h4>Filters</h4>
+                                                    <li>
+                                                        <label for="Filter_#1_A">
+                                                            <input type="checkbox" value="" name="" id="Filter_#1_A">
+                                                            <span>
+                                                                Process accelerators
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="Filter_#1_B">
+                                                            <input type="checkbox" value="" name="" id="Filter_#1_B">
+                                                            <span>
+                                                                Widgets
+                                                            </span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label for="Filter_#1_C">
+                                                            <input type="checkbox" value="" name="" id="Filter_#1_C">
+                                                            <span>
+                                                                Connectors
+                                                            </span>
+                                                        </label>
+                                                    </li>
 
-                                            </ul>
-                                            <ul class="items panel-options d-none">
+                                                </ul>
+                                                <ul class="items panel-options d-none">
 
-                                                <li><input type="checkbox" /><span class="ml-3"> </span></li>
-                                                <li><input type="checkbox" /><span class="ml-3"></span></span>
-                                                </li>
-                                                <li><input type="checkbox" /><span class="ml-3"></span></span>
-                                                </li>
-                                            </ul>
+                                                    <li><input type="checkbox" /><span class="ml-3"> </span></li>
+                                                    <li><input type="checkbox" /><span class="ml-3"></span></span>
+                                                    </li>
+                                                    <li><input type="checkbox" /><span class="ml-3"></span></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <svg class="asc-sort disabled-sort" width="24" height="25"
+                                viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.3 17.4L7 20.7V1.1C7 0.5 6.6 0.1 6 0.1C5.4 0.1 5 0.5 5 1.1V20.7L1.7 17.4C1.3 17 0.7 17 0.3 17.4C-0.1 17.8 -0.1 18.4 0.3 18.8L5.3 23.8C5.5 24 5.7 24.1 6 24.1C6.3 24.1 6.5 24 6.7 23.8L11.7 18.8C12.1 18.4 12.1 17.8 11.7 17.4C11.3 17 10.7 17 10.3 17.4Z"
+                                    fill="#BDBDBD" />
+                                <path
+                                    d="M17.2 7.7H20.8L21.5 10.1H23.8L20.3 0H17.7L14.2 10H16.5L17.2 7.7ZM19.1 1.6C19.1 1.8 19.2 2 19.3 2.3C19.4 2.6 19.8 3.8 20.4 6H17.8C18.5 3.6 18.9 2.1 19.1 1.6Z"
+                                    fill="#BDBDBD" />
+                                <path d="M22.6 15.4V14H15.5V15.8H20.1L15.3 22.7V24H22.8V22.3H17.9L22.6 15.4Z"
+                                    fill="#BDBDBD" />
+                            </svg>
+                            <svg onclick="myFunction(this)" class="dsc-sort" width="25" height="25"
+                                viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.4488 5.4L7.44878 0.4C7.04878 0 6.44878 0 6.04878 0.4L1.04878 5.4C0.648779 5.8 0.648779 6.4 1.04878 6.8C1.44878 7.2 2.04878 7.2 2.44878 6.8L5.74878 3.5V23.1C5.74878 23.7 6.14878 24.1 6.74878 24.1C7.34878 24.1 7.74878 23.7 7.74878 23.1V3.5L11.0488 6.8C11.2488 7 11.4488 7.1 11.7488 7.1C12.0488 7.1 12.2488 7 12.4488 6.8C12.8488 6.5 12.8488 5.8 12.4488 5.4Z"
+                                    fill="#595959" />
+                                <path
+                                    d="M22.3488 10L21.6488 7.6H18.0488L17.2488 10H14.9488L18.4488 0H21.0488L24.5488 10H22.3488ZM21.1488 5.9C20.4488 3.7 20.1488 2.5 20.0488 2.2C19.9488 1.9 19.9488 1.7 19.8488 1.5C19.6488 2.1 19.2488 3.5 18.5488 5.8H21.1488V5.9Z"
+                                    fill="#595959" />
+                                <path
+                                    d="M23.5488 24H16.1488V22.6L20.9488 15.7H16.2488V14H23.4488V15.4L18.6488 22.3H23.5488V24Z"
+                                    fill="#595959" />
+                            </svg>
+
                         </div>
-                        <i onclick="myFunction(this)" class="sortig-icon fa fa-sort-alpha-asc"></i>
-                    </div>
                     </div>
                 </div>
             </div>
@@ -204,15 +239,33 @@
             });
         });
         // sorting
-        function myFunction(x) {
-            x.classList.toggle("fa-sort-alpha-asc");
-            x.classList.toggle("fa-sort-alpha-desc");
-
-        }
     </script>
     <script>
-        $('.ais-SearchBox-input').attr('placeholder', 'Search xChange');
+         $(document).ready(function () {
+            $(".ais-Hits-item").addClass("col-12");
+            $(".ais-Hits-item").addClass("col-lg-4");
+            $(".ais-Hits-item").addClass("col-md-6");
+            $('.ais-SearchBox-input').attr('placeholder', 'Search xChange');
+        });
     </script>
+    <script>
+        $(".dsc-sort").hide();
+        $(".asc-sort").click(function() {
+            if ($(this).hasClass("disabled-sort")) {
+                $(".asc-sort").removeClass("disabled-sort");
+            } else {
+                $(this).hide();
+                $(".dsc-sort").show();
+            }
+        });
+        $(".dsc-sort").click(function() {
+            $(".dsc-sort").hide();
+            $(".asc-sort").show();
+            $(".asc-sort").addClass("disabled-sort");
+    
+        });
+    </script>
+    
 </body>
 
 </html>
