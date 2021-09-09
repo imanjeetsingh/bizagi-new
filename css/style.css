@@ -11572,4 +11572,7 @@ ul.rc-pagination.sui-paging li::before {
   margin-right: 0.5rem; }
   @media (min-width: 992px) {
     .sort-icon {
+      margin: auto; } }
+  @media (min-width: 1200px) {
+    .sort-icon {
       margin: auto 1rem auto auto; } }

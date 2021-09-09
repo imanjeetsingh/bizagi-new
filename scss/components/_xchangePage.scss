@@ -463,6 +463,9 @@
     margin-left: 1rem;
     margin-right: 0.5rem;
     @include media(desktop){
+        margin: auto;
+    }
+    @include media(xldesktop){
         margin: auto 1rem auto auto;
     }
 }
