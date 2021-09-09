@@ -295,8 +295,9 @@
                                 // height: 8rem;
                                 flex-direction: row;
                                 box-shadow: 0px 0px 4px 1px rgba(166, 166, 166, 0.5);
-                                // height: calc(100% - 1rem);
-                                height: 100%;
+                                height: calc(100% - 3rem);
+                                position: unset;
+                                // height: 100%;
 
                                 .partner {
                                     &-logo {
@@ -326,6 +327,7 @@
                                     &-body {
                                         padding: 1.25rem 0;
                                         overflow: hidden;
+                                        position: relative;
 
                                         .cta {
                                             &-group {
@@ -333,6 +335,9 @@
                                                 margin: 0;
                                                 // min-width: 11rem;
                                                 display: block;
+                                                position: absolute;
+                                                bottom: 0;
+                                                right: 0;
 
                                                 @include media(tablet) {
                                                     // position: static;
@@ -430,8 +435,10 @@
 .partner {
     &-type {
         color: #8B8B8B;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
     }
 }
-.disabled-sort {
-    color: grey;
+.searchResults{
+    display: contents;
 }
