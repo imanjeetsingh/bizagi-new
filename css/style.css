@@ -11307,6 +11307,11 @@ ul.rc-pagination.sui-paging li::before {
     width: auto;
     height: 1rem;
     margin-top: 0.375rem; }
+  .search-input svg.ais-SearchBox-resetIcon {
+    fill: #FFFFFF;
+    height: 1rem;
+    margin-top: 0.375rem;
+    width: 0.8125rem; }
 
 .ais-Pagination-link {
   color: black; }
@@ -11445,7 +11450,7 @@ ul.rc-pagination.sui-paging li::before {
 
 .partner-finder .ais-Hits-list {
   padding: 0;
-  margin: 0 1.5rem; }
+  margin: 0 1rem; }
   @media (min-width: 768px) {
     .partner-finder .ais-Hits-list {
       display: flex;
@@ -11453,15 +11458,30 @@ ul.rc-pagination.sui-paging li::before {
       padding-inline-start: 0;
       margin: 0; } }
   .partner-finder .ais-Hits-list .ais-Hits-item {
-    list-style: none; }
+    list-style: none;
+    position: relative;
+    width: 100%;
+    min-height: 1px; }
+    @media (min-width: 768px) {
+      .partner-finder .ais-Hits-list .ais-Hits-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 15px;
+        padding-left: 15px; } }
+    @media (min-width: 992px) {
+      .partner-finder .ais-Hits-list .ais-Hits-item {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%; } }
     .partner-finder .ais-Hits-list .ais-Hits-item .card {
-      margin-top: 1.5rem;
+      margin-top: 1rem;
       flex-direction: row;
-      box-shadow: 0px 0px 4px 1px rgba(166, 166, 166, 0.5);
-      height: calc(100% - 3rem);
+      border-radius: 4px;
+      box-shadow: 0px 0px 4px 1px rgba(166, 166, 166, 0.35);
+      height: calc(100% - 1.875rem);
       position: unset; }
       .partner-finder .ais-Hits-list .ais-Hits-item .card .partner-logo {
-        width: 9rem;
+        min-width: 4.2rem;
+        max-width: 4.2rem;
         position: relative;
         height: 4.2rem;
         overflow: hidden;
@@ -11477,7 +11497,7 @@ ul.rc-pagination.sui-paging li::before {
         font-weight: bold;
         margin-bottom: 0.5rem; }
       .partner-finder .ais-Hits-list .ais-Hits-item .card .card-body {
-        padding: 1.25rem 0;
+        padding: 1.25rem 1rem;
         overflow: hidden;
         position: relative; }
         .partner-finder .ais-Hits-list .ais-Hits-item .card .card-body .cta-group {
@@ -11536,8 +11556,20 @@ ul.rc-pagination.sui-paging li::before {
 
 .partner-type {
   color: #8B8B8B;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem; }
+  margin-bottom: 1rem;
+  padding-bottom: 1rem; }
 
 .searchResults {
   display: contents; }
+
+.ais-Hits--empty {
+  padding-left: 1rem;
+  padding-top: 1rem; }
+
+.sort-icon {
+  cursor: pointer;
+  margin-left: 1rem;
+  margin-right: 0.5rem; }
+  @media (min-width: 992px) {
+    .sort-icon {
+      margin: auto 1rem auto auto; } }
