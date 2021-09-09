@@ -36,19 +36,22 @@
 }
 
 .ais {
-    &-Pagination-link{
+    &-Pagination-link {
         color: black;
     }
-    &-Pagination-item--selected{
-        .ais-Pagination-link{
+
+    &-Pagination-item--selected {
+        .ais-Pagination-link {
             color: #dc7000;
         }
     }
-    &-Pagination-item--disabled{
-        .ais-Pagination-link{
+
+    &-Pagination-item--disabled {
+        .ais-Pagination-link {
             color: gray;
         }
     }
+
     &-SearchBox {
         &-form {
             display: flex;
@@ -58,13 +61,14 @@
 
         &-input {
             width: 100% !important;
-            border-radius: 0.4375rem; 
+            border-radius: 0.4375rem;
             border: none;
             font-size: 0.875rem;
             font-weight: 400;
             line-height: 1.25rem;
             padding-left: 1rem;
-            &:focus-visible{
+
+            &:focus-visible {
                 outline: none;
             }
         }
@@ -85,51 +89,63 @@
 
 .cta {
     &-parent {
+
         // text-align: end;
-        @include media(tablet){
+        @include media(tablet) {
             text-align: center;
             padding-right: 0;
             margin-top: 1rem;
         }
-        @include media(desktop){
+
+        @include media(desktop) {
             margin-top: 0;
         }
+
         .cta {
             &-group {
                 margin: 0;
                 display: none;
-                @include media(tablet){
+
+                @include media(tablet) {
                     display: inline-flex;
                 }
 
             }
-            &-dropdown{
-                @include media(tablet){
+
+            &-dropdown {
+                @include media(tablet) {
                     margin-left: -2.6875rem;
                 }
-                @include media(desktop){
-                text-align: end;
-                // margin-right: -1rem;
+
+                @include media(desktop) {
+                    text-align: end;
+                    // margin-right: -1rem;
                 }
-                @include media(xldesktop){
+
+                @include media(xldesktop) {
                     margin-left: 0;
                 }
             }
-            &-filter{
-                @include media(tablet){
+
+            &-filter {
+                @include media(tablet) {
                     margin-left: 0.5rem;
                     text-align: end;
                     padding-right: 0;
                 }
-                @include media(desktop){
+
+                @include media(desktop) {
                     padding-left: 0;
                 }
-                @include media(xldesktop){
+
+                @include media(xldesktop) {
                     margin-left: 0;
                 }
-                &-child{
+
+                &-child {
                     text-align: right;
-                    @include media(xldesktop){
+
+                    @include media(xldesktop) {
                         margin-right: 1rem;
                     }
                 }
@@ -138,26 +154,22 @@
     }
 
     &-blue {
-        .cta-secondary {
-            border: solid 2px #119496;
-            color: #119496;
+        border: solid 2px #119496;
+        color: #119496;
 
-            &:hover {
-                color: #ffffff;
-                background: #119496;
-            }
+        &:hover {
+            color: #ffffff;
+            background: #119496;
         }
     }
 
     &-green {
-        .cta-secondary {
-            border: solid 2px #68b631;
-            color: #68b631;
+        border: solid 2px #68b631;
+        color: #68b631;
 
-            &:hover {
-                color: #ffffff;
-                background: #68b631;
-            }
+        &:hover {
+            color: #ffffff;
+            background: #68b631;
         }
     }
 }
@@ -171,13 +183,15 @@
     &-finder {
         .panel {
             position: relative;
-            #collapseOne{
+
+            #collapseOne {
                 position: absolute;
                 z-index: 1;
                 right: calc(100% - 1rem);
                 min-width: 16rem;
                 padding-top: 1rem;
             }
+
             &-body {
                 background-color: #ffffff;
                 border-radius: 0.4375rem;
@@ -229,8 +243,9 @@
             &-check {
                 &-list {
                     display: inline-block;
-                    @include media(tablet){
-                    margin: 0 1rem;
+
+                    @include media(tablet) {
+                        margin: 0 1rem;
                     }
                 }
             }
@@ -244,68 +259,88 @@
             &-list {
                 padding: 0;
                 margin: 0 1.5rem;
-                @include media(tablet){
+
+                @include media(tablet) {
                     display: flex;
                     flex-wrap: wrap;
                     padding-inline-start: 0;
                     margin: 0;
                 }
-                    // justify-content: center;         
+
+                // justify-content: center;         
                 .ais {
                     &-Hits {
                         &-item {
-                            min-width: 92%;
+                            // min-width: 92%;
                             list-style: none;
-                            @include media(tablet){
-                                min-width: 45%;
-                                margin-left: 1.5rem;
+
+                            @include media(tablet) {
+                                // min-width: 45%;
+                                // margin-left: 1.5rem;
                             }
-                            @include media(desktop){
-                            margin-left: 1rem;
-                            min-width: 31%;
+
+                            @include media(desktop) {
+                                // margin-left: 1rem;
+                                // min-width: 31%;
                             }
-                            @include media(xldesktop){
-                            min-width: 31%;
-                            margin-left: 1.5rem;
+
+                            @include media(xldesktop) {
+                                // min-width: 31%;
+                                // margin-left: 1.5rem;
                             }
 
                             .card {
-                                position: relative;
+                                // position: relative;
                                 margin-top: 1.5rem;
-                                height: 8rem;
+                                // height: 8rem;
                                 flex-direction: row;
                                 box-shadow: 0px 0px 4px 1px rgba(166, 166, 166, 0.5);
-                                .partner{
-                                    &-logo{
-                                        max-height: 6.5rem;
-                                        align-self: center;
-                                        margin-top: 2rem;
-                                        // position: absolute;
-                                        margin: 0 1rem;
-                                        border: 1px solid  #DEDEDE;
+                                // height: calc(100% - 1rem);
+                                height: 100%;
+
+                                .partner {
+                                    &-logo {
+                                        width: 9rem;
+                                        position: relative;
+                                        height: 4.2rem;
+                                        overflow: hidden;
+                                        border: 1px solid #DEDEDE;
+                                        margin: 1rem;
+                                        display: flex;
+                                        justify-content: center;
+                                        // align-self: center;
+                                        img{
+                                        max-width: 100%;
+                                        height: -webkit-fill-available;
                                         padding: 0.5rem;
+                                        }
                                     }
-                                    &-name{
+
+                                    &-name {
                                         font-weight: bold;
                                         margin-bottom: 0.5rem;
                                     }
                                 }
-                                .card{
-                                    &-body{
+
+                                .card {
+                                    &-body {
                                         padding: 1.25rem 0;
                                         overflow: hidden;
-                                        .cta{
-                                            &-group{
+
+                                        .cta {
+                                            &-group {
                                                 // position: absolute;
                                                 margin: 0;
                                                 // min-width: 11rem;
                                                 display: block;
-                                                @include media(tablet){
+
+                                                @include media(tablet) {
                                                     // position: static;
                                                     // width: 100%;
                                                     // justify-content: end;
                                                 }
-                                                .cta{
+
+                                                .cta {
                                                     justify-content: end;
                                                     display: block;
                                                     text-align: right;
@@ -322,24 +357,28 @@
         }
     }
 }
-.partner-finder{
-    .pagination{
+
+.partner-finder {
+    .pagination {
         justify-content: center;
-        .ais{
-            &-Pagination{
-                &-list{
+
+        .ais {
+            &-Pagination {
+                &-list {
                     display: flex;
                     padding-left: 0;
                 }
-                &-item{
-                        width: 20px;
-                        list-style: none;
+
+                &-item {
+                    width: 20px;
+                    list-style: none;
                 }
             }
         }
     }
-    a{
-        &:hover{
+
+    a {
+        &:hover {
             text-decoration: none;
         }
     }
@@ -357,19 +396,23 @@
     font-size: 1.5rem !important;
     color: #595959;
 }
-.cta-mobile{
-        display: inline-flex !important;
-        padding-left: 0.5rem;
-        @include media(tablet){
-            display: none !important;
+
+.cta-mobile {
+    display: inline-flex !important;
+    padding-left: 0.5rem;
+
+    @include media(tablet) {
+        display: none !important;
+    }
+
+    .dropdown {
+        &-item {
+            font-size: 1rem;
+            padding: 0.25rem 1.563rem 0.5rem 1.563rem;
         }
-        .dropdown{
-            &-item{
-                font-size: 1rem;
-                padding: 0.25rem 1.563rem 0.5rem 1.563rem;
-            }
-        }
+    }
 }
+
 .cta-mobile .dropdown-menu.show {
     width: 13rem;
     border: 1px solid #e3e3e3;
@@ -384,8 +427,11 @@
     color: #68b631;
 }
 
-.partner{
-    &-type{
+.partner {
+    &-type {
         color: #8B8B8B;
     }
+}
+.disabled-sort {
+    color: grey;
 }
