@@ -14,16 +14,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<style>
-    .disabled-sort {
-        color: grey;
-    }
-</style>
 
 <body>
     <div>
-        <i class="fa fa-arrow-down asc-sort disabled-sort" aria-hidden="true"></i>
-
+        <i class="fa fa-arrow-down asc-disabled-sort" aria-hidden="true" style="color: grey;"></i>
+        <i class="fa fa-arrow-down asc-enabled-sort" aria-hidden="true" style="color: black;"></i>
         <i class="fa fa-arrow-up dsc-sort" aria-hidden="true"></i>
     </div>
 </body>
@@ -38,27 +33,24 @@
     // });
     // $('.bb').on('click', function() {
     //     $(".bb").hide();
-
     //     $(".one").show();
-
     // });
 </script>
 
 <script>
     $(".dsc-sort").hide();
-    $(".asc-sort").click(function() {
-        if ($(this).hasClass("disabled-sort")) {
-            $(".asc-sort").removeClass("disabled-sort");
-        } else {
-            $(this).hide();
-            $(".dsc-sort").show();
-        }
+    $(".asc-enabled-sort").hide();
+    $(".asc-disabled-sort").click(function() {
+        $(".asc-disabled-sort").hide();
+        $(".asc-enabled-sort").show();
+    });
+    $(".asc-enabled-sort").click(function() {
+        $(".asc-enabled-sort").hide();
+        $(".dsc-sort").show();
     });
     $(".dsc-sort").click(function() {
         $(".dsc-sort").hide();
-        $(".asc-sort").show();
-        $(".asc-sort").addClass("disabled-sort");
-
+        $(".asc-disabled-sort").show();
     });
 </script>
 
