@@ -183,7 +183,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <svg class="asc-sort disabled-sort" width="24" height="25"
+                            <svg class="asc-disabled-sort" width="24" height="25"
                                 viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M10.3 17.4L7 20.7V1.1C7 0.5 6.6 0.1 6 0.1C5.4 0.1 5 0.5 5 1.1V20.7L1.7 17.4C1.3 17 0.7 17 0.3 17.4C-0.1 17.8 -0.1 18.4 0.3 18.8L5.3 23.8C5.5 24 5.7 24.1 6 24.1C6.3 24.1 6.5 24 6.7 23.8L11.7 18.8C12.1 18.4 12.1 17.8 11.7 17.4C11.3 17 10.7 17 10.3 17.4Z"
@@ -194,7 +194,12 @@
                                 <path d="M22.6 15.4V14H15.5V15.8H20.1L15.3 22.7V24H22.8V22.3H17.9L22.6 15.4Z"
                                     fill="#BDBDBD" />
                             </svg>
-                            <svg onclick="myFunction(this)" class="dsc-sort" width="25" height="25"
+                            <svg class="asc-enabled-sort" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.0488 17.4L7.74878 20.7V1.1C7.74878 0.5 7.34878 0.1 6.74878 0.1C6.14878 0.1 5.74878 0.5 5.74878 1.1V20.7L2.44878 17.4C2.04878 17 1.44878 17 1.04878 17.4C0.648779 17.8 0.648779 18.4 1.04878 18.8L6.04878 23.8C6.24878 24 6.44878 24.1 6.74878 24.1C7.04878 24.1 7.24878 24 7.44878 23.8L12.4488 18.8C12.8488 18.4 12.8488 17.8 12.4488 17.4C12.0488 17 11.4488 17 11.0488 17.4Z" fill="#595959"/>
+                                <path d="M17.9488 7.7H21.5488L22.2488 10.1H24.5488L21.0488 0H18.4488L14.9488 10H17.2488L17.9488 7.7ZM19.8488 1.6C19.8488 1.8 19.9488 2 20.0488 2.3C20.1488 2.6 20.5488 3.8 21.1488 6H18.5488C19.2488 3.6 19.6488 2.1 19.8488 1.6Z" fill="#595959"/>
+                                <path d="M23.3488 15.4V14H16.2488V15.8H20.8488L16.0488 22.7V24H23.5488V22.3H18.6488L23.3488 15.4Z" fill="#595959"/>
+                                </svg>                                
+                            <svg class="dsc-sort" width="25" height="25"
                                 viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12.4488 5.4L7.44878 0.4C7.04878 0 6.44878 0 6.04878 0.4L1.04878 5.4C0.648779 5.8 0.648779 6.4 1.04878 6.8C1.44878 7.2 2.04878 7.2 2.44878 6.8L5.74878 3.5V23.1C5.74878 23.7 6.14878 24.1 6.74878 24.1C7.34878 24.1 7.74878 23.7 7.74878 23.1V3.5L11.0488 6.8C11.2488 7 11.4488 7.1 11.7488 7.1C12.0488 7.1 12.2488 7 12.4488 6.8C12.8488 6.5 12.8488 5.8 12.4488 5.4Z"
@@ -241,31 +246,31 @@
         // sorting
     </script>
     <script>
-         $(document).ready(function () {
-            $(".ais-Hits-item").addClass("col-12");
-            $(".ais-Hits-item").addClass("col-lg-4");
-            $(".ais-Hits-item").addClass("col-md-6");
-            $('.ais-SearchBox-input').attr('placeholder', 'Search xChange');
-        });
+        $('.ais-SearchBox-input').attr('placeholder', 'Search xChange');
     </script>
     <script>
+    $(".dsc-sort").hide();
+    $(".asc-enabled-sort").hide();
+    $(".asc-disabled-sort").click(function() {
+        $(".asc-disabled-sort").hide();
+        $(".asc-enabled-sort").show();
+    });
+    $(".asc-enabled-sort").click(function() {
+        $(".asc-enabled-sort").hide();
+        $(".dsc-sort").show();
+    });
+    $(".dsc-sort").click(function() {
         $(".dsc-sort").hide();
-        $(".asc-sort").click(function() {
-            if ($(this).hasClass("disabled-sort")) {
-                $(".asc-sort").removeClass("disabled-sort");
-            } else {
-                $(this).hide();
-                $(".dsc-sort").show();
-            }
-        });
-        $(".dsc-sort").click(function() {
-            $(".dsc-sort").hide();
-            $(".asc-sort").show();
-            $(".asc-sort").addClass("disabled-sort");
-    
-        });
+        $(".asc-disabled-sort").show();
+    });
     </script>
-    
+    <script>
+        $(document).ready(function () {
+           $(".ais-Hits-item").addClass("col-12");
+           $(".ais-Hits-item").addClass("col-lg-4");
+           $(".ais-Hits-item").addClass("col-md-6");
+       });
+   </script>    
 </body>
 
 </html>
